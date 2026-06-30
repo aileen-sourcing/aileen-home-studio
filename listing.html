@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAILUX | Product Showcase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="products-data.js"></script>
+    <style>
+        /* --- 极简轻奢画册风格 --- */
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #b45309;
+            --text-color: #111827;
+            --text-muted: #6b7280;
+            --bg-light: #f9fafb;
+            --white: #ffffff;
+            --border-color: #e5e7eb;
+            --footer-bg: #0f172a;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { color: var(--text-color); background: var(--white); padding-top: 65px; }
+        a { text-decoration: none; color: inherit; }
+
+        /* 顶部导航 */
+        header { position: fixed; top: 0; left: 0; width: 100%; background: var(--white); border-bottom: 1px solid var(--border-color); z-index: 1000; height: 65px; display: flex; align-items: center; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); letter-spacing: 1.5px; }
+        .back-btn { font-weight: 700; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; transition: var(--transition); }
+        .back-btn:hover { color: var(--accent-color); }
+
+        /* 面包屑 */
+        .breadcrumb { padding: 20px 40px; max-width: 1400px; margin: 0 auto; font-size: 0.8rem; color: var(--text-muted); }
+        .breadcrumb span { font-weight: 700; color: var(--primary-color); }
+
+        /* 主体布局 */
+        .listing-container { max-width: 1400px; margin: 10px auto 60px auto; padding: 0 40px; }
+        
+        /* 列表头部声明 */
+        .listing-header { margin-bottom: 40px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; }
+        .listing-title { font-size: 2.2rem; font-weight: 500; color: var(--primary-color); text-transform: capitalize; }
+        .listing-subtitle { font-size: 0.95rem; color: var(--text-muted); margin-top: 5px; }
+
+        /* ⚡ 核心新增：列表页询盘双通道按钮布局与极简风格 */
+        .inquiry-actions-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .inquiry-action-btn {
+            flex: 1;
+            padding: 10px 5px;
+            background: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        .inquiry-action-btn:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* 多卡片产品网格 - 自动并排 */
+        .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px 24px; }
+        
+        .product-card { background: transparent; display: flex; flex-direction: column; transition: var(--transition); cursor: pointer; }
+        .product-img-box { height: 280px; background: var(--bg-light); display: flex; align-items: center; justify-content: center; color: #94a3b8; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; border: 1px solid #f3f4f6; transition: var(--transition); position: relative; }
+        .product-card:hover .product-img-box { border-color: var(--primary-color); }
+        
+        .product-info { padding: 15px 0 0 0; display: flex; flex-direction: column; gap: 8px; }
+        .product-name { font-size: 0.95rem; font-weight: 500; color: var(--primary-color); line-height: 1.4; min-height: 40px; }
+        .inquiry-btn { width: 100%; padding: 10px; background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 2px; cursor: pointer; transition: var(--transition); }
+        .product-card:hover .inquiry-btn { background: var(--primary-color); color: var(--white); }
+
+        @media (max-width: 1200px) { .products-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 768px) {
+            .products-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 15px; }
+            .listing-container { padding: 0 20px; }
+        }
+        footer { background: var(--footer-bg); color: #64748b; text-align: center; padding: 25px; font-size: 0.8rem; border-top: 1px solid #1e293b; margin-top: 80px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">BAILUX</a>
+            <a href="javascript:history.back();" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back</a>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> / <a href="javascript:history.back();">Catalog</a> / <span id="br-current">List</span>
+    </div>
+
+    <div class="listing-container">
+        <div class="listing-header">
+            <h1 class="listing-title" id="listing-main-title">Products List</h1>
+            <p class="listing-subtitle" id="listing-desc">Discover our premium wholesale selections.</p>
+        </div>
+
+        <div class="products-grid" id="listing-grid-container"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BAILUX Global Sourcing. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function renderListingPage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const catParam = urlParams.get('cat') || ''; // 大类暗号：如 holiday, lighting
+            const subParam = urlParams.get('sub') || ''; // 小类暗号：如 pe-tips, christmas
+
+            // 动态修改页面的主标题和描述
+            let pageTitle = "Product Showcase";
+            let pageDesc = "Premium wholesale sourcing with strict export standards.";
+
+            if (catParam === 'holiday') { pageTitle = "Holiday Decoration"; pageDesc = "Premium wholesale PE, PVC, and mixed needle holiday trees, garlands, and wreaths."; }
+            if (catParam === 'lighting') { pageTitle = "Home Lighting Solutions"; pageDesc = "High-end luxury and minimalist lamps for modern hospitality and residential projects."; }
+            if (catParam === 'material') { pageTitle = "Factory Raw Materials"; pageDesc = "Strict quality export standards materials for international manufacturers."; }
+
+            document.getElementById('listing-main-title').innerText = pageTitle;
+            document.getElementById('listing-main-desc').innerText = pageDesc;
+
+            let gridHtml = "";
+
+            // 🌟 核心自动化修改：不再读取原先写死的数据，而是直接扫描我们的全局大账本 detailsDatabase！
+            for (let productName in detailsDatabase) {
+                const product = detailsDatabase[productName];
+
+                // 🔍 自动化筛查：只要这个产品的 subcategory 小类标签跟网址对上了，或者大类标签对上了，就让它出列！
+                if (product.subcategory === subParam || (!subParam && product.category === catParam)) {
+                    
+                    // 自动抓取大账本里的第一张真实图片
+                    const firstImg = product.images && product.images.length > 0 ? product.images[0] : "https://via.placeholder.com/500x500/f8fafc/0f172a?text=No+Image";
+                    
+                    // 动态拼装买家点击时的跳转路由及询盘预填信息
+                    const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=${encodeURIComponent('Inquiry about ' + productName)}&body=${encodeURIComponent('Dear Aileen,\n\nI am interested in your product: ' + productName + ' (' + product.code + '). Please quote us.')}`;
+                    const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in: ' + productName + ' (' + product.code + ')')}`;
+
+                    // 🛠️ 完美的继承原有布局，动态把产品吐到网页前端
+                    gridHtml += `
+                        <div class="product-card">
+                            <div class="product-img-box" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(productName)}'">
+                                <img src="${firstImg}" alt="${productName}" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(productName)}'">${productName.toUpperCase()}</h3>
+                                <div class="inquiry-actions-group">
+                                    <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
+                                        <i class="fa-regular fa-envelope"></i> Email
+                                    </button>
+                                    <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
+                                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            // 如果该分类下暂时一个测品都没有，自动显示温馨提示
+            if (gridHtml === "") {
+                gridHtml = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 50px 0;">New products are coming soon...</div>`;
+            }
+
+            document.getElementById('listing-grid-container').innerHTML = gridHtml;
+        }
+
+        window.onload = renderListingPage;
+    </script>
+</body>
+</html>

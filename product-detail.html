@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAILUX | Product Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="products-data.js"></script> <style>
+        /* --- 继承主页的全局轻奢商务色调 --- */
+        :root {
+            --primary-color: #0f172a;       
+            --accent-color: #b45309;        
+            --text-color: #1e293b;          
+            --text-muted: #64748b;          
+            --bg-light: #f8fafc;            
+            --white: #ffffff;
+            --border-color: #e2e8f0;
+            --transition: all 0.2s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            color: var(--text-color);
+            background-color: var(--white);
+            line-height: 1.6;
+            padding-top: 40px; /* 留出顶部间距 */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+
+        /* 返回目录导航 */
+        .back-nav {
+            margin-bottom: 25px;
+        }
+        .back-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .back-link:hover {
+            color: var(--accent-color);
+        }
+
+        /* ==========================================
+           📦 上半部分：产品主图 + 基本购买信息区域
+           ========================================== */
+        .product-main-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 左右分栏 */
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        /* 📸 左侧：画廊多图切换核心样式 */
+        .product-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* 放大镜大图框 */
+        .main-image-box {
+            width: 100%;
+            height: 500px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            overflow: hidden; /* 🌟 必须保留：隐藏图片放大后溢出的部分 */
+            background-color: var(--bg-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-in; /* 🌟 新增：鼠标移上去变成放大镜形状 */
+        }
+
+        .main-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* 🌟 修改 transition： transform 的动画要极其丝滑，0.1s 刚好 */
+            transition: transform 0.1s ease-out, border-color 0.2s ease; 
+            transform-origin: center center; /* 默认形变中心点 */
+        }
+
+        /* 下方小图缩略图轨道 */
+        .thumb-list {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+
+        .thumb-item {
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            cursor: pointer;
+            overflow: hidden;
+            background-color: var(--bg-light);
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+
+        .thumb-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 🌟 当前选中的小图红框高亮（对应你截图中的红框效果） */
+        .thumb-item.active {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.1);
+        }
+
+        /* 📝 右侧：产品标题、编码及询盘按钮 */
+        .product-meta-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-code {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 10px;
+        }
+
+        .product-title {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        /* ⚡ 核心新增：详情页双通道询盘按钮容器 */
+        .inquiry-actions-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+            width: 100%;
+            max-width: 450px; /* 控制双按钮总宽度，紧凑美观 */
+        }
+
+        /* 极简画册风长条按钮 */
+        .inquiry-action-btn {
+            flex: 1;
+            padding: 15px 20px;
+            background: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* Email 保持经典的暗色调作为主视觉 */
+        .inquiry-action-btn.btn-email {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+        .inquiry-action-btn.btn-email:hover {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        /* WhatsApp 保持透明框，悬停时反转色调 */
+        .inquiry-action-btn.btn-whatsapp:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .inquiry-btn:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+
+        /* ==========================================
+           📄 下半部分：详细的产品信息与描述区域
+           ========================================== */
+        .product-details-section {
+            border-top: 1px solid var(--border-color);
+            padding-top: 40px;
+            margin-bottom: 80px;
+        }
+
+        .tabs-header {
+            display: flex;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: 25px;
+        }
+
+        .tab-btn {
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            background: none;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        .tab-btn.active {
+            color: var(--primary-color);
+        }
+
+        /* 下划线指示器 */
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        .tab-content {
+            font-size: 1.05rem;
+            color: #334155;
+            line-height: 1.8;
+        }
+
+        /* 参数表格样式 */
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .spec-table td {
+            padding: 12px 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        .spec-table td:first-child {
+            width: 25%;
+            background-color: var(--bg-light);
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* 手机端响应式适配 */
+        @media (max-width: 768px) {
+            .product-main-section {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .main-image-box {
+                height: 350px;
+            }
+            .product-title {
+                font-size: 1.6rem;
+            }
+
+        }
+        /* 鼠标悬停和点击选中的缩略图样式 */
+        .thumb-item {
+            cursor: pointer; /* 鼠标移上去变成可以点击的小手 */
+            border: 2px solid #e2e8f0;
+            transition: all 0.2s ease;
+        }
+
+        /* 🌟 当小图被选中（active）或鼠标悬停时，自动变成你主题的黄褐色红框 */
+        .thumb-item.active,
+        .thumb-item:hover {
+            border-color: #b45309;
+            box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="back-nav">
+            <a href="listing.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Listing</a>
+        </div>
+
+        <div class="product-main-section">
+            
+            <div class="product-gallery">
+                <div class="main-image-box" id="zoomContainer">
+                    <img id="mainProductImg" src="images/lamp01.jpg" alt="Product Main Image">
+                </div>
+                <div class="thumb-list" id="thumbList">
+                    <div class="thumb-item active" onclick="switchImage(this, 'images/lamp01.jpg')">
+                        <img src="images/lamp01.jpg" alt="Thumb 1">
+                    </div>
+                    <div class="thumb-item" onclick="switchImage(this, 'images/lamp01-detail1.jpg')">
+                        <img src="images/lamp01-detail1.jpg" alt="Thumb 2">
+                    </div>
+                    <div class="thumb-item" onclick="switchImage(this, 'images/lamp01-detail2.jpg')">
+                        <img src="images/lamp01-detail2.jpg" alt="Thumb 3">
+                    </div>
+                    <div class="thumb-item" onclick="switchImage(this, 'images/lamp01-detail3.jpg')">
+                        <img src="images/lamp01-detail3.jpg" alt="Thumb 4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-meta-box">
+                <div class="product-code" id="productCode">Item Code: TL-001</div>
+                <h1 class="product-title" id="productTitle">Minimalist Dimmable Ceramic Table Lamp</h1>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+                    Premium wholesale home lighting sourcing with strict export standards.
+                </p>
+                <!-- 🚀 替换为双通道询盘入口 -->
+                <div class="inquiry-actions-group">
+                    <button class="inquiry-action-btn btn-email" id="inquiryEmailBtn">
+                        <i class="fa-regular fa-envelope"></i> Email Inquiry
+                    </button>
+                    <button class="inquiry-action-btn btn-whatsapp" id="inquiryWhatsAppBtn">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </button>
+                </div>
+
+        </div>
+
+        <div class="product-details-section">
+            <div class="tabs-header">
+                <button class="tab-btn active">Product Description</button>
+            </div>
+            
+            <div class="tab-content" id="productDescContainer">
+                <table class="spec-table">
+                    <tr>
+                        <td id="spec-label-1">Material</td>
+                        <td id="spec-value-1">Loading...</td>
+                    </tr>
+                    <tr>
+                        <td id="spec-label-2">Light Source / Style</td>
+                        <td id="spec-value-2">Loading...</td>
+                    </tr>
+                    <tr>
+                        <td id="spec-label-3">Certification</td>
+                        <td id="spec-value-3">Loading...</td>
+                    </tr>
+                    <tr>
+                        <td id="spec-label-4">Application</td>
+                        <td id="spec-value-4">Loading...</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // 🌟 核心修复：点击小图切换大图的“指挥官”函数
+    function switchImage(thumbnailElement, newSrc) {
+        // 1. 找到最上面的大图框，把它的图片路径(src)换成点击的新图片
+        document.getElementById('mainProductImg').src = newSrc;
+
+        // 2. 剥离掉其他所有小图身上的“高亮红框”(active 样式)
+        const allThumbs = document.querySelectorAll('.thumb-item');
+        allThumbs.forEach(thumb => thumb.classList.remove('active'));
+
+        // 3. 唯独给当前被点击的这个小图套上高亮红框
+        thumbnailElement.classList.add('active');
+    }
+
+    // 🌟 核心自动化渲染逻辑
+    window.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const productName = urlParams.get('item') || '';
+        const cleanName = decodeURIComponent(productName).trim();
+
+        if (cleanName) {
+            // 1. 修改产品大标题
+            document.getElementById('productTitle').innerText = cleanName;
+
+            // 2. 寻找匹配的数据库产品，找不到就用默认测试数据
+            const productData = detailsDatabase[cleanName.toLowerCase()];
+            const mainImageElement = document.getElementById('mainProductImg');
+            const thumbListContainer = document.getElementById('thumbList');
+
+            let imagesToDisplay = [];
+
+            // 3. 【高能测试机制】如果你还没录入真实图片，系统会自动为你捏出 6 张带数字的彩色测试图
+            if (productData && productData.images && productData.images.length > 0) {
+                imagesToDisplay = productData.images;
+            } else {
+                // 模拟自动生成 1 到 6 张高清测试图，让你能点得动下一张
+                for (let i = 1; i <= 6; i++) {
+                    imagesToDisplay.push(`https://via.placeholder.com/500x500/f8fafc/0f172a?text=Product+Image+${i}`);
+                }
+            }
+
+            // 4. 🔒 核心控幅：使用 slice(0, 6) 强行拦截！只取前 6 张图，绝对不会超过 6 张
+            const finalImages = imagesToDisplay.slice(0, 6);
+
+            // 5. 自动在网页上吐出小图卡片，并绑定点击事件
+            let thumbsHtml = "";
+            
+            // 默认把第 1 张图塞给大图框
+            if (finalImages.length > 0) {
+                mainImageElement.src = finalImages[0];
+            }
+
+            finalImages.forEach((imgSrc, index) => {
+                // 第一张图默认加 active 红框
+                const activeClass = (index === 0) ? 'active' : '';
+                
+                // 🌟 关键点：每个小图都绑定了 switchImage(this, '图片地址')，现在绝对能点动了！
+                thumbsHtml += `
+                    <div class="thumb-item ${activeClass}" onclick="switchImage(this, '${imgSrc}')">
+                        <img src="${imgSrc}" alt="Thumbnail ${index+1}">
+                    </div>
+                `;
+            });
+            
+            // 把拼装好的小图塞进网页轨道
+            thumbListContainer.innerHTML = thumbsHtml;
+
+            // 6. 动态替换下方的参数表格（保持不变）
+            const specsData = productData ? productData.specs : [
+                { label: "Material", value: "Premium Sourcing Standard Materials" },
+                { label: "Customization", value: "OEM & ODM Available" },
+                { label: "Certification", value: "Global Standard Compliant" },
+                { label: "Available Sizes", value: "All sizes are customizable" }
+            ];
+            
+            // 填装编码
+            document.getElementById('productCode').innerText = productData ? productData.code : "Item Code: BAILUX-PROD";
+            
+            for (let i = 0; i < 4; i++) {
+                document.getElementById(`spec-label-${i+1}`).innerText = specsData[i].label;
+                document.getElementById(`spec-value-${i+1}`).innerText = specsData[i].value;
+            }
+
+            // 🚀 7. 双通道询盘按钮动态绑定（自动抓取当前产品的最终名字与编码）
+            const currentItemCode = productData ? productData.code : "Item Code: BAILUX-PROD";
+
+            // 🟢 A. 绑定 Email 按钮
+            document.getElementById('inquiryEmailBtn').onclick = function() {
+                const emailSubject = encodeURIComponent(`Inquiry about ${cleanName} (${currentItemCode})`);
+                const emailBody = encodeURIComponent(`Dear Aileen,\n\nI am viewing your product "${cleanName}" (${currentItemCode}) on the website.\n\nPlease reply with the wholesale prices, packing details, and minimum order quantity (MOQ).\n\nBest regards,`);
+                window.location.href = `mailto:aileen2208@foxmail.com?subject=${emailSubject}&body=${emailBody}`;
+            };
+
+            // 🟢 B. 绑定 WhatsApp 按钮
+            document.getElementById('inquiryWhatsAppBtn').onclick = function() {
+                const whatsappText = encodeURIComponent(`Hi Aileen, I am interested in your product: "${cleanName}" (${currentItemCode}). Can we discuss the custom options and wholesale catalog via WhatsApp?`);
+                window.open(`https://wa.me/8618894695487?text=${whatsappText}`, '_blank');
+            };
+        }
+    });
+    // ==========================================
+    // ✨ 新增：高档全自动鼠标悬停放大镜逻辑
+    // ==========================================
+    const zoomContainer = document.getElementById('zoomContainer');
+    const zoomImage = document.getElementById('mainProductImg');
+
+    if (zoomContainer && zoomImage) {
+        // 1. 鼠标移入：图片放大 2 倍 (想放大更多可以改成 scale(2.5))
+        zoomContainer.addEventListener('mouseenter', () => {
+            zoomImage.style.transform = 'scale(2)';
+        });
+
+        // 2. 鼠标移动：计算坐标，让放大中心点跟着鼠标走，从而看清材质细节
+        zoomContainer.addEventListener('mousemove', (e) => {
+            // 获取大图框在屏幕上的绝对位置
+            const rect = zoomContainer.getBoundingClientRect();
+            
+            // 计算鼠标相对于大图框左上角的百分比坐标
+            const x = ((e.clientX - rect.left) / rect.width) * 100;
+            const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+            // 动态改变放大的原点位置
+            zoomImage.style.transformOrigin = `${x}% ${y}%`;
+        });
+
+        // 3. 鼠标移出：图片恢复原状，中心点归位
+        zoomContainer.addEventListener('mouseleave', () => {
+            zoomImage.style.transform = 'scale(1)';
+            zoomImage.style.transformOrigin = 'center center';
+        });
+    }
+</script>
+</body>
+</html>

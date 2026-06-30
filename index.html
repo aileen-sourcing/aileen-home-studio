@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aileen's Home Studio | Global Trading</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* --- 全局样式与升级版轻奢商务色调 --- */
+        :root {
+            --primary-color: #0f172a;       
+            --accent-color: #b45309;        
+            --secondary-color: #1e293b;     
+            --text-color: #1e293b;          
+            --text-muted: #64748b;          
+            --bg-light: #f8fafc;            
+            --white: #ffffff;
+            --border-color: #e2e8f0;
+            --footer-bg: #0f172a;           
+            --footer-text-title: #f8fafc;
+            --footer-text-link: #cbd5e1;
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        html {
+            wbackground: #0f172a; /* 给整个浏览器最顶层垫一层和您 header 一样的深色背景 */
+        }
+        
+        html {
+            background: #0f172a;
+            scroll-behavior: smooth; /* ✨ 加上这一行，滚动体验立刻变高级 */
+        }
+
+        body {
+            color: var(--text-color);
+            background: var(--white);
+            margin-top: 0; /* 🛠️ 改为 0：彻底铲除隐形空隙，让内容贴合导航栏 */
+            padding-top: 65px; /* 保持您原先的 header 高度内边距即可 */
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            border: 1px solid var(--primary-color);
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            transform: translateY(-1px);
+        }
+
+        section {
+            padding: 50px 0; 
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.1rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.02em;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 8px auto 0;
+            border-radius: 2px;
+        }
+
+        /* --- 导航栏主体 --- */
+        header {
+            position: fixed;
+            top: var(--safe-top, 0px); /* 让导航栏的位置也跟着隐形方块一起下移 */
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: 0 1px 4px rgba(15,23,42,0.04);
+            z-index: 1000;
+            transition: var(--transition);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 65px; 
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: 1.5px;
+            flex-shrink: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+            height: 100%;
+        }
+
+        .nav-links li {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #334155;
+            transition: var(--transition);
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* --- 右侧操作区 --- */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-container {
+            position: relative;
+            width: 240px;
+            transition: var(--transition);
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 7px 35px 7px 12px;
+            font-size: 0.85rem;
+            color: var(--text-color);
+            background-color: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-container input:focus {
+            background-color: var(--white);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(180, 83, 9, 0.1);
+        }
+
+        .search-icon-btn {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #475569;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .search-icon-btn:hover {
+            color: var(--accent-color);
+        }
+
+        /* --- 下拉超级菜单 --- */
+        .mega-menu {
+            display: none;
+            position: fixed;
+            top: 65px; 
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: 0 12px 20px -5px rgba(15, 23, 42, 0.08);
+            border-top: 1px solid var(--border-color);
+            z-index: 999;
+            padding: 30px 0 25px 0; 
+            text-align: left;
+        }
+
+        .nav-links li.has-mega-menu:hover .mega-menu,
+        .mega-menu:hover {
+            display: block;
+        }
+
+        .mega-menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 25px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .mega-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mega-column h4 {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 4px;
+            font-weight: 700;
+        }
+
+        .mega-column a {
+            font-size: 0.9rem;
+            color: var(--text-muted) !important;
+            padding: 6px 0;
+            font-weight: 500 !important;
+            transition: var(--transition);
+            display: block;
+            height: auto;
+        }
+
+        .mega-column a:hover {
+            color: var(--accent-color) !important;
+            padding-left: 4px;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .menu-toggle span {
+            width: 22px;
+            height: 2px;
+            background-color: var(--text-color);
+            border-radius: 1px;
+        }
+
+        /* --- Hero 视觉区 --- */
+        .hero {
+            height: 65vh; 
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding-top: 65px;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.25;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            margin-bottom: 25px;
+            color: #475569;
+        }
+
+        /* --- 特色服务区 --- */
+        .features {
+            background-color: var(--white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 30px 20px; 
+            background: var(--bg-light);
+            border-radius: 4px;
+            border: 1px solid #f1f5f9;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(15,23,42,0.04);
+            border-color: #cbd5e1;
+        }
+
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* --- 滑动预览轨道区布局 (完整保留，一字不差) --- */
+        .products {
+            background-color: var(--bg-light);
+            padding: 60px 0;
+            overflow: hidden;
+        }
+
+        .carousel-flex-layout {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px; 
+        }
+
+        .carousel-sidebar {
+            flex: 0 0 220px; 
+            margin-top: 30px;
+        }
+
+        .carousel-sidebar .section-title {
+            text-align: left;
+            font-size: 2.2rem; 
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: -0.03em;
+        }
+
+        .carousel-sidebar .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 12px 0 0 0;
+            border-radius: 2px;
+        }
+
+        .view-all-btn {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-flex;
+            margin-top: 10px;
+            transition: var(--transition);
+        }
+        .view-all-btn:hover {
+            color: var(--accent-color);
+        }
+
+        .carousel-main-zone {
+            flex: 1;
+            position: relative;
+            overflow: visible; 
+            min-width: 0; 
+        }
+
+        /* 水平无缝滑动轨道 */
+        .carousel-track {
+            display: flex !important;
+            gap: 24px; 
+            overflow-x: auto !important; 
+            scroll-behavior: smooth; 
+            padding: 10px 5px 25px 5px;
+            scrollbar-width: none; 
+        }
+
+        .carousel-track::-webkit-scrollbar {
+            display: none; 
+        }
+
+        /* 保证主页预览展示不受影响 */
+        .carousel-main-zone .product-card {
+            flex: 0 0 300px !important; 
+            background-color: var(--white);
+            border-radius: 6px; 
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02); 
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .carousel-main-zone .product-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+            box-shadow: 0 15px 30px rgba(15, 23, 42, 0.06);
+        }
+
+        .carousel-main-zone .product-img {
+            width: 100%;
+            height: 320px; 
+            background-color: #f8fafc; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border-color);
+            padding: 15px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .carousel-main-zone .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .carousel-main-zone .product-title {
+            font-size: 1.05rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            min-height: 44px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .inquiry-btn {
+            width: 100%;
+            padding: 11px 20px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            border-radius: 4px;
+            font-weight: 700;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        
+        .inquiry-btn:hover {
+            background-color: var(--accent-color) !important;
+            color: var(--white) !important;
+            border-color: var(--accent-color) !important;
+        }
+
+        /* 左右切换箭头 */
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            background-color: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            transition: var(--transition);
+            color: var(--primary-color);
+        }
+
+        .slider-arrow:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+
+        .arrow-left { left: -22px; }
+        .arrow-right { right: -22px; }
+
+        /* --- 联系我们表单 --- */
+        .contact {
+            background-color: var(--white);
+        }
+
+        .contact-form {
+            max-width: 550px;
+            margin: 0 auto;
+            background: var(--bg-light);
+            padding: 30px; 
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 0.9rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            outline: none;
+            background-color: var(--white);
+            transition: var(--transition);
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(180, 83, 9, 0.1);
+        }
+
+        /* --- 页脚 --- */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text-link);
+            padding: 50px 0 25px 0; 
+            font-size: 0.9rem;
+            border-top: 1px solid #1e293b;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 35px;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-column h4 {
+            color: var(--footer-text-title);
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 0.08em;
+        }
+
+        .footer-column a {
+            color: var(--footer-text-link);
+            padding: 4px 0;
+            transition: var(--transition);
+            display: inline-block;
+            width: fit-content;
+        }
+
+        .footer-column a:hover {
+            color: var(--white);
+            transform: translateX(3px);
+        }
+
+        .contact-info-list {
+            font-size: 0.9rem;
+            color: var(--footer-text-link);
+            line-height: 1.8;
+        }
+        .contact-info-list p { margin-bottom: 6px; }
+        
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 5px;
+        }
+        
+        .social-icon {
+            font-size: 1.2rem; 
+            color: #94a3b8;    
+            transition: var(--transition);
+        }
+
+        .social-icon:hover { color: var(--white); }
+
+        .footer-bottom {
+            border-top: 1px solid #1e293b;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        @media (max-width: 992px) {
+            .carousel-flex-layout { flex-direction: column; gap: 20px; }
+            .carousel-sidebar { flex: none; width: 100%; text-align: center; margin-top: 0; }
+            .carousel-sidebar .section-title { text-align: center; }
+            .carousel-sidebar .section-title::after { margin: 10px auto 0 auto; }
+            .view-all-btn { display: none; }
+            .arrow-left { left: -10px; }
+            .arrow-right { right: -10px; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .menu-toggle { display: flex; }
+            .search-container { width: 150px; }
+            .hero h1 { font-size: 2.2rem; }
+            .footer-grid { grid-template-columns: 1fr; gap: 25px; }
+        }
+        /* ==========================================
+        ✨ 新增：About Us 首页版块与详情覆盖层样式
+        ========================================== */
+        /* 首页上的 About Us 图文左右分栏版块 */
+        .about-preview-section {
+            display: flex;
+            width: 100%;
+            height: 550px; /* 模块高度，你可以根据需要调整 */
+            background: #ffffff;
+        }
+
+        /* 左侧深蓝文字块 */
+        .about-text-block {
+            flex: 0 0 50%;
+    background-color: #0f172a; /* 采用深蓝商务色调 */
+    color: #f1f5f9;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text-block .about-label {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #b45309; /* 金色/黄褐色点缀 */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.about-text-block h2 {
+    font-size: 38px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.about-text-block p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 35px;
+}
+
+.about-discover-btn {
+    padding: 12px 30px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.about-discover-btn:hover {
+    background: #ffffff;
+    color: #0f172a;
+}
+
+/* 右侧图片块 */
+.about-image-block {
+    flex: 0 0 50%;
+    overflow: hidden;
+}
+
+.about-image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 🔄 全屏覆盖层（点击后覆盖当前页展现详细内容） */
+#about-detailed-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 9999; /* 确保盖在最上层 */
+    display: none; /* 默认隐藏 */
+    overflow-y: auto;
+    padding: 80px 40px;
+    animation: aboutSlideUp 0.4s ease-out;
+}
+
+@keyframes aboutSlideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+.about-close-btn {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #0f172a;
+    z-index: 10000;
+}
+
+.about-overlay-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+            
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Aileen's Home Studio</a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                
+                <li class="has-mega-menu">
+                    <a href="category.html?cat=holiday">Holiday Decor ▾</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-column">
+                                <h4>SEASONS</h4>
+                                <a href="listing.html?cat=holiday&sub=summer-decor">Summer Decor</a>
+                                <a href="listing.html?cat=holiday&sub=fall-decor">Fall Decor</a>
+                                <a href="listing.html?cat=holiday&sub=christmas-trees">Christmas Decor</a>
+                                <a href="listing.html?cat=holiday&sub=winter-decor">Winter Decor</a>
+                            </div>
+                            <div class="mega-column">
+                                <h4>HOLIDAYS</h4>
+                                <a href="listing.html?cat=holiday&sub=halloween-decor">Halloween</a>
+                                <a href="listing.html?cat=holiday&sub=thanksgiving-decor">Thanksgiving</a>
+                                <a href="listing.html?cat=holiday&sub=christmas-trees">Christmas</a>
+                                <a href="listing.html?cat=holiday&sub=easter-decor">Easter</a>
+                            </div>
+                            <div class="mega-column">
+                                <h4>ORNAMENTS</h4>
+                                <a href="listing.html?cat=holiday&sub=christmas-flowers">Christmas Flowers</a>
+                                <a href="listing.html?cat=holiday&sub=tree-skirts">Tree Skirts</a>
+                                <a href="listing.html?cat=holiday&sub=storage-bags">Storage Bags</a>
+                                <a href="listing.html?cat=holiday&sub=tinsel-garland">Tinsel Garland</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="has-mega-menu">
+                    <a href="category.html?cat=lighting">Lighting ▾</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-column">
+                                <h4>INDOOR LIGHTS</h4>
+                                <a href="listing.html?cat=lighting&sub=table-lamps">Table & Desk Lamps</a>
+                                <a href="listing.html?cat=lighting&sub=floor-lamps">Floor Lamps</a>
+                                <a href="listing.html?cat=lighting&sub=pendant-lights">Pendants</a>
+                                <a href="listing.html?cat=lighting&sub=chandeliers">Chandeliers</a>
+                                <a href="listing.html?cat=lighting&sub=wall-lighting">Wall Lighting & Sconces</a>
+                                <a href="listing.html?cat=lighting&sub=fan-lights">Premium Fan Lights</a>
+                            </div>
+                            <div class="mega-column">
+                                <h4>OUTDOOR LIGHTS</h4>
+                                <a href="listing.html?cat=lighting&sub=outdoor-lighting">Outdoor Lighting</a>
+                            </div>
+                            <div class="mega-column">
+                                <h4>DECOR LIGHTS</h4>
+                                <a href="listing.html?cat=lighting&sub=led-string-lights">LED String Lights</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="has-mega-menu">
+                    <a href="category.html?cat=material">Raw Material ▾</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-column">
+                                <h4>MATERIAL</h4>
+                                <a href="listing.html?cat=material&sub=pe-tips">PE Tree Tips</a>
+                                <a href="listing.html?cat=material&sub=pvc-film">PVC Film</a>
+                                <a href="listing.html?cat=material&sub=pine-needle">PVC Pine Needle</a>
+                                <a href="listing.html?cat=material&sub=polyester-thread">Polyester thread</a>
+                            </div>
+                            <div class="mega-column">
+                                <h4>METALS</h4>
+                                <a href="listing.html?cat=material&sub=metal-stands">Metal Stand</a>
+                                <a href="listing.html?cat=material&sub=metal-tubes">Metal Tube</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li><a href="javascript:void(0);" onclick="toggleAboutModal(true)">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <form class="search-container" id="navSearchForm" onsubmit="event.preventDefault(); handleSearch();">
+                    <input type="text" id="searchInput" placeholder="Discover something..." autocomplete="off">
+                    <button type="button" class="search-icon-btn" onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="
+        height: 70vh;            /* 🛠️ 关键修改：从 52vh 大幅提至 70vh，让大气的背景图充分展露 */
+        background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.55)), url('./images/nav-banner.jpg') no-repeat center center; 
+        background-size: cover; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; /* 🛠️ 关键修改：子元素横向绝对居中 */
+        padding-top: 0;          
+        margin-top: 0;
+    ">
+        <div class="container" style="width: 100%; display: flex; justify-content: center;">
+            <div class="hero-content" style="
+                background: rgba(255, 255, 255, 0.85); 
+                padding: 40px 50px; 
+                border-radius: 6px; 
+                box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+                backdrop-filter: blur(5px);
+                max-width: 650px;
+                text-align: left; 
+            ">
+                <h1 style="font-size: 2.6rem; line-height: 1.25; margin-bottom: 15px; color: var(--primary-color); font-weight: 800;">Global Sourcing<br>Quality Supply</h1>
+                <p style="font-size: 0.95rem; margin-bottom: 25px; color: #334155; line-height: 1.5;">Premium home lighting, holiday decor, and raw materials tailored to your market needs. Empowering global businesses with reliable, end-to-end procurement. We offer factory-direct pricing, supporting low-MOQ wholesale and flexible OEM/ODM customization.</p>
+                <a href="#contact" class="btn">Inquire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container carousel-flex-layout">
+            <div class="carousel-sidebar">
+                <h2 class="section-title">GLOBAL CATALOGUE</h2>
+                <a href="listing.html?cat=holiday&sub=all" class="view-all-btn">View All →</a>
+            </div>
+            <div class="carousel-main-zone">
+                <button class="slider-arrow arrow-left" id="prevBtn" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="carousel-track" id="carouselTrack">
+                    
+                    <div class="product-card">
+                        <div class="product-img">Premium Holiday Decor</div>
+                        <div class="product-info">
+                            <h3 class="product-title">PE & PVC Artificial Christmas Trees</h3>
+                            <button class="inquiry-btn" onclick="location.href='listing.html?cat=holiday&sub=christmas-trees'">Inquiry Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">Elegant Lighting Products</div>
+                        <div class="product-info">
+                            <h3 class="product-title">Premium Indoor Ceiling & Fan Lamps</h3>
+                            <button class="inquiry-btn" onclick="location.href='listing.html?cat=lighting&sub=fan-lights'">Inquiry Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" onclick="location.href='listing.html?cat=material&sub=pe-tips'" style="cursor: pointer;">
+                        <div class="product-img">Raw Material Selection</div>
+                        <div class="product-info">
+                            <h3 class="product-title">High-Density PE Tree Tips & PVC Film</h3>
+                            <button class="inquiry-btn" onclick="location.href='listing.html?cat=material&sub=pe-tips'">Inquiry Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="location.href='listing.html?cat=lighting&sub=led-string-lights'" style="cursor: pointer;">
+                        <div class="product-img">LED String Lights</div>
+                        <div class="product-info">
+                            <h3 class="product-title">Waterproof LED Fairy String Lights</h3>
+                            <button class="inquiry-btn" onclick="location.href='listing.html?cat=lighting&sub=led-string-lights'">Inquiry Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="location.href='listing.html?cat=lighting&sub=table-lamps'" style="cursor: pointer;">
+                        <div class="product-img">Table Lamps</div>
+                        <div class="product-info">
+                            <h3 class="product-title">Modern Luxury Table & Desk Lamps</h3>
+                            <button class="inquiry-btn" onclick="location.href='listing.html?cat=lighting&sub=table-lamps'">Inquiry Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="location.href='listing.html?cat=material&sub=metal-stands'" style="cursor: pointer;">
+                        <div class="product-img">Metal Hardware</div>
+                        <div class="product-info">
+                            <h3 class="product-title">Reinforced Steel Christmas Tree Metal Stand</h3>
+                            <button class="inquiry-btn" onclick="location.href='listing.html?cat=material&sub=metal-stands'">Inquiry Now</button>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="slider-arrow arrow-right" id="nextBtn" type="button"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-preview-section">
+    <div class="about-text-block">
+        <div class="about-label">ABOUT US</div>
+        <h2>Our Mission<br>Elevating Value</h2>
+        <p>
+            We understand the challenges businesses face when finding reliable suppliers, negotiating competitive prices, and ensuring product quality. We take the burden off your shoulders and provide a seamless procurement experience with comprehensive buying services including price negotiation, quality control inspections, logistics coordination, and shipping arrangements.
+        </p>
+        <button class="about-discover-btn" onclick="toggleAboutModal(true)">Discover More</button>
+    </div>
+    <div class="about-image-block">
+        <img src="./images/about-side.jpg" alt="BAILUX Sourcing Hub">
+    </div>
+</section>
+
+
+<!-- 🔄 全屏覆盖层：点击导航栏 About 或 Discover More 按钮时覆盖当前页展现 -->
+<div id="about-detailed-overlay">
+    <!-- 右上角关闭按钮 -->
+    <div class="about-close-btn" onclick="toggleAboutModal(false)">&times;</div>
+    
+    <div class="about-overlay-content">
+        <!-- 头部：品牌使命 -->
+        <div style="text-align: center; margin-bottom: 60px;">
+            <span style="font-size: 13px; letter-spacing: 0.2em; color: var(--accent-color); font-weight: 700; text-transform: uppercase; display: block; margin-bottom: 10px;">About US</span>
+            <h1 style="font-size: 42px; color: var(--primary-color); margin-bottom: 20px; font-weight: 700; line-height: 1.2;">Illuminating Spaces, <br>Celebrating Moments</h1>
+            <div style="width: 50px; height: 3px; background-color: var(--accent-color); margin: 20px auto 0; border-radius: 2px;"></div>
+        </div>
+        
+        <!-- 正文：企业概况（适配您的圣诞装饰与灯饰贸易定位） -->
+        <div style="font-size: 16px; color: var(--text-color); line-height: 1.8; margin-bottom: 50px; text-align: justify;">
+            <p style="margin-bottom: 20px;">
+                Welcome to your premier sourcing partner for premium home and holiday essentials. 
+                Based in Guangdong, China—the global heart of advanced manufacturing—we specialize in bridging the gap between international buyers and elite local production clusters, 
+                connecting your business directly with high-quality home lighting, exquisite festive decorations, and top-tier seasonal raw materials.
+            </p>
+            <p style="margin-bottom: 20px;">
+                As a dynamic, growth-driven trading enterprise, we are fueled by a deep passion for modern aesthetics, strict quality control, and exceptional service. 
+                We eliminate the typical complexities of cross-border sourcing—such as communication gaps and fragmented logistics—by delivering a curated, 
+                reliable product catalog alongside a seamless end-to-end procurement experience tailored to your market needs.
+            </p>
+        </div>
+
+        <!-- 底部优势：三栏式排版 -->
+        <div style="display: flex; gap: 30px; margin-top: 40px; flex-wrap: wrap;">
+            
+            <div style="flex: 1; min-width: 280px; background: var(--bg-light); padding: 30px; border-radius: 6px; border: 1px solid var(--border-color);">
+                <h3 style="color: var(--accent-color); margin-bottom: 12px; font-size: 1.2rem; font-weight: 700;">Premium Quality</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Rigorous supplier evaluations and quality control inspections ensuring international standards.</p>
+            </div>
+            
+            <div style="flex: 1; min-width: 280px; background: var(--bg-light); padding: 30px; border-radius: 6px; border: 1px solid var(--border-color);">
+                <h3 style="color: var(--accent-color); margin-bottom: 12px; font-size: 1.2rem; font-weight: 700;">Customer Focus</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Personalized service tailored to your specific requirements and business needs.</p>
+            </div>
+            
+            <div style="flex: 1; min-width: 280px; background: var(--bg-light); padding: 30px; border-radius: 6px; border: 1px solid var(--border-color);">
+                <h3 style="color: var(--accent-color); margin-bottom: 12px; font-size: 1.2rem; font-weight: 700;">Comprehensive Service</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Full procurement support from sourcing to logistics and shipping arrangements.</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">✈️</span>
+                    <h3>Global Supply Chain</h3>
+                    <p>Direct sourcing from manufacturers ensures competitive factory-direct pricing and stable supply.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🛡️</span>
+                    <h3>Strict Quality Control</h3>
+                    <p>Comprehensive inspection protocols from raw materials to finished products guarantee compliant quality.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">✨</span>
+                    <h3>OEM/ODM Customization</h3>
+                    <p>Supporting low MOQ wholesale and fully tailored product specifications, packaging, and branding solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section" style="padding: 60px 0; background-color: #ffffff; text-align: center;">
+    <div class="container" style="max-width: 650px; margin: 0 auto; padding: 0 20px;">
+        
+        <h2 style="font-size: 2.2rem; color: #0f172a; font-weight: 800; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">Contact US</h2>
+        <div style="width: 50px; height: 3px; background-color: #b45309; margin: 0 auto 30px auto;"></div>
+
+        <!-- 极简轻奢背景框 -->
+        <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 35px 30px; text-align: left; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+            
+            <!-- 📝 核心输入表单区域 -->
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; font-size: 0.75rem; font-weight: 700; color: #0f172a; letter-spacing: 0.05em; margin-bottom: 8px; text-transform: uppercase;">Your Name</label>
+                <input type="text" id="cfg-name" style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 0.95rem; color: #1e293b; background-color: #ffffff; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#b45309'" onblur="this.style.borderColor='#e2e8f0'">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; font-size: 0.75rem; font-weight: 700; color: #0f172a; letter-spacing: 0.05em; margin-bottom: 8px; text-transform: uppercase;">Company / WhatsApp (Highly Recommended)</label>
+                <input type="text" id="cfg-contact" style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 0.95rem; color: #1e293b; background-color: #ffffff; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#b45309'" onblur="this.style.borderColor='#e2e8f0'">
+            </div>
+
+            <div style="margin-bottom: 25px;">
+                <label style="display: block; font-size: 0.75rem; font-weight: 700; color: #0f172a; letter-spacing: 0.05em; margin-bottom: 8px; text-transform: uppercase;">Your Specific Requirements</label>
+                <textarea id="cfg-message" rows="4" style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 0.95rem; color: #1e293b; background-color: #ffffff; outline: none; font-family: inherit; resize: vertical; transition: border 0.2s;" onfocus="this.style.borderColor='#b45309'" onblur="this.style.borderColor='#e2e8f0'"></textarea>
+            </div>
+
+            <!-- 🚀 升级：双通道发送按钮 -->
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <!-- Email 发送 -->
+                <button onclick="sendInquiryViaChannel('email')" style="flex: 1; min-width: 200px; padding: 15px; background-color: #0f172a; color: #ffffff; border: none; border-radius: 4px; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#b45309'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='#0f172a'; this.style.transform='translateY(0)';">
+                    <i class="fa-regular fa-envelope"></i> Send via Email
+                </button>
+                
+                <!-- WhatsApp 发送 -->
+                <button onclick="sendInquiryViaChannel('whatsapp')" style="flex: 1; min-width: 200px; padding: 15px; background-color: transparent; color: #0f172a; border: 2px solid #0f172a; border-radius: 4px; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#0f172a'; this.style.color='#ffffff'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#0f172a'; this.style.transform='translateY(0)';">
+                    <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+                </button>
+            </div>
+
+        </div>
+
+    <!-- ⚡ 控制抓取与拼接的智能化脚本 -->
+    <script>
+        function sendInquiryViaChannel(channel) {
+            // 1. 抓取买家自己在输入框里填写的真实数据
+            const clientName = document.getElementById('cfg-name').value.trim() || "Valued Buyer";
+            const clientContact = document.getElementById('cfg-contact').value.trim() || "Not Provided";
+            const clientMsg = document.getElementById('cfg-message').value.trim() || "I am interested in your wholesale catalog and products. Please send me more detailed pricing and MOQ parameters.";
+
+            // 2. 组装成极具 B2B 规范的邮件/信息正文
+            const emailSubject = `SENOR Website Sourcing Inquiry from ${clientName}`;
+            const formattedBody = `Dear Aileen,\n\nYou have received a new sourcing inquiry from the website.\n\n[Buyer Profile]\n- Name: ${clientName}\n- Company / Tel / Whatapp: ${clientContact}\n\n[Message / Requirements]\n${clientMsg}\n\nBest regards,`;
+
+            // 3. 根据买家点击的通道，精准分流
+            if (channel === 'email') {
+                // 唤醒全功能邮箱
+                const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(formattedBody)}`;
+                window.location.href = mailtoUrl;
+            } else if (channel === 'whatsapp') {
+                // 唤醒 WhatsApp，由于 WA 不适合塞太冗长的格式，我们做个精致的高转化排版
+                const whatsappText = `Hi Aileen, my name is ${clientName} (${clientContact}). I am browsing your website. Here is my inquiry: "${clientMsg}"`;
+                window.open(`https://wa.me/8618894695487?text=${encodeURIComponent(whatsappText)}`, '_blank');
+            }
+        }
+    </script>
+</section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-column">
+                <h4>FOLLOW US</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f social-icon"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram social-icon"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-pinterest-p social-icon"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok social-icon"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube social-icon"></i></a>
+                    <a href="https://wa.me/8618894695487" target="_blank"><i class="fab fa-whatsapp social-icon"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>OUR COMPANY</h4>
+                <a href="javascript:void(0);" onclick="toggleAboutModal(true)">About Us</a>
+            </div>
+            <div class="footer-column">
+                <h4>CUSTOMER SERVICE</h4>
+                <a href="#contact">Contact Us</a>
+                <a href="faqs.html">FAQs</a>
+            </div>
+            <div class="footer-column">
+                <h4>GET IN TOUCH</h4>
+                <div class="contact-info-list">
+                    <p>Contact: Aileen</p>
+                    <p>Tel: +86 18894695487</p>
+                    <p>Email: aileen2208@foxmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Aileen's Home Studio Global Sourcing. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 滑动预览控制器核心逻辑
+        const track = document.getElementById('carouselTrack');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        if (track && prevBtn && nextBtn) {
+            nextBtn.addEventListener('click', () => { 
+                track.scrollBy({ left: 324, behavior: 'smooth' }); 
+            });
+            prevBtn.addEventListener('click', () => { 
+                track.scrollBy({ left: -324, behavior: 'smooth' }); 
+            });
+        }
+
+        // ==========================================
+        // ✨ 新增：About Us 全屏覆盖层显隐控制器
+        // ==========================================
+        function toggleAboutModal(show) {
+            const overlay = document.getElementById('about-detailed-overlay');
+            if (overlay) {
+                if (show) {
+                    overlay.style.display = 'block';
+                    document.body.style.overflow = 'hidden'; // 打开时锁定底层网页滚动条
+                } else {
+                    overlay.style.display = 'none';
+                    document.body.style.overflow = 'auto';  // 关闭时恢复底层网页滚动
+                }
+            }
+        }
+
+        // ==========================================
+        // ✨ 新增：智能搜索框分类跳转逻辑
+        // ==========================================
+        // ==========================================
+        // ✨ 精准升级：智能搜索框直接跳转至 Listing 页面
+        // ==========================================
+        function handleSearch() {
+            // 获取输入框文字，转为小写并去掉前后空格
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            
+            if (!query) {
+                alert('Please enter a product name to search.');
+                return;
+            }
+
+            // 1. 【核心逻辑】精准拦截高频单品关键词，直接跳转到具体的 listing.html 并带上 sub 参数
+            
+            // --- 灯饰类（Lighting）细分单品 ---
+            if (query.includes('floor lamp') || query.includes('floor light')) {
+                window.location.href = 'listing.html?cat=lighting&sub=floor-lamps';
+                return;
+            }
+            if (query.includes('table lamp') || query.includes('desk lamp') || query.includes('table light')) {
+                window.location.href = 'listing.html?cat=lighting&sub=table-lamps';
+                return;
+            }
+            if (query.includes('fan') || query.includes('ceiling fan')) {
+                window.location.href = 'listing.html?cat=lighting&sub=fan-lights';
+                return;
+            }
+            if (query.includes('chandelier')) {
+                window.location.href = 'listing.html?cat=lighting&sub=chandeliers';
+                return;
+            }
+            if (query.includes('pendant')) {
+                window.location.href = 'listing.html?cat=lighting&sub=pendant-lights';
+                return;
+            }
+            if (query.includes('sconce') || query.includes('wall light')) {
+                window.location.href = 'listing.html?cat=lighting&sub=wall-lighting';
+                return;
+            }
+            if (query.includes('string') || query.includes('fairy') || query.includes('led light')) {
+                window.location.href = 'listing.html?cat=lighting&sub=led-string-lights';
+                return;
+            }
+            if (query.includes('outdoor light')) {
+                window.location.href = 'listing.html?cat=lighting&sub=outdoor-lighting';
+                return;
+            }
+
+            // --- 节日装饰类（Holiday）细分单品 ---
+            if (query.includes('tree') || query.includes('christmas tree') || query.includes('snow tree') || query.includes('pe tree')) {
+                window.location.href = 'listing.html?cat=holiday&sub=christmas-trees';
+                return;
+            }
+            if (query.includes('flower') || query.includes('poinsettia')) {
+                window.location.href = 'listing.html?cat=holiday&sub=christmas-flowers';
+                return;
+            }
+            if (query.includes('skirt')) {
+                window.location.href = 'listing.html?cat=holiday&sub=tree-skirts';
+                return;
+            }
+            if (query.includes('bag') || query.includes('storage')) {
+                window.location.href = 'listing.html?cat=holiday&sub=storage-bags';
+                return;
+            }
+            if (query.includes('garland') || query.includes('tinsel')) {
+                window.location.href = 'listing.html?cat=holiday&sub=tinsel-garland';
+                return;
+            }
+            if (query.includes('halloween')) {
+                window.location.href = 'listing.html?cat=holiday&sub=halloween-decor';
+                return;
+            }
+            if (query.includes('thanksgiving') || query.includes('fall')) {
+                window.location.href = 'listing.html?cat=holiday&sub=thanksgiving-decor';
+                return;
+            }
+
+            // --- 原材料类（Material）细分单品 ---
+            if (query.includes('pe tip') || query.includes('tree branch') || query.includes('pe branch')) {
+                window.location.href = 'listing.html?cat=material&sub=pe-tips';
+                return;
+            }
+            if (query.includes('pvc film') || query.includes('pvc roll')) {
+                window.location.href = 'listing.html?cat=material&sub=pvc-film';
+                return;
+            }
+            if (query.includes('needle') || query.includes('pine needle')) {
+                window.location.href = 'listing.html?cat=material&sub=pine-needle';
+                return;
+            }
+            if (query.includes('stand') || query.includes('metal base')) {
+                window.location.href = 'listing.html?cat=material&sub=metal-stands';
+                return;
+            }
+
+            // 2. 【泛词兜底逻辑】如果买家只输入了大的行业词，则退一步跳转到大类 category 页面
+            if (query.includes('christmas') || query.includes('holiday') || query.includes('decor') || query.includes('season')) {
+                window.location.href = 'category.html?cat=holiday'; 
+            } 
+            else if (query.includes('light') || query.includes('lamp')) {
+                window.location.href = 'category.html?cat=lighting'; 
+            } 
+            else if (query.includes('material') || query.includes('raw') || query.includes('pvc') || query.includes('pe')) {
+                window.location.href = 'category.html?cat=material'; 
+            } 
+            else {
+                // 3. 【无匹配兜底】完全没有命中的模糊词，直接留在首页并平滑滚动到产品预览区
+                window.location.href = '#products'; 
+            }
+        }
+    </script>
+</body>
+</html>

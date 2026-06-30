@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | BAILUX Global Sourcing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0f172a;       
+            --accent-color: #b45309;        
+            --text-color: #1e293b;          
+            --text-muted: #64748b;          
+            --bg-light: #f8fafc;            
+            --white: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { color: var(--text-color); background: var(--white); padding-top: 40px; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        
+        .back-home { display: inline-flex; align-items: center; gap: 8px; color: var(--text-muted); font-weight: 600; font-size: 0.9rem; text-decoration: none; margin-bottom: 30px; transition: all 0.2s; }
+        .back-home:hover { color: var(--accent-color); transform: translateX(-3px); }
+
+        .header-zone { text-align: center; margin-bottom: 50px; }
+        .header-zone h1 { font-size: 2.5rem; color: var(--primary-color); font-weight: 800; margin-bottom: 10px; }
+        .header-zone p { color: var(--text-muted); font-size: 1rem; }
+        .underline { width: 50px; height: 3px; background-color: var(--accent-color); margin: 15px auto 0; border-radius: 2px; }
+
+        .faq-group { margin-bottom: 40px; }
+        .category-title { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 6px; }
+        
+        .faq-item { background: var(--bg-light); border: 1px solid var(--border-color); border-radius: 6px; margin-bottom: 15px; padding: 20px; }
+        .faq-question { font-size: 1.05rem; font-weight: 700; color: var(--primary-color); margin-bottom: 8px; display: flex; align-items: flex-start; gap: 10px; }
+        .faq-question i { color: var(--accent-color); margin-top: 4px; font-size: 0.9rem; }
+        .faq-answer { font-size: 0.95rem; color: #475569; line-height: 1.6; padding-left: 22px; }
+
+        footer { text-align: center; margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 返回首页 -->
+        <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+
+        <div class="header-zone">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common inquiries regarding our products, customization, and sourcing services.</p>
+            <div class="underline"></div>
+        </div>
+
+        <!-- 类别 1: 产品与定制 -->
+        <div class="faq-group">
+            <div class="category-title">Products & Customization</div>
+            
+            <div class="faq-item">
+                <div class="faq-question"><i class="fa-solid fa-circle-question"></i> What are your primary product categories?</div>
+                <div class="faq-answer">We specialize in three main pillars: Premium Home & Architectural Lighting (including modern fan lights, chandeliers, and table lamps), High-End Holiday Decorations (such as PE/PVC artificial Christmas trees, wreaths, and garlands), and Seasonal Production Raw Materials.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"><i class="fa-solid fa-circle-question"></i> Do you support OEM/ODM and custom branding?</div>
+                <div class="faq-answer">Yes, absolutely. As a dedicated B2B sourcing partner, we fully support custom specifications, material modifications, tailored packaging, and private labeling to align with your brand's unique market positioning.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"><i class="fa-solid fa-circle-question"></i> What is your Minimum Order Quantity (MOQ)?</div>
+                <div class="faq-answer">To support emerging brands and market testing strategies, we offer flexible low-MOQ parameters for small-scale wholesale. Specific MOQs vary by product category and customization requirements. Please contact us with your details for a tailored quote.</div>
+            </div>
+        </div>
+
+        <!-- 类别 2: 供应链与物流 -->
+        <div class="faq-group">
+            <div class="category-title">Supply Chain & Logistics</div>
+            
+            <div class="faq-item">
+                <div class="faq-question"><i class="fa-solid fa-circle-question"></i> How do you guarantee product quality?</div>
+                <div class="faq-answer">Quality is our baseline. We operate strict pre-shipment inspection protocols. Our team conducts rigorous supplier evaluations, material testing, and on-site visual/functional quality control checks before any container leaves the factory clusters.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"><i class="fa-solid fa-circle-question"></i> What logistics services do you provide?</div>
+                <div class="faq-answer">We handle seamless end-to-end global supply chain integration. This includes factory-direct price negotiation, continuous production monitoring, complex customs clearance documentation, and reliable global freight forwarding/shipping coordination.</div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 BAILUX Global Sourcing. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

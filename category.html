@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAILUX | Product Catalogue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* --- 完美复刻截图的轻奢高冷画册色调 --- */
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #b45309;
+            --text-color: #111827;
+            --text-muted: #6b7280;
+            --bg-light: #f9fafb;
+            --white: #ffffff;
+            --border-color: #e5e7eb;
+            --footer-bg: #0f172a;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+        body { color: var(--text-color); background: var(--white); padding-top: 65px; -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+
+        /* 统一标准头部导航栏 */
+        header { position: fixed; top: 0; left: 0; width: 100%; background: var(--white); border-bottom: 1px solid var(--border-color); z-index: 1000; height: 65px; display: flex; align-items: center; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); letter-spacing: 1.5px; }
+        .back-home { font-weight: 700; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; transition: var(--transition); }
+        .back-home:hover { color: var(--accent-color); }
+
+        /* 极简细体面包屑 */
+        .breadcrumb { background: transparent; padding: 20px 0 10px 0; font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.02em; }
+        .breadcrumb .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        .breadcrumb a { transition: var(--transition); }
+        .breadcrumb a:hover { color: var(--accent-color); }
+        .breadcrumb span { font-weight: 700; color: var(--primary-color); }
+
+        /* 大版面双列响应式跨度布局 */
+        .main-layout { max-width: 1400px; margin: 15px auto 60px auto; padding: 0 40px; display: flex; gap: 50px; }
+        
+        /* 左侧极简过滤器栏样式 */
+        .sidebar-filter { flex: 0 0 240px; }
+        .filter-title { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 25px; color: var(--primary-color); display: flex; align-items: center; gap: 8px; }
+
+        .filter-section { margin-bottom: 25px; }
+        .filter-section-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--primary-color); padding-bottom: 8px; margin-bottom: 15px; }
+        .filter-section-header h4 { font-size: 0.95rem; font-weight: 700; color: var(--primary-color); letter-spacing: 0.02em; }
+        .filter-section-header .toggle-line { width: 12px; height: 2px; background: var(--primary-color); position: relative; }
+
+        .filter-option { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; font-size: 0.9rem; color: var(--text-color); cursor: pointer; user-select: none; }
+        .filter-option input { appearance: none; -webkit-appearance: none; width: 16px; height: 16px; border: 1px solid #94a3b8; border-radius: 2px; outline: none; background: white; position: relative; cursor: pointer; transition: var(--transition); }
+        .filter-option input:checked { background: var(--primary-color); border-color: var(--primary-color); }
+        .filter-option input:checked::after { content: "✓"; position: absolute; color: white; font-size: 11px; font-weight: bold; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+        /* 右侧主货架展示区 */
+        .content-zone { flex: 1; min-width: 0; }
+        .catalog-header-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; min-height: 50px; }
+        .category-main-title { font-size: 2.5rem; font-weight: 500; color: var(--primary-color); letter-spacing: -0.02em; line-height: 1.1; }
+        .sort-dropdown-trigger { font-size: 0.85rem; font-weight: 700; color: var(--primary-color); cursor: pointer; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 5px; }
+
+        /* 商品网格流排版 - 固定 3 列 */
+        .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px 24px; }
+        .grid-product-card { border: none; background: transparent; display: flex; flex-direction: column; transition: var(--transition); cursor: pointer; position: relative; }
+        .grid-product-img { height: 320px; background: var(--bg-light); display: flex; align-items: center; justify-content: center; color: #94a3b8; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; position: relative; overflow: hidden; border: 1px solid #f3f4f6; transition: var(--transition); }
+        .badge-new-tag { position: absolute; top: 15px; left: 15px; background: #000000; color: #ffffff; padding: 3px 9px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; border-radius: 1px; z-index: 10; }
+        
+        .grid-product-info { padding: 15px 0 0 0; text-align: left; display: flex; flex-direction: column; gap: 6px; }
+        .grid-product-title { font-size: 0.95rem; font-weight: 500; color: var(--primary-color); line-height: 1.4; margin: 0; min-height: 40px; }
+        .grid-product-price { font-size: 0.95rem; font-weight: 700; color: var(--primary-color); margin-bottom: 5px; }
+        .grid-inquiry-btn { width: 100%; padding: 12px; background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 2px; cursor: pointer; transition: var(--transition); margin-top: 8px; }
+        .grid-inquiry-btn:hover { background: var(--primary-color); color: var(--white); }
+
+        /* ⚡ 核心新增：询盘双通道按钮布局与极简风格 */
+        .inquiry-actions-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .inquiry-action-btn {
+            flex: 1;
+            padding: 10px 5px;
+            background: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        .inquiry-action-btn:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        
+        /* 分页器样式区 */
+        .pagination-area { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 60px; }
+        .page-btn { min-width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color); background: var(--white); font-size: 0.85rem; font-weight: 600; color: var(--primary-color); cursor: pointer; transition: var(--transition); border-radius: 2px; }
+        .page-btn:hover { border-color: var(--primary-color); }
+        .page-btn.active { background: var(--primary-color); color: var(--white); border-color: var(--primary-color); }
+        .page-btn:disabled { color: #cbd5e1; border-color: var(--border-color); cursor: not-allowed; }
+
+        @media (max-width: 1100px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 768px) {
+            .main-layout { flex-direction: column; gap: 30px; padding: 0 20px; }
+            .sidebar-filter { flex: none; width: 100%; }
+            .products-grid { grid-template-columns: 1fr; }
+        }
+        footer { background: var(--footer-bg); color: #64748b; text-align: center; padding: 25px; font-size: 0.8rem; border-top: 1px solid #1e293b; margin-top: 80px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">BAILUX</a>
+            <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> / <span id="layer-parent">Catalog</span> / <span id="layer-current">Loading...</span>
+        </div>
+    </div>
+
+    <div class="main-layout">
+        <aside class="sidebar-filter">
+            <div class="filter-title"><i class="fa-solid fa-sliders" style="font-size:0.8rem;"></i> Filter By:</div>
+            <div class="filter-section">
+                <div class="filter-section-header">
+                    <h4>Type</h4>
+                    <div class="toggle-line"></div>
+                </div>
+                <div id="filter-checkbox-group"></div>
+            </div>
+        </aside>
+
+        <main class="content-zone">
+            <div class="catalog-header-meta">
+                <div>
+                    <h1 class="category-main-title" id="page-main-title">Category</h1>
+                </div>
+                <div class="sort-dropdown-trigger">Sort By: Recommended <i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+            
+            <div class="products-grid" id="products-grid-container"></div>
+            
+            <div class="pagination-area" id="pagination-container"></div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BAILUX Global Sourcing. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+    // 1. 核心数据库（已为您所有产品添加了专属的 "filterType" 标记，完美对应 filters 数组）
+    const database = {
+        holiday: {
+            title: "Holiday Decor",
+            filters: ["Christmas Tree", "Halloween Decor", "Garlands & Wreaths", "Ornaments"],
+            products: [
+                { title: "PE & PVC Luxury Mixed Christmas Tree", img: "HOLIDAY PRODUCT 1", filterType: "Christmas Tree" },
+                { title: "Pre-lit Warm White LED Snowy Tree", img: "HOLIDAY PRODUCT 2", filterType: "Christmas Tree" },
+                { title: "Handmade Holiday Garland with Pinecones", img: "HOLIDAY PRODUCT 3", filterType: "Garlands & Wreaths" },
+                { title: "Flocked Alpine Spruce Christmas Tree", img: "HOLIDAY PRODUCT 4", filterType: "Christmas Tree" },
+                { title: "Luxury Red Berry Holiday Wreath", img: "HOLIDAY PRODUCT 5", filterType: "Garlands & Wreaths" },
+                { title: "Outdoor Waterproof Halloween Pumpkin Pack", img: "HOLIDAY PRODUCT 6", filterType: "Halloween Decor" },
+                { title: "Premium Velvet Embroidered Tree Skirt", img: "HOLIDAY PRODUCT 7", filterType: "Ornaments" },
+                { title: "Heavy Duty Tree Spliced Storage Bag", img: "HOLIDAY PRODUCT 8", filterType: "Ornaments" },
+                { title: "Commercial Grade Tinsel Garland (10m)", img: "HOLIDAY PRODUCT 9", filterType: "Garlands & Wreaths" },
+                { title: "Classic Nordmann Fir Artificial Tree", img: "HOLIDAY PRODUCT 10", filterType: "Christmas Tree" }
+            ]
+        },
+        lighting: {
+            title: "Lighting Products",
+            filters: ["Table Lamp", "Sconce", "Chandelier", "Pendant", "Fan Lamp"],
+            products: [
+                { title: "Premium Nordic Styled Fan Light", img: "LIGHTING PRODUCT 1", filterType: "Fan Lamp" },
+                { title: "Modern Luxury Crystal Chandelier", img: "LIGHTING PRODUCT 2", filterType: "Chandelier" },
+                { title: "Minimalist Dimmable Desk Lamp", img: "LIGHTING PRODUCT 3", filterType: "Table Lamp" },
+                { title: "Jillian Elegant Floor Lamp", img: "LIGHTING PRODUCT 4", filterType: "Table Lamp" },
+                { title: "Berkshire Floor Lamp with Marble Table", img: "LIGHTING PRODUCT 5", filterType: "Table Lamp" },
+                { title: "Skylar Tapered Brass Sconce Lamp", img: "LIGHTING PRODUCT 6", filterType: "Sconce" },
+                { title: "Modern Luxury Brass Linear Pendant", img: "LIGHTING PRODUCT 7", filterType: "Pendant" },
+                { title: "Waterproof Industrial Outdoor Wall Light", img: "LIGHTING PRODUCT 8", filterType: "Sconce" },
+                { title: "Romantic LED Decorative Fairy String Lights", img: "LIGHTING PRODUCT 9", filterType: "Pendant" },
+                { title: "Minimalist Matte Black Pendant Fixture", img: "LIGHTING PRODUCT 10", filterType: "Pendant" }
+            ]
+        },
+        material: {
+            title: "Raw Material Selection",
+            filters: ["PE Tree Tips", "PVC Film", "Metal Stands", "Sockets"],
+            products: [
+                { title: "High-Density Eco PE Christmas Tree Tips", img: "MATERIAL PRODUCT 1", filterType: "PE Tree Tips" },
+                { title: "Flame Retardant Custom Green PVC Film", img: "MATERIAL PRODUCT 2", filterType: "PVC Film" },
+                { title: "Reinforced Steel Base Metal Stand", img: "MATERIAL PRODUCT 3", filterType: "Metal Stands" },
+                { title: "High-Tensile Strength PVC Pine Needles", img: "MATERIAL PRODUCT 4", filterType: "PE Tree Tips" },
+                { title: "Premium Dark Green Polyester Thread", img: "MATERIAL PRODUCT 5", filterType: "PVC Film" },
+                { title: "Heavy Duty Iron Tree Center Axis Tube", img: "MATERIAL PRODUCT 6", filterType: "Metal Stands" },
+                { title: "Standard Multi-Socket Internal Electrical Wire", img: "MATERIAL PRODUCT 7", filterType: "Sockets" },
+                { title: "Anti-Rust Matte Coated Hardware Screws", img: "MATERIAL PRODUCT 8", filterType: "Metal Stands" },
+                { title: "Custom Embossed Metallic Texturing Film", img: "MATERIAL PRODUCT 9", filterType: "PVC Film" },
+                { title: "Eco-Friendly Flame Retardant Additives", img: "MATERIAL PRODUCT 10", filterType: "PVC Film" }
+            ]
+        }
+    };
+
+    let currentPage = 1;
+    const itemsPerPage = 9; // 单页严格展示 9 个卡片
+
+    // 获取当前链接参数属于哪个大类 (holiday / lighting / material)
+    function getPageData() {
+        const urlParams = new URLSearchParams(window.location.search);
+        let type = urlParams.get('type') || urlParams.get('cat');
+        let page = urlParams.get('page');
+        
+        let currentKey = 'holiday';
+        if (type && database[type]) {
+            currentKey = type;
+        } else if (page) {
+            let cleanPage = page.toLowerCase().replace("-", "").trim();
+            if (cleanPage.includes('holiday')) currentKey = 'holiday';
+            if (cleanPage.includes('lighting')) currentKey = 'lighting';
+            if (cleanPage.includes('material')) currentKey = 'material';
+        }
+        return database[currentKey];
+    }
+
+    // 获取当前被勾选的全部子品类数组
+    function getSelectedFilters() {
+        const checkedBoxes = document.querySelectorAll('#filter-checkbox-group input[type="checkbox"]:checked');
+        return Array.from(checkedBoxes).map(cb => cb.value);
+    }
+
+    // 获取经过筛选过滤后的商品列表
+    function getFilteredProducts() {
+        const data = getPageData();
+        const selectedFilters = getSelectedFilters();
+        
+        // 如果没有勾选任何筛选条件，默认返回该类目下的“全部商品”
+        if (selectedFilters.length === 0) {
+            return data.products;
+        }
+        
+        // 否则只留下 filterType 匹配勾选值的商品
+        return data.products.filter(prod => selectedFilters.includes(prod.filterType));
+    }
+
+    // 渲染分页器
+    function renderPagination(totalItems) {
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        const container = document.getElementById('pagination-container');
+        
+        if (totalPages <= 1) {
+            container.innerHTML = "";
+            return;
+        }
+
+        let html = `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})"><i class="fa-solid fa-chevron-left"></i></button>`;
+        
+        for (let i = 1; i <= totalPages; i++) {
+            html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+        }
+        
+        html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})"><i class="fa-solid fa-chevron-right"></i></button>`;
+        
+        container.innerHTML = html;
+    }
+
+    // 翻页操作
+    function changePage(pageNumber) {
+        currentPage = pageNumber;
+        renderProductsOnly();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // 纯粹渲染货架产品格（增加了自动筛选的数据拦截逻辑）
+    // 纯粹渲染货架产品格（已升级为：真实图片渲染 + 动态绑定产品名的 Email 和 WhatsApp 双入口）
+    function renderProductsOnly() {
+        const filteredProducts = getFilteredProducts(); 
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
+
+        let prodHtml = "";
+        
+        if (paginatedProducts.length === 0) {
+            prodHtml = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 50px 0;">No products found matching the criteria.</div>`;
+        } else {
+            paginatedProducts.forEach((prod, index) => {
+                const actualIndex = startIndex + index;
+
+                // 🌟 1. 自动化动态生成邮件链接（死死绑定当前商品 title）
+                const emailSubject = encodeURIComponent(`Inquiry about ${prod.title}`);
+                const emailBody = encodeURIComponent(`Dear Aileen,\n\nI am very interested in your product: "${prod.title}".\n\nPlease send me the quotation, MOQ, and technical catalog for this item.\n\nBest regards,`);
+                const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=${emailSubject}&body=${emailBody}`;
+
+                // 🌟 2. 自动化动态生成 WhatsApp 消息（死死绑定当前商品 title）
+                const whatsappText = encodeURIComponent(`Hi Aileen, I am interested in your product: "${prod.title}". Can I get more parameters and wholesale price?`);
+                const whatsappUrl = `https://wa.me/8618894695487?text=${whatsappText}`;
+
+                // 🌟 3. 动态拼接输出整张精美产品卡片
+                prodHtml += `
+                    <div class="grid-product-card">
+                        <!-- 点击图片区域跳转到产品详情页 -->
+                        <div class="grid-product-img" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(prod.title)}'">
+                            ${actualIndex === 0 ? '<div class="badge-new-tag">NEW</div>' : ''}
+                            <!-- 🚀 这里改成了 <img> 标签，完美读取你在 config 或是数据库里配好的真实图片路径 -->
+                            <img src="${prod.img}" alt="${prod.title}" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="grid-product-info">
+                            <h3 class="grid-product-title" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(prod.title)}'">${prod.title}</h3>
+                            
+                            <!-- 🚀 双通道询盘按钮容器 -->
+                            <div class="inquiry-actions-group">
+                                <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
+                                    <i class="fa-regular fa-envelope"></i> Email
+                                </button>
+                                <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+        
+        document.getElementById('products-grid-container').innerHTML = prodHtml;
+        renderPagination(filteredProducts.length); 
+    }
+
+    // 监听筛选框状态变化的函数
+    function handleFilterChange() {
+        currentPage = 1; // 每次重新筛选时，重置回到第 1 页
+        renderProductsOnly(); // 刷新货架内容
+    }
+
+    // 页面初始化总函数
+    function renderPage() {
+        const data = getPageData();
+
+        document.getElementById('layer-current').innerText = data.title;
+        document.getElementById('page-main-title').innerText = data.title;
+
+        const qtyText = document.getElementById('products-qty-text');
+        if(qtyText) qtyText.remove();
+
+        // 渲染左侧分类复选框（这里通过 value="${filter}" 将它的真实名字绑定上去）
+        let filterHtml = "";
+        data.filters.forEach((filter, index) => {
+            filterHtml += `
+                <label class="filter-option">
+                    <input type="checkbox" id="filter-${index}" value="${filter}">
+                    <span>${filter}</span>
+                </label>
+            `;
+        });
+        document.getElementById('filter-checkbox-group').innerHTML = filterHtml;
+
+        // ⚡ 核心新增：为刚刚渲染出来的每一个复选框绑定点击监听事件
+        const checkboxes = document.querySelectorAll('#filter-checkbox-group input[type="checkbox"]');
+        checkboxes.forEach(box => {
+            box.addEventListener('change', handleFilterChange);
+        });
+
+        // 首次加载初始化货架商品
+        renderProductsOnly();
+    }
+
+    window.onload = renderPage;
+</script>
+</body>
+</html>
