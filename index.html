@@ -685,16 +685,38 @@
             .search-container { width: 120px; }
             .logo { font-size: 1.1rem; letter-spacing: 0px; }
             
-            /* Hero 视觉区适配：缩减白框，防止占比过大 */
+            /* Hero 视觉区适配 */
             .hero { height: auto !important; padding: 30px 0; }
             .hero-content { padding: 20px 15px !important; text-align: center !important; max-width: 90% !important; }
             .hero h1 { font-size: 1.6rem; margin-bottom: 10px; }
             .hero p { font-size: 0.85rem; line-height: 1.4; margin-bottom: 15px; }
 
-            /* 产品目录适配：手机端用户习惯用手直接左右划，因此隐藏两边点不动的倒霉箭头 */
-            .slider-arrow { display: none !important; }
-            .carousel-track { padding-bottom: 15px; }
-            .carousel-main-zone .product-card { flex: 0 0 260px !important; } /* 稍微缩小卡片更精致 */
+            /* ============ 🛒 核心修改：激活手机端横向无缝手势滑动 ============ */
+            .carousel-container, 
+            .carousel-main-zone {
+                width: 100% !important;
+                overflow-x: auto !important;               /* 允许手机端左右手势滚动 */
+                overflow-y: hidden !important;
+                -webkit-overflow-scrolling: touch !important; /* 让滚动像刷小红书一样有弹性、丝滑 */
+            }
+
+            .carousel-track { 
+                display: flex !important;       
+                flex-wrap: nowrap !important;              /* 强制卡片并排，绝对不换行 */
+                gap: 15px !important;
+                width: max-content !important;             /* 轨道宽度随卡片无限延伸 */
+                padding-bottom: 15px; 
+            }
+
+            .carousel-main-zone .product-card { 
+                flex: 0 0 250px !important;                /* 每个卡片固定 250px 宽，露个边提示可滑动 */
+                width: 250px !important;
+            }
+
+            .slider-arrow { 
+                display: none !important;                  /* 彻底隐藏手机端点不动的箭头 */
+            }
+            /* ============================================================= */
 
             /* About Us 模块排版 */
             .about-preview-section { flex-direction: column; height: auto !important; }
@@ -704,6 +726,7 @@
             .about-discover-btn { margin: 0 auto; }
             .about-image-block { flex: 0 0 100%; height: 200px; }
 
+            /* 联系方式与页脚（100%完整保留，未做任何删减） */
             #contact button { flex: 0 0 100% !important; width: 100%; }
             .footer-grid { grid-template-columns: 1fr; gap: 25px; text-align: center; }
             .footer-column a, .contact-info-list { margin: 0 auto; }
