@@ -657,35 +657,54 @@
             .footer-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 768px) {
-            /* 1. 导航与搜索框适配 */
-            .nav-links { display: none; }
+            /* 导航与搜索框适配 */
+            .nav-links { 
+                display: none; 
+                flex-direction: column;
+                position: fixed;
+                top: 65px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                padding: 20px;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+                border-bottom: 1px solid var(--border-color);
+                height: auto;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            /* 当激活时显示菜单 */
+            .nav-links.active { display: flex; }
+            .nav-links li { width: 100%; height: auto; padding: 5px 0; }
+            .nav-links a { height: auto; width: 100%; }
+            .mega-menu { position: static; box-shadow: none; padding: 10px 0 0 15px; border: none; }
+            .nav-links li.has-mega-menu:hover .mega-menu { display: block; }
+            .mega-menu-container { grid-template-columns: 1fr; gap: 15px; padding: 0; }
+
             .menu-toggle { display: flex; }
-            .search-container { width: 130px; } /* 稍微收窄，防止挤压 Logo */
-            .logo { font-size: 1.2rem; letter-spacing: 0.5px; } /* 缩小手机端 Logo 字号 */
+            .search-container { width: 120px; }
+            .logo { font-size: 1.1rem; letter-spacing: 0px; }
             
-            /* 2. Hero 视觉区适配（解决背景图和文字框显示不全） */
-            .hero { height: auto !important; padding: 40px 0; }
-            .hero-content { padding: 30px 20px !important; text-align: center !important; }
-            .hero h1 { font-size: 1.8rem; }
-            .hero p { font-size: 0.85rem; }
+            /* Hero 视觉区适配：缩减白框，防止占比过大 */
+            .hero { height: auto !important; padding: 30px 0; }
+            .hero-content { padding: 20px 15px !important; text-align: center !important; max-width: 90% !important; }
+            .hero h1 { font-size: 1.6rem; margin-bottom: 10px; }
+            .hero p { font-size: 0.85rem; line-height: 1.4; margin-bottom: 15px; }
 
-            /* 3. About Us 模块完美重排（从左右分栏变成上下单列排列） */
+            /* 产品目录适配：手机端用户习惯用手直接左右划，因此隐藏两边点不动的倒霉箭头 */
+            .slider-arrow { display: none !important; }
+            .carousel-track { padding-bottom: 15px; }
+            .carousel-main-zone .product-card { flex: 0 0 260px !important; } /* 稍微缩小卡片更精致 */
+
+            /* About Us 模块排版 */
             .about-preview-section { flex-direction: column; height: auto !important; }
-            .about-text-block { flex: 0 0 100%; padding: 40px 25px; text-align: center; }
-            .about-text-block h2 { font-size: 26px; }
-            .about-text-block p { font-size: 14px; margin-bottom: 25px; }
+            .about-text-block { flex: 0 0 100%; padding: 35px 20px; text-align: center; }
+            .about-text-block h2 { font-size: 24px; }
+            .about-text-block p { font-size: 14px; }
             .about-discover-btn { margin: 0 auto; }
-            .about-image-block { flex: 0 0 100%; height: 250px; } /* 手机端图片放下面，高度固定 */
+            .about-image-block { flex: 0 0 100%; height: 200px; }
 
-            /* 4. About 详情弹窗自适应 */
-            #about-detailed-overlay { padding: 60px 20px 40px 20px; }
-            #about-detailed-overlay h1 { font-size: 28px !important; }
-            .about-close-btn { top: 15px; right: 20px; font-size: 28px; }
-
-            /* 5. 联系我们双通道按钮手机端自动变成上下两行 */
             #contact button { flex: 0 0 100% !important; width: 100%; }
-
-            /* 6. 页脚网格单列显示 */
             .footer-grid { grid-template-columns: 1fr; gap: 25px; text-align: center; }
             .footer-column a, .contact-info-list { margin: 0 auto; }
             .social-links { justify-content: center; }
@@ -1185,7 +1204,19 @@
     </footer>
 
     <script>
-        // 滑动预览控制器核心逻辑
+        // 1. 三道杠手机端菜单展开与关闭
+        const mobileMenuBtn = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                // 让三道杠变成有动态感的打叉效果（选做，增加大牌感）
+                mobileMenuBtn.classList.toggle('open');
+            });
+        }
+
+        // 2. 滑动预览控制器核心逻辑（PC端箭头保留，手机端用手划）
         const track = document.getElementById('carouselTrack');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
@@ -1199,135 +1230,51 @@
             });
         }
 
-        // ==========================================
-        // ✨ 新增：About Us 全屏覆盖层显隐控制器
-        // ==========================================
+        // About Us 全屏覆盖层显隐控制器
         function toggleAboutModal(show) {
             const overlay = document.getElementById('about-detailed-overlay');
             if (overlay) {
                 if (show) {
                     overlay.style.display = 'block';
-                    document.body.style.overflow = 'hidden'; // 打开时锁定底层网页滚动条
+                    document.body.style.overflow = 'hidden';
                 } else {
                     overlay.style.display = 'none';
-                    document.body.style.overflow = 'auto';  // 关闭时恢复底层网页滚动
+                    document.body.style.overflow = 'auto';
                 }
             }
         }
 
-        // ==========================================
-        // ✨ 新增：智能搜索框分类跳转逻辑
-        // ==========================================
-        // ==========================================
-        // ✨ 精准升级：智能搜索框直接跳转至 Listing 页面
-        // ==========================================
+        // 智能搜索框跳转逻辑
         function handleSearch() {
-            // 获取输入框文字，转为小写并去掉前后空格
             const query = document.getElementById('searchInput').value.toLowerCase().trim();
-            
             if (!query) {
                 alert('Please enter a product name to search.');
                 return;
             }
+            if (query.includes('floor lamp') || query.includes('floor light')) { window.location.href = 'listing.html?cat=lighting&sub=floor-lamps'; return; }
+            if (query.includes('table lamp') || query.includes('desk lamp') || query.includes('table light')) { window.location.href = 'listing.html?cat=lighting&sub=table-lamps'; return; }
+            if (query.includes('fan') || query.includes('ceiling fan')) { window.location.href = 'listing.html?cat=lighting&sub=fan-lights'; return; }
+            if (query.includes('chandelier')) { window.location.href = 'listing.html?cat=lighting&sub=chandeliers'; return; }
+            if (query.includes('pendant')) { window.location.href = 'listing.html?cat=lighting&sub=pendant-lights'; return; }
+            if (query.includes('sconce') || query.includes('wall light')) { window.location.href = 'listing.html?cat=lighting&sub=wall-lighting'; return; }
+            if (query.includes('string') || query.includes('fairy') || query.includes('led light')) { window.location.href = 'listing.html?cat=lighting&sub=led-string-lights'; return; }
+            if (query.includes('outdoor light')) { window.location.href = 'listing.html?cat=lighting&sub=outdoor-lighting'; return; }
+            if (query.includes('tree') || query.includes('christmas tree') || query.includes('snow tree') || query.includes('pe tree')) { window.location.href = 'listing.html?cat=holiday&sub=christmas-trees'; return; }
+            if (query.includes('flower') || query.includes('poinsettia')) { window.location.href = 'listing.html?cat=holiday&sub=christmas-flowers'; return; }
+            if (query.includes('skirt')) { window.location.href = 'listing.html?cat=holiday&sub=tree-skirts'; return; }
+            if (query.includes('bag') || query.includes('storage')) { window.location.href = 'listing.html?cat=holiday&sub=storage-bags'; return; }
+            if (query.includes('garland') || query.includes('tinsel')) { window.location.href = 'listing.html?cat=tinsel-garland'; return; }
+            if (query.includes('halloween')) { window.location.href = 'listing.html?cat=holiday&sub=halloween-decor'; return; }
+            if (query.includes('thanksgiving') || query.includes('fall')) { window.location.href = 'listing.html?cat=holiday&sub=thanksgiving-decor'; return; }
+            if (query.includes('pe tip') || query.includes('tree branch') || query.includes('pe branch')) { window.location.href = 'listing.html?cat=material&sub=pe-tips'; return; }
+            if (query.includes('pvc film') || query.includes('pvc roll')) { window.location.href = 'listing.html?cat=material&sub=pvc-film'; return; }
+            if (query.includes('needle') || query.includes('pine needle')) { window.location.href = 'listing.html?cat=material&sub=pine-needle'; return; }
+            if (query.includes('stand') || query.includes('metal base')) { window.location.href = 'listing.html?cat=material&sub=metal-stands'; return; }
 
-            // 1. 【核心逻辑】精准拦截高频单品关键词，直接跳转到具体的 listing.html 并带上 sub 参数
-            
-            // --- 灯饰类（Lighting）细分单品 ---
-            if (query.includes('floor lamp') || query.includes('floor light')) {
-                window.location.href = 'listing.html?cat=lighting&sub=floor-lamps';
-                return;
-            }
-            if (query.includes('table lamp') || query.includes('desk lamp') || query.includes('table light')) {
-                window.location.href = 'listing.html?cat=lighting&sub=table-lamps';
-                return;
-            }
-            if (query.includes('fan') || query.includes('ceiling fan')) {
-                window.location.href = 'listing.html?cat=lighting&sub=fan-lights';
-                return;
-            }
-            if (query.includes('chandelier')) {
-                window.location.href = 'listing.html?cat=lighting&sub=chandeliers';
-                return;
-            }
-            if (query.includes('pendant')) {
-                window.location.href = 'listing.html?cat=lighting&sub=pendant-lights';
-                return;
-            }
-            if (query.includes('sconce') || query.includes('wall light')) {
-                window.location.href = 'listing.html?cat=lighting&sub=wall-lighting';
-                return;
-            }
-            if (query.includes('string') || query.includes('fairy') || query.includes('led light')) {
-                window.location.href = 'listing.html?cat=lighting&sub=led-string-lights';
-                return;
-            }
-            if (query.includes('outdoor light')) {
-                window.location.href = 'listing.html?cat=lighting&sub=outdoor-lighting';
-                return;
-            }
-
-            // --- 节日装饰类（Holiday）细分单品 ---
-            if (query.includes('tree') || query.includes('christmas tree') || query.includes('snow tree') || query.includes('pe tree')) {
-                window.location.href = 'listing.html?cat=holiday&sub=christmas-trees';
-                return;
-            }
-            if (query.includes('flower') || query.includes('poinsettia')) {
-                window.location.href = 'listing.html?cat=holiday&sub=christmas-flowers';
-                return;
-            }
-            if (query.includes('skirt')) {
-                window.location.href = 'listing.html?cat=holiday&sub=tree-skirts';
-                return;
-            }
-            if (query.includes('bag') || query.includes('storage')) {
-                window.location.href = 'listing.html?cat=holiday&sub=storage-bags';
-                return;
-            }
-            if (query.includes('garland') || query.includes('tinsel')) {
-                window.location.href = 'listing.html?cat=holiday&sub=tinsel-garland';
-                return;
-            }
-            if (query.includes('halloween')) {
-                window.location.href = 'listing.html?cat=holiday&sub=halloween-decor';
-                return;
-            }
-            if (query.includes('thanksgiving') || query.includes('fall')) {
-                window.location.href = 'listing.html?cat=holiday&sub=thanksgiving-decor';
-                return;
-            }
-
-            // --- 原材料类（Material）细分单品 ---
-            if (query.includes('pe tip') || query.includes('tree branch') || query.includes('pe branch')) {
-                window.location.href = 'listing.html?cat=material&sub=pe-tips';
-                return;
-            }
-            if (query.includes('pvc film') || query.includes('pvc roll')) {
-                window.location.href = 'listing.html?cat=material&sub=pvc-film';
-                return;
-            }
-            if (query.includes('needle') || query.includes('pine needle')) {
-                window.location.href = 'listing.html?cat=material&sub=pine-needle';
-                return;
-            }
-            if (query.includes('stand') || query.includes('metal base')) {
-                window.location.href = 'listing.html?cat=material&sub=metal-stands';
-                return;
-            }
-
-            // 2. 【泛词兜底逻辑】如果买家只输入了大的行业词，则退一步跳转到大类 category 页面
-            if (query.includes('christmas') || query.includes('holiday') || query.includes('decor') || query.includes('season')) {
-                window.location.href = 'category.html?cat=holiday'; 
-            } 
-            else if (query.includes('light') || query.includes('lamp')) {
-                window.location.href = 'category.html?cat=lighting'; 
-            } 
-            else if (query.includes('material') || query.includes('raw') || query.includes('pvc') || query.includes('pe')) {
-                window.location.href = 'category.html?cat=material'; 
-            } 
-            else {
-                // 3. 【无匹配兜底】完全没有命中的模糊词，直接留在首页并平滑滚动到产品预览区
-                window.location.href = '#products'; 
-            }
+            if (query.includes('christmas') || query.includes('holiday') || query.includes('decor') || query.includes('season')) { window.location.href = 'category.html?cat=holiday'; } 
+            else if (query.includes('light') || query.includes('lamp')) { window.location.href = 'category.html?cat=lighting'; } 
+            else if (query.includes('material') || query.includes('raw') || query.includes('pvc') || query.includes('pe')) { window.location.href = 'category.html?cat=material'; } 
+            else { window.location.href = '#products'; }
         }
     </script>
 </body>
