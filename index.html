@@ -657,11 +657,38 @@
             .footer-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 768px) {
+            /* 1. 导航与搜索框适配 */
             .nav-links { display: none; }
             .menu-toggle { display: flex; }
-            .search-container { width: 150px; }
-            .hero h1 { font-size: 2.2rem; }
-            .footer-grid { grid-template-columns: 1fr; gap: 25px; }
+            .search-container { width: 130px; } /* 稍微收窄，防止挤压 Logo */
+            .logo { font-size: 1.2rem; letter-spacing: 0.5px; } /* 缩小手机端 Logo 字号 */
+            
+            /* 2. Hero 视觉区适配（解决背景图和文字框显示不全） */
+            .hero { height: auto !important; padding: 40px 0; }
+            .hero-content { padding: 30px 20px !important; text-align: center !important; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero p { font-size: 0.85rem; }
+
+            /* 3. About Us 模块完美重排（从左右分栏变成上下单列排列） */
+            .about-preview-section { flex-direction: column; height: auto !important; }
+            .about-text-block { flex: 0 0 100%; padding: 40px 25px; text-align: center; }
+            .about-text-block h2 { font-size: 26px; }
+            .about-text-block p { font-size: 14px; margin-bottom: 25px; }
+            .about-discover-btn { margin: 0 auto; }
+            .about-image-block { flex: 0 0 100%; height: 250px; } /* 手机端图片放下面，高度固定 */
+
+            /* 4. About 详情弹窗自适应 */
+            #about-detailed-overlay { padding: 60px 20px 40px 20px; }
+            #about-detailed-overlay h1 { font-size: 28px !important; }
+            .about-close-btn { top: 15px; right: 20px; font-size: 28px; }
+
+            /* 5. 联系我们双通道按钮手机端自动变成上下两行 */
+            #contact button { flex: 0 0 100% !important; width: 100%; }
+
+            /* 6. 页脚网格单列显示 */
+            .footer-grid { grid-template-columns: 1fr; gap: 25px; text-align: center; }
+            .footer-column a, .contact-info-list { margin: 0 auto; }
+            .social-links { justify-content: center; }
         }
         /* ==========================================
         ✨ 新增：About Us 首页版块与详情覆盖层样式
