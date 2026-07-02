@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAILUX | Product Catalogue</title>
+    <title>Aileen's Home Studio | Product Catalogue</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* --- 完美复刻截图的轻奢高冷画册色调 --- */
@@ -123,7 +123,7 @@
 
     <header>
         <div class="navbar">
-            <a href="index.html" class="logo">BAILUX</a>
+            <a href="index.html" class="logo">Aileen's Home Studio</a>
             <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
         </div>
     </header>
@@ -161,7 +161,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 BAILUX Global Sourcing. All Rights Reserved.</p>
+        <p>&copy; 2026 Aileen's Home Studio Global Sourcing. All Rights Reserved.</p>
     </footer>
 
     <script>
@@ -288,56 +288,81 @@
 
     // 纯粹渲染货架产品格（增加了自动筛选的数据拦截逻辑）
     // 纯粹渲染货架产品格（已升级为：真实图片渲染 + 动态绑定产品名的 Email 和 WhatsApp 双入口）
+    // ⚡ 【管道打通核心】渲染右侧货架产品的函数
     function renderProductsOnly() {
-        const filteredProducts = getFilteredProducts(); 
-        const startIndex = (currentPage - 1) * itemsPerPage;
-        const endIndex = startIndex + itemsPerPage;
-        const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
-
-        let prodHtml = "";
+        // 1. 获取网址的大类暗号（如 holiday）
+        const urlParams = new URLSearchParams(window.location.search);
+        const currentCat = urlParams.get('cat');
         
-        if (paginatedProducts.length === 0) {
-            prodHtml = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 50px 0;">No products found matching the criteria.</div>`;
-        } else {
-            paginatedProducts.forEach((prod, index) => {
-                const actualIndex = startIndex + index;
+        // 2. 获取用户在左侧勾选了哪些小分类
+        const checkedSubs = [];
+        const checkboxes = document.querySelectorAll('#filter-checkbox-group input[type="checkbox"]');
+        checkboxes.forEach(box => {
+            if (box.checked) {
+                checkedSubs.push(box.value.toLowerCase()); // 转换为小写匹配
+            }
+        });
 
-                // 🌟 1. 自动化动态生成邮件链接（死死绑定当前商品 title）
-                const emailSubject = encodeURIComponent(`Inquiry about ${prod.title}`);
-                const emailBody = encodeURIComponent(`Dear Aileen,\n\nI am very interested in your product: "${prod.title}".\n\nPlease send me the quotation, MOQ, and technical catalog for this item.\n\nBest regards,`);
-                const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=${emailSubject}&body=${emailBody}`;
+        // 3. 从你的 detailsDatabase 中动态筛选产品
+        let filteredProducts = [];
+        if (typeof detailsDatabase !== 'undefined') {
+            for (const productName in detailsDatabase) {
+                const product = detailsDatabase[productName];
+                
+                // 首先必须属于当前大类（如 holiday）
+                if (product.category === currentCat) {
+                    // 如果左侧没勾选任何框，默认显示该大类下的全部产品
+                    // 如果勾选了，则产品的小类（subcategory）必须在勾选列表里
+                    if (checkedSubs.length === 0 || checkedSubs.includes(product.subcategory.toLowerCase())) {
+                        filteredProducts.push({
+                            name: productName,
+                            ...product
+                        });
+                    }
+                }
+            }
+        }
 
-                // 🌟 2. 自动化动态生成 WhatsApp 消息（死死绑定当前商品 title）
-                const whatsappText = encodeURIComponent(`Hi Aileen, I am interested in your product: "${prod.title}". Can I get more parameters and wholesale price?`);
-                const whatsappUrl = `https://wa.me/8618894695487?text=${whatsappText}`;
+        // 4. 分页逻辑切片
+        const startIndex = (currentPage - 1) * productsPerPage;
+        const endIndex = startIndex + productsPerPage;
+        const pageProducts = filteredProducts.slice(startIndex, endIndex);
 
-                // 🌟 3. 动态拼接输出整张精美产品卡片
-                prodHtml += `
-                    <div class="grid-product-card">
-                        <!-- 点击图片区域跳转到产品详情页 -->
-                        <div class="grid-product-img" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(prod.title)}'">
-                            ${actualIndex === 0 ? '<div class="badge-new-tag">NEW</div>' : ''}
-                            <!-- 🚀 这里改成了 <img> 标签，完美读取你在 config 或是数据库里配好的真实图片路径 -->
-                            <img src="${prod.img}" alt="${prod.title}" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="grid-product-info">
-                            <h3 class="grid-product-title" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(prod.title)}'">${prod.title}</h3>
-                            
-                            <!-- 🚀 双通道询盘按钮容器 -->
-                            <div class="inquiry-actions-group">
-                                <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
-                                    <i class="fa-regular fa-envelope"></i> Email
-                                </button>
-                                <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
-                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                                </button>
-                            </div>
+        // 5. 动态生成 HTML 画在货架上
+        let prodHtml = "";
+        pageProducts.forEach(product => {
+            const mainImage = product.images && product.images[0] ? product.images[0] : '';
+            const itemCode = product.code || '';
+            const detailUrl = `product-detail.html?item=${encodeURIComponent(product.name)}`;
+            
+            const mailtoUrl = `mailto:aileen@dongguansenor.com?subject=Inquiry for ${encodeURIComponent(product.name.toUpperCase())}&body=Hi Aileen,%0D%0A%0D%0AI saw your ${encodeURIComponent(product.name.toUpperCase())} (${itemCode}) on your website. Please send me the wholesale catalog and price list.%0D%0A%0D%0ABest regards.`;
+            const whatsappUrl = `https://wa.me/8618577587934?text=Hi%20Aileen,%20I%20am%20interested%20in%20your%20product:%20"${encodeURIComponent(product.name.toUpperCase())}"%20(${itemCode}).`;
+
+            prodHtml += `
+                <div class="product-card">
+                    <div class="product-img-box" onclick="window.location.href='${detailUrl}'" style="cursor:pointer;">
+                        <img src="${mainImage}" alt="${product.name}">
+                    </div>
+                    <div class="product-info-box">
+                        <h4 class="product-title" onclick="window.location.href='${detailUrl}'" style="cursor:pointer;">${product.name.toUpperCase()}</h4>
+                        <p class="product-sku">${itemCode}</p>
+                        <div class="card-btn-group">
+                            <button class="card-btn btn-email" onclick="window.location.href='${mailtoUrl}'">
+                                <i class="fa-regular fa-envelope"></i> Email
+                            </button>
+                            <button class="card-btn btn-whatsapp" onclick="window.open('${whatsappUrl}', '_blank')">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            </button>
                         </div>
                     </div>
-                `;
-            });
+                </div>
+            `;
+        });
+
+        if (prodHtml === "") {
+            prodHtml = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 50px 0;">New products are coming soon...</div>`;
         }
-        
+
         document.getElementById('products-grid-container').innerHTML = prodHtml;
         renderPagination(filteredProducts.length); 
     }

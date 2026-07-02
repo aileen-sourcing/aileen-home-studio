@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAILUX | Product Showcase</title>
+    <title>Aileen's Home Studio | Product Showcase</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="products-data.js"></script>
     <style>
@@ -97,7 +97,7 @@
 
     <header>
         <div class="navbar">
-            <a href="index.html" class="logo">BAILUX</a>
+            <a href="index.html" class="logo">Aileen's Home Studio</a>
             <a href="javascript:history.back();" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back</a>
         </div>
     </header>
@@ -116,67 +116,65 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 BAILUX Global Sourcing. All Rights Reserved.</p>
+        <p>&copy; 2026 Aileen's Home Studio Global Sourcing. All Rights Reserved.</p>
     </footer>
 
     <script>
         function renderListingPage() {
+            // 1. 自动从网址链接里抓取大类(cat)和小类(sub)的暗号
             const urlParams = new URLSearchParams(window.location.search);
-            const catParam = urlParams.get('cat') || ''; // 大类暗号：如 holiday, lighting
-            const subParam = urlParams.get('sub') || ''; // 小类暗号：如 pe-tips, christmas
+            const currentCat = urlParams.get('cat');
+            const currentSub = urlParams.get('sub');
 
-            // 动态修改页面的主标题和描述
-            let pageTitle = "Product Showcase";
-            let pageDesc = "Premium wholesale sourcing with strict export standards.";
-
-            if (catParam === 'holiday') { pageTitle = "Holiday Decoration"; pageDesc = "Premium wholesale PE, PVC, and mixed needle holiday trees, garlands, and wreaths."; }
-            if (catParam === 'lighting') { pageTitle = "Home Lighting Solutions"; pageDesc = "High-end luxury and minimalist lamps for modern hospitality and residential projects."; }
-            if (catParam === 'material') { pageTitle = "Factory Raw Materials"; pageDesc = "Strict quality export standards materials for international manufacturers."; }
-
-            document.getElementById('listing-main-title').innerText = pageTitle;
-            document.getElementById('listing-main-desc').innerText = pageDesc;
+            // 2. 动态更新页面的面包屑和主标题
+            if (currentSub) {
+                // 把小类名字（如 pe-tips 换成 PE-TIPS）变成大写作为标题
+                document.getElementById('layer-current').innerText = currentSub.toUpperCase();
+                document.getElementById('page-main-title').innerText = currentSub.toUpperCase();
+            }
 
             let gridHtml = "";
 
-            // 🌟 核心自动化修改：不再读取原先写死的数据，而是直接扫描我们的全局大账本 detailsDatabase！
-            for (let productName in detailsDatabase) {
-                const product = detailsDatabase[productName];
+            // 🌟 【管道打通核心】：自动循环你 products-data.js 里的 detailsDatabase 数据库
+            if (typeof detailsDatabase !== 'undefined') {
+                for (const productName in detailsDatabase) {
+                    const product = detailsDatabase[productName];
 
-                // 🔍 自动化筛查：只要这个产品的 subcategory 小类标签跟网址对上了，或者大类标签对上了，就让它出列！
-                if (product.subcategory === subParam || (!subParam && product.category === catParam)) {
-                    
-                    // 自动抓取大账本里的第一张真实图片
-                    const firstImg = product.images && product.images.length > 0 ? product.images[0] : "https://via.placeholder.com/500x500/f8fafc/0f172a?text=No+Image";
-                    
-                    // 动态拼装买家点击时的跳转路由及询盘预填信息
-                    const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=${encodeURIComponent('Inquiry about ' + productName)}&body=${encodeURIComponent('Dear Aileen,\n\nI am interested in your product: ' + productName + ' (' + product.code + '). Please quote us.')}`;
-                    const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in: ' + productName + ' (' + product.code + ')')}`;
+                    // 🎯 自动化精准匹配：如果产品的 category 和 subcategory 与当前网址要的完全对上，就抓出来！
+                    if (product.category === currentCat && product.subcategory === currentSub) {
+                        const mainImage = product.images && product.images[0] ? product.images[0] : '';
+                        const itemCode = product.code || '';
+                        
+                        // 自动匹配你的联系询盘链接
+                        const mailtoUrl = `mailto:aileen@dongguansenor.com?subject=Inquiry for ${encodeURIComponent(productName.toUpperCase())}&body=Hi Aileen,%0D%0A%0D%0AI saw your ${encodeURIComponent(productName.toUpperCase())} (${itemCode}) on your website. Please send me the wholesale catalog and price list.%0D%0A%0D%0ABest regards.`;
+                        const whatsappUrl = `https://wa.me/8618577587934?text=Hi%20Aileen,%20I%20am%20interested%20in%20your%20product:%20"${encodeURIComponent(productName.toUpperCase())}"%20(${itemCode}).`;
 
-                    // 🛠️ 完美的继承原有布局，动态把产品吐到网页前端
-                    gridHtml += `
-                        <div class="product-card">
-                            <div class="product-img-box" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(productName)}'">
-                                <img src="${firstImg}" alt="${productName}" style="width: 100%; height: 100%; object-fit: cover;">
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-name" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(productName)}'">${productName.toUpperCase()}</h3>
-                                <div class="inquiry-actions-group">
-                                    <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
-                                        <i class="fa-regular fa-envelope"></i> Email
-                                    </button>
-                                    <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
-                                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                                    </button>
+                        // 动态生成卡片，拼接到货架上
+                        gridHtml += `
+                            <div class="product-card">
+                                <div class="product-image" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(productName)}'" style="cursor:pointer;">
+                                    <img src="${mainImage}" alt="${productName}" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(productName)}'">${productName.toUpperCase()}</h3>
+                                    <div class="inquiry-actions-group">
+                                        <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
+                                            <i class="fa-regular fa-envelope"></i> Email
+                                        </button>
+                                        <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
+                                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    `;
+                        `;
+                    }
                 }
             }
 
-            // 如果该分类下暂时一个测品都没有，自动显示温馨提示
+            // 如果该分类下暂时一个产品都没有，自动显示温馨提示
             if (gridHtml === "") {
-                gridHtml = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 50px 0;">New products are coming soon...</div>`;
+                gridHtml = `<div style=\"grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 50px 0;\">New products are coming soon...</div>`;
             }
 
             document.getElementById('listing-grid-container').innerHTML = gridHtml;

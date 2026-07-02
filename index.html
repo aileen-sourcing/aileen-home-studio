@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aileen's Home Studio | Global Trading</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="products-data.js"></script>
     <style>
         /* --- 全局样式与升级版轻奢商务色调 --- */
         :root {
@@ -1243,6 +1244,23 @@
 
         // 2. 滑动预览控制器核心逻辑（PC端箭头保留，手机端用手划）
         const track = document.getElementById('carouselTrack');
+        // 🌟 【新增：安全打通途径】自动读取 products-data.js 并在不破坏结构的情况下填入产品
+        if (track && typeof globalProducts !== 'undefined') {
+        track.innerHTML = ''; // 运行前清空旧轨道防冲突
+        globalProducts.forEach(product => {
+            const card = document.createElement('div');
+            card.className = 'product-card';
+            card.innerHTML = `
+                <img src="${product.image}" alt="${product.title}" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">${product.title}</h3>
+                    <p class="product-meta">${product.description}</p>
+                    <a href="${product.detailUrl}" class="inquiry-btn">View Details</a>
+                </div>
+            `;
+            track.appendChild(card);
+        });
+    }
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
         
