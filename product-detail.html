@@ -375,136 +375,140 @@
     </div>
 
     <script>
-    // 🌟 核心修复：点击小图切换大图的“指挥官”函数
-    function switchImage(thumbnailElement, newSrc) {
-        // 1. 找到最上面的大图框，把它的图片路径(src)换成点击的新图片
-        document.getElementById('mainProductImg').src = newSrc;
+        // ==========================================
+        // 🔄 核心骨架：从数据库动态加载产品详情
+        // ==========================================
+        window.onload = function() {
+            // 1. 获取 URL 中的产品标识 (如: product-detail.html?item=premium%20pe%20lighted%20christmas%20tree)
+            const urlParams = new URLSearchParams(window.location.search);
+            const productKey = urlParams.get('item') ? urlParams.get('item').toLowerCase().trim() : "";
+            
+            // 2. 从本地 products-data.js 的数据库里调取对应数据
+            const productInfo = detailsDatabase[productKey];
 
-        // 2. 剥离掉其他所有小图身上的“高亮红框”(active 样式)
-        const allThumbs = document.querySelectorAll('.thumb-item');
-        allThumbs.forEach(thumb => thumb.classList.remove('active'));
+            if (productInfo) {
+                // 渲染产品页面大标题
+                document.getElementById('productTitle').innerText = productKey.toUpperCase();
+                // 渲染产品编号
+                document.getElementById('productCode').innerText = productInfo.code;
 
-        // 3. 唯独给当前被点击的这个小图套上高亮红框
-        thumbnailElement.classList.add('active');
-    }
+                // 🌟 ✨ 【图片连通核心】：动态加载主图与多张缩略图
+                if (productInfo.images && productInfo.images.length > 0) {
+                    // 将数据库里的第一张图设置为默认显示的大图
+                    document.getElementById('mainProductImg').src = productInfo.images[0];
 
-    // 🌟 核心自动化渲染逻辑
-    window.addEventListener('DOMContentLoaded', () => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const productName = urlParams.get('item') || '';
-        const cleanName = decodeURIComponent(productName).trim();
-
-        if (cleanName) {
-            // 1. 修改产品大标题
-            document.getElementById('productTitle').innerText = cleanName;
-
-            // 2. 寻找匹配的数据库产品，找不到就用默认测试数据
-            const productData = detailsDatabase[cleanName.toLowerCase()];
-            const mainImageElement = document.getElementById('mainProductImg');
-            const thumbListContainer = document.getElementById('thumbList');
-
-            let imagesToDisplay = [];
-
-            // 3. 【高能测试机制】如果你还没录入真实图片，系统会自动为你捏出 6 张带数字的彩色测试图
-            if (productData && productData.images && productData.images.length > 0) {
-                imagesToDisplay = productData.images;
-            } else {
-                // 模拟自动生成 1 到 6 张高清测试图，让你能点得动下一张
-                for (let i = 1; i <= 6; i++) {
-                    imagesToDisplay.push(`https://via.placeholder.com/500x500/f8fafc/0f172a?text=Product+Image+${i}`);
+                    // 动态生成下方的小图切换轨道
+                    let thumbHtml = "";
+                    productInfo.images.forEach((imgUrl, index) => {
+                        // 第一张默认加上 active 类名（红框高亮）
+                        const activeClass = index === 0 ? "thumb-item active" : "thumb-item";
+                        thumbHtml += `
+                            <div class="${activeClass}" onclick="switchImage(this, '${imgUrl}')">
+                                <img src="${imgUrl}" alt="Thumbnail ${index + 1}">
+                            </div>
+                        `;
+                    });
+                    document.getElementById('thumbList').innerHTML = thumbHtml;
+                } else {
+                    // 如果数据库里没配图片，显示一个占位图
+                    document.getElementById('mainProductImg').src = "images/placeholder.jpg";
+                    document.getElementById('thumbList').innerHTML = "";
                 }
+
+                // 3. 动态渲染产品参数表格 (Specs Table)
+                let specsHtml = "";
+                if (productInfo.specs && productInfo.specs.length > 0) {
+                    productInfo.specs.forEach(spec => {
+                        specsHtml += `
+                            <tr>
+                                <td class="spec-label">${spec.label}</td>
+                                <td class="spec-value">${spec.value}</td>
+                            </tr>
+                        `;
+                    });
+                } else {
+                    specsHtml = `<tr><td colspan="2" style="text-align:center; color:var(--text-muted);">Custom specifications available upon request.</td></tr>`;
+                }
+                document.getElementById('specsTableBody').innerHTML = specsHtml;
+
+                // 4. 面包屑导航同步更新 (Home / Catalogue / 当前产品名)
+                const breadcrumbCurrent = document.getElementById('breadcrumb-current');
+                if (breadcrumbCurrent) {
+                    breadcrumbCurrent.innerText = productKey.toUpperCase();
+                }
+
+            } else {
+                // 💥 容错处理：如果数据库找不到该产品，贴心提示
+                document.getElementById('productTitle').innerText = "Product Not Found";
+                document.getElementById('productCode').innerText = "Item Code: Unknown";
+                document.getElementById('mainProductImg').src = "images/placeholder.jpg";
+                document.getElementById('thumbList').innerHTML = "";
+                document.getElementById('specsTableBody').innerHTML = `<tr><td colspan="2" style="text-align:center; color:red;">Please check if this product is registered in products-data.js.</td></tr>`;
             }
 
-            // 4. 🔒 核心控幅：使用 slice(0, 6) 强行拦截！只取前 6 张图，绝对不会超过 6 张
-            const finalImages = imagesToDisplay.slice(0, 6);
+            // ==========================================
+            // 📞 点击询盘按钮自动提取信息（邮件/WhatsApp）
+            // ==========================================
+            const emailBtn = document.getElementById('inquiryEmailBtn');
+            const whatsappBtn = document.getElementById('inquiryWhatsappBtn');
 
-            // 5. 自动在网页上吐出小图卡片，并绑定点击事件
-            let thumbsHtml = "";
-            
-            // 默认把第 1 张图塞给大图框
-            if (finalImages.length > 0) {
-                mainImageElement.src = finalImages[0];
+            const currentItemCode = productInfo ? productInfo.code : "Unknown Code";
+            const cleanName = productKey ? productKey.toUpperCase() : "Inquiry Product";
+
+            if (emailBtn) {
+                emailBtn.onclick = function() {
+                    const mailtoUrl = `mailto:aileen@yourdomain.com?subject=Inquiry about ${encodeURIComponent(cleanName)} (${currentItemCode})&body=Hi Aileen,%0D%0A%0D%0AI am interested in your product: ${encodeURIComponent(cleanName)} (${currentItemCode}).%0D%0APlease send me more details, including a wholesale catalog and MOQ options.%0D%0A%0D%0AThanks!`;
+                    window.location.href = mailtoUrl;
+                };
             }
 
-            finalImages.forEach((imgSrc, index) => {
-                // 第一张图默认加 active 红框
-                const activeClass = (index === 0) ? 'active' : '';
-                
-                // 🌟 关键点：每个小图都绑定了 switchImage(this, '图片地址')，现在绝对能点动了！
-                thumbsHtml += `
-                    <div class="thumb-item ${activeClass}" onclick="switchImage(this, '${imgSrc}')">
-                        <img src="${imgSrc}" alt="Thumbnail ${index+1}">
-                    </div>
-                `;
-            });
-            
-            // 把拼装好的小图塞进网页轨道
-            thumbListContainer.innerHTML = thumbsHtml;
-
-            // 6. 动态替换下方的参数表格（保持不变）
-            const specsData = productData ? productData.specs : [
-                { label: "Material", value: "Premium Sourcing Standard Materials" },
-                { label: "Customization", value: "OEM & ODM Available" },
-                { label: "Certification", value: "Global Standard Compliant" },
-                { label: "Available Sizes", value: "All sizes are customizable" }
-            ];
-            
-            // 填装编码
-            document.getElementById('productCode').innerText = productData ? productData.code : "Item Code: BAILUX-PROD";
-            
-            for (let i = 0; i < 4; i++) {
-                document.getElementById(`spec-label-${i+1}`).innerText = specsData[i].label;
-                document.getElementById(`spec-value-${i+1}`).innerText = specsData[i].value;
+            if (whatsappBtn) {
+                whatsappBtn.onclick = function() {
+                    const whatsappText = encodeURIComponent(`Hi Aileen, I am browsing your website and interested in your product: "${cleanName}" (${currentItemCode}). Can we discuss the custom options and wholesale catalog via WhatsApp?`);
+                    window.open(`https://wa.me/8618894695487?text=${whatsappText}`, '_blank');
+                };
             }
 
-            // 🚀 7. 双通道询盘按钮动态绑定（自动抓取当前产品的最终名字与编码）
-            const currentItemCode = productData ? productData.code : "Item Code: BAILUX-PROD";
+            // ==========================================
+            // ✨ 高档全自动鼠标悬停放大镜逻辑
+            // ==========================================
+            const zoomContainer = document.getElementById('zoomContainer');
+            const zoomImage = document.getElementById('mainProductImg');
 
-            // 🟢 A. 绑定 Email 按钮
-            document.getElementById('inquiryEmailBtn').onclick = function() {
-                const emailSubject = encodeURIComponent(`Inquiry about ${cleanName} (${currentItemCode})`);
-                const emailBody = encodeURIComponent(`Dear Aileen,\n\nI am viewing your product "${cleanName}" (${currentItemCode}) on the website.\n\nPlease reply with the wholesale prices, packing details, and minimum order quantity (MOQ).\n\nBest regards,`);
-                window.location.href = `mailto:aileen2208@foxmail.com?subject=${emailSubject}&body=${emailBody}`;
-            };
+            if (zoomContainer && zoomImage) {
+                // 1. 鼠标移入：图片放大 2 倍
+                zoomContainer.addEventListener('mouseenter', () => {
+                    zoomImage.style.transform = 'scale(2)';
+                });
 
-            // 🟢 B. 绑定 WhatsApp 按钮
-            document.getElementById('inquiryWhatsAppBtn').onclick = function() {
-                const whatsappText = encodeURIComponent(`Hi Aileen, I am interested in your product: "${cleanName}" (${currentItemCode}). Can we discuss the custom options and wholesale catalog via WhatsApp?`);
-                window.open(`https://wa.me/8618894695487?text=${whatsappText}`, '_blank');
-            };
+                // 2. 鼠标移动：计算坐标，让放大中心点跟着鼠标走
+                zoomContainer.addEventListener('mousemove', (e) => {
+                    const rect = zoomContainer.getBoundingClientRect();
+                    const x = ((e.clientX - rect.left) / rect.width) * 100;
+                    const y = ((e.clientY - rect.top) / rect.height) * 100;
+                    zoomImage.style.transformOrigin = `${x}% ${y}%`;
+                });
+
+                // 3. 鼠标移出：恢复原样
+                zoomContainer.addEventListener('mouseleave', () => {
+                    zoomImage.style.transform = 'scale(1)';
+                    zoomImage.style.transformOrigin = 'center center';
+                });
+            }
+        };
+
+        // ==========================================
+        // 📸 缩略图点击切换函数（必须放在 window.onload 外面，供全局调用）
+        // ==========================================
+        function switchImage(element, imageUrl) {
+            // 1. 切换大图显示的路径
+            document.getElementById('mainProductImg').src = imageUrl;
+            
+            // 2. 移除其他所有缩略图的高亮边框，只给当前点击的图加上
+            const thumbs = document.querySelectorAll('.thumb-item');
+            thumbs.forEach(t => t.classList.remove('active'));
+            element.classList.add('active');
         }
-    });
-    // ==========================================
-    // ✨ 新增：高档全自动鼠标悬停放大镜逻辑
-    // ==========================================
-    const zoomContainer = document.getElementById('zoomContainer');
-    const zoomImage = document.getElementById('mainProductImg');
-
-    if (zoomContainer && zoomImage) {
-        // 1. 鼠标移入：图片放大 2 倍 (想放大更多可以改成 scale(2.5))
-        zoomContainer.addEventListener('mouseenter', () => {
-            zoomImage.style.transform = 'scale(2)';
-        });
-
-        // 2. 鼠标移动：计算坐标，让放大中心点跟着鼠标走，从而看清材质细节
-        zoomContainer.addEventListener('mousemove', (e) => {
-            // 获取大图框在屏幕上的绝对位置
-            const rect = zoomContainer.getBoundingClientRect();
-            
-            // 计算鼠标相对于大图框左上角的百分比坐标
-            const x = ((e.clientX - rect.left) / rect.width) * 100;
-            const y = ((e.clientY - rect.top) / rect.height) * 100;
-
-            // 动态改变放大的原点位置
-            zoomImage.style.transformOrigin = `${x}% ${y}%`;
-        });
-
-        // 3. 鼠标移出：图片恢复原状，中心点归位
-        zoomContainer.addEventListener('mouseleave', () => {
-            zoomImage.style.transform = 'scale(1)';
-            zoomImage.style.transformOrigin = 'center center';
-        });
-    }
-</script>
+    </script>
 </body>
 </html>

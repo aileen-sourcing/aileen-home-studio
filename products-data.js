@@ -6,13 +6,15 @@ const detailsDatabase = {
     // ==========================================
     
     "premium pe lighted christmas tree": {
-        category: "holiday",
-        subcategory: "pe-tips", // 👈 对应主页 PE 树分类
-        code: "Item Code: 26062801",
+        category: "holiday decor",
+        subcategory: "christmas", 
+        code: "Item Code: ct26062801",
         images: [
-            "images/products/holiday-decor/christmas/26062801/1.jpg",
-            "images/products/holiday-decor/christmas/26062801/2.jpg",
-            "images/products/holiday-decor/christmas/26062801/3.jpg"
+            "images/products/holiday-decor/christmas/ct26062801/1.jpg",
+            "images/products/holiday-decor/christmas/ct26062801/2.jpg",
+            "images/products/holiday-decor/christmas/ct26062801/3.jpg",
+            "images/products/holiday-decor/christmas/ct26062801/4.jpg",
+            "images/products/holiday-decor/christmas/ct26062801/5.jpg"
         ], 
         specs: [
             { label: "Material", value: "100% PE Premium Tips (Fireproofing)" },
