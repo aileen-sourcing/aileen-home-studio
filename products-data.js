@@ -1,4 +1,4 @@
-// 📦 BAILUX 全量独立站产品参数数据库（全网暗号完美修复版）
+// 📦 BAILUX 全量独立站产品参数数据库（铁脚完美恢复版）
 const detailsDatabase = {
 
     // ==========================================
@@ -6,7 +6,7 @@ const detailsDatabase = {
     // ==========================================
     
     "premium pe lighted christmas tree": {
-        category: "holiday-decor", // 🌟 保持你的 holiday-decor 不动
+        category: "holiday-decor", 
         subcategory: "christmas", 
         code: "Item Code: ct26062801",
         images: [
@@ -136,11 +136,13 @@ const detailsDatabase = {
         ]
     },
 
+    // 🌟 重新校准并恢复你的铁底座数据：
     "reinforced christmas tree metal stand": {
         category: "material", 
-        subcategory: "metal-stand", // 🌟 修复：去掉了末尾多余的 s，暗号重新对齐！
+        subcategory: "metal-stand", // 🌟 纠正：去掉了末尾错误的 s，保持跟网页端单数一致
         code: "Item Code: MS-20260629",
         images: [
+            // 🌟 按照你的要求：这里干净利落地只保留你留下的前两张图路径
             "images/products/raw-material/metal-stand/ms20260629/ms20260629-1.jpg",
             "images/products/raw-material/metal-stand/ms20260629/ms20260629-2.jpg"
         ],
