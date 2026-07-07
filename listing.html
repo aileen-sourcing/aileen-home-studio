@@ -148,30 +148,45 @@
 
     <script>
         // ==========================================
-        // 🔄 智能骨架：动态渲染产品列表页（全链路打通）
+        // 🌟 核心：解析网址上的分类参数 (?cat=...&sub=...)
+        // ==========================================
+        function getUrlParams() {
+            const params = {};
+            const search = window.location.search.substring(1);
+            if (!search) return params;
+            const pairs = search.split("&");
+            for (let i = 0; i < pairs.split; i++) {
+                const pair = pairs[i].split("=");
+                if (pair.length === 2) {
+                    params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+                }
+            }
+            const urlParams = new URLSearchParams(window.location.search);
+            return {
+                cat: urlParams.get('cat'),
+                sub: urlParams.get('sub')
+            };
+        }
+
+        // ==========================================
+        // 🌟 核心：完美动态渲染列表页（铁脚、圣诞树全兼容版）
         // ==========================================
         function renderListingPage() {
-            const urlParams = new URLSearchParams(window.location.search);
-            
-            // 1. 获取大类和子类参数，并统一转成小写、去除空格
-            let catItem = urlParams.get('cat') ? urlParams.get('cat').toLowerCase().trim() : "";
-            let subItem = urlParams.get('sub') ? urlParams.get('sub').toLowerCase().trim() : "";
+            const params = getUrlParams();
+            const catItem = params.cat;
+            const subItem = params.sub;
 
-            // 🌟 智能兼容处理：如果导航栏传来的是 "holiday"，自动兼容你数据库里的 "holiday decor"
-            if (catItem === "holiday") {
-                catItem = "holiday decor";
-            }
+            // 1. 格式化页面大标题名称
+            let rawTitle = subItem ? subItem : (catItem ? catItem : "Products");
+            let formattedTitle = rawTitle.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
-            // 2. 动态格式化页面大标题（把 christmas-decor 变成 Christmas Decor）
-            const formattedTitle = subItem
-                .split('-')
-                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                .join(' ');
-            
+            // 🌟 修正：精准对齐 HTML 里的真实大标题 ID，显示正确类目名
             const pageTitleEl = document.getElementById('listing-main-title');
             if (pageTitleEl) {
                 pageTitleEl.innerText = formattedTitle || "Products";
             }
+            
+            // 🌟 修正：动态让面包屑导航的当前位置显示正确类目
             const breadcrumbSubEl = document.getElementById('br-current');
             if (breadcrumbSubEl) {
                 breadcrumbSubEl.innerText = formattedTitle || "Products";
@@ -179,53 +194,59 @@
 
             let gridHtml = "";
 
-            // 3. 遍历数据库，进行双重精准筛选
-            for (const productName in detailsDatabase) {
-                if (detailsDatabase.hasOwnProperty(productName)) {
-                    const product = detailsDatabase[productName];
+            // 2. 开始扫描你的 products-data.js 数据库
+            for (let key in detailsDatabase) {
+                if (detailsDatabase.hasOwnProperty(key)) {
+                    const product = detailsDatabase[key];
+
+                    // 🌟 【黄金过滤网 1】：大类匹配。允许网址上的 holiday 自动认出数据库里的 holiday-decor
+                    const isCatMatch = product.category === catItem || (catItem === 'holiday' && product.category === 'holiday-decor');
                     
-                    const dbCategory = product.category ? product.category.toLowerCase().trim() : "";
-                    const dbSubcategory = product.subcategory ? product.subcategory.toLowerCase().trim() : "";
+                    // 如果大类根本对不上，直接跳过，看下一个！（这一步彻底救活了被卡死的“铁脚底座”）
+                    if (!isCatMatch) {
+                        continue;
+                    }
 
-                    // 核心匹配：大类和子类必须完全吻合
-                    if (dbCategory === catItem && dbSubcategory === subItem) {
-                        
-                        // 🌟 ✨【图片修复核心】：因为数据库里是 images 数组，所以取第一张图 images[0] 作为封面
-                        const coverImage = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder.jpg";
-                        const currentCode = product.code || "Item Code: N/A";
+                    // 🌟 【黄金过滤网 2】：子类匹配。如果网址要求了子类，但产品不符合，跳过
+                    if (subItem && product.subcategory !== subItem) {
+                        continue;
+                    }
 
-                        // 询盘链接
-                        const mailtoUrl = `mailto:aileen@yourdomain.com?subject=Inquiry: ${encodeURIComponent(productName.toUpperCase())}&body=Hi Aileen, I want to know more about ${encodeURIComponent(productName.toUpperCase())} (${currentCode}).`;
-                        const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in: ' + productName.toUpperCase() + ' (' + currentCode + ')')}`;
+                    // 3. 匹配成功，开始剥离图片并组装高级卡片 HTML
+                    let firstImg = "images/placeholder.jpg";
+                    if (product.images && product.images.length > 0) {
+                        firstImg = product.images[0];
+                    }
 
-                        gridHtml += `
-                            <div class="product-card">
-                                <div class="product-image-wrapper" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(productName)}'">
-                                    <img src="${coverImage}" alt="${productName}" class="product-image">
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-name" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(productName)}'">
-                                        ${productName.toUpperCase()}
-                                    </h3>
-                                    <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">${currentCode}</p>
-                                    <div class="inquiry-actions-group">
-                                        <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
-                                            <i class="fa-regular fa-envelope"></i> Email
-                                        </button>
-                                        <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
-                                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                                        </button>
-                                    </div>
+                    const productPageUrl = `product-detail.html?id=${encodeURIComponent(key)}`;
+                    const whatsappUrl = `https://wa.me/8613412431782?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key + ' (' + product.code + '). Please provide a wholesale quote.')}`;
+                    const mailtoUrl = `mailto:aileen@senortrading.com?subject=${encodeURIComponent('Wholesale Inquiry for ' + formattedTitle)}&body=${encodeURIComponent('Product: ' + key + '\n' + product.code + '\n\nPlease send us the latest pricing and MOQ.')}`;
+
+                    gridHtml += `
+                        <div class="product-card" onclick="window.location.href='${productPageUrl}'">
+                            <div class="product-image-wrapper">
+                                <img src="${firstImg}" alt="${key}" class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta-code">${product.code}</div>
+                                <h3 class="product-title-text">${key.toUpperCase()}</h3>
+                                <div class="inquiry-actions-group" onclick="event.stopPropagation();">
+                                    <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
+                                        <i class="fa-regular fa-envelope"></i> Email
+                                    </button>
+                                    <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
+                                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                    </button>
                                 </div>
                             </div>
-                        `;
-                    }
+                        </div>
+                    `;
                 }
             }
 
-            // 4. 如果没找到产品，给予友好提示
+            // 4. 如果整个数据库搜完真的没货，给予 Coming Soon 提示
             if (gridHtml === "") {
-                gridHtml = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 50px 0;">
+                gridHtml = `<div style=\"grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 50px 0;\">
                                 <p>New products for "${formattedTitle}" are coming soon...</p>
                                 <p style="font-size:0.85rem; margin-top:10px;">(Please check if category is "${catItem}" and subcategory is "${subItem}" in products-data.js)</p>
                             </div>`;
