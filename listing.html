@@ -141,8 +141,14 @@
                 .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                 .join(' ');
             
-            document.getElementById('pageTitle').innerText = formattedTitle || "Products";
-            document.getElementById('breadcrumb-sub').innerText = formattedTitle || "Products";
+            const pageTitleEl = document.getElementById('pageTitle');
+            if (pageTitleEl) {
+                pageTitleEl.innerText = formattedTitle || "Products";
+            }
+            const breadcrumbSubEl = document.getElementById('breadcrumb-sub');
+            if (breadcrumbSubEl) {
+                breadcrumbSubEl.innerText = formattedTitle || "Products";
+            }
 
             let gridHtml = "";
 
