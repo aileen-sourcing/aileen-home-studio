@@ -353,6 +353,7 @@
             
             <div class="tab-content" id="productDescContainer">
                 <table class="spec-table">
+                    <tbody id="specsTableBody">
                     <tr>
                         <td id="spec-label-1">Material</td>
                         <td id="spec-value-1">Loading...</td>
@@ -369,6 +370,7 @@
                         <td id="spec-label-4">Application</td>
                         <td id="spec-value-4">Loading...</td>
                     </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -450,7 +452,7 @@
             // 📞 点击询盘按钮自动提取信息（邮件/WhatsApp）
             // ==========================================
             const emailBtn = document.getElementById('inquiryEmailBtn');
-            const whatsappBtn = document.getElementById('inquiryWhatsappBtn');
+            const whatsappBtn = document.getElementById('inquiryWhatsAppBtn');
 
             const currentItemCode = productInfo ? productInfo.code : "Unknown Code";
             const cleanName = productKey ? productKey.toUpperCase() : "Inquiry Product";
