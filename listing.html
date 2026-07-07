@@ -90,7 +90,35 @@
             .products-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 15px; }
             .listing-container { padding: 0 20px; }
         }
-        footer { background: var(--footer-bg); color: #64748b; text-align: center; padding: 25px; font-size: 0.8rem; border-top: 1px solid #1e293b; margin-top: 80px; }
+        footer { 
+            background: var(--footer-bg); 
+            color: #64748b; 
+            text-align: center; 
+            padding: 25px; 
+            font-size: 0.8rem; 
+            border-top: 1px solid #1e293b; 
+            margin-top: 80px; 
+        }
+
+        .product-image-wrapper {
+            height: 280px !important;   /* 高度死死卡在 280px */
+            background: var(--bg-light);
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+        .product-image {
+            max-width: 90% !important;  /* 左右留出呼吸感 */
+            max-height: 90% !important; /* 上下不顶头 */
+            width: auto !important;     /* 保持 1:1 比例不拉伸 */
+            height: auto !important;    /* 保持 1:1 比例不拉伸 */
+            object-fit: contain !important;
+        }
+
     </style>
 </head>
 <body>
