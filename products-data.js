@@ -1,4 +1,4 @@
-// 📦 BAILUX 全量独立站产品参数数据库（铁脚完美恢复版）
+// 📦 BAILUX 全量独立站产品参数数据库（全网暗号完美对齐版）
 const detailsDatabase = {
 
     // ==========================================
@@ -6,7 +6,7 @@ const detailsDatabase = {
     // ==========================================
     
     "premium pe lighted christmas tree": {
-        category: "holiday-decor", 
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct26062801",
         images: [
@@ -136,15 +136,15 @@ const detailsDatabase = {
         ]
     },
 
-    // 🌟 重新校准并恢复你的铁底座数据：
+    // 🌟 剔除了前两个错误分类的死架子数据，只留下这一个完美对齐的全新铁架子！
     "reinforced christmas tree metal stand": {
-        category: "material", 
-        subcategory: "metal-stand", // 🌟 纠正：去掉了末尾错误的 s，保持跟网页端单数一致
+        category: "material", // 🌟 完美对齐原材料大类暗号 material
+        subcategory: "metal-stand", // 🌟 完美对齐列表和首页按钮 subcategory
         code: "Item Code: MS-20260629",
         images: [
-            // 🌟 按照你的要求：这里干净利落地只保留你留下的前两张图路径
             "images/products/raw-material/metal-stand/ms20260629/ms20260629-1.jpg",
-            "images/products/raw-material/metal-stand/ms20260629/ms20260629-2.jpg"
+            "images/products/raw-material/metal-stand/ms20260629/ms20260629-2.jpg",
+            "images/products/raw-material/metal-stand/ms20260629/ms20260629-4.jpg" 
         ],
         specs: [
             { label: "Material", value: "Heavy-Duty Reinforced Iron / Steel" },
