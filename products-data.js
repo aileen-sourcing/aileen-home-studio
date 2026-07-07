@@ -6,7 +6,7 @@ const detailsDatabase = {
     // ==========================================
     
     "premium pe lighted christmas tree": {
-        category: "holiday decor",
+        category: "holiday-decor",
         subcategory: "christmas", 
         code: "Item Code: ct26062801",
         images: [
@@ -24,15 +24,20 @@ const detailsDatabase = {
         ]
     },
 
-    "luxury flocked snowy christmas tree": {
-        category: "holiday",
-        subcategory: "flocked", // 👈 对应主页植绒雪花树分类
-        code: "Item Code: 26062802",
-        images: ["images/products/holiday-decor/christmas/26062802/1.jpg"], 
+    "christmas tree stand": {
+        category: "raw-material",
+        subcategory: "metal-stand", 
+        code: "Item Code: ms20260629",
+        images: [
+            "images/products/raw-material/metal-stand/ms20260629/ms20260629-1.jpg",
+            "images/products/raw-material/metal-stand/ms20260629/ms20260629-2.jpg",
+            "images/products/raw-material/metal-stand/ms20260629/ms20260629-4.jpg"
+
+        ], 
         specs: [
-            { label: "Material", value: "Premium PVC + Heavy Flocked Snow" },
-            { label: "Height", value: "6 FT / 7.5 FT / 9 FT" },
-            { label: "Features", value: "Eco-friendly, No Shedding Snow Effect" },
+            { label: "Material", value: "Metal Material" },
+            { label: "Height", value: "For different sizes using: 6 FT / 7.5 FT / 9 FT..." },
+            { label: "Features", value: "Steady" },
             { label: "Application", value: "Home Luxury Christmas Decor" }
         ]
     },
@@ -152,10 +157,15 @@ const detailsDatabase = {
     },
 
     "heavy duty foldable metal stands base": {
-        category: "material",
-        subcategory: "metal-stands", // 👈 对应主页铁底座分类
-        code: "Item Code: RM-ST01",
-        images: ["images/products/materials/stands/RM-ST01/1.jpg"], 
+        category: "raw-material",
+        subcategory: "metal-stand", // 👈 对应主页铁底座分类
+        code: "Item Code: ms20260629",
+        images: [
+            "images/products/raw-material/metal-stand/ms20260629/ms20260629-1.jpg",
+            "images/products/raw-material/metal-stand/ms20260629/ms20260629-2.jpg",
+            "images/products/raw-material/metal-stand/ms20260629/ms20260629-4.jpg"
+
+        ], 
         specs: [
             { label: "Material", value: "Reinforced Iron Cast Carbon Steel" },
             { label: "Tube Diameter", value: "19mm / 22mm / 32mm Available" },
