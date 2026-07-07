@@ -259,3 +259,81 @@
     </script>
 </body>
 </html>
+
+<script>
+(function() {
+    // 强制重写渲染逻辑，不破坏原有结构，只在页面加载完后做二次兜底
+    window.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const catItem = urlParams.get('cat');
+        const subItem = urlParams.get('sub');
+        
+        if (!catItem) return;
+
+        // 智能兼容你的所有大类与子类命名
+        const targetCat = catItem === 'holiday' ? 'holiday-decor' : catItem;
+        const targetSub = subItem ? subItem.replace(/s$/, '') : ''; // 自动消灭末尾可能出现的 s
+
+        let gridHtml = "";
+
+        // 强制去 detailsDatabase 数据库里把你的产品捞出来
+        if (typeof detailsDatabase !== 'undefined') {
+            for (let key in detailsDatabase) {
+                const product = detailsDatabase[key];
+                const prodCat = product.category;
+                const prodSub = product.subcategory ? product.subcategory.replace(/s$/, '') : '';
+
+                // 如果大类和子类对上了，直接强制组装卡片
+                if (prodCat === targetCat && (!subItem || prodSub === targetSub)) {
+                    let firstImg = "images/placeholder.jpg";
+                    if (product.images && product.images.length > 0) {
+                        firstImg = product.images[0];
+                    }
+
+                    const productPageUrl = `product-detail.html?id=${encodeURIComponent(key)}`;
+                    const whatsappUrl = `https://wa.me/8613412431782?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key)}`;
+                    const mailtoUrl = `mailto:aileen@senortrading.com?subject=Inquiry&body=Product: ${key}`;
+
+                    gridHtml += `
+                        <div class="product-card" onclick="window.location.href='${productPageUrl}'">
+                            <div class="product-image-wrapper">
+                                <img src="${firstImg}" alt="${key}" class="product-image">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta-code">${product.code || ''}</div>
+                                <h3 class="product-title-text">${key.toUpperCase()}</h3>
+                                <div class="inquiry-actions-group" onclick="event.stopPropagation();">
+                                    <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
+                                        <i class="fa-regular fa-envelope"></i> Email
+                                    </button>
+                                    <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
+                                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+        }
+
+        // 如果强制捞货捞到了，直接把 "Coming soon" 冲掉替换成你做好的精美卡片！
+        if (gridHtml !== "") {
+            const container = document.getElementById('listing-grid-container');
+            if (container) {
+                container.innerHTML = gridHtml;
+            }
+            
+            // 顺便把头部的大标题改漂亮
+            const pageTitleEl = document.getElementById('listing-main-title');
+            if (pageTitleEl && subItem) {
+                pageTitleEl.innerText = subItem.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+            }
+            const breadcrumbSubEl = document.getElementById('br-current');
+            if (breadcrumbSubEl && subItem) {
+                breadcrumbSubEl.innerText = subItem.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+            }
+        }
+    });
+})();
+</script>
