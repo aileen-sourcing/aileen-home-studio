@@ -165,247 +165,136 @@
     </footer>
 
     <script>
-    // 1. 核心数据库（已为您所有产品添加了专属的 "filterType" 标记，完美对应 filters 数组）
-    const database = {
-        holiday: {
-            title: "Holiday Decor",
-            filters: ["Christmas Tree", "Halloween Decor", "Garlands & Wreaths", "Ornaments"],
-            products: [
-                { title: "PE & PVC Luxury Mixed Christmas Tree", img: "HOLIDAY PRODUCT 1", filterType: "Christmas Tree" },
-                { title: "Pre-lit Warm White LED Snowy Tree", img: "HOLIDAY PRODUCT 2", filterType: "Christmas Tree" },
-                { title: "Handmade Holiday Garland with Pinecones", img: "HOLIDAY PRODUCT 3", filterType: "Garlands & Wreaths" },
-                { title: "Flocked Alpine Spruce Christmas Tree", img: "HOLIDAY PRODUCT 4", filterType: "Christmas Tree" },
-                { title: "Luxury Red Berry Holiday Wreath", img: "HOLIDAY PRODUCT 5", filterType: "Garlands & Wreaths" },
-                { title: "Outdoor Waterproof Halloween Pumpkin Pack", img: "HOLIDAY PRODUCT 6", filterType: "Halloween Decor" },
-                { title: "Premium Velvet Embroidered Tree Skirt", img: "HOLIDAY PRODUCT 7", filterType: "Ornaments" },
-                { title: "Heavy Duty Tree Spliced Storage Bag", img: "HOLIDAY PRODUCT 8", filterType: "Ornaments" },
-                { title: "Commercial Grade Tinsel Garland (10m)", img: "HOLIDAY PRODUCT 9", filterType: "Garlands & Wreaths" },
-                { title: "Classic Nordmann Fir Artificial Tree", img: "HOLIDAY PRODUCT 10", filterType: "Christmas Tree" }
-            ]
-        },
-        lighting: {
-            title: "Lighting Products",
-            filters: ["Table Lamp", "Sconce", "Chandelier", "Pendant", "Fan Lamp"],
-            products: [
-                { title: "Premium Nordic Styled Fan Light", img: "LIGHTING PRODUCT 1", filterType: "Fan Lamp" },
-                { title: "Modern Luxury Crystal Chandelier", img: "LIGHTING PRODUCT 2", filterType: "Chandelier" },
-                { title: "Minimalist Dimmable Desk Lamp", img: "LIGHTING PRODUCT 3", filterType: "Table Lamp" },
-                { title: "Jillian Elegant Floor Lamp", img: "LIGHTING PRODUCT 4", filterType: "Table Lamp" },
-                { title: "Berkshire Floor Lamp with Marble Table", img: "LIGHTING PRODUCT 5", filterType: "Table Lamp" },
-                { title: "Skylar Tapered Brass Sconce Lamp", img: "LIGHTING PRODUCT 6", filterType: "Sconce" },
-                { title: "Modern Luxury Brass Linear Pendant", img: "LIGHTING PRODUCT 7", filterType: "Pendant" },
-                { title: "Waterproof Industrial Outdoor Wall Light", img: "LIGHTING PRODUCT 8", filterType: "Sconce" },
-                { title: "Romantic LED Decorative Fairy String Lights", img: "LIGHTING PRODUCT 9", filterType: "Pendant" },
-                { title: "Minimalist Matte Black Pendant Fixture", img: "LIGHTING PRODUCT 10", filterType: "Pendant" }
-            ]
-        },
-        material: {
-            title: "Raw Material Selection",
-            filters: ["PE Tree Tips", "PVC Film", "Metal Stands", "Sockets"],
-            products: [
-                { title: "High-Density Eco PE Christmas Tree Tips", img: "MATERIAL PRODUCT 1", filterType: "PE Tree Tips" },
-                { title: "Flame Retardant Custom Green PVC Film", img: "MATERIAL PRODUCT 2", filterType: "PVC Film" },
-                { title: "Reinforced Steel Base Metal Stand", img: "MATERIAL PRODUCT 3", filterType: "Metal Stands" },
-                { title: "High-Tensile Strength PVC Pine Needles", img: "MATERIAL PRODUCT 4", filterType: "PE Tree Tips" },
-                { title: "Premium Dark Green Polyester Thread", img: "MATERIAL PRODUCT 5", filterType: "PVC Film" },
-                { title: "Heavy Duty Iron Tree Center Axis Tube", img: "MATERIAL PRODUCT 6", filterType: "Metal Stands" },
-                { title: "Standard Multi-Socket Internal Electrical Wire", img: "MATERIAL PRODUCT 7", filterType: "Sockets" },
-                { title: "Anti-Rust Matte Coated Hardware Screws", img: "MATERIAL PRODUCT 8", filterType: "Metal Stands" },
-                { title: "Custom Embossed Metallic Texturing Film", img: "MATERIAL PRODUCT 9", filterType: "PVC Film" },
-                { title: "Eco-Friendly Flame Retardant Additives", img: "MATERIAL PRODUCT 10", filterType: "PVC Film" }
-            ]
-        }
-    };
+        // ==========================================
+        // 🔄 智能骨架：动态渲染大类总画册页
+        // ==========================================
+        let currentPage = 1;
+        const productsPerPage = 9;
 
-    let currentPage = 1;
-    const itemsPerPage = 9; // 单页严格展示 9 个卡片
-
-    // 获取当前链接参数属于哪个大类 (holiday / lighting / material)
-    function getPageData() {
+        // 获取当前属于哪个大分类
         const urlParams = new URLSearchParams(window.location.search);
-        let type = urlParams.get('type') || urlParams.get('cat');
-        let page = urlParams.get('page');
-        
-        let currentKey = 'holiday';
-        if (type && database[type]) {
-            currentKey = type;
-        } else if (page) {
-            let cleanPage = page.toLowerCase().replace("-", "").trim();
-            if (cleanPage.includes('holiday')) currentKey = 'holiday';
-            if (cleanPage.includes('lighting')) currentKey = 'lighting';
-            if (cleanPage.includes('material')) currentKey = 'material';
-        }
-        return database[currentKey];
-    }
+        let currentCat = urlParams.get('cat') ? urlParams.get('cat').toLowerCase().trim() : "";
 
-    // 获取当前被勾选的全部子品类数组
-    function getSelectedFilters() {
-        const checkedBoxes = document.querySelectorAll('#filter-checkbox-group input[type="checkbox"]:checked');
-        return Array.from(checkedBoxes).map(cb => cb.value);
-    }
-
-    // 获取经过筛选过滤后的商品列表
-    function getFilteredProducts() {
-        const data = getPageData();
-        const selectedFilters = getSelectedFilters();
-        
-        // 如果没有勾选任何筛选条件，默认返回该类目下的“全部商品”
-        if (selectedFilters.length === 0) {
-            return data.products;
-        }
-        
-        // 否则只留下 filterType 匹配勾选值的商品
-        return data.products.filter(prod => selectedFilters.includes(prod.filterType));
-    }
-
-    // 渲染分页器
-    function renderPagination(totalItems) {
-        const totalPages = Math.ceil(totalItems / itemsPerPage);
-        const container = document.getElementById('pagination-container');
-        
-        if (totalPages <= 1) {
-            container.innerHTML = "";
-            return;
+        // 🌟 核心兼容：自动对齐 "holiday" 与 "holiday decor"
+        let dbSearchCat = currentCat;
+        if (currentCat === "holiday") {
+            dbSearchCat = "holiday decor";
         }
 
-        let html = `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})"><i class="fa-solid fa-chevron-left"></i></button>`;
-        
-        for (let i = 1; i <= totalPages; i++) {
-            html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
-        }
-        
-        html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})"><i class="fa-solid fa-chevron-right"></i></button>`;
-        
-        container.innerHTML = html;
-    }
-
-    // 翻页操作
-    function changePage(pageNumber) {
-        currentPage = pageNumber;
-        renderProductsOnly();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // 纯粹渲染货架产品格（增加了自动筛选的数据拦截逻辑）
-    // 纯粹渲染货架产品格（已升级为：真实图片渲染 + 动态绑定产品名的 Email 和 WhatsApp 双入口）
-    // ⚡ 【管道打通核心】渲染右侧货架产品的函数
-    function renderProductsOnly() {
-        // 1. 获取网址的大类暗号（如 holiday）
-        const urlParams = new URLSearchParams(window.location.search);
-        const currentCat = urlParams.get('cat');
-        
-        // 2. 获取用户在左侧勾选了哪些小分类
-        const checkedSubs = [];
-        const checkboxes = document.querySelectorAll('#filter-checkbox-group input[type="checkbox"]');
-        checkboxes.forEach(box => {
-            if (box.checked) {
-                checkedSubs.push(box.value.toLowerCase()); // 转换为小写匹配
+        // 根据大类配置页面左侧的过滤器标签和面包屑标题
+        function getPageData() {
+            if (currentCat === 'holiday' || currentCat === 'holiday decor') {
+                return { title: "Holiday Decor", filters: ["Christmas", "Christmas Decor", "Halloween", "Thanksgiving", "Easter"] };
+            } else if (currentCat === 'lighting') {
+                return { title: "Lighting Solutions", filters: ["LED Tree Lights", "Copper Wire Lights", "Festive Lighting"] };
+            } else if (currentCat === 'material') {
+                return { title: "Raw Materials", filters: ["PE Tips", "PVC Film", "Pine Needle", "Metal Stands"] };
             }
-        });
+            return { title: "Products Gallery", filters: [] };
+        }
 
-        // 3. 从你的 detailsDatabase 中动态筛选产品
-        let filteredProducts = [];
-        if (typeof detailsDatabase !== 'undefined') {
-            for (const productName in detailsDatabase) {
-                const product = detailsDatabase[productName];
-                
-                // 首先必须属于当前大类（如 holiday）
-                if (product.category === currentCat) {
-                    // 如果左侧没勾选任何框，默认显示该大类下的全部产品
-                    // 如果勾选了，则产品的小类（subcategory）必须在勾选列表里
-                    if (checkedSubs.length === 0 || checkedSubs.includes(product.subcategory.toLowerCase())) {
-                        filteredProducts.push({
-                            name: productName,
-                            ...product
-                        });
+        // 获取当前大类下被过滤出的所有商品
+        function getFilteredProducts() {
+            const activeFilters = Array.from(document.querySelectorAll('#filter-checkbox-group input[type="checkbox"]:checked'))
+                                       .map(cb => cb.value.toLowerCase().trim());
+
+            let result = [];
+
+            for (const name in detailsDatabase) {
+                if (detailsDatabase.hasOwnProperty(name)) {
+                    const p = detailsDatabase[name];
+                    const pCat = p.category ? p.category.toLowerCase().trim() : "";
+                    const pSub = p.subcategory ? p.subcategory.toLowerCase().trim() : "";
+
+                    // 1. 先匹配大分类
+                    if (pCat === dbSearchCat) {
+                        // 2. 如果勾选了左侧筛选框，再过滤子分类；没勾选则全量显示
+                        if (activeFilters.length === 0 || activeFilters.includes(pSub.replace('-', ' '))) {
+                            result.push({ name: name, ...p });
+                        }
                     }
                 }
             }
+            return result;
         }
 
-        // 4. 分页逻辑切片
-        const startIndex = (currentPage - 1) * productsPerPage;
-        const endIndex = startIndex + productsPerPage;
-        const pageProducts = filteredProducts.slice(startIndex, endIndex);
-
-        // 5. 动态生成 HTML 画在货架上
-        let prodHtml = "";
-        pageProducts.forEach(product => {
-            const mainImage = product.images && product.images[0] ? product.images[0] : '';
-            const itemCode = product.code || '';
-            const detailUrl = `product-detail.html?item=${encodeURIComponent(product.name)}`;
+        function renderProductsOnly() {
+            const filteredProducts = getFilteredProducts();
             
-            const mailtoUrl = `mailto:aileen@dongguansenor.com?subject=Inquiry for ${encodeURIComponent(product.name.toUpperCase())}&body=Hi Aileen,%0D%0A%0D%0AI saw your ${encodeURIComponent(product.name.toUpperCase())} (${itemCode}) on your website. Please send me the wholesale catalog and price list.%0D%0A%0D%0ABest regards.`;
-            const whatsappUrl = `https://wa.me/8618577587934?text=Hi%20Aileen,%20I%20am%20interested%20in%20your%20product:%20"${encodeURIComponent(product.name.toUpperCase())}"%20(${itemCode}).`;
+            // 分页计算
+            const startIndex = (currentPage - 1) * productsPerPage;
+            const endIndex = startIndex + productsPerPage;
+            const pageProducts = filteredProducts.slice(startIndex, endIndex);
 
-            prodHtml += `
-                <div class="product-card">
-                    <div class="product-img-box" onclick="window.location.href='${detailUrl}'" style="cursor:pointer;">
-                        <img src="${mainImage}" alt="${product.name}">
-                    </div>
-                    <div class="product-info-box">
-                        <h4 class="product-title" onclick="window.location.href='${detailUrl}'" style="cursor:pointer;">${product.name.toUpperCase()}</h4>
-                        <p class="product-sku">${itemCode}</p>
-                        <div class="card-btn-group">
-                            <button class="card-btn btn-email" onclick="window.location.href='${mailtoUrl}'">
-                                <i class="fa-regular fa-envelope"></i> Email
-                            </button>
-                            <button class="card-btn btn-whatsapp" onclick="window.open('${whatsappUrl}', '_blank')">
-                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                            </button>
+            let prodHtml = "";
+
+            pageProducts.forEach(product => {
+                // 🌟 ✨【图片修复】：取第一张图数组
+                const coverImg = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder.jpg";
+                const currentCode = product.code || "Item Code: N/A";
+
+                prodHtml += `
+                    <div class="product-card" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(product.name)}'">
+                        <img src="${coverImg}" alt="${product.name}" class="product-image">
+                        <div class="product-card-info">
+                            <h4 class="product-card-title">${product.name.toUpperCase()}</h4>
+                            <p class="product-card-sku">${currentCode}</p>
                         </div>
                     </div>
-                </div>
-            `;
-        });
+                `;
+            });
 
-        if (prodHtml === "") {
-            prodHtml = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 50px 0;">New products are coming soon...</div>`;
+            if (prodHtml === "") {
+                prodHtml = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 40px 0;">No products found in this selection.</div>`;
+            }
+
+            document.getElementById('products-grid-container').innerHTML = prodHtml;
+            renderPagination(filteredProducts.length);
         }
 
-        document.getElementById('products-grid-container').innerHTML = prodHtml;
-        renderPagination(filteredProducts.length); 
-    }
+        function renderPagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / productsPerPage);
+            let pagHtml = "";
 
-    // 监听筛选框状态变化的函数
-    function handleFilterChange() {
-        currentPage = 1; // 每次重新筛选时，重置回到第 1 页
-        renderProductsOnly(); // 刷新货架内容
-    }
+            if (totalPages > 1) {
+                for (let i = 1; i <= totalPages; i++) {
+                    pagHtml += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="goToPage(${i})">${i}</button>`;
+                }
+            }
+            document.getElementById('pagination-container').innerHTML = pagHtml;
+        }
 
-    // 页面初始化总函数
-    function renderPage() {
-        const data = getPageData();
+        function goToPage(page) {
+            currentPage = page;
+            renderProductsOnly();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
 
-        document.getElementById('layer-current').innerText = data.title;
-        document.getElementById('page-main-title').innerText = data.title;
+        function handleFilterChange() {
+            currentPage = 1;
+            renderProductsOnly();
+        }
 
-        const qtyText = document.getElementById('products-qty-text');
-        if(qtyText) qtyText.remove();
+        function renderPage() {
+            const data = getPageData();
+            document.getElementById('layer-current').innerText = data.title;
+            document.getElementById('page-main-title').innerText = data.title;
 
-        // 渲染左侧分类复选框（这里通过 value="${filter}" 将它的真实名字绑定上去）
-        let filterHtml = "";
-        data.filters.forEach((filter, index) => {
-            filterHtml += `
-                <label class="filter-option">
-                    <input type="checkbox" id="filter-${index}" value="${filter}">
-                    <span>${filter}</span>
-                </label>
-            `;
-        });
-        document.getElementById('filter-checkbox-group').innerHTML = filterHtml;
+            let filterHtml = "";
+            data.filters.forEach((filter, index) => {
+                filterHtml += `
+                    <label class="filter-option">
+                        <input type="checkbox" id="filter-${index}" value="${filter}" onchange="handleFilterChange()">
+                        <span>${filter}</span>
+                    </label>
+                `;
+            });
+            document.getElementById('filter-checkbox-group').innerHTML = filterHtml;
 
-        // ⚡ 核心新增：为刚刚渲染出来的每一个复选框绑定点击监听事件
-        const checkboxes = document.querySelectorAll('#filter-checkbox-group input[type="checkbox"]');
-        checkboxes.forEach(box => {
-            box.addEventListener('change', handleFilterChange);
-        });
+            renderProductsOnly();
+        }
 
-        // 首次加载初始化货架商品
-        renderProductsOnly();
-    }
-
-    window.onload = renderPage;
-</script>
+        window.onload = renderPage;
+    </script>
 </body>
 </html>
