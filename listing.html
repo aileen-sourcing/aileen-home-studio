@@ -101,7 +101,8 @@
         }
 
         .product-image-wrapper {
-            height: 280px !important;   /* 高度死死卡在 280px */
+            width: 100% !important;
+            aspect-ratio: 1 / 1 !important;
             background: var(--bg-light);
             display: flex !important;
             align-items: center !important;
@@ -112,11 +113,9 @@
             position: relative;
         }
         .product-image {
-            max-width: 90% !important;  /* 左右留出呼吸感 */
-            max-height: 90% !important; /* 上下不顶头 */
-            width: auto !important;     /* 保持 1:1 比例不拉伸 */
-            height: auto !important;    /* 保持 1:1 比例不拉伸 */
-            object-fit: contain !important;
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
         }
 
     </style>
@@ -169,11 +168,11 @@
                 .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                 .join(' ');
             
-            const pageTitleEl = document.getElementById('pageTitle');
+            const pageTitleEl = document.getElementById('listing-main-title');
             if (pageTitleEl) {
                 pageTitleEl.innerText = formattedTitle || "Products";
             }
-            const breadcrumbSubEl = document.getElementById('breadcrumb-sub');
+            const breadcrumbSubEl = document.getElementById('br-current');
             if (breadcrumbSubEl) {
                 breadcrumbSubEl.innerText = formattedTitle || "Products";
             }
