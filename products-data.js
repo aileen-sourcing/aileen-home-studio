@@ -139,7 +139,7 @@ const detailsDatabase = {
     // 🌟 剔除了前两个错误分类的死架子数据，只留下这一个完美对齐的全新铁架子！
     "reinforced christmas tree metal stand": {
         category: "material", // 🌟 完美对齐原材料大类暗号 material
-        subcategory: "metal-stand", // 🌟 完美对齐列表和首页按钮 subcategory
+        subcategory: "metal-stands", // 🌟 完美对齐列表和首页按钮 subcategory
         code: "Item Code: MS-20260629",
         images: [
             "images/products/raw-material/metal-stand/ms20260629/ms20260629-1.jpg",
