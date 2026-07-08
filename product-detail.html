@@ -73,11 +73,12 @@
         /* 放大镜大图框 */
         .main-image-box {
             width: 100%;
-            height: 500px;
+            aspect-ratio: 1 / 1;
+            height: auto;
             border: 1px solid var(--border-color);
             border-radius: 6px;
             overflow: hidden; /* 🌟 必须保留：隐藏图片放大后溢出的部分 */
-            background-color: var(--bg-light);
+            background-color: var(--white);
             display: flex;
             align-items: center;
             justify-content: center;
