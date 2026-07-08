@@ -24,6 +24,44 @@ const detailsDatabase = {
         ]
     },
 
+    "7ft prelit christmas tree": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct26060708",
+        images: [
+            "images/products/holiday-decor/christmas/ct26060708/ct20260708-1.jpg",
+            "images/products/holiday-decor/christmas/ct26060708/ct20260708-2.jpg",
+            "images/products/holiday-decor/christmas/ct26060708/ct20260708-3.jpg",
+            "images/products/holiday-decor/christmas/ct26060708/ct20260708-4.jpg",
+            "images/products/holiday-decor/christmas/ct26060708/ct20260708-5.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "PE PVC Mixed" },
+            { label: "Height", value: "7FT (Customizable)" },
+            { label: "Lighting", value: "Pre-lit Warm White LED Eco-Lights" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+
+    "60cm christmas wreath": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260708",
+        images: [
+            "images/products/holiday-decor/christmas/w20260708/w20260708-1.jpg",
+            "images/products/holiday-decor/christmas/w20260708/w20260708-2.jpg",
+            "images/products/holiday-decor/christmas/w20260708/w20260708-3.jpg",
+            "images/products/holiday-decor/christmas/w20260708/w20260708-4.jpg",
+            "images/products/holiday-decor/christmas/w20260708/w20260708-5.jpg",
+            "images/products/holiday-decor/christmas/w20260708/w20260708-6.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "PVC+ Pine Cone+ Berry" },
+            { label: "Height", value: "60CM (Customizable)" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+
     "pre-lit led christmas holiday garland": {
         category: "holiday",
         subcategory: "garlands", 
