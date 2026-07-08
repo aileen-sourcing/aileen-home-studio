@@ -5,7 +5,7 @@ const detailsDatabase = {
     // 🎄 大类 1：Holiday Decor (cat: "holiday")
     // ==========================================
     
-    "premium pe lighted christmas tree": {
+    "full pe prelit christmas tree": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct26062801",
@@ -27,13 +27,13 @@ const detailsDatabase = {
     "7ft prelit christmas tree": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
-        code: "Item Code: ct26060708",
+        code: "Item Code: ct20260708",
         images: [
-            "images/products/holiday-decor/christmas/ct26060708/ct20260708-1.jpg",
-            "images/products/holiday-decor/christmas/ct26060708/ct20260708-2.jpg",
-            "images/products/holiday-decor/christmas/ct26060708/ct20260708-3.jpg",
-            "images/products/holiday-decor/christmas/ct26060708/ct20260708-4.jpg",
-            "images/products/holiday-decor/christmas/ct26060708/ct20260708-5.jpg"
+            "images/products/holiday-decor/christmas/ct20260708/ct20260708-1.jpg",
+            "images/products/holiday-decor/christmas/ct20260708/ct20260708-2.jpg",
+            "images/products/holiday-decor/christmas/ct20260708/ct20260708-3.jpg",
+            "images/products/holiday-decor/christmas/ct20260708/ct20260708-4.jpg",
+            "images/products/holiday-decor/christmas/ct20260708/ct20260708-5.jpg"
         ], 
         specs: [
             { label: "Material", value: "PE PVC Mixed" },
@@ -171,6 +171,22 @@ const detailsDatabase = {
             { label: "Shape", value: "Round, Flat, or Star Shape with Round Wire Inside" },
             { label: "Color", value: "Dark Green, Light Green, Frosting Effect" },
             { label: "Usage", value: "High-end Pine Needle Trees Production" }
+        ]
+    },
+
+    "bicolor artificial pet pine needles roll": {
+        category: "material",
+        subcategory: "polyester-thread", 
+        code: "Item Code: PS-20260708",
+        images: [
+            "images/products/raw-material/ps20260708/ps20260708-1.jpg",
+            "images/products/raw-material/ps20260708/ps20260708-2.jpg",
+            "images/products/raw-material/ps20260708/ps20260708-3.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "Polyester Thread" },
+            { label: "Color", value: "Dark Green, Light Green, Customizable" },
+            { label: "Usage", value: "For Christmas Trees Production" }
         ]
     },
 
