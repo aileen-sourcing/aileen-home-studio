@@ -179,9 +179,9 @@ const detailsDatabase = {
         subcategory: "polyester-thread", 
         code: "Item Code: PS-20260708",
         images: [
-            "images/products/raw-material/ps20260708/ps20260708-1.jpg",
-            "images/products/raw-material/ps20260708/ps20260708-2.jpg",
-            "images/products/raw-material/ps20260708/ps20260708-3.jpg"
+            "images/products/raw-material/polyester-thread/ps20260708/ps20260708-1.jpg",
+            "images/products/raw-material/polyester-thread/ps20260708/ps20260708-2.jpg",
+            "images/products/raw-material/polyester-thread/ps20260708/ps20260708-3.jpg"
         ], 
         specs: [
             { label: "Material", value: "Polyester Thread" },
