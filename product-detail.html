@@ -86,13 +86,14 @@
         /* --- 导航栏主体（完全同步首页样式） --- */
         header {
             position: fixed !important;
-            top: 0 !important;
-            left: 0 !important;
+            top: 0;
+            left: 0;
+            width: 100% !important;
             right: 0 !important;
-            width: 100vw !important;
-            background-color: #ffffff !important;
+            background-color: var(--white);
             box-shadow: 0 1px 4px rgba(15,23,42,0.04);
-            z-index: 99999 !important;
+            z-index: 1000;
+            transition: var(--transition);
             border-bottom: 1px solid var(--border-color);
         }
 
