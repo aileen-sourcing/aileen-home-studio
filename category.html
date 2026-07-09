@@ -249,6 +249,69 @@
             position: relative !important;
             z-index: 10 !important; /* 内容区降到 10 层，永远不遮挡大导航 */
         }
+        /* ==========================================================
+           🌟 1:1 完美复刻主页搜索框与右侧区域排版样式
+           ========================================================== */
+        .nav-right {
+            display: flex !important;
+            align-items: center !important;
+            gap: 20px !important;
+        }
+
+        .search-container {
+            position: relative !important;
+        }
+
+        .search-container form {
+            display: flex !important;
+            align-items: center !important;
+            border-bottom: 1px solid var(--border-color) !important;
+            padding-bottom: 2px !important;
+            transition: var(--transition) !important;
+        }
+
+        .search-container form:focus-within {
+            border-bottom-color: var(--accent-color) !important; /* 聚焦时变成主页的高级金色线 */
+        }
+
+        .search-container input {
+            border: none !important;
+            outline: none !important;
+            background: none !important;
+            padding: 6px 30px 6px 10px !important;
+            font-size: 0.9rem !important;
+            width: 180px !important;
+            color: var(--text-color) !important;
+            transition: var(--transition) !important;
+        }
+
+        .search-container input:focus {
+            width: 220px !important; /* 聚焦时像主页一样优雅变长 */
+        }
+
+        .search-icon-btn {
+            position: absolute !important;
+            right: 5px !important;
+            background: none !important;
+            border: none !important;
+            color: var(--text-muted) !important;
+            cursor: pointer !important;
+            padding: 5px !important;
+            font-size: 0.95rem !important;
+            transition: var(--transition) !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+
+        .search-icon-btn:hover {
+            color: var(--accent-color) !important; /* 鼠标悬停变成金色放大镜 */
+        }
+
+        /* 移动端菜单按钮隐藏，保持和主页逻辑一致 */
+        .menu-toggle {
+            display: none !important;
+        }
         
     </style>
 </head>
