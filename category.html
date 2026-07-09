@@ -107,7 +107,12 @@
         .pagination-area { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 60px; }
         .page-btn { min-width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color); background: var(--white); font-size: 0.85rem; font-weight: 600; color: var(--primary-color); cursor: pointer; transition: var(--transition); border-radius: 2px; }
         .page-btn:hover { border-color: var(--primary-color); }
-        .page-btn.active { background: var(--primary-color); color: var(--white); border-color: var(--primary-color); }
+        .page-btn.active { 
+            background: var(--primary-color); 
+            color: var(--white); 
+            border-color: var(--primary-color); 
+        }
+
         .page-btn:disabled { color: #cbd5e1; border-color: var(--border-color); cursor: not-allowed; }
 
         @media (max-width: 1100px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -116,21 +121,28 @@
             .sidebar-filter { flex: none; width: 100%; }
             .products-grid { grid-template-columns: 1fr; }
         }
-        footer { background: var(--footer-bg); color: #64748b; text-align: center; padding: 25px; font-size: 0.8rem; border-top: 1px solid #1e293b; margin-top: 80px; }
+        footer { 
+            background: var(--footer-bg); 
+            color: #64748b; 
+            text-align: center; 
+            padding: 25px; 
+            font-size: 0.8rem; 
+            border-top: 1px solid #1e293b; 
+            margin-top: 80px; 
+        }
 
         /* ==========================================================
-           🌟 全球独立站同步：导航栏核心样式 + 永久防卡片覆盖防线
+           🌟 导航栏核心样式支撑 + 永久防海量产品卡片覆盖防线
            ========================================================== */
         header {
             position: fixed !important;
             top: 0 !important;
             left: 0 !important;
-            right: 0 !important;
             width: 100% !important;
-            background-color: #ffffff !important;
-            box-shadow: 0 1px 4px rgba(15,23,42,0.04);
-            z-index: 99999 !important; /* 焊死最高层级，卡片再多也休想盖住导航 */
-            border-bottom: 1px solid var(--border-color);
+            background-color: var(--white) !important;
+            box-shadow: 0 1px 4px rgba(15,23,42,0.04) !important;
+            z-index: 99999 !important; /* 锁死最高层级，把大导航重新拉回到页面最顶层 */
+            border-bottom: 1px solid var(--border-color) !important;
         }
 
         .navbar {
@@ -138,114 +150,104 @@
             justify-content: space-between !important;
             align-items: center !important;
             height: 65px !important;
-            width: 100% !important;
-            max-width: 1450px !important;
-            margin: 0 auto !important;
-            padding: 0 25px !important;
-            background-color: #ffffff !important;
         }
 
         .nav-links {
             display: flex !important;
-            gap: 35px !important;
-            list-style: none !important;
-            height: 100% !important;
+            gap: 28px !important;
             align-items: center !important;
+            height: 100% !important;
+            list-style: none !important;
         }
 
-        .nav-item {
+        .nav-links li {
             position: relative !important;
             height: 100% !important;
             display: flex !important;
             align-items: center !important;
         }
 
-        .nav-link {
-            font-size: 0.88rem !important;
+        .nav-links a {
             font-weight: 600 !important;
-            text-transform: uppercase !important;
-            letter-spacing: 1px !important;
-            color: var(--text-color) !important;
-            transition: color 0.25s ease !important;
-            position: relative !important;
-            padding: 0 4px !important;
-            cursor: pointer !important;
+            font-size: 0.95rem !important;
+            color: #334155 !important;
+            transition: var(--transition) !important;
+            white-space: nowrap !important;
+            display: flex !important;
+            align-items: center !important;
+            height: 100% !important;
         }
 
-        .nav-link:hover { color: var(--accent-color) !important; }
-
-        .nav-link::after {
-            content: '' !important;
-            position: absolute !important;
-            width: 0 !important;
-            height: 2px !important;
-            bottom: -4px !important;
-            left: 0 !important;
-            background-color: var(--accent-color) !important;
-            transition: width 0.25s ease !important;
+        .nav-links a:hover {
+            color: var(--accent-color) !important;
         }
-
-        .nav-item:hover .nav-link::after { width: 100% !important; }
 
         .mega-menu {
+            display: none !important;
             position: fixed !important;
             top: 65px !important;
             left: 0 !important;
-            width: 100vw !important;
-            background: #ffffff !important;
-            box-shadow: 0 15px 30px rgba(15,23,42,0.08) !important;
+            width: 100% !important;
+            background-color: var(--white) !important;
+            box-shadow: 0 12px 20px -5px rgba(15, 23, 42, 0.08) !important;
             border-top: 1px solid var(--border-color) !important;
-            border-bottom: 1px solid var(--border-color) !important;
-            opacity: 0 !important;
-            visibility: hidden !important;
-            transform: translateY(10px) !important;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
             z-index: 99998 !important;
-            padding: 40px 0 !important;
+            padding: 30px 0 25px 0 !important;
+            text-align: left !important;
         }
 
-        .nav-item:hover .mega-menu {
-            opacity: 1 !important;
-            visibility: visible !important;
-            transform: translateY(0) !important;
+        .nav-links li.has-mega-menu:hover .mega-menu,
+        .mega-menu:hover {
+            display: block !important;
         }
 
         .mega-menu-container {
-            max-width: 1350px !important;
+            max-width: 1200px !important;
             margin: 0 auto !important;
-            padding: 0 40px !important;
+            padding: 0 25px !important;
             display: grid !important;
             grid-template-columns: repeat(3, 1fr) !important;
-            gap: 50px !important;
+            gap: 30px !important;
         }
 
-        .mega-column-title {
-            font-size: 0.9rem !important;
-            font-weight: 700 !important;
-            text-transform: uppercase !important;
-            letter-spacing: 1px !important;
+        .mega-column {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .mega-column h4 {
+            font-size: 0.8rem !important;
             color: var(--primary-color) !important;
-            margin-bottom: 20px !important;
-            padding-bottom: 8px !important;
-            border-bottom: 2px solid var(--primary-color) !important;
-            display: inline-block !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.05em !important;
+            margin-bottom: 10px !important;
+            border-bottom: 1px solid var(--border-color) !important;
+            padding-bottom: 4px !important;
+            font-weight: 700 !important;
         }
 
-        .mega-list { list-style: none !important; padding: 0 !important; margin: 0 !important; }
-        .mega-list li { margin-bottom: 12px !important; }
-        .mega-list a {
-            font-size: 0.88rem !important;
+        .mega-column a {
+            font-size: 0.9rem !important;
             color: var(--text-muted) !important;
-            transition: all 0.2s ease !important;
-            display: inline-block !important;
+            padding: 6px 0 !important;
+            font-weight: 500 !important;
+            transition: var(--transition) !important;
+            display: block !important;
+            height: auto !important;
         }
-        .mega-list a:hover { color: var(--accent-color) !important; transform: translateX(4px) !important; }
 
-        /* 🛡️ 强制拉开分类大框架的层级并向下移，彻底杜绝后续大量产品卡片上顶导致的覆盖问题 */
+        .mega-column a:hover {
+            color: var(--accent-color) !important;
+            padding-left: 4px !important;
+        }
+
+        /* 🛡️ 强制拉开层级防线，并在 body 顶部留出 85px 高度给固定导航 */
+        body {
+            padding-top: 85px !important;
+        }
         .layout-container {
             position: relative !important;
-            z-index: 10 !important;      /* 内容区最高只能到10，永远屈服于99999层的导航 */
-            margin-top: 40px !important;  /* 额外向下让出大导航的物理安全呼吸空间 */
+            z-index: 10 !important; /* 内容区降到 10 层，永远不遮挡大导航 */
         }
         
     </style>
