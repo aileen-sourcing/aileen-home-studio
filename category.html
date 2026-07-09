@@ -290,45 +290,48 @@
             gap: 20px !important;
         }
 
+        /* ==========================================================
+           🌟 1:1 完美复刻主页轻奢圆角背景搜索舱（拒绝单条横线）
+           ========================================================== */
         form.search-container {
-            position: relative !important;
             display: flex !important;
             align-items: center !important;
-            border-bottom: 1px solid var(--border-color) !important;
-            padding-bottom: 2px !important;
+            background-color: var(--bg-light) !important; /* 主页的高级浅灰底色 */
+            border: 1px solid var(--border-color) !important; /* 全四周精致细边框 */
+            border-radius: 30px !important; /* 彻底拉成和主页一样的圆角胶囊状 */
+            padding: 4px 12px !important;
+            width: 240px !important; /* 宽度和主页保持一致 */
             transition: var(--transition) !important;
+            position: relative !important;
         }
 
         form.search-container:focus-within {
-            border-bottom-color: var(--accent-color) !important;
+            background-color: var(--white) !important; /* 点进去时和主页一样背景变白 */
+            border-color: var(--accent-color) !important; /* 边框变成标志性金色 */
+            box-shadow: 0 0 0 3px rgba(180, 83, 9, 0.1) !important; /* 淡淡的金色呼吸晕光 */
         }
 
-        .search-container input {
+        form.search-container input {
             border: none !important;
             outline: none !important;
             background: none !important;
-            padding: 6px 30px 6px 10px !important;
+            padding: 6px 8px 6px 30px !important; /* 左边留出30px，给放大镜腾出完美空间 */
             font-size: 0.9rem !important;
-            width: 180px !important;
+            width: 100% !important;
             color: var(--text-color) !important;
-            transition: var(--transition) !important;
-        }
-
-        .search-container input:focus {
-            width: 220px !important; /* 聚焦时像主页一样优雅变长 */
         }
 
         .search-icon-btn {
             position: absolute !important;
-            right: 0 !important;
+            left: 12px !important; /* 🌟 像主页一样，把放大镜死死固定在左边起点 */
             top: 50% !important;
             transform: translateY(-50%) !important;
             background: none !important;
             border: none !important;
             color: var(--text-muted) !important;
             cursor: pointer !important;
-            padding: 5px !important;
-            font-size: 0.95rem !important;
+            padding: 0 !important;
+            font-size: 0.9rem !important;
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
