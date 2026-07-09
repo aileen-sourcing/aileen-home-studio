@@ -83,6 +83,171 @@
             color: var(--accent-color);
         }
 
+        /* --- 导航栏主体（完全同步首页样式） --- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: 0 1px 4px rgba(15,23,42,0.04);
+            z-index: 1000;
+            transition: var(--transition);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 65px; 
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: 1.5px;
+            flex-shrink: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+            height: 100%;
+        }
+
+        .nav-links li {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #334155;
+            transition: var(--transition);
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* --- 右侧操作区 --- */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-container {
+            position: relative;
+            width: 240px;
+            transition: var(--transition);
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 7px 35px 7px 12px;
+            font-size: 0.85rem;
+            color: var(--text-color);
+            background-color: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-container input:focus {
+            background-color: var(--white);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(180, 83, 9, 0.1);
+        }
+
+        .search-icon-btn {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #475569;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .search-icon-btn:hover {
+            color: var(--accent-color);
+        }
+
+        /* --- 🌟 首页核心：超级大下拉菜单(Mega Menu)显隐逻辑 🌟 --- */
+        .mega-menu {
+            display: none;
+            position: fixed;
+            top: 65px; 
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: 0 12px 20px -5px rgba(15, 23, 42, 0.08);
+            border-top: 1px solid var(--border-color);
+            z-index: 999;
+            padding: 30px 0 25px 0; 
+            text-align: left;
+        }
+
+        .nav-links li.has-mega-menu:hover .mega-menu,
+        .mega-menu:hover {
+            display: block;
+        }
+
+        .mega-menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 25px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .mega-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mega-column h4 {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 4px;
+            font-weight: 700;
+        }
+
+        .mega-column a {
+            font-size: 0.9rem;
+            color: var(--text-muted) !important;
+            padding: 6px 0;
+            font-weight: 500 !important;
+            transition: var(--transition);
+            display: block;
+            height: auto;
+        }
+
+        .mega-column a:hover {
+            color: var(--accent-color) !important;
+            padding-left: 4px;
+        }
+
         .search-box {
             position: relative;
             display: flex;
@@ -375,24 +540,100 @@
 </head>
 <body>
 
-    <!-- 🌟 就插在这里！让它成为 body 的第一个子元素 -->
-    <nav class="navbar">
-        <div class="navbar-container">
+    <header>
+        <div class="container navbar">
             <a href="index.html" class="logo">Aileen's Home Studio</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="listing.html?cat=holiday-decor">Holiday Decor</a></li>
-                <li><a href="listing.html?cat=lighting">Lighting</a></li>
-                <li><a href="listing.html?cat=raw-material">Raw Material</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-                <li class="search-box">
-                    <input type="text" placeholder="Discover something...">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                
+                <li class="has-mega-menu">
+                    <a href="category.html?cat=holiday">Holiday Decor ▾</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-column">
+                                <h4>SEASONS</h4>
+                                <a href="listing.html?cat=holiday&sub=spring-decor">Spring Decor</a>
+                                <a href="listing.html?cat=holiday&sub=summer-decor">Summer Decor</a>
+                                <a href="listing.html?cat=holiday&sub=fall-decor">Fall Decor</a>
+                                <a href="listing.html?cat=holiday&sub=winter-decor">Winter Decor</a>
+                            </div>
+                            <div class="mega-column">
+                                <h4>HOLIDAYS</h4>
+                                <a href="listing.html?cat=holiday&sub=halloween">Halloween</a>
+                                <a href="listing.html?cat=holiday&sub=thanksgiving">Thanksgiving</a>
+                                <a href="listing.html?cat=holiday&sub=christmas">Christmas</a>
+                                <a href="listing.html?cat=holiday&sub=easter">Easter</a>
+                            </div>
+                            <div class="mega-column">
+                                <h4>ORNAMENTS</h4>
+                                <a href="listing.html?cat=holiday&sub=christmas-flowers">Christmas Flowers</a>
+                                <a href="listing.html?cat=holiday&sub=tree-skirts">Tree Skirts</a>
+                                <a href="listing.html?cat=holiday&sub=storage-bags">Storage Bags</a>
+                                <a href="listing.html?cat=holiday&sub=tinsel-garland">Tinsel Garland</a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
+
+                <li class="has-mega-menu">
+                    <a href="category.html?cat=lighting">Lighting ▾</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-column">
+                                <h4>INDOOR LIGHTS</h4>
+                                <a href="listing.html?cat=lighting&sub=table-lamps">Table & Desk Lamps</a>
+                                <a href="listing.html?cat=lighting&sub=floor-lamps">Floor Lamps</a>
+                                <a href="listing.html?cat=lighting&sub=pendant-lights">Pendants</a>
+                                <a href="listing.html?cat=lighting&sub=chandeliers">Chandeliers</a>
+                                <a href="listing.html?cat=lighting&sub=wall-lighting">Wall Lighting & Sconces</a>
+                                <a href="listing.html?cat=lighting&sub=fan-lights">Premium Fan Lights</a>
+                            </div>
+                            <div class="mega-column">
+                                <h4>OUTDOOR LIGHTS</h4>
+                                <a href="listing.html?cat=lighting&sub=outdoor-lighting">Outdoor Lighting</a>
+                            </div>
+                            <div class="mega-column">
+                                <h4>DECOR LIGHTS</h4>
+                                <a href="listing.html?cat=lighting&sub=led-string-lights">LED String Lights</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="has-mega-menu">
+                    <a href="category.html?cat=material">Raw Material ▾</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-column">
+                                <h4>MATERIAL</h4>
+                                <a href="listing.html?cat=material&sub=pe-tips">PE Tree Tips</a>
+                                <a href="listing.html?cat=material&sub=pvc-film">PVC Film</a>
+                                <a href="listing.html?cat=material&sub=pine-needle">PVC Pine Needle</a>
+                                <a href="listing.html?cat=material&sub=polyester-thread">Polyester thread</a>
+                            </div>
+                            <div class="mega-column">
+                                <h4>METALS</h4>
+                                <a href="listing.html?cat=material&sub=metal-stands">Metal Stand</a>
+                                <a href="listing.html?cat=material&sub=metal-tubes">Metal Tube</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="javascript:void(0);" onclick="toggleAboutModal(true)">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="nav-right">
+                <form class="search-container" id="navSearchForm" onsubmit="event.preventDefault(); handleSearch();">
+                    <input type="text" id="searchInput" placeholder="Discover something..." autocomplete="off">
+                    <button type="button" class="search-icon-btn" onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
         </div>
-    </nav>
+    </header>
 
     <div class="container">
         <div class="back-nav">
