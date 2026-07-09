@@ -24,11 +24,43 @@
         a { text-decoration: none; color: inherit; }
 
         /* 统一标准头部导航栏 */
-        header { position: fixed; top: 0; left: 0; width: 100%; background: var(--white); border-bottom: 1px solid var(--border-color); z-index: 1000; height: 65px; display: flex; align-items: center; }
-        .navbar { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 40px; }
-        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); letter-spacing: 1.5px; }
-        .back-home { font-weight: 700; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; transition: var(--transition); }
-        .back-home:hover { color: var(--accent-color); }
+        header { 
+            position: fixed; 
+            top: 0; left: 0; 
+            width: 100%; 
+            background: var(--white); 
+            border-bottom: 1px solid var(--border-color); 
+            z-index: 1000; 
+            height: 65px; 
+            display: flex; 
+            align-items: center; 
+        }
+        .navbar { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            width: 100%; 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            padding: 0 40px; 
+        }
+        .logo { 
+            font-size: 1.5rem; 
+            font-weight: 800; 
+            color: var(--primary-color); 
+            letter-spacing: 1.5px; 
+        }
+        .back-home { 
+            font-weight: 700; 
+            font-size: 0.85rem; 
+            color: var(--text-muted); 
+            text-transform: uppercase; 
+            letter-spacing: 0.05em; 
+            transition: var(--transition); 
+        }
+        .back-home:hover { 
+            color: var(--accent-color); 
+        }
 
         /* 极简细体面包屑 */
         .breadcrumb { background: transparent; padding: 20px 0 10px 0; font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.02em; }
@@ -258,11 +290,8 @@
             gap: 20px !important;
         }
 
-        .search-container {
+        form.search-container {
             position: relative !important;
-        }
-
-        .search-container form {
             display: flex !important;
             align-items: center !important;
             border-bottom: 1px solid var(--border-color) !important;
@@ -270,8 +299,8 @@
             transition: var(--transition) !important;
         }
 
-        .search-container form:focus-within {
-            border-bottom-color: var(--accent-color) !important; /* 聚焦时变成主页的高级金色线 */
+        form.search-container:focus-within {
+            border-bottom-color: var(--accent-color) !important;
         }
 
         .search-container input {
