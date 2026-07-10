@@ -706,6 +706,7 @@
             const urlParams = new URLSearchParams(window.location.search);
             let rawItem = urlParams.get('item') ? urlParams.get('item') : "";
             const productKey = rawItem.replace(/-/g, ' ').toLowerCase().trim();
+            console.log("当前匹配的Key是:", productKey);
             
             // 2. 从本地 products-data.js 的数据库里调取对应数据
             const productInfo = detailsDatabase[productKey];
