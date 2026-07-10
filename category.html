@@ -546,7 +546,7 @@
                 const currentCode = product.code || "Item Code: N/A";
 
                 prodHtml += `
-                    <div class="product-card" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(product.name)}'">
+                    <div class="product-card" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(product.name.replace(/\s+/g, '-'))}'">
                         <img src="${coverImg}" alt="${product.name}" class="product-image">
                         <div class="product-card-info">
                             <h4 class="product-card-title">${product.name.toUpperCase()}</h4>

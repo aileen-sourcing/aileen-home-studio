@@ -704,7 +704,8 @@
         window.onload = function() {
             // 1. 获取 URL 中的产品标识 (如: product-detail.html?item=premium%20pe%20lighted%20christmas%20tree)
             const urlParams = new URLSearchParams(window.location.search);
-            const productKey = urlParams.get('item') ? urlParams.get('item').toLowerCase().trim() : "";
+            let rawItem = urlParams.get('item') ? urlParams.get('item') : "";
+            const productKey = rawItem.replace(/-/g, ' ').toLowerCase().trim();
             
             // 2. 从本地 products-data.js 的数据库里调取对应数据
             const productInfo = detailsDatabase[productKey];
