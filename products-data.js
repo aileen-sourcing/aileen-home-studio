@@ -148,11 +148,17 @@ const detailsDatabase = {
     // ⚙️ 大类 3：Raw Materials (cat: "material")
     // ==========================================
     
-    "rigid green pvc film for christmas tree": {
+    "pvc film for christmas tree": {
         category: "material",
         subcategory: "pvc-film", 
-        code: "Item Code: RM-PVC01",
-        images: ["images/products/materials/pvc/RM-PVC01/1.jpg"], 
+        code: "Item Code: PF-20260710",
+        images: [
+            "images/products/raw-materials/pvc-film/pf20260710/pf20260710-1.jpg",
+            "images/products/raw-materials/pvc-film/pf20260710/pf20260710-2.jpg",
+            "images/products/raw-materials/pvc-film/pf20260710/pf20260710-3.jpg",
+            "images/products/raw-materials/pvc-film/pf20260710/pf20260710-4.jpg"
+
+        ], 
         specs: [
             { label: "Type", value: "Embossed / Rigid PVC Roll" },
             { label: "Thickness", value: "0.05 mm - 0.15 mm (Customizable)" },
@@ -174,7 +180,7 @@ const detailsDatabase = {
         ]
     },
 
-    "bicolor artificial pet pine needles roll": {
+    "polyster thread": {
         category: "material",
         subcategory: "polyester-thread", 
         code: "Item Code: PS-20260708",
