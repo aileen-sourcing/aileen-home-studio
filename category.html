@@ -534,24 +534,31 @@
         }
 
         function renderProductsOnly() {
-    const container = document.getElementById('product-grid-container'); 
+    const container = document.getElementById('product-grid-container');
     if (!container) return;
 
     let gridHtml = "";
     
-    // 1. 获取当前页面显示的类目名（确保这部分逻辑和你页面标题一致）
-    // 通常你页面上方显示的标题就是这个，比如 "Holiday"
-    const currentTitle = document.getElementById('layer-current').innerText.toLowerCase();
+    // 1. 获取当前页面显示的类目名（比如 "holiday decor" 或 "lighting" 或 "raw material"）
+    const currentTitle = document.getElementById('layer-current').innerText.toLowerCase().trim();
 
-    // 2. 遍历 products-data.js 里的所有产品
+    // 2. 遍历 products-data.js 里的所有产品 (detailsDatabase)
     for (let key in detailsDatabase) {
         const product = detailsDatabase[key];
         
-        // 3. 匹配逻辑：如果产品的 category 包含页面标题，就显示它
-        // 注意：这里用 includes 是为了兼容，如果你的页面标题叫 "Holiday Decor" 也能匹配到 "holiday"
-        if (product.category && currentTitle.includes(product.category.toLowerCase())) {
-            
-            // 4. 生成 HTML 代码
+        // 3. 核心修复（暗号多重匹配）：
+        // 只要网页标题里包含了产品的 category（比如 "holiday decor" 包含了 "holiday"）
+        // 或者产品的 category 包含了网页标题，就说明对上了！
+        let isMatch = false;
+        if (product.category) {
+            const prodCat = product.category.toLowerCase().trim();
+            if (currentTitle.includes(prodCat) || prodCat.includes(currentTitle)) {
+                isMatch = true;
+            }
+        }
+
+        if (isMatch) {
+            // 4. 生成产品卡片，并使用你之前做好的“连字符 URL”逻辑
             gridHtml += `
                 <div class="product-card">
                     <img src="${product.images[0]}" alt="${key}">
@@ -565,8 +572,8 @@
         }
     }
 
-    // 5. 如果有匹配到的产品，显示出来；否则显示提示信息
-    container.innerHTML = gridHtml || "<p>此分类下暂无产品，请检查 products-data.js 中的 category 设置。</p>";
+    // 5. 把捞出来的产品卡片塞进你的页面盒子里
+    container.innerHTML = gridHtml || "<p>This category is coming soon...</p>";
 }
 
         function renderPagination(totalItems) {
