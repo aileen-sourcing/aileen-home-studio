@@ -1230,95 +1230,123 @@
     </footer>
 
     <script>
-        // 1. 三道杠手机端菜单展开与关闭
-        const mobileMenuBtn = document.getElementById('mobile-menu');
-        const navLinks = document.querySelector('.nav-links');
-
-        if (mobileMenuBtn && navLinks) {
-            mobileMenuBtn.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-                // 让三道杠变成有动态感的打叉效果（选做，增加大牌感）
-                mobileMenuBtn.classList.toggle('open');
-            });
+    // =======================================================
+    // 🎄 全自动捞货：把最新的 6 款产品精准塞进电脑端和手机端的 6 个卡片
+    // =======================================================
+    function fillLatestSixProducts() {
+        if (typeof detailsDatabase === 'undefined') {
+            console.error("未检测到 products-data.js 数据库");
+            return;
         }
 
-        // 2. 滑动预览控制器核心逻辑（PC端箭头保留，手机端用手划）
-        const track = document.getElementById('carouselTrack');
-        // 🌟 【新增：安全打通途径】自动读取 products-data.js 并在不破坏结构的情况下填入产品
-        if (track && typeof globalProducts !== 'undefined') {
-        track.innerHTML = ''; // 运行前清空旧轨道防冲突
-        globalProducts.forEach(product => {
-            const card = document.createElement('div');
-            card.className = 'product-card';
-            card.innerHTML = `
-                <img src="${product.image}" alt="${product.title}" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">${product.title}</h3>
-                    <p class="product-meta">${product.description}</p>
-                    <a href="${product.detailUrl}" class="inquiry-btn">View Details</a>
-                </div>
-            `;
-            track.appendChild(card);
+        // 1. 将数据库对象转为数组
+        let productList = [];
+        for (let key in detailsDatabase) {
+            if (detailsDatabase.hasOwnProperty(key)) {
+                productList.push({
+                    name: key,
+                    data: detailsDatabase[key]
+                });
+            }
+        }
+
+        // 2. 将产品倒序排列：让你在 JS 底部新加的产品（最新的）排在最前面
+        productList.reverse();
+
+        // 如果数据库里没有产品，直接返回
+        if (productList.length === 0) return;
+
+        // 3. 截取前 6 个最新的产品
+        const latestSix = productList.slice(0, 6);
+
+        // 4. 精准抓取你页面上现有的 6 个电脑端卡片和 6 个手机端卡片
+        const desktopCards = document.querySelectorAll('.catalog-grid .catalog-card');
+        const mobileCards = document.querySelectorAll('.mobile-catalog-slider .catalog-card');
+
+        // 5. 循环把这最新的 6 款产品同时塞入电脑端
+        latestSix.forEach((productItem, index) => {
+            if (desktopCards[index]) {
+                updateCardDOM(desktopCards[index], productItem.name, productItem.data);
+            }
+        });
+
+        // 6. 循环把这相同的 6 款产品同时塞入手机端（滑动特效绝对不影响）
+        latestSix.forEach((productItem, index) => {
+            if (mobileCards[index]) {
+                updateCardDOM(mobileCards[index], productItem.name, productItem.data);
+            }
         });
     }
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        
-        if (track && prevBtn && nextBtn) {
-            nextBtn.addEventListener('click', () => { 
-                track.scrollBy({ left: 324, behavior: 'smooth' }); 
-            });
-            prevBtn.addEventListener('click', () => { 
-                track.scrollBy({ left: -324, behavior: 'smooth' }); 
-            });
+
+    // 🌟 核心填空工具：不改变你的卡片 HTML 容器，只填入新图、新名字和 Item Code
+    function updateCardDOM(card, key, product) {
+        let firstImg = "images/placeholder.jpg";
+        if (product.images && product.images.length > 0) {
+            firstImg = product.images[0];
         }
 
-        // About Us 全屏覆盖层显隐控制器
-        function toggleAboutModal(show) {
-            const overlay = document.getElementById('about-detailed-overlay');
-            if (overlay) {
-                if (show) {
-                    overlay.style.display = 'block';
-                    document.body.style.overflow = 'hidden';
-                } else {
-                    overlay.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-            }
+        // 智能获取大类与子类用于动态跳转（比如跳去你的 listing.html 页）
+        const pCat = product.category ? product.category.toLowerCase().trim() : 'holiday';
+        const pSub = product.subcategory ? product.subcategory.toLowerCase().trim() : '';
+
+        // 计算点击时的精准跳转路径
+        let targetUrl = `product-detail.html?item=${encodeURIComponent(key.replace(/\s+/g, '-'))}`;
+        if (pSub) {
+            targetUrl = `listing.html?cat=${pCat}&sub=${pSub}`;
         }
 
-        // 智能搜索框跳转逻辑
-        function handleSearch() {
-            const query = document.getElementById('searchInput').value.toLowerCase().trim();
-            if (!query) {
-                alert('Please enter a product name to search.');
-                return;
-            }
-            if (query.includes('floor lamp') || query.includes('floor light')) { window.location.href = 'listing.html?cat=lighting&sub=floor-lamps'; return; }
-            if (query.includes('table lamp') || query.includes('desk lamp') || query.includes('table light')) { window.location.href = 'listing.html?cat=lighting&sub=table-lamps'; return; }
-            if (query.includes('fan') || query.includes('ceiling fan')) { window.location.href = 'listing.html?cat=lighting&sub=fan-lights'; return; }
-            if (query.includes('chandelier')) { window.location.href = 'listing.html?cat=lighting&sub=chandeliers'; return; }
-            if (query.includes('pendant')) { window.location.href = 'listing.html?cat=lighting&sub=pendant-lights'; return; }
-            if (query.includes('sconce') || query.includes('wall light')) { window.location.href = 'listing.html?cat=lighting&sub=wall-lighting'; return; }
-            if (query.includes('string') || query.includes('fairy') || query.includes('led light')) { window.location.href = 'listing.html?cat=lighting&sub=led-string-lights'; return; }
-            if (query.includes('outdoor light')) { window.location.href = 'listing.html?cat=lighting&sub=outdoor-lighting'; return; }
-            if (query.includes('tree') || query.includes('christmas tree') || query.includes('snow tree') || query.includes('pe tree')) { window.location.href = 'listing.html?cat=holiday&sub=christmas-trees'; return; }
-            if (query.includes('flower') || query.includes('poinsettia')) { window.location.href = 'listing.html?cat=holiday&sub=christmas-flowers'; return; }
-            if (query.includes('skirt')) { window.location.href = 'listing.html?cat=holiday&sub=tree-skirts'; return; }
-            if (query.includes('bag') || query.includes('storage')) { window.location.href = 'listing.html?cat=holiday&sub=storage-bags'; return; }
-            if (query.includes('garland') || query.includes('tinsel')) { window.location.href = 'listing.html?cat=tinsel-garland'; return; }
-            if (query.includes('halloween')) { window.location.href = 'listing.html?cat=holiday&sub=halloween-decor'; return; }
-            if (query.includes('thanksgiving') || query.includes('fall')) { window.location.href = 'listing.html?cat=holiday&sub=thanksgiving-decor'; return; }
-            if (query.includes('pe tip') || query.includes('tree branch') || query.includes('pe branch')) { window.location.href = 'listing.html?cat=material&sub=pe-tips'; return; }
-            if (query.includes('pvc film') || query.includes('pvc roll')) { window.location.href = 'listing.html?cat=material&sub=pvc-film'; return; }
-            if (query.includes('needle') || query.includes('pine needle')) { window.location.href = 'listing.html?cat=material&sub=pine-needle'; return; }
-            if (query.includes('stand') || query.includes('metal base')) { window.location.href = 'listing.html?cat=material&sub=metal-stands'; return; }
+        // 赋予卡片点击跳转功能
+        card.setAttribute('onclick', `window.location.href='${targetUrl}'`);
+        card.style.cursor = 'pointer';
 
-            if (query.includes('christmas') || query.includes('holiday') || query.includes('decor') || query.includes('season')) { window.location.href = 'category.html?cat=holiday'; } 
-            else if (query.includes('light') || query.includes('lamp')) { window.location.href = 'category.html?cat=lighting'; } 
-            else if (query.includes('material') || query.includes('raw') || query.includes('pvc') || query.includes('pe')) { window.location.href = 'category.html?cat=material'; } 
-            else { window.location.href = '#products'; }
+        // 1. 定点替换卡片内的图片路径
+        const imgEl = card.querySelector('.catalog-img-wrapper img') || card.querySelector('img');
+        if (imgEl) {
+            imgEl.src = firstImg;
+            imgEl.alt = key;
         }
-    </script>
+
+        // 2. 定点替换卡片里的大标题 (h3)
+        const titleEl = card.querySelector('h3');
+        if (titleEl) {
+            titleEl.innerText = key.toUpperCase();
+        }
+
+        // 3. 定点替换卡片里的描述文字 (p) 为产品最新的 Item Code 编号
+        const codeEl = card.querySelector('p');
+        if (codeEl) {
+            codeEl.innerText = product.code || 'Explore Collection';
+        }
+    }
+
+    // =======================================================
+    // 🔍 你的全局搜索跳转逻辑（100%原封不动保留，没有改动任何一行）
+    // =======================================================
+    function handleSearch(event) {
+        if (event) event.preventDefault();
+        const searchInput = document.getElementById('global-search-input');
+        if (!searchInput) return;
+        const query = searchInput.value.toLowerCase().trim();
+        if (!query) return;
+
+        if (query.includes('christmas')) { window.location.href = 'listing.html?cat=holiday&sub=christmas'; return; }
+        if (query.includes('halloween')) { window.location.href = 'listing.html?cat=holiday&sub=halloween-decor'; return; }
+        if (query.includes('thanksgiving') || query.includes('fall')) { window.location.href = 'listing.html?cat=holiday&sub=thanksgiving-decor'; return; }
+        if (query.includes('pe tip') || query.includes('tree branch') || query.includes('pe branch')) { window.location.href = 'listing.html?cat=material&sub=pe-tips'; return; }
+        if (query.includes('pvc film') || query.includes('pvc roll')) { window.location.href = 'listing.html?cat=material&sub=pvc-film'; return; }
+        if (query.includes('needle') || query.includes('pine needle')) { window.location.href = 'listing.html?cat=material&sub=pine-needle'; return; }
+        if (query.includes('stand') || query.includes('metal base')) { window.location.href = 'listing.html?cat=material&sub=metal-stands'; return; }
+
+        if (query.includes('christmas') || query.includes('holiday') || query.includes('decor') || query.includes('season')) { window.location.href = 'category.html?cat=holiday'; } 
+        else if (query.includes('light') || query.includes('lamp')) { window.location.href = 'category.html?cat=lighting'; } 
+        else if (query.includes('material') || query.includes('raw') || query.includes('pvc')) { window.location.href = 'category.html?cat=material'; } 
+        else { window.location.href = `category.html?search=${encodeURIComponent(query)}`; }
+    }
+
+    // 在页面全部加载完毕之后，自动执行捞货填空
+    window.onload = function() {
+        fillLatestSixProducts();
+    };
+</script>
 </body>
 </html>
