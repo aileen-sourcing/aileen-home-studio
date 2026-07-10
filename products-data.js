@@ -153,10 +153,10 @@ const detailsDatabase = {
         subcategory: "pvc-film", 
         code: "Item Code: PF-20260710",
         images: [
-            "images/products/raw-materials/pvc-film/pf20260710/pf20260710-1.jpg",
-            "images/products/raw-materials/pvc-film/pf20260710/pf20260710-2.jpg",
-            "images/products/raw-materials/pvc-film/pf20260710/pf20260710-3.jpg",
-            "images/products/raw-materials/pvc-film/pf20260710/pf20260710-4.jpg"
+            "images/products/raw-material/pvc-film/pf20260710/pf20260710-1.jpg",
+            "images/products/raw-material/pvc-film/pf20260710/pf20260710-2.jpg",
+            "images/products/raw-material/pvc-film/pf20260710/pf20260710-3.jpg",
+            "images/products/raw-material/pvc-film/pf20260710/pf20260710-4.jpg"
 
         ], 
         specs: [
