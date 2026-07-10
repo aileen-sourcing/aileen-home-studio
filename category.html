@@ -534,29 +534,40 @@
         }
 
         function renderProductsOnly() {
-            const container = document.getElementById('product-grid-container');
-            if (!container) return;
+    const container = document.getElementById('product-grid-container'); 
+    if (!container) return;
 
-            let gridHtml = "";
+    let gridHtml = "";
+    
+    // 1. 获取当前页面显示的类目名（确保这部分逻辑和你页面标题一致）
+    // 通常你页面上方显示的标题就是这个，比如 "Holiday"
+    const currentTitle = document.getElementById('layer-current').innerText.toLowerCase();
 
-            for (let key in detailsDatabase) {
-                const product = detailsDatabase[key];
-                const currentCategory = document.getElementById('layer-current').innerText.toLowerCase();
+    // 2. 遍历 products-data.js 里的所有产品
+    for (let key in detailsDatabase) {
+        const product = detailsDatabase[key];
+        
+        // 3. 匹配逻辑：如果产品的 category 包含页面标题，就显示它
+        // 注意：这里用 includes 是为了兼容，如果你的页面标题叫 "Holiday Decor" 也能匹配到 "holiday"
+        if (product.category && currentTitle.includes(product.category.toLowerCase())) {
+            
+            // 4. 生成 HTML 代码
+            gridHtml += `
+                <div class="product-card">
+                    <img src="${product.images[0]}" alt="${key}">
+                    <div class="card-content">
+                        <h3>${key.toUpperCase()}</h3>
+                        <p>${product.code}</p>
+                        <button onclick="window.location.href='product-detail.html?item=${encodeURIComponent(key.replace(/\s+/g, '-'))}'">View Details</button>
+                    </div>
+                </div>
+            `;
+        }
+    }
 
-                if (product.category === currentCategory) {
-                    gridHtml += `
-                         <div class="product-card">
-                             <img src="${product.images[0]}" alt="${key}">
-                             <h3>${key.toUpperCase()}</h3>
-                             <p>${product.code}</p>
-                             <button onclick="window.location.href='product-detail.html?item=${encodeURIComponent(key.replace(/\s+/g, '-'))}'">View Details</button>
-                         </div>
-                    `;
-                 }
-             }
-
-             container.innerHTML = gridHtml || "<p>No products found in this category.</p>";
-         }
+    // 5. 如果有匹配到的产品，显示出来；否则显示提示信息
+    container.innerHTML = gridHtml || "<p>此分类下暂无产品，请检查 products-data.js 中的 category 设置。</p>";
+}
 
         function renderPagination(totalItems) {
             const totalPages = Math.ceil(totalItems / productsPerPage);
