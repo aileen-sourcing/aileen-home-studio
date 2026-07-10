@@ -534,46 +534,75 @@
         }
 
         function renderProductsOnly() {
-    const container = document.getElementById('product-grid-container');
+    // 🌟 修正 1：对齐真实的 HTML 容器 ID（加上了 s）
+    const container = document.getElementById('products-grid-container');
     if (!container) return;
 
     let gridHtml = "";
     
-    // 1. 获取当前页面显示的类目名（比如 "holiday decor" 或 "lighting" 或 "raw material"）
+    // 🌟 修正 2：获取当前大页面的类目名称（转为小写，比如 "holiday decor" 或 "raw material"）
     const currentTitle = document.getElementById('layer-current').innerText.toLowerCase().trim();
 
-    // 2. 遍历 products-data.js 里的所有产品 (detailsDatabase)
-    for (let key in detailsDatabase) {
-        const product = detailsDatabase[key];
-        
-        // 3. 核心修复（暗号多重匹配）：
-        // 只要网页标题里包含了产品的 category（比如 "holiday decor" 包含了 "holiday"）
-        // 或者产品的 category 包含了网页标题，就说明对上了！
-        let isMatch = false;
-        if (product.category) {
-            const prodCat = product.category.toLowerCase().trim();
-            if (currentTitle.includes(prodCat) || prodCat.includes(currentTitle)) {
-                isMatch = true;
-            }
-        }
+    // 🌟 修正 3：获取左侧多选框勾选的子类
+    const activeFilters = Array.from(document.querySelectorAll('#filter-checkbox-group input[type="checkbox"]:checked'))
+                               .map(cb => cb.value.toLowerCase().trim());
 
-        if (isMatch) {
-            // 4. 生成产品卡片，并使用你之前做好的“连字符 URL”逻辑
-            gridHtml += `
-                <div class="product-card">
-                    <img src="${product.images[0]}" alt="${key}">
-                    <div class="card-content">
-                        <h3>${key.toUpperCase()}</h3>
-                        <p>${product.code}</p>
-                        <button onclick="window.location.href='product-detail.html?item=${encodeURIComponent(key.replace(/\s+/g, '-'))}'">View Details</button>
-                    </div>
-                </div>
-            `;
+    // 开始遍历你的产品数据库
+    for (let key in detailsDatabase) {
+        if (detailsDatabase.hasOwnProperty(key)) {
+            const product = detailsDatabase[key];
+            
+            // 拿到产品里的分类暗号
+            const pCat = product.category ? product.category.toLowerCase().trim() : "";
+            const pSub = product.subcategory ? product.subcategory.toLowerCase().trim() : "";
+
+            // 判断大类是否匹配：
+            // 如果页面标题叫 "holiday decor" 且产品属于 "holiday"
+            // 或者页面标题叫 "raw material" 且产品属于 "material"
+            // 或者页面标题包含了产品的类别
+            let isCategoryMatch = currentTitle.includes(pCat) || pCat.includes(currentTitle.split(' ')[0]);
+
+            if (isCategoryMatch) {
+                // 如果左侧没有勾选任何过滤框，或者勾选的子类刚好匹配到了产品的 subcategory
+                // 这里的 .replace('-', ' ') 是为了把 "metal-stands" 变成 "metal stands" 对应你多选框的文字
+                if (activeFilters.length === 0 || activeFilters.includes(pSub.replace('-', ' '))) {
+                    
+                    let firstImg = "images/placeholder.jpg";
+                    if (product.images && product.images.length > 0) {
+                        firstImg = product.images[0];
+                    }
+
+                    // 生成和你的 listing 页面一样好看的带跳转和询盘按钮的卡片
+                    const productPageUrl = `product-detail.html?item=${encodeURIComponent(key.replace(/\s+/g, '-'))}`;
+                    const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key)}`;
+                    const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=Inquiry&body=Product: ${key}`;
+
+                    gridHtml += `
+                        <div class="grid-product-card" onclick="window.location.href='${productPageUrl}'">
+                            <div class="grid-product-img">
+                                <img src="${firstImg}" alt="${key}" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <div class="grid-product-info">
+                                <div style="font-size:0.8rem; color:var(--accent-color); font-weight:700;">${product.code || ''}</div>
+                                <h3 class="grid-product-title">${key.toUpperCase()}</h3>
+                                <div class="inquiry-actions-group" onclick="event.stopPropagation();">
+                                    <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
+                                        <i class="fa-regular fa-envelope"></i> Email
+                                    </button>
+                                    <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
+                                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
         }
     }
 
-    // 5. 把捞出来的产品卡片塞进你的页面盒子里
-    container.innerHTML = gridHtml || "<p>This category is coming soon...</p>";
+    // 塞回页面盒子里
+    container.innerHTML = gridHtml || `<div style="grid-column:1/-1; text-align:center; color:var(--text-muted); padding:40px 0;">This category is coming soon...</div>`;
 }
 
         function renderPagination(totalItems) {
