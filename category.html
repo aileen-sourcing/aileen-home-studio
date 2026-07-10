@@ -342,6 +342,9 @@
         }
         
     </style>
+
+    <script src="products-data.js"></script>
+    
 </head>
 <body>
 
@@ -531,38 +534,29 @@
         }
 
         function renderProductsOnly() {
-            const filteredProducts = getFilteredProducts();
-            
-            // 分页计算
-            const startIndex = (currentPage - 1) * productsPerPage;
-            const endIndex = startIndex + productsPerPage;
-            const pageProducts = filteredProducts.slice(startIndex, endIndex);
+            const container = document.getElementById('product-grid-container');
+            if (!container) return;
 
-            let prodHtml = "";
+            let gridHtml = "";
 
-            pageProducts.forEach(product => {
-                // 🌟 ✨【图片修复】：取第一张图数组
-                const coverImg = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder.jpg";
-                const currentCode = product.code || "Item Code: N/A";
+            for (let key in detailsDatabase) {
+                const product = detailsDatabase[key];
+                const currentCategory = document.getElementById('layer-current').innerText.toLowerCase();
 
-                prodHtml += `
-                    <div class="product-card" onclick="window.location.href='product-detail.html?item=${encodeURIComponent(product.name.replace(/\s+/g, '-'))}'">
-                        <img src="${coverImg}" alt="${product.name}" class="product-image">
-                        <div class="product-card-info">
-                            <h4 class="product-card-title">${product.name.toUpperCase()}</h4>
-                            <p class="product-card-sku">${currentCode}</p>
-                        </div>
-                    </div>
-                `;
-            });
+                if (product.category === currentCategory) {
+                    gridHtml += `
+                         <div class="product-card">
+                             <img src="${product.images[0]}" alt="${key}">
+                             <h3>${key.toUpperCase()}</h3>
+                             <p>${product.code}</p>
+                             <button onclick="window.location.href='product-detail.html?item=${encodeURIComponent(key.replace(/\s+/g, '-'))}'">View Details</button>
+                         </div>
+                    `;
+                 }
+             }
 
-            if (prodHtml === "") {
-                prodHtml = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 40px 0;">No products found in this selection.</div>`;
-            }
-
-            document.getElementById('products-grid-container').innerHTML = prodHtml;
-            renderPagination(filteredProducts.length);
-        }
+             container.innerHTML = gridHtml || "<p>No products found in this category.</p>";
+         }
 
         function renderPagination(totalItems) {
             const totalPages = Math.ceil(totalItems / productsPerPage);
