@@ -1231,7 +1231,7 @@
 
     <script>
     // =======================================================
-    // 🎄 全自动捞货：把最新的 6 款产品精准塞进电脑端和手机端的 6 个卡片
+    // 🎄 全自动无冲突捞货：把最新的 6 款产品精准填入电脑端和手机端的 6 个卡片
     // =======================================================
     function fillLatestSixProducts() {
         if (typeof detailsDatabase === 'undefined') {
@@ -1278,7 +1278,7 @@
         });
     }
 
-    // 🌟 核心填空工具：不改变你的卡片 HTML 容器，只填入新图、新名字和 Item Code
+    // 🌟 核心安全填空工具：只悄悄换掉图、换掉字、挂上跳转链接，绝不影响原有布局和轮播特效
     function updateCardDOM(card, key, product) {
         let firstImg = "images/placeholder.jpg";
         if (product.images && product.images.length > 0) {
@@ -1343,10 +1343,10 @@
         else { window.location.href = `category.html?search=${encodeURIComponent(query)}`; }
     }
 
-    // 在页面全部加载完毕之后，自动执行捞货填空
-    window.onload = function() {
+    // 🌟【关键修复】：改用安全监听器绑定，绝不霸占和冲掉你原本第一段 script 里的滑动点击加载函数！
+    document.addEventListener("DOMContentLoaded", function() {
         fillLatestSixProducts();
-    };
+    });
 </script>
 </body>
 </html>
