@@ -340,6 +340,68 @@
         .menu-toggle {
             display: none !important;
         }
+
+        .nested-filter-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .filter-category-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 0;
+        }
+        .filter-category-item:last-child {
+            border-bottom: none; /* 最后一个子项去掉底边框，保持你的极简高级感 */
+        }
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            color: var(--primary-color);
+            padding: 4px 0;
+        }
+        .category-header .arrow-icon {
+            font-size: 11px;
+            transition: transform 0.3s ease;
+            color: var(--text-muted);
+        }
+        /* 子类目外壳默认隐藏缩回 */
+        .sub-filter-list {
+            list-style: none;
+            padding-left: 12px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.25s ease-out;
+        }
+        .sub-filter-list li {
+            margin-top: 10px;
+        }
+        .sub-filter-list .filter-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: normal;
+            font-size: 13px;
+            color: var(--text-muted);
+            cursor: pointer;
+            margin-bottom: 0; /* 消除原本的间距压迫感 */
+        }
+        .sub-filter-list .filter-option:hover {
+            color: var(--accent-color); /* 鼠标放上去子类目变焦糖色，互动感更强 */
+        }
+
+        /* 核心联动：大类目被点击展开时，子列表拉开高度，小箭头优雅旋转 180 度 */
+        .filter-category-item.active .sub-filter-list {
+            max-height: 300px; 
+        }
+        .filter-category-item.active .category-header .arrow-icon {
+            transform: rotate(180deg);
+            color: var(--accent-color);
+        }
         
     </style>
 
@@ -517,16 +579,45 @@
                             name: "Thanksgiving Decor",
                             subs: ["Harvest Fall"]
                         }
-                        ]
-                        };
-
-            } else if (currentCat === 'lighting') {
-                return { title: "Lighting Solutions", filters: ["LED Tree Lights", "Copper Wire Lights", "Festive Lighting"] };
-            } else if (currentCat === 'material') {
-                return { title: "Raw Materials", filters: ["PE Tips", "PVC Film", "Pine Needle", "Metal Stands"] };
+                    ]
+                };
             }
-            return { title: "Products Gallery", filters: [] };
-        }
+
+            if (cat === 'lighting') {
+                return { 
+                    title: "Lighting Fixtures",
+                    categories: [
+                        { 
+                            name: "Indoor Lights", 
+                            subs: ["Table Lamps", "Floor Lamps", "Pendants", "Chandeliers", "Wall Sconces", "Fan Lights"] 
+                        },
+                        { 
+                            name: "Outdoor Lights", 
+                            subs: ["Outdoor Lighting"] 
+                        }
+                        {
+                            name: "Decor Lights", 
+                            subs: ["LED String Lights"] 
+                        }
+                    ]
+                };
+            }
+
+            if (cat === 'lighting') {
+                 return {
+                    title: "Raw Material",
+                    categories: [
+                        {
+                            name: "Material", 
+                            subs: ["PE Tree Tips","PVC Film","PVC Pine Needle","Polyester thread"] 
+                        },
+                        { 
+                            name: "Metals", 
+                            subs: ["Metal Stand","Metal Tube"] 
+                        }
+                    ] 
+                };
+          }      
 
         // 获取当前大类下被过滤出的所有商品
         function getFilteredProducts() {
@@ -554,7 +645,40 @@
         }
 
         function renderProductsOnly() {
-    // 🌟 修正 1：对齐真实的 HTML 容器 ID（加上了 s）
+            if (typeof detailsDatabase === 'undefined') return;
+            const urlParams = new URLSearchParams(window.location.search);
+            const cat = urlParams.get('cat') || 'holiday';
+            const searchQuery = urlParams.get('search');
+
+            let filteredKeys = [];
+
+            for (let key in detailsDatabase) {
+                if (detailsDatabase.hasOwnProperty(key)) {
+                    const product = detailsDatabase[key];
+                    let isMatch = false;
+                    if (searchQuery) {
+                        if (key.toLowerCase().includes(searchQuery.toLowerCase())) {
+                            isMatch = true;
+                        }
+                    } else {
+                        if (product.category && product.category.toLowerCase().trim() === cat.toLowerCase().trim()) {
+                            isMatch = true;
+                        }
+                    }
+                    if (isMatch && selectedFilters.length > 0) {
+                        const prodSub = product.subcategory ? product.subcategory.toLowerCase().trim() : '';
+                        const matchesFilter = selectedFilters.some(filterWord => {
+                            return prodSub.includes(filterWord) || key.toLowerCase().includes(filterWord);
+                        });
+                        if (!matchesFilter) {
+                            isMatch = false;
+                            }
+                        }
+                        if (isMatch) {
+                            filteredKeys.push(key);
+                        }
+                    }
+                }
     const container = document.getElementById('products-grid-container');
     if (!container) return;
 
@@ -643,8 +767,16 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
+        let selectedFilters = [];
+        function toggleSubMenu(element) {
+            const parentLi = element.parentElement;
+            parentLi.classList.toggle('active');
+        }
+
         function handleFilterChange() {
             currentPage = 1;
+            const checkboxes = document.querySelectorAll('#filter-checkbox-group input[type="checkbox"]:checked');
+            selectedFilters = Array.from(checkboxes).map(cb => cb.value.toLowerCase().trim());
             renderProductsOnly();
         }
 
@@ -653,15 +785,35 @@
             document.getElementById('layer-current').innerText = data.title;
             document.getElementById('page-main-title').innerText = data.title;
 
-            let filterHtml = "";
-            data.filters.forEach((filter, index) => {
+            let filterHtml = '<ul class="nested-filter-menu">';
+            data.categories.forEach((cat, catIndex) => {
+                const hasSubs = cat.subs && cat.subs.length > 0;
                 filterHtml += `
-                    <label class="filter-option">
-                        <input type="checkbox" id="filter-${index}" value="${filter}" onchange="handleFilterChange()">
-                        <span>${filter}</span>
-                    </label>
-                `;
-            });
+                    <li class="filter-category-item">
+                         <div class="category-header" onclick="toggleSubMenu(this)">
+                             <span class="category-name">${cat.name}</span>
+                             ${hasSubs ? '<i class="fa-solid fa-chevron-down arrow-icon"></i>' : ''}
+                         </div>
+                 `;
+                 if (hasSubs) {
+                    filterHtml += '<ul class="sub-filter-list">';
+                        cat.subs.forEach((sub, subIndex) => {
+                            filterHtml += `
+                                 <li>
+                                    <label class="filter-option">
+                                        <input type="checkbox" value="${sub}" onchange="handleFilterChange()">
+                                        <span>${sub}</span>
+                                     </label>
+                                 </li>
+                            `;
+                         });
+                         filterHtml += '</ul>';
+                     }
+
+                     filterHtml += '</li>';
+                 });
+
+            filterHtml += '</ul>';
             document.getElementById('filter-checkbox-group').innerHTML = filterHtml;
 
             renderProductsOnly();
