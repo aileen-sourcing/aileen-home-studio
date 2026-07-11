@@ -72,7 +72,6 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/g20260711/g20260711-3.jpg",
             "images/products/holiday-decor/christmas/g20260711/g20260711-4.jpg",
             "images/products/holiday-decor/christmas/g20260711/g20260711-5.jpg"
-
         ], 
         specs: [
             { label: "Length", value: "9 FT / Customizable" },
