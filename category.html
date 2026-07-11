@@ -581,7 +581,6 @@
                         }
                     ]
                 };
-            }
 
             if (cat === 'lighting') {
                 return { 
@@ -603,8 +602,7 @@
                 };
             }
 
-            if (cat === 'Material') {
-                 return {
+           return {
                     title: "Raw Material",
                     categories: [
                         {
@@ -616,8 +614,7 @@
                             subs: ["Metal Stand","Metal Tube"] 
                         }
                     ] 
-                };
-          }      
+                };      
 
         // 获取当前大类下被过滤出的所有商品
         function getFilteredProducts() {
