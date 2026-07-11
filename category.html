@@ -558,63 +558,39 @@
             dbSearchCat = "holiday decor";
         }
 
-        // 根据大类配置页面左侧的过滤器标签和面包屑标题
         function getPageData() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const cat = urlParams.get('cat');
+    const urlParams = new URLSearchParams(window.location.search);
+    const cat = urlParams.get('cat');
 
-            if (cat === 'holiday') {
-                return { 
-                    title: "Holiday Decor", 
-                    categories: [
-                        {
-                            name: "Christmas",
-                            subs: ["Christmas Tree", "Garland", "Wreath", "Mini Christmas Tree"]
-                        },
-                        {
-                            name: "Halloween Decor",
-                            subs: ["Tree", "House"]
-                        },
-                        {
-                            name: "Thanksgiving Decor",
-                            subs: ["Harvest Fall"]
-                        }
-                    ]
-                };
-
-            if (cat === 'lighting') {
-                return { 
-                    title: "Lighting Fixtures",
-                    categories: [
-                        { 
-                            name: "Indoor Lights", 
-                            subs: ["Table Lamps", "Floor Lamps", "Pendants", "Chandeliers", "Wall Sconces", "Fan Lights"] 
-                        },
-                        { 
-                            name: "Outdoor Lights", 
-                            subs: ["Outdoor Lighting"] 
-                        }
-                        {
-                            name: "Decor Lights", 
-                            subs: ["LED String Lights"] 
-                        }
-                    ]
-                };
-            }
-
-           return {
-                    title: "Raw Material",
-                    categories: [
-                        {
-                            name: "Material", 
-                            subs: ["PE Tree Tips","PVC Film","PVC Pine Needle","Polyester thread"] 
-                        },
-                        { 
-                            name: "Metals", 
-                            subs: ["Metal Stand","Metal Tube"] 
-                        }
-                    ] 
-                };      
+    if (cat === 'Holiday') {
+        return {
+            title: "Holiday Decor",
+            // 每一个大类目是一个对象，有 name 和 subs(子类)
+            categories: [
+                { name: "Seasons", subs: ["Spring Decor","Summer Decor","Fall Decor","Winter Decor"] },
+                { name: "Holidays", subs: ["Halloween","Thanksgiving","Christmas","Easter"] },
+                { name: "Ornaments", subs: ["Christmas Flowers","Tree Skirts","Storage Bags","Tinsel Garland"] }
+            ]
+        };
+    }
+    if (cat === 'Lighting') {
+        return {
+            title: "Lighting",
+            categories: [
+                { name: "Indoor Lights", subs: ["Table Lamps","Floor Lamps","Pendants","Chandeliers","Wall Sconces","Fan Lights"] },
+                { name: "Outdoor Lights", subs: ["Outdoor Lighting"] },
+                { name: "Decor Lights", subs: ["LED String Lights"] }
+            ]
+        };
+    }
+    return {
+        title: "Raw Material",
+        categories: [
+                { name: "Material", subs: ["PE Tree Tips","PVC Film","PVC Pine Needle","Polyester thread"] },
+                { name: "Metals", subs: ["Metal Stand","Metal Tube"] }
+        ]
+    };
+}      
 
         // 获取当前大类下被过滤出的所有商品
         function getFilteredProducts() {
