@@ -62,11 +62,18 @@ const detailsDatabase = {
         ]
     },
 
-    "pre-lit led christmas holiday garland": {
+    "pre-lit led christmas garland": {
         category: "holiday",
-        subcategory: "garlands", 
-        code: "Item Code: GL-001",
-        images: ["images/products/holiday-decor/garlands/GL-001/1.jpg"], 
+        subcategory: "christmas", 
+        code: "Item Code: g20260711",
+        images: [
+            "images/products/holiday-decor/christmas/g20260711/g20260711-1.jpg",
+            "images/products/holiday-decor/christmas/g20260711/g20260711-2.jpg",
+            "images/products/holiday-decor/christmas/g20260711/g20260711-3.jpg",
+            "images/products/holiday-decor/christmas/g20260711/g20260711-4.jpg",
+            "images/products/holiday-decor/christmas/g20260711/g20260711-5.jpg"
+
+        ], 
         specs: [
             { label: "Length", value: "9 FT / Customizable" },
             { label: "Tips Material", value: "PE/PVC Mixed Real-touch Tips" },
