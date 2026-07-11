@@ -62,7 +62,7 @@ const detailsDatabase = {
         ]
     },
 
-    "pre-lit led christmas garland": {
+    "9ft prelit christmas garland": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: g20260711",
