@@ -498,8 +498,28 @@
 
         // 根据大类配置页面左侧的过滤器标签和面包屑标题
         function getPageData() {
-            if (currentCat === 'holiday' || currentCat === 'holiday decor') {
-                return { title: "Holiday Decor", filters: ["Christmas", "Christmas Decor", "Halloween", "Thanksgiving", "Easter"] };
+            const urlParams = new URLSearchParams(window.location.search);
+            const cat = urlParams.get('cat');
+
+            if (cat === 'holiday') {
+                return { 
+                    title: "Holiday Decor", 
+                    categories: [
+                        {
+                            name: "Christmas",
+                            subs: ["Christmas Tree", "Garland", "Wreath", "Mini Christmas Tree"]
+                        },
+                        {
+                            name: "Halloween Decor",
+                            subs: ["Tree", "House"]
+                        },
+                        {
+                            name: "Thanksgiving Decor",
+                            subs: ["Harvest Fall"]
+                        }
+                        ]
+                        };
+
             } else if (currentCat === 'lighting') {
                 return { title: "Lighting Solutions", filters: ["LED Tree Lights", "Copper Wire Lights", "Festive Lighting"] };
             } else if (currentCat === 'material') {
