@@ -173,14 +173,22 @@ const detailsDatabase = {
         ]
     },
 
-    "bicolor artificial pet pine needles roll": {
+    "pe tree tips": {
         category: "material",
-        subcategory: "pine-needle", 
-        code: "Item Code: RM-PN01",
-        images: ["images/products/materials/needles/RM-PN01/1.jpg"], 
+        subcategory: "pe-tips", 
+        code: "Item Code: PE20260713",
+        images: [
+            "images/products/raw-material/pe-tips/PE20260713/PE20260713-1.jpg",
+            "images/products/raw-material/pe-tips/PE20260713/PE20260713-2.jpg",
+            "images/products/raw-material/pe-tips/PE20260713/PE20260713-3.jpg",
+            "images/products/raw-material/pe-tips/PE20260713/PE20260713-4.jpg",
+            "images/products/raw-material/pe-tips/PE20260713/PE20260713-5.jpg",
+            "images/products/raw-material/pe-tips/PE20260713/PE20260713-6.jpg",
+        ],
+
         specs: [
-            { label: "Material", value: "100% Virgin PET / PVC Material" },
-            { label: "Shape", value: "Round, Flat, or Star Shape with Round Wire Inside" },
+            { label: "Material", value: "PE Material" },
+            { label: "Features", value: "Anti-UV, Flame Retardant, High Tensile Strength" },
             { label: "Color", value: "Dark Green, Light Green, Frosting Effect" },
             { label: "Usage", value: "High-end Pine Needle Trees Production" }
         ]
