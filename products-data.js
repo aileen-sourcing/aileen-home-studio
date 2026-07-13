@@ -212,12 +212,12 @@ const detailsDatabase = {
 
     "reinforced christmas tree metal stand": {
         category: "material", 
-        subcategory: "metal-stand", 
+        subcategory: "metal-stands", 
         code: "Item Code: MS-20260629",
         images: [
-            "images/products/raw-material/metal-stand/ms20260629/ms20260629-1.jpg",
-            "images/products/raw-material/metal-stand/ms20260629/ms20260629-2.jpg",
-            "images/products/raw-material/metal-stand/ms20260629/ms20260629-4.jpg" 
+            "images/products/raw-material/metal-stands/ms20260629/ms20260629-1.jpg",
+            "images/products/raw-material/metal-stands/ms20260629/ms20260629-2.jpg",
+            "images/products/raw-material/metal-stands/ms20260629/ms20260629-4.jpg" 
         ],
         specs: [
             { label: "Material", value: "Heavy-Duty Reinforced Iron / Steel" },
