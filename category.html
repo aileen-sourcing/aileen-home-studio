@@ -780,15 +780,35 @@
         function handleThirdLevelChange() {
             const thirdCbs = document.querySelectorAll('.third-level-tags input[type="checkbox"]:checked');
             const activeThirdFilters = Array.from(thirdCbs).map(cb => cb.value.toLowerCase().trim());
+            const cards = document.querySelectorAll('#products-grid-container .grid-product-card');
             
             // 如果三级勾选了，我们在二级过滤的基础上，隐藏掉不符合关键词的卡片
             if (activeThirdFilters.length > 0) {
-                const cards = document.querySelectorAll('#category-products-grid .grid-product-card');
                 cards.forEach(card => {
-                    const pTitle = card.querySelector('.grid-product-title').innerText.toLowerCase();
-                    const isThirdMatch = activeThirdFilters.some(keyword => pTitle.includes(keyword));
-                    card.style.display = isThirdMatch ? 'flex' : 'none';
+                    const pTitle = card.querySelector('.grid-product-title').innerText.toLowerCase().trim();
+                    let isMatch = false;
+                    activeThirdFilters.forEach(keyword => {
+                        if (keyword === 'tree') {
+                            if (pTitle.includes('tree') && !pTitle.includes('mini')) {
+                                isMatch = true;
+                            }
+                            if (pTitle.includes('tree') && activeThirdFilters.includes('mini')) {
+                                isMatch = true;
+                            }
+                        } else if (keyword === 'mini') {
+                            if (pTitle.includes('mini')) {
+                                isMatch = true;
+                            }
+                        } else {
+                            if (pTitle.includes(keyword)) {
+                                isMatch = true;
+                            }
+                        }
+                    });
+                    card.style.display = isMatch ? 'flex' : 'none';
                 });
+                } else {
+                    cards.forEach(card => card.style.display = 'flex');
             }
         }
 
