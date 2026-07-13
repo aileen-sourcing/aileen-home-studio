@@ -755,7 +755,7 @@
         }
 
         function renderPage() {
-            const data = getPageData();
+            const data = getPageData() || { title: 'PRODUCT CATALOGUE', categories: [] };
             document.getElementById('layer-current').innerText = data.title;
             document.getElementById('page-main-title').innerText = data.title;
 
