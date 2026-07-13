@@ -623,65 +623,65 @@
                 breadcrumbSubEl.innerText = subItem.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
             }
         }
-    });
-    // =========================================================
-        // 🌟 核心新增：专门为 listing.html Christmas 模块定制的侧边栏与卡片排除过滤
+
+        // =========================================================
+        // 🌟 完美合并：确保放在正确的作用域大括号内，绝不报错
         // =========================================================
         if (subItem === 'christmas') {
-            // 1. 如果是 Christmas 页面，瞬间让左侧原本隐藏的筛选栏展示出来
+            const container = document.getElementById('listing-grid-container');
             const sidebar = document.getElementById('christmas-sidebar');
-            if (sidebar) {
+            
+            if (container && sidebar) {
+                // 1. 叫醒你在 HTML 里写好的侧边栏，让它显示出来
                 sidebar.style.display = 'block';
-            }
+                
+                // 2. 找到大父级盒子，强制变成左右两栏弹性排版
+                const parentBox = container.parentElement;
+                if (parentBox) {
+                    parentBox.style.display = 'flex';
+                    parentBox.style.gap = '30px';
+                    parentBox.style.alignItems = 'flex-start';
+                }
+                
+                // 3. 让右侧的产品网格自动撑满剩余宽度
+                container.style.flexGrow = '1';
+                container.style.width = '100%';
+                container.style.margin = '0';
+                
+                // 4. 为 4 个多选小方框绑定独立的点击过滤拦截逻辑
+                const checkboxes = document.querySelectorAll('.third-cb');
+                checkboxes.forEach(cb => {
+                    cb.addEventListener('change', function() {
+                        const checkedCbs = document.querySelectorAll('.third-cb:checked');
+                        const activeKeywords = Array.from(checkedCbs).map(c => c.value.toLowerCase().trim());
+                        const cards = container.querySelectorAll('.grid-product-card');
 
-            // 2. 绑定 4 个精细多选框的点击改变事件，启动卡片扫描隐藏逻辑
-            const checkboxes = document.querySelectorAll('.third-cb');
-            checkboxes.forEach(cb => {
-                cb.addEventListener('change', function() {
-                    // 收集当前被用户勾选的小分类（例如勾了 tree 和 wreath）
-                    const checkedCbs = document.querySelectorAll('.third-cb:checked');
-                    const activeKeywords = Array.from(checkedCbs).map(c => c.value.toLowerCase().trim());
+                        if (activeKeywords.length > 0) {
+                            cards.forEach(card => {
+                                const pTitle = card.querySelector('.grid-product-title').innerText.toLowerCase().trim();
+                                let isMatch = false;
 
-                    // 抓取刚刚画在页面上的全部产品卡片
-                    const cards = document.querySelectorAll('#listing-grid-container .grid-product-card');
-
-                    if (activeKeywords.length > 0) {
-                        cards.forEach(card => {
-                            // 抓取当前卡片的标题文字转小写
-                            const pTitle = card.querySelector('.grid-product-title').innerText.toLowerCase().trim();
-                            let isMatch = false;
-
-                            // 逐个扫描勾选的关键词进行排除筛选
-                            activeKeywords.forEach(keyword => {
-                                if (keyword === 'tree') {
-                                    // 普通树排除 mini 树，除非 mini 被同时勾选
-                                    if (pTitle.includes('tree') && !pTitle.includes('mini')) {
-                                        isMatch = true;
+                                activeKeywords.forEach(keyword => {
+                                    if (keyword === 'tree') {
+                                        if (pTitle.includes('tree') && !pTitle.includes('mini')) isMatch = true;
+                                        if (pTitle.includes('tree') && activeKeywords.includes('mini')) isMatch = true;
+                                    } else if (keyword === 'mini') {
+                                        if (pTitle.includes('mini')) isMatch = true;
+                                    } else {
+                                        if (pTitle.includes(keyword)) isMatch = true;
                                     }
-                                    if (pTitle.includes('tree') && activeKeywords.includes('mini')) {
-                                        isMatch = true;
-                                    }
-                                } else if (keyword === 'mini') {
-                                    if (pTitle.includes('mini')) {
-                                        isMatch = true;
-                                    }
-                                } else {
-                                    // 花环 wreath 和藤条 garland 的直接包含匹配
-                                    if (pTitle.includes(keyword)) {
-                                        isMatch = true;
-                                    }
-                                }
+                                });
+                                // 匹配的显示，不匹配的隐藏
+                                card.style.display = isMatch ? 'flex' : 'none';
                             });
-
-                            // 匹配成功的卡片亮出来(flex)，其余全部瞬间排除隐藏(none)！
-                            card.style.display = isMatch ? 'flex' : 'none';
-                        });
-                    } else {
-                        // 如果用户一个细分小方框都没勾，恢复全部显示状态
-                        cards.forEach(card => card.style.display = 'flex');
-                    }
+                        } else {
+                            // 没勾选任何子项时，恢复显示该类目的全集产品
+                            cards.forEach(card => card.style.display = 'flex');
+                        }
+                    });
                 });
-            });
+            }
         }
-})();
+    }); // 👈 完美闭合你的循环监听
+})(); // 👈 完美闭合自执行函数
 </script>
