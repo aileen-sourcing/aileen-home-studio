@@ -752,11 +752,44 @@
             parentLi.classList.toggle('active');
         }
 
-        function handleFilterChange() {
+        function handleFilterChange(element) {
             currentPage = 1;
-            const checkboxes = document.querySelectorAll('#filter-checkbox-group input[type="checkbox"]:checked');
+            
+            // 🌟 核心控制：如果勾选了 Christmas，让隐藏的三级小方框像抽屉一样滑出来
+            if (element && element.value === "Christmas") {
+                const parentLi = element.closest('li');
+                const thirdLevelContainer = parentLi.querySelector('.third-level-tags');
+                if (thirdLevelContainer) {
+                    if (element.checked) {
+                        thirdLevelContainer.style.display = 'flex';
+                    } else {
+                        thirdLevelContainer.style.display = 'none';
+                        // 取消勾选时，顺便把三级子项也全部清空
+                        thirdLevelContainer.querySelectorAll('input').forEach(cb => cb.checked = false);
+                    }
+                }
+            }
+
+            const checkboxes = document.querySelectorAll('#filter-checkbox-group .sub-filter-list > li > .filter-option input[type="checkbox"]:checked');
             selectedFilters = Array.from(checkboxes).map(cb => cb.value.toLowerCase().trim());
             renderProductsOnly();
+            handleThirdLevelChange(); // 触发三级分类卡片的隐藏或显示
+        }
+
+        // 🌟 核心新增：专门用来控制三级多选勾选后，卡片的二次过滤
+        function handleThirdLevelChange() {
+            const thirdCbs = document.querySelectorAll('.third-level-tags input[type="checkbox"]:checked');
+            const activeThirdFilters = Array.from(thirdCbs).map(cb => cb.value.toLowerCase().trim());
+            
+            // 如果三级勾选了，我们在二级过滤的基础上，隐藏掉不符合关键词的卡片
+            if (activeThirdFilters.length > 0) {
+                const cards = document.querySelectorAll('#category-products-grid .grid-product-card');
+                cards.forEach(card => {
+                    const pTitle = card.querySelector('.grid-product-title').innerText.toLowerCase();
+                    const isThirdMatch = activeThirdFilters.some(keyword => pTitle.includes(keyword));
+                    card.style.display = isThirdMatch ? 'flex' : 'none';
+                });
+            }
         }
 
         function renderPage() {
@@ -778,11 +811,20 @@
                     filterHtml += '<ul class="sub-filter-list">';
                         cat.subs.forEach((sub, subIndex) => {
                             filterHtml += `
-                                 <li>
+                                 <li style="position: relative;">
                                     <label class="filter-option">
-                                        <input type="checkbox" value="${sub}" onchange="handleFilterChange()">
+                                        <input type="checkbox" value="${sub}" onchange="handleFilterChange(this)">
                                         <span>${sub}</span>
                                      </label>
+
+                                     ${sub === "Christmas" ? `
+                                     <div class="third-level-tags" style="display: none; flex-direction: column; gap: 6px; padding: 6px 0 4px 24px;">
+                                        <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="tree" onchange="handleThirdLevelChange()"> <span>Christmas Tree</span></label>
+                                        <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="wreath" onchange="handleThirdLevelChange()"> <span>Wreath</span></label>
+                                        <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="garland" onchange="handleThirdLevelChange()"> <span>Garland</span></label>
+                                        <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="mini" onchange="handleThirdLevelChange()"> <span>Mini Christmas Tree</span></label>
+                                    </div>
+                                    ` : ''}
                                  </li>
                             `;
                          });
