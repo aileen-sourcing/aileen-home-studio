@@ -212,7 +212,7 @@ const detailsDatabase = {
 
     "reinforced christmas tree metal stand": {
         category: "material", 
-        subcategory: "metal-stands", 
+        subcategory: "metal-stand", 
         code: "Item Code: MS-20260629",
         images: [
             "images/products/raw-material/metal-stand/ms20260629/ms20260629-1.jpg",
