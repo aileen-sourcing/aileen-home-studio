@@ -624,6 +624,11 @@
             const cat = urlParams.get('cat') || 'holiday';
             const searchQuery = urlParams.get('search');
 
+            let dbSearchCat = cat.toLowerCase().trim();
+            if (dbSearchCat === "holiday") {
+                dbSearchCat = "holiday decor";
+            }
+
             let filteredKeys = [];
 
             for (let key in detailsDatabase) {
@@ -635,7 +640,7 @@
                             isMatch = true;
                         }
                     } else {
-                        if (product.category && product.category.toLowerCase().trim() === cat.toLowerCase().trim()) {
+                        if (product.category && product.category.toLowerCase().includes(dbSearchCat)) {
                             isMatch = true;
                         }
                     }
