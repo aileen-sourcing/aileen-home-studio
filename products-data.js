@@ -175,15 +175,15 @@ const detailsDatabase = {
 
     "pe tree tips": {
         category: "material",
-        subcategory: "pe-tips", 
-        code: "Item Code: PE20260713",
+        subcategory: "pe-tree-tips", 
+        code: "Item Code: PE-20260713",
         images: [
-            "images/products/raw-material/pe-tips/PE20260713/PE20260713-1.jpg",
-            "images/products/raw-material/pe-tips/PE20260713/PE20260713-2.jpg",
-            "images/products/raw-material/pe-tips/PE20260713/PE20260713-3.jpg",
-            "images/products/raw-material/pe-tips/PE20260713/PE20260713-4.jpg",
-            "images/products/raw-material/pe-tips/PE20260713/PE20260713-5.jpg",
-            "images/products/raw-material/pe-tips/PE20260713/PE20260713-6.jpg",
+            "images/products/raw-material/pe-tree-tips/pe20260713/pe20260713-1.jpg",
+            "images/products/raw-material/pe-tree-tips/pe20260713/pe20260713-2.jpg",
+            "images/products/raw-material/pe-tree-tips/pe20260713/pe20260713-3.jpg",
+            "images/products/raw-material/pe-tree-tips/pe20260713/pe20260713-4.jpg",
+            "images/products/raw-material/pe-tree-tips/pe20260713/pe20260713-5.jpg",
+            "images/products/raw-material/pe-tree-tips/pe20260713/pe20260713-6.jpg",
         ],
 
         specs: [
@@ -210,10 +210,9 @@ const detailsDatabase = {
         ]
     },
 
-    // 🌟 剔除了前两个错误分类的死架子数据，只留下这一个完美对齐的全新铁架子！
     "reinforced christmas tree metal stand": {
-        category: "material", // 🌟 完美对齐原材料大类暗号 material
-        subcategory: "metal-stands", // 🌟 完美对齐列表和首页按钮 subcategory
+        category: "material", 
+        subcategory: "metal-stands", 
         code: "Item Code: MS-20260629",
         images: [
             "images/products/raw-material/metal-stand/ms20260629/ms20260629-1.jpg",
