@@ -415,7 +415,20 @@
             <p class="listing-subtitle" id="listing-desc">Discover our premium wholesale selections.</p>
         </div>
 
-        <div class="products-grid" id="listing-grid-container"></div>
+        <div style="display: flex; gap: 30px; align-items: flex-start; max-width: 1400px; margin: 0 auto; width: 100%;">
+            
+            <div id="christmas-sidebar" style="display: none; width: 250px; flex-shrink: 0; background: #fff; border: 1px solid var(--border-color); padding: 20px; border-radius: 4px; position: sticky; top: 105px; text-align: left; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                <h3 style="font-size: 14px; font-weight: bold; color: var(--primary-color); letter-spacing: 1px; margin-bottom: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; text-transform: uppercase;">Filter By Category</h3>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="tree" class="third-cb" style="width:14px; height:14px;"> <span>Christmas Tree</span></label>
+                    <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="wreath" class="third-cb" style="width:14px; height:14px;"> <span>Wreath</span></label>
+                    <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="garland" class="third-cb" style="width:14px; height:14px;"> <span>Garland</span></label>
+                    <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="mini" class="third-cb" style="width:14px; height:14px;"> <span>Mini Christmas Tree</span></label>
+                </div>
+            </div>
+
+            <div class="products-grid" id="listing-grid-container" style="flex-grow: 1; width: 100%; margin: 0;"></div>
+        </div>
     </div>
 
     <footer>
@@ -611,5 +624,64 @@
             }
         }
     });
+    // =========================================================
+        // 🌟 核心新增：专门为 listing.html Christmas 模块定制的侧边栏与卡片排除过滤
+        // =========================================================
+        if (subItem === 'christmas') {
+            // 1. 如果是 Christmas 页面，瞬间让左侧原本隐藏的筛选栏展示出来
+            const sidebar = document.getElementById('christmas-sidebar');
+            if (sidebar) {
+                sidebar.style.display = 'block';
+            }
+
+            // 2. 绑定 4 个精细多选框的点击改变事件，启动卡片扫描隐藏逻辑
+            const checkboxes = document.querySelectorAll('.third-cb');
+            checkboxes.forEach(cb => {
+                cb.addEventListener('change', function() {
+                    // 收集当前被用户勾选的小分类（例如勾了 tree 和 wreath）
+                    const checkedCbs = document.querySelectorAll('.third-cb:checked');
+                    const activeKeywords = Array.from(checkedCbs).map(c => c.value.toLowerCase().trim());
+
+                    // 抓取刚刚画在页面上的全部产品卡片
+                    const cards = document.querySelectorAll('#listing-grid-container .grid-product-card');
+
+                    if (activeKeywords.length > 0) {
+                        cards.forEach(card => {
+                            // 抓取当前卡片的标题文字转小写
+                            const pTitle = card.querySelector('.grid-product-title').innerText.toLowerCase().trim();
+                            let isMatch = false;
+
+                            // 逐个扫描勾选的关键词进行排除筛选
+                            activeKeywords.forEach(keyword => {
+                                if (keyword === 'tree') {
+                                    // 普通树排除 mini 树，除非 mini 被同时勾选
+                                    if (pTitle.includes('tree') && !pTitle.includes('mini')) {
+                                        isMatch = true;
+                                    }
+                                    if (pTitle.includes('tree') && activeKeywords.includes('mini')) {
+                                        isMatch = true;
+                                    }
+                                } else if (keyword === 'mini') {
+                                    if (pTitle.includes('mini')) {
+                                        isMatch = true;
+                                    }
+                                } else {
+                                    // 花环 wreath 和藤条 garland 的直接包含匹配
+                                    if (pTitle.includes(keyword)) {
+                                        isMatch = true;
+                                    }
+                                }
+                            });
+
+                            // 匹配成功的卡片亮出来(flex)，其余全部瞬间排除隐藏(none)！
+                            card.style.display = isMatch ? 'flex' : 'none';
+                        });
+                    } else {
+                        // 如果用户一个细分小方框都没勾，恢复全部显示状态
+                        cards.forEach(card => card.style.display = 'flex');
+                    }
+                });
+            });
+        }
 })();
 </script>
