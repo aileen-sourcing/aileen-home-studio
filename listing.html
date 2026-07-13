@@ -410,11 +410,6 @@
     </div>
 
     <div class="listing-container">
-        <div class="listing-header">
-            <h1 class="listing-title" id="listing-main-title">Products List</h1>
-            <p class="listing-subtitle" id="listing-desc">Discover our premium wholesale selections.</p>
-        </div>
-
         <div style="display: flex; gap: 30px; align-items: flex-start; max-width: 1400px; margin: 0 auto; width: 100%;">
             
             <div id="christmas-sidebar" style="display: none; width: 250px; flex-shrink: 0; background: #fff; border: 1px solid var(--border-color); padding: 20px; border-radius: 4px; position: sticky; top: 105px; text-align: left; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
@@ -625,17 +620,17 @@
         }
 
         // =========================================================
-        // 🌟 完美合并：确保放在正确的作用域大括号内，绝不报错
+        // 🌟 终极修复：完美激活侧边栏与真实产品卡片排他性过滤
         // =========================================================
         if (subItem === 'christmas') {
             const container = document.getElementById('listing-grid-container');
             const sidebar = document.getElementById('christmas-sidebar');
             
             if (container && sidebar) {
-                // 1. 叫醒你在 HTML 里写好的侧边栏，让它显示出来
+                // 1. 让隐藏的侧边栏显示出来
                 sidebar.style.display = 'block';
                 
-                // 2. 找到大父级盒子，强制变成左右两栏弹性排版
+                // 2. 强制将包裹它们的父级大盒子拉伸为“左右两栏弹性排版”
                 const parentBox = container.parentElement;
                 if (parentBox) {
                     parentBox.style.display = 'flex';
@@ -643,22 +638,26 @@
                     parentBox.style.alignItems = 'flex-start';
                 }
                 
-                // 3. 让右侧的产品网格自动撑满剩余宽度
+                // 3. 让右侧的产品网格自动占满右边的空间
                 container.style.flexGrow = '1';
                 container.style.width = '100%';
                 container.style.margin = '0';
                 
-                // 4. 为 4 个多选小方框绑定独立的点击过滤拦截逻辑
+                // 4. 为这 4 个多选小方框绑定全自动的点击过滤联动
                 const checkboxes = document.querySelectorAll('.third-cb');
                 checkboxes.forEach(cb => {
                     cb.addEventListener('change', function() {
                         const checkedCbs = document.querySelectorAll('.third-cb:checked');
                         const activeKeywords = Array.from(checkedCbs).map(c => c.value.toLowerCase().trim());
-                        const cards = container.querySelectorAll('.grid-product-card');
+                        
+                        // 🌟 【精准修复】：将这里的 .grid-product-card 改为你真实的 .product-card
+                        const cards = container.querySelectorAll('.product-card');
 
                         if (activeKeywords.length > 0) {
                             cards.forEach(card => {
-                                const pTitle = card.querySelector('.grid-product-title').innerText.toLowerCase().trim();
+                                // 🌟 【精准修复】：抓取你真实的 .product-title-text 类名获取标题
+                                const titleEl = card.querySelector('.product-title-text');
+                                const pTitle = titleEl ? titleEl.innerText.toLowerCase().trim() : '';
                                 let isMatch = false;
 
                                 activeKeywords.forEach(keyword => {
@@ -671,17 +670,17 @@
                                         if (pTitle.includes(keyword)) isMatch = true;
                                     }
                                 });
-                                // 匹配的显示，不匹配的隐藏
+                                // 匹配的留着，不匹配的强制隐藏
                                 card.style.display = isMatch ? 'flex' : 'none';
                             });
                         } else {
-                            // 没勾选任何子项时，恢复显示该类目的全集产品
+                            // 没勾选任何小方框时，恢复原本的全部卡片显示
                             cards.forEach(card => card.style.display = 'flex');
                         }
                     });
                 });
             }
         }
-    }); // 👈 完美闭合你的循环监听
-})(); // 👈 完美闭合自执行函数
+    }); // 完美闭合你的循环监听
+})(); // 完美闭合自执行函数
 </script>
