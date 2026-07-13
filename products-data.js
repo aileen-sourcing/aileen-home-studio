@@ -175,7 +175,7 @@ const detailsDatabase = {
 
     "pe tree tips": {
         category: "material",
-        subcategory: "pe-tree-tips", 
+        subcategory: "pe-tips", 
         code: "Item Code: PE-20260713",
         images: [
             "images/products/raw-material/pe-tips/PE20260713/PE20260713-1.jpg",
