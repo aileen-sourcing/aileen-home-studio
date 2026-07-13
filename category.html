@@ -559,8 +559,8 @@
         }
 
         function getPageData() {
-    const cat = urlParams.get('cat') ? urlParams.get('cat').toLowerCase().trim() : '';
-    const cat = urlParams.get('cat');
+            const urlParams = new URLSearchParams(window.location.search);
+            const cat = urlParams.get('cat') ? urlParams.get('cat').toLowerCase().trim() : '';
 
     if (cat === 'Holiday') {
         return {
@@ -652,6 +652,7 @@
                         }
                     }
                 }
+            }
     const container = document.getElementById('products-grid-container');
     if (!container) return;
 
