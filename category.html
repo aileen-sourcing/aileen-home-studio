@@ -559,13 +559,12 @@
         }
 
         function getPageData() {
-    const urlParams = new URLSearchParams(window.location.search);
+    const cat = urlParams.get('cat') ? urlParams.get('cat').toLowerCase().trim() : '';
     const cat = urlParams.get('cat');
 
     if (cat === 'Holiday') {
         return {
             title: "Holiday Decor",
-            // 每一个大类目是一个对象，有 name 和 subs(子类)
             categories: [
                 { name: "Seasons", subs: ["Spring Decor","Summer Decor","Fall Decor","Winter Decor"] },
                 { name: "Holidays", subs: ["Halloween","Thanksgiving","Christmas","Easter"] },
@@ -583,6 +582,7 @@
             ]
         };
     }
+    if (cat === 'Raw Material') {
     return {
         title: "Raw Material",
         categories: [
