@@ -562,7 +562,7 @@
             const urlParams = new URLSearchParams(window.location.search);
             const cat = urlParams.get('cat') ? urlParams.get('cat').toLowerCase().trim() : '';
 
-    if (cat === 'Holiday') {
+    if (cat === 'holiday') {
         return {
             title: "Holiday Decor",
             categories: [
@@ -572,7 +572,7 @@
             ]
         };
     }
-    if (cat === 'Lighting') {
+    if (cat === 'lighting') {
         return {
             title: "Lighting",
             categories: [
@@ -582,7 +582,7 @@
             ]
         };
     }
-    if (cat === 'Raw Material') {
+    if (cat === 'material') {
     return {
         title: "Raw Material",
         categories: [
@@ -683,7 +683,7 @@
             // 如果页面标题叫 "holiday decor" 且产品属于 "holiday"
             // 或者页面标题叫 "raw material" 且产品属于 "material"
             // 或者页面标题包含了产品的类别
-            let isCategoryMatch = currentTitle.includes(pCat) || pCat.includes(currentTitle.split(' ')[0]);
+            let isCategoryMatch = pCat.includes(dbSearchCat) || dbSearchCat.includes(pCat);
 
             if (isCategoryMatch) {
                 // 如果左侧没有勾选任何过滤框，或者勾选的子类刚好匹配到了产品的 subcategory
