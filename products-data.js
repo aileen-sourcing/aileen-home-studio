@@ -178,12 +178,12 @@ const detailsDatabase = {
         subcategory: "pe-tree-tips", 
         code: "Item Code: PE-20260713",
         images: [
-            "images/products/raw-material/pe-tree-tips/pe20260713/pe20260713-1.jpg",
-            "images/products/raw-material/pe-tree-tips/pe20260713/pe20260713-2.jpg",
-            "images/products/raw-material/pe-tree-tips/pe20260713/pe20260713-3.jpg",
-            "images/products/raw-material/pe-tree-tips/pe20260713/pe20260713-4.jpg",
-            "images/products/raw-material/pe-tree-tips/pe20260713/pe20260713-5.jpg",
-            "images/products/raw-material/pe-tree-tips/pe20260713/pe20260713-6.jpg",
+            "images/products/raw-material/pe-tips/PE20260713/PE20260713-1.jpg",
+            "images/products/raw-material/pe-tips/PE20260713/PE20260713-2.jpg",
+            "images/products/raw-material/pe-tips/PE20260713/PE20260713-3.jpg",
+            "images/products/raw-material/pe-tips/PE20260713/PE20260713-4.jpg",
+            "images/products/raw-material/pe-tips/PE20260713/PE20260713-5.jpg",
+            "images/products/raw-material/pe-tips/PE20260713/PE20260713-6.jpg",
         ],
 
         specs: [
