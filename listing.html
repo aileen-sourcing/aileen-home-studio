@@ -684,30 +684,45 @@
     }); // 完美闭合你的循环监听
 })(); // 完美闭合自执行函数
 // =========================================================
-        // 🌟 新增联动：自动识别主页传过来的 filter 参数并打勾过滤
-        // =========================================================
-    (function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const filterKeyword = urlParams.get('filter'); // 抓取网址里的 filter 是 wreath 还是 garland
+// 🌟 强效联动：死盯左侧多选框加载，一露面立刻打钩并过滤产品
+// =========================================================
+(function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterKeyword = urlParams.get('filter'); // 比如抓到 "Wreath"
 
-        if (filterKeyword) {
-            // 1. 自动找到左侧多选框里 value 为 wreath 或 garland 的那个框
-            const labels = document.querySelectorAll('#listing-filters label, .filter-sidebar label, .filter-section label');
+    if (filterKeyword) {
+        // 开启一个每 0.1 秒执行一次的定时器，寻找左侧多选框
+        const checkExist = setInterval(function() {
+            // 尝试通过多种可能包含文本的标签去匹配你的多选框
+            const labels = document.querySelectorAll('label, .filter-sidebar label, .third-cb');
             let targetCheckbox = null;
-            labels.forEach(label => {
-                if (label.textContent.trim().includes(filterKeyword)) {
-                    targetCheckbox = label.querySelector('input[type="checkbox"]') || document.getElementById(label.getAttribute('for'));
+
+            labels.forEach(el => {
+                if (el.textContent.trim().includes(filterKeyword)) {
+                    // 找到 label 关联的那个 input checkbox
+                    targetCheckbox = el.querySelector('input[type="checkbox"]') || el;
                 }
             });
 
-            if (targetCheckbox) {
+            // 🎯 如果在网页里成功抓到了 Wreath 或 Garland 的多选框
+            if (targetCheckbox && targetCheckbox.type === 'checkbox') {
+                clearInterval(checkExist); // 1. 抓到了就立刻关闭定时器，不浪费浏览器性能
+
+                // 2. 先把别的多选框全部取消勾选（比如默认全选了树，先把它清空）
                 document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
-                targetCheckbox.checked = true; // 强行让它打勾
-                
-                
-                // 2. 手动触发一次点击变动事件，让页面原本写好的隐藏/显示逻辑自动跑一遍
-                targetCheckbox.dispatchEvent(new Event('change'));
+
+                // 3. 强行勾选我们要的目标（比如 Wreath）
+                targetCheckbox.checked = true;
+
+                // 4. 🔥 关键核心：手动命令多选框触发它的 change 或 click 事件
+                // 这样就能强行激活你页面原本写在内部、用来隐藏/显示卡片的那段隐藏逻辑！
+                targetCheckbox.dispatchEvent(new Event('change', { bubbles: true }));
+                targetCheckbox.click(); // 双重保险，确保某些用 click 绑定的逻辑也能被唤醒
             }
-        }
-    })();
+        }, 100); // 每 100 毫秒检查一次
+
+        // 如果超过 4 秒还没加载出来，自动放弃，防止死循环
+        setTimeout(() => clearInterval(checkExist), 4000);
+    }
+})();
 </script>
