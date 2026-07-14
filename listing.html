@@ -683,4 +683,20 @@
         }
     }); // 完美闭合你的循环监听
 })(); // 完美闭合自执行函数
+// =========================================================
+        // 🌟 新增联动：自动识别主页传过来的 filter 参数并打勾过滤
+        // =========================================================
+        const urlParams = new URLSearchParams(window.location.search);
+        const filterKeyword = urlParams.get('filter'); // 抓取网址里的 filter 是 wreath 还是 garland
+
+        if (filterKeyword) {
+            // 1. 自动找到左侧多选框里 value 为 wreath 或 garland 的那个框
+            const targetCheckbox = document.querySelector(`.third-cb[value="${filterKeyword}"]`);
+            if (targetCheckbox) {
+                targetCheckbox.checked = true; // 强行让它打勾
+                
+                // 2. 手动触发一次点击变动事件，让页面原本写好的隐藏/显示逻辑自动跑一遍
+                targetCheckbox.dispatchEvent(new Event('change'));
+            }
+        }
 </script>
