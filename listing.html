@@ -689,49 +689,36 @@
 (function() {
     const urlParams = new URLSearchParams(window.location.search);
     const filterKeyword = urlParams.get('filter'); // 比如抓到 "Wreath"
-    const sub = urlParams.get('sub');
+    let currentCat = urlParams.get('cat');
+    let currentSubcat = urlParams.get('sub');
 
-    // 🌟 核心突破：如果检测到是单品直达，开启超级定时器接管页面
-    if (filterKeyword && (sub === 'wreath' || sub === 'garland')) {
-        
-        const forceLoadInterval = setInterval(function() {
-            // 1. 寻找左侧多选框
-            const labels = document.querySelectorAll('label, .filter-sidebar label, .third-cb');
-            let targetCheckbox = null;
-            labels.forEach(el => {
-                if (el.textContent.trim().includes(filterKeyword)) {
-                    targetCheckbox = el.querySelector('input[type="checkbox"]') || el;
+    if (currentSubcat === 'wreath' || currentSubcat === 'garland') {
+        currentSubcat = 'christmas';
+    }
+
+    if (filterKeyword) { 
+        const checkSidebarLoaded = setInterval(function() {
+        // 找到左侧所有多选框
+        const checkboxes = document.querySelectorAll('.third-cb');
+        if (checkboxes.length > 0) {
+            clearInterval(checkSidebarLoaded); // 找到了，停止定时器
+            
+            checkboxes.forEach(cb => {
+                // 如果多选框的 value 属性或者它身边的文字匹配到了传过来的关键词（如 Wreath 或 Garland）
+                if (cb.value.toLowerCase() === filterKeyword.toLowerCase() || cb.parentElement.textContent.includes(filterKeyword)) {
+                    // 1. 先把全选或者默认的勾清空
+                    document.querySelectorAll('.third-cb').forEach(c => c.checked = false);
+                    // 2. 勾选当前目标
+                    cb.checked = true;
+                    // 3. 强行触发原本绑定的过滤函数（根据你的源码，过滤函数叫 filterProducts）
+                    if (typeof filterProducts === 'function') {
+                        filterProducts();
+                    }
                 }
             });
-
-            // 2. 寻找那个讨厌的 Coming Soon 提示框
-            const comingSoonBox = Array.from(document.querySelectorAll('div, p, section')).find(el => 
-                el.textContent.includes('Coming soon') || el.textContent.includes('coming soon')
-            );
-
-            // 🎯 只要多选框加载出来了，立刻执行强行介入
-            if (targetCheckbox && targetCheckbox.type === 'checkbox') {
-                clearInterval(forceLoadInterval); // 关闭定时器
-
-                // 如果有 Coming Soon 的报错提示，直接从网页上把它隐藏
-                if (comingSoonBox) {
-                    comingSoonBox.style.display = 'none'; 
-                }
-
-                // 强行把所有多选框清空
-                document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
-
-                // 强行勾选我们要的目标（Wreath 或 Garland）
-                targetCheckbox.checked = true;
-
-                // 核心：强行命令多选框点击，唤醒原本写在 listing.html 内部的隐藏/显示渲染逻辑
-                targetCheckbox.dispatchEvent(new Event('change', { bubbles: true }));
-                targetCheckbox.click();
-            }
-        }, 100);
-
-        // 5秒超时
-        setTimeout(() => clearInterval(forceLoadInterval), 5000);
-    }
+        }
+    }, 100);
+    setTimeout(() => clearInterval(checkSidebarLoaded), 4000);
+}
 })();
 </script>
