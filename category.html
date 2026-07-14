@@ -152,6 +152,22 @@
             .main-layout { flex-direction: column; gap: 30px; padding: 0 20px; }
             .sidebar-filter { flex: none; width: 100%; }
             .products-grid { grid-template-columns: 1fr; }
+            .product-card .img-container {
+                width: 100% !important;
+                aspect-ratio: 1 / 1 !important;
+                overflow: hidden !important;
+                position: relative !important;
+                background: #f9fafb;
+            }
+            .product-card .img-container img {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+                object-position: center !important;
+            }
+            .nav-container .logo {
+                display: none !important;
+            }
         }
         footer { 
             background: var(--footer-bg); 
