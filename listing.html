@@ -305,6 +305,67 @@
             z-index: 10 !important;      /* 强制内容层级为 10，永远低于 99999 层的导航栏 */
             padding-top: 20px !important; /* 给顶部大导航留出安全的物理排队空间 */
         }
+        
+        @media screen and (max-width: 768px) {
+    /* 1. 强制隐藏导航栏长名字，腾出展示空间 */
+    .nav-container .logo {
+        display: none !important;
+    }
+
+    /* 2. 修复最外层大盒子宽度，防止横向溢出和左右死死卡住 */
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 12px !important;
+        margin: 0 !important;
+    }
+
+    /* 3. 核心扭转：让侧边栏去上面，产品列表去下面 */
+    .main-content {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    /* 4. 筛选框拉满宽度平铺在上方 */
+    .filter-sidebar {
+        width: 100% !important;
+        flex: none !important;
+        padding: 15px !important;
+        border-right: none !important; /* 删掉原本的右边框线 */
+        border-bottom: 1px solid var(--border-color) !important; /* 改成下边框线分隔 */
+    }
+
+    /* 5. 核心需求：强制让右侧产品在手机端显示“一行2个卡片” */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important; /* 适当缩小间距，更适合手机排版 */
+        width: 100% !important;
+    }
+
+    /* 6. 强行让卡片里的图片外层保持 1:1 完美正方形，绝不变形 */
+    .product-card .img-container {
+        width: 100% !important;
+        aspect-ratio: 1 / 1 !important;
+        overflow: hidden !important;
+        position: relative !important;
+    }
+
+    .product-card .img-container img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important; /* 智能缩放裁剪 */
+        object-position: center !important;
+    }
+
+    /* 7. 微调卡片内文字大小，让2列排版更精致 */
+    .product-info h3 {
+        font-size: 13px !important;
+        margin-bottom: 4px !important;
+    }
+    .product-info .sku {
+        font-size: 11px !important;
+    }
+}
 
     </style>
 </head>
