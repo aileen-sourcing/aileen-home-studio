@@ -81,15 +81,19 @@ const detailsDatabase = {
         ]
     },
 
-    "classic pine cone artificial wreath": {
+    "45cm mini christmas tree": {
         category: "holiday",
-        subcategory: "wreaths", 
-        code: "Item Code: WR-001",
-        images: ["images/products/holiday-decor/wreaths/WR-001/1.jpg"], 
+        subcategory: "christmas", 
+        code: "Item Code: mt20260715",
+        images: [
+            "images/products/holiday-decor/christmas/mt20260715/mt20260715-1.jpg",
+            "images/products/holiday-decor/christmas/mt20260715/mt20260715-2.jpg",
+            "images/products/holiday-decor/christmas/mt20260715/mt20260715-3.jpg",
+            "images/products/holiday-decor/christmas/mt20260715/mt20260715-4.jpg",
+            "images/products/holiday-decor/christmas/mt20260715/mt20260715-5.jpg"
+        ], 
         specs: [
-            { label: "Diameter", value: "24 Inch / 30 Inch" },
-            { label: "Ornaments", value: "Natural Pine Cones & Red Berries" },
-            { label: "Base", value: "Sturdy Natural Vine Frame" },
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
