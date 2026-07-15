@@ -214,7 +214,25 @@ const detailsDatabase = {
         ]
     },
 
-    "reinforced christmas tree metal stand": {
+    "christmas tree metal tube": {
+        category: "material",
+        subcategory: "metal-tube", 
+        code: "Item Code: t20260715",
+        images: [
+            "images/products/raw-material/metal-tube/t20260715/t20260715-1.jpg",
+            "images/products/raw-material/metal-tube/t20260715/t20260715-2.jpg",
+            "images/products/raw-material/metal-tube/t20260715/t20260715-3.jpg",
+            "images/products/raw-material/metal-tube/t20260715/t20260715-4.jpg",
+            "images/products/raw-material/metal-tube/t20260715/t20260715-5.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "Metal Tube" },
+            { label: "Color", value: "Dark Green, Light Green, Customizable" },
+            { label: "Usage", value: "For Christmas Trees Production" }
+        ]
+    },
+
+    "christmas tree metal stand": {
         category: "material", 
         subcategory: "metal-stands", 
         code: "Item Code: MS-20260629",
