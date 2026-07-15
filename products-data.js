@@ -216,7 +216,7 @@ const detailsDatabase = {
 
     "christmas tree metal tube": {
         category: "material",
-        subcategory: "metal-tubes", 
+        subcategory: "metal-tube", 
         code: "Item Code: t20260715",
         images: [
             "images/products/raw-material/metal-tube/t20260715/t20260715-1.jpg",
