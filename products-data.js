@@ -102,14 +102,17 @@ const detailsDatabase = {
     // 💡 大类 2：Home Lighting (cat: "lighting")
     // ==========================================
     
-    "minimalist dimmable ceramic table lamp": {
+    "pumpkin table lamp": {
         category: "lighting",
         subcategory: "table-lamps", 
-        code: "Item Code: TL-001",
-        images: ["images/lamp01.jpg", "images/lamp02.jpg"], 
+        code: "Item Code: tb20260630",
+        images: [
+            "images/products/lighting/table-lamps/tb20260630/tb20260630-1.jpg",
+            "images/products/lighting/table-lamps/tb20260630/tb20260630-2.jpg"
+
+        ], 
         specs: [
-            { label: "Material", value: "Premium Ceramic Base + Fabric Lampshade" },
-            { label: "Light Source", value: "LED E27 (Dimmable Supported)" },
+            { label: "Material", value: "Premium Wooden Base" },
             { label: "Certification", value: "CE / RoHS / UL Compliant" },
             { label: "Application", value: "Hotel Bedroom, Living Room, Showroom" }
         ]
