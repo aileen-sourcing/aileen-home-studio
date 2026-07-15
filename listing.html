@@ -307,65 +307,96 @@
         }
         
         @media screen and (max-width: 768px) {
-    /* 1. 强制隐藏导航栏长名字，腾出展示空间 */
-    .nav-container .logo {
-        display: none !important;
-    }
+            /* 1. 🎯 彻底干掉手机端导航栏的“Aileen's Home Studio”长名字 */
+            .nav-container .logo, 
+            .navbar .logo, 
+            .logo,
+            a[href="index.html"].logo {
+                display: none !important;
+                width: 0 !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
 
-    /* 2. 修复最外层大盒子宽度，防止横向溢出和左右死死卡住 */
-    .container {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 12px !important;
-        margin: 0 !important;
-    }
+            /* 2. 让原本包裹导航按钮的容器占满整行，这样右边残缺的菜单内容就会自动回流显现出来 */
+            .nav-links {
+                width: 100% !important;
+                display: flex !important;
+                justify-content: space-around !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
 
-    /* 3. 核心扭转：让侧边栏去上面，产品列表去下面 */
-    .main-content {
-        flex-direction: column !important;
-        gap: 20px !important;
-    }
+            /* 3. 解决被往右挤的大招：强行重置外层大盒子 .container 的固定宽度 */
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 0 10px !important;
+                margin: 0 !important;
+                overflow: hidden !important;
+            }
 
-    /* 4. 筛选框拉满宽度平铺在上方 */
-    .filter-sidebar {
-        width: 100% !important;
-        flex: none !important;
-        padding: 15px !important;
-        border-right: none !important; /* 删掉原本的右边框线 */
-        border-bottom: 1px solid var(--border-color) !important; /* 改成下边框线分隔 */
-    }
+            /* 4. 🎯 核心扭转：仅在有筛选框存在时，让筛选框在上、产品在下 */
+            .main-content {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 15px !important;
+                width: 100% !important;
+            }
 
-    /* 5. 核心需求：强制让右侧产品在手机端显示“一行2个卡片” */
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 12px !important; /* 适当缩小间距，更适合手机排版 */
-        width: 100% !important;
-    }
+            /* 5. 侧边筛选框拉满整屏宽度并放在最上面 */
+            .filter-sidebar {
+                width: 100% !important;
+                max-width: 100% !important;
+                flex: none !important;
+                padding: 15px !important;
+                border-right: none !important; 
+                border-bottom: 1px solid var(--border-color) !important; 
+                box-sizing: border-box !important;
+            }
 
-    /* 6. 强行让卡片里的图片外层保持 1:1 完美正方形，绝不变形 */
-    .product-card .img-container {
-        width: 100% !important;
-        aspect-ratio: 1 / 1 !important;
-        overflow: hidden !important;
-        position: relative !important;
-    }
+            /* 6. 🎯 核心诉求：右侧产品区域一行精准分 2 个卡片排列，美观不拥挤 */
+            .products-grid {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 10px !important; 
+                width: 100% !important;
+                padding: 0 !important;
+            }
 
-    .product-card .img-container img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important; /* 智能缩放裁剪 */
-        object-position: center !important;
-    }
+            /* 7. 🎯 核心诉求：强制让手机端的所有产品图片容器变成完美的 1:1 正方形 */
+            .product-card .img-container {
+                width: 100% !important;
+                aspect-ratio: 1 / 1 !important;
+                overflow: hidden !important;
+                position: relative !important;
+                background: #f9fafb !important;
+            }
 
-    /* 7. 微调卡片内文字大小，让2列排版更精致 */
-    .product-info h3 {
-        font-size: 13px !important;
-        margin-bottom: 4px !important;
-    }
-    .product-info .sku {
-        font-size: 11px !important;
-    }
-}
+            /* 8. 让图片在正方形容器内等比例自动缩放裁剪，绝不变形 */
+            .product-card .img-container img {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important; 
+                object-position: center !important;
+            }
+
+            /* 9. 微调卡片文本和间距，确保在手机 2 列下不会撑开变形 */
+            .product-info {
+                padding: 10px 6px !important;
+            }
+            .product-info h3 {
+                font-size: 13px !important;
+                margin-bottom: 3px !important;
+                line-height: 1.3 !important;
+                white-space: nowrap !important;
+                overflow: hidden !important;
+                text-overflow: ellipsis !important; /* 文字太长自动显示省略号... */
+            }
+            .product-info .sku {
+                font-size: 11px !important;
+            }
+        }
 
     </style>
 </head>
