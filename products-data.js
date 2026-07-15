@@ -118,14 +118,15 @@ const detailsDatabase = {
         ]
     },
 
-    "modern minimalist linear floor lamp": {
+    "modern floor lamp": {
         category: "lighting",
         subcategory: "floor-lamps", 
-        code: "Item Code: FL-001",
-        images: ["images/products/lighting/floor/FL-001/1.jpg"], 
+        code: "Item Code: fl20260715",
+        images: [
+            "images/products/lighting/floor-lamps/fl20260715/fl20260715-1.jpg",
+        ], 
         specs: [
-            { label: "Material", value: "Anodized Aluminum + Heavy Iron Base" },
-            { label: "Control", value: "Remote Control & Touch Stepless Dimming" },
+            { label: "Material", value: "Wooden Base" },
             { label: "Height", value: "150 cm / Custom" },
             { label: "Application", value: "Reading Room, Office, Nordic Living Room" }
         ]
@@ -147,15 +148,13 @@ const detailsDatabase = {
         ]
     },
 
-    "waterproof smart led outdoor garden light": {
+    "wall sconces": {
         category: "lighting",
-        subcategory: "outdoor-lights", 
-        code: "Item Code: OL-001",
-        images: ["images/products/lighting/outdoor/OL-001/1.jpg"], 
+        subcategory: "wall-lighting", 
+        code: "Item Code: wl20260715",
+        images: ["images/products/lighting/wall-lighting/wl20260715/wl20260715-1.jpg"], 
         specs: [
-            { label: "IP Rating", value: "IP65 Weatherproof & Dustproof" },
-            { label: "Material", value: "Die-cast Aluminum Body + PC Diffuser" },
-            { label: "Power Source", value: "Solar Powered / AC Hardwired" },
+            { label: "Material", value: "Wooden + Glass" },
             { label: "Application", value: "Pathway, Backyard Yard, Villa Landscaping" }
         ]
     },
