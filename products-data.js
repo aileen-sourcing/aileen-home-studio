@@ -131,16 +131,19 @@ const detailsDatabase = {
         ]
     },
 
-    "luxury crystal living room pendant light": {
+    "pendant light": {
         category: "lighting",
         subcategory: "pendant-lights", 
-        code: "Item Code: PL-001",
-        images: ["images/products/lighting/pendant/PL-001/1.jpg"], 
+        code: "Item Code: p20260630",
+        images: [
+            "images/products/lighting/pendant-lights/p20260630/p20260630-1.jpg",
+            "images/products/lighting/pendant-lights/p20260630/p20260630-2.jpg"
+        ], 
         specs: [
-            { label: "Material", value: "K9 Clear Crystal + Stainless Steel Frame" },
+            { label: "Material", value: "Wooden and Glass" },
             { label: "Voltage", value: "110V - 240V Available" },
             { label: "Finish", value: "Luxury Electroplated Gold / Chrome" },
-            { label: "Application", value: "Dining Room, Luxury Hotel Lobby, Villa Villa" }
+            { label: "Application", value: "Dining Room, Luxury Hotel Lobby, Villa" }
         ]
     },
 
