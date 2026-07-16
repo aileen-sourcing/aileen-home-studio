@@ -174,7 +174,7 @@
 
             /* 🌟 新增：强制让手机端顶栏的左右留边缩减至 20px，完美对齐下方的产品边距 */
             .navbar {
-                padding: 0 20px !important;
+                padding: 0 25px !important;
             }
 
             /* 2. 让导航菜单容器占满左侧绝大部分空间，支持左右横向丝滑滑动 */
@@ -187,6 +187,15 @@
                 gap: 12px !important;          /* 🌟 极致压紧：将间距从 15px 缩减到 12px，腾出更多空间 */
                 padding: 10px 0 !important;    /* 去掉左右内边距，让首项贴着最左侧起滑 */
                 -webkit-overflow-scrolling: touch;
+            }
+
+            /* 🌟 新增：强制清除 PC 端 li 带来的空气间距，让其紧密贴合 */
+            .nav-links li {
+                margin: 0 !important;
+                padding: 0 !important;
+                display: flex !important;
+                align-items: center !important;
+                flex: 0 0 auto !important;
             }
 
             /* 🌟 新增：强制让分类页手机端导航里的文字大小与 padding 缩紧，与详情页完美对齐 */
