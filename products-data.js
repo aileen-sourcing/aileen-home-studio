@@ -24,7 +24,7 @@ const detailsDatabase = {
         ]
     },
 
-    "7ft prelit christmas tree": {
+    "7ft prelit xmas tree": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260708",
@@ -91,6 +91,205 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-3.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-4.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-5.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+
+    "90cm mini Xmas tree": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260716",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mt20260716-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mt20260716-2.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mt20260716-3.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mt20260716-4.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mt20260716-5.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mt20260716-6.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+
+    "30cm mini Xmas tree": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260717",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260717/mt20260717-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260717/mt20260717-2.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260717/mt20260717-3.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260717/mt20260717-4.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+
+    "60cm mini Xmas tree": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260718",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260718/mt20260718-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260718/mt20260718-2.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260718/mt20260718-3.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260718/mt20260718-4.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260718/mt20260718-5.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260718/mt20260718-6.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+
+    "snow mini Xmas tree": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260719",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-2.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-3.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-4.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+
+    "60cm mini Xmas tree": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260720",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260720/mt20260720-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260720/mt20260720-2.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+
+    "45cm mini Xmas tree": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260721",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260721/mt20260721-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260721/mt20260721-2.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260721/mt20260721-3.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260721/mt20260721-4.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260721/mt20260721-5.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260721/mt20260721-6.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+
+    "90cm mini Xmas tree": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260722",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260722/mt20260722-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260722/mt20260722-2.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260722/mt20260722-3.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260722/mt20260722-4.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260722/mt20260722-5.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260722/mt20260722-6.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+
+    "pink mini Xmas tree": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260723",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260723/mt20260723-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260723/mt20260723-2.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260723/mt20260723-3.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260723/mt20260723-4.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260723/mt20260723-5.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260723/mt20260723-6.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+
+    "30cm mini Xmas tree": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260724",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260724/mt20260724-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260724/mt20260724-2.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+
+    "pvc mini Xmas tree": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260725",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260725/mt20260725-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260725/mt20260725-2.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260725/mt20260725-3.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260725/mt20260725-4.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260725/mt20260725-5.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260725/mt20260725-6.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+
+    "green mini Xmas tree": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260726",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260726/mt20260726-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260726/mt20260726-2.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260726/mt20260726-3.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260726/mt20260726-4.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+
+    "pot mini Xmas tree": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260727",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260727/mt20260727-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260727/mt20260727-2.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260727/mt20260727-3.jpg"
         ], 
         specs: [
             { label: "Size", value: "45CM/60CM/90CM, Customizable" },
