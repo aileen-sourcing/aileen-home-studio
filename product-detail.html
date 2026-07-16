@@ -636,18 +636,19 @@
                 overflow: hidden !important;
                 position: relative !important;
                 border-radius: 8px !important;
+                transform: none !important;
             }
 
             .main-image-box img,
             .main-image-container img {
                 width: 100% !important;
                 height: 100% !important;
-                object-fit: cover !important; 
+                object-fit: contain !important; 
                 object-position: center !important;
             }
 
             /* 7. 缩略图一排不换行，且支持手指左右丝滑滚动 */
-            .thumb-container {
+            .thumb-list {
                 display: flex !important;
                 flex-wrap: nowrap !important; 
                 overflow-x: auto !important;   
@@ -660,7 +661,7 @@
                 -webkit-overflow-scrolling: touch;
             }
             
-            .thumb-container::-webkit-scrollbar {
+            .thumb-list::-webkit-scrollbar {
                 display: none !important; 
             }
 
