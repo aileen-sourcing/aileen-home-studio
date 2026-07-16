@@ -513,16 +513,31 @@
                 padding: 0 !important;
             }
 
-            /* 让导航菜单占满左侧腾出的空间，完整平铺展示 */
+            /* 2. 🌟 核心需求：让详情页的导航菜单在手机端也支持横向手指丝滑滚动，绝不卡死内容 */
             .nav-links {
                 width: 100% !important;
                 display: flex !important;
-                justify-content: space-around !important;
-                margin: 0 !important;
-                padding: 0 !important;
+                flex-wrap: nowrap !important; /* 强制所有菜单项排成一行，绝不换行 */
+                overflow-x: auto !important;   /* 当内容超出屏幕时，允许左右手指滑动 */
+                justify-content: flex-start !important; /* 从左到右依次排列 */
+                gap: 20px !important;          /* 类目之间的间距 */
+                padding: 10px 5px !important;   /* 留出舒适的上下内边距 */
+                
+                /* 隐藏原生的丑陋滚动条，让滑动体验更顺滑 */
+                -webkit-overflow-scrolling: touch;
             }
 
-            /* 2. 修复最外层大盒子宽度，防止被撑宽溢出屏幕 */
+            /* 隐藏横向滚动条 */
+            .nav-links::-webkit-scrollbar {
+                display: none !important;
+            }
+
+            /* 确保导航里的每一项（包括搜索框等）保持完整尺寸，不被强制压扁 */
+            .nav-links > * {
+                flex: 0 0 auto !important;
+            }
+
+            /* 3. 修复最外层大盒子宽度，防止被撑宽溢出屏幕 */
             .container {
                 width: 100% !important;
                 max-width: 100% !important;
@@ -531,19 +546,19 @@
                 overflow: hidden !important;
             }
 
-            /* 3. 详情页主布局由“左右”改成“上下”堆叠 */
+            /* 4. 详情页主布局由“左右”改成“上下”堆叠 */
             .product-main-section,
             .product-container {
                 grid-template-columns: 1fr !important;
                 gap: 20px !important;
             }
 
-            /* 4. 🎯 强制将产品大图外壳转为 1:1 完美正方形 */
+            /* 5. 🎯 强制将产品大图外壳转为 1:1 完美正方形 */
             .main-image-box,
             .main-image-container {
                 width: 100% !important;
-                height: auto !important;         /* 🌟 废除写死的 350px 或 500px 高度 */
-                aspect-ratio: 1 / 1 !important; /* 🌟 强制形成完美的 1:1 正方形 */
+                height: auto !important;         /* 废除写死的 350px 或 500px 高度 */
+                aspect-ratio: 1 / 1 !important; /* 强制形成完美的 1:1 正方形 */
                 overflow: hidden !important;
                 position: relative !important;
                 border-radius: 8px !important;
@@ -558,31 +573,31 @@
                 object-position: center !important;
             }
 
-            /* 5. 🎯 核心诉求：缩略图强行保持一排不换行，且支持手指左右丝滑滚动，绝不顶飞页面 */
+            /* 6. 🎯 缩略图强行保持一排不换行，且支持手指左右丝滑滚动，绝不顶飞页面 */
             .thumb-container {
                 display: flex !important;
-                flex-wrap: nowrap !important; /* 🌟 强制绝不换行 */
-                overflow-x: auto !important;   /* 🌟 超出时允许左右手指滑动查看 */
+                flex-wrap: nowrap !important; /* 强制绝不换行 */
+                overflow-x: auto !important;   /* 超出时允许左右手指滑动查看 */
                 white-space: nowrap !important;
                 gap: 8px !important;
                 justify-content: flex-start !important;
                 width: 100% !important;
                 margin-top: 10px !important;
-                padding-bottom: 8px !important; /* 留一点点底边距，让滑动更流畅 */
+                padding-bottom: 8px !important; /* 留一点点底边距 */
                 
-                /* 隐藏原生的丑陋滚动条，操作体验更顺滑 */
+                /* 隐藏原生的丑陋滚动条 */
                 -webkit-overflow-scrolling: touch;
             }
             
-            /* 隐藏各类手机浏览器的默认横向滚动条 */
+            /* 隐藏横向滚动条 */
             .thumb-container::-webkit-scrollbar {
                 display: none !important; 
             }
 
-            /* 6. 控制手机端每张并排缩略图的固定大小，防止它们在单行被压缩扁 */
+            /* 控制手机端每张并排缩略图的固定大小 */
             .thumb-item {
-                width: 70px !important;    /* 🌟 手机端每张小图固定 70px 宽 */
-                flex: 0 0 70px !important; /* 🌟 阻止小图为了强行挤进屏幕而被挤扁 */
+                width: 70px !important;    
+                flex: 0 0 70px !important; 
                 aspect-ratio: 1 / 1 !important;
                 height: 70px !important;
                 border-radius: 4px !important;
