@@ -5,16 +5,16 @@ const detailsDatabase = {
     // 🎄 大类 1：Holiday Decor (cat: "holiday")
     // ==========================================
     
-    "full pe prelit christmas tree": {
+    "pe prelit christmas tree": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct26062801",
         images: [
-            "images/products/holiday-decor/christmas/ct26062801/1.jpg",
-            "images/products/holiday-decor/christmas/ct26062801/2.jpg",
-            "images/products/holiday-decor/christmas/ct26062801/3.jpg",
-            "images/products/holiday-decor/christmas/ct26062801/4.jpg",
-            "images/products/holiday-decor/christmas/ct26062801/5.jpg"
+            "images/products/holiday-decor/christmas/christmas-tree/ct26062801/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26062801/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26062801/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26062801/4.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26062801/5.jpg"
         ], 
         specs: [
             { label: "Material", value: "100% PE Premium Tips (Fireproofing)" },
@@ -29,11 +29,11 @@ const detailsDatabase = {
         subcategory: "christmas", 
         code: "Item Code: ct20260708",
         images: [
-            "images/products/holiday-decor/christmas/ct20260708/ct20260708-1.jpg",
-            "images/products/holiday-decor/christmas/ct20260708/ct20260708-2.jpg",
-            "images/products/holiday-decor/christmas/ct20260708/ct20260708-3.jpg",
-            "images/products/holiday-decor/christmas/ct20260708/ct20260708-4.jpg",
-            "images/products/holiday-decor/christmas/ct20260708/ct20260708-5.jpg"
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/ct20260708-1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/ct20260708-2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/ct20260708-3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/ct20260708-4.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/ct20260708-5.jpg"
         ], 
         specs: [
             { label: "Material", value: "PE PVC Mixed" },
@@ -48,12 +48,12 @@ const detailsDatabase = {
         subcategory: "christmas", 
         code: "Item Code: w20260708",
         images: [
-            "images/products/holiday-decor/christmas/w20260708/w20260708-1.jpg",
-            "images/products/holiday-decor/christmas/w20260708/w20260708-2.jpg",
-            "images/products/holiday-decor/christmas/w20260708/w20260708-3.jpg",
-            "images/products/holiday-decor/christmas/w20260708/w20260708-4.jpg",
-            "images/products/holiday-decor/christmas/w20260708/w20260708-5.jpg",
-            "images/products/holiday-decor/christmas/w20260708/w20260708-6.jpg"
+            "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-3.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-4.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-5.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-6.jpg"
         ], 
         specs: [
             { label: "Material", value: "PVC+ Pine Cone+ Berry" },
@@ -62,16 +62,16 @@ const detailsDatabase = {
         ]
     },
 
-    "9ft prelit christmas garland": {
+    "9ft prelit Xmas garland": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: g20260711",
         images: [
-            "images/products/holiday-decor/christmas/g20260711/g20260711-1.jpg",
-            "images/products/holiday-decor/christmas/g20260711/g20260711-2.jpg",
-            "images/products/holiday-decor/christmas/g20260711/g20260711-3.jpg",
-            "images/products/holiday-decor/christmas/g20260711/g20260711-4.jpg",
-            "images/products/holiday-decor/christmas/g20260711/g20260711-5.jpg"
+            "images/products/holiday-decor/christmas/garland/g20260711/g20260711-1.jpg",
+            "images/products/holiday-decor/christmas/garland/g20260711/g20260711-2.jpg",
+            "images/products/holiday-decor/christmas/garland/g20260711/g20260711-3.jpg",
+            "images/products/holiday-decor/christmas/garland/g20260711/g20260711-4.jpg",
+            "images/products/holiday-decor/christmas/garland/g20260711/g20260711-5.jpg"
         ], 
         specs: [
             { label: "Length", value: "9 FT / Customizable" },
@@ -81,16 +81,16 @@ const detailsDatabase = {
         ]
     },
 
-    "45cm mini christmas tree": {
+    "45cm mini Xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260715",
         images: [
-            "images/products/holiday-decor/christmas/mt20260715/mt20260715-1.jpg",
-            "images/products/holiday-decor/christmas/mt20260715/mt20260715-2.jpg",
-            "images/products/holiday-decor/christmas/mt20260715/mt20260715-3.jpg",
-            "images/products/holiday-decor/christmas/mt20260715/mt20260715-4.jpg",
-            "images/products/holiday-decor/christmas/mt20260715/mt20260715-5.jpg"
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-2.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-3.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-4.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-5.jpg"
         ], 
         specs: [
             { label: "Size", value: "45CM/60CM/90CM, Customizable" },
@@ -163,7 +163,7 @@ const detailsDatabase = {
     // ⚙️ 大类 3：Raw Materials (cat: "material")
     // ==========================================
     
-    "pvc film for christmas tree": {
+    "pvc film": {
         category: "material",
         subcategory: "pvc-film", 
         code: "Item Code: PF-20260710",
@@ -219,7 +219,7 @@ const detailsDatabase = {
         ]
     },
 
-    "christmas tree metal tube": {
+    "metal tube": {
         category: "material",
         subcategory: "metal-tube", 
         code: "Item Code: t20260715",
@@ -237,7 +237,7 @@ const detailsDatabase = {
         ]
     },
 
-    "christmas tree metal stand": {
+    "metal stand": {
         category: "material", 
         subcategory: "metal-stands", 
         code: "Item Code: MS-20260629",
