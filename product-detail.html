@@ -498,9 +498,6 @@
             color: var(--primary-color);
         }
 
-        /* =========================================================
-           📱 针对 product-detail.html 手机端 (768px以下) 终极完美适配
-           ========================================================= */
         @media screen and (max-width: 768px) {
             /* 1. 🎯 彻底干掉手机端导航栏的“Aileen's Home Studio”长名字 */
             .navbar .logo, 
@@ -513,15 +510,20 @@
                 padding: 0 !important;
             }
 
-            /* 2. 让导航菜单在手机端支持横向手指丝滑滚动，并给右侧留出空间 */
+            /* 🌟 新增：强制让详情页在手机端的左右内边距也缩至 20px，左右不留无用真空 */
+            .navbar {
+                padding: 0 20px !important;
+            }
+
+            /* 2. 让导航菜单占满左侧，只给右侧圆形小胶囊留下 55px */
             .nav-links {
-                width: calc(100% - 75px) !important; /* 🌟 核心：为右侧极短搜索框预留 75px 通道 */
+                width: calc(100% - 55px) !important; /* 🌟 右侧预留从 75px 压榨至 55px */
                 display: flex !important;
                 flex-wrap: nowrap !important; 
                 overflow-x: auto !important;   
                 justify-content: flex-start !important; 
-                gap: 20px !important;          
-                padding: 10px 5px !important;   
+                gap: 15px !important;          /* 收紧类目间距，展示更多文字 */
+                padding: 10px 0 !important;    /* 去除内边距，靠最左滑动 */
                 -webkit-overflow-scrolling: touch;
             }
 
@@ -535,40 +537,78 @@
                 flex: 0 0 auto !important;
             }
 
-            /* 3. 🎯 核心需求：详情页搜索框同样极致瘦身，靠右对齐 */
-            .search-box {
+            /* 3. 🎯 详情页头部右侧容器定位：紧贴最右侧 20px 边缘 */
+            header .nav-right {
                 position: absolute !important;
-                right: 10px !important;
+                right: 20px !important; /* 对齐页面右边缘 */
                 top: 50% !important;
                 transform: translateY(-50%) !important;
-                width: 65px !important; /* 🌟 强制缩到极窄 */
+                gap: 0 !important;
                 margin: 0 !important;
-                background: transparent !important;
-                border: none !important;
                 display: flex !important;
                 align-items: center !important;
-                justify-content: flex-end !important;
+                z-index: 100000 !important;
             }
 
-            .search-box input {
-                width: 35px !important; /* 🌟 极窄输入 */
-                padding: 4px !important;
-                font-size: 11px !important;
-                border: 1px solid var(--border-color) !important;
-                border-radius: 4px !important;
-                background: var(--bg-light) !important;
-                margin-right: 2px !important;
-                text-align: center !important;
+            /* 搜索胶囊静止状态：40px 圆形小气泡（仅露放大镜） */
+            header .nav-right form.search-container {
+                width: 40px !important; 
+                height: 38px !important;
+                padding: 0 !important; 
+                background-color: #f3f4f6 !important; 
+                border: 1px solid #e5e7eb !important;
+                border-radius: 50px !important; 
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                overflow: hidden !important;
+                transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important; /* 丝滑滑出过渡 */
             }
 
-            .search-box i,
-            .search-box button {
-                font-size: 14px !important;
+            /* 🌟 火车滑开激活状态：拥有 .active 类名时，平滑展开至 180px */
+            header .nav-right form.search-container.active {
+                width: 180px !important; 
+                background-color: #ffffff !important;
+                border-color: var(--accent-color) !important;
+                padding: 0 10px !important;
+                justify-content: space-between !important;
+                box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
+            }
+
+            /* 默认静止状态下：隐藏里面的长输入文本框（宽度为0且透明） */
+            header .nav-right form.search-container input {
+                display: block !important; 
+                width: 0 !important;       
+                opacity: 0 !important;     
+                border: none !important;
+                outline: none !important;
+                background: none !important;
+                padding: 0 !important;
+                font-size: 13px !important;
+                transition: width 0.3s ease, opacity 0.2s ease !important;
+            }
+
+            /* 🌟 当被激活时，输入文字框瞬间拉宽至 120px 显现 */
+            header .nav-right form.search-container.active input {
+                width: 120px !important;   
+                opacity: 1 !important;
+            }
+
+            /* 放大镜图标大小与居中微调 */
+            header .nav-right .search-icon-btn {
+                width: 24px !important;
+                height: 24px !important;
+                min-width: 24px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                font-size: 0.95rem !important;
+                color: #4b5563 !important;
                 background: none !important;
                 border: none !important;
-                color: var(--primary-color) !important;
-                padding: 0 !important;
                 cursor: pointer !important;
+                position: static !important; /* 去除原本 PC 端绝对定位 */
+                transform: none !important;
             }
 
             /* 4. 修复最外层大盒子宽度 */
@@ -953,6 +993,45 @@
                 zoomContainer.addEventListener('mouseleave', () => {
                     zoomImage.style.transform = 'scale(1)';
                     zoomImage.style.transformOrigin = 'center center';
+                });
+            }
+
+            // ==========================================
+            // 🚄 详情页移动端“火车式”搜索栏滑入滑出逻辑
+            // ==========================================
+            const searchForm = document.getElementById("navSearchForm");
+            const searchInput = document.getElementById("searchInput");
+            const searchBtn = searchForm ? searchForm.querySelector(".search-icon-btn") : null;
+
+            if (searchForm && searchInput && searchBtn) {
+                searchBtn.addEventListener("click", function(e) {
+                    if (window.innerWidth <= 768) {
+                        // 如果目前是闭合状态，点击它就向左滑开
+                        if (!searchForm.classList.contains("active")) {
+                            e.preventDefault(); 
+                            e.stopPropagation(); 
+                            searchForm.classList.add("active"); // 滑开！
+                            searchInput.focus(); // 自动聚焦拉起键盘
+                        } else {
+                            // 如果已经滑开了，且没有字，再次点击就收回去
+                            if (searchInput.value.trim() === "") {
+                                e.preventDefault();
+                                searchForm.classList.remove("active");
+                            } else {
+                                // 有字时，执行 handleSearch() 进行搜索
+                                handleSearch();
+                            }
+                        }
+                    }
+                });
+
+                // 点击页面其他空白地方时，自动优雅缩回
+                document.addEventListener("click", function(e) {
+                    if (window.innerWidth <= 768) {
+                        if (!searchForm.contains(e.target)) {
+                            searchForm.classList.remove("active");
+                        }
+                    }
                 });
             }
         };
