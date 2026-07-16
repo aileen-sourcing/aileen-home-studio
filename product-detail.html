@@ -498,32 +498,123 @@
             color: var(--primary-color);
         }
 
-        /* 手机端响应式适配 */
-        @media (max-width: 768px) {
-            .product-main-section {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-            .main-image-box {
-                height: 350px;
-            }
-            .product-title {
-                font-size: 1.6rem;
+        /* =========================================================
+           📱 针对 product-detail.html 手机端 (768px以下) 终极完美适配
+           ========================================================= */
+        @media screen and (max-width: 768px) {
+            /* 1. 🎯 彻底干掉手机端导航栏的“Aileen's Home Studio”长名字 */
+            .navbar .logo, 
+            .nav-container .logo, 
+            .logo, 
+            a[href="index.html"].logo {
+                display: none !important;
+                width: 0 !important;
+                margin: 0 !important;
+                padding: 0 !important;
             }
 
+            /* 让导航菜单占满左侧腾出的空间，完整平铺展示 */
+            .nav-links {
+                width: 100% !important;
+                display: flex !important;
+                justify-content: space-around !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            /* 2. 修复最外层大盒子宽度，防止被撑宽溢出屏幕 */
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 0 12px !important;
+                margin: 0 !important;
+                overflow: hidden !important;
+            }
+
+            /* 3. 详情页主布局由“左右”改成“上下”堆叠 */
+            .product-main-section,
+            .product-container {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+
+            /* 4. 🎯 强制将产品大图外壳转为 1:1 完美正方形 */
+            .main-image-box,
+            .main-image-container {
+                width: 100% !important;
+                height: auto !important;         /* 🌟 废除写死的 350px 或 500px 高度 */
+                aspect-ratio: 1 / 1 !important; /* 🌟 强制形成完美的 1:1 正方形 */
+                overflow: hidden !important;
+                position: relative !important;
+                border-radius: 8px !important;
+            }
+
+            /* 确保正方形容器内的图片等比例自动缩放居中裁剪，绝不变形 */
+            .main-image-box img,
+            .main-image-container img {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important; 
+                object-position: center !important;
+            }
+
+            /* 5. 🎯 核心诉求：缩略图强行保持一排不换行，且支持手指左右丝滑滚动，绝不顶飞页面 */
+            .thumb-container {
+                display: flex !important;
+                flex-wrap: nowrap !important; /* 🌟 强制绝不换行 */
+                overflow-x: auto !important;   /* 🌟 超出时允许左右手指滑动查看 */
+                white-space: nowrap !important;
+                gap: 8px !important;
+                justify-content: flex-start !important;
+                width: 100% !important;
+                margin-top: 10px !important;
+                padding-bottom: 8px !important; /* 留一点点底边距，让滑动更流畅 */
+                
+                /* 隐藏原生的丑陋滚动条，操作体验更顺滑 */
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            /* 隐藏各类手机浏览器的默认横向滚动条 */
+            .thumb-container::-webkit-scrollbar {
+                display: none !important; 
+            }
+
+            /* 6. 控制手机端每张并排缩略图的固定大小，防止它们在单行被压缩扁 */
+            .thumb-item {
+                width: 70px !important;    /* 🌟 手机端每张小图固定 70px 宽 */
+                flex: 0 0 70px !important; /* 🌟 阻止小图为了强行挤进屏幕而被挤扁 */
+                aspect-ratio: 1 / 1 !important;
+                height: 70px !important;
+                border-radius: 4px !important;
+            }
+
+            /* 7. 微调页面标题等信息层，防止文字在手机端过大 */
+            .product-title {
+                font-size: 1.4rem !important;
+            }
+            .action-btn-group {
+                flex-direction: column !important; /* 按钮在手机端上下平铺 */
+                gap: 10px !important;
+            }
+            .action-btn {
+                width: 100% !important;
+                justify-content: center !important;
+            }
         }
-        /* 鼠标悬停和点击选中的缩略图样式 */
+
+        /* =========================================================
+           ✨ 保留原有的鼠标悬停和点击选中的缩略图高亮样式（全端通用）
+           ========================================================= */
         .thumb-item {
-            cursor: pointer; /* 鼠标移上去变成可以点击的小手 */
+            cursor: pointer; 
             border: 2px solid #e2e8f0;
             transition: all 0.2s ease;
         }
 
-        /* 🌟 当小图被选中（active）或鼠标悬停时，自动变成你主题的黄褐色红框 */
         .thumb-item.active,
         .thumb-item:hover {
-            border-color: #b45309;
-            box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.1);
+            border-color: #b45309 !important;
+            box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.1) !important;
         }
 
     </style>
