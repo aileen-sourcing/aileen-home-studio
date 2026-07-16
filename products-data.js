@@ -62,7 +62,7 @@ const detailsDatabase = {
         ]
     },
 
-    "9ft prelit Xmas garland": {
+    "9ft prelit xmas garland": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: g20260711",
@@ -98,7 +98,7 @@ const detailsDatabase = {
         ]
     },
 
-    "90cm mini Xmas tree": {
+    "90cm mini christmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260716",
@@ -116,7 +116,7 @@ const detailsDatabase = {
         ]
     },
 
-    "30cm mini Xmas tree": {
+    "30cm mini christmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260717",
@@ -132,7 +132,7 @@ const detailsDatabase = {
         ]
     },
 
-    "60cm mini Xmas tree": {
+    "60cm mini christmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260718",
@@ -150,7 +150,7 @@ const detailsDatabase = {
         ]
     },
 
-    "snow mini Xmas tree": {
+    "snow mini christmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260719",
@@ -166,7 +166,7 @@ const detailsDatabase = {
         ]
     },
 
-    "pine mini Xmas tree": {
+    "pine mini christmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260720",
@@ -180,7 +180,7 @@ const detailsDatabase = {
         ]
     },
 
-    "45cm mini Xmas tree": {
+    "45cm mini xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260721",
@@ -198,7 +198,7 @@ const detailsDatabase = {
         ]
     },
 
-    "luxury mini Xmas tree": {
+    "luxury mini xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260722",
@@ -216,7 +216,7 @@ const detailsDatabase = {
         ]
     },
 
-    "pink mini Xmas tree": {
+    "pink mini xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260723",
@@ -234,7 +234,7 @@ const detailsDatabase = {
         ]
     },
 
-    "pet mini Xmas tree": {
+    "pet mini xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260724",
@@ -248,7 +248,7 @@ const detailsDatabase = {
         ]
     },
 
-    "pvc mini Xmas tree": {
+    "pvc mini xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260725",
@@ -266,7 +266,7 @@ const detailsDatabase = {
         ]
     },
 
-    "green mini Xmas tree": {
+    "green mini xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260726",
@@ -282,7 +282,7 @@ const detailsDatabase = {
         ]
     },
 
-    "pot mini Xmas tree": {
+    "pot mini xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260727",
