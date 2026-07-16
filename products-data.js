@@ -81,7 +81,7 @@ const detailsDatabase = {
         ]
     },
 
-    "45cm mini Xmas tree": {
+    "45cm prelit mini tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260715",
@@ -166,7 +166,7 @@ const detailsDatabase = {
         ]
     },
 
-    "60cm mini Xmas tree": {
+    "pine mini Xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260720",
@@ -198,7 +198,7 @@ const detailsDatabase = {
         ]
     },
 
-    "90cm mini Xmas tree": {
+    "luxury mini Xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260722",
@@ -234,7 +234,7 @@ const detailsDatabase = {
         ]
     },
 
-    "30cm mini Xmas tree": {
+    "pet mini Xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260724",
