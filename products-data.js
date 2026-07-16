@@ -24,7 +24,7 @@ const detailsDatabase = {
         ]
     },
 
-    "7ft prelit xmas tree": {
+    "7ft prelit christmas tree": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260708",
@@ -81,7 +81,7 @@ const detailsDatabase = {
         ]
     },
 
-    "45cm prelit mini tree": {
+    "45cm prelit mini christmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260715",
@@ -179,7 +179,7 @@ const detailsDatabase = {
         ]
     },
 
-    "45cm mini xmas tree": {
+    "45cm mini christmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260721",
@@ -197,7 +197,7 @@ const detailsDatabase = {
         ]
     },
 
-    "luxury mini xmas tree": {
+    "luxury mini christmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260722",
