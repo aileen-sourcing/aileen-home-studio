@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- 网站首页（对应index.html） -->
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/</loc>
+        <lastmod>2026-07-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <!-- 关于我们 -->
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/about-us.html</loc>
+        <lastmod>2026-07-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <!-- 产品分类页 -->
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/category.html</loc>
+        <lastmod>2026-07-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- FAQ页面 -->
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/faqs.html</loc>
+        <lastmod>2026-07-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <!-- 产品列表页 -->
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/listing.html</loc>
+        <lastmod>2026-07-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- 产品详情页 -->
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/product-detail.html</loc>
+        <lastmod>2026-07-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
