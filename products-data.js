@@ -157,8 +157,7 @@ const detailsDatabase = {
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-2.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-3.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-4.jpg"
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-3.jpg"
         ], 
         specs: [
             { label: "Size", value: "45CM/60CM/90CM, Customizable" },
