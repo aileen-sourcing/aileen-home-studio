@@ -194,31 +194,47 @@
                 flex: 0 0 auto !important;
             }
 
-            /* 3. 🎯 核心需求：将实际的 nav-right 容器和 search-container 搜索框极简化，靠右靠死 */
-            .nav-right {
+            /* 3. 🎯 绝杀覆盖：锁定头部容器，将搜索外框彻底微型化，完美缩至 42px 宽（只露出精美放大镜，不占一丝空间） */
+            header .nav-right {
                 position: absolute !important;
                 right: 15px !important;
                 top: 50% !important;
                 transform: translateY(-50%) !important;
                 gap: 0 !important;
                 margin: 0 !important;
+                display: flex !important;
+                align-items: center !important;
             }
 
-            /* 让搜索外框极简瘦身，宽度跟放大镜差不多宽 */
-            form.search-container {
-                width: 75px !important; /* 🌟 缩到只有 75px 宽，极精致，不占地方 */
-                padding: 5px 8px !important; /* 缩减内部间距 */
-                background-color: #f3f4f6 !important; /* 保持优雅的灰色背景 */
+            /* 用更深的父级选择器 header + !important，彻底干掉最底部 260px 宽度的霸体限制 */
+            header .nav-right form.search-container {
+                width: 42px !important; /* 🌟 极精简：缩得跟放大镜图标本身差不多宽，变成正方形精致小气泡 */
+                height: 38px !important;
+                padding: 0 !important; 
+                background-color: #f3f4f6 !important; /* 优雅的冷灰色底 */
                 border: 1px solid #e5e7eb !important;
-                border-radius: 4px !important;
-                gap: 2px !important;
+                border-radius: 50px !important; /* 变成胶囊小圆点，非常轻奢前卫 */
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                overflow: hidden !important;
+                transition: width 0.3s ease !important; /* 丝滑过渡效果 */
             }
 
-            /* 缩短输入框的文字宽度 */
-            form.search-container input {
-                width: 45px !important; /* 🌟 输入区域仅留 45px 宽 */
-                font-size: 11px !important;
-                padding: 0 !important;
+            /* 手机默认静止状态下，隐藏里面的长输入文字框，防挤占 */
+            header .nav-right form.search-container input {
+                display: none !important; /* 🌟 直接在静止时隐藏文字输入框，让出 100% 的宽度给类目栏滑动 */
+            }
+
+            /* 让放大镜按钮居中 */
+            header .nav-right .search-icon-btn {
+                width: 100% !important;
+                height: 100% !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                font-size: 0.9rem !important;
+                color: #4b5563 !important;
             }
 
             /* 缩放放大镜按钮，使其保持小巧好点 */
