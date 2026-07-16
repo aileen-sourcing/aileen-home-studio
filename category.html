@@ -165,24 +165,69 @@
             }
         }
         @media (max-width: 768px) {
-            .main-layout { flex-direction: column; gap: 30px; padding: 0 20px; }
-            .sidebar-filter { flex: none; width: 100%; }
-            .products-grid { grid-template-columns: 1fr; }
-            .product-card .img-container {
+            /* 1. 🎯 彻底隐藏顶部的 Logo，防止它挤压导航栏 */
+            .navbar .logo,
+            header .logo,
+            a.logo {
+                display: none !important;
+            }
+
+            /* 让导航菜单平铺，占满左侧腾出的空间 */
+            .nav-links {
                 width: 100% !important;
-                aspect-ratio: 1 / 1 !important;
+                display: flex !important;
+                justify-content: space-around !important;
+            }
+
+            /* 2. 外层大布局改为上下堆叠 */
+            .main-layout { 
+                flex-direction: column; 
+                gap: 30px; 
+                padding: 0 20px; 
+            }
+            .sidebar-filter { 
+                flex: none; 
+                width: 100%; 
+            }
+
+            /* 3. 🎯 核心诉求一：将产品列表调整为一行 2 个 */
+            .products-grid { 
+                grid-template-columns: repeat(2, 1fr) !important; 
+                gap: 15px !important;
+            }
+
+            /* 4. 🎯 核心诉求二：精准匹配动态生成的类名，强制将图片容器设为完美正方形 */
+            .grid-product-card .grid-product-img {
+                width: 100% !important;
+                aspect-ratio: 1 / 1 !important; /* 强制 1:1 比例 */
                 overflow: hidden !important;
                 position: relative !important;
-                background: #f9fafb;
+                background: #f9fafb !important;
+                height: auto !important; /* 覆盖原本写死的 230px 高度 */
             }
-            .product-card .img-container img {
+
+            /* 确保正方形容器内的图片等比例填充，不拉伸变形 */
+            .grid-product-card .grid-product-img img {
                 width: 100% !important;
                 height: 100% !important;
                 object-fit: cover !important;
                 object-position: center !important;
             }
-            .nav-container .logo {
-                display: none !important;
+
+            /* 5. 稍微缩小一点手机端的字体，防止排版错位 */
+            .grid-product-title {
+                font-size: 0.85rem !important;
+                min-height: auto !important;
+                margin-bottom: 5px !important;
+            }
+            
+            .inquiry-actions-group {
+                gap: 5px !important;
+            }
+            
+            .inquiry-action-btn {
+                font-size: 0.7rem !important;
+                padding: 8px 4px !important;
             }
         }
         footer { 
