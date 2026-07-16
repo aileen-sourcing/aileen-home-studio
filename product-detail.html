@@ -513,17 +513,15 @@
                 padding: 0 !important;
             }
 
-            /* 2. 🌟 核心需求：让详情页的导航菜单在手机端也支持横向手指丝滑滚动，绝不卡死内容 */
+            /* 2. 让导航菜单在手机端支持横向手指丝滑滚动，并给右侧留出空间 */
             .nav-links {
-                width: 100% !important;
+                width: calc(100% - 75px) !important; /* 🌟 核心：为右侧极短搜索框预留 75px 通道 */
                 display: flex !important;
-                flex-wrap: nowrap !important; /* 强制所有菜单项排成一行，绝不换行 */
-                overflow-x: auto !important;   /* 当内容超出屏幕时，允许左右手指滑动 */
-                justify-content: flex-start !important; /* 从左到右依次排列 */
-                gap: 20px !important;          /* 类目之间的间距 */
-                padding: 10px 5px !important;   /* 留出舒适的上下内边距 */
-                
-                /* 隐藏原生的丑陋滚动条，让滑动体验更顺滑 */
+                flex-wrap: nowrap !important; 
+                overflow-x: auto !important;   
+                justify-content: flex-start !important; 
+                gap: 20px !important;          
+                padding: 10px 5px !important;   
                 -webkit-overflow-scrolling: touch;
             }
 
@@ -532,12 +530,48 @@
                 display: none !important;
             }
 
-            /* 确保导航里的每一项（包括搜索框等）保持完整尺寸，不被强制压扁 */
+            /* 确保导航里的每一项保持完整尺寸 */
             .nav-links > * {
                 flex: 0 0 auto !important;
             }
 
-            /* 3. 修复最外层大盒子宽度，防止被撑宽溢出屏幕 */
+            /* 3. 🎯 核心需求：详情页搜索框同样极致瘦身，靠右对齐 */
+            .search-box {
+                position: absolute !important;
+                right: 10px !important;
+                top: 50% !important;
+                transform: translateY(-50%) !important;
+                width: 65px !important; /* 🌟 强制缩到极窄 */
+                margin: 0 !important;
+                background: transparent !important;
+                border: none !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: flex-end !important;
+            }
+
+            .search-box input {
+                width: 35px !important; /* 🌟 极窄输入 */
+                padding: 4px !important;
+                font-size: 11px !important;
+                border: 1px solid var(--border-color) !important;
+                border-radius: 4px !important;
+                background: var(--bg-light) !important;
+                margin-right: 2px !important;
+                text-align: center !important;
+            }
+
+            .search-box i,
+            .search-box button {
+                font-size: 14px !important;
+                background: none !important;
+                border: none !important;
+                color: var(--primary-color) !important;
+                padding: 0 !important;
+                cursor: pointer !important;
+            }
+
+            /* 4. 修复最外层大盒子宽度 */
             .container {
                 width: 100% !important;
                 max-width: 100% !important;
@@ -546,25 +580,24 @@
                 overflow: hidden !important;
             }
 
-            /* 4. 详情页主布局由“左右”改成“上下”堆叠 */
+            /* 5. 详情页主布局由“左右”改成“上下” */
             .product-main-section,
             .product-container {
                 grid-template-columns: 1fr !important;
                 gap: 20px !important;
             }
 
-            /* 5. 🎯 强制将产品大图外壳转为 1:1 完美正方形 */
+            /* 6. 强制将产品大图外壳转为 1:1 完美正方形 */
             .main-image-box,
             .main-image-container {
                 width: 100% !important;
-                height: auto !important;         /* 废除写死的 350px 或 500px 高度 */
-                aspect-ratio: 1 / 1 !important; /* 强制形成完美的 1:1 正方形 */
+                height: auto !important;         
+                aspect-ratio: 1 / 1 !important; 
                 overflow: hidden !important;
                 position: relative !important;
                 border-radius: 8px !important;
             }
 
-            /* 确保正方形容器内的图片等比例自动缩放居中裁剪，绝不变形 */
             .main-image-box img,
             .main-image-container img {
                 width: 100% !important;
@@ -573,28 +606,24 @@
                 object-position: center !important;
             }
 
-            /* 6. 🎯 缩略图强行保持一排不换行，且支持手指左右丝滑滚动，绝不顶飞页面 */
+            /* 7. 缩略图一排不换行，且支持手指左右丝滑滚动 */
             .thumb-container {
                 display: flex !important;
-                flex-wrap: nowrap !important; /* 强制绝不换行 */
-                overflow-x: auto !important;   /* 超出时允许左右手指滑动查看 */
+                flex-wrap: nowrap !important; 
+                overflow-x: auto !important;   
                 white-space: nowrap !important;
                 gap: 8px !important;
                 justify-content: flex-start !important;
                 width: 100% !important;
                 margin-top: 10px !important;
-                padding-bottom: 8px !important; /* 留一点点底边距 */
-                
-                /* 隐藏原生的丑陋滚动条 */
+                padding-bottom: 8px !important; 
                 -webkit-overflow-scrolling: touch;
             }
             
-            /* 隐藏横向滚动条 */
             .thumb-container::-webkit-scrollbar {
                 display: none !important; 
             }
 
-            /* 控制手机端每张并排缩略图的固定大小 */
             .thumb-item {
                 width: 70px !important;    
                 flex: 0 0 70px !important; 
@@ -603,12 +632,12 @@
                 border-radius: 4px !important;
             }
 
-            /* 7. 微调页面标题等信息层，防止文字在手机端过大 */
+            /* 8. 微调页面字体等 */
             .product-title {
                 font-size: 1.4rem !important;
             }
             .action-btn-group {
-                flex-direction: column !important; /* 按钮在手机端上下平铺 */
+                flex-direction: column !important; 
                 gap: 10px !important;
             }
             .action-btn {
