@@ -388,12 +388,13 @@
                 padding-top: 75px !important; /* 调小手机端的顶部留白 */
             }
 
-            /* 4. 🎯 核心扭转：将包含“筛选框 + 产品列表”的父容器在手机端改为上下堆叠 */
+            /* 4. 🎯 核心扭转：堆叠布局，并将总宽度锁死在 100% 盒子模型内，防止顶穿右侧 */
             .listing-container > div[style*="display: flex"] {
                 display: flex !important;
-                flex-direction: column !important; /* 强制筛选框在上，产品列表在下 */
+                flex-direction: column !important;
                 gap: 15px !important;
                 width: 100% !important;
+                box-sizing: border-box !important;
             }
 
             /* 5. 侧边筛选框拉满整屏宽度并放在最上面 */
@@ -406,16 +407,19 @@
                 box-sizing: border-box !important;
             }
 
-            /* 6. 🎯 核心诉求：右侧产品区域一行精准分 2 个卡片排列，美观不拥挤 */
+            /* 6. 🎯 核心诉求：右侧产品网格开启自动计算，并给网格整体上一道防溢出安全锁 */
             .products-grid,
             #listing-grid-container {
                 display: grid !important;
-                grid-template-columns: repeat(2, 1fr) !important; /* 精准一行分 2 个卡片 */
+                grid-template-columns: repeat(2, 1fr) !important;
                 gap: 12px !important; 
                 width: 100% !important;
+                max-width: 100% !important; /* 🌟 强制限制最大宽度，绝不超出父级边缘 */
+                box-sizing: border-box !important;
                 flex-grow: 1 !important;
                 margin: 0 !important;
                 padding: 0 !important;
+                overflow: hidden !important; /* 🌟 仅在产品区域内锁死任何微小的向右溢出 */
             }
 
             /* 7. 🎯 核心诉求：强制让手机端的所有产品图片容器变成完美的 1:1 正方形 */
