@@ -295,6 +295,22 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
+    "black tree 260717": {
+        category: "holiday",
+        subcategory: "halloween", 
+        code: "Item Code: h20260716",
+        images: [
+            "images/products/holiday-decor/halloween/tree/h20260716/1.jpg",
+            "images/products/holiday-decor/halloween/tree/h20260716/2.jpg",
+            "images/products/holiday-decor/halloween/tree/h20260716/3.jpg",
+            "images/products/holiday-decor/halloween/tree/h20260716/3.jpg",
+            "images/products/holiday-decor/halloween/tree/h20260716/3.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
 
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "lighting")
