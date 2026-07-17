@@ -407,19 +407,40 @@
                 box-sizing: border-box !important;
             }
 
-            /* 6. 🎯 核心诉求：右侧产品网格开启自动计算，并给网格整体上一道防溢出安全锁 */
+            /* 6. 🎯 核心诉求：右侧产品网格彻底转为流式弹性网格，不给任何溢出的借口 */
             .products-grid,
             #listing-grid-container {
                 display: grid !important;
-                grid-template-columns: repeat(2, 1fr) !important;
+                grid-template-columns: repeat(2, 1fr) !important; /* 精准一行2列 */
                 gap: 12px !important; 
                 width: 100% !important;
-                max-width: 100% !important; /* 🌟 强制限制最大宽度，绝不超出父级边缘 */
+                max-width: 100% !important;
                 box-sizing: border-box !important;
-                flex-grow: 1 !important;
                 margin: 0 !important;
                 padding: 0 !important;
-                overflow: hidden !important; /* 🌟 仅在产品区域内锁死任何微小的向右溢出 */
+            }
+
+            /* 🌟 新增 10. 强制卡片容器宽度完全自适应，决不允许被内部撑大 */
+            .product-card {
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+                overflow: hidden !important;
+            }
+
+            /* 🌟 新增 11. 彻底打破 PC 端硬性高度，让图片容器随手机屏幕宽度按 1:1 自动缩放 */
+            .product-image-wrapper,
+            .product-img-box {
+                width: 100% !important;
+                height: auto !important;             /* 拔掉 PC 端的 280px 固定高度线 */
+                aspect-ratio: 1 / 1 !important;     /* 强力锁定正方形 */
+                box-sizing: border-box !important;
+            }
+
+            .product-image {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;        /* 等比例裁剪填满，绝不变形不溢出 */
             }
 
             /* 7. 🎯 核心诉求：强制让手机端的所有产品图片容器变成完美的 1:1 正方形 */
