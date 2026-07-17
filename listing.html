@@ -769,6 +769,55 @@
                 window.location.href = `category.html?search=${encodeURIComponent(query)}`;
             }
         }
+
+        // ==========================================
+        // 🚄 移动端“火车式”搜索栏点击滑入滑出逻辑（防 HTML 拦截版）
+        // ==========================================
+        document.addEventListener("DOMContentLoaded", function() {
+            const searchForm = document.getElementById("navSearchForm");
+            const searchInput = document.getElementById("searchInput");
+            const searchBtn = searchForm ? searchForm.querySelector(".search-icon-btn") : null;
+
+            if (searchForm && searchInput && searchBtn) {
+                // 1. 彻底移除 HTML 标签上死写的 onclick 属性，改由 JS 统一指挥
+                searchBtn.removeAttribute("onclick");
+
+                // 2. 重新绑定智能点击事件
+                searchBtn.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    if (window.innerWidth <= 768) {
+                        // 如果目前没有展开，点击直接滑开
+                        if (!searchForm.classList.contains("active")) {
+                            searchForm.classList.add("active");
+                            searchInput.focus(); // 拉起键盘
+                        } else {
+                            // 如果已经滑开了
+                            if (searchInput.value.trim() === "") {
+                                // 没输入字，点击就缩回去
+                                searchForm.classList.remove("active");
+                            } else {
+                                // 有字，触发搜索
+                                handleSearch();
+                            }
+                        }
+                    } else {
+                        // PC 端保持原样：有字就搜索
+                        handleSearch();
+                    }
+                });
+
+                // 3. 点击页面空白处自动缩回
+                document.addEventListener("click", function(e) {
+                    if (window.innerWidth <= 768) {
+                        if (!searchForm.contains(e.target)) {
+                            searchForm.classList.remove("active");
+                        }
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>
