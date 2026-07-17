@@ -24,9 +24,8 @@
         body { color: var(--text-color); background: var(--white); padding: 0; padding-top: 85px; }
         a { text-decoration: none; color: inherit; }
 
-        /* 顶部导航 */
         /* ==========================================================
-           🌟 顶级超奢同步导航栏样式（包含超级下拉菜单显隐逻辑）
+           🌟 顶级同步导航栏样式（包含超级下拉菜单显隐逻辑）
            ========================================================== */
         header {
             position: fixed !important;
@@ -50,6 +49,7 @@
             margin: 0 auto !important;
             padding: 0 25px !important;
             background-color: #ffffff !important;
+            position: relative !important;
         }
 
         .logo {
@@ -58,6 +58,7 @@
             color: var(--primary-color);
             letter-spacing: 1.5px;
             flex-shrink: 0;
+            z-index: 100000 !important;
         }
 
         .nav-links {
@@ -65,7 +66,9 @@
             gap: 28px;
             align-items: center;
             height: 100%;
-            list-style: none; /* 移除点点 */
+            list-style: none;
+            margin: 0;
+            padding: 0;
         }
 
         .nav-links li {
@@ -95,6 +98,7 @@
             display: flex;
             align-items: center;
             gap: 15px;
+            z-index: 100000 !important;
         }
 
         .search-container {
@@ -136,6 +140,36 @@
 
         .search-icon-btn:hover {
             color: var(--accent-color);
+        }
+
+        /* 移动端汉堡菜单按钮样式 */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            width: 24px;
+            height: 18px;
+            justify-content: space-between;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        /* 汉堡菜单激活状态动画 */
+        .menu-toggle.active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .menu-toggle.active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
         }
 
         /* --- 超级大下拉菜单(Mega Menu)显隐逻辑 --- */
@@ -307,8 +341,7 @@
         }
         
         @media screen and (max-width: 768px) {
-            /* 1. 🎯 彻底干掉手机端导航栏的“Aileen's Home Studio”长名字 */
-            .nav-container .logo, 
+            /* 1. 🎯 彻底干掉手机端导航栏的“Aileen's Home Studio”长名字，为横向滑动腾出空间 */
             .navbar .logo, 
             .logo,
             a[href="index.html"].logo {
@@ -318,22 +351,41 @@
                 padding: 0 !important;
             }
 
-            /* 2. 让原本包裹导航按钮的容器占满整行，这样右边残缺的菜单内容就会自动回流显现出来 */
+            /* 2. 🌟 激活手机端横向顺畅滑动效果（不触碰全局 body 滚动） */
             .nav-links {
-                width: 100% !important;
+                width: auto !important;
+                max-width: calc(100% - 60px) !important; /* 给右边搜索留出物理空间 */
                 display: flex !important;
-                justify-content: space-around !important;
-                margin: 0 !important;
-                padding: 0 !important;
+                flex-direction: row !important;
+                overflow-x: auto !important;  /* 开启手机端横向丝滑滑动 */
+                -webkit-overflow-scrolling: touch !important; /* 开启 iOS 弹性回弹 */
+                gap: 18px !important;
+                padding: 0 5px !important;
+                height: 100% !important;
+                scrollbar-width: none !important; /* 隐藏 Firefox 滚动条 */
             }
 
-            /* 3. 解决被往右挤的大招：强行重置外层大盒子 .container 的固定宽度 */
-            .container {
-                width: 100% !important;
-                max-width: 100% !important;
+            .nav-links::-webkit-scrollbar {
+                display: none !important; /* 隐藏 Chrome/Safari 滚动条 */
+            }
+
+            .nav-links li {
+                height: 100% !important;
+                flex-shrink: 0 !important; /* 保证菜单文字不因空间不足被强行挤压变形 */
+            }
+
+            /* 3. 限制导航栏外层容器高度，避免被撑开 */
+            .navbar {
+                height: 55px !important;
                 padding: 0 10px !important;
-                margin: 0 !important;
-                overflow: hidden !important;
+            }
+            
+            header {
+                height: 55px !important;
+            }
+            
+            body {
+                padding-top: 75px !important; /* 调小手机端的顶部留白 */
             }
 
             /* 4. 🎯 核心扭转：仅在有筛选框存在时，让筛选框在上、产品在下 */
@@ -632,6 +684,16 @@
         }
 
         window.onload = renderListingPage;
+        // ==========================================
+        // 🌟 核心：与其它页面完全统一的全局搜索功能
+        // ==========================================
+        function handleSearch() {
+            const query = document.getElementById('searchInput').value.trim();
+            if (query) {
+                // 自动跳往搜索结果或通过分类页进行分流
+                window.location.href = `category.html?search=${encodeURIComponent(query)}`;
+            }
+        }
     </script>
 </body>
 </html>
