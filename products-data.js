@@ -5,7 +5,7 @@ const detailsDatabase = {
     // 🎄 大类 1：Holiday Decor (cat: "holiday")
     // ==========================================
     
-    "pe prelit christmas tree": {
+    "pe christmas tree 2801": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct26062801",
@@ -24,7 +24,7 @@ const detailsDatabase = {
         ]
     },
 
-    "7ft prelit christmas tree": {
+    "7ft christmas tree 260708": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260708",
@@ -43,7 +43,7 @@ const detailsDatabase = {
         ]
     },
 
-    "60cm christmas wreath": {
+    "60cm christmas wreath 260709": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260708",
@@ -62,7 +62,7 @@ const detailsDatabase = {
         ]
     },
 
-    "9ft prelit xmas garland": {
+    "9ft christmas garland 260710": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: g20260711",
@@ -81,7 +81,7 @@ const detailsDatabase = {
         ]
     },
 
-    "45cm prelit mini christmas tree": {
+    "45cm mini xmas tree 260711": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260715",
@@ -98,7 +98,7 @@ const detailsDatabase = {
         ]
     },
 
-    "90cm mini christmas tree": {
+    "90cm mini xmas tree 260712": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260716",
@@ -116,7 +116,7 @@ const detailsDatabase = {
         ]
     },
 
-    "30cm mini christmas tree": {
+    "30cm mini xmas tree 260713": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260717",
@@ -132,7 +132,7 @@ const detailsDatabase = {
         ]
     },
 
-    "60cm mini christmas tree": {
+    "60cm mini xmas tree 260714": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260718",
@@ -150,7 +150,7 @@ const detailsDatabase = {
         ]
     },
 
-    "snow mini christmas tree": {
+    "snow mini xmas tree 260715": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260719",
@@ -165,7 +165,7 @@ const detailsDatabase = {
         ]
     },
 
-    "pine mini christmas tree": {
+    "pine mini xmas tree 260716": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260720",
@@ -179,7 +179,7 @@ const detailsDatabase = {
         ]
     },
 
-    "45cm mini christmas tree": {
+    "45cm mini xmas tree 260717": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260721",
@@ -197,7 +197,7 @@ const detailsDatabase = {
         ]
     },
 
-    "luxury mini christmas tree": {
+    "mini xmas tree 260718": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260722",
@@ -215,7 +215,7 @@ const detailsDatabase = {
         ]
     },
 
-    "pink mini xmas tree": {
+    "pink mini tree 260719": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260723",
@@ -233,7 +233,7 @@ const detailsDatabase = {
         ]
     },
 
-    "pet mini xmas tree": {
+    "pet mini tree 260720": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260724",
@@ -247,7 +247,7 @@ const detailsDatabase = {
         ]
     },
 
-    "pvc mini xmas tree": {
+    "pvc mini tree 260721": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260725",
@@ -265,7 +265,7 @@ const detailsDatabase = {
         ]
     },
 
-    "green mini xmas tree": {
+    "green mini tree 260722": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260726",
@@ -281,7 +281,7 @@ const detailsDatabase = {
         ]
     },
 
-    "pot mini xmas tree": {
+    "pot mini tree 260723": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260727",
