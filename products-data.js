@@ -24,7 +24,7 @@ const detailsDatabase = {
         ]
     },
 
-    "7ft christmas tree 260708": {
+    "7ft xmas tree 260708": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260708",
@@ -43,7 +43,7 @@ const detailsDatabase = {
         ]
     },
 
-    "60cm christmas wreath 260709": {
+    "60cm xmas wreath 260709": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260708",
@@ -62,7 +62,7 @@ const detailsDatabase = {
         ]
     },
 
-    "9ft christmas garland 260710": {
+    "9ft xmas garland 260710": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: g20260711",
@@ -179,7 +179,7 @@ const detailsDatabase = {
         ]
     },
 
-    "45cm mini xmas tree 260717": {
+    "45cm mini tree 260717": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260721",
