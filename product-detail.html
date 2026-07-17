@@ -627,6 +627,13 @@
                 gap: 20px !important;
             }
 
+            /* 🌟 新增：仅限缩产品图片区域，强行阻止其向右溢出撑开屏幕 */
+            .product-gallery {
+                width: 100% !important;
+                max-width: 100% !important;
+                overflow: hidden !important; /* 彻底锁死产品图与缩略图的溢出边界 */
+            }
+
             /* 6. 强制将产品大图外壳转为 1:1 完美正方形 */
             .main-image-box,
             .main-image-container {
@@ -636,14 +643,13 @@
                 overflow: hidden !important;
                 position: relative !important;
                 border-radius: 8px !important;
-                transform: none !important;
             }
 
             .main-image-box img,
             .main-image-container img {
                 width: 100% !important;
                 height: 100% !important;
-                object-fit: contain !important; 
+                object-fit: cover !important; 
                 object-position: center !important;
             }
 
