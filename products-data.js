@@ -43,7 +43,7 @@ const detailsDatabase = {
         ]
     },
 
-    "60cm wreath 260709": {
+    "xmas wreath 260709": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260708",
