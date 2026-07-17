@@ -388,31 +388,33 @@
                 padding-top: 75px !important; /* 调小手机端的顶部留白 */
             }
 
-            /* 4. 🎯 核心扭转：仅在有筛选框存在时，让筛选框在上、产品在下 */
-            .main-content {
+            /* 4. 🎯 核心扭转：将包含“筛选框 + 产品列表”的父容器在手机端改为上下堆叠 */
+            .listing-container > div[style*="display: flex"] {
                 display: flex !important;
-                flex-direction: column !important;
+                flex-direction: column !important; /* 强制筛选框在上，产品列表在下 */
                 gap: 15px !important;
                 width: 100% !important;
             }
 
             /* 5. 侧边筛选框拉满整屏宽度并放在最上面 */
-            .filter-sidebar {
+            #christmas-sidebar {
                 width: 100% !important;
                 max-width: 100% !important;
-                flex: none !important;
-                padding: 15px !important;
-                border-right: none !important; 
-                border-bottom: 1px solid var(--border-color) !important; 
+                flex-shrink: 0 !important;
+                position: static !important; /* 手机端取消 sticky 定位，老老实实呆在最顶上 */
+                margin-bottom: 10px !important;
                 box-sizing: border-box !important;
             }
 
             /* 6. 🎯 核心诉求：右侧产品区域一行精准分 2 个卡片排列，美观不拥挤 */
-            .products-grid {
+            .products-grid,
+            #listing-grid-container {
                 display: grid !important;
-                grid-template-columns: repeat(2, 1fr) !important;
-                gap: 10px !important; 
+                grid-template-columns: repeat(2, 1fr) !important; /* 精准一行分 2 个卡片 */
+                gap: 12px !important; 
                 width: 100% !important;
+                flex-grow: 1 !important;
+                margin: 0 !important;
                 padding: 0 !important;
             }
 
