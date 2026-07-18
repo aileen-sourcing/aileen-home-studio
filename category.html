@@ -637,28 +637,29 @@
                 line-height: 1.2 !important;
             }
             
-            /* 8. 🎯 终极防重叠锁：强行给按钮之间拉开固定间隙，并且等宽平分 */
-            .inquiry-actions-group {
+            /* 8. 🎯 终极防重叠锁：利用 Flexbox 强行平分并拉开间距 */
+            .grid-product-info .inquiry-actions-group {
                 display: flex !important;
                 visibility: visible !important;
                 opacity: 1 !important;
-                gap: 10px !important;            /* 🌟 强行拉开 10 像素的明显间距，绝对不会再挨在一起 */
+                gap: 8px !important;            /* 🌟 在按钮之间强行留出 8px 的物理硬间距 */
                 width: 100% !important;
-                margin-top: 8px !important;
-                padding: 0 !important;
+                margin-top: 10px !important;
+                padding: 0 4px !important;       /* 给两侧留一点点微小的呼吸感 */
                 box-sizing: border-box !important;
-                float: none !important;          /* 清除可能存在的浮动干扰 */
             }
             
-            .inquiry-action-btn {
-                display: block !important;       /* 确保按钮是块级表现 */
-                flex: 1 !important;              /* 🌟 强行平分卡片宽度，各占 50% */
-                width: 50% !important;           /* 双重保险：强制锁定宽度为一半 */
+            .grid-product-info .inquiry-action-btn {
+                display: flex !important;        /* 改为弹性盒，让图标和文字居中 */
+                align-items: center !important;
+                justify-content: center !important;
+                flex: 1 !important;              /* 🌟 核心：强行 1:1 绝对平分手机屏幕剩余宽度 */
+                width: 0 !important;             /* 配合 flex: 1 真正实现按比例无视文字长度的平分 */
                 font-size: 11px !important;      /* 稍微压缩字号，确保小手机也能塞下文字 */
-                padding: 6px 0 !important;       /* 压缩上下内边距 */
+                padding: 8px 0 !important;       /* 上下 8px 舒适高度，左右 0 腾出空间 */
+                gap: 4px !important;             /* 图标和文字之间的间距 */
                 white-space: nowrap !important;  /* 严禁文字在按钮内部折行 */
-                text-align: center !important;
-                margin: 0 !important;            /* 清除多余的外边距干扰 */
+                margin: 0 !important;            
                 box-sizing: border-box !important;
             }
         } 
