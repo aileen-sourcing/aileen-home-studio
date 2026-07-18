@@ -297,6 +297,30 @@
         .product-card:hover .inquiry-btn { background: var(--primary-color); color: var(--white); }
 
         @media (max-width: 1200px) { .products-grid { grid-template-columns: repeat(3, 1fr); } }
+        /* ⬇️ 直接复制并粘贴在 @media (max-width: 1200px) 的大括号后面 ⬇️ */
+
+        /* 1. 电脑端大屏幕（大于1200px）：默认没侧边栏时变成 5 列 */
+        @media (min-width: 1201px) {
+            .products-grid { 
+                grid-template-columns: repeat(5, 1fr) !important; 
+            }
+            /* 当左侧有 #christmas-sidebar（带筛选框）并存时，强行恢复成 4 列 */
+            #christmas-sidebar + .products-grid,
+            #christmas-sidebar ~ .products-grid { 
+                grid-template-columns: repeat(4, 1fr) !important; 
+            }
+        }
+
+        /* 2. 彻底拔掉省略号限制：让电脑端和手机端的所有商品标题文字，多少行都全部完整展示 */
+        .product-name, 
+        .product-info h3, 
+        .product-title-text { 
+            white-space: normal !important;      /* 允许换行 */
+            overflow: visible !important;        /* 溢出可见 */
+            text-overflow: clip !important;      /* 彻底不留省略号 */
+            min-height: auto !important;         /* 拔掉原本限制的 40px 高度线 */
+            height: auto !important; 
+        }
         @media (max-width: 768px) {
             .products-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 15px; }
             .listing-container { padding: 0 20px; }
