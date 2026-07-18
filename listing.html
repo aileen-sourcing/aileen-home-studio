@@ -285,20 +285,48 @@
         }
 
         /* 多卡片产品网格 - 自动并排 */
-        .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px 24px; }
+        .products-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px 20px; }
+        /* 2. 特殊情况（当左侧圣诞筛选框显示时）：强制把右边网格锁死在 4 列！确保卡片不被挤小 */
+        .listing-container div[style*="display: flex"] .products-grid,
+        .listing-container div[style*="display: flex"] #listing-grid-container {
+            grid-template-columns: repeat(4, 1fr) !important;}
         
+        /* 保持原有的卡片基础定义与正方形比例 */
         .product-card { background: transparent; display: flex; flex-direction: column; transition: var(--transition); cursor: pointer; }
-        .product-img-box { height: 280px; background: var(--bg-light); display: flex; align-items: center; justify-content: center; color: #94a3b8; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; border: 1px solid #f3f4f6; transition: var(--transition); position: relative; }
+        
+        .product-img-box { 
+            width: 100%;
+            aspect-ratio: 1 / 1;                  
+            background: var(--bg-light); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: #94a3b8; 
+            font-weight: 600; 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            border: 1px solid #f3f4f6; 
+            transition: var(--transition); 
+            position: relative; 
+        }
         .product-card:hover .product-img-box { border-color: var(--primary-color); }
         
         .product-info { padding: 15px 0 0 0; display: flex; flex-direction: column; gap: 8px; }
         .product-name { font-size: 0.95rem; font-weight: 500; color: var(--primary-color); line-height: 1.4; min-height: 40px; }
-        .inquiry-btn { width: 100%; padding: 10px; background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 2px; cursor: pointer; transition: var(--transition); }
-        .product-card:hover .inquiry-btn { background: var(--primary-color); color: var(--white); }
 
-        @media (max-width: 1200px) { .products-grid { grid-template-columns: repeat(3, 1fr); } }
+        /* 响应式断点层级顺延，同样做智能分流 */
+        @media (max-width: 1400px) { 
+            .products-grid { grid-template-columns: repeat(4, 1fr); } 
+            /* 有筛选框时在 1400px 以下自动缩为 3 列 */
+            .listing-container div[style*="display: flex"] .products-grid { grid-template-columns: repeat(3, 1fr) !important; }
+        }
+        @media (max-width: 1100px) { 
+            .products-grid { grid-template-columns: repeat(3, 1fr); } 
+        }
         @media (max-width: 768px) {
-            .products-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 15px; }
+            /* 手机端统一回归原样，一行 2 列大步走 */
+            .products-grid,
+            .listing-container div[style*="display: flex"] .products-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
             .listing-container { padding: 0 20px; }
         }
         footer { 
