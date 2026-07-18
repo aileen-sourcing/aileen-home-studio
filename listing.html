@@ -284,37 +284,11 @@
             color: var(--white);
         }
 
-        /* 多卡片产品网格 - 电脑端自适应隔离布局 */
-        .products-grid { 
-            display: grid;
-            gap: 35px 16px;
-        }
-        /* 🌟 情况 A：当【没有】筛选框的时候，产品卡片整体缩小，电脑端一行精致平铺 5 个 */
-        .listing-container .products-grid {
-            grid-template-columns: repeat(5, 1fr);
-        }
-        /* 🌟 情况 B：当左侧有 #christmas-sidebar（带筛选框）时，
-           为了防止图片被挤得太小，强制让右侧网格死守一行 4 个卡片 */
-        #christmas-sidebar + .products-grid,
-        #christmas-sidebar ~ .products-grid {
-            grid-template-columns: repeat(4, 1fr) !important;
-            gap: 40px 20px;
-        }
+        /* 多卡片产品网格 - 自动并排 */
+        .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px 24px; }
+        
         .product-card { background: transparent; display: flex; flex-direction: column; transition: var(--transition); cursor: pointer; }
-        .product-img-box { 
-            height: auto !important; 
-            background: var(--bg-light); 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            color: #94a3b8; 
-            font-weight: 600; 
-            font-size: 0.8rem; 
-            text-transform: uppercase; 
-            border: 1px solid #f3f4f6; 
-            transition: var(--transition); 
-            position: relative; 
-        }
+        .product-img-box { height: 280px; background: var(--bg-light); display: flex; align-items: center; justify-content: center; color: #94a3b8; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; border: 1px solid #f3f4f6; transition: var(--transition); position: relative; }
         .product-card:hover .product-img-box { border-color: var(--primary-color); }
         
         .product-info { padding: 15px 0 0 0; display: flex; flex-direction: column; gap: 8px; }
