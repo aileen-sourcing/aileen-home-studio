@@ -1159,6 +1159,42 @@
         });  
 
         window.onload = renderPage;
+        // ==========================================
+// 🚀 终极视口守护者：让整个独立站根据屏幕等比例缩小，绝不挤压
+// ==========================================
+function handleResponsiveScale() {
+    // 获取当前设备屏幕的实际物理宽度
+    const deviceWidth = window.innerWidth || document.documentElement.clientWidth;
+    
+    // 寻找页面顶部的 viewport 标签
+    let viewport = document.querySelector("meta[name=viewport]");
+    if (!viewport) return;
+
+    // 📱 如果是手机设备（屏幕宽度小于 768px）
+    if (deviceWidth <= 768) {
+        // 核心逻辑：我们假定网页在 480px 的宽度下是排版最舒展、最完美的
+        // 哪怕用户的手机只有 360px 宽（比如老款 iPhone），我们也让它以 480px 的大心胸去渲染，然后整体缩小
+        const targetWidth = 480; 
+        const scale = deviceWidth / targetWidth;
+        
+        // 强制修改视口控制，直接等比例缩放到手机屏幕中，文字和按钮绝对不会再因为宽度不够而挤在一起换行
+        viewport.setAttribute('content', `width=${targetWidth}, initial-scale=${scale}, maximum-scale=${scale}, user-scalable=no`);
+    } else {
+        // 🖥️ 如果是平板或者电脑端，恢复标准的响应式渲染
+        viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+    }
+}
+
+// 在页面加载以及屏幕旋转/大小改变时，实时触发缩放计算
+window.addEventListener('resize', handleResponsiveScale);
+window.addEventListener('orientationchange', handleResponsiveScale);
+
+// 扩展你原有的 window.onload，让它初始化时就执行缩放
+const originalOnload = window.onload;
+window.onload = function() {
+    if (originalOnload) originalOnload();
+    handleResponsiveScale();
+};
     </script>
 </body>
 </html>
