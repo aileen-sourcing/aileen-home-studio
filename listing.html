@@ -290,10 +290,10 @@
         
         /* 【分流情况 A】：没有侧边栏的页面（如 Christmas Flowers） */
         /* 强制从 4 列变为 5 列，这样电脑端每个卡片会自动整体等比例缩小 20%，精致且不占地方 */
-        .products-grid { 
-            display: grid; 
-            grid-template-columns: repeat(5, 1fr) !important; 
-            gap: 30px 20px; 
+        .products-grid, #listing-grid-container {
+            display: grid !important;
+            grid-template-columns: repeat(5, 1fr) !important;
+            gap: 30px 20px !important;
         }
 
         /* 【分流情况 B】：当左侧有关卡筛选框显示时（如 Christmas 页面） */
@@ -349,9 +349,11 @@
         @media (max-width: 768px) {
             /* 手机端雷打不动：完美恢复你最原始的 2 列格式，绝不搞乱 */
             .products-grid,
+            #listing-grid-container,
             .listing-container div[style*="display: flex"] .products-grid { 
                 grid-template-columns: repeat(2, 1fr) !important; 
                 gap: 20px 15px !important; 
+                width: 100% !important;
             }
             .listing-container { padding: 0 20px; }
         }
