@@ -7,6 +7,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="products-data.js"></script>
     <style>
+        /* ==========================================================
+   🚀 终极强效防缓存覆盖：电脑端无筛选框 5 列 / 手机端 2 列
+   ========================================================== */
+
+/* 1. 🖥️ 针对电脑电脑端（大屏幕） */
+@media (min-width: 769px) {
+    /* 默认全都是 5 列 */
+    .products-grid, #listing-grid-container { 
+        display: grid !important; 
+        grid-template-columns: repeat(5, 1fr) !important; 
+        gap: 30px 20px !important; 
+    }
+    /* 只有当左侧圣诞筛选框老老实实出来显示（block）的时候，才降为 4 列 */
+    #christmas-sidebar[style*="display: block"] + #listing-grid-container,
+    #christmas-sidebar[style*="display: block"] ~ .products-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
+/* 2. 📱 针对手机手机端（小屏幕） */
+@media (max-width: 768px) {
+    /* 不管底下的 JS 怎么把父级改成 flex，手机网格强制锁死 2 列 */
+    .products-grid, 
+    #listing-grid-container,
+    .listing-container div[style*="display: flex"] .products-grid { 
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 20px 15px !important; 
+        width: 100% !important;
+    }
+}
         /* --- 极简轻奢画册风格 --- */
         :root {
             --primary-color: #0f172a;
