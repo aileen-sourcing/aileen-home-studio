@@ -7,36 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="products-data.js"></script>
     <style>
-        /* ==========================================================
-   🚀 终极强效防缓存覆盖：电脑端无筛选框 5 列 / 手机端 2 列
-   ========================================================== */
-
-/* 1. 🖥️ 针对电脑电脑端（大屏幕） */
-@media (min-width: 769px) {
-    /* 默认全都是 5 列 */
-    .products-grid, #listing-grid-container { 
-        display: grid !important; 
-        grid-template-columns: repeat(5, 1fr) !important; 
-        gap: 30px 20px !important; 
-    }
-    /* 只有当左侧圣诞筛选框老老实实出来显示（block）的时候，才降为 4 列 */
-    #christmas-sidebar[style*="display: block"] + #listing-grid-container,
-    #christmas-sidebar[style*="display: block"] ~ .products-grid {
-        grid-template-columns: repeat(4, 1fr) !important;
-    }
-}
-
-/* 2. 📱 针对手机手机端（小屏幕） */
-@media (max-width: 768px) {
-    /* 不管底下的 JS 怎么把父级改成 flex，手机网格强制锁死 2 列 */
-    .products-grid, 
-    #listing-grid-container,
-    .listing-container div[style*="display: flex"] .products-grid { 
-        grid-template-columns: repeat(2, 1fr) !important; 
-        gap: 20px 15px !important; 
-        width: 100% !important;
-    }
-}
         /* --- 极简轻奢画册风格 --- */
         :root {
             --primary-color: #0f172a;
@@ -314,51 +284,11 @@
             color: var(--white);
         }
 
-        /* ==========================================================
-           🎨 电脑端专属智能网格：自动识别侧边栏，完美等比例微调
-           ========================================================== */
+        /* 多卡片产品网格 - 自动并排 */
+        .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px 24px; }
         
-        /* 【分流情况 A】：没有侧边栏的页面（如 Christmas Flowers） */
-        /* 强制从 4 列变为 5 列，这样电脑端每个卡片会自动整体等比例缩小 20%，精致且不占地方 */
-        .products-grid, #listing-grid-container {
-            display: grid !important;
-            grid-template-columns: repeat(5, 1fr) !important;
-            gap: 30px 20px !important;
-        }
-
-        /* 【分流情况 B】：当左侧有关卡筛选框显示时（如 Christmas 页面） */
-        /* 强制把它死死锁在 4 列！这样它就不会被左边的筛选框挤小，保持你截图里的完美比例 */
-        .listing-container div[style*="display: flex"] .products-grid,
-        .listing-container div[style*="display: flex"] #listing-grid-container {
-            grid-template-columns: repeat(4, 1fr) !important;
-        }
-        
-        /* 基础卡片框架保持不变 */
-        .product-card { 
-            background: transparent; 
-            display: flex; 
-            flex-direction: column; 
-            transition: var(--transition); 
-            cursor: pointer; 
-        }
-        
-        /* 强制让图片框变成完美的 1:1 正方形，高度会随着宽度变小而自动等比例微调缩小 */
-        .product-img-box { 
-            width: 100% !important;
-            height: auto !important;
-            aspect-ratio: 1 / 1 !important;
-            background: var(--bg-light); 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            color: #94a3b8; 
-            font-weight: 600; 
-            font-size: 0.8rem; 
-            text-transform: uppercase; 
-            border: 1px solid #f3f4f6; 
-            transition: var(--transition); 
-            position: relative; 
-        }
+        .product-card { background: transparent; display: flex; flex-direction: column; transition: var(--transition); cursor: pointer; }
+        .product-img-box { height: 280px; background: var(--bg-light); display: flex; align-items: center; justify-content: center; color: #94a3b8; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; border: 1px solid #f3f4f6; transition: var(--transition); position: relative; }
         .product-card:hover .product-img-box { border-color: var(--primary-color); }
         
         .product-info { padding: 15px 0 0 0; display: flex; flex-direction: column; gap: 8px; }
@@ -366,25 +296,9 @@
         .inquiry-btn { width: 100%; padding: 10px; background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 2px; cursor: pointer; transition: var(--transition); }
         .product-card:hover .inquiry-btn { background: var(--primary-color); color: var(--white); }
 
-        /* ==========================================================
-           📱 移动端/平板响应式：严格回归你最稳固的初始格式，不触碰任何比例
-           ========================================================== */
-        @media (max-width: 1200px) { 
-            /* 没筛选框的降为 4 列 */
-            .products-grid { grid-template-columns: repeat(4, 1fr) !important; } 
-            /* 有筛选框的降为 3 列 */
-            .listing-container div[style*="display: flex"] .products-grid { grid-template-columns: repeat(3, 1fr) !important; }
-        }
-        
+        @media (max-width: 1200px) { .products-grid { grid-template-columns: repeat(3, 1fr); } }
         @media (max-width: 768px) {
-            /* 手机端雷打不动：完美恢复你最原始的 2 列格式，绝不搞乱 */
-            .products-grid,
-            #listing-grid-container,
-            .listing-container div[style*="display: flex"] .products-grid { 
-                grid-template-columns: repeat(2, 1fr) !important; 
-                gap: 20px 15px !important; 
-                width: 100% !important;
-            }
+            .products-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 15px; }
             .listing-container { padding: 0 20px; }
         }
         footer { 
