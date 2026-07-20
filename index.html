@@ -682,7 +682,21 @@
             .nav-links li.has-mega-menu:hover .mega-menu { display: block; }
             .mega-menu-container { grid-template-columns: 1fr; gap: 15px; padding: 0; }
 
-            .menu-toggle { display: flex; }
+            .logo {
+                font-size: 1rem;
+                white-space: nowrap;
+                flex-shrink: 1;
+            }
+            .search-container {
+                flex-grow: 1;
+                flex-shrink: 1;
+                max-width: 120px;
+                min-width: 70px;
+            }
+            .menu-toggle {
+                display: flex;
+                flex-shrink: 0 !important;
+            }
             .search-container { width: 120px; }
             .logo { font-size: 1.1rem; letter-spacing: 0px; }
             
