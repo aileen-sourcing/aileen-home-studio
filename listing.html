@@ -1010,6 +1010,17 @@
                 });
             }
         }
+        else {
+            // 🎯 如果不是 christmas 页面（即没有筛选框的页面），在电脑端大屏强制改成 5 列！
+            if (window.innerWidth > 1200) {
+                const container = document.getElementById('listing-grid-container');
+                if (container) {
+                    container.style.setProperty('display', 'grid', 'important');
+                    container.style.setProperty('grid-template-columns', 'repeat(5, 1fr)', 'important');
+                    container.style.setProperty('gap', '30px 16px', 'important');
+                }
+            }
+        }
     }); // 完美闭合你的循环监听
 })(); // 完美闭合自执行函数
 // =========================================================
