@@ -389,17 +389,16 @@
                 flex-direction: row !important;
                 overflow-x: auto !important;  /* 开启手机端横向丝滑滑动 */
                 -webkit-overflow-scrolling: touch !important; /* 开启 iOS 弹性回弹 */
-                gap: 20px !important; /* 👈 调大菜单项之间的间距（原来是18px，加宽到20px） */
-                padding: 0 10px !important;
+                gap: 12px !important; /* 👈 改为 12px，大屏小屏手机看着都很紧凑自然 */
+                padding: 0 4px !important;
                 height: 100% !important;
                 scrollbar-width: none !important; /* 隐藏 Firefox 滚动条 */
             }
 
             .nav-links a {
-                /* 恢复原本的大字号（不缩小） */
-                font-size: inherit !important; 
-                white-space: nowrap !important; /* 确保每个菜单文字绝不折行 */
-                padding: 4px 8px !important;   /* 👈 给每个菜单项加上左右内边距，产生清晰空隙 */
+                font-size: 0.85rem !important; /* 原生清晰字号 */
+                white-space: nowrap !important;
+                padding: 0 2px !important;     /* 移除过大的内边距，防止在大屏手机上隔得太开 */
             }
 
             .nav-links::-webkit-scrollbar {
@@ -514,17 +513,20 @@
             }
             .inquiry-actions-group {
                 display: flex !important;
-                flex-direction: row !important; /* 强制保持横向并排 */
-                gap: 6px !important;            /* 两个框中间留出 6px 的清晰缝隙，不粘连 */
+                flex-direction: row !important;
+                justify-content: center !important; /* 居中对齐 */
+                gap: 8px !important;               /* 👈 中间留出 8px 明确缝隙 */
                 width: 100% !important;
+                margin-top: 8px !important;
             }
 
             .inquiry-action-btn {
-                flex: 1 !important;
-                padding: 6px 2px !important;    /* 稍微瘦身，上下内边距调小 */
-                font-size: 0.68rem !important;  /* 微调字号，确保小屏下文字/图标不折行 */
-                gap: 3px !important;            /* 图标与文字之间的距离微调 */
-                letter-spacing: 0 !important;   /* 稍微收紧字母间距，给小屏留空间 */
+                flex: none !important;             /* 👈 禁止按钮自动撑满拉伸 */
+                width: 47% !important;              /* 👈 缩短按钮长度 */
+                max-width: 110px !important;        /* 👈 锁定最大宽度，决不相碰挨着 */
+                padding: 5px 0 !important;          /* 瘦身高度 */
+                font-size: 0.68rem !important;      /* 微调字号 */
+                letter-spacing: 0 !important;
             }
             /* ==========================================
                🌟 针对手机端搜索框改造成的“40px圆形小气泡”样式
