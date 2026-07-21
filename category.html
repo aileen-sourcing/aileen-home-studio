@@ -800,7 +800,25 @@
         <p>&copy; 2026 Aileen's Home Studio Global Sourcing. All Rights Reserved.</p>
     </footer>
 
+    
+
     <script>
+        
+    function handleSearch() {
+    const searchInput = document.getElementById('searchInput');
+    if (!searchInput) return;
+
+    let query = searchInput.value.trim().toLowerCase();
+    if (!query) {
+        alert('Please enter a product name to search.');
+        return;
+    }
+
+    if (query === 'xmas') query = 'christmas';
+
+    // 统一带词跳转到 listing 页面展示搜索结果
+    window.location.href = `listing.html?search=${encodeURIComponent(query)}`;
+}
         // ==========================================
         // 🔄 智能骨架：动态渲染大类总画册页
         // ==========================================
