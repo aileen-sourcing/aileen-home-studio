@@ -389,10 +389,13 @@
                 flex-direction: row !important;
                 overflow-x: auto !important;  /* 开启手机端横向丝滑滑动 */
                 -webkit-overflow-scrolling: touch !important; /* 开启 iOS 弹性回弹 */
-                gap: 18px !important;
+                gap: 12px !important;
                 padding: 0 5px !important;
                 height: 100% !important;
                 scrollbar-width: none !important; /* 隐藏 Firefox 滚动条 */
+            }
+            .nav-links a {
+                font-size: 0.78rem !important;
             }
 
             .nav-links::-webkit-scrollbar {
@@ -504,6 +507,15 @@
             }
             .product-info .sku {
                 font-size: 11px !important;
+            }
+            .inquiry-actions-group {
+                flex-direction: column !important;
+                gap: 6px !important;
+            }
+            .inquiry-action-btn {
+                width: 100% !important;
+                padding: 6px 2px !important;
+                font-size: 0.7rem !important;
             }
             /* ==========================================
                🌟 针对手机端搜索框改造成的“40px圆形小气泡”样式
