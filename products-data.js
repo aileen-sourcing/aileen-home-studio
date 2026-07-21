@@ -42,8 +42,11 @@ const detailsDatabase = {
             { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
         ]
     },
+    // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: "wreath")
+    // ==========================================
 
-    "xmas wreath 260709": {
+    "xmas wreath 260708": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260708",
@@ -61,6 +64,240 @@ const detailsDatabase = {
             { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
         ]
     },
+    "xmas wreath 260709": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260709",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260709/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260709/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260709/3.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260709/4.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260709/5.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260710": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260710",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260710/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260710/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260710/3.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260710/4.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260711": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260711",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260711/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260711/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260711/3.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260712": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260712",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260712/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260712/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260712/3.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260712/4.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260712/5.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260713": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260713",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260713/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260713/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260713/3.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260714": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260714",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260714/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260714/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260714/3.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260714/4.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260715": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260715",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260715/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260715/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260715/3.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260715/4.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260716": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260716",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260716/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260716/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260716/3.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260716/4.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260716/5.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260716/6.jpg",
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260717": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260717",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260717/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260717/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260717/3.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260717/4.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260717/5.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260717/6.jpg",
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260718": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260718",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260718/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260718/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260718/3.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260718/4.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260718/5.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260718/6.jpg",
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260719": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260719",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260719/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260719/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260719/3.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260720": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260720",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260720/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260720/2.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260721": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260721",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260721/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260721/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260721/3.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260721/4.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260721/5.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260721/6.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260722": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260722",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260722/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260722/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260722/3.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260722/4.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260722/5.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    "xmas wreath 260723": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: w20260723",
+        images: [
+            "images/products/holiday-decor/christmas/wreath/w20260723/1.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260723/2.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260723/3.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260723/4.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable" },
+            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+        ]
+    },
+    // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: garland")
+    // ==========================================
 
     "9ft xmas garland 260710": {
         category: "holiday",
@@ -80,6 +317,9 @@ const detailsDatabase = {
             { label: "Application", value: "Staircase, Mantle, Front Door Frame Decor" }
         ]
     },
+    // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: "mini christmas tree")
+    // ==========================================
 
     "45cm mini xmas tree 260711": {
         category: "holiday",
