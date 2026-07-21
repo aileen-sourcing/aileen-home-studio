@@ -909,8 +909,6 @@
         const urlParams = new URLSearchParams(window.location.search);
         const catItem = urlParams.get('cat');
         const subItem = urlParams.get('sub');
-        
-        if (!catItem) return;
 
         // 智能兼容你的所有大类与子类命名
         const targetCat = catItem === 'holiday' ? 'holiday-decor' : catItem;
@@ -918,15 +916,36 @@
 
         let gridHtml = "";
 
+        // 智能获取搜索词
+        const searchKeyword = urlParams.get('search');
+
         // 强制去 detailsDatabase 数据库里把你的产品捞出来
         if (typeof detailsDatabase !== 'undefined') {
             for (let key in detailsDatabase) {
                 const product = detailsDatabase[key];
                 const prodCat = product.category;
                 const prodSub = product.subcategory ? product.subcategory.replace(/s$/, '') : '';
+                const pTitle = key.toLowerCase();
+                const pCode = product.code ? product.code.toLowerCase() : '';
 
-                // 如果大类和子类对上了，直接强制组装卡片
-                if (prodCat === targetCat && (!subItem || prodSub === targetSub)) {
+                let isMatch = false;
+
+                // 🌟 场景 A：如果带有搜索词 search
+                if (searchKeyword) {
+                    const cleanQuery = searchKeyword.toLowerCase().trim();
+                    if (pTitle.includes(cleanQuery) || pCode.includes(cleanQuery)) {
+                        isMatch = true;
+                    }
+                } 
+                // 🌟 场景 B：原本的大类/子类匹配
+                else if (catItem) {
+                    if (prodCat === targetCat && (!subItem || prodSub === targetSub)) {
+                        isMatch = true;
+                    }
+                }
+
+                // 如果对上了，直接强制组装卡片
+                if (isMatch) {
                     let firstImg = "images/placeholder.jpg";
                     if (product.images && product.images.length > 0) {
                         firstImg = product.images[0];
