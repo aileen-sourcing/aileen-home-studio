@@ -1206,14 +1206,14 @@
             </div>
 
             <!-- 🚀 升级：双通道发送按钮 -->
-            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <div style="display: flex; flex-direction: column; gap: 12px;">
                 <!-- Email 发送 -->
-                <button onclick="sendInquiryViaChannel('email')" style="flex: 1; min-width: 200px; padding: 15px; background-color: #0f172a; color: #ffffff; border: none; border-radius: 4px; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#b45309'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='#0f172a'; this.style.transform='translateY(0)';">
+                <button onclick="sendInquiryViaChannel('email')" style="width: 100%; padding: 15px; background-color: #0f172a; color: #ffffff; border: none; border-radius: 4px; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#b45309'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='#0f172a'; this.style.transform='translateY(0)';">
                     <i class="fa-regular fa-envelope"></i> Send via Email
                 </button>
                 
                 <!-- WhatsApp 发送 -->
-                <button onclick="sendInquiryViaChannel('whatsapp')" style="flex: 1; min-width: 200px; padding: 15px; background-color: transparent; color: #0f172a; border: 2px solid #0f172a; border-radius: 4px; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#0f172a'; this.style.color='#ffffff'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#0f172a'; this.style.transform='translateY(0)';">
+                <button onclick="sendInquiryViaChannel('whatsapp')" style="width: 100%; padding: 15px; background-color: transparent; color: #0f172a; border: 2px solid #0f172a; border-radius: 4px; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#0f172a'; this.style.color='#ffffff'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#0f172a'; this.style.transform='translateY(0)';">
                     <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
                 </button>
             </div>
