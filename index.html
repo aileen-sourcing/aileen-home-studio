@@ -768,20 +768,18 @@
     text-align: center !important;
 }
 .about-text-block h2 { 
-    font-size: 22px !important; 
+    font-size: 22px !important; /* 略微微调字号，确保同一行能在手机端放得下 */
     line-height: 1.3 !important;
     margin-bottom: 15px !important;
     text-align: center !important;
 }
 
-/* 核心：手机端隐藏 <br> 换行标签 */
+/* 核心修复：把 <br> 变成空格，不再换行 */
 .about-text-block h2 br { 
-    display: none !important; 
+    display: inline !important; 
 }
-/* 核心：在 <br> 原本的位置补充一个显式的英文空格 */
-.about-text-block h2 br::before {
-    content: "\00a0" !important; /* 不换行空格 */
-    display: inline !important;
+.about-text-block h2 br::after {
+    content: " " !important; /* 强制插入一个空格 */
 }
 
 .about-text-block p { 
