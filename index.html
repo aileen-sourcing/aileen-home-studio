@@ -753,43 +753,51 @@
             }
             /* ============================================================= */
 
-            /* About Us 模块移动端与平板响应式优化 */
+            /* About Us 模块移动端居中排版 */
 .about-preview-section { 
     flex-direction: column; 
     height: auto !important; 
 }
 .about-text-block { 
     flex: 0 0 100%; 
-    padding: 40px 20px !important; /* 调整内边距，释放横向空间 */
-    text-align: center; 
+    padding: 35px 20px !important; 
+    text-align: center !important; 
 }
 .about-text-block .about-label {
     margin-bottom: 8px;
+    text-align: center !important;
 }
 .about-text-block h2 { 
-    font-size: 26px !important; 
-    line-height: 1.2 !important;
+    font-size: 22px !important; /* 略微微调字号，确保同一行能在手机端放得下 */
+    line-height: 1.3 !important;
     margin-bottom: 15px !important;
+    text-align: center !important;
 }
-/* 取消 h2 里的换行，让标题自然延伸 */
+
+/* 核心修复：把 <br> 变成空格，不再换行 */
 .about-text-block h2 br { 
-    display: none; 
+    display: inline !important; 
 }
+.about-text-block h2 br::after {
+    content: " " !important; /* 强制插入一个空格 */
+}
+
 .about-text-block p { 
-    font-size: 0.9rem !important; 
-    line-height: 1.5 !important;
+    font-size: 14px !important; 
+    line-height: 1.6 !important;
     width: 100% !important; 
     max-width: 100% !important; 
-    margin: 0 0 25px 0 !important;
-    text-align: left !important;  /* 改为左对齐/自然流，提升手机端英文阅读舒适度并减少不必要换行 */
+    margin: 0 auto 25px auto !important;
+    text-align: center !important; 
     word-break: normal !important;
 }
 .about-discover-btn { 
-    margin: 0 auto; 
+    margin: 0 auto !important; 
+    display: inline-block !important;
 }
 .about-image-block { 
     flex: 0 0 100%; 
-    height: 250px; 
+    height: 220px; 
 }
 
 /* 📱 针对平板及大屏手机（768px 及以下）的无缝适配 */
