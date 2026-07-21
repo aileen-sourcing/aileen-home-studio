@@ -805,18 +805,25 @@
     <script>
         
     function handleSearch() {
+    // 1. 获取输入框元素
     const searchInput = document.getElementById('searchInput');
-    if (!searchInput) return;
+    if (!searchInput) {
+        console.error("找不到 id 为 searchInput 的输入框！");
+        return;
+    }
 
-    let query = searchInput.value.trim().toLowerCase();
+    // 2. 获取用户输入的文本，防止拿到 null 或 undefined
+    let query = searchInput.value ? searchInput.value.trim() : "";
+    
     if (!query) {
         alert('Please enter a product name to search.');
         return;
     }
 
-    if (query === 'xmas') query = 'christmas';
+    // 智能转换缩写
+    if (query.toLowerCase() === 'xmas') query = 'christmas';
 
-    // 统一带词跳转到 listing 页面展示搜索结果
+    // 🌟 关键：只带 search 参数跳转，绝对不带 cat=null
     window.location.href = `listing.html?search=${encodeURIComponent(query)}`;
 }
         // ==========================================
