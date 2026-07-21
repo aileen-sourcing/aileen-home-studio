@@ -888,6 +888,27 @@
 
     <script>
         // ==========================================
+// 🌟 核心：补全详情页顶部搜索框跳转逻辑
+// ==========================================
+function handleSearch() {
+    const searchInput = document.getElementById('searchInput');
+    if (!searchInput) return;
+
+    let query = searchInput.value ? searchInput.value.trim() : "";
+    
+    // 如果没有输入内容，进行提示
+    if (!query) {
+        alert('Please enter a product name to search.');
+        return;
+    }
+
+    // 智能处理缩写
+    if (query.toLowerCase() === 'xmas') query = 'christmas';
+
+    // 统一带词跳转到 listing.html 呈现全库搜索结果
+    window.location.href = `listing.html?search=${encodeURIComponent(query)}`;
+}
+        // ==========================================
         // 🔄 核心骨架：从数据库动态加载产品详情
         // ==========================================
         window.onload = function() {
