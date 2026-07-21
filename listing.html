@@ -985,15 +985,21 @@
                 container.innerHTML = gridHtml;
             }
             
-            // 顺便把头部的大标题改漂亮
             const pageTitleEl = document.getElementById('listing-main-title');
-            if (pageTitleEl && subItem) {
-                pageTitleEl.innerText = subItem.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-            }
-            const breadcrumbSubEl = document.getElementById('br-current');
-            if (breadcrumbSubEl && subItem) {
-                breadcrumbSubEl.innerText = subItem.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-            }
+const breadcrumbSubEl = document.getElementById('br-current');
+
+// 🌟 优先判断：如果是搜索跳转，标题显示搜索词
+if (searchKeyword) {
+    const searchTitle = `Search Results: "${searchKeyword}"`;
+    if (pageTitleEl) pageTitleEl.innerText = searchTitle;
+    if (breadcrumbSubEl) breadcrumbSubEl.innerText = searchTitle;
+} 
+// 🌟 其次判断：如果是按子分类跳转，显示子分类名称
+else if (subItem) {
+    const subTitle = subItem.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    if (pageTitleEl) pageTitleEl.innerText = subTitle;
+    if (breadcrumbSubEl) breadcrumbSubEl.innerText = subTitle;
+}
         }
 
         // =========================================================
