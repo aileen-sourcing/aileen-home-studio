@@ -5,16 +5,16 @@ const detailsDatabase = {
     // 🎄 大类 1：Holiday Decor (cat: "holiday")
     // ==========================================
     
-    "pe christmas tree 2801": {
+    "pe christmas tree 0707": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
-        code: "Item Code: ct26062801",
+        code: "Item Code: ct26060707",
         images: [
-            "images/products/holiday-decor/christmas/christmas-tree/ct26062801/1.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26062801/2.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26062801/3.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26062801/4.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26062801/5.jpg"
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/4.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/5.jpg"
         ], 
         specs: [
             { label: "Material", value: "100% PE Premium Tips (Fireproofing)" },
@@ -23,7 +23,6 @@ const detailsDatabase = {
             { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
         ]
     },
-
     "7ft xmas tree 260708": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
