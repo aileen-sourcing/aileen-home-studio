@@ -292,7 +292,13 @@
         .product-card:hover .product-img-box { border-color: var(--primary-color); }
         
         .product-info { padding: 15px 0 0 0; display: flex; flex-direction: column; gap: 8px; }
-        .product-name { font-size: 0.95rem; font-weight: 500; color: var(--primary-color); line-height: 1.4; min-height: 40px; }
+        .product-name,
+        .product-title-text {
+            font-size: 0.8rem !important;
+            font-weight: 700 !important;
+            color: var(--primary-color);
+            line-height: 1.3;
+        }
         .inquiry-btn { width: 100%; padding: 10px; background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 2px; cursor: pointer; transition: var(--transition); }
         .product-card:hover .inquiry-btn { background: var(--primary-color); color: var(--white); }
 
