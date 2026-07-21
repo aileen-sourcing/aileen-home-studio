@@ -1404,18 +1404,79 @@
 
         // 智能搜索框跳转逻辑
         function handleSearch() {
-            const searchInput = document.getElementById('searchInput');
-            if (!searchInput) return;
+    const searchInput = document.getElementById('searchInput');
+    if (!searchInput) return;
 
-            const query = searchInput.value.trim();
-            if (!query) {
-                alert('Please enter a product name to search.');
-                return;
-            }
+    const query = searchInput.value.trim().toLowerCase();
+    if (!query) {
+        alert('Please enter a product name to search.');
+        return;
+    }
 
-            // 直接将用户输入的任意关键词传递给列表页
-            window.location.href = `listing.html?search=${encodeURIComponent(query)}`;
+    // 映射表：根据你的 products-data.js 实际的 cat 和 sub 来精确跳转
+    let targetUrl = 'listing.html';
+
+    // 1. 圣诞树 / Mini树 (映射到 cat=holiday&sub=christmas)
+    if (query.includes('tree') || query.includes('xmas tree') || query.includes('mini tree') || query.includes('christmas tree')) {
+        // 如果搜的是黑色的万圣节树
+        if (query.includes('black') || query.includes('halloween')) {
+            targetUrl = 'listing.html?cat=holiday&sub=halloween';
+        } else {
+            targetUrl = 'listing.html?cat=holiday&sub=christmas';
         }
+    } 
+    // 2. 花环 (Garland)
+    else if (query.includes('garland')) {
+        targetUrl = 'listing.html?cat=holiday&sub=christmas';
+    }
+    // 3. 花圈 (Wreath)
+    else if (query.includes('wreath')) {
+        targetUrl = 'listing.html?cat=holiday&sub=christmas';
+    }
+    // 4. 圣诞花 (Flowers)
+    else if (query.includes('flower')) {
+        targetUrl = 'listing.html?cat=holiday&sub=christmas-flowers';
+    }
+    // 5. 树裙 (Tree Skirt)
+    else if (query.includes('skirt')) {
+        targetUrl = 'listing.html?cat=holiday&sub=tree-skirts';
+    }
+    // 6. 灯具大类 (Lighting)
+    else if (query.includes('lamp') || query.includes('light') || query.includes('sconce')) {
+        if (query.includes('table')) {
+            targetUrl = 'listing.html?cat=lighting&sub=table-lamps';
+        } else if (query.includes('floor')) {
+            targetUrl = 'listing.html?cat=lighting&sub=floor-lamps';
+        } else if (query.includes('pendant')) {
+            targetUrl = 'listing.html?cat=lighting&sub=pendant-lights';
+        } else if (query.includes('wall')) {
+            targetUrl = 'listing.html?cat=lighting&sub=wall-lighting';
+        } else {
+            targetUrl = 'listing.html?cat=lighting';
+        }
+    }
+    // 7. 原材料大类 (Raw Material)
+    else if (query.includes('film') || query.includes('pvc')) {
+        targetUrl = 'listing.html?cat=material&sub=pvc-film';
+    } else if (query.includes('tip') || query.includes('pe')) {
+        targetUrl = 'listing.html?cat=material&sub=pe-tips';
+    } else if (query.includes('thread') || query.includes('polyster')) {
+        targetUrl = 'listing.html?cat=material&sub=polyester-thread';
+    } else if (query.includes('tube')) {
+        targetUrl = 'listing.html?cat=material&sub=metal-tube';
+    } else if (query.includes('stand')) {
+        targetUrl = 'listing.html?cat=material&sub=metal-stands';
+    } else if (query.includes('material') || query.includes('raw')) {
+        targetUrl = 'listing.html?cat=material';
+    }
+    // 8. 兜底策略：如果都没匹配上，带关键词搜索，或者跳到全品类
+    else {
+        targetUrl = `listing.html?search=${encodeURIComponent(query)}`;
+    }
+
+    // 执行页面跳转
+    window.location.href = targetUrl;
+}
     </script>
 </body>
 </html>
