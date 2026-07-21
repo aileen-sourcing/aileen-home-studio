@@ -1404,35 +1404,17 @@
 
         // 智能搜索框跳转逻辑
         function handleSearch() {
-            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const searchInput = document.getElementById('searchInput');
+            if (!searchInput) return;
+
+            const query = searchInput.value.trim();
             if (!query) {
                 alert('Please enter a product name to search.');
                 return;
             }
-            if (query.includes('floor lamp') || query.includes('floor light')) { window.location.href = 'listing.html?cat=lighting&sub=floor-lamps'; return; }
-            if (query.includes('table lamp') || query.includes('desk lamp') || query.includes('table light')) { window.location.href = 'listing.html?cat=lighting&sub=table-lamps'; return; }
-            if (query.includes('fan') || query.includes('ceiling fan')) { window.location.href = 'listing.html?cat=lighting&sub=fan-lights'; return; }
-            if (query.includes('chandelier')) { window.location.href = 'listing.html?cat=lighting&sub=chandeliers'; return; }
-            if (query.includes('pendant')) { window.location.href = 'listing.html?cat=lighting&sub=pendant-lights'; return; }
-            if (query.includes('sconce') || query.includes('wall light')) { window.location.href = 'listing.html?cat=lighting&sub=wall-lighting'; return; }
-            if (query.includes('string') || query.includes('fairy') || query.includes('led light')) { window.location.href = 'listing.html?cat=lighting&sub=led-string-lights'; return; }
-            if (query.includes('outdoor light')) { window.location.href = 'listing.html?cat=lighting&sub=outdoor-lighting'; return; }
-            if (query.includes('tree') || query.includes('christmas tree') || query.includes('snow tree') || query.includes('pe tree')) { window.location.href = 'listing.html?cat=holiday&sub=christmas-trees'; return; }
-            if (query.includes('flower') || query.includes('poinsettia')) { window.location.href = 'listing.html?cat=holiday&sub=christmas-flowers'; return; }
-            if (query.includes('skirt')) { window.location.href = 'listing.html?cat=holiday&sub=tree-skirts'; return; }
-            if (query.includes('bag') || query.includes('storage')) { window.location.href = 'listing.html?cat=holiday&sub=storage-bags'; return; }
-            if (query.includes('garland') || query.includes('tinsel')) { window.location.href = 'listing.html?cat=tinsel-garland'; return; }
-            if (query.includes('halloween')) { window.location.href = 'listing.html?cat=holiday&sub=halloween-decor'; return; }
-            if (query.includes('thanksgiving') || query.includes('fall')) { window.location.href = 'listing.html?cat=holiday&sub=thanksgiving-decor'; return; }
-            if (query.includes('pe tip') || query.includes('tree branch') || query.includes('pe branch')) { window.location.href = 'listing.html?cat=material&sub=pe-tips'; return; }
-            if (query.includes('pvc film') || query.includes('pvc roll')) { window.location.href = 'listing.html?cat=material&sub=pvc-film'; return; }
-            if (query.includes('needle') || query.includes('pine needle')) { window.location.href = 'listing.html?cat=material&sub=pine-needle'; return; }
-            if (query.includes('stand') || query.includes('metal base')) { window.location.href = 'listing.html?cat=material&sub=metal-stands'; return; }
 
-            if (query.includes('christmas') || query.includes('holiday') || query.includes('decor') || query.includes('season')) { window.location.href = 'category.html?cat=holiday'; } 
-            else if (query.includes('light') || query.includes('lamp')) { window.location.href = 'category.html?cat=lighting'; } 
-            else if (query.includes('material') || query.includes('raw') || query.includes('pvc') || query.includes('pe')) { window.location.href = 'category.html?cat=material'; } 
-            else { window.location.href = '#products'; }
+            // 直接将用户输入的任意关键词传递给列表页
+            window.location.href = `listing.html?search=${encodeURIComponent(query)}`;
         }
     </script>
 </body>
