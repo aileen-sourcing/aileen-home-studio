@@ -773,6 +773,17 @@
     margin-bottom: 15px !important;
     text-align: center !important;
 }
+
+/* 核心：手机端隐藏 <br> 换行标签 */
+.about-text-block h2 br { 
+    display: none !important; 
+}
+/* 核心：在 <br> 原本的位置补充一个显式的英文空格 */
+.about-text-block h2 br::before {
+    content: "\00a0" !important; /* 不换行空格 */
+    display: inline !important;
+}
+
 .about-text-block p { 
     font-size: 14px !important; 
     line-height: 1.6 !important;
@@ -1140,7 +1151,7 @@
     <section class="about-preview-section">
     <div class="about-text-block">
         <div class="about-label">ABOUT US</div>
-        <h2>Our Mission Elevating Value</h2>
+        <h2>Our Mission<br>Elevating Value</h2>
         <p>
             We understand the challenges businesses face when finding reliable suppliers, negotiating competitive prices, and ensuring product quality. We take the burden off your shoulders and provide a seamless procurement experience with comprehensive buying services including price negotiation, quality control inspections, logistics coordination, and shipping arrangements.
         </p>
