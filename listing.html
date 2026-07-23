@@ -605,95 +605,134 @@
             }
         }
         /* ==========================================================
-   📱 Listing 页面 - 仅平板竖屏（768px ~ 1024px）精准微调
+   📱 1. 【仅平板横屏】(Landscape)：
+      - 导航栏保留 Logo
+      - Listing 强制 1 行 5 个
    ========================================================== */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media screen and (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
 
-    /* ------------------------------------------------------
-       1. 顶部导航栏：隐藏 Logo，完整展示菜单与搜索框
-       ------------------------------------------------------ */
-    .logo {
-        display: none !important;              /* 👈 竖屏隐藏 Logo */
+    /* 导航栏：瘦身缩容，完整展示 */
+    .navbar {
+        padding: 0 12px !important;
     }
 
-    .navbar {
-        padding: 0 15px !important;
-        justify-content: space-between !important;
+    .logo {
+        display: block !important;            /* 👈 横屏必定显示 Logo */
+        font-size: 1.1rem !important;
+        margin-right: 10px !important;
     }
 
     .nav-links {
-        gap: 16px !important;                 /* 舒展菜单物理间距 */
+        gap: 12px !important;
     }
 
     .nav-links a {
-        font-size: 0.85rem !important;
+        font-size: 0.82rem !important;
     }
 
     form.search-container {
-        width: 180px !important;               /* 搜索框恢复完整显示 */
-        padding: 6px 10px !important;
+        width: 150px !important;
         margin-left: auto !important;
     }
 
-    /* ------------------------------------------------------
-       2. 产品网格：分场景精确控制列数
-       ------------------------------------------------------ */
-    
-    /* 场景 A：【有筛选框/侧边栏】改为 1 行 3 个 */
-    .main-layout .products-grid,
-    .sidebar-filter + .products-grid,
-    .filter-sidebar + .products-grid,
-    .main-layout #products-grid-container {
+    /* 核心：横屏下的所有 Listing 页面全部锁定为 1 行 5 个 */
+    .products-grid,
+    #products-grid-container,
+    .main-layout .products-grid {
         display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important; /* 👈 带筛选框：1 行 3 列 */
-        gap: 15px 10px !important;
+        grid-template-columns: repeat(5, 1fr) !important; /* 👈 锁定 1 行 5 列 */
+        gap: 12px 8px !important;
         width: 100% !important;
     }
 
-    /* 缩小左侧筛选框的宽度，给 3 列产品腾出更大空间 */
-    .sidebar-filter,
-    .filter-sidebar {
-        flex: 0 0 160px !important;
-        width: 160px !important;
-    }
-
-    .main-layout {
-        gap: 15px !important;
-        padding: 0 15px !important;
-    }
-
-    /* 场景 B：【无筛选框】完全维持你原设定的 1 行 5 个 */
-    .products-grid:not(.main-layout .products-grid) {
-        display: grid !important;
-        grid-template-columns: repeat(5, 1fr) !important; /* 👈 无筛选框：保持 1 行 5 列不变 */
-        gap: 12px 8px !important;
-    }
-
-    /* ------------------------------------------------------
-       3. 标题字体微调：防止换行错乱，彻底对齐卡片
-       ------------------------------------------------------ */
-    .grid-product-title {
-        font-size: 0.68rem !important;         /* 👈 调小标题字号，适配多列布局 */
+    /* 标题微调，防止换行高低错落 */
+    .grid-product-title,
+    .product-name {
+        font-size: 0.68rem !important;
         line-height: 1.2 !important;
-        height: 26px !important;               /* 👈 强制固定双行高度，消除卡片高低不平 */
+        height: 26px !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
         display: -webkit-box !important;
         -webkit-box-orient: vertical !important;
-        -webkit-line-clamp: 2 !important;      /* 最多显示 2 行，多余文字打点截断 */
-        margin: 2px 0 !important;
-    }
-
-    /* 按钮微调，防止 5 列/3 列下把卡片撑爆 */
-    .inquiry-actions-group {
-        gap: 3px !important;
-        margin-top: 5px !important;
+        -webkit-line-clamp: 2 !important;
     }
 
     .inquiry-action-btn {
         padding: 5px 2px !important;
-        font-size: 0.58rem !important;         /* 微调按钮字体以自适应卡片 */
-        letter-spacing: 0 !important;
+        font-size: 0.58rem !important;
+    }
+}
+
+
+/* ==========================================================
+   📱 2. 【仅平板竖屏】(Portrait)：
+      - 导航栏隐藏 Logo（腾出空间给搜索框）
+      - 无筛选框：1 行 5 个
+      - 有筛选框：1 行 3 个
+   ========================================================== */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+    /* 导航栏：隐藏 Logo，解决搜索框看不见的问题 */
+    .logo {
+        display: none !important;              /* 👈 竖屏隐藏 Logo 彻底给搜索框腾空间 */
+    }
+
+    .navbar {
+        padding: 0 10px !important;
+        justify-content: space-between !important;
+    }
+
+    .nav-links {
+        gap: 14px !important;
+    }
+
+    .nav-links a {
+        font-size: 0.82rem !important;
+    }
+
+    form.search-container {
+        width: 160px !important;               /* 👈 搜索框全额展示 */
+        margin-left: auto !important;
+    }
+
+    /* 场景 A：【有筛选框/侧边栏】改为 1 行 3 个 */
+    .main-layout .products-grid,
+    .sidebar-filter + .products-grid,
+    .filter-sidebar + .products-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important; /* 👈 1 行 3 列 */
+        gap: 15px 10px !important;
+    }
+
+    .sidebar-filter,
+    .filter-sidebar {
+        flex: 0 0 160px !important;
+    }
+
+    /* 场景 B：【无筛选框】保持 1 行 5 个 */
+    .products-grid:not(.main-layout .products-grid) {
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important; /* 👈 1 行 5 列 */
+        gap: 10px 6px !important;
+    }
+
+    /* 标题与按钮字号缩小并锁定高度，对齐整齐 */
+    .grid-product-title,
+    .product-name {
+        font-size: 0.65rem !important;
+        line-height: 1.2 !important;
+        height: 25px !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-line-clamp: 2 !important;
+    }
+
+    .inquiry-action-btn {
+        padding: 4px 2px !important;
+        font-size: 0.55rem !important;
     }
 }
 
