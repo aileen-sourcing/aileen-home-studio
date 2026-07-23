@@ -604,6 +604,86 @@
                 transform: none !important;
             }
         }
+        /* ==========================================================
+   📱 💻 仅平板横屏（768px ~ 1366px）终极修复版：
+   1. 顶部导航瘦身不撞车、搜索框归位
+   2. Listing 精准 1 行 5 个，整体比例缩小
+   ========================================================== */
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+
+    /* --- 1. 顶部导航栏瘦身，解决撞车与搜寻框溢出 --- */
+    .navbar {
+        padding: 0 15px !important;
+    }
+
+    .logo {
+        font-size: 1.15rem !important;  /* 缩小 Logo */
+        margin-right: 10px !important;
+    }
+
+    .nav-links {
+        gap: 12px !important;          /* 缩小菜单选项之间的间距 */
+    }
+
+    .nav-links a {
+        font-size: 0.82rem !important; /* 缩小菜单文字 */
+    }
+
+    .search-container {
+        width: 150px !important;        /* 给搜索框设定精准宽度，防止被挤出屏幕 */
+    }
+
+    .search-container input {
+        font-size: 0.75rem !important;
+        padding: 5px 28px 5px 8px !important;
+    }
+
+
+    /* --- 2. 产品 Listing 布局改为 1 行 5 个并等比缩小 --- */
+    .products-grid,
+    #listing-grid-container {
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important; /* 强制 5 列 */
+        gap: 15px 10px !important;                          /* 缩小卡片间距 */
+        width: 100% !important;
+    }
+
+    /* 缩小图片容器与图片高度 */
+    .product-img-box,
+    .product-image-wrapper {
+        height: auto !important;
+        aspect-ratio: 1 / 1 !important;
+    }
+
+    /* 缩小 Item Code 和标题字号 */
+    .product-info {
+        padding: 8px 0 0 0 !important;
+        gap: 4px !important;
+    }
+
+    .product-meta-code {
+        font-size: 0.7rem !important;
+    }
+
+    .product-name,
+    .product-title-text {
+        font-size: 0.72rem !important;
+        line-height: 1.2 !important;
+    }
+
+    /* 缩小 Email 与 WhatsApp 按钮 */
+    .inquiry-actions-group {
+        gap: 4px !important;
+        margin-top: 6px !important;
+    }
+
+    .inquiry-action-btn {
+        padding: 5px 2px !important;
+        font-size: 0.62rem !important;
+        letter-spacing: 0 !important;
+        gap: 2px !important;
+    }
+}
 
     </style>
 </head>
@@ -1042,7 +1122,7 @@
                 const parentBox = container.parentElement;
                 if (parentBox) parentBox.style.display = 'block';
                 
-                if (window.innerWidth > 1200) {
+                if (window.innerWidth > 1366) {
                     container.style.setProperty('display', 'grid', 'important');
                     container.style.setProperty('grid-template-columns', 'repeat(5, 1fr)', 'important');
                     container.style.setProperty('gap', '30px 16px', 'important');
