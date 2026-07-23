@@ -973,6 +973,22 @@
         height: 350px !important;          /* 下方图片给一个固定展示高度 */
     }
 }
+/* 💻 专门针对平板横屏（1024px 到 1366px）的居中排版微调 */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    /* 1. 将文字块内部的所有文本居中 */
+    .about-text-block {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;    /* 确保内部元素（如按钮）水平居中 */
+        justify-content: center !important;/* 垂直方向也居中展示 */
+    }
+
+    /* 2. 确保按钮水平居中 */
+    .about-discover-btn {
+        margin: 0 auto !important;
+    }
+}
             
     </style>
 </head>
