@@ -934,6 +934,45 @@
     margin: 0 auto;
     line-height: 1.8;
 }
+/* 📱 专门针对平板端（iPad竖屏/横屏等：768px 到 1024px）的 About Us 溢出修复 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .about-preview-section {
+        flex-direction: column !important; /* 平板端改为上下排列，防止左右挤压 */
+        height: auto !important;           /* 取消固定 550px 高度，让内容自适应撑开 */
+    }
+
+    .about-text-block {
+        flex: none !important;
+        width: 100% !important;            /* 宽度占满平板屏幕 */
+        padding: 50px 40px !important;     /* 适当减小内边距 */
+        text-align: center !important;     /* 居中排版更美观 */
+    }
+
+    .about-text-block .about-label {
+        margin-bottom: 10px !important;
+    }
+
+    .about-text-block h2 {
+        font-size: 32px !important;        /* 稍微调小字号，避免平板端撑爆 */
+        line-height: 1.3 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .about-text-block p {
+        font-size: 15px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .about-discover-btn {
+        margin: 0 auto !important;         /* 按钮居中显示 */
+    }
+
+    .about-image-block {
+        flex: none !important;
+        width: 100% !important;
+        height: 350px !important;          /* 下方图片给一个固定展示高度 */
+    }
+}
             
     </style>
 </head>
