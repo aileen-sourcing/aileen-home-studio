@@ -1059,6 +1059,48 @@
         }
     }
 }
+/* ==========================================================
+   🏠 首页 - 仅平板竖屏（768px ~ 1024px）：保留 Logo 并完美防挤压
+   ========================================================== */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+    /* 1. 整体导航栏两端留白缩紧 */
+    .navbar {
+        padding: 0 12px !important;
+        justify-content: space-between !important;
+    }
+
+    /* 2. 保留 Logo 门面：控制字号与右外边距，禁止换行 */
+    .logo {
+        font-size: 1.05rem !important;
+        margin-right: 10px !important;
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;             /* 保证 Logo 绝对不被压扁 */
+    }
+
+    /* 3. 菜单选项：收紧间距与字号，放得下 Contact */
+    .nav-links {
+        gap: 10px !important;                 /* 缩减菜单项之间的间距 */
+        flex-wrap: nowrap !important;
+    }
+
+    .nav-links a {
+        font-size: 0.78rem !important;         /* 菜单字号微调 */
+        white-space: nowrap !important;
+    }
+
+    /* 4. 搜索框：控宽并完整露出 */
+    form.search-container {
+        width: 135px !important;               /* 适度压缩宽度，给左侧菜单留空间 */
+        padding: 5px 8px !important;
+        flex-shrink: 0 !important;
+        margin-left: 5px !important;
+    }
+
+    form.search-container input {
+        font-size: 0.72rem !important;
+    }
+}
             
     </style>
 </head>
