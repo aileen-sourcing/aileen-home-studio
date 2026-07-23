@@ -989,6 +989,64 @@
         margin: 0 auto !important;
     }
 }
+/* ==========================================================
+   📱 💻 仅平板端生效（768px ~ 1366px），手机和电脑端完全不受影响
+   ========================================================== */
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+
+    /* --- 1. 导航栏布局与紧凑度调整 --- */
+    
+    /* 缩减 Logo / 网站标题字号及与菜单的右外边距 */
+    .site-title, .logo, header .brand {
+        font-size: 18px !important;
+        margin-right: 12px !important;
+        white-space: nowrap !important;
+    }
+
+    /* 缩小导航菜单项的字号和间距，给右侧搜索框腾空间 */
+    nav a, .nav-links a, .site-header nav a {
+        font-size: 13px !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+        white-space: nowrap !important;
+    }
+
+    /* 优化搜索框：控制宽度并防止超出屏幕 */
+    .search-box, .search-container, input[type="search"], .site-header input {
+        width: 130px !important;        /* 给搜索框指定合适的宽度 */
+        max-width: 100% !important;
+        font-size: 12px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 确保整个顶部 Header 垂直居中且不换行 */
+    .site-header, header, .nav-container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        flex-wrap: nowrap !important;   /* 强制同一行显示，绝对不换行挤压 */
+    }
+
+    /* --- 2. About 模块平板横屏居中调整 --- */
+    
+    /* 仅在横屏（大于1024px时）将 About 文字块设为居中对齐 */
+    @media (min-width: 1024px) {
+        .about-text-block {
+            text-align: center !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        .about-discover-btn {
+            margin: 0 auto !important;
+        }
+    }
+}
             
     </style>
 </head>
