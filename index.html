@@ -1060,52 +1060,54 @@
     }
 }
 /* ==========================================================
-   🏠 首页 - 仅平板竖屏（768px ~ 1024px）：彻底解决搜索框显示不全
+   🏠 首页 - 仅平板竖屏（768px ~ 1024px）：极窄边框 + 加大菜单字体
    ========================================================== */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
-    /* 1. 整体导航栏两端贴边留白收紧，给内部腾出最大空间 */
+    /* 1. 导航栏两端边距压缩到极致，向两侧尽可能展开 */
     .navbar {
-        padding: 0 10px !important;
+        padding: 0 4px !important;              /* 👈 左右留白极小化，消除右侧空位 */
         display: flex !important;
         align-items: center !important;
         justify-content: space-between !important;
-        gap: 6px !important;                  /* 控制三大模块之间的总间距 */
+        gap: 4px !important;
     }
 
-    /* 2. Logo 门面：保持清晰，防止挤压 */
+    /* 2. Logo 保持原样门面，左贴边 */
     .logo {
-        font-size: 0.95rem !important;        /* 字号微调 */
+        font-size: 1.0rem !important;
         margin-right: 0 !important;
         white-space: nowrap !important;
-        flex-shrink: 0 !important;            /* 绝对不被压扁 */
+        flex-shrink: 0 !important;
     }
 
-    /* 3. 菜单选项：进一步缩减间距与字号，放得下 Contact */
+    /* 3. 释放出的空间全部给菜单：加大字号 + 增加适度间距 */
     .nav-links {
-        gap: 6px !important;                  /* 进一步压缩菜单项之间的间距 */
+        gap: 10px !important;                 /* 👈 增加菜单项物理间距 */
         flex-shrink: 1 !important;
         display: flex !important;
         flex-wrap: nowrap !important;
     }
 
     .nav-links a {
-        font-size: 0.72rem !important;        /* 菜单字号适度缩小，确保全部不换行 */
+        font-size: 0.82rem !important;        /* 👈 菜单字体加大（原本是0.72rem） */
+        font-weight: 500 !important;          /* 略微加粗提高可读性 */
         padding: 2px 0 !important;
         white-space: nowrap !important;
     }
 
-    /* 4. 搜索框：强行固定最小宽度，完整展现 */
+    /* 4. 搜索框向右看齐，彻底取消右侧多余空位 */
     form.search-container {
-        width: 120px !important;              /* 锁定最舒适的精简宽度 */
-        min-width: 110px !important;          /* 保证绝不被挤爆或消失 */
+        width: 125px !important;
+        min-width: 110px !important;
         padding: 4px 6px !important;
-        flex-shrink: 0 !important;            /* 强行禁止搜索框被压缩 */
+        flex-shrink: 0 !important;
         margin-left: auto !important;
+        margin-right: 0 !important;            /* 👈 强行消除右侧空隙 */
     }
 
     form.search-container input {
-        font-size: 0.68rem !important;        /* 搜索框内提示词字号 */
+        font-size: 0.72rem !important;
     }
 }
             
