@@ -605,83 +605,95 @@
             }
         }
         /* ==========================================================
-   📱 💻 仅平板横屏（768px ~ 1366px）终极修复版：
-   1. 顶部导航瘦身不撞车、搜索框归位
-   2. Listing 精准 1 行 5 个，整体比例缩小
+   📱 Listing 页面 - 仅平板竖屏（768px ~ 1024px）精准微调
    ========================================================== */
-@media screen and (min-width: 768px) and (max-width: 1366px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
-    /* --- 1. 顶部导航栏瘦身，解决撞车与搜寻框溢出 --- */
-    .navbar {
-        padding: 0 15px !important;
+    /* ------------------------------------------------------
+       1. 顶部导航栏：隐藏 Logo，完整展示菜单与搜索框
+       ------------------------------------------------------ */
+    .logo {
+        display: none !important;              /* 👈 竖屏隐藏 Logo */
     }
 
-    .logo {
-        font-size: 1.15rem !important;  /* 缩小 Logo */
-        margin-right: 10px !important;
+    .navbar {
+        padding: 0 15px !important;
+        justify-content: space-between !important;
     }
 
     .nav-links {
-        gap: 12px !important;          /* 缩小菜单选项之间的间距 */
+        gap: 16px !important;                 /* 舒展菜单物理间距 */
     }
 
     .nav-links a {
-        font-size: 0.82rem !important; /* 缩小菜单文字 */
+        font-size: 0.85rem !important;
     }
 
-    .search-container {
-        width: 150px !important;        /* 给搜索框设定精准宽度，防止被挤出屏幕 */
+    form.search-container {
+        width: 180px !important;               /* 搜索框恢复完整显示 */
+        padding: 6px 10px !important;
+        margin-left: auto !important;
     }
 
-    .search-container input {
-        font-size: 0.75rem !important;
-        padding: 5px 28px 5px 8px !important;
-    }
-
-
-    /* --- 2. 产品 Listing 布局改为 1 行 5 个并等比缩小 --- */
-    .products-grid,
-    #listing-grid-container {
+    /* ------------------------------------------------------
+       2. 产品网格：分场景精确控制列数
+       ------------------------------------------------------ */
+    
+    /* 场景 A：【有筛选框/侧边栏】改为 1 行 3 个 */
+    .main-layout .products-grid,
+    .sidebar-filter + .products-grid,
+    .filter-sidebar + .products-grid,
+    .main-layout #products-grid-container {
         display: grid !important;
-        grid-template-columns: repeat(5, 1fr) !important; /* 强制 5 列 */
-        gap: 15px 10px !important;                          /* 缩小卡片间距 */
+        grid-template-columns: repeat(3, 1fr) !important; /* 👈 带筛选框：1 行 3 列 */
+        gap: 15px 10px !important;
         width: 100% !important;
     }
 
-    /* 缩小图片容器与图片高度 */
-    .product-img-box,
-    .product-image-wrapper {
-        height: auto !important;
-        aspect-ratio: 1 / 1 !important;
+    /* 缩小左侧筛选框的宽度，给 3 列产品腾出更大空间 */
+    .sidebar-filter,
+    .filter-sidebar {
+        flex: 0 0 160px !important;
+        width: 160px !important;
     }
 
-    /* 缩小 Item Code 和标题字号 */
-    .product-info {
-        padding: 8px 0 0 0 !important;
-        gap: 4px !important;
+    .main-layout {
+        gap: 15px !important;
+        padding: 0 15px !important;
     }
 
-    .product-meta-code {
-        font-size: 0.7rem !important;
+    /* 场景 B：【无筛选框】完全维持你原设定的 1 行 5 个 */
+    .products-grid:not(.main-layout .products-grid) {
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important; /* 👈 无筛选框：保持 1 行 5 列不变 */
+        gap: 12px 8px !important;
     }
 
-    .product-name,
-    .product-title-text {
-        font-size: 0.72rem !important;
+    /* ------------------------------------------------------
+       3. 标题字体微调：防止换行错乱，彻底对齐卡片
+       ------------------------------------------------------ */
+    .grid-product-title {
+        font-size: 0.68rem !important;         /* 👈 调小标题字号，适配多列布局 */
         line-height: 1.2 !important;
+        height: 26px !important;               /* 👈 强制固定双行高度，消除卡片高低不平 */
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-line-clamp: 2 !important;      /* 最多显示 2 行，多余文字打点截断 */
+        margin: 2px 0 !important;
     }
 
-    /* 缩小 Email 与 WhatsApp 按钮 */
+    /* 按钮微调，防止 5 列/3 列下把卡片撑爆 */
     .inquiry-actions-group {
-        gap: 4px !important;
-        margin-top: 6px !important;
+        gap: 3px !important;
+        margin-top: 5px !important;
     }
 
     .inquiry-action-btn {
         padding: 5px 2px !important;
-        font-size: 0.62rem !important;
+        font-size: 0.58rem !important;         /* 微调按钮字体以自适应卡片 */
         letter-spacing: 0 !important;
-        gap: 2px !important;
     }
 }
 
