@@ -663,6 +663,87 @@
                 box-sizing: border-box !important;
             }
         } 
+        /* ==========================================================
+   📱 仅平板横屏（769px ~ 1199px）：
+   1. Listing 网格设为 1 行 4 个
+   2. 调小卡片标题字号与间距（防止标题换行/高低不平）
+   3. 舒展顶部导航栏（增加间距，解决拥挤问题）
+   ========================================================== */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+
+    /* 1. 顶部导航栏布局舒展与防拥挤 */
+    .navbar {
+        padding: 0 20px !important;            /* 两侧留白适度缩减 */
+    }
+
+    .logo {
+        font-size: 1.25rem !important;         /* 适当缩小 Logo */
+        margin-right: 15px !important;
+    }
+
+    .nav-links {
+        gap: 16px !important;                  /* 增加/匀称菜单选项之间的物理间距 */
+    }
+
+    .nav-links a {
+        font-size: 0.85rem !important;         /* 微调菜单字号 */
+    }
+
+    form.search-container {
+        width: 180px !important;               /* 适度控制搜索框宽度 */
+        padding: 6px 10px !important;
+    }
+
+    /* 2. 页面主布局间距微调 */
+    .main-layout {
+        gap: 20px !important;
+        padding: 0 20px !important;
+    }
+
+    .sidebar-filter {
+        flex: 0 0 180px !important;            /* 稍微收窄左侧 Filter 侧边栏，为右侧 4 列网格腾出空间 */
+    }
+
+    /* 3. 核心：强制产品 Listing 改为 1 行 4 个 */
+    .products-grid,
+    #products-grid-container {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important; /* 强制 1 行 4 列 */
+        gap: 15px 10px !important;                         /* 行间距 15px，列间距 10px */
+        width: 100% !important;
+    }
+
+    /* 4. 解决标题换行与卡片高低不平问题 */
+    .grid-product-info {
+        padding: 8px 0 0 0 !important;
+        gap: 3px !important;
+    }
+
+    .grid-product-title {
+        font-size: 0.72rem !important;         /* 缩小标题字号 */
+        line-height: 1.2 !important;
+        height: 28px !important;               /* 锁死双行高度，超出自动截断，防止单双行高低错落 */
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-line-clamp: 2 !important;
+        margin: 2px 0 !important;
+    }
+
+    /* 5. 缩小底部询盘按钮，防止溢出 */
+    .inquiry-actions-group {
+        gap: 4px !important;
+        margin-top: 6px !important;
+    }
+
+    .inquiry-action-btn {
+        padding: 6px 2px !important;
+        font-size: 0.62rem !important;         /* 缩小按钮文字 */
+        letter-spacing: 0 !important;
+        gap: 3px !important;
+    }
+}
         
     </style>
 
