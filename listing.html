@@ -904,215 +904,151 @@
 
 <script>
 (function() {
-    // 强制重写渲染逻辑，不破坏原有结构，只在页面加载完后做二次兜底
     window.addEventListener('DOMContentLoaded', () => {
         const urlParams = new URLSearchParams(window.location.search);
         const catItem = urlParams.get('cat');
         const subItem = urlParams.get('sub');
-
-        // 智能兼容你的所有大类与子类命名
-        const targetCat = catItem === 'holiday' ? 'holiday-decor' : catItem;
-        const targetSub = subItem ? subItem.replace(/s$/, '') : ''; // 自动消灭末尾可能出现的 s
+        const searchKeyword = urlParams.get('search'); // 🌟 抓取搜索词
 
         let gridHtml = "";
+        let displayTitle = "Products";
 
-        // 智能获取搜索词
-        const searchKeyword = urlParams.get('search');
+        // =========================================================
+        // 🌟 核心判断：优先处理搜索框 (?search=xxx)
+        // =========================================================
+        if (searchKeyword && typeof detailsDatabase !== 'undefined') {
+            const cleanQuery = searchKeyword.toLowerCase().trim();
+            displayTitle = `Search Results for "${searchKeyword}"`;
 
-        // 强制去 detailsDatabase 数据库里把你的产品捞出来
-        if (typeof detailsDatabase !== 'undefined') {
             for (let key in detailsDatabase) {
-                const product = detailsDatabase[key];
-                const prodCat = product.category;
-                const prodSub = product.subcategory ? product.subcategory.replace(/s$/, '') : '';
-                const pTitle = key.toLowerCase();
-                const pCode = product.code ? product.code.toLowerCase() : '';
+                if (detailsDatabase.hasOwnProperty(key)) {
+                    const product = detailsDatabase[key];
+                    const pTitle = key.toLowerCase();
+                    const pCode = product.code ? product.code.toLowerCase() : '';
+                    const pCat = product.category ? product.category.toLowerCase() : '';
+                    const pSub = product.subcategory ? product.subcategory.toLowerCase() : '';
 
-                let isMatch = false;
+                    // 模糊匹配：产品名字、编号、分类、子类 只要包含搜索词就命中
+                    if (pTitle.includes(cleanQuery) || pCode.includes(cleanQuery) || pCat.includes(cleanQuery) || pSub.includes(cleanQuery)) {
+                        let firstImg = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder.jpg";
+                        const productPageUrl = `product-detail.html?item=${encodeURIComponent(key)}`;
+                        const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key)}`;
+                        const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=Inquiry&body=Product: ${key}`;
 
-                // 🌟 场景 A：如果带有搜索词 search
-                if (searchKeyword) {
-                    const cleanQuery = searchKeyword.toLowerCase().trim();
-                    if (pTitle.includes(cleanQuery) || pCode.includes(cleanQuery)) {
-                        isMatch = true;
-                    }
-                } 
-                // 🌟 场景 B：原本的大类/子类匹配
-                else if (catItem) {
-                    if (prodCat === targetCat && (!subItem || prodSub === targetSub)) {
-                        isMatch = true;
-                    }
-                }
-
-                // 如果对上了，直接强制组装卡片
-                if (isMatch) {
-                    let firstImg = "images/placeholder.jpg";
-                    if (product.images && product.images.length > 0) {
-                        firstImg = product.images[0];
-                    }
-
-                    const productPageUrl = `product-detail.html?item=${encodeURIComponent(key)}`;
-                    const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key)}`;
-                    const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=Inquiry&body=Product: ${key}`;
-
-                    gridHtml += `
-                        <div class="product-card" onclick="window.location.href='${productPageUrl}'">
-                            <div class="product-image-wrapper">
-                                <img src="${firstImg}" alt="${key}" class="product-image">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-meta-code">${product.code || ''}</div>
-                                <h3 class="product-title-text">${key.toUpperCase()}</h3>
-                                <div class="inquiry-actions-group" onclick="event.stopPropagation();">
-                                    <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
-                                        <i class="fa-regular fa-envelope"></i> Email
-                                    </button>
-                                    <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
-                                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                                    </button>
+                        gridHtml += `
+                            <div class="product-card" onclick="window.location.href='${productPageUrl}'">
+                                <div class="product-image-wrapper">
+                                    <img src="${firstImg}" alt="${key}" class="product-image">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-meta-code">${product.code || ''}</div>
+                                    <h3 class="product-title-text">${key.toUpperCase()}</h3>
+                                    <div class="inquiry-actions-group" onclick="event.stopPropagation();">
+                                        <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
+                                            <i class="fa-regular fa-envelope"></i> Email
+                                        </button>
+                                        <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
+                                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    `;
+                        `;
+                    }
+                }
+            }
+        } 
+        // =========================================================
+        // 🌟 按类目导航 (?cat=xxx&sub=xxx)
+        // =========================================================
+        else if (catItem && typeof detailsDatabase !== 'undefined') {
+            const targetCat = catItem === 'holiday' ? 'holiday-decor' : catItem;
+            const targetSub = subItem ? subItem.replace(/s$/, '') : ''; 
+
+            if (subItem) {
+                displayTitle = subItem.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+            } else {
+                displayTitle = catItem.toUpperCase();
+            }
+
+            for (let key in detailsDatabase) {
+                if (detailsDatabase.hasOwnProperty(key)) {
+                    const product = detailsDatabase[key];
+                    const prodCat = product.category ? product.category.toLowerCase().trim() : '';
+                    const prodSub = product.subcategory ? product.subcategory.toLowerCase().trim().replace(/s$/, '') : '';
+
+                    if (prodCat.includes(targetCat) && (!subItem || prodSub === targetSub)) {
+                        let firstImg = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder.jpg";
+                        const productPageUrl = `product-detail.html?item=${encodeURIComponent(key)}`;
+                        const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key)}`;
+                        const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=Inquiry&body=Product: ${key}`;
+
+                        gridHtml += `
+                            <div class="product-card" onclick="window.location.href='${productPageUrl}'">
+                                <div class="product-image-wrapper">
+                                    <img src="${firstImg}" alt="${key}" class="product-image">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-meta-code">${product.code || ''}</div>
+                                    <h3 class="product-title-text">${key.toUpperCase()}</h3>
+                                    <div class="inquiry-actions-group" onclick="event.stopPropagation();">
+                                        <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
+                                            <i class="fa-regular fa-envelope"></i> Email
+                                        </button>
+                                        <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
+                                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
                 }
             }
         }
 
-        // 如果强制捞货捞到了，直接把 "Coming soon" 冲掉替换成你做好的精美卡片！
-        if (gridHtml !== "") {
-            const container = document.getElementById('listing-grid-container');
-            if (container) {
-                container.innerHTML = gridHtml;
-            }
-            
-            const pageTitleEl = document.getElementById('listing-main-title');
-const breadcrumbSubEl = document.getElementById('br-current');
-
-// 🌟 优先判断：如果是搜索跳转，标题显示搜索词
-if (searchKeyword) {
-    const searchTitle = `Search Results: "${searchKeyword}"`;
-    if (pageTitleEl) pageTitleEl.innerText = searchTitle;
-    if (breadcrumbSubEl) breadcrumbSubEl.innerText = searchTitle;
-} 
-// 🌟 其次判断：如果是按子分类跳转，显示子分类名称
-else if (subItem) {
-    const subTitle = subItem.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-    if (pageTitleEl) pageTitleEl.innerText = subTitle;
-    if (breadcrumbSubEl) breadcrumbSubEl.innerText = subTitle;
-}
+        // 渲染产品到页面
+        const container = document.getElementById('listing-grid-container');
+        if (container) {
+            container.innerHTML = gridHtml !== "" ? gridHtml : `<div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--text-muted);">No products found matching your search.</div>`;
         }
 
+        // 更新标题与面包屑
+        const pageTitleEl = document.getElementById('listing-main-title');
+        if (pageTitleEl) pageTitleEl.innerText = displayTitle;
+        const breadcrumbSubEl = document.getElementById('br-current');
+        if (breadcrumbSubEl) breadcrumbSubEl.innerText = displayTitle;
+
         // =========================================================
-        // 🌟 终极修复：完美激活侧边栏与真实产品卡片排他性过滤
+        // 🌟 解决“全变成 Christmas”的关键：只有真正的 christmas 子类才显示侧边栏！
         // =========================================================
-        if (subItem === 'christmas') {
-            const container = document.getElementById('listing-grid-container');
-            const sidebar = document.getElementById('christmas-sidebar');
-            
+        const sidebar = document.getElementById('christmas-sidebar');
+        if (subItem === 'christmas' && !searchKeyword) {
             if (container && sidebar) {
-                // 1. 让隐藏的侧边栏显示出来
                 sidebar.style.display = 'block';
-                
-                // 2. 强制将包裹它们的父级大盒子拉伸为“左右两栏弹性排版”
                 const parentBox = container.parentElement;
                 if (parentBox) {
                     parentBox.style.display = 'flex';
                     parentBox.style.gap = '30px';
                     parentBox.style.alignItems = 'flex-start';
                 }
-                
-                // 3. 让右侧的产品网格自动占满右边的空间
                 container.style.flexGrow = '1';
                 container.style.width = '100%';
-                container.style.margin = '0';
-                
-                // 4. 为这 4 个多选小方框绑定全自动的点击过滤联动
-                const checkboxes = document.querySelectorAll('.third-cb');
-                checkboxes.forEach(cb => {
-                    cb.addEventListener('change', function() {
-                        const checkedCbs = document.querySelectorAll('.third-cb:checked');
-                        const activeKeywords = Array.from(checkedCbs).map(c => c.value.toLowerCase().trim());
-                        
-                        // 🌟 【精准修复】：将这里的 .grid-product-card 改为你真实的 .product-card
-                        const cards = container.querySelectorAll('.product-card');
-
-                        if (activeKeywords.length > 0) {
-                            cards.forEach(card => {
-                                // 🌟 【精准修复】：抓取你真实的 .product-title-text 类名获取标题
-                                const titleEl = card.querySelector('.product-title-text');
-                                const pTitle = titleEl ? titleEl.innerText.toLowerCase().trim() : '';
-                                let isMatch = false;
-
-                                activeKeywords.forEach(keyword => {
-                                    if (keyword === 'tree') {
-                                        if (pTitle.includes('tree') && !pTitle.includes('mini')) isMatch = true;
-                                        if (pTitle.includes('tree') && activeKeywords.includes('mini')) isMatch = true;
-                                    } else if (keyword === 'mini') {
-                                        if (pTitle.includes('mini')) isMatch = true;
-                                    } else {
-                                        if (pTitle.includes(keyword)) isMatch = true;
-                                    }
-                                });
-                                // 匹配的留着，不匹配的强制隐藏
-                                card.style.display = isMatch ? 'flex' : 'none';
-                            });
-                        } else {
-                            // 没勾选任何小方框时，恢复原本的全部卡片显示
-                            cards.forEach(card => card.style.display = 'flex');
-                        }
-                    });
-                });
             }
-        }
-        else {
-            // 🎯 如果不是 christmas 页面（即没有筛选框的页面），在电脑端大屏强制改成 5 列！
-            if (window.innerWidth > 1200) {
-                const container = document.getElementById('listing-grid-container');
-                if (container) {
+        } else {
+            // 🎯 搜索或其他类目时：彻底隐藏圣诞侧边栏，恢复正常网格展示
+            if (sidebar) sidebar.style.display = 'none';
+            if (container) {
+                const parentBox = container.parentElement;
+                if (parentBox) parentBox.style.display = 'block';
+                
+                if (window.innerWidth > 1200) {
                     container.style.setProperty('display', 'grid', 'important');
                     container.style.setProperty('grid-template-columns', 'repeat(5, 1fr)', 'important');
                     container.style.setProperty('gap', '30px 16px', 'important');
                 }
             }
         }
-    }); // 完美闭合你的循环监听
-})(); // 完美闭合自执行函数
-// =========================================================
-// 🌟 强效联动：死盯左侧多选框加载，一露面立刻打钩并过滤产品
-// =========================================================
-(function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const filterKeyword = urlParams.get('filter'); // 比如抓到 "Wreath"
-    let currentCat = urlParams.get('cat');
-    let currentSubcat = urlParams.get('sub');
-
-    if (currentSubcat === 'wreath' || currentSubcat === 'garland') {
-        currentSubcat = 'christmas';
-    }
-
-    if (filterKeyword) { 
-        const checkSidebarLoaded = setInterval(function() {
-        // 找到左侧所有多选框
-        const checkboxes = document.querySelectorAll('.third-cb');
-        if (checkboxes.length > 0) {
-            clearInterval(checkSidebarLoaded); // 找到了，停止定时器
-            
-            checkboxes.forEach(cb => {
-                // 如果多选框的 value 属性或者它身边的文字匹配到了传过来的关键词（如 Wreath 或 Garland）
-                if (cb.value.toLowerCase() === filterKeyword.toLowerCase() || cb.parentElement.textContent.includes(filterKeyword)) {
-                    // 1. 先把全选或者默认的勾清空
-                    document.querySelectorAll('.third-cb').forEach(c => c.checked = false);
-                    // 2. 勾选当前目标
-                    cb.checked = true;
-                    // 3. 强行触发原本绑定的过滤函数（根据你的源码，过滤函数叫 filterProducts）
-                    if (typeof filterProducts === 'function') {
-                        filterProducts();
-                    }
-                }
-            });
-        }
-    }, 100);
-    setTimeout(() => clearInterval(checkSidebarLoaded), 4000);
-}
+    });
 })();
 </script>
