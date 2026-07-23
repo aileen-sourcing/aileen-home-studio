@@ -5,7 +5,7 @@ const detailsDatabase = {
     // 🎄 大类 1：Holiday Decor (cat: "holiday")
     // ==========================================
     
-    "pe christmas tree 0707": {
+    "xmas tree 260707": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct26060707",
@@ -23,7 +23,7 @@ const detailsDatabase = {
             { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
         ]
     },
-    "7ft xmas tree 260708": {
+    "xmas tree 260708": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260708",
@@ -38,6 +38,229 @@ const detailsDatabase = {
             { label: "Material", value: "PE PVC Mixed" },
             { label: "Height", value: "7FT (Customizable)" },
             { label: "Lighting", value: "Pre-lit Warm White LED Eco-Lights" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260709": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260709",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260709/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260709/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260709/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260709/4.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260709/5.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260710": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260710",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260710/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260710/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260710/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260710/4.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260712": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260712",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260712/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260712/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260712/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260712/4.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260713": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260713",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260713/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260713/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260712/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260713/4.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260713/5.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260713/6.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260714": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260714",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260714/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260714/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260714/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260714/4.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260715": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260715",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260715/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260715/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260715/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260715/4.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260715/5.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260716": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260716",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260716/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260716/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260716/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260716/4.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260716/5.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260717": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260717",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260717/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260717/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260717/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260717/4.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260717/5.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260717/6.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260718": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260718",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260718/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260718/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260718/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260718/4.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260718/5.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260719": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260719",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260719/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260719/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260719/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260719/4.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260719/5.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260720": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260720",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260720/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260720/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260720/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260720/5.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260720/6.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260721": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260721",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260721/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260721/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260721/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260721/4.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260722": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260722",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260722/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260722/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260722/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260722/4.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260722/5.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260722/6.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
+    "xmas tree 260723": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260723",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260723/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260723/2.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260723/3.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260723/4.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260723/5.jpg"
+        ], 
+        specs: [
+            { label: "Height", value: "Customizable" },
             { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
         ]
     },
