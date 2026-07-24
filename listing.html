@@ -665,11 +665,11 @@
 }
 
 /* ==========================================================
-   📱 2. 【仅平板竖屏】(Portrait)：精准锁定版
+   📱 2. 【仅平板竖屏】(Portrait)：精准区分筛选框模式
    ========================================================== */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
-    /* 🎯 重点 1：隐藏 Logo（给搜索框腾出空间） */
+    /* 1. 导航栏：隐藏 Logo，保证搜索框露出 */
     .logo { 
         display: none !important; 
     }
@@ -679,34 +679,35 @@
         justify-content: space-between !important; 
     }
 
-    /* 🎯 重点 2：搜索框展开展示 */
     form.search-container { 
         width: 160px !important; 
         margin-left: auto !important; 
     }
 
-    /* 基础场景：【无筛选框时】默认 1 行 5 列 */
-    #listing-grid-container {
+    /* 2. 场景 A：【有筛选框】强行锁定为 1 行 3 列 */
+    #christmas-sidebar[style*="display: block"] + #listing-grid-container,
+    #christmas-sidebar:not([style*="display: none"]) + #listing-grid-container {
         display: grid !important;
-        grid-template-columns: repeat(5, 1fr) !important;
-        gap: 12px 8px !important;
-        width: 100% !important;
-    }
-
-    /* 🎯 重点 3：【有筛选框时】强行覆盖为 1 行 3 列 */
-    #christmas-sidebar + #listing-grid-container {
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important; 
+        grid-template-columns: repeat(3, 1fr) !important; /* 👈 1 行 3 个 */
         gap: 15px 10px !important;
     }
 
-    /* 侧边栏宽度微调 */
+    /* 3. 场景 B：【不带筛选框】强行锁定为 1 行 4 列 */
+    #christmas-sidebar[style*="display: none"] + #listing-grid-container,
+    #listing-grid-container {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important; /* 👈 1 行 4 个 */
+        gap: 12px 10px !important;
+        width: 100% !important;
+    }
+
+    /* 4. 侧边栏宽度控制 */
     #christmas-sidebar {
         width: 180px !important;
         flex-shrink: 0 !important;
     }
 
-    /* 卡片文字与按钮瘦身 */
+    /* 5. 卡片内部字体与按钮瘦身 */
     #listing-grid-container .product-meta-code { 
         font-size: 0.7rem !important; 
     }
