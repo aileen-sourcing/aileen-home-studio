@@ -715,9 +715,9 @@
             box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.1) !important;
         }
         /* ==========================================================
-   🖥️ 【仅平板横屏】(Landscape)：修复导航栏挤压 + 整体等比例缩小产品卡片
+   🖥️ 【平板横屏 (Landscape) & 中等屏幕】：全面放宽阈值至 1200px
    ========================================================== */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
     /* --- 1. 导航栏布局优化：防挤压、搜索框完全露显 --- */
     .navbar {
         padding: 0 15px !important;
@@ -726,18 +726,18 @@
     }
     .logo {
         display: block !important;
-        font-size: 1.05rem !important; /* 适当缩小 Logo 字号 */
+        font-size: 1.05rem !important;
         white-space: nowrap !important;
     }
     .nav-links {
-        gap: 10px !important; /* 紧凑菜单间距 */
+        gap: 12px !important;
     }
     .nav-links a {
-        font-size: 0.8rem !important; /* 适度缩小菜单文字 */
+        font-size: 0.8rem !important;
         white-space: nowrap !important;
     }
     .search-container {
-        width: 130px !important; /* 精确收紧搜索框宽度 */
+        width: 140px !important;
         flex-shrink: 0 !important;
         display: block !important;
     }
@@ -748,26 +748,25 @@
         font-size: 0.75rem !important;
     }
 
-    /* --- 2. 产品卡片等比例缩小 (整体按 ~80% 比例缩减) --- */
-    /* 缩小主容器最大宽度并居中 */
-    .container,
-    .product-detail-container {
-        max-width: 820px !important;
-        margin: 0 auto !important;
-        padding: 15px !important;
+    /* --- 2. 产品卡片整体缩小并对齐 --- */
+    .container {
+        max-width: 100% !important;
+        padding: 0 20px !important;
     }
 
-    /* 主图与右侧详情调整为适宜的比例 */
-    .product-main-section,
-    .product-container {
+    .product-main-section {
         grid-template-columns: 320px 1fr !important; /* 左侧大图固定 320px，右侧自适应 */
         gap: 30px !important;
-        align-items: start !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
-    /* 缩减大图框尺寸 */
-    .main-image-box,
-    .main-image-container {
+    /* 缩减大图与画廊尺寸 */
+    .product-gallery {
+        max-width: 320px !important;
+    }
+    .main-image-box {
         width: 320px !important;
         height: 320px !important;
     }
@@ -775,7 +774,6 @@
     /* 缩减缩略图尺寸 */
     .thumb-list {
         gap: 6px !important;
-        margin-top: 8px !important;
     }
     .thumb-item {
         width: 50px !important;
@@ -783,16 +781,21 @@
         flex: 0 0 50px !important;
     }
 
-    /* 右侧产品标题与按钮微调 */
+    /* 右侧文字与按钮缩小（关键：缩小 2.2rem 的巨型标题） */
+    .product-code {
+        font-size: 0.8rem !important;
+        margin-bottom: 6px !important;
+    }
     .product-title {
-        font-size: 1.3rem !important;
+        font-size: 1.3rem !important; /* 强制缩小标题字号 */
         margin-bottom: 15px !important;
     }
-    .product-meta-code {
-        font-size: 0.75rem !important;
+    .inquiry-actions-group {
+        margin-top: 20px !important;
+        max-width: 100% !important;
     }
-    .action-btn {
-        padding: 8px 16px !important;
+    .inquiry-action-btn {
+        padding: 10px 15px !important;
         font-size: 0.8rem !important;
     }
 }
