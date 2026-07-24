@@ -664,77 +664,61 @@
     }
 }
 
-
 /* ==========================================================
-   📱 2. 【仅平板竖屏】(Portrait)：
-      - 导航栏隐藏 Logo（腾出空间给搜索框）
-      - 无筛选框：1 行 5 个
-      - 有筛选框：1 行 3 个
+   📱 2. 【仅平板竖屏】(Portrait)：精准锁定版
    ========================================================== */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
-    /* 导航栏：隐藏 Logo，解决搜索框看不见的问题 */
-    .logo {
-        display: none !important;              /* 👈 竖屏隐藏 Logo 彻底给搜索框腾空间 */
+    /* 🎯 重点 1：隐藏 Logo（给搜索框腾出空间） */
+    .logo { 
+        display: none !important; 
+    }
+    
+    .navbar { 
+        padding: 0 10px !important; 
+        justify-content: space-between !important; 
     }
 
-    .navbar {
-        padding: 0 10px !important;
-        justify-content: space-between !important;
+    /* 🎯 重点 2：搜索框展开展示 */
+    form.search-container { 
+        width: 160px !important; 
+        margin-left: auto !important; 
     }
 
-    .nav-links {
-        gap: 14px !important;
-    }
-
-    .nav-links a {
-        font-size: 0.82rem !important;
-    }
-
-    form.search-container {
-        width: 160px !important;               /* 👈 搜索框全额展示 */
-        margin-left: auto !important;
-    }
-
-    /* 场景 A：【有筛选框/侧边栏】改为 1 行 3 个 */
-    .main-layout .products-grid,
-    .sidebar-filter + .products-grid,
-    .filter-sidebar + .products-grid {
+    /* 基础场景：【无筛选框时】默认 1 行 5 列 */
+    #listing-grid-container {
         display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important; /* 👈 1 行 3 列 */
+        grid-template-columns: repeat(5, 1fr) !important;
+        gap: 12px 8px !important;
+        width: 100% !important;
+    }
+
+    /* 🎯 重点 3：【有筛选框时】强行覆盖为 1 行 3 列 */
+    #christmas-sidebar + #listing-grid-container {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important; 
         gap: 15px 10px !important;
     }
 
-    .sidebar-filter,
-    .filter-sidebar {
-        flex: 0 0 160px !important;
+    /* 侧边栏宽度微调 */
+    #christmas-sidebar {
+        width: 180px !important;
+        flex-shrink: 0 !important;
     }
 
-    /* 场景 B：【无筛选框】保持 1 行 5 个 */
-    .products-grid:not(.main-layout .products-grid) {
-        display: grid !important;
-        grid-template-columns: repeat(5, 1fr) !important; /* 👈 1 行 5 列 */
-        gap: 10px 6px !important;
+    /* 卡片文字与按钮瘦身 */
+    #listing-grid-container .product-meta-code { 
+        font-size: 0.7rem !important; 
+    }
+    #listing-grid-container .product-title-text { 
+        font-size: 0.75rem !important; 
+    }
+    #listing-grid-container .inquiry-action-btn { 
+        padding: 5px 2px !important; 
+        font-size: 0.58rem !important; 
     }
 
-    /* 标题与按钮字号缩小并锁定高度，对齐整齐 */
-    .grid-product-title,
-    .product-name {
-        font-size: 0.65rem !important;
-        line-height: 1.2 !important;
-        height: 25px !important;
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
-        display: -webkit-box !important;
-        -webkit-box-orient: vertical !important;
-        -webkit-line-clamp: 2 !important;
-    }
-
-    .inquiry-action-btn {
-        padding: 4px 2px !important;
-        font-size: 0.55rem !important;
-    }
-}
+} /* 👈 结束 @media */
 
     </style>
 </head>
