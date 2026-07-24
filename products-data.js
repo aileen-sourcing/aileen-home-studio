@@ -796,7 +796,6 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
     "white flower 260718": {
         category: "holiday",
         subcategory: "christmas-flowers", 
@@ -880,21 +879,6 @@ const detailsDatabase = {
             { label: "Application", value: "Holiday, Indoor, Festive" }
         ]
     },
-
-    "white flower 260717": {
-        category: "holiday",
-        subcategory: "christmas-flowers", 
-        code: "Item Code: cf20260718",
-        images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260718/1.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260718/2.jpg",
-        ], 
-        specs: [
-            { label: "Size", value: "Customizable Sizes" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
-        ]
-    },
-
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "lighting")
     // ==========================================
