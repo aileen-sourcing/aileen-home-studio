@@ -714,6 +714,63 @@
             border-color: #b45309 !important;
             box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.1) !important;
         }
+        /* ==========================================================
+   🖥️ 1. 【仅平板横屏】(Landscape)：正常显示 Logo，露完整导航与搜索框
+   ========================================================== */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .navbar {
+        padding: 0 15px !important;
+    }
+    .logo {
+        display: block !important;
+        font-size: 1.1rem !important; /* 适度缩小 Logo 文字，防止挤压菜单 */
+    }
+    .nav-links {
+        gap: 12px !important;
+    }
+    .nav-links a {
+        font-size: 0.85rem !important;
+    }
+    .search-container {
+        width: 150px !important; /* 保证搜索框完整展示 */
+        display: block !important;
+    }
+    .search-container input {
+        width: 100% !important;
+        opacity: 1 !important;
+        padding: 7px 35px 7px 12px !important;
+    }
+}
+
+/* ==========================================================
+   📱 2. 【仅平板竖屏】(Portrait)：隐藏 Logo，显示完整导航与搜索框
+   ========================================================== */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .navbar {
+        padding: 0 15px !important;
+        justify-content: space-between !important;
+    }
+    /* 🎯 隐藏 Logo 为导航菜单和搜索框腾出空间 */
+    .logo {
+        display: none !important;
+    }
+    .nav-links {
+        gap: 12px !important;
+    }
+    .nav-links a {
+        font-size: 0.85rem !important;
+    }
+    /* 🎯 搜索框完整展示 */
+    .search-container {
+        width: 160px !important;
+        display: block !important;
+    }
+    .search-container input {
+        width: 100% !important;
+        opacity: 1 !important;
+        padding: 7px 35px 7px 12px !important;
+    }
+}
 
     </style>
 </head>
