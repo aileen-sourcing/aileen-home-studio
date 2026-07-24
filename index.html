@@ -1110,6 +1110,49 @@
         font-size: 0.72rem !important;
     }
 }
+/* ==========================================================
+   📱 💻 仅平板横屏端生效（768px ~ 1366px horizontal）
+   适配各种尺寸平板横屏，保持竖屏、手机和电脑端不变
+   ========================================================== */
+@media screen and (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
+
+    /* 1. 降低 Hero 视觉区高度，让更多背景图显露 */
+    .hero {
+        height: 48vh !important;           /* 从原本 70vh 缩小到 48vh，释放上下空间 */
+        min-height: 320px !important;
+        padding-top: 0 !important;
+        background-position: center center !important;
+        background-size: cover !important;  /* 确保背景图片完整居中覆盖 */
+    }
+
+    /* 2. 等比例缩小内部白色卡片容器 */
+    .hero .hero-content {
+        max-width: 480px !important;        /* 从原本 650px 缩窄至 480px */
+        padding: 22px 30px !important;      /* 从原本 40px 50px 缩小内边距 */
+        background: rgba(255, 255, 255, 0.88) !important;
+        border-radius: 6px !important;
+    }
+
+    /* 3. 按比例缩小标题 (h1) */
+    .hero .hero-content h1 {
+        font-size: 1.7rem !important;       /* 原本 2.6rem/2.8rem 缩小至 1.7rem */
+        line-height: 1.25 !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* 4. 按比例缩小描述段落 (p) */
+    .hero .hero-content p {
+        font-size: 0.82rem !important;      /* 原本 0.95rem/1.05rem 缩小至 0.82rem */
+        line-height: 1.45 !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* 5. 按比例缩小按钮 (Inquire Now) */
+    .hero .hero-content .btn {
+        padding: 7px 18px !important;       /* 缩小按钮上下左右内边距 */
+        font-size: 0.8rem !important;       /* 缩小按钮字号 */
+    }
+}
             
     </style>
 </head>
