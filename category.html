@@ -1041,89 +1041,113 @@
         }
 
         function renderProductsOnly() {
-    if (typeof detailsDatabase === 'undefined') return;
+            if (typeof detailsDatabase === 'undefined') return;
+            const urlParams = new URLSearchParams(window.location.search);
+            const cat = urlParams.get('cat') || 'holiday';
+            const searchQuery = urlParams.get('search');
 
+            let dbSearchCat = cat.toLowerCase().trim();
+            if (dbSearchCat === "holiday") {
+                dbSearchCat = "holiday decor";
+            }
+
+            let filteredKeys = [];
+
+            for (let key in detailsDatabase) {
+                if (detailsDatabase.hasOwnProperty(key)) {
+                    const product = detailsDatabase[key];
+                    let isMatch = false;
+                    if (searchQuery) {
+                        if (key.toLowerCase().includes(searchQuery.toLowerCase())) {
+                            isMatch = true;
+                        }
+                    } else {
+                        if (product.category && product.category.toLowerCase().includes(dbSearchCat)) {
+                            isMatch = true;
+                        }
+                    }
+                    if (isMatch && selectedFilters.length > 0) {
+                        const prodSub = product.subcategory ? product.subcategory.toLowerCase().trim() : '';
+                        const matchesFilter = selectedFilters.some(filterWord => {
+                            return prodSub.includes(filterWord) || key.toLowerCase().includes(filterWord);
+                        });
+                        if (!matchesFilter) {
+                            isMatch = false;
+                            }
+                        }
+                        if (isMatch) {
+                            filteredKeys.push(key);
+                        }
+                    }
+                }
     const container = document.getElementById('products-grid-container');
     if (!container) return;
 
-    // 1. 获取当前页面选中的大类 (如 holiday / lighting / material)
-    const urlParams = new URLSearchParams(window.location.search);
-    const cat = urlParams.get('cat') ? urlParams.get('cat').toLowerCase().trim() : 'holiday';
-    const searchQuery = urlParams.get('search');
-
-    // 处理 holiday / holiday decor 映射
-    let dbSearchCat = (cat === "holiday") ? "holiday decor" : cat;
-
-    // 2. 获取左侧勾选的二级筛选词
-    const checkboxes = document.querySelectorAll('#filter-checkbox-group .sub-filter-list > li > .filter-option input[type="checkbox"]:checked');
-    const activeFilters = Array.from(checkboxes).map(cb => cb.value.toLowerCase().trim());
-
     let gridHtml = "";
+    
+    // 🌟 修正 2：获取当前大页面的类目名称（转为小写，比如 "holiday decor" 或 "raw material"）
+    const currentTitle = document.getElementById('layer-current').innerText.toLowerCase().trim();
 
-    // 3. 单次循环：精准匹配与渲染
+    // 🌟 修正 3：获取左侧多选框勾选的子类
+    const activeFilters = Array.from(document.querySelectorAll('#filter-checkbox-group input[type="checkbox"]:checked'))
+                               .map(cb => cb.value.toLowerCase().trim());
+
+    // 开始遍历你的产品数据库
     for (let key in detailsDatabase) {
         if (detailsDatabase.hasOwnProperty(key)) {
             const product = detailsDatabase[key];
+            
+            // 拿到产品里的分类暗号
             const pCat = product.category ? product.category.toLowerCase().trim() : "";
             const pSub = product.subcategory ? product.subcategory.toLowerCase().trim() : "";
 
-            let isMatch = false;
+            // 判断大类是否匹配：
+            // 如果页面标题叫 "holiday decor" 且产品属于 "holiday"
+            // 或者页面标题叫 "raw material" 且产品属于 "material"
+            // 或者页面标题包含了产品的类别
+            let isCategoryMatch = pCat.includes(dbSearchCat) || dbSearchCat.includes(pCat);
 
-            if (searchQuery) {
-                // 搜索模式匹配
-                if (key.toLowerCase().includes(searchQuery.toLowerCase())) {
-                    isMatch = true;
-                }
-            } else {
-                // 大类匹配（允许 holiday 和 holiday decor 互匹配，或者包含关系）
-                const normPCat = (pCat === "holiday") ? "holiday decor" : pCat;
-                if (normPCat.includes(dbSearchCat) || dbSearchCat.includes(normPCat)) {
-                    isMatch = true;
-                }
-            }
+            if (isCategoryMatch) {
+                // 如果左侧没有勾选任何过滤框，或者勾选的子类刚好匹配到了产品的 subcategory
+                // 这里的 .replace('-', ' ') 是为了把 "metal-stands" 变成 "metal stands" 对应你多选框的文字
+                if (activeFilters.length === 0 || activeFilters.includes(pSub.replace('-', ' '))) {
+                    
+                    let firstImg = "images/placeholder.jpg";
+                    if (product.images && product.images.length > 0) {
+                        firstImg = product.images[0];
+                    }
 
-            // 二级筛选框过滤
-            if (isMatch && activeFilters.length > 0) {
-                const subClean = pSub.replace('-', ' ');
-                if (!activeFilters.includes(subClean)) {
-                    isMatch = false;
-                }
-            }
+                    // 生成和你的 listing 页面一样好看的带跳转和询盘按钮的卡片
+                    const productPageUrl = `product-detail.html?item=${encodeURIComponent(key.replace(/\s+/g, '-'))}`;
+                    const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key)}`;
+                    const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=Inquiry&body=Product: ${key}`;
 
-            // 命中则生成 HTML
-            if (isMatch) {
-                let firstImg = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder.jpg";
-                const productPageUrl = `product-detail.html?item=${encodeURIComponent(key.replace(/\s+/g, '-'))}`;
-                const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key)}`;
-                const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=Inquiry&body=Product: ${key}`;
-
-                gridHtml += `
-                    <div class="grid-product-card" onclick="window.location.href='${productPageUrl}'">
-                        <div class="grid-product-img">
-                            <img src="${firstImg}" alt="${key}" style="width:100%; height:100%; object-fit:contain; background:#f9fafb;">
-                        </div>
-                        <div class="grid-product-info">
-                            <div style="font-size:0.8rem; color:var(--accent-color); font-weight:700;">${product.code || ''}</div>
-                            <h3 class="grid-product-title">${key.toUpperCase()}</h3>
-                            <div class="inquiry-actions-group" onclick="event.stopPropagation();">
-                                <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
-                                    <i class="fa-regular fa-envelope"></i> Email
-                                </button>
-                                <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
-                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                                </button>
+                    gridHtml += `
+                        <div class="grid-product-card" onclick="window.location.href='${productPageUrl}'">
+                            <div class="grid-product-img">
+                                <img src="${firstImg}" alt="${key}" style="width:100%; height:100%; object-fit:contain; background:#f9fafb;">
+                            </div>
+                            <div class="grid-product-info">
+                                <div style="font-size:0.8rem; color:var(--accent-color); font-weight:700;">${product.code || ''}</div>
+                                <h3 class="grid-product-title">${key.toUpperCase()}</h3>
+                                <div class="inquiry-actions-group" onclick="event.stopPropagation();">
+                                    <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
+                                        <i class="fa-regular fa-envelope"></i> Email
+                                    </button>
+                                    <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
+                                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
             }
         }
     }
 
+    // 塞回页面盒子里
     container.innerHTML = gridHtml || `<div style="grid-column:1/-1; text-align:center; color:var(--text-muted); padding:40px 0;">This category is coming soon...</div>`;
-    
-    // 如果勾选了三级标签（如 Christmas Tree 等），再触发一次次级过滤
-    handleThirdLevelChange();
 }
 
         function renderPagination(totalItems) {
@@ -1258,82 +1282,71 @@
             renderProductsOnly();
         }
         // ==========================================
-        // 🚄 移动端“火车式”搜索栏滑入滑出控制
+        // 🚄 移动端“火车式”搜索栏滑入滑出控制（完美对接版）
         // ==========================================
         document.addEventListener("DOMContentLoaded", function() {
             const searchForm = document.getElementById("navSearchForm");
             const searchInput = document.getElementById("searchInput");
-            const searchBtn = searchForm.querySelector(".search-icon-btn");
+            const searchBtn = searchForm ? searchForm.querySelector(".search-icon-btn") : null;
 
-            searchBtn.addEventListener("click", function(e) {
-                // 只有在手机移动端（屏幕 <= 768px）才启动这个伸缩逻辑
-                if (window.innerWidth <= 768) {
-                    // 如果目前是闭合状态，点击它就展开
-                    if (!searchForm.classList.contains("active")) {
-                        e.preventDefault(); 
-                        e.stopPropagation(); 
-                        searchForm.classList.add("active"); // 滑开！
-                        searchInput.focus(); // 自动对焦唤起键盘
-                    } else {
-                        // 如果已经滑开了，且里面没字，再次点击就收回去
-                        if (searchInput.value.trim() === "") {
-                            e.preventDefault();
-                            searchForm.classList.remove("active");
+            if (searchForm && searchInput && searchBtn) {
+                // 🌟 关键点：移除 HTML 上可能绑定的 onclick，防止冲突
+                searchBtn.removeAttribute("onclick");
+
+                searchBtn.addEventListener("click", function(e) {
+                    if (window.innerWidth <= 768) {
+                        if (!searchForm.classList.contains("active")) {
+                            e.preventDefault(); 
+                            e.stopPropagation(); 
+                            searchForm.classList.add("active"); // 滑开搜索栏
+                            searchInput.focus();               // 自动对焦唤起键盘
                         } else {
-                            // 如果有字，点击直接触发搜索
-                            handleSearch();
+                            if (searchInput.value.trim() === "") {
+                                e.preventDefault();
+                                searchForm.classList.remove("active"); // 没字就收起
+                            } else {
+                                handleSearch();                        // 有字就搜索
+                            }
                         }
+                    } else {
+                        handleSearch(); // 电脑端直接搜索
                     }
-                }
-            });
+                });
 
-            // 点击页面任意其他空白区域，搜索框自动缩回
-            document.addEventListener("click", function(e) {
-                if (window.innerWidth <= 768) {
-                    if (!searchForm.contains(e.target)) {
+                // 点击页面空白区域，自动缩回搜索框
+                document.addEventListener("click", function(e) {
+                    if (window.innerWidth <= 768 && !searchForm.contains(e.target)) {
                         searchForm.classList.remove("active");
                     }
-                }
-            });
-        });  
+                });
+            }
+        });   
 
-        window.onload = renderPage;
         // ==========================================
-// 🚀 终极视口守护者：让整个独立站根据屏幕等比例缩小，绝不挤压
-// ==========================================
-function handleResponsiveScale() {
-    // 获取当前设备屏幕的实际物理宽度
-    const deviceWidth = window.innerWidth || document.documentElement.clientWidth;
-    
-    // 寻找页面顶部的 viewport 标签
-    let viewport = document.querySelector("meta[name=viewport]");
-    if (!viewport) return;
+        // 🚀 终极视口守护者 + 页面初始化
+        // ==========================================
+        function handleResponsiveScale() {
+            const deviceWidth = window.innerWidth || document.documentElement.clientWidth;
+            let viewport = document.querySelector("meta[name=viewport]");
+            if (!viewport) return;
 
-    // 📱 如果是手机设备（屏幕宽度小于 768px）
-    if (deviceWidth <= 768) {
-        // 核心逻辑：我们假定网页在 480px 的宽度下是排版最舒展、最完美的
-        // 哪怕用户的手机只有 360px 宽（比如老款 iPhone），我们也让它以 480px 的大心胸去渲染，然后整体缩小
-        const targetWidth = 480; 
-        const scale = deviceWidth / targetWidth;
-        
-        // 强制修改视口控制，直接等比例缩放到手机屏幕中，文字和按钮绝对不会再因为宽度不够而挤在一起换行
-        viewport.setAttribute('content', `width=${targetWidth}, initial-scale=${scale}, maximum-scale=${scale}, user-scalable=no`);
-    } else {
-        // 🖥️ 如果是平板或者电脑端，恢复标准的响应式渲染
-        viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
-    }
-}
+            if (deviceWidth <= 768) {
+                const targetWidth = 480; 
+                const scale = deviceWidth / targetWidth;
+                viewport.setAttribute('content', `width=${targetWidth}, initial-scale=${scale}, maximum-scale=${scale}, user-scalable=no`);
+            } else {
+                viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+            }
+        }
 
-// 在页面加载以及屏幕旋转/大小改变时，实时触发缩放计算
-window.addEventListener('resize', handleResponsiveScale);
-window.addEventListener('orientationchange', handleResponsiveScale);
+        window.addEventListener('resize', handleResponsiveScale);
+        window.addEventListener('orientationchange', handleResponsiveScale);
 
-// 扩展你原有的 window.onload，让它初始化时就执行缩放
-const originalOnload = window.onload;
-window.onload = function() {
-    if (originalOnload) originalOnload();
-    handleResponsiveScale();
-};
+        // 绑定页面加载入口
+        window.onload = function() {
+            renderPage();             // 执行你原有的分类渲染
+            handleResponsiveScale();  // 执行你的缩放守护
+        };
     </script>
 </body>
 </html>
