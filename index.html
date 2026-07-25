@@ -658,103 +658,114 @@
             .footer-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 768px) {
-            /* 导航与搜索框适配 */
-            .nav-links { 
-                display: none; 
-                flex-direction: column;
-                position: fixed;
-                top: 65px;
-                left: 0;
-                width: 100%;
-                background: var(--white);
-                padding: 20px;
-                box-shadow: 0 10px 15px rgba(0,0,0,0.05);
-                border-bottom: 1px solid var(--border-color);
-                height: auto;
-                align-items: flex-start;
-                gap: 15px;
-            }
-            /* 当激活时显示菜单 */
-            .nav-links.active { display: flex; }
-            .nav-links li { width: 100%; height: auto; padding: 5px 0; }
-            .nav-links a { height: auto; width: 100%; }
-            .mega-menu { position: static; box-shadow: none; padding: 10px 0 0 15px; border: none; }
-            .nav-links li.has-mega-menu:hover .mega-menu { display: block; }
-            .mega-menu-container { grid-template-columns: 1fr; gap: 15px; padding: 0; }
+    /* 导航与搜索框适配 */
+    .nav-links { 
+        display: none; 
+        flex-direction: column;
+        position: fixed;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        border-bottom: 1px solid var(--border-color);
+        height: auto;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    /* 当激活时显示菜单 */
+    .nav-links.active { display: flex; }
+    .nav-links li { width: 100%; height: auto; padding: 5px 0; }
+    .nav-links a { height: auto; width: 100%; }
+    .mega-menu { position: static; box-shadow: none; padding: 10px 0 0 15px; border: none; }
+    .nav-links li.has-mega-menu:hover .mega-menu { display: block; }
+    .mega-menu-container { grid-template-columns: 1fr; gap: 15px; padding: 0; }
 
-            /* ✨ 终极强效修复：彻底锁死三横线内部尺寸 */
-            .logo {
-                font-size: 1rem !important;
-                white-space: nowrap !important;
-                flex-shrink: 1 !important;
-            }
-            .search-container {
-                flex-grow: 1 !important;
-                flex-shrink: 1 !important;
-                max-width: 120px !important;
-                min-width: 70px !important;
-            }
-            .menu-toggle {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    flex-shrink: 0 !important;
-    width: 24px !important;
-    height: 18px !important;
-    padding: 0 !important;
-    margin: 0 0 0 10px !important;
-    background: none !important;
-    border: none !important;
-    box-sizing: border-box !important;
-}
+    /* ✨ 终极强效修复：彻底锁死三横线内部尺寸 */
+    .logo {
+        font-size: 1rem !important;
+        white-space: nowrap !important;
+        flex-shrink: 1 !important;
+    }
+    .search-container {
+        flex-grow: 1 !important;
+        flex-shrink: 1 !important;
+        max-width: 120px !important;
+        min-width: 70px !important;
+    }
+    .menu-toggle {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-shrink: 0 !important;
+        width: 24px !important;
+        height: 18px !important;
+        padding: 0 !important;
+        margin: 0 0 0 10px !important;
+        background: none !important;
+        border: none !important;
+        box-sizing: border-box !important;
+    }
 
-.menu-toggle span {
-    display: block !important;
-    width: 100% !important;
-    height: 2px !important; /* 强制线宽为 2px */
-    max-height: 2px !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    background-color: #333 !important; /* 线条颜色 */
-    content: none !important; /* 防止伪元素干扰 */
-}
+    .menu-toggle span {
+        display: block !important;
+        width: 100% !important;
+        height: 2px !important; /* 强制线宽为 2px */
+        max-height: 2px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background-color: #333 !important; /* 线条颜色 */
+        content: none !important; /* 防止伪元素干扰 */
+    }
             
-            /* Hero 视觉区适配 */
-            .hero { height: auto !important; padding: 30px 0; }
-            .hero-content { padding: 20px 15px !important; text-align: center !important; max-width: 90% !important; }
-            .hero h1 {
-                font-size: 1.6rem !important;
-                line-height: 1.25 !important;
-                margin-bottom: 10px !important;
-            }
-            .hero p { font-size: 0.85rem; line-height: 1.4; margin-bottom: 15px; }
+    /* Hero 视觉区适配 */
+    .hero { height: auto !important; padding: 30px 0; }
+    .hero-content { padding: 20px 15px !important; text-align: center !important; max-width: 90% !important; }
+    .hero h1 {
+        font-size: 1.6rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 10px !important;
+    }
+    .hero p { font-size: 0.85rem; line-height: 1.4; margin-bottom: 15px; }
 
-            /* ============ 🛒 核心修改：激活手机端横向无缝手势滑动 ============ */
-            .carousel-container, 
-            .carousel-main-zone {
-                width: 100% !important;
-                overflow-x: auto !important;               /* 允许手机端左右手势滚动 */
-                overflow-y: hidden !important;
-                -webkit-overflow-scrolling: touch !important; /* 让滚动像刷小红书一样有弹性、丝滑 */
-            }
+    /* ============ 🛒 核心修改：激活手机端横向无缝手势滑动 ============ */
+    .carousel-container, 
+    .carousel-main-zone {
+        width: 100% !important;
+        overflow-x: auto !important;              /* 允许手机端左右手势滚动 */
+        overflow-y: hidden !important;
+        -webkit-overflow-scrolling: touch !important; /* 让滚动像刷小红书一样有弹性、丝滑 */
+    }
 
-            .carousel-track { 
-                display: flex !important;       
-                flex-wrap: nowrap !important;              /* 强制卡片并排，绝对不换行 */
-                gap: 15px !important;
-                width: max-content !important;             /* 轨道宽度随卡片无限延伸 */
-                padding-bottom: 15px; 
-            }
+    .carousel-track { 
+        display: flex !important;       
+        flex-wrap: nowrap !important;              /* 强制卡片并排，绝对不换行 */
+        gap: 15px !important;
+        width: max-content !important;             /* 轨道宽度随卡片无限延伸 */
+        padding-bottom: 15px; 
+    }
 
-            .carousel-main-zone .product-card { 
-                flex: 0 0 250px !important;                /* 每个卡片固定 250px 宽，露个边提示可滑动 */
-                width: 250px !important;
-            }
+    .carousel-main-zone .product-card { 
+        flex: 0 0 250px !important;                /* 每个卡片固定 250px 宽，露个边提示可滑动 */
+        width: 250px !important;
+    }
 
-            .slider-arrow { 
-                display: none !important;                  /* 彻底隐藏手机端点不动的箭头 */
-            }
+    .slider-arrow { 
+        display: none !important;                  /* 彻底隐藏手机端点不动的箭头 */
+    }
+
+    /* 🖼️ 新增：手机端滑动目录区的图片比例防拉伸修复 */
+    .carousel-main-zone .product-card img,
+    .carousel-main-zone .product-image,
+    .carousel-main-zone .product-img {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1 !important; /* 强制锁定 1:1 正方形 */
+        object-fit: cover !important;   /* 裁剪防变形 */
+    }
+            
             /* ============================================================= */
 
             /* About Us 模块移动端居中排版 */
