@@ -1010,6 +1010,9 @@
                 }
             }
 
+            // 🌟【添加】：获取勾选的多选框选项
+            const selectedFilters = Array.from(document.querySelectorAll('.third-cb:checked')).map(cb => cb.value.toLowerCase());
+
             for (let key in detailsDatabase) {
                 if (detailsDatabase.hasOwnProperty(key)) {
                     const product = detailsDatabase[key];
@@ -1019,7 +1022,15 @@
                     const isCatMatch = !targetCat || prodCat.includes(targetCat) || targetCat.includes(prodCat);
                     const isSubMatch = !subItem || prodSub === targetSub;
 
-                    if (isCatMatch && isSubMatch) {
+                    // 🌟【添加】：多选框筛选过滤条件
+                    const isFilterMatch = selectedFilters.length === 0 || selectedFilters.some(val => 
+                        key.toLowerCase().includes(val) || 
+                        (product.code && product.code.toLowerCase().includes(val)) || 
+                        prodSub.includes(val)
+                    );
+
+                    // 🌟【修改】：加入 isFilterMatch 匹配
+                    if (isCatMatch && isSubMatch && isFilterMatch) {
                         gridHtml += buildProductCardHtml(key, product, formattedTitle);
                     }
                 }
@@ -1091,8 +1102,14 @@
         `;
     }
 
-    // 页面加载完成后触发主渲染
-    window.onload = renderListingPage;
+    // 🌟【修改】：页面加载完成后触发渲染，并监听多选框勾选事件
+    window.onload = function() {
+        renderListingPage();
+
+        document.querySelectorAll('.third-cb').forEach(cb => {
+            cb.addEventListener('change', renderListingPage);
+        });
+    };
 
     // ==========================================
     // 4. 全局搜索与移动端滑入滑出逻辑
