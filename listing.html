@@ -905,20 +905,11 @@
         // 🌟 核心：解析网址上的分类参数 (?cat=...&sub=...)
         // ==========================================
         function getUrlParams() {
-            const params = {};
-            const search = window.location.search.substring(1);
-            if (!search) return params;
-            const pairs = search.split("&");
-            for (let i = 0; i < pairs.split; i++) {
-                const pair = pairs[i].split("=");
-                if (pair.length === 2) {
-                    params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
-                }
-            }
             const urlParams = new URLSearchParams(window.location.search);
             return {
                 cat: urlParams.get('cat'),
-                sub: urlParams.get('sub')
+                sub: urlParams.get('sub'),
+                search: urlParams.get('search')
             };
         }
 
@@ -1137,7 +1128,8 @@
         // 🌟 按类目导航 (?cat=xxx&sub=xxx)
         // =========================================================
         else if (catItem && typeof detailsDatabase !== 'undefined') {
-            const targetCat = catItem === 'holiday' ? 'holiday-decor' : catItem;
+            const cleanCat = catItem.toLowerCase().trim();
+            const targetCat = (cleanCat === 'holiday' || cleanCat === 'holiday-decor') ? 'holiday' : cleanCat;
             const targetSub = subItem ? subItem.replace(/s$/, '') : ''; 
 
             if (subItem) {
@@ -1152,7 +1144,8 @@
                     const prodCat = product.category ? product.category.toLowerCase().trim() : '';
                     const prodSub = product.subcategory ? product.subcategory.toLowerCase().trim().replace(/s$/, '') : '';
 
-                    if (prodCat.includes(targetCat) && (!subItem || prodSub === targetSub)) {
+                    const isCatMatch = prodCat.includes(targetCat) || targetCat.includes(prodCat);
+                    if (isCatMatch && (!subItem || prodSub === targetSub)) {
                         let firstImg = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder.jpg";
                         const productPageUrl = `product-detail.html?item=${encodeURIComponent(key)}`;
                         const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key)}`;
