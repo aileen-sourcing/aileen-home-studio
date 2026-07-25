@@ -901,187 +901,40 @@
     </footer>
 
     <script>
-        // ==========================================
-        // 🌟 核心：解析网址上的分类参数 (?cat=...&sub=...)
-        // ==========================================
-        function getUrlParams() {
-            const urlParams = new URLSearchParams(window.location.search);
-            return {
-                cat: urlParams.get('cat'),
-                sub: urlParams.get('sub'),
-                search: urlParams.get('search')
-            };
-        }
-
-        // ==========================================
-        // 🌟 核心：完美动态渲染列表页（铁脚、圣诞树全兼容版）
-        // ==========================================
-        function renderListingPage() {
-            const params = getUrlParams();
-            const catItem = params.cat;
-            const subItem = params.sub;
-
-            // 1. 格式化页面大标题名称
-            let rawTitle = subItem ? subItem : (catItem ? catItem : "Products");
-            let formattedTitle = rawTitle.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-
-            // 🌟 修正：精准对齐 HTML 里的真实大标题 ID，显示正确类目名
-            const pageTitleEl = document.getElementById('listing-main-title');
-            if (pageTitleEl) {
-                pageTitleEl.innerText = formattedTitle || "Products";
-            }
-            
-            // 🌟 修正：动态让面包屑导航的当前位置显示正确类目
-            const breadcrumbSubEl = document.getElementById('br-current');
-            if (breadcrumbSubEl) {
-                breadcrumbSubEl.innerText = formattedTitle || "Products";
-            }
-
-            let gridHtml = "";
-
-            // 2. 开始扫描你的 products-data.js 数据库
-            for (let key in detailsDatabase) {
-                if (detailsDatabase.hasOwnProperty(key)) {
-                    const product = detailsDatabase[key];
-
-                    // 🌟 【黄金过滤网 1】：大类匹配。允许网址上的 holiday 自动认出数据库里的 holiday-decor
-                    const isCatMatch = product.category === catItem || (catItem === 'holiday' && product.category === 'holiday-decor');
-                    
-                    // 如果大类根本对不上，直接跳过，看下一个！（这一步彻底救活了被卡死的“铁脚底座”）
-                    if (!isCatMatch) {
-                        continue;
-                    }
-
-                    // 🌟 【黄金过滤网 2】：子类匹配。如果网址要求了子类，但产品不符合，跳过
-                    if (subItem && product.subcategory !== subItem) {
-                        continue;
-                    }
-
-                    // 3. 匹配成功，开始剥离图片并组装高级卡片 HTML
-                    let firstImg = "images/placeholder.jpg";
-                    if (product.images && product.images.length > 0) {
-                        firstImg = product.images[0];
-                    }
-
-                    const productPageUrl = `product-detail.html?item=${encodeURIComponent(key)}`;
-                    const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key + ' (' + product.code + '). Please provide a wholesale quote.')}`;
-                    const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=${encodeURIComponent('Wholesale Inquiry for ' + formattedTitle)}&body=${encodeURIComponent('Product: ' + key + '\n' + product.code + '\n\nPlease send us the latest pricing and MOQ.')}`;
-
-                    gridHtml += `
-                        <div class="product-card" onclick="window.location.href='${productPageUrl}'">
-                            <div class="product-image-wrapper">
-                                <img src="${firstImg}" alt="${key}" class="product-image">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-meta-code">${product.code}</div>
-                                <h3 class="product-title-text">${key.toUpperCase()}</h3>
-                                <div class="inquiry-actions-group" onclick="event.stopPropagation();">
-                                    <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
-                                        <i class="fa-regular fa-envelope"></i> Email
-                                    </button>
-                                    <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
-                                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                }
-            }
-
-            // 4. 如果整个数据库搜完真的没货，给予 Coming Soon 提示
-            if (gridHtml === "") {
-                gridHtml = `<div style=\"grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 50px 0;\">
-                                <p>New products for "${formattedTitle}" are coming soon...</p>
-                                <p style="font-size:0.85rem; margin-top:10px;">(Please check if category is "${catItem}" and subcategory is "${subItem}" in products-data.js)</p>
-                            </div>`;
-            }
-
-            document.getElementById('listing-grid-container').innerHTML = gridHtml;
-        }
-
-        window.onload = renderListingPage;
-        // ==========================================
-        // 🌟 核心：与其它页面完全统一的全局搜索功能
-        // ==========================================
-        function handleSearch() {
-            const searchInput = document.getElementById('searchInput');
-            if (!searchInput) return;
-            let query = searchInput.value ? searchInput.value.trim() : "";
-            if (!query) {
-                 alert('Please enter a product name to search.');
-                 return;
-            }
-                if (query.toLowerCase() === 'xmas') query = 'christmas';
-                window.location.href = `listing.html?search=${encodeURIComponent(query)}`;
-            }
-
-        // ==========================================
-        // 🚄 移动端“火车式”搜索栏点击滑入滑出逻辑（防 HTML 拦截版）
-        // ==========================================
-        document.addEventListener("DOMContentLoaded", function() {
-            const searchForm = document.getElementById("navSearchForm");
-            const searchInput = document.getElementById("searchInput");
-            const searchBtn = searchForm ? searchForm.querySelector(".search-icon-btn") : null;
-
-            if (searchForm && searchInput && searchBtn) {
-                // 1. 彻底移除 HTML 标签上死写的 onclick 属性，改由 JS 统一指挥
-                searchBtn.removeAttribute("onclick");
-
-                // 2. 重新绑定智能点击事件
-                searchBtn.addEventListener("click", function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-
-                    if (window.innerWidth <= 768) {
-                        // 如果目前没有展开，点击直接滑开
-                        if (!searchForm.classList.contains("active")) {
-                            searchForm.classList.add("active");
-                            searchInput.focus(); // 拉起键盘
-                        } else {
-                            // 如果已经滑开了
-                            if (searchInput.value.trim() === "") {
-                                // 没输入字，点击就缩回去
-                                searchForm.classList.remove("active");
-                            } else {
-                                // 有字，触发搜索
-                                handleSearch();
-                            }
-                        }
-                    } else {
-                        // PC 端保持原样：有字就搜索
-                        handleSearch();
-                    }
-                });
-
-                // 3. 点击页面空白处自动缩回
-                document.addEventListener("click", function(e) {
-                    if (window.innerWidth <= 768) {
-                        if (!searchForm.contains(e.target)) {
-                            searchForm.classList.remove("active");
-                        }
-                    }
-                });
-            }
-        });
-    </script>
-</body>
-</html>
-
-<script>
-(function() {
-    window.addEventListener('DOMContentLoaded', () => {
+    // ==========================================
+    // 1. 解析网址上的分类与搜索参数
+    // ==========================================
+    function getUrlParams() {
         const urlParams = new URLSearchParams(window.location.search);
-        const catItem = urlParams.get('cat');
-        const subItem = urlParams.get('sub');
-        const searchKeyword = urlParams.get('search'); // 🌟 抓取搜索词
+        return {
+            cat: urlParams.get('cat'),
+            sub: urlParams.get('sub'),
+            search: urlParams.get('search')
+        };
+    }
+
+    // ==========================================
+    // 2. 统一渲染主逻辑（保留全部格式与布局规则）
+    // ==========================================
+    function renderListingPage() {
+        const params = getUrlParams();
+        const catItem = params.cat;
+        const subItem = params.sub;
+        const searchKeyword = params.search;
 
         let gridHtml = "";
         let displayTitle = "Products";
 
-        // =========================================================
-        // 🌟 核心判断：优先处理搜索框 (?search=xxx)
-        // =========================================================
+        const container = document.getElementById('listing-grid-container');
+        const sidebar = document.getElementById('christmas-sidebar');
+
+        // 计算格式化后的标题名称（供邮件和页面大标题使用）
+        let rawTitle = subItem ? subItem : (catItem ? catItem : "Products");
+        let formattedTitle = rawTitle.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+        // -------------------------------------------------------------
+        // 场景 A：优先处理搜索框 (?search=xxx)
+        // -------------------------------------------------------------
         if (searchKeyword && typeof detailsDatabase !== 'undefined') {
             const cleanQuery = searchKeyword.toLowerCase().trim();
             displayTitle = `Search Results for "${searchKeyword}"`;
@@ -1094,47 +947,23 @@
                     const pCat = product.category ? product.category.toLowerCase() : '';
                     const pSub = product.subcategory ? product.subcategory.toLowerCase() : '';
 
-                    // 模糊匹配：产品名字、编号、分类、子类 只要包含搜索词就命中
                     if (pTitle.includes(cleanQuery) || pCode.includes(cleanQuery) || pCat.includes(cleanQuery) || pSub.includes(cleanQuery)) {
-                        let firstImg = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder.jpg";
-                        const productPageUrl = `product-detail.html?item=${encodeURIComponent(key)}`;
-                        const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key)}`;
-                        const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=Inquiry&body=Product: ${key}`;
-
-                        gridHtml += `
-                            <div class="product-card" onclick="window.location.href='${productPageUrl}'">
-                                <div class="product-image-wrapper">
-                                    <img src="${firstImg}" alt="${key}" class="product-image">
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-meta-code">${product.code || ''}</div>
-                                    <h3 class="product-title-text">${key.toUpperCase()}</h3>
-                                    <div class="inquiry-actions-group" onclick="event.stopPropagation();">
-                                        <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
-                                            <i class="fa-regular fa-envelope"></i> Email
-                                        </button>
-                                        <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
-                                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
+                        gridHtml += buildProductCardHtml(key, product, formattedTitle);
                     }
                 }
             }
         } 
-        // =========================================================
-        // 🌟 按类目导航 (?cat=xxx&sub=xxx)
-        // =========================================================
-        else if (catItem && typeof detailsDatabase !== 'undefined') {
-            const cleanCat = catItem.toLowerCase().trim();
+        // -------------------------------------------------------------
+        // 场景 B：按类目导航 (?cat=xxx&sub=xxx)
+        // -------------------------------------------------------------
+        else if (typeof detailsDatabase !== 'undefined') {
+            const cleanCat = catItem ? catItem.toLowerCase().trim() : '';
             const targetCat = (cleanCat === 'holiday' || cleanCat === 'holiday-decor') ? 'holiday' : cleanCat;
-            const targetSub = subItem ? subItem.replace(/s$/, '') : ''; 
+            const targetSub = subItem ? subItem.replace(/s$/, '').toLowerCase().trim() : ''; 
 
             if (subItem) {
                 displayTitle = subItem.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-            } else {
+            } else if (catItem) {
                 displayTitle = catItem.toUpperCase();
             }
 
@@ -1144,53 +973,19 @@
                     const prodCat = product.category ? product.category.toLowerCase().trim() : '';
                     const prodSub = product.subcategory ? product.subcategory.toLowerCase().trim().replace(/s$/, '') : '';
 
-                    const isCatMatch = prodCat.includes(targetCat) || targetCat.includes(prodCat);
-                    if (isCatMatch && (!subItem || prodSub === targetSub)) {
-                        let firstImg = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder.jpg";
-                        const productPageUrl = `product-detail.html?item=${encodeURIComponent(key)}`;
-                        const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key)}`;
-                        const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=Inquiry&body=Product: ${key}`;
+                    const isCatMatch = !targetCat || prodCat.includes(targetCat) || targetCat.includes(prodCat);
+                    const isSubMatch = !subItem || prodSub === targetSub;
 
-                        gridHtml += `
-                            <div class="product-card" onclick="window.location.href='${productPageUrl}'">
-                                <div class="product-image-wrapper">
-                                    <img src="${firstImg}" alt="${key}" class="product-image">
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-meta-code">${product.code || ''}</div>
-                                    <h3 class="product-title-text">${key.toUpperCase()}</h3>
-                                    <div class="inquiry-actions-group" onclick="event.stopPropagation();">
-                                        <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
-                                            <i class="fa-regular fa-envelope"></i> Email
-                                        </button>
-                                        <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
-                                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
+                    if (isCatMatch && isSubMatch) {
+                        gridHtml += buildProductCardHtml(key, product, formattedTitle);
                     }
                 }
             }
         }
 
-        // 渲染产品到页面
-        const container = document.getElementById('listing-grid-container');
-        if (container) {
-            container.innerHTML = gridHtml !== "" ? gridHtml : `<div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--text-muted);">No products found matching your search.</div>`;
-        }
-
-        // 更新标题与面包屑
-        const pageTitleEl = document.getElementById('listing-main-title');
-        if (pageTitleEl) pageTitleEl.innerText = displayTitle;
-        const breadcrumbSubEl = document.getElementById('br-current');
-        if (breadcrumbSubEl) breadcrumbSubEl.innerText = displayTitle;
-
-        // =========================================================
-        // 🌟 解决“全变成 Christmas”的关键：只有真正的 christmas 子类才显示侧边栏！
-        // =========================================================
-        const sidebar = document.getElementById('christmas-sidebar');
+        // -------------------------------------------------------------
+        // 🌟 布局控制逻辑（完全保留你原来的 Christmas 侧栏与 5 列网格控制）
+        // -------------------------------------------------------------
         if (subItem === 'christmas' && !searchKeyword) {
             if (container && sidebar) {
                 sidebar.style.display = 'block';
@@ -1204,12 +999,13 @@
                 container.style.width = '100%';
             }
         } else {
-            // 🎯 搜索或其他类目时：彻底隐藏圣诞侧边栏，恢复正常网格展示
+            // 彻底隐藏圣诞侧栏，恢复常规网格
             if (sidebar) sidebar.style.display = 'none';
             if (container) {
                 const parentBox = container.parentElement;
                 if (parentBox) parentBox.style.display = 'block';
                 
+                // 🌟 完全还原：大屏 (>1366px) 强制 5 列网格布局格式
                 if (window.innerWidth > 1366) {
                     container.style.setProperty('display', 'grid', 'important');
                     container.style.setProperty('grid-template-columns', 'repeat(5, 1fr)', 'important');
@@ -1217,6 +1013,113 @@
                 }
             }
         }
+
+        // 填充网格内容（保留暂无产品时的提示格式）
+        if (container) {
+            if (gridHtml !== "") {
+                container.innerHTML = gridHtml;
+            } else {
+                container.innerHTML = `
+                    <div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 50px 0;">
+                        <p>New products for "${formattedTitle}" are coming soon...</p>
+                        <p style="font-size:0.85rem; margin-top:10px;">(Please check if category is "${catItem}" and subcategory is "${subItem}" in products-data.js)</p>
+                    </div>`;
+            }
+        }
+
+        // 更新大标题与面包屑
+        const pageTitleEl = document.getElementById('listing-main-title');
+        if (pageTitleEl) pageTitleEl.innerText = displayTitle;
+        const breadcrumbSubEl = document.getElementById('br-current');
+        if (breadcrumbSubEl) breadcrumbSubEl.innerText = displayTitle;
+    }
+
+    // ==========================================
+    // 3. 卡片生成函数（完全还原完整的 Email / WhatsApp 询价文本格式）
+    // ==========================================
+    function buildProductCardHtml(key, product, formattedTitle) {
+        let firstImg = "images/placeholder.jpg";
+        if (product.images && product.images.length > 0) {
+            firstImg = product.images[0];
+        }
+
+        const productPageUrl = `product-detail.html?item=${encodeURIComponent(key)}`;
+        
+        // 🌟 完全还原你的详细询价模板格式
+        const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key + ' (' + (product.code || '') + '). Please provide a wholesale quote.')}`;
+        const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=${encodeURIComponent('Wholesale Inquiry for ' + formattedTitle)}&body=${encodeURIComponent('Product: ' + key + '\n' + (product.code || '') + '\n\nPlease send us the latest pricing and MOQ.')}`;
+
+        return `
+            <div class="product-card" onclick="window.location.href='${productPageUrl}'">
+                <div class="product-image-wrapper">
+                    <img src="${firstImg}" alt="${key}" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-meta-code">${product.code || ''}</div>
+                    <h3 class="product-title-text">${key.toUpperCase()}</h3>
+                    <div class="inquiry-actions-group" onclick="event.stopPropagation();">
+                        <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
+                            <i class="fa-regular fa-envelope"></i> Email
+                        </button>
+                        <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    // 页面加载完成后触发主渲染
+    window.onload = renderListingPage;
+
+    // ==========================================
+    // 4. 全局搜索与移动端滑入滑出逻辑
+    // ==========================================
+    function handleSearch() {
+        const searchInput = document.getElementById('searchInput');
+        if (!searchInput) return;
+        let query = searchInput.value ? searchInput.value.trim() : "";
+        if (!query) {
+            alert('Please enter a product name to search.');
+            return;
+        }
+        if (query.toLowerCase() === 'xmas') query = 'christmas';
+        window.location.href = `listing.html?search=${encodeURIComponent(query)}`;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const searchForm = document.getElementById("navSearchForm");
+        const searchInput = document.getElementById("searchInput");
+        const searchBtn = searchForm ? searchForm.querySelector(".search-icon-btn") : null;
+
+        if (searchForm && searchInput && searchBtn) {
+            searchBtn.removeAttribute("onclick");
+            searchBtn.addEventListener("click", function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                if (window.innerWidth <= 768) {
+                    if (!searchForm.classList.contains("active")) {
+                        searchForm.classList.add("active");
+                        searchInput.focus();
+                    } else {
+                        if (searchInput.value.trim() === "") {
+                            searchForm.classList.remove("active");
+                        } else {
+                            handleSearch();
+                        }
+                    }
+                } else {
+                    handleSearch();
+                }
+            });
+
+            document.addEventListener("click", function(e) {
+                if (window.innerWidth <= 768 && !searchForm.contains(e.target)) {
+                    searchForm.classList.remove("active");
+                }
+            });
+        }
     });
-})();
 </script>
