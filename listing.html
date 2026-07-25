@@ -1014,12 +1014,16 @@
         // 🌟 核心：与其它页面完全统一的全局搜索功能
         // ==========================================
         function handleSearch() {
-            const query = document.getElementById('searchInput').value.trim();
-            if (query) {
-                // 自动跳往搜索结果或通过分类页进行分流
-                window.location.href = `category.html?search=${encodeURIComponent(query)}`;
+            const searchInput = document.getElementById('searchInput');
+            if (!searchInput) return;
+            let query = searchInput.value ? searchInput.value.trim() : "";
+            if (!query) {
+                 alert('Please enter a product name to search.');
+                 return;
             }
-        }
+                if (query.toLowerCase() === 'xmas') query = 'christmas';
+                window.location.href = `listing.html?search=${encodeURIComponent(query)}`;
+            }
 
         // ==========================================
         // 🚄 移动端“火车式”搜索栏点击滑入滑出逻辑（防 HTML 拦截版）
