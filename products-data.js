@@ -542,8 +542,20 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "mini christmas tree")
     // ==========================================
-
-    "45cm mini xmas tree 260711": {
+    "xmas tree 260714": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20260714",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/1.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/2.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+    "45cm mini xmas tree 260715": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260715",
@@ -559,8 +571,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
-    "90cm mini xmas tree 260712": {
+    "90cm mini xmas tree 260716": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260716",
@@ -577,8 +588,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
-    "30cm mini xmas tree 260713": {
+    "30cm mini xmas tree 260717": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260717",
@@ -593,8 +603,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
-    "60cm mini xmas tree 260714": {
+    "60cm mini xmas tree 260718": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260718",
@@ -611,8 +620,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
-    "snow mini xmas tree 260715": {
+    "snow mini xmas tree 260719": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260719",
@@ -626,8 +634,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
-    "pine mini xmas tree 260716": {
+    "pine mini xmas tree 260720": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260720",
@@ -640,8 +647,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
-    "45cm mini tree 260717": {
+    "45cm mini tree 260721": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260721",
@@ -658,8 +664,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
-    "mini xmas tree 260718": {
+    "mini xmas tree 260722": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260722",
@@ -676,8 +681,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
-    "pink mini tree 260719": {
+    "pink mini tree 260723": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260723",
@@ -694,8 +698,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
-    "pet mini tree 260720": {
+    "pet mini tree 260724": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260724",
@@ -708,8 +711,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
-    "pvc mini tree 260721": {
+    "pvc mini tree 260725": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260725",
@@ -726,8 +728,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
-    "green mini tree 260722": {
+    "green mini tree 260726": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260726",
@@ -742,8 +743,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
-    "pot mini tree 260723": {
+    "pot mini tree 260727": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260727",
@@ -757,7 +757,6 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "halloween")
     // ==========================================
