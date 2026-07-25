@@ -944,6 +944,11 @@
             if (container && container.parentElement) {
                 container.parentElement.style.display = 'block';
             }
+            if (container && window.innerWidth > 1024) {
+                container.style.setProperty('display', 'grid', 'important');
+                container.style.setProperty('grid-template-columns', 'repeat(5, 1fr)', 'important');
+                container.style.setProperty('gap', '30px 16px', 'important');
+            }
 
             // 2. 遍历数据库进行多字段模糊匹配（兼容带有 christmas 前缀的复合词）
             for (let key in detailsDatabase) {
