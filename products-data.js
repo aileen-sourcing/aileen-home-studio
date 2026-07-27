@@ -902,7 +902,7 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "easter")
     // ==========================================
-    "wreath 260727": {
+    "Easter Egg Wreath for Front Door, Spring Wreath with Greenery & Pastel Eggs": {
         category: "holiday",
         subcategory: "easter", 
         code: "Item Code: ew20260727",
