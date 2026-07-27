@@ -829,6 +829,41 @@
         padding: 7px 35px 7px 12px !important;
     }
 }
+/* 🌟 新增：详情页专属段落描述样式 */
+.product-short-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted); /* 优雅的高级灰 */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    word-break: break-word; /* 防止长单词撑破屏幕 */
+}
+
+/* 📱 手机端适配 (<= 768px) */
+@media screen and (max-width: 768px) {
+    .product-short-desc {
+        font-size: 0.88rem !important; /* 手机端字体略微收紧 */
+        line-height: 1.5 !important;
+        margin-bottom: 15px !important;
+    }
+}
+
+/* 🖥️ 平板横屏适配 (768px - 1200px landscape) */
+@media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
+    .product-short-desc {
+        font-size: 0.85rem !important; /* 适度缩小防挤压 */
+        line-height: 1.5 !important;
+        margin-bottom: 12px !important;
+    }
+}
+
+/* 📱 平板竖屏适配 (768px - 1024px portrait) */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .product-short-desc {
+        font-size: 0.9rem !important;
+        line-height: 1.55 !important;
+    }
+}
 
     </style>
 </head>
@@ -959,6 +994,11 @@
             <div class="product-meta-box">
                 <div class="product-code" id="productCode">Item Code: TL-001</div>
                 <h1 class="product-title" id="productTitle">Minimalist Dimmable Ceramic Table Lamp</h1>
+                
+                <p class="product-short-desc" id="productShortDesc">
+                    Enhance your home decoration with this exquisite handcrafted wreath. Designed with high-quality weather-resistant materials, it offers a full-bodied, fresh look year-round. Perfect for hanging on your front door, entryway, fireplace mantle, or living room wall to add a natural and welcoming touch.
+                </p>
+
                 <div class="inquiry-actions-group">
                     <button class="inquiry-action-btn btn-email" id="inquiryEmailBtn">
                         <i class="fa-regular fa-envelope"></i> Email Inquiry
