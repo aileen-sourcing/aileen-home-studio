@@ -911,9 +911,7 @@ const detailsDatabase = {
             "images/products/holiday-decor/fall-decor/wreath/fw20260727/1.jpg",
             "images/products/holiday-decor/fall-decor/wreath/fw20260727/2.jpg",
             "images/products/holiday-decor/fall-decor/wreath/fw20260727/3.jpg",
-            "images/products/holiday-decor/fall-decor/wreath/fw20260727/4.jpg",
-            "images/products/holiday-decor/fall-decor/wreath/fw20260727/5.jpg",
-            "images/products/holiday-decor/fall-decor/wreath/fw20260727/6.jpg"
+            "images/products/holiday-decor/fall-decor/wreath/fw20260727/4.jpg"
         ], 
         specs: [
             { label: "Size", value: "45CM/60CM/90CM, Customizable" },
