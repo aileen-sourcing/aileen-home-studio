@@ -4,7 +4,20 @@ const detailsDatabase = {
     // ==========================================
     // 🎄 大类 1：Holiday Decor (cat: "holiday")
     // ==========================================
-    
+    "xmas tree 260706": {
+        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        subcategory: "christmas", 
+        code: "Item Code: ct20260706",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/1.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/2.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "PE+PVC" },
+            { label: "Height", value: "Customizable" },
+            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+        ]
+    },
     "xmas tree 260707": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
