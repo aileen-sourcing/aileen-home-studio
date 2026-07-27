@@ -793,7 +793,7 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Spring decor")
     // ==========================================
-    "wreath 260727": {
+    "wreath-260727": {
         category: "holiday",
         subcategory: "spring-decor", 
         code: "Item Code: sw20260727",
@@ -810,7 +810,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-    "wreath 260728": {
+    "wreath-260728": {
         category: "holiday",
         subcategory: "spring-decor", 
         code: "Item Code: sw20260728",
