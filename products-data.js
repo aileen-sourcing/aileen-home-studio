@@ -1081,15 +1081,19 @@ const detailsDatabase = {
             { label: "Application", value: "Dining Room, Luxury Hotel Lobby, Villa" }
         ]
     },
-    "wall sconces": {
+    "walnut wood glass wall sconce adjustable swing arm wall lamp bedroom bedside reading light japanese wabi sabi wall lighting": {
         category: "lighting",
         subcategory: "wall-lighting", 
         code: "Item Code: wl20260715",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
-        images: ["images/products/lighting/wall-lighting/wl20260715/wl20260715-1.jpg"], 
+        description: "This walnut wood glass wall sconce designed as a practical bedside reading light, this vintage wall lamp combines natural walnut wood, brass fittings and frosted glass shade to create classic japanese wabi sabi and mid century modern decor aesthetic. Frosted glass diffuses light evenly to reduce harsh glare. This decorative wall lighting is widely used for bedroom bedside, hallway, living room, study room and guest house.",
+        images: [
+            "images/products/lighting/wall-lighting/wl20260715/1.jpg",
+            "images/products/lighting/wall-lighting/wl20260715/2.jpg"
+        ], 
         specs: [
-            { label: "Material", value: "Wooden + Glass" },
-            { label: "Application", value: "Pathway, Backyard Yard, Villa Landscaping" }
+            { label: "Material", value: "Walnut wood brass accessories frosted glass lampshade" },
+            { label: "Design style", value: "Japanese wabi sabi minimalist mid century vintage" },
+            { label: "Suitable scenes", value: "Bedroom bedside hallway living room study guest room" }
         ]
     },
     // ==========================================
