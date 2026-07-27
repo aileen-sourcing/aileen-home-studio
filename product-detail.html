@@ -1081,6 +1081,11 @@ function handleSearch() {
                 document.getElementById('productTitle').innerText = productKey.toUpperCase();
                 // 渲染产品编号
                 document.getElementById('productCode').innerText = productInfo.code;
+                // 🌟 新增：动态渲染产品短描述（如果 JS 里没写，就显示默认描述）
+                const shortDescEl = document.getElementById('productShortDesc');
+                if (shortDescEl) {
+                    shortDescEl.innerText = productInfo.description || "High-quality holiday decor designed for indoor and outdoor displays. Custom specifications and wholesale pricing available upon request.";
+                }
 
                 // 🌟 ✨ 【图片连通核心】：动态加载主图与多张缩略图
                 if (productInfo.images && productInfo.images.length > 0) {
