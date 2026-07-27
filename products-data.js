@@ -772,6 +772,26 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: "easter")
+    // ==========================================
+    "wreath 260727": {
+        category: "holiday",
+        subcategory: "easter", 
+        code: "Item Code: ew20260727",
+        images: [
+            "images/products/holiday-decor/easter/wreath/ew20260727/1.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/2.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/3.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/4.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/5.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/6.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+    // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "halloween")
     // ==========================================
     "black tree 260717": {
@@ -793,7 +813,7 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Spring decor")
     // ==========================================
-    "wreath-260727": {
+    "wreath 260727": {
         category: "holiday",
         subcategory: "spring-decor", 
         code: "Item Code: sw20260727",
@@ -810,7 +830,7 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
-    "wreath-260728": {
+    "wreath 260728": {
         category: "holiday",
         subcategory: "spring-decor", 
         code: "Item Code: sw20260728",
