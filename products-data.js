@@ -384,7 +384,8 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/wreath/w20260715/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260715/2.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260715/3.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260715/4.jpg"
+            "images/products/holiday-decor/christmas/wreath/w20260715/4.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260715/5.jpg"
         ], 
         specs: [
             { label: "Size", value: "Customizable" },
@@ -897,7 +898,6 @@ const detailsDatabase = {
             { label: "Application", value: "Hotel Bedroom, Living Room, Showroom" }
         ]
     },
-
     "modern floor lamp": {
         category: "lighting",
         subcategory: "floor-lamps", 
@@ -911,7 +911,6 @@ const detailsDatabase = {
             { label: "Application", value: "Reading Room, Office, Nordic Living Room" }
         ]
     },
-
     "pendant light": {
         category: "lighting",
         subcategory: "pendant-lights", 
@@ -927,7 +926,6 @@ const detailsDatabase = {
             { label: "Application", value: "Dining Room, Luxury Hotel Lobby, Villa" }
         ]
     },
-
     "wall sconces": {
         category: "lighting",
         subcategory: "wall-lighting", 
@@ -938,7 +936,6 @@ const detailsDatabase = {
             { label: "Application", value: "Pathway, Backyard Yard, Villa Landscaping" }
         ]
     },
-
     // ==========================================
     // ⚙️ 大类 3：Raw Materials (cat: "material")
     // ==========================================
@@ -961,7 +958,6 @@ const detailsDatabase = {
             { label: "Usage", value: "Raw Material for Manufacturing Christmas Tree Leaves" }
         ]
     },
-
     "pe tree tips": {
         category: "material",
         subcategory: "pe-tips", 
@@ -982,7 +978,6 @@ const detailsDatabase = {
             { label: "Usage", value: "High-end Pine Needle Trees Production" }
         ]
     },
-
     "polyster thread": {
         category: "material",
         subcategory: "polyester-thread", 
@@ -998,7 +993,6 @@ const detailsDatabase = {
             { label: "Usage", value: "For Christmas Trees Production" }
         ]
     },
-
     "metal tube": {
         category: "material",
         subcategory: "metal-tube", 
@@ -1016,7 +1010,6 @@ const detailsDatabase = {
             { label: "Usage", value: "For Christmas Trees Production" }
         ]
     },
-
     "metal stand": {
         category: "material", 
         subcategory: "metal-stands", 
