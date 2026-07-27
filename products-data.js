@@ -1050,18 +1050,19 @@ const detailsDatabase = {
             { label: "Application", value: "Hotel Bedroom, Living Room, Showroom" }
         ]
     },
-    "modern floor lamp": {
+    "wooden carved floor lamp wabi sabi linen shade standing lamp for living room bedroom decor": {
         category: "lighting",
         subcategory: "floor-lamps", 
         code: "Item Code: fl20260715",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This carved wooden floor lamp features stacked sculptural wooden base paired with soft linen lampshade. Inspired by wabi sabi and rustic farmhouse style, this standing lamp delivers warm gentle ambient light. Ideal decor lighting for living room bedroom study lounge and entryway. Solid wood structure brings natural textured aesthetic to modern minimalist neutral tone home interiors.",
         images: [
-            "images/products/lighting/floor-lamps/fl20260715/fl20260715-1.jpg",
+            "images/products/lighting/floor-lamps/fl20260715/1.jpg",
+            "images/products/lighting/floor-lamps/fl20260715/2.jpg"
         ], 
         specs: [
-            { label: "Material", value: "Wooden Base" },
-            { label: "Height", value: "150 cm / Custom" },
-            { label: "Application", value: "Reading Room, Office, Nordic Living Room" }
+            { label: "Material", value: "solid wood base and linen fabric lampshade" },
+            { label: "Style", value: "wabi sabi rustic minimalist farmhouse" },
+            { label: "Application", value: "living room bedroom entryway study lounge" }
         ]
     },
     "pendant light": {
