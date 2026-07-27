@@ -8,6 +8,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260706",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260706/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260706/2.jpg"
@@ -22,6 +23,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct26060707",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct26060707/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct26060707/2.jpg",
@@ -40,6 +42,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260708",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260708/ct20260708-1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260708/ct20260708-2.jpg",
