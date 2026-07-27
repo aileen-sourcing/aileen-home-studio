@@ -52,14 +52,26 @@
             position: relative !important;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--primary-color);
-            letter-spacing: 1.5px;
-            flex-shrink: 0;
-            z-index: 100000 !important;
-        }
+        .logo-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+    z-index: 100000 !important;
+    height: 100%;
+}
+
+.logo-img {
+    height: 40px;           /* 电脑端标准高度 */
+    width: auto;            /* 保证比例不被拉伸 */
+    max-width: 180px;       /* 限制最大宽度 */
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.logo-img:hover {
+    opacity: 0.9;
+}
 
         .nav-links {
             display: flex;
@@ -372,14 +384,14 @@
         
         @media screen and (max-width: 768px) {
             /* 1. 🎯 彻底干掉手机端导航栏的“Aileen's Home Studio”长名字，为横向滑动腾出空间 */
-            .navbar .logo, 
-            .logo,
-            a[href="index.html"].logo {
-                display: none !important;
-                width: 0 !important;
-                margin: 0 !important;
-                padding: 0 !important;
-            }
+            .navbar .logo-brand, 
+.logo-brand,
+a[href="index.html"].logo-brand {
+    display: none !important;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
             /* 2. 🌟 激活手机端横向顺畅滑动效果（不触碰全局 body 滚动） */
             .nav-links {
@@ -616,11 +628,18 @@
         padding: 0 12px !important;
     }
 
-    .logo {
-        display: block !important;            /* 👈 横屏必定显示 Logo */
-        font-size: 1.1rem !important;
-        margin-right: 10px !important;
-    }
+    .logo-brand {
+    display: flex !important;
+    align-items: center !important;
+    margin-right: 15px !important;
+    flex-shrink: 0 !important;
+}
+
+.logo-img {
+    height: 32px !important;       /* 平板横屏下稍微调小高度，防止挤压右侧菜单 */
+    max-width: 130px !important;
+    width: auto !important;
+}
 
     .nav-links {
         gap: 12px !important;
@@ -670,9 +689,9 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
     /* 1. 导航栏：隐藏 Logo，保证搜索框露出 */
-    .logo { 
-        display: none !important; 
-    }
+    .logo-brand { 
+    display: none !important; 
+}
     
     .navbar { 
         padding: 0 10px !important; 
@@ -824,7 +843,9 @@
 
     <header>
         <div class="container navbar">
-            <a href="index.html" class="logo">Aileen's Home Studio</a>
+            <a href="index.html" class="logo-brand">
+                <img src="images/logo.png" alt="Aileen's Home Studio" class="logo-img">
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 
