@@ -367,24 +367,21 @@
             flex-direction: column;
             justify-content: center;
         }
-
+        .product-title {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
         .product-code {
             font-size: 0.85rem;
             color: var(--accent-color);
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            margin-bottom: 10px;
-        }
-
-        .product-title {
-            font-size: 2.2rem;
-            color: var(--primary-color);
-            font-weight: 800;
-            line-height: 1.2;
             margin-bottom: 20px;
         }
-
         /* ⚡ 核心新增：详情页双通道询盘按钮容器 */
         .inquiry-actions-group {
             display: flex;
@@ -393,7 +390,6 @@
             width: 100%;
             max-width: 450px; /* 控制双按钮总宽度，紧凑美观 */
         }
-
         /* 极简画册风长条按钮 */
         .inquiry-action-btn {
             flex: 1;
@@ -992,8 +988,8 @@
             </div>
 
             <div class="product-meta-box">
-                <div class="product-code" id="productCode">Item Code: TL-001</div>
                 <h1 class="product-title" id="productTitle">Minimalist Dimmable Ceramic Table Lamp</h1>
+                <div class="product-code" id="productCode">Item Code: TL-001</div>
                 
                 <p class="product-short-desc" id="productShortDesc">
                     Enhance your home decoration with this exquisite handcrafted wreath. Designed with high-quality weather-resistant materials, it offers a full-bodied, fresh look year-round. Perfect for hanging on your front door, entryway, fireplace mantle, or living room wall to add a natural and welcoming touch.
@@ -1077,11 +1073,12 @@ function handleSearch() {
             const productInfo = detailsDatabase[productKey];
 
             if (productInfo) {
-                // 渲染产品页面大标题
-                document.getElementById('productTitle').innerText = productKey.toUpperCase();
-                // 渲染产品编号
+                const titleCaseName = productKey.replace(/\w\S*/g, function(txt) {
+                    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                });
+                document.getElementById('productTitle').innerText = titleCaseName;
                 document.getElementById('productCode').innerText = productInfo.code;
-                // 🌟 新增：动态渲染产品短描述（如果 JS 里没写，就显示默认描述）
+
                 const shortDescEl = document.getElementById('productShortDesc');
                 if (shortDescEl) {
                     shortDescEl.innerText = productInfo.description || "High-quality holiday decor designed for indoor and outdoor displays. Custom specifications and wholesale pricing available upon request.";
