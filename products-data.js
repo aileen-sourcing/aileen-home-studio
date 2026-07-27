@@ -900,6 +900,29 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: "Fall decor")
+    // ==========================================
+    "summer floral wreath sunflower lemon front door wreath artificial flower greenery wreath for outdoor home decor": {
+        category: "holiday",
+        subcategory: "fall-decor", 
+        code: "Item Code: fw20260727",
+        description: "This summer floral wreath includes sunflower style and lemon greenery style artificial wreath options. Made of durable artificial flowers fruits and lush green leaves, this front door wreath maintains bright vivid color without frequent maintenance. The seasonal wreath brings fresh vibrant summer atmosphere to your home. Perfect to hang on front door, porch, wall, window or indoor entryway decoration. Lightweight and easy to hang, ideal summer home decor for farmhouse rustic neutral style houses.",
+        images: [
+            "images/products/holiday-decor/fall-decor/wreath/fw20260727/1.jpg",
+            "images/products/holiday-decor/fall-decor/wreath/fw20260727/2.jpg",
+            "images/products/holiday-decor/fall-decor/wreath/fw20260727/3.jpg",
+            "images/products/holiday-decor/fall-decor/wreath/fw20260727/4.jpg",
+            "images/products/holiday-decor/fall-decor/wreath/fw20260727/5.jpg",
+            "images/products/holiday-decor/fall-decor/wreath/fw20260727/6.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Material", value: "Artificial silk flower, Plastic fruit, Fabric green leaves, Vine base" },
+            { label: "Feature", value: "Fade resistant, No watering required, Easy to hang" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
+    // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "easter")
     // ==========================================
     "easter egg wreath spring greenery front door home decoration": {
