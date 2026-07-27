@@ -321,11 +321,11 @@
         .product-name, 
         .product-info h3, 
         .product-title-text { 
-            white-space: normal !important;      /* 允许换行 */
-            overflow: visible !important;        /* 溢出可见 */
-            text-overflow: clip !important;      /* 彻底不留省略号 */
-            min-height: auto !important;         /* 拔掉原本限制的 40px 高度线 */
-            height: auto !important; 
+            white-space: nowrap !important;       /* 强制单行，禁止换行 */
+            overflow: hidden !important;          /* 超出部分隐藏 */
+            text-overflow: ellipsis !important;   /* 超出部分替换为省略号 ... */
+            display: block !important;            /* 确保块级截断生效 */
+            word-break: normal !important;
         }
         @media (max-width: 768px) {
             .products-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 15px; }
