@@ -321,11 +321,13 @@
         .product-name, 
         .product-info h3, 
         .product-title-text { 
-            white-space: normal !important;      /* 允许换行 */
-            overflow: visible !important;        /* 溢出可见 */
-            text-overflow: clip !important;      /* 彻底不留省略号 */
-            min-height: auto !important;         /* 拔掉原本限制的 40px 高度线 */
-            height: auto !important; 
+            white-space: nowrap !important;       /* 强制在一行内显示，禁止换行 */
+            overflow: hidden !important;          /* 隐藏溢出的部分 */
+            text-overflow: ellipsis !important;   /* 末尾显示省略号 ... */
+            display: block !important;
+            width: 100% !important;
+            height: auto !important;
+            min-height: auto !important;
         }
         @media (max-width: 768px) {
             .products-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 15px; }
@@ -650,12 +652,11 @@
     .product-name {
         font-size: 0.68rem !important;
         line-height: 1.2 !important;
-        height: 26px !important;
+        white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
-        display: -webkit-box !important;
-        -webkit-box-orient: vertical !important;
-        -webkit-line-clamp: 2 !important;
+        display: block !important;
+        height: auto !important;
     }
 
     .inquiry-action-btn {
@@ -1069,6 +1070,18 @@
     // ==========================================
     // 3. 卡片生成函数（完全还原完整的 Email / WhatsApp 询价文本格式）
     // ==========================================
+    function formatTitleCase(str) {
+    if (!str) return '';
+    const lowerWords = ['a', 'an', 'the', 'and', 'but', 'or', 'for', 'nor', 'on', 'at', 'to', 'from', 'by', 'with', 'in', 'of'];
+    return str.toLowerCase().split(' ').map((word, index) => {
+        if (!word) return '';
+        if (word === '&' || !isNaN(word)) return word;
+        if (index === 0 || !lowerWords.includes(word)) {
+            return word.charAt(0).toUpperCase() + word.slice(1);
+        }
+        return word;
+    }).join(' ');
+}
     function buildProductCardHtml(key, product, formattedTitle) {
         let firstImg = "images/placeholder.jpg";
         if (product.images && product.images.length > 0) {
@@ -1088,7 +1101,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-meta-code">${product.code || ''}</div>
-                    <h3 class="product-title-text">${key.toUpperCase()}</h3>
+                    <h3 class="product-title-text" title="${key}">${formatTitleCase(key)}</h3>
                     <div class="inquiry-actions-group" onclick="event.stopPropagation();">
                         <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
                             <i class="fa-regular fa-envelope"></i> Email
