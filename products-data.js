@@ -61,6 +61,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260709",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260709/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260709/2.jpg",
@@ -77,6 +78,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260710",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260710/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260710/2.jpg",
@@ -92,6 +94,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260712",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260712/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260712/2.jpg",
@@ -107,6 +110,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260713",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260713/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260713/2.jpg",
@@ -124,6 +128,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260714",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260714/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260714/2.jpg",
@@ -139,6 +144,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260715",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260715/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260715/2.jpg",
@@ -155,6 +161,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260716",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260716/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260716/2.jpg",
@@ -171,6 +178,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260717",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260717/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260717/2.jpg",
@@ -188,6 +196,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260718",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260718/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260718/2.jpg",
@@ -204,6 +213,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260719",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260719/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260719/2.jpg",
@@ -220,6 +230,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260720",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260720/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260720/2.jpg",
@@ -236,6 +247,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260721",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260721/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260721/2.jpg",
@@ -251,6 +263,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260722",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260722/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260722/2.jpg",
@@ -268,6 +281,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260723",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/christmas-tree/ct20260723/1.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260723/2.jpg",
@@ -288,6 +302,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260708",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-2.jpg",
@@ -306,6 +321,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260709",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260709/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260709/2.jpg",
@@ -322,6 +338,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260710",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260710/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260710/2.jpg",
@@ -337,6 +354,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260711",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260711/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260711/2.jpg",
@@ -351,6 +369,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260712",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260712/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260712/2.jpg",
@@ -367,6 +386,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260713",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260713/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260713/2.jpg",
@@ -381,6 +401,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260714",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260714/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260714/2.jpg",
@@ -396,6 +417,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260715",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260715/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260715/2.jpg",
@@ -412,6 +434,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260716",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260716/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260716/2.jpg",
@@ -429,6 +452,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260717",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260717/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260717/2.jpg",
@@ -446,6 +470,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260718",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260718/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260718/2.jpg",
@@ -463,6 +488,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260719",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260719/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260719/2.jpg",
@@ -477,6 +503,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260720",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260720/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260720/2.jpg"
@@ -490,6 +517,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260721",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260721/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260721/2.jpg",
@@ -507,6 +535,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260722",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260722/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260722/2.jpg",
@@ -523,6 +552,7 @@ const detailsDatabase = {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260723",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/wreath/w20260723/1.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260723/2.jpg",
@@ -542,6 +572,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: g20260711",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/garland/g20260711/g20260711-1.jpg",
             "images/products/holiday-decor/christmas/garland/g20260711/g20260711-2.jpg",
@@ -563,6 +594,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260714",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/2.jpg"
@@ -576,6 +608,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260715",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-2.jpg",
@@ -592,6 +625,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260716",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mt20260716-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mt20260716-2.jpg",
@@ -609,6 +643,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260717",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260717/mt20260717-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260717/mt20260717-2.jpg",
@@ -624,6 +659,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260718",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260718/mt20260718-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260718/mt20260718-2.jpg",
@@ -641,6 +677,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260719",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-2.jpg",
@@ -655,6 +692,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260720",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260720/mt20260720-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260720/mt20260720-2.jpg"
@@ -668,6 +706,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260721",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260721/mt20260721-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260721/mt20260721-2.jpg",
@@ -685,6 +724,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260722",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260722/mt20260722-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260722/mt20260722-2.jpg",
@@ -702,6 +742,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260723",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260723/mt20260723-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260723/mt20260723-2.jpg",
@@ -719,6 +760,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260724",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260724/mt20260724-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260724/mt20260724-2.jpg"
@@ -732,6 +774,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260725",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260725/mt20260725-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260725/mt20260725-2.jpg",
@@ -749,6 +792,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260726",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260726/mt20260726-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260726/mt20260726-2.jpg",
@@ -764,6 +808,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260727",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260727/mt20260727-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260727/mt20260727-2.jpg",
@@ -781,6 +826,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "easter", 
         code: "Item Code: ew20260727",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/easter/wreath/ew20260727/1.jpg",
             "images/products/holiday-decor/easter/wreath/ew20260727/2.jpg",
@@ -801,6 +847,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "halloween", 
         code: "Item Code: h20260716",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/halloween/tree/h20260716/1.jpg",
             "images/products/holiday-decor/halloween/tree/h20260716/2.jpg",
@@ -820,6 +867,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "spring-decor", 
         code: "Item Code: sw20260727",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/spring-decor/wreath/sw20260727/1.jpg",
             "images/products/holiday-decor/spring-decor/wreath/sw20260727/2.jpg",
@@ -837,6 +885,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "spring-decor", 
         code: "Item Code: sw20260728",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/spring-decor/wreath/sw20260728/1.jpg",
             "images/products/holiday-decor/spring-decor/wreath/sw20260728/2.jpg",
@@ -857,6 +906,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260717",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260717/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260717/2.jpg",
@@ -870,6 +920,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260718",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260718/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260718/2.jpg",
@@ -883,6 +934,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260719",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260719/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260719/2.jpg",
@@ -896,6 +948,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260720",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260720/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260720/2.jpg",
@@ -909,6 +962,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260721",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260721/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260721/2.jpg",
@@ -922,6 +976,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260722",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260722/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260722/2.jpg",
@@ -938,6 +993,7 @@ const detailsDatabase = {
         category: "holiday",
         subcategory: "tree-skirts", 
         code: "Item Code: ts20260717",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/holiday-decor/tree-skirts/ts20260717/1.jpg",
             "images/products/holiday-decor/tree-skirts/ts20260717/2.jpg",
@@ -956,6 +1012,7 @@ const detailsDatabase = {
         category: "lighting",
         subcategory: "table-lamps", 
         code: "Item Code: tb20260630",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/lighting/table-lamps/tb20260630/tb20260630-1.jpg",
             "images/products/lighting/table-lamps/tb20260630/tb20260630-2.jpg"
@@ -971,6 +1028,7 @@ const detailsDatabase = {
         category: "lighting",
         subcategory: "floor-lamps", 
         code: "Item Code: fl20260715",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/lighting/floor-lamps/fl20260715/fl20260715-1.jpg",
         ], 
@@ -984,6 +1042,7 @@ const detailsDatabase = {
         category: "lighting",
         subcategory: "pendant-lights", 
         code: "Item Code: p20260630",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/lighting/pendant-lights/p20260630/p20260630-1.jpg",
             "images/products/lighting/pendant-lights/p20260630/p20260630-2.jpg"
@@ -999,6 +1058,7 @@ const detailsDatabase = {
         category: "lighting",
         subcategory: "wall-lighting", 
         code: "Item Code: wl20260715",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: ["images/products/lighting/wall-lighting/wl20260715/wl20260715-1.jpg"], 
         specs: [
             { label: "Material", value: "Wooden + Glass" },
@@ -1013,6 +1073,7 @@ const detailsDatabase = {
         category: "material",
         subcategory: "pvc-film", 
         code: "Item Code: PF-20260710",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/raw-material/pvc-film/pf20260710/pf20260710-1.jpg",
             "images/products/raw-material/pvc-film/pf20260710/pf20260710-2.jpg",
@@ -1031,6 +1092,7 @@ const detailsDatabase = {
         category: "material",
         subcategory: "pe-tips", 
         code: "Item Code: PE-20260713",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/raw-material/pe-tips/PE20260713/PE20260713-1.jpg",
             "images/products/raw-material/pe-tips/PE20260713/PE20260713-2.jpg",
@@ -1051,6 +1113,7 @@ const detailsDatabase = {
         category: "material",
         subcategory: "polyester-thread", 
         code: "Item Code: PS-20260708",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/raw-material/polyester-thread/ps20260708/ps20260708-1.jpg",
             "images/products/raw-material/polyester-thread/ps20260708/ps20260708-2.jpg",
@@ -1066,6 +1129,7 @@ const detailsDatabase = {
         category: "material",
         subcategory: "metal-tube", 
         code: "Item Code: t20260715",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/raw-material/metal-tube/t20260715/t20260715-1.jpg",
             "images/products/raw-material/metal-tube/t20260715/t20260715-2.jpg",
@@ -1083,6 +1147,7 @@ const detailsDatabase = {
         category: "material", 
         subcategory: "metal-stands", 
         code: "Item Code: MS-20260629",
+        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
         images: [
             "images/products/raw-material/metal-stands/ms20260629/ms20260629-1.jpg",
             "images/products/raw-material/metal-stands/ms20260629/ms20260629-2.jpg",
