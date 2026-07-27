@@ -42,12 +42,26 @@
             align-items: center;
         }
 
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
+        .logo-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+    z-index: 100000 !important;
+    height: 100%;
+}
+
+.logo-img {
+    height: 40px;           /* 电脑端 Logo 高度 */
+    width: auto;            /* 保持宽高比 */
+    max-width: 180px;       /* 限制最大宽度 */
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.logo-img:hover {
+    opacity: 0.9;
+}
 
         .nav-links {
             display: flex;
@@ -91,14 +105,6 @@
             margin: 0 auto !important;
             padding: 0 25px !important;
             background-color: #ffffff !important;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--primary-color);
-            letter-spacing: 1.5px;
-            flex-shrink: 0;
         }
 
         .nav-links {
@@ -503,15 +509,15 @@
 
         @media screen and (max-width: 768px) {
             /* 1. 🎯 彻底干掉手机端导航栏的“Aileen's Home Studio”长名字 */
-            .navbar .logo, 
-            .nav-container .logo, 
-            .logo, 
-            a[href="index.html"].logo {
-                display: none !important;
-                width: 0 !important;
-                margin: 0 !important;
-                padding: 0 !important;
-            }
+            .navbar .logo-brand, 
+.nav-container .logo-brand, 
+.logo-brand, 
+a[href="index.html"].logo-brand {
+    display: none !important;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
             /* 🌟 新增：强制让详情页在手机端的左右内边距也缩至 20px，左右不留无用真空 */
             .navbar {
@@ -720,11 +726,18 @@
         gap: 10px !important;
         justify-content: space-between !important;
     }
-    .logo {
-        display: block !important;
-        font-size: 1.05rem !important;
-        white-space: nowrap !important;
-    }
+    .logo-brand {
+    display: flex !important;
+    align-items: center !important;
+    margin-right: 10px !important;
+    flex-shrink: 0 !important;
+}
+
+.logo-img {
+    height: 32px !important;       /* 适度减小高度防挤压 */
+    max-width: 130px !important;
+    width: auto !important;
+}
     .nav-links {
         gap: 12px !important;
     }
@@ -805,9 +818,9 @@
         justify-content: space-between !important;
     }
     /* 🎯 隐藏 Logo 为导航菜单和搜索框腾出空间 */
-    .logo {
-        display: none !important;
-    }
+    .logo-brand {
+    display: none !important;
+}
     .nav-links {
         gap: 12px !important;
     }
@@ -867,7 +880,9 @@
 
     <header>
         <div class="container navbar">
-            <a href="index.html" class="logo">Aileen's Home Studio</a>
+            <a href="index.html" class="logo-brand">
+                <img src="images/logo.png" alt="Aileen's Home Studio" class="logo-img">
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 
