@@ -810,6 +810,23 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
+    "wreath 260728": {
+        category: "holiday",
+        subcategory: "spring-decor", 
+        code: "Item Code: sw20260728",
+        images: [
+            "images/products/holiday-decor/spring-decor/wreath/sw20260728/1.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260728/2.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260728/3.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260728/4.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260728/5.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260728/6.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+        ]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas flowers")
     // ==========================================
