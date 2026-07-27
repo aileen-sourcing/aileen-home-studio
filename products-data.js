@@ -542,7 +542,7 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "mini christmas tree")
     // ==========================================
-    "xmas tree 260714": {
+    "mini xmas tree 260714": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260714",
