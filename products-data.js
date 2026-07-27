@@ -900,6 +900,32 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: "easter")
+    // ==========================================
+    "wreath 260727": {
+        category: "holiday",
+        subcategory: "easter", 
+        code: "Item Code: ew20260727",
+        description: "Brighten any space and celebrate the season of renewal with handcrafted Easter Wreaths. Designed with lifelike greenery, pastel speckled eggs, and delicate spring blossoms, each wreath brings a fresh, festive charm to front doors, entryways, and interior walls.",
+        images: [
+            "images/products/holiday-decor/easter/wreath/ew20260727/1.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/2.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/3.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/4.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/5.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/6.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "Customizable Sizes" },
+            { label: "Festive & Vibrant Design", value: "Features realistic greenery, colorful Easter eggs, and springtime accents to create an inviting seasonal atmosphere." },
+            { label: "Durable Construction", value: "Built on a sturdy base using high-quality artificial materials that stay fresh and vibrant season after season." },
+            { label: "Versatile Decorating Options", value: "Ideal for front doors, covered porches, mantels, living room walls, or as a charming table centerpiece." },
+            { label: "Low Maintenance", value: "Requires no watering or pruning—simply dust lightly with a dry cloth to maintain its beautiful look." },
+            { label: "Material", value: "Premium artificial foliage, foam eggs, natural grapevine / metal ring" },
+            { label: "Application", value: "Suitable for indoor and covered outdoor use" },
+        ]
+    },
+    // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas flowers")
     // ==========================================
     "blue flower 260717": {
