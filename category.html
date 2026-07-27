@@ -44,12 +44,25 @@
             margin: 0 auto; 
             padding: 0 40px; 
         }
-        .logo { 
-            font-size: 1.5rem; 
-            font-weight: 800; 
-            color: var(--primary-color); 
-            letter-spacing: 1.5px; 
-        }
+        .logo-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.logo-img {
+    height: 40px;           /* 控制标准显示高度 */
+    width: auto;            /* 自动保持图片的宽高比例 */
+    max-width: 180px;       /* 防止在横屏或大屏占用过多宽度 */
+    object-fit: contain;    /* 保证图片不拉伸变形 */
+    transition: var(--transition);
+}
+
+.logo-img:hover {
+    opacity: 0.9;
+}
         .back-home { 
             font-weight: 700; 
             font-size: 0.85rem; 
@@ -454,11 +467,11 @@
         /* 📱 2. 适配手机与小屏幕尺寸（宽度 <= 768px，如所有手机设备） */
         @media (max-width: 768px) {
             /* 1. 🎯 彻底隐藏顶部的 Logo，防止它挤压导航栏 */
-            .navbar .logo,
-            header .logo,
-            a.logo {
-                display: none !important;
-            }
+            .navbar .logo-brand,
+header .logo-brand,
+a.logo-brand {
+    display: none !important;
+}
 
             /* 🌟 强制让手机端顶栏的左右留边缩减至 15px，完美对齐下方的产品边距 */
             .navbar {
@@ -672,11 +685,17 @@
         padding: 0 20px !important;
     }
 
-    .logo {
-        font-size: 1.25rem !important;
-        margin-right: 15px !important;
-    }
-
+    .logo-brand {
+    margin-right: 15px !important;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+.logo-img {
+    height: 32px !important;       /* 平板横屏微调适当高度，防止挤压右侧菜单 */
+    max-width: 130px !important;   /* 限制最大宽度 */
+    width: auto !important;
+}
     .nav-links {
         gap: 16px !important;
     }
@@ -745,9 +764,9 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
     /* 顶部导航：隐藏 Logo 给菜单和搜索框腾地方 */
-    .logo {
-        display: none !important;
-    }
+    .logo-brand {
+    display: none !important;
+}
 
     .navbar {
         padding: 0 15px !important;
@@ -848,7 +867,9 @@
 
     <header>
         <div class="container navbar">
-            <a href="index.html" class="logo">Aileen's Home Studio</a>
+            <a href="index.html" class="logo-brand">
+                <img src="images/logo.png" alt="Aileen's Home Studio" class="logo-img">
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 
