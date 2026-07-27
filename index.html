@@ -124,13 +124,26 @@
             height: 65px; 
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--primary-color);
-            letter-spacing: 1.5px;
-            flex-shrink: 0;
-        }
+        /* --- 横向 Logo 图片容器与尺寸控制 --- */
+.logo-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;         /* 保护 Logo 不会在屏幕变窄时被挤压 */
+    height: 100%;
+}
+
+.logo-img {
+    height: 40px;           /* 配合 65px 的 header 高度，设置合适的显示高度 */
+    width: auto;            /* 宽度按 400:133 的比例自动伸展 */
+    max-width: 180px;       /* 限制最大宽度，防止占用过多空间 */
+    object-fit: contain;    /* 保证图片不拉伸变形 */
+    transition: var(--transition);
+}
+
+.logo-img:hover {
+    opacity: 0.9;
+}
 
         .nav-links {
             display: flex;
@@ -683,11 +696,13 @@
     .mega-menu-container { grid-template-columns: 1fr; gap: 15px; padding: 0; }
 
     /* ✨ 终极强效修复：彻底锁死三横线内部尺寸 */
-    .logo {
-        font-size: 1rem !important;
-        white-space: nowrap !important;
-        flex-shrink: 1 !important;
-    }
+    .logo-brand {
+    flex-shrink: 0 !important;
+}
+.logo-img {
+    height: 30px !important;       /* 手机端适当缩小高度 */
+    max-width: 120px !important;
+}
     .search-container {
         flex-grow: 1 !important;
         flex-shrink: 1 !important;
@@ -1085,12 +1100,14 @@
     }
 
     /* 2. Logo 保持原样门面，左贴边 */
-    .logo {
-        font-size: 1.0rem !important;
-        margin-right: 0 !important;
-        white-space: nowrap !important;
-        flex-shrink: 0 !important;
-    }
+    .logo-brand {
+    margin-right: 0 !important;
+    flex-shrink: 0 !important;
+}
+.logo-img {
+    height: 35px !important;       /* 平板竖屏高度微调 */
+    max-width: 140px !important;
+}
 
     /* 3. 释放出的空间全部给菜单：加大字号 + 增加适度间距 */
     .nav-links {
@@ -1214,7 +1231,9 @@
 
     <header>
         <div class="container navbar">
-            <a href="index.html" class="logo">Aileen's Home Studio</a>
+            <a href="index.html" class="logo-brand">
+                <img src="images/logo.png" alt="Aileen's Home Studio" class="logo-img">
+            </a>
             
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
