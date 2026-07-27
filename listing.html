@@ -813,6 +813,10 @@
     width: 100% !important;               /* 填满卡片宽度，以触发省略号 */
     max-width: 100% !important;
 }
+/* 让分类页的产品标题每个单词首字母大写 */
+.grid-product-title {
+    text-transform: capitalize !important;
+}
 
     </style>
 </head>
@@ -1126,7 +1130,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-meta-code">${product.code || ''}</div>
-                    <h3 class="product-title-text">${key.toUpperCase()}</h3>
+                    <h3 class="grid-product-title">${key}</h3>
                     <div class="inquiry-actions-group" onclick="event.stopPropagation();">
                         <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
                             <i class="fa-regular fa-envelope"></i> Email
