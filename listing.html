@@ -775,6 +775,44 @@
         margin-bottom: 8px !important;
     }
 }
+/* 1. 修复网格容器：限制最小列宽为 0，防止被长文字/长标题撑大 */
+.products-grid {
+    display: grid !important;
+    /* 给 grid 项赋予 minmax(0, 1fr)，确保文字再长也不会撑开网格 */
+    grid-template-columns: repeat(auto-fill, minmax(0, 1fr)) !important; 
+}
+
+/* 电脑端多列规则（配合 minmax(0, 1fr) 使用） */
+@media (min-width: 1201px) {
+    .products-grid { 
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important; 
+    }
+    #christmas-sidebar + .products-grid,
+    #christmas-sidebar ~ .products-grid { 
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important; 
+    }
+}
+
+/* 2. 修复卡片与标题：限制卡片的最大宽度，并开启严格截断 */
+.product-card,
+.product-item,
+.products-grid > div {
+    min-width: 0 !important;      /* 允许卡片在网格中缩小 */
+    max-width: 100% !important;   /* 限制卡片绝不超出网格 */
+    overflow: hidden !important;  /* 确保超出容器的内容被剪裁 */
+}
+
+/* 3. 标题单行省略号（确保生效） */
+.product-name, 
+.product-info h3, 
+.product-title-text { 
+    white-space: nowrap !important;       /* 强制单行 */
+    overflow: hidden !important;          /* 溢出隐藏 */
+    text-overflow: ellipsis !important;   /* 显示省略号 ... */
+    display: block !important;
+    width: 100% !important;               /* 填满卡片宽度，以触发省略号 */
+    max-width: 100% !important;
+}
 
     </style>
 </head>
