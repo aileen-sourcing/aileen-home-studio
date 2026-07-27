@@ -302,34 +302,51 @@
         .inquiry-btn { width: 100%; padding: 10px; background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 2px; cursor: pointer; transition: var(--transition); }
         .product-card:hover .inquiry-btn { background: var(--primary-color); color: var(--white); }
 
-        @media (max-width: 1200px) { .products-grid { grid-template-columns: repeat(3, 1fr); } }
-        /* ⬇️ 直接复制并粘贴在 @media (max-width: 1200px) 的大括号后面 ⬇️ */
+        /* 平板/中等屏幕（<=1200px）：3 列 */
+@media (max-width: 1200px) { 
+    .products-grid { 
+        grid-template-columns: repeat(3, 1fr) !important; 
+    } 
+}
 
-        /* 1. 电脑端大屏幕（大于1200px）：默认没侧边栏时变成 5 列 */
-        @media (min-width: 1201px) {
-            .products-grid { 
-                grid-template-columns: repeat(5, 1fr) !important; 
-            }
-            /* 当左侧有 #christmas-sidebar（带筛选框）并存时，强行恢复成 4 列 */
-            #christmas-sidebar + .products-grid,
-            #christmas-sidebar ~ .products-grid { 
-                grid-template-columns: repeat(4, 1fr) !important; 
-            }
-        }
+/* 1. 电脑端大屏幕（>1200px）：默认无侧边栏时 5 列 */
+@media (min-width: 1201px) {
+    .products-grid { 
+        grid-template-columns: repeat(5, 1fr) !important; 
+    }
 
-        /* 2. 彻底拔掉省略号限制：让电脑端和手机端的所有商品标题文字，多少行都全部完整展示 */
-        .product-name, 
-        .product-info h3, 
-        .product-title-text { 
-            white-space: nowrap !important;       /* 强制在一行内显示，禁止换行 */
-            overflow: hidden !important;          /* 隐藏溢出的部分 */
-            text-overflow: ellipsis !important;   /* 末尾显示省略号 ... */
-            display: block !important;
-            width: 100% !important;
-            max-width: 100% !important;
-            height: auto !important;
-            min-height: auto !important;
-        }
+    /* 当左侧侧边栏显示（并非 display: none）时，强制变成 4 列 */
+    #christmas-sidebar:not([style*="display: none"]) ~ .products-grid,
+    #christmas-sidebar:not([style*="display: none"]) + .products-grid { 
+        grid-template-columns: repeat(4, 1fr) !important; 
+    }
+}
+
+/* 确保网格与外层容器能够铺满，不留空白 */
+.listing-container {
+    width: 100% !important;
+    max-width: 1400px; /* 或者你项目的主容器最大宽度 */
+    margin: 0 auto;
+}
+
+.products-grid {
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* 2. 彻底拔掉限制：文字单行显示 + 超出显示省略号（保留你原本的写法） */
+.product-name, 
+.product-info h3, 
+.product-title-text { 
+    white-space: nowrap !important;       /* 强制在一行内显示，禁止换行 */
+    overflow: hidden !important;          /* 隐藏溢出的部分 */
+    text-overflow: ellipsis !important;   /* 末尾显示省略号 ... */
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+}
         @media (max-width: 768px) {
             .products-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 15px; }
             .listing-container { padding: 0 20px; }
@@ -898,7 +915,12 @@
         <a href="index.html">Home</a> / <a href="javascript:history.back();">Catalog</a> / <span id="br-current">List</span>
     </div>
 
+    <!-- 1. 补全列表头部大标题 -->
     <div class="listing-container">
+        <div class="listing-header">
+            <h1 class="listing-title" id="listing-main-title">Products</h1>
+        </div>
+
         <div style="display: flex; gap: 30px; align-items: flex-start; max-width: 1400px; margin: 0 auto; width: 100%;">
             
             <div id="christmas-sidebar" style="display: none; width: 250px; flex-shrink: 0; background: #fff; border: 1px solid var(--border-color); padding: 20px; border-radius: 4px; position: sticky; top: 105px; text-align: left; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
