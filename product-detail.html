@@ -1108,17 +1108,27 @@ function handleSearch() {
                     mainImgEl.title = titleCaseName;
 
                     // 动态生成下方的小图切换轨道
-                    let thumbHtml = "";
-                    productInfo.images.forEach((imgUrl, index) => {
-                        const activeClass = index === 0 ? "thumb-item active" : "thumb-item";
-                        const altText = `${titleCaseName} - Detail Image ${index + 1}`;
-                        thumbHtml += `
-                            <div class="${activeClass}" onclick="switchImage(this, '${imgUrl}')">
-                                <img src="${imgUrl}" alt="${altText}" title="${altText}" loading="lazy" width="60" height="60" onerror="this.src='images/placeholder.jpg'">
-                            </div>
-                        `;
-                    });
-                    document.getElementById('thumbList').innerHTML = thumbHtml;
+let thumbHtml = "";
+productInfo.images.forEach((imgUrl, index) => {
+    const activeClass = index === 0 ? "thumb-item active" : "thumb-item";
+    const altText = `${titleCaseName} - Detail Image ${index + 1}`;
+    
+    // 🌟 防爆改动 1：对路径里的单引号进行转义，防止打断 onclick 的单引号
+    const safeImgUrl = String(imgUrl).replace(/'/g, "\\'");
+
+    thumbHtml += `
+        <div class="${activeClass}" onclick="switchImage(this, '${safeImgUrl}')">
+            <img src="${safeImgUrl}" 
+                 alt="${altText}" 
+                 title="${altText}" 
+                 loading="lazy" 
+                 width="60" 
+                 height="60" 
+                 onerror="this.onerror=null; this.src='images/placeholder.jpg';">
+        </div>
+    `;
+});
+document.getElementById('thumbList').innerHTML = thumbHtml;
                 } else {
                     // 如果数据库里没配图片，显示一个占位图
                     document.getElementById('mainProductImg').src = "images/placeholder.jpg";
