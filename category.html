@@ -861,6 +861,13 @@ a.logo-brand {
         margin-top: 4px !important;
         margin-bottom: 2px !important;
     }
+    /* 🌟 电脑端左侧 Filter 模块固定不随页面滚动 */
+    .sidebar-filter {
+        position: sticky !important;
+        top: 105px !important;       /* 距离浏览器顶部 105px（避开 85px 的顶部导航栏，留出舒适边距） */
+        height: fit-content !important; /* 保证高度根据内容自适应，避免高度被撑满拉长 */
+        z-index: 20 !important;
+    }
 }
 /* 让分类页的产品标题每个单词首字母大写 */
 .grid-product-title {
