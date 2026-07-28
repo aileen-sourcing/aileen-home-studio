@@ -790,24 +790,32 @@ a.logo-brand {
         flex: 0 0 160px !important;
     }
 
-    /* 竖屏：1 行 3 列 */
+    /* 竖屏：1 行 3 列 + 限制列宽防撑大 */
     .products-grid,
     #products-grid-container {
         display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
         gap: 15px 10px !important;
         width: 100% !important;
     }
 
+    .grid-product-card {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
     .grid-product-title {
-        font-size: 0.78rem !important;
-        line-height: 1.25 !important;
-        height: 30px !important;
+        font-size: 0.72rem !important;
+        line-height: 1.2 !important;
+        white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
-        display: -webkit-box !important;
-        -webkit-box-orient: vertical !important;
-        -webkit-line-clamp: 2 !important;
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 2px 0 !important;
     }
 
     .inquiry-actions-group {
