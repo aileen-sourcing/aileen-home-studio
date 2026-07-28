@@ -881,7 +881,7 @@ a[href="index.html"].logo-brand {
     <header>
         <div class="container navbar">
             <a href="index.html" class="logo-brand">
-                <img src="images/logo.png" alt="Aileen's Home Studio" class="logo-img">
+                <img src="images/logo.png" alt="Aileen's Home Studio Logo" title="Aileen's Home Studio" width="180" height="40" class="logo-img">
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -984,7 +984,7 @@ a[href="index.html"].logo-brand {
             
             <div class="product-gallery">
                 <div class="main-image-box" id="zoomContainer">
-                    <img id="mainProductImg" src="images/lamp01.jpg" alt="Product Main Image">
+                    <img id="mainProductImg" src="images/lamp01.jpg" alt="Product Main Image" width="600" height="600" onerror="this.src='images/placeholder.jpg'">
                 </div>
                 <div class="thumb-list" id="thumbList">
                     <div class="thumb-item active" onclick="switchImage(this, 'images/lamp01.jpg')">
@@ -1099,23 +1099,26 @@ function handleSearch() {
                     shortDescEl.innerText = productInfo.description || "High-quality holiday decor designed for indoor and outdoor displays. Custom specifications and wholesale pricing available upon request.";
                 }
 
-                // 🌟 ✨ 【图片连通核心】：动态加载主图与多张缩略图
-                if (productInfo.images && productInfo.images.length > 0) {
-                    // 将数据库里的第一张图设置为默认显示的大图
-                    document.getElementById('mainProductImg').src = productInfo.images[0];
+                // 🌟 ✨ 【图片连通核心】：动态加载主图与多张缩略图（优化 SEO 与属性）
+if (productInfo.images && productInfo.images.length > 0) {
+    const mainImgEl = document.getElementById('mainProductImg');
+    // 设置首图 src、alt 与 title 标签（包含产品名称与编号，利于图片 SEO）
+    mainImgEl.src = productInfo.images[0];
+    mainImgEl.alt = `${titleCaseName} - ${productInfo.code}`;
+    mainImgEl.title = titleCaseName;
 
-                    // 动态生成下方的小图切换轨道
-                    let thumbHtml = "";
-                    productInfo.images.forEach((imgUrl, index) => {
-                        // 第一张默认加上 active 类名（红框高亮）
-                        const activeClass = index === 0 ? "thumb-item active" : "thumb-item";
-                        thumbHtml += `
-                            <div class="${activeClass}" onclick="switchImage(this, '${imgUrl}')">
-                                <img src="${imgUrl}" alt="Thumbnail ${index + 1}">
-                            </div>
-                        `;
-                    });
-                    document.getElementById('thumbList').innerHTML = thumbHtml;
+    // 动态生成下方的小图切换轨道
+    let thumbHtml = "";
+    productInfo.images.forEach((imgUrl, index) => {
+        const activeClass = index === 0 ? "thumb-item active" : "thumb-item";
+        const altText = `${titleCaseName} - Detail Image ${index + 1}`;
+        thumbHtml += `
+            <div class="${activeClass}" onclick="switchImage(this, '${imgUrl}')">
+                <img src="${imgUrl}" alt="${altText}" title="${altText}" loading="lazy" width="60" height="60" onerror="this.src='images/placeholder.jpg'">
+            </div>
+        `;
+    });
+    document.getElementById('thumbList').innerHTML = thumbHtml;
                 } else {
                     // 如果数据库里没配图片，显示一个占位图
                     document.getElementById('mainProductImg').src = "images/placeholder.jpg";
