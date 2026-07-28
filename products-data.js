@@ -820,46 +820,6 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
-    // 💡 大类 1：Holiday Decor (cat: "easter")
-    // ==========================================
-    "wreath 260727": {
-        category: "holiday",
-        subcategory: "easter", 
-        code: "Item Code: ew20260727",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
-        images: [
-            "images/products/holiday-decor/easter/wreath/ew20260727/1.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/2.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/3.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/4.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/5.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/6.jpg"
-        ], 
-        specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
-        ]
-    },
-    // ==========================================
-    // 💡 大类 1：Holiday Decor (cat: "halloween")
-    // ==========================================
-    "black tree 260717": {
-        category: "holiday",
-        subcategory: "halloween", 
-        code: "Item Code: h20260716",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
-        images: [
-            "images/products/holiday-decor/halloween/tree/h20260716/1.jpg",
-            "images/products/holiday-decor/halloween/tree/h20260716/2.jpg",
-            "images/products/holiday-decor/halloween/tree/h20260716/3.jpg",
-            "images/products/holiday-decor/halloween/tree/h20260716/4.jpg",
-            "images/products/holiday-decor/halloween/tree/h20260716/5.jpg"
-        ], 
-        specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
-        ]
-    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Spring decor")
     // ==========================================
@@ -906,6 +866,9 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: "Summer decor")
+    // ==========================================
+    // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Fall decor")
     // ==========================================
     "summer floral wreath sunflower lemon front door wreath artificial flower greenery wreath for outdoor home decor": {
@@ -926,6 +889,33 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
         ]
     },
+    // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: "Winter decor")
+    // ==========================================
+    // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: "halloween")
+    // ==========================================
+    "pre lit black mini halloween tree with purple lights tabletop potted artificial tree for home party decor": {
+        category: "holiday",
+        subcategory: "halloween", 
+        code: "Item Code: h20260716",
+        description: "Bring spooky festive charm to any tabletop or entryway with this pre lit black mini halloween tree. Crafted with dense black artificial foliage and glowing purple lights, it offers a lush natural look that requires no maintenance. Perfect for decorating living rooms, mantelpieces, desks, or front porches, adding a creepy cozy halloween atmosphere to any space.",
+        images: [
+            "images/products/holiday-decor/halloween/tree/h20260716/1.jpg",
+            "images/products/holiday-decor/halloween/tree/h20260716/2.jpg",
+            "images/products/holiday-decor/halloween/tree/h20260716/3.jpg",
+            "images/products/holiday-decor/halloween/tree/h20260716/4.jpg",
+            "images/products/holiday-decor/halloween/tree/h20260716/5.jpg"
+        ], 
+        specs: [
+            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
+            { label: "Material", value: "PVC artificial branches" },
+            { label: "Features", value: "Pre-installed purple LED lights, easy assembly, lightweight, reusable halloween ornament" },
+            { label: "Application", value: "Indoor tabletop, desk, mantel, halloween party display, home seasonal decor" }
+        ]
+    },
+    // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: "Thanksgiving")
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "easter")
     // ==========================================
@@ -1061,23 +1051,31 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: "Storage Bags")
+    // ==========================================
+    // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: "Tinsel Garland")
+    // ==========================================
+    // ==========================================
     // 💡 大类 2：Home Lighting (cat: "lighting")
     // ==========================================
     
-    "pumpkin table lamp": {
+    "mushroom wooden table lamp ribbed solid wood desk lamp for bedroom bedside living room decor": {
         category: "lighting",
         subcategory: "table-lamps", 
         code: "Item Code: tb20260630",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Create a warm cozy ambience for indoor spaces with this mushroom wooden table lamp. Crafted with natural ribbed solid wood lampshade and tapered wood base, it casts soft gentle ambient lighting. Perfect for bedroom nightstands, living room side tables, study desks, adding minimalist rustic style to residential interiors.",
         images: [
             "images/products/lighting/table-lamps/tb20260630/tb20260630-1.jpg",
             "images/products/lighting/table-lamps/tb20260630/tb20260630-2.jpg"
 
         ], 
         specs: [
-            { label: "Material", value: "Premium Wooden Base" },
-            { label: "Certification", value: "CE / RoHS / UL Compliant" },
-            { label: "Application", value: "Hotel Bedroom, Living Room, Showroom" }
+            { label: "Material", value: "Ribbed solid wood lampshade, solid wood base, metal fitting" },
+            { label: "Light Source", value: "E27 bulb base, Bulb not included" },
+            { label: "Color", value: "Natural wood tone" },
+            { label: "Features", value: "Soft diffused lighting, mushroom shape design, easy assembly, stable wooden base" },
+            { label: "Application", value: "Bedroom bedside, living room side table, study desk, hotel room decoration" }
         ]
     },
     "wooden carved floor lamp wabi sabi linen shade standing lamp for living room bedroom decor": {
@@ -1095,20 +1093,21 @@ const detailsDatabase = {
             { label: "Application", value: "living room bedroom entryway study lounge" }
         ]
     },
-    "pendant light": {
+    "vintage lotus glass pendant light wooden small hanging lamp for dining room kitchen island": {
         category: "lighting",
         subcategory: "pendant-lights", 
         code: "Item Code: p20260630",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Bring soft warm atmosphere to indoor spaces with this vintage lotus glass pendant light. Designed with petal-shaped gradient glass shade and solid wood lamp holder, it delivers gentle diffused lighting. Perfect for decorating dining tables, kitchen islands, bedside areas, cafes, adding elegant retro aesthetic to residential and commercial interiors.",
         images: [
             "images/products/lighting/pendant-lights/p20260630/p20260630-1.jpg",
             "images/products/lighting/pendant-lights/p20260630/p20260630-2.jpg"
         ], 
         specs: [
-            { label: "Material", value: "Wooden and Glass" },
-            { label: "Voltage", value: "110V - 240V Available" },
-            { label: "Finish", value: "Luxury Electroplated Gold / Chrome" },
-            { label: "Application", value: "Dining Room, Luxury Hotel Lobby, Villa" }
+            { label: "Material", value: "Gradient glass shade, solid wood lamp head, metal ceiling base" },
+            { label: "Light Source", value: "E27 bulb base, Bulb not included" },
+            { label: "Color", value: "Gradient green glass, brass & brown wood finish" },
+            { label: "Application", value: "Dining room, kitchen island, bedroom bedside, cafe, bar counter decor" },
+            { label: "Features", value: "Adjustable hanging cord, soft light diffusion, retro lotus shape, easy installation" }
         ]
     },
     "walnut wood glass wall sconce adjustable swing arm wall lamp bedroom bedside reading light japanese wabi sabi wall lighting": {
@@ -1130,11 +1129,11 @@ const detailsDatabase = {
     // ⚙️ 大类 3：Raw Materials (cat: "material")
     // ==========================================
     
-    "pvc film": {
+    "pvc christmas tree raw material roll artificial pine needle plastic film for christmas tree production": {
         category: "material",
         subcategory: "pvc-film", 
         code: "Item Code: PF-20260710",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Provide premium raw material for handmade artificial christmas trees with this pvc film roll. Made of high-quality flexible pvc material, it delivers lifelike texture and excellent weather resistance. Perfect for christmas tree factories, ornament manufacturers, suitable for producing pine needles, artificial foliage and seasonal decorative branches.",
         images: [
             "images/products/raw-material/pvc-film/pf20260710/pf20260710-1.jpg",
             "images/products/raw-material/pvc-film/pf20260710/pf20260710-2.jpg",
@@ -1149,11 +1148,11 @@ const detailsDatabase = {
             { label: "Usage", value: "Raw Material for Manufacturing Christmas Tree Leaves" }
         ]
     },
-    "pe tree tips": {
+    "pe artificial pine needle branch plastic christmas tree leaf for christmas tree production": {
         category: "material",
         subcategory: "pe-tips", 
         code: "Item Code: PE-20260713",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Create lifelike artificial christmas trees with this pe pine needle branch. Made of premium polyethylene material, it features realistic texture and outstanding anti-fading performance. Perfect for christmas tree manufacturers, holiday decor factories, suitable for assembling all sizes of indoor and outdoor artificial christmas trees.",
         images: [
             "images/products/raw-material/pe-tips/PE20260713/PE20260713-1.jpg",
             "images/products/raw-material/pe-tips/PE20260713/PE20260713-2.jpg",
@@ -1164,33 +1163,35 @@ const detailsDatabase = {
         ],
 
         specs: [
-            { label: "Material", value: "PE Material" },
-            { label: "Features", value: "Anti-UV, Flame Retardant, High Tensile Strength" },
-            { label: "Color", value: "Dark Green, Light Green, Frosting Effect" },
-            { label: "Usage", value: "High-end Pine Needle Trees Production" }
+            { label: "Material", value: "PE polyethylene plastic, iron wire stem" },
+            { label: "Size", value: "Multiple specifications available, Customizable" },
+            { label: "Color", value: "Dark green, light green, frosted white tip, Customizable" },
+            { label: "Features", value: "Realistic appearance, weather resistant, fade resistant, stable shape retention" },
+            { label: "Application", value: "Artificial christmas tree assembly, pine foliage making, holiday decorative branch production" }
         ]
     },
-    "polyster thread": {
+    "pe monofilament yarn plastic filament for artificial christmas tree pine needle making": {
         category: "material",
         subcategory: "polyester-thread", 
         code: "Item Code: PS-20260708",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Provide premium raw material for artificial christmas tree foliage with this pe monofilament yarn. Made of high-strength polyethylene, it delivers uniform color and excellent tensile property. Perfect for christmas ornament manufacturers, pine needle processing factories, suitable for producing realistic christmas tree branches and decorative foliage.",
         images: [
             "images/products/raw-material/polyester-thread/ps20260708/ps20260708-1.jpg",
             "images/products/raw-material/polyester-thread/ps20260708/ps20260708-2.jpg",
             "images/products/raw-material/polyester-thread/ps20260708/ps20260708-3.jpg"
         ], 
         specs: [
-            { label: "Material", value: "Polyester Thread" },
-            { label: "Color", value: "Dark Green, Light Green, Customizable" },
-            { label: "Usage", value: "For Christmas Trees Production" }
+            { label: "Material", value: "PE polyethylene monofilament" },
+            { label: "Color", value: "Dark green, light green, pink, red, white, brown, Customizable" },
+            { label: "Application", value: "Artificial christmas tree pine needle production, plastic foliage filament processing" },
+            { label: "Features", value: "High tensile strength, color fastness, smooth texture, anti-aging, easy processing" }
         ]
     },
-    "metal tube": {
+    "artificial christmas tree metal pole iron branch stand tube for christmas tree assembly": {
         category: "material",
         subcategory: "metal-tube", 
         code: "Item Code: t20260715",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Offer stable support structure for artificial christmas trees with this metal iron pole. Made of sturdy coated iron material, it features reserved branch mounting positions for easy assembly. Perfect for christmas tree manufacturers, decorative plant factories, suitable for building various sizes of indoor and outdoor artificial christmas trees.",
         images: [
             "images/products/raw-material/metal-tube/t20260715/t20260715-1.jpg",
             "images/products/raw-material/metal-tube/t20260715/t20260715-2.jpg",
@@ -1199,9 +1200,11 @@ const detailsDatabase = {
             "images/products/raw-material/metal-tube/t20260715/t20260715-5.jpg"
         ], 
         specs: [
-            { label: "Material", value: "Metal Tube" },
-            { label: "Color", value: "Dark Green, Light Green, Customizable" },
-            { label: "Usage", value: "For Christmas Trees Production" }
+            { label: "Material", value: "Coated iron metal" },
+            { label: "Color", value: "Black, dark green, Customizable" },
+            { label: "Size", value: "Multiple lengths & diameters available, Customizable" },
+            { label: "Application", value: "Artificial christmas tree frame, christmas tree internal support, branch mounting stand" },
+            { label: "Features", value: "High structural strength, anti-rust coating, prefabricated branch sockets, easy installation, stable load bearing" }
         ]
     },
     "foldable metal christmas tree stand replacement base with thumb screw": {
