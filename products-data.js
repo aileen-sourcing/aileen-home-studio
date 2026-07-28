@@ -1198,11 +1198,11 @@ const detailsDatabase = {
             { label: "Usage", value: "For Christmas Trees Production" }
         ]
     },
-    "metal stand": {
+    "foldable metal christmas tree stand replacement base with thumb screw": {
         category: "material", 
         subcategory: "metal-stands", 
         code: "Item Code: MS-20260629",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Ensure your christmas tree stays sturdy and secure with this heavy duty foldable metal tree stand. Crafted from durable iron with a sleek black finish, it features four legs with protective foot caps and a heavy-duty center pole with a locking thumb screw. Perfect replacement base for artificial christmas trees, offering stable support and easy storage for holiday seasons.",
         images: [
             "images/products/raw-material/metal-stands/ms20260629/ms20260629-1.jpg",
             "images/products/raw-material/metal-stands/ms20260629/ms20260629-2.jpg",
@@ -1212,7 +1212,8 @@ const detailsDatabase = {
             { label: "Material", value: "Heavy-Duty Reinforced Iron / Steel" },
             { label: "Available Sizes", value: "40cm, 50cm, 60cm, 70cm, 120cm (Customizable)" },
             { label: "Application", value: "Artificial Christmas Tree Base Support" },
-            { label: "Surface Treatment", value: "Anti-Rust Powder Coating (Green/Black)" }
+            { label: "Foldable & space-saving design", value: "Easy to set up and fold flat for compact storage, saving valuable space when not in use." },
+            { label: "Sturdy iron construction", value: "Crafted from high-strength metal for maximum stability, ensuring your artificial christmas tree stays upright throughout the holiday season." }
         ]
     }
 };
