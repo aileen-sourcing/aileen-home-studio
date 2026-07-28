@@ -1232,7 +1232,7 @@
     <header>
         <div class="container navbar">
             <a href="index.html" class="logo-brand">
-                <img src="images/logo.png" alt="Aileen's Home Studio" class="logo-img">
+                <img src="images/logo.png" alt="Aileen's Home Studio" title="Aileen's Home Studio" width="400" height="133" class="logo-img">
             </a>
             
             <ul class="nav-links">
@@ -1452,7 +1452,7 @@
         <button class="about-discover-btn" onclick="toggleAboutModal(true)">Discover More</button>
     </div>
     <div class="about-image-block">
-        <img src="./images/about-side.jpg" alt="BAILUX Sourcing Hub">
+        <img src="./images/about-side.jpg" alt="Aileen's Home Studio" title="Aileen's Home Studio" loading="lazy" width="800" height="600">
     </div>
 </section>
 
@@ -1659,7 +1659,7 @@
             const card = document.createElement('div');
             card.className = 'product-card';
             card.innerHTML = `
-                <img src="${product.image}" alt="${product.title}" class="product-image">
+                <img src="${product.image}" alt="${product.title}" title="${product.title}" loading="lazy" width="600" height="600" class="product-image">
                 <div class="product-info">
                     <h3 class="product-title">${product.title}</h3>
                     <p class="product-meta">${product.description}</p>
