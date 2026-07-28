@@ -653,33 +653,48 @@ a[href="index.html"].logo-brand {
         width: 150px !important;
         margin-left: auto !important;
     }
-
+    #christmas-sidebar {
+        width: 200px !important;
+        flex-shrink: 0 !important;
+    }
+    #christmas-sidebar[style*="display: block"] + .products-grid,
+    #christmas-sidebar:not([style*="display: none"]) + .products-grid,
+    #christmas-sidebar[style*="display: block"] + #listing-grid-container,
+    #christmas-sidebar:not([style*="display: none"]) + #listing-grid-container {
+        display: grid !important;
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+        gap: 12px 10px !important;
+        width: 100% !important;
+    }
     /* 核心：横屏下的所有 Listing 页面全部锁定为 1 行 5 个 */
     .products-grid,
     #products-grid-container,
     .main-layout .products-grid {
         display: grid !important;
-        grid-template-columns: repeat(5, 1fr) !important; /* 👈 锁定 1 行 5 列 */
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
         gap: 12px 8px !important;
         width: 100% !important;
+    }
+    .product-card {
+        min-width: 0 !important;
+        box-sizing: border-box !important;
     }
 
     /* 标题微调，防止换行高低错落 */
     .grid-product-title,
-    .product-name {
-        font-size: 0.68rem !important;
-        line-height: 1.2 !important;
-        height: 26px !important;
+    .product-name,
+    .product-title-text {
+        font-size: 0.72rem !important;
+        line-height: 1.3 !important;
+        white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
-        display: -webkit-box !important;
-        -webkit-box-orient: vertical !important;
-        -webkit-line-clamp: 2 !important;
+        display: block !important;
     }
 
     .inquiry-action-btn {
         padding: 5px 2px !important;
-        font-size: 0.58rem !important;
+        font-size: 0.6rem !important;
     }
 }
 
