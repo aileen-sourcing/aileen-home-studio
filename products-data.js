@@ -863,11 +863,11 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Spring decor")
     // ==========================================
-    "wreath 260727": {
+    "artificial spring eucalyptus wreath seasonal floral front door greenery wreath for farmhouse home decor": {
         category: "holiday",
         subcategory: "spring-decor", 
         code: "Item Code: sw20260727",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Discover our handmade artificial spring eucalyptus wreath collection. Choose from plain greenery base white blue mixed-color daisy and wildflower designs. These durable floral wreaths bring fresh spring vibes to your front door entryway walls and covered outdoor spaces no watering or maintenance required.",
         images: [
             "images/products/holiday-decor/spring-decor/wreath/sw20260727/1.jpg",
             "images/products/holiday-decor/spring-decor/wreath/sw20260727/2.jpg",
@@ -878,14 +878,17 @@ const detailsDatabase = {
         ], 
         specs: [
             { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Material", value: "Artificial eucalyptus leaves, faux flowers, rattan frame" },
+            { label: "Available Styles", value: "Plain greenery base, daisy and wildflower assorted designs" },
+            { label: "Feature", value: "Fade-resistant, maintenance free, lightweight and easy to hang" },
+            { label: "Application", value: "Outdoor / Indoor Front Door Welcome Display, Wall Window Farmhouse Spring Decor" }
         ]
     },
-    "wreath 260728": {
+    "artificial spring floral wreath mixed rose peony front door wreath for farmhouse home decor": {
         category: "holiday",
         subcategory: "spring-decor", 
         code: "Item Code: sw20260728",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Bring lovely spring charm to any entryway or wall with this artificial floral wreath. Crafted with realistic mixed roses peonies and lush green leaves, it offers a lush natural look that requires no maintenance. Perfect for decorating front doors, living rooms, mantelpieces, or front porches, adding a romantic seasonal atmosphere to any space.",
         images: [
             "images/products/holiday-decor/spring-decor/wreath/sw20260728/1.jpg",
             "images/products/holiday-decor/spring-decor/wreath/sw20260728/2.jpg",
@@ -896,7 +899,10 @@ const detailsDatabase = {
         ], 
         specs: [
             { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Material", value: "Artificial roses peonies mixed flowers fabric leaves rattan frame" },
+            { label: "Available Styles", value: "Multi-color mixed peony wreath hydrangea wreath assorted rose floral designs" },
+            { label: "Features", value: "Fade-resistant maintenance free lightweight easy to hang reusable for seasonal decor" },
+            { label: "Application", value: "Outdoor / Indoor Front Door Welcome Display Wall Window Spring Decor" }
         ]
     },
     // ==========================================
