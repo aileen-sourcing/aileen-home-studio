@@ -809,12 +809,6 @@ a[href="index.html"].logo-brand {
         margin-bottom: 8px !important;
     }
 }
-/* 1. 修复网格容器：限制最小列宽为 0，防止被长文字/长标题撑大 */
-.products-grid {
-    display: grid !important;
-    /* 给 grid 项赋予 minmax(0, 1fr)，确保文字再长也不会撑开网格 */
-    grid-template-columns: repeat(auto-fill, minmax(0, 1fr)) !important; 
-}
 
 /* 电脑端多列规则（配合 minmax(0, 1fr) 使用） */
 @media (min-width: 1201px) {
