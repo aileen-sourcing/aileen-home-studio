@@ -1100,25 +1100,25 @@ function handleSearch() {
                 }
 
                 // 🌟 ✨ 【图片连通核心】：动态加载主图与多张缩略图（优化 SEO 与属性）
-if (productInfo.images && productInfo.images.length > 0) {
-    const mainImgEl = document.getElementById('mainProductImg');
-    // 设置首图 src、alt 与 title 标签（包含产品名称与编号，利于图片 SEO）
-    mainImgEl.src = productInfo.images[0];
-    mainImgEl.alt = `${titleCaseName} - ${productInfo.code}`;
-    mainImgEl.title = titleCaseName;
+                if (productInfo.images && productInfo.images.length > 0) {
+                    const mainImgEl = document.getElementById('mainProductImg');
+                    // 设置首图 src、alt 与 title 标签
+                    mainImgEl.src = productInfo.images[0];
+                    mainImgEl.alt = `${titleCaseName} - ${productInfo.code}`;
+                    mainImgEl.title = titleCaseName;
 
-    // 动态生成下方的小图切换轨道
-    let thumbHtml = "";
-    productInfo.images.forEach((imgUrl, index) => {
-        const activeClass = index === 0 ? "thumb-item active" : "thumb-item";
-        const altText = `${titleCaseName} - Detail Image ${index + 1}`;
-        thumbHtml += `
-            <div class="${activeClass}" onclick="switchImage(this, '${imgUrl}')">
-                <img src="${imgUrl}" alt="${altText}" title="${altText}" loading="lazy" width="60" height="60" onerror="this.src='images/placeholder.jpg'">
-            </div>
-        `;
-    });
-    document.getElementById('thumbList').innerHTML = thumbHtml;
+                    // 动态生成下方的小图切换轨道
+                    let thumbHtml = "";
+                    productInfo.images.forEach((imgUrl, index) => {
+                        const activeClass = index === 0 ? "thumb-item active" : "thumb-item";
+                        const altText = `${titleCaseName} - Detail Image ${index + 1}`;
+                        thumbHtml += `
+                            <div class="${activeClass}" onclick="switchImage(this, '${imgUrl}')">
+                                <img src="${imgUrl}" alt="${altText}" title="${altText}" loading="lazy" width="60" height="60" onerror="this.src='images/placeholder.jpg'">
+                            </div>
+                        `;
+                    });
+                    document.getElementById('thumbList').innerHTML = thumbHtml;
                 } else {
                     // 如果数据库里没配图片，显示一个占位图
                     document.getElementById('mainProductImg').src = "images/placeholder.jpg";
