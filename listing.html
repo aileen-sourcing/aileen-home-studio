@@ -742,12 +742,26 @@ a[href="index.html"].logo-brand {
     }
 
     /* 5. 卡片内部字体与按钮瘦身 */
-    #listing-grid-container .product-meta-code { 
-        font-size: 0.7rem !important; 
+    #listing-grid-container .product-meta-code,
+    .product-card .product-meta-code,
+    .product-code { 
+        font-size: 0.62rem !important;        /* 👈 仅改动：平板竖屏微调字号，防止换行 */
+        letter-spacing: 0 !important;          /* 👈 仅改动：清空字间距节省横向空间 */
+        white-space: nowrap !important;        /* 👈 仅改动：强制单行显示 */
+        overflow: hidden !important;           /* 👈 仅改动：超出部分隐藏 */
+        text-overflow: ellipsis !important;    /* 👈 仅改动：超出显示省略号 */
     }
-    #listing-grid-container .product-title-text { 
+    
+    #listing-grid-container .product-title-text,
+    #listing-grid-container .grid-product-title,
+    .product-card .product-title-text { 
         font-size: 0.72rem !important; 
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        display: block !important;
     }
+    
     #listing-grid-container .inquiry-action-btn { 
         padding: 5px 2px !important; 
         font-size: 0.58rem !important; 
