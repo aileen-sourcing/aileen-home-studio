@@ -859,7 +859,7 @@ a[href="index.html"].logo-brand {
     <header>
         <div class="container navbar">
             <a href="index.html" class="logo-brand">
-                <img src="images/logo.png" alt="Aileen's Home Studio" class="logo-img">
+                <img src="images/logo.png" alt="Aileen's Home Studio Logo" title="Aileen's Home Studio" width="180" height="40" class="logo-img">
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -1162,7 +1162,7 @@ a[href="index.html"].logo-brand {
         return `
             <div class="product-card" onclick="window.location.href='${productPageUrl}'">
                 <div class="product-image-wrapper">
-                    <img src="${firstImg}" alt="${key}" class="product-image">
+                    <img src="${firstImg}" alt="${key}" title="${key}" loading="lazy" width="600" height="600" class="product-image" onerror="this.src='images/placeholder.jpg'">
                 </div>
                 <div class="product-info">
                     <div class="product-meta-code">${product.code || ''}</div>
