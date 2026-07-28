@@ -1036,11 +1036,11 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "tree skirts")
     // ==========================================
-    "tree skirt 260717": {
+    "red and green merry christmas tree skirt with scalloped edge holiday decoration": {
         category: "holiday",
         subcategory: "tree-skirts", 
         code: "Item Code: ts20260717",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Bring festive warmth to your holiday setup with this classic red and green merry christmas tree skirt. Designed with elegant scalloped edges, holly leaf cutouts, and star motifs, it beautifully covers your tree stand while protecting your floors. Perfect for decorating living rooms, offices, or holiday parties to create a cozy christmas atmosphere.",
         images: [
             "images/products/holiday-decor/tree-skirts/ts20260717/1.jpg",
             "images/products/holiday-decor/tree-skirts/ts20260717/2.jpg",
@@ -1048,7 +1048,10 @@ const detailsDatabase = {
         ], 
         specs: [
             { label: "Size", value: "Customizable Sizes" },
-            { label: "Application", value: "Holiday, Indoor, Festive" }
+            { label: "Classic festive design", value: "Features a vibrant red center with merry christmas lettering and a deep green border, creating a traditional holiday look for your christmas tree." },
+            { label: "Unique cut-out detailing", value: "Designed with delicate scalloped edges, holly leaf motifs, and star cutouts to add elegance and depth to your tree base." },
+            { label: "Durable & soft material", value: "Crafted from high-quality felt/fabric that protects your floors from pine needles and sap while adding a cozy feel." },
+            { label: "Versatile holiday decor", value: "Ideal for home, office, party, or commercial christmas decorations to create a warm holiday atmosphere." },
         ]
     },
     // ==========================================
