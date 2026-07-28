@@ -1099,26 +1099,50 @@ function handleSearch() {
                     shortDescEl.innerText = productInfo.description || "High-quality holiday decor designed for indoor and outdoor displays. Custom specifications and wholesale pricing available upon request.";
                 }
 
-                // 🌟 ✨ 【图片连通核心】：动态加载主图与多张缩略图
+                // 🌟 ✨ 【图片连通与 SEO 优化核心】：动态加载主图与多张缩略图（支持 SEO 属性与防爆死循环）
                 if (productInfo.images && productInfo.images.length > 0) {
-                    // 将数据库里的第一张图设置为默认显示的大图
-                    document.getElementById('mainProductImg').src = productInfo.images[0];
+                    const mainImgEl = document.getElementById('mainProductImg');
+                    
+                    // 1. 安全转义产品标题与路径，防止引号打断 HTML 代码
+                    const safeTitle = titleCaseName.replace(/"/g, '&quot;');
+                    const safeMainUrl = String(productInfo.images[0]).replace(/'/g, "\\'");
 
-                    // 动态生成下方的小图切换轨道
+                    // 2. 为主图注入 SEO 属性与 onerror 防卡死逻辑
+                    mainImgEl.src = safeMainUrl;
+                    mainImgEl.alt = safeTitle;
+                    mainImgEl.title = safeTitle;
+                    mainImgEl.onerror = function() {
+                        this.onerror = null; // 停止无限死循环
+                        this.src = 'images/placeholder.jpg';
+                    };
+
+                    // 3. 动态生成下方的小图切换轨道
                     let thumbHtml = "";
                     productInfo.images.forEach((imgUrl, index) => {
-                        // 第一张默认加上 active 类名（红框高亮）
                         const activeClass = index === 0 ? "thumb-item active" : "thumb-item";
+                        
+                        // 缩略图 SEO 属性与防单引号截断
+                        const altText = `${safeTitle} - View ${index + 1}`;
+                        const safeImgUrl = String(imgUrl).replace(/'/g, "\\'");
+
                         thumbHtml += `
-                            <div class="${activeClass}" onclick="switchImage(this, '${imgUrl}')">
-                                <img src="${imgUrl}" alt="Thumbnail ${index + 1}">
+                            <div class="${activeClass}" onclick="switchImage(this, '${safeImgUrl}')">
+                                <img src="${safeImgUrl}" 
+                                     alt="${altText}" 
+                                     title="${altText}" 
+                                     loading="lazy" 
+                                     width="60" 
+                                     height="60" 
+                                     onerror="this.onerror=null; this.src='images/placeholder.jpg';">
                             </div>
                         `;
                     });
                     document.getElementById('thumbList').innerHTML = thumbHtml;
                 } else {
-                    // 如果数据库里没配图片，显示一个占位图
-                    document.getElementById('mainProductImg').src = "images/placeholder.jpg";
+                    // 数据库里没配图片时的保底处理
+                    const mainImgEl = document.getElementById('mainProductImg');
+                    mainImgEl.src = "images/placeholder.jpg";
+                    mainImgEl.alt = titleCaseName;
                     document.getElementById('thumbList').innerHTML = "";
                 }
 
