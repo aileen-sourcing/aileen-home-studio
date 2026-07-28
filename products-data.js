@@ -945,88 +945,106 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas flowers")
     // ==========================================
-    "blue flower 260717": {
+    "blue silver artificial poinsettia flower christmas tree decorative flower ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260717",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Add distinctive festive charm to holiday displays with this blue silver poinsettia ornament. Made of lightweight fabric with hollow silver leaf trim, it brings shiny layered visual effects. Perfect for decorating christmas trees, wreaths, garlands, gift arrangements, creating eye-catching winter holiday decor.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260717/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260717/2.jpg",
         ], 
         specs: [
-            { label: "Size", value: "Customizable Sizes" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Material", value: "Fabric flower petals, hollow silver plastic leaves" },
+            { label: "Size", value: "Multiple sizes available, Customizable" },
+            { label: "Color", value: "Blue with silver trim, Multiple color options supported" },
+            { label: "Features", value: "Lightweight structure, reusable design, easy attachment, vivid layered appearance" },
+            { label: "Application", value: "Christmas tree decoration, wreath accessory, garland embellishment, holiday floral arrangement" }
         ]
     },
-    "white flower 260718": {
+    "white artificial poinsettia flower fabric christmas tree decorative flower ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260718",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Bring pure elegant holiday aesthetics to your decorations with this white poinsettia ornament. Made of soft layered fabric with exquisite floral details, it delivers a delicate natural look. Perfect for decorating christmas trees, wreaths, garlands and seasonal floral arrangements, adding minimalist festive atmosphere to holiday displays.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260718/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260718/2.jpg",
         ], 
         specs: [
-            { label: "Size", value: "Customizable Sizes" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Material", value: "Premium fabric petals, plastic stem" },
+            { label: "Size", value: "Multiple sizes available, Customizable" },
+            { label: "Color", value: "White, various color options can be customized" },
+            { label: "Features", value: "Lightweight, reusable, easy to attach, lifelike layered flower structure" },
+            { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "xmas flower 260719": {
+    "red gold artificial poinsettia flower christmas tree decorative flower ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260719",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Add luxurious festive appeal to holiday decorations with this red gold poinsettia ornament. Designed with vibrant fabric petals and hollow gold layered leaves, it creates striking visual contrast. Perfect for decorating christmas trees, wreaths, garlands and seasonal floral displays, bringing classic christmas atmosphere to indoor and outdoor holiday scenes.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260719/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260719/2.jpg",
         ], 
         specs: [
-            { label: "Size", value: "Customizable Sizes" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Material", value: "Fabric flower petals, hollow gold plastic leaves" },
+            { label: "Size", value: "Multiple sizes available, Customizable" },
+            { label: "Color", value: "Red with gold trim, Various color combinations supported" },
+            { label: "Features", value: "Lightweight structure, reusable design, easy to install, exquisite double-layer appearance" },
+            { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "xmas flower 260720": {
+    "blue fabric artificial poinsettia flower christmas tree decorative flower ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260720",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Create unique cool-toned holiday styling with this blue artificial poinsettia ornament. Made of soft layered fabric with delicate textured petals, it delivers a vivid full-bloom shape. Perfect for decorating christmas trees, wreaths, garlands and seasonal floral arrangements, adding distinctive color to your christmas displays.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260720/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260720/2.jpg",
         ], 
         specs: [
-            { label: "Size", value: "Customizable Sizes" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Material", value: "Fabric flower petals, plastic stem" },
+            { label: "Size", value: "Multiple sizes available, Customizable" },
+            { label: "Color", value: "Blue, various color options for selection" },
+            { label: "Features", value: "Lightweight, reusable, easy to attach, lifelike layered flower structure" },
+            { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "xmas flower 260721": {
+    "shiny gold artificial poinsettia pick fabric christmas floral decoration for wreath tree garland": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260721",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Add eye-catching luxury metallic appeal to seasonal decor with this shiny gold poinsettia floral pick. Constructed from soft glossy fabric with multi-layer petals, it delivers a rich full appearance. Perfect for embellishing christmas trees, handmade wreaths, festive garlands and holiday centerpieces, creating glamorous warm holiday styling.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260721/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260721/2.jpg",
         ], 
         specs: [
-            { label: "Size", value: "Customizable Sizes" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Material", value: "Fabric flower petals, plastic stem" },
+            { label: "Size", value: "Multiple sizes available, Customizable" },
+            { label: "Color", value: "Gold, various color options can be customized" },
+            { label: "Features", value: "Lightweight, reusable, easy to attach, lifelike layered flower structure" },
+            { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "xmas flower 260722": {
+    "metallic silver artificial poinsettia bloom fabric christmas floral pick for holiday wreath tree decor": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260722",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Bring cool elegant metallic styling to seasonal decorations with this silver poinsettia bloom. Made of glossy fabric with multi-layer textured petals, it delivers soft reflective luster. Ideal for decorating christmas trees, handmade wreaths, festive garlands and winter table arrangements, adding modern minimalist holiday aesthetics.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260722/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260722/2.jpg",
         ], 
         specs: [
-            { label: "Size", value: "Customizable Sizes" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Material", value: "Fabric flower petals, plastic stem pick" },
+            { label: "Size", value: "Multiple dimensions available, Customizable" },
+            { label: "Color", value: "Metallic silver, custom color options supported" },
+            { label: "Features", value: "Lightweight, easy insertion, durable reusable structure, full layered flower shape" },
+            { label: "Application", value: "Christmas tree ornament, wreath accessory, garland embellishment, winter holiday table arrangement" }
         ]
     },
     // ==========================================
