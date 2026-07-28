@@ -568,11 +568,11 @@ const detailsDatabase = {
     // 💡 大类 1：Holiday Decor (cat: garland")
     // ==========================================
 
-    "9ft xmas garland 260710": {
+    "battery operated pre lit 270cm artificial christmas garland 200 tips flocked pine branch indoor mantel stair holiday decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: g20260711",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Enhance your festive layout with this 270cm pre-lit flocked christmas garland featuring 200 pine tips. Made of PE mixed PVC material with thin flocking finish, the bendable branches support free shaping. It comes with battery-controlled warm LED lights, perfect for fireplace mantels, stair railings, door arches and indoor holiday decorations.",
         images: [
             "images/products/holiday-decor/christmas/garland/g20260711/g20260711-1.jpg",
             "images/products/holiday-decor/christmas/garland/g20260711/g20260711-2.jpg",
@@ -581,34 +581,44 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/garland/g20260711/g20260711-5.jpg"
         ], 
         specs: [
-            { label: "Length", value: "9 FT / Customizable" },
-            { label: "Tips Material", value: "PE/PVC Mixed Real-touch Tips" },
-            { label: "Lighting", value: "50 Waterproof Warm LED Bulbs" },
-            { label: "Application", value: "Staircase, Mantle, Front Door Frame Decor" }
+            { label: "Total Length", value: "270cm" },
+            { label: "Branch Tips", value: "200 tips" },
+            { label: "Material", value: "PE mixed PVC, thin flocked surface" },
+            { label: "Light Source", value: "Warm white LED lights, battery operated" },
+            { label: "Power Supply", value: "AA batteries (batteries not included)" },
+            { label: "Packing Quantity", value: "12 pieces per export carton" },
+            { label: "Carton Size", value: "60x43x35CM" },
+            { label: "Net Weight", value: "0.7KG" },
+            { label: "Gross Weight", value: "8.9 KG" },
+            { label: "Features", value: "Flexible bendable frame, reusable, easy arrangement, realistic flocked pine appearance" },
+            { label: "Application", value: "Fireplace mantel, stair railing, door arch, indoor christmas scene decoration" }
         ]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "mini christmas tree")
     // ==========================================
-    "mini xmas tree 260714": {
+    "pre decorated potted artificial christmas tree plaid ribbon berry pine cone lighted entryway porch holiday display tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260714",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Create a warm welcome atmosphere with this fully pre-decorated potted christmas tree. It is embellished with classic plaid ribbons, bright red berries, pine cones and multi-color led lights. Mounted in an antique style decorative urn base, this slim decorative tree is ready to use out of box. Perfect for front porch, entryway, hallway and indoor foyer seasonal christmas decoration.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/2.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Material", value: "Artificial pine needles, fabric ribbon, foam berries, plastic pine cones, resin urn base" },
+            { label: "Lighting	", value: "Built-in multi-color led lights" },
+            { label: "Decoration", value: "Plaid ribbon, red berries, pine cones, foliage ornaments" },
+            { label: "Features", value: "Fully pre-assembled, ready-to-display, stable decorative pot base, no extra decoration required" },
+            { label: "Application", value: "Front porch decor, entryway display, hallway ornament, indoor foyer christmas layout" }
         ]
     },
-    "45cm mini xmas tree 260715": {
+    "battery operated prelit pink flocked mini christmas tree wrapped base snowy tabletop small xmas tree for home party decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260715",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Add romantic festive vibes to your indoor space with this pink snowy flocked tabletop christmas tree. Equipped with warm led lights powered by a battery controller, no plug socket required. Features snow dusted pink pine branches and elegant fabric wrapped base. Compact size makes it ideal for table surfaces, shelves, bedroom decor and holiday party centerpieces.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-2.jpg",
@@ -617,15 +627,20 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-5.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Style", value: "Tabletop Mini Flocked Christmas Tree" },
+            { label: "Material", value: "PVC pink pine tips, artificial snow flocking, fabric wrap base" },
+            { label: "Lighting", value: "Built-in warm led lights, battery operated" },
+            { label: "Power Supply", value: "AA batteries (batteries not included)" },
+            { label: "Appearance", value: "Pink body with snowy flocked finish" },
+            { label: "Features", value: "Compact size, easy setup, portable, reusable, no complicated assembly" },
+            { label: "Application", value: "Table decoration, shelf display, bedroom ornament, holiday party centerpiece, window decor" }
         ]
     },
-    "90cm mini xmas tree 260716": {
+    "90cm prelit potted artificial christmas tree silver dusted pine tips red berries timer battery led tabletop entryway xmas decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260716",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This 90cm pre-lit potted christmas tree features silver dusted pine branches decorated with vibrant red berries. Equipped with 80pcs warm white 5mm waterproof LED lights and a timer battery box powered by 4 AA batteries. It comes with a matching square planter pot base, ready for instant display. Suitable for entryways, fireplace sides, indoor corners and window holiday decorations.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mt20260716-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mt20260716-2.jpg",
@@ -635,15 +650,25 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mt20260716-6.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Height", value: "90 cm (3ft)" },
+            { label: "Branch Tips", value: "110 tips" },
+            { label: "Material", value: "PVC pine needles with silver dust coating, artificial red berries" },
+            { label: "Lighting", value: "80pcs 5mm warm white waterproof LED lights, steady on mode" },
+            { label: "Power Supply", value: "4 AA batteries, battery box with timer function (batteries not included)" },
+            { label: "Base", value: "Black square plastic planter bucket included" },
+            { label: "Packing", value: "1 piece per carton" },
+            { label: "Carton Dimension", value: "76x22x23cm" },
+            { label: "Net Weight", value: "1.92 KG" },
+            { label: "Gross Weight", value: "2.55 KG" },
+            { label: "Features", value: "Pre-assembled design, built-in timer, silver frosted branch effect, all accessories included" },
+            { label: "Application", value: "Entryway decor, fireplace side display, indoor corner ornament, window christmas layout" }
         ]
     },
-    "30cm mini xmas tree 260717": {
+    "30cm natural green pe mini christmas tree burlap wrapped base fireproof small tabletop artificial xmas tree home shelf decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260717",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Decorate your indoor space with this 30cm mini artificial christmas tree made of premium fireproof PE material. It features lush natural green pine branches and comes with an elegant burlap fabric wrapped base. Compact and lightweight, this undecorated small tree offers flexible DIY decoration options. Ideal for cabinets, shelves, dining tables and desktop seasonal display.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260717/mt20260717-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260717/mt20260717-2.jpg",
@@ -651,15 +676,19 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260717/mt20260717-4.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Height", value: "30cm" },
+            { label: "Material", value: "Fireproof PE pine needles, non-toxic raw material" },
+            { label: "Base", value: "Natural burlap fabric wrap base" },
+            { label: "Style", value: "Unlit blank mini christmas tree, diy customizable" },
+            { label: "Feature", value: "Non-toxic, fireproof, realistic pine branch texture, easy storage" },
+            { label: "Application", value: "Tabletop display, shelf ornament, cabinet decor, desktop holiday layout, cafe indoor decoration" }
         ]
     },
-    "60cm mini xmas tree 260718": {
+    "60cm pre decorated lighted mini christmas tree red polka dot pot candy cane ornament battery copper wire light tabletop xmas decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260718",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This 60cm pre-decorated tabletop christmas tree combines PVC pine needles and PE branches, paired with a stylish red polka-dot plastic pot. It is equipped with 40 steady-on battery operated copper wire lights, candy cane ornaments, pom-pom balls, white ribbons and a golden star tree topper. Fully assembled and ready to display, perfect for dining tables, countertops and indoor holiday party decorations.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260718/mt20260718-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260718/mt20260718-2.jpg",
@@ -669,44 +698,69 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260718/mt20260718-6.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Size", value: "60cm" },
+            { label: "Branch Tips", value: "83 tips" },
+            { label: "Material", value: "PVC pine needles + PE branches" },
+            { label: "Lighting", value: "40pcs steady-on copper wire lights, battery operated" },
+            { label: "Light Spacing", value: "10cm" },
+            { label: "Lead Wire Length", value: "20cm" },
+            { label: "Pot", value: "Red polka dot plastic planter pot included" },
+            { label: "Decorations", value: "Golden star topper, candy canes, pompom balls, white ribbons" },
+            { label: "Package Dimension", value: "13x13x60cm" },
+            { label: "Style", value: "Pre-decorated lighted mini christmas tree" },
+            { label: "Features", value: "Pre-assembled, ready-to-use, complete matching ornaments, compact size" },
+            { label: "Application", value: "Tabletop display, dining table decor, counter ornament, indoor christmas party layout" }
         ]
     },
-    "snow mini xmas tree 260719": {
+    "120cm flocked potted artificial christmas tree snowy pine branches 70 warm led lights battery operated black square pot entryway xmas decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260719",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This 120cm snowy flocked potted christmas tree is crafted from premium PVC material with snow-dusted pine branches. It is equipped with 70pcs warm white 5mm waterproof LED lights powered by 3 AA batteries with steady-on mode. Paired with a minimalist black square plastic pot, the tree delivers an elegant winter snow scene effect. Great for entryways, porches, living room corners and window seasonal decorations.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-2.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260719/mt20260719-3.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Size", value: "120cm" },
+            { label: "Branch Tips", value: "180 tips" },
+            { label: "Material", value: "PVC flocked pine branches with snow finish" },
+            { label: "Lighting", value: "70pcs 5mm warm white waterproof LED lights, steady on mode" },
+            { label: "Power Supply", value: "3 AA batteries, battery box included (batteries not included)" },
+            { label: "Base", value: "Black square plastic planter pot" },
+            { label: "Package Dimension", value: "102x21x21CM" },
+            { label: "Style", value: "Snow flocked lighted potted christmas tree" },
+            { label: "Features", value: "Realistic snowy flocking effect, pre-installed lights, stable pot base, easy setup" },
+            { label: "Application", value: "Entryway decor, porch display, living room corner, window christmas decoration" }
         ]
     },
-    "pine mini xmas tree 260720": {
+    "60cm prelit tabletop artificial christmas tree burlap wrapped cement base 8 lighting modes timer battery operated warm white led small xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260720",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This 60cm tabletop christmas tree features natural green pine branches, built on a stable cement base wrapped with rustic burlap fabric. Equipped with 52pcs warm white 5mm LED lights supporting 8 adjustable lighting modes and 6 hours on /18 hours off timer function. Powered by 3 AA batteries with IP20 battery box. Simple minimalist design allows free DIY ornaments, ideal for tables, shelves and indoor rustic holiday decor.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260720/mt20260720-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260720/mt20260720-2.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Size", value: "60cm (24inch)" },
+            { label: "Branch Tips", value: "52 tips" },
+            { label: "Base", value: "Cement base wrapped with burlap fabric" },
+            { label: "Lighting", value: "52pcs 5mm warm white LED lights" },
+            { label: "Light Functions", value: "8 adjustable lighting modes, built-in timer (6 hours on /18 hours off)" },
+            { label: "Power Supply", value: "3 AA batteries, IP20 battery box (batteries not included)" },
+            { label: "Style", value: "Unadorned pre-lit mini christmas tree, diy customizable" },
+            { label: "Features", value: "Stable weighted cement base, multiple light modes, automatic timer, portable design" },
+            { label: "Application", value: "Tabletop display, shelf decor, cabinet ornament, rustic indoor holiday layout" }
         ]
     },
-    "45cm mini tree 260721": {
+    "45cm undecorated artificial tabletop fir tree realistic pe branches metal flat base mini green christmas tree diy desktop holiday decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260721",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This 45cm minimalist tabletop fir tree is made of premium realistic PE branches with natural green texture. Equipped with sturdy flat metal base for stable standing. This unlit blank small christmas tree supports free DIY matching of ornaments, ribbons and lights. Compact size perfectly fits desktops, window sills, dining tables and shelves for rustic & modern seasonal decoration.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260721/mt20260721-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260721/mt20260721-2.jpg",
@@ -716,15 +770,19 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260721/mt20260721-6.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Size", value: "45CM" },
+            { label: "Material", value: "Realistic PE fir branches" },
+            { label: "Base", value: "Flat black metal base" },
+            { label: "Style", value: "Undecorated blank mini christmas tree, diy customizable" },
+            { label: "Features", value: "Lifelike fir foliage, stable metal base, foldable branches, easy assembly and storage" },
+            { label: "Application", value: "Desktop display, windowsill decor, dining table ornament, shelf holiday layout" }
         ]
     },
-    "mini xmas tree 260722": {
+    "90cm flocked prelit potted christmas tree pre decorated red berries gold baubles warm white led lights snowy pine tree black planter indoor porch xmas decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260722",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This 90cm snow flocked prelit potted christmas tree features white frosted pine branches, pre-decorated with vibrant red berry stems and glossy gold & silver baubles. Built-in warm white 5MM LED lights powered by battery box. Equipped with an integrated classic black planter for stable placement. Ready-to-use design saves your decoration time. Perfect for entryways, living rooms, dining areas and shop windows to build a cozy winter festive atmosphere.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260722/mt20260722-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260722/mt20260722-2.jpg",
@@ -734,15 +792,21 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260722/mt20260722-6.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Size", value: "90CM" },
+            { label: "Surface Effect", value: "Snow flocked frosted pine branches" },
+            { label: "Decorations", value: "Red berry branches, gold & silver christmas baubles" },
+            { label: "Lighting", value: "Warm white 5MM LED lights, powered by battery box" },
+            { label: "Base", value: "Integrated classic black plastic planter" },
+            { label: "Style", value: "Pre-lit & pre-decorated snowy potted christmas tree" },
+            { label: "Features", value: "Complete pre-decoration, built-in led lights, stable matching planter, realistic snow flocking, ready to use" },
+            { label: "Application", value: "Entryway, porch, living room, dining room, store window decoration" }
         ]
     },
-    "pink mini tree 260723": {
+    "prelit pink snow flocked tabletop christmas tree warm led lights small frosted artificial pine tree pink round base bedroom desktop holiday decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260723",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This adorable pink snow flocked tabletop christmas tree is covered with thick frosted flock for a fluffy snow appearance. Built-in warm LED lights to create soft romantic ambiance. Equipped with matching pink round base for stable placement. Compact size fits vanity desks, bedside tables and dining tables. Ideal for girl bedrooms, pink themed parties and cute sweet style christmas decoration.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260723/mt20260723-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260723/mt20260723-2.jpg",
@@ -752,29 +816,37 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260723/mt20260723-6.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Appearance", value: "Pink snow flocked frosted pine branches" },
+            { label: "Lighting", value: "Built-in warm LED lights" },
+            { label: "Base", value: "Matching pink round plastic base" },
+            { label: "Style", value: "Pre-lit fluffy pink mini christmas tree" },
+            { label: "Features", value: "Fluffy snow flock texture, cute pink tone, pre-installed lights, stable round base, ready to display" },
+            { label: "Application", value: "Bedroom vanity, bedside table, dining table, shelf, pink theme party decoration" }
         ]
     },
-    "pet mini tree 260724": {
+    "30cm orange tinsel tabletop christmas tree mini metallic artificial pine tree orange round base desktop fall autumn holiday decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260724",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This 30cm mini tabletop christmas tree is made of shimmering orange metallic tinsel foliage, paired with matching orange round base for stable support. Compact small size occupies little space. Blank undecorated design allows you freely add ornaments. Perfect for autumn harvest decor, fall themed parties, desktop display, cabinet decoration and miniature scene layout.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260724/mt20260724-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260724/mt20260724-2.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Size", value: "30CM" },
+            { label: "Material", value: "Shiny orange metallic tinsel" },
+            { label: "Base", value: "Orange round flat plastic base" },
+            { label: "Style", value: "Blank diy miniature tinsel christmas tree" },
+            { label: "Features", value: "Sparkly metallic texture, lightweight structure, foldable branches, easy assembly and storage" },
+            { label: "Application", value: "Desktop display, shelf decor, autumn harvest decoration, fall theme party, miniature scene layout" }
         ]
     },
-    "pvc mini tree 260725": {
+    "3ft gradient black gold tabletop christmas tree two tone artificial pine tree burlap wrapped base mini desktop festive decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260725",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This 3ft gradient christmas tree features stylish two-tone design with black top gradually transitioning to shiny gold bottom. Equipped with rustic sackcloth wrapped base for stable placement. Undecorated blank branches support DIY matching ornaments, baubles and lights. Unique black & gold color scheme matches modern luxury, gothic and minimalist home style. Suitable for table, shelf, shop counter holiday decoration.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260725/mt20260725-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260725/mt20260725-2.jpg",
@@ -784,15 +856,20 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260725/mt20260725-6.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Size", value: "3FT (90cm)" },
+            { label: "Color Style", value: "Gradient two-tone black to gold" },
+            { label: "Material", value: "PVC artificial pine branches" },
+            { label: "Base", value: "Burlap wrapped sack base" },
+            { label: "Style", value: "Blank diy gradient color mini christmas tree" },
+            { label: "Features", value: "Fashion black gold gradient design, foldable branches, rustic burlap base, easy assembly and storage" },
+            { label: "Application", value: "Tabletop display, shelf decor, cabinet ornament, retail counter festive layout" }
         ]
     },
-    "green mini tree 260726": {
+    "3ft green artificial potted christmas tree mini pine tree vintage carved urn base entryway tabletop holiday decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260726",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This 3ft classic green artificial pine tree comes matched with an antique carved urn planter base, featuring retro embossed patterns and vintage bronze finish. Lush green PVC branches provide ample space for custom ornaments. No extra pot needed, ready to display after simple assembly. Ideal for entryway, foyer, hallway, dining table and shop front seasonal decoration.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260726/mt20260726-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260726/mt20260726-2.jpg",
@@ -800,23 +877,31 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260726/mt20260726-4.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Size", value: "3FT (90cm)" },
+            { label: "Foliage", value: "Classic green PVC pine branches" },
+            { label: "Planter Base", value: "Vintage carved urn pot with antique bronze texture" },
+            { label: "Style", value: "Potted blank diy mini christmas tree" },
+            { label: "Features", value: "Retro carved decorative pot, full lush branches, stable integrated base, easy assembly" },
+            { label: "Application", value: "Entryway, foyer, hallway, desktop, dining table, store front decoration" }
         ]
     },
-    "pot mini tree 260727": {
+    "prelit green potted tabletop christmas tree warm white led lights artificial pine tree black square planter indoor entryway festive decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260727",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This lush green potted mini christmas tree is pre-strung with warm white LED lights, matched with minimalist black square planter for stable placement. Full layered pine branches deliver natural look. Simple assembly required; ready to illuminate your space after shaping branches. Perfect for entryways, tabletops, window sills, office desks and shop counters to build gentle festive atmosphere.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260727/mt20260727-1.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260727/mt20260727-2.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260727/mt20260727-3.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
+            { label: "Foliage", value: "Natural green PVC artificial pine branches" },
+            { label: "Lighting", value: "Pre-installed warm white LED lights" },
+            { label: "Base", value: "Matte black square plastic planter pot" },
+            { label: "Style", value: "Prelit potted miniature christmas tree" },
+            { label: "Features", value: "Minimalist square pot design, prelit warm lights, dense full branches, compact size" },
+            { label: "Application", value: "Tabletop, entryway, windowsill, office desk, retail counter decoration" }
         ]
     },
     // ==========================================
