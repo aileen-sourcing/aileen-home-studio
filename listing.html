@@ -775,7 +775,7 @@ a[href="index.html"].logo-brand {
 .product-card .product-title-text,
 .product-title {
     color: #0f172a !important;            /* 还原 Category 的深色主色 */
-    font-size: 0.95rem !important;         /* 还原 Category 的 0.95rem 标准字号 */
+    font-size: 0.72rem !important;         /* 还原 Category 的 0.95rem 标准字号 */
     font-weight: 500 !important;           /* 还原 Category 的 500 中等字重（不加粗） */
     line-height: 1.4 !important;           /* 还原 Category 行高 */
     text-transform: uppercase !important;   
@@ -844,6 +844,13 @@ a[href="index.html"].logo-brand {
 /* 让分类页的产品标题每个单词首字母大写 */
 .grid-product-title {
     text-transform: capitalize !important;
+}
+/* ⚡ 强制覆盖：平板竖屏下标题字号锁定 0.72rem */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .grid-product-title,
+    .product-title-text {
+        font-size: 0.72rem !important;
+    }
 }
 
     </style>
