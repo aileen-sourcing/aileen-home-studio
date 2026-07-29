@@ -297,24 +297,24 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "wreath")
     // ==========================================
-
-    "xmas wreath 260708": {
+    "rustic farmhouse christmas wreath with burlap bow wooden angel cotton pinecone red berry candle holder front door wall hanging decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260708",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Multiple rustic farmhouse christmas wreath styles are available. Each wreath is adorned with burlap bow wooden angel cutouts fluffy cotton pinecones and red berries. Styles feature either glossy red baubles or hollow golden candle holders for candles. Options cover full artificial pine frame designs and asymmetrical natural grapevine rattan base versions. Ready-to-hang wreaths fit front door entryway window mantel indoor seasonal decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-1.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-2.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-3.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-4.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-5.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260708/w20260708-6.jpg"
+            "images/products/holiday-decor/christmas/wreath/w20260708/rustic-farmhouse-christmas-wreath-collection-white-background-main-01.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260708/christmas-wreath-red-bauble-single-burlap-bow-02.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260708/christmas-wreath-red-bauble-multi-burlap-bows-03.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260708/asymmetrical-grapevine-rattan-christmas-wreath-04.jpg"
         ], 
         specs: [
-            { label: "Material", value: "PVC+ Pine Cone+ Berry" },
-            { label: "Height", value: "60CM (Customizable)" },
-            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+            { label: "Wreath Base", value: "Full artificial pine frame / natural grapevine rattan frame (multiple options)" },
+            { label: "Decorations", value: "Burlap bow wooden angel cotton balls pinecones red berries red christmas baubles golden candle holders" },
+            { label: "Available Styles", value: "Full circular pine wreath asymmetrical half-decorated rattan grapevine wreath" },
+            { label: "Design Style	", value: "Rustic farmhouse vintage christmas style" },
+            { label: "Features", value: "Hand assembled lightweight easy to hang reusable multiple style choices" },
+            { label: "Application", value: "Front door entryway mantel wall window indoor decoration" }
         ]
     },
     "xmas wreath 260709": {
