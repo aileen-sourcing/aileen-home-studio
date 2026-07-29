@@ -357,19 +357,25 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }
         ]
     },
-    "xmas wreath 260711": {
+    "luxury golden christmas wreath golden poinsettia pinecone bauble candle holder fabric bow grapevine rattan front door wall decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260711",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Multiple luxury golden christmas wreath styles are available. Each wreath is adorned with golden poinsettia flowers pinecones and metallic golden decorations. Variations include glossy golden baubles, golden candle holders and golden star ornaments. Options contain full circular artificial pine frames and asymmetrical natural grapevine rattan wreaths. Ready-to-hang ornaments suit front door entryway mantel window indoor christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260711/1.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260711/2.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260711/3.jpg"
+            "images/products/holiday-decor/christmas/wreath/w20260711/luxury-golden-christmas-wreath-collection-white-background-main-01.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260711/golden-christmas-wreath-golden-candle-holder-poinsettia-pinecone-02.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260711/golden-pine-christmas-wreath-star-ornaments-poinsettia-bow-03.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260711/classic-golden-christmas-wreath-large-poinsettia-pinecone-04.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260711/asymmetrical-grapevine-rattan-golden-christmas-wreath-poinsettia-05.jpg"
         ], 
         specs: [
-            { label: "Size", value: "Customizable" },
-            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+            { label: "Wreath Base", value: "Full circular artificial pine frame / natural grapevine rattan frame (multiple options)" },
+            { label: "Decorations", value: "Golden poinsettia flowers pinecones golden baubles golden candle holders golden fabric bows golden star ornaments" },
+            { label: "Available Styles", value: "Full circular pine wreath asymmetrical half-decorated grapevine rattan wreath" },
+            { label: "Design Style", value: "Elegant luxury golden tone christmas style" },
+            { label: "Features", value: "Hand assembled lightweight easy to hang reusable multiple decorative style choices" },
+            { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }
         ]
     },
     "xmas wreath 260712": {
