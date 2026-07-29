@@ -19,23 +19,23 @@ const detailsDatabase = {
             { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
         ]
     },
-    "xmas tree 260707": {
+    "prelit full green artificial christmas tree warm white lights hinged branches foldable metal stand indoor holiday decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct26060707",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "This prelit full artificial christmas tree boasts lush realistic green pine foliage. Equipped with pre-strung warm white lights to create cozy festive ambiance. Adopted hinged branch design for easy setup, matched with durable foldable metal stand. Full natural silhouette fits living rooms, entryways and retail spaces, bringing classic christmas vibe for indoor seasonal decoration.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/1.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/2.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/3.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/4.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/5.jpg"
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/prelit-full-green-artificial-christmas-tree-whitebg-01.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/prelit-green-xmas-tree-display-shot-02.jpg"
         ], 
         specs: [
-            { label: "Material", value: "100% PE Premium Tips (Fireproofing)" },
-            { label: "Height", value: "7.5 FT (Customizable)" },
-            { label: "Lighting", value: "Pre-lit Warm White LED Eco-Lights" },
-            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+            { label: "Foliage", value: "Lush full green realistic PVC pine branches" },
+            { label: "Lighting", value: "Pre-installed warm white lights" },
+            { label: "Structure", value: "Hinged foldable branches" },
+            { label: "Base", value: "Sturdy foldable metal stand" },
+            { label: "Shape", value: "Full classic traditional christmas tree silhouette" },
+            { label: "Features", value: "Easy assembly reusable realistic foliage stable metal support" },
+            { label: "Application", value: "Indoor living room entryway shop front seasonal decoration" }
         ]
     },
     "xmas tree 260708": {
