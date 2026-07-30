@@ -4,19 +4,21 @@ const detailsDatabase = {
     // ==========================================
     // 🎄 大类 1：Holiday Decor (cat: "holiday")
     // ==========================================
-    "xmas tree 260706": {
+    "pre lit slim artificial christmas tree warm white led lights narrow pine tree indoor home holiday decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260706",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Slim pre lit artificial christmas tree equipped with warm white led lights. Narrow profile design saves indoor space. Dense pine-style branches deliver full natural appearance. Foldable metal stand provides stable support. Simple assembly suits living room entryway apartment indoor christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/1.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/2.jpg"
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-warm-led-white-background-main-01.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/narrow-pencil-artificial-christmas-tree-indoor-display-02.jpg"
         ], 
         specs: [
-            { label: "Material", value: "PE+PVC" },
-            { label: "Height", value: "Customizable" },
-            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+            { label: "Material", value: "Artificial pine branches / metal foldable stand" },
+            { label: "Lighting", value: "Built-in warm white pre-strung led lights" },
+            { label: "Shape Style", value: "Slim narrow pencil christmas tree" },
+            { label: "Features", value: "Space saving design easy assembly dense foliage stable foldable base pre-installed lights" },
+            { label: "Application", value: "Living room entryway apartment indoor christmas decoration" }
         ]
     },
     "prelit full green artificial christmas tree warm white lights hinged branches foldable metal stand indoor holiday decor": {
@@ -38,23 +40,22 @@ const detailsDatabase = {
             { label: "Application", value: "Indoor living room entryway shop front seasonal decoration" }
         ]
     },
-    "xmas tree 260708": {
+    "pre lit gradient rainbow christmas tree colorful led light artificial pine tree indoor holiday party decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260708",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Gradient rainbow pre lit christmas tree built in colorful led lights. Dense artificial pine branches create full lush appearance. Multiple lighting modes available for atmosphere adjustment. Suitable for living room bedroom indoor christmas and party scene decoration. Quick assembly and stable base ensure convenient placement.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/ct20260708-1.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/ct20260708-2.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/ct20260708-3.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/ct20260708-4.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/ct20260708-5.jpg"
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/pre-lit-gradient-rainbow-christmas-tree-white-background-main-01.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/rainbow-led-christmas-tree-light-up-display-02.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/gradient-color-christmas-tree-indoor-living-room-scene-03.jpg"
         ], 
         specs: [
-            { label: "Material", value: "PE PVC Mixed" },
-            { label: "Height", value: "7FT (Customizable)" },
-            { label: "Lighting", value: "Pre-lit Warm White LED Eco-Lights" },
-            { label: "Application", value: "Indoor Holiday Decoration / Commercial Display" }
+            { label: "Material", value: "Artificial pine branch metal stand" },
+            { label: "Light Type", value: "Built-in gradient colorful rainbow led lights" },
+            { label: "Style", value: "Gradient rainbow illuminated christmas tree)" },
+            { label: "Features", value: "Pre-strung led lights easy assembly dense foliage stable support adjustable lighting modes" },
+            { label: "Application", value: "Living room bedroom home indoor christmas party decoration" }
         ]
     },
     "xmas tree 260709": {
