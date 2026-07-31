@@ -379,21 +379,23 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }
         ]
     },
-    "xmas wreath 260712": {
+    "silver tone christmas wreath silver poinsettia eucalyptus leaf bauble fabric bow front door wall holiday decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260712",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Silver tone artificial christmas wreath available in two decorative layouts. Ornamented with silver poinsettia flowers eucalyptus sprigs glossy baubles and textured fabric bows. Full circular pine base creates a dense elegant look. Ready to hang for front door mantel window indoor christmas seasonal decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260712/1.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260712/2.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260712/3.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260712/4.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260712/5.jpg"
+            "images/products/holiday-decor/christmas/wreath/w20260712/silver-metallic-christmas-wreath-60cm-collection-main-01.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260712/silver-christmas-wreath-sparse-poinsettia-bow-eucalyptus-02.jpg"
         ], 
         specs: [
-            { label: "Size", value: "Customizable" },
-            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+            { label: "Base Frame", value: "Full circular artificial pine wreath" },
+            { label: "Size", value: "60cm diameter" },
+            { label: "Decorations", value: "Silver poinsettia flowers eucalyptus greenery silver matte & shiny baubles silver fabric bows fluffy white pom pom" },
+            { label: "Available Styles", value: "Less floral layout / multi poinsettia full layout" },
+            { label: "Design Style", value: "Modern silver metallic winter christmas style" },
+            { label: "Features", value: "Hand assembled lightweight easy to hang reusable winter festive decor" },
+            { label: "Application", value: "Front door entryway mantel wall window indoor holiday decoration" }
         ]
     },
     "xmas wreath 260713": {
