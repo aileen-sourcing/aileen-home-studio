@@ -481,40 +481,50 @@ const detailsDatabase = {
             { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }
         ]
     },
-    "xmas wreath 260717": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+    "snowy tipped pvc christmas wreath purple ornament glitter flower fabric bow front door holiday wreath customizable size color": {
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260717",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Snow flocked artificial christmas wreath with dark green PVC pine base. Decorations include glitter purple flowers, matte/shiny purple baubles, striped fabric bows, gift box ornaments and berry clusters. Standard diameter is 30cm, custom sizes and color schemes are available. Elegant circular wreath suitable for front door, wall, window, mantel indoor and sheltered outdoor christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260717/1.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260717/2.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260717/3.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260717/4.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260717/5.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260717/6.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260717/snow-tipped-purple-christmas-wreath-overview-01.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260717/30cm-purple-snowy-wreath-size-mark-display-02.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260717/purple-christmas-wreath-material-intro-image-03.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260717/purple-striped-bow-glitter-flower-wreath-closeup-04.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260717/purple-bauble-snow-pine-wreath-detail-shot-one-05.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260717/purple-berry-glitter-flower-wreath-detail-shot-two-06.jpg",
         ], 
         specs: [
-            { label: "Size", value: "Customizable" },
-            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+            { label: "Material", value: "Dark green PVC pine branches with snow tipped finish" },
+            { label: "Size", value: "30cm diameter, custom sizes supported" },
+            { label: "Decor Accessories", value: "Glitter purple flower, purple bauble, striped fabric bow, mini gift box ornament, purple berry cluster" },
+            { label: "Design Style", value: "Luxury purple christmas style / frosted snowy farmhouse style" },
+            { label: "Custom Options", value: "Custom size, custom color matching" },
+            { label: "Features", value: "Lightweight, reusable, easy hanging, snow frosted branches, glitter decorative elements" },
+            { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }
         ]
     },
-    "xmas wreath 260718": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+    "frosted pine christmas wreath red white star ornaments ball baubles ribbon bow winter front door wreath custom size wholesale": {
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260718",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Frost snow artificial pine wreath made of durable green PVC branches. Adorned with red-white shooting star decorations, glossy baubles, snowflake accents and textured fabric ribbons. Six unique matching designs for selection, personalized sizes and color collocations are acceptable. Ideal winter decorative wreath for entry doors, fireplace mantels, walls, windows, indoor spaces and sheltered outdoor holiday scenes.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260718/1.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260718/2.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260718/3.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260718/4.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260718/5.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260718/6.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260718/frosted-pine-wreath-red-star-big-ribbon-bow-display-01.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260718/winter-christmas-wreath-snowflake-red-star-decoration-02.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260718/red-white-star-wreath-round-ball-ornament-overview-03.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260718/christmas-wreath-candle-cup-decor-detail-image-04.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260718/large-red-bow-snowy-pine-wreath-star-snowflake-design-05.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260718/striped-ribbon-star-bauble-frosted-wreath-style-06.jpg",
         ], 
         specs: [
-            { label: "Size", value: "Customizable" },
-            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+            { label: "Material", value: "Green PVC pine branches with frosted snow finish" },
+            { label: "Size", value: "60cm diameter, custom sizes supported" },
+            { label: "Decor Accessories", value: "Red-white shooting star cutout, red bauble, white bauble, fabric ribbon bow, snowflake ornament, striped decorative ribbon" },
+            { label: "Available Styles", value: "Oversized red bow star style, snowflake mixed star style, candle holder decorative style, gift element embellished style, simple ribbon star layout style" },
+            { label: "Custom Options", value: "Custom size, customized color matching scheme" },
+            { label: "Features", value: "Lightweight structure, recyclable, easy installation, frosted snow pine branches, classic winter red white aesthetic" },
+            { label: "Application", value: "Front door, entryway, fireplace mantel, wall, window, indoor space, covered outdoor area" }
         ]
     },
     "xmas wreath 260719": {
