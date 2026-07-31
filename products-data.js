@@ -421,20 +421,24 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor seasonal decoration" }
         ]
     },
-    "xmas wreath 260714": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+    "white flocked christmas wreath red decor poinsettia bauble bow front door seasonal wreath customizable size color": {
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260714",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "White pvc artificial christmas wreath offered in three decorative styles. Decorations include poinsettia flowers candy ornaments star cutouts glossy baubles and fabric bows. Standard diameter is 60cm, custom sizes and color combinations are available. Lightweight circular wreath fits front door mantel wall window indoor outdoor seasonal christmas decor.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260714/1.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260714/2.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260714/3.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260714/4.jpg"
+            "images/products/holiday-decor/christmas/wreath/w20260714/white-pvc-christmas-wreath-red-decoration-collection-main-01.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260714/white-pvc-wreath-red-poinsettia-bow-candy-decor-02.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260714/white-pvc-wreath-star-bauble-ribbon-christmas-door-wreath-03.jpg"
         ], 
         specs: [
-            { label: "Size", value: "Customizable" },
-            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+            { label: "Material", value: "White PVC artificial pine branches" },
+            { label: "Size", value: "60cm diameter, custom sizes supported" },
+            { label: "Decor Accessories", value: "Red poinsettia flower, candy ornament, star cutout, red & white bauble, fabric bow, pinecone" },
+            { label: "Available Styles", value: "Large linen red bow style, shooting star ornament style, striped ribbon star style" },
+            { label: "Custom Options", value: "Custom size, custom color matching" },
+            { label: "Applicable Scene", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" },
+            { label: "Features", value: "Lightweight, reusable, easy hanging, weather resistant for sheltered outdoor use" }
         ]
     },
     "xmas wreath 260715": {
