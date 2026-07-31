@@ -1186,7 +1186,8 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "lighting")
     // ==========================================
-    
+    // ==========================================
+    // 💡 大类 2：Home Lighting (cat: "table lamp")
     "mushroom wooden table lamp ribbed solid wood desk lamp for bedroom bedside living room decor": {
         category: "lighting",
         subcategory: "table-lamps", 
@@ -1205,6 +1206,8 @@ const detailsDatabase = {
             { label: "Application", value: "Bedroom bedside, living room side table, study desk, hotel room decoration" }
         ]
     },
+    // ==========================================
+    // 💡 大类 2：Home Lighting (cat: "floor lamp")
     "wooden carved floor lamp wabi sabi linen shade standing lamp for living room bedroom decor": {
         category: "lighting",
         subcategory: "floor-lamps", 
@@ -1220,6 +1223,8 @@ const detailsDatabase = {
             { label: "Application", value: "living room bedroom entryway study lounge" }
         ]
     },
+    // ==========================================
+    // 💡 大类 2：Home Lighting (cat: "pendant light")
     "vintage lotus glass pendant light wooden small hanging lamp for dining room kitchen island": {
         category: "lighting",
         subcategory: "pendant-lights", 
@@ -1237,6 +1242,29 @@ const detailsDatabase = {
             { label: "Features", value: "Adjustable hanging cord, soft light diffusion, retro lotus shape, easy installation" }
         ]
     },
+    // ==========================================
+    // 💡 大类 2：Home Lighting (cat: "ceiling light")
+    "vintage flower ceiling light fabric petal flush mount ceiling lamp pull chain wooden accent bedroom entryway lighting": {
+        category: "lighting",
+        subcategory: "ceiling-light", 
+        code: "Item Code: xd20260731",
+        description: "Elegant flower shaped flush mount ceiling light with layered fabric petal lampshade. Equipped with pull chain switch and solid wood decorative details. Soft diffused light creates warm gentle ambiance. Suitable for bedroom entryway hallway small living room indoor home decoration lighting.",
+        images: [
+            "images/products/lighting/ceiling-light/xd20260731/vintage-flower-fabric-ceiling-light-white-background-main-01.jpg",
+            "images/products/lighting/ceiling-light/xd20260731/vintage-flower-fabric-ceiling-light-white-background-main-01.jpg"
+        ], 
+        specs: [
+            { label: "Lampshade Material", value: "Textured fabric" },
+            { label: "Hardware & Accessories", value: "Brass fitting, solid wood ornament, pull chain switch" },
+            { label: "Shape Design", value: "Lotus flower / petal flush mount shape" },
+            { label: "Design Style", value: "Vintage, french cottage, retro pastoral" },
+            { label: "Bulb Base", value: "E26 / E27 (bulb not included)" },
+            { label: "Application", value: "Bedroom, hallway, entryway, balcony, small living room" },
+            { label: "Core Features", value: "Soft light diffusion, easy installation, pull chain control, artistic floral outlook" }
+        ]
+    },
+    // ==========================================
+    // 💡 大类 2：Home Lighting (cat: "wall sconce")
     "walnut wood glass wall sconce adjustable swing arm wall lamp bedroom bedside reading light japanese wabi sabi wall lighting": {
         category: "lighting",
         subcategory: "wall-lighting", 
