@@ -398,19 +398,27 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor holiday decoration" }
         ]
     },
-    "xmas wreath 260713": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+    "green artificial christmas wreath pine cypress eucalyptus red berry pinecone front door winter rustic decor": {
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260713",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Natural style green foliage christmas wreath with multiple decorative variations. Styles feature cypress pine eucalyptus sprigs pinecones red berries blue berries and fabric ribbon. One variant supports pre-installed led lights. Circular 60cm wreath frame fits front door mantel window indoor winter and christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260713/1.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260713/2.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260713/3.jpg"
+            "images/products/holiday-decor/christmas/wreath/w20260713/natural-green-farmhouse-christmas-wreath-60cm-collection-main-01.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260713/eucalyptus-pinecone-green-christmas-wreath-rustic-style-02.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260713/cypress-wreath-with-blue-berry-pinecone-door-decor-03.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260713/red-berry-christmas-wreath-red-fabric-bow-farmhouse-04.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260713/pre-lit-cypress-green-wreath-with-pinecone-05.jpg"
         ], 
         specs: [
-            { label: "Size", value: "Customizable" },
-            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+            { label: "Base Frame", value: "Circular artificial green foliage wreath" },
+            { label: "Size", value: "60cm" },
+            { label: "Foliage Material", value: "Artificial cypress pine eucalyptus leaves" },
+            { label: "Decor Options", value: "Pinecone /red berry /blue berry /red fabric bow /built-in led light" },
+            { label: "Available Styles", value: "Plain greenery with pinecone / blue berry foliage wreath / red berry wreath with red bow / pre-lit cypress wreath / simple pinecone cypress wreath" },
+            { label: "Design Style", value: "Rustic natural farmhouse winter christmas style" },
+            { label: "Features", value: "Hand assembled/lightweight easy hanging/reusable seasonal wreath/optional lighting design" },
+            { label: "Application", value: "Front door entryway mantel wall window indoor seasonal decoration" }
         ]
     },
     "xmas wreath 260714": {
