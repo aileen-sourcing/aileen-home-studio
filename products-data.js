@@ -458,22 +458,27 @@ const detailsDatabase = {
             { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
         ]
     },
-    "xmas wreath 260716": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+    "green pvc christmas wreath red poinsettia gold bauble fabric bow front door holiday wreath customizable size color": {
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260716",
-        description: "Bring festive charm to any tabletop or entryway with this potted mini Christmas tree. Crafted with realistic PE/PVC pine needles and sturdy potted base, it offers a lush, natural look that requires no maintenance. Perfect for decorating offices, living rooms, mantelpieces, or front porches, adding a cozy holiday atmosphere to any space.",
+        description: "Green PVC artificial christmas wreath available in six decorative styles. Decorations include red poinsettia flowers gold baubles red berries sheer ribbon fabric bows pinecones and gold foliage accents. Standard diameter is 60cm, custom sizes and color matching are supported. Lightweight circular wreath fits front door mantel wall window indoor and sheltered outdoor seasonal decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260716/1.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260716/2.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260716/3.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260716/4.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260716/5.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260716/6.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260716/red-gold-pvc-christmas-wreath-collection-main-01.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260716/simple-red-poinsettia-christmas-wreath-pvc-base-02.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260716/christmas-wreath-red-poinsettia-sheer-organza-ribbon-03.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260716/red-gold-wreath-gold-bauble-wide-red-bow-door-decor-04.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260716/frosted-pinecone-gold-ball-poinsettia-wreath-05.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260716/gold-leaf-red-poinsettia-christmas-wreath-06.jpg",
         ], 
         specs: [
-            { label: "Size", value: "Customizable" },
-            { label: "Application", value: "Indoor Outdoor Holiday Decoration" }
+            { label: "Material", value: "Green PVC artificial pine branches" },
+            { label: "Size", value: "60cm diameter, custom sizes supported" },
+            { label: "Decor Accessories", value: "Red poinsettia flower, gold bauble, red berry, sheer organza ribbon, fabric bow, pinecone, gold decorative foliage" },
+            { label: "Available Styles", value: "Simple poinsettia layout, sheer ribbon poinsettia layout, gold ball & wide red bow layout, frosted pinecone gold bauble layout, gold leaf poinsettia layout, dense red foliage mixed decor layout" },
+            { label: "Custom Options", value: "Custom size, custom color combination" },
+            { label: "Features", value: "Lightweight, reusable, easy hanging, durable PVC branches, classic red gold christmas tone" },
+            { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }
         ]
     },
     "xmas wreath 260717": {
