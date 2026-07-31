@@ -1251,7 +1251,7 @@ const detailsDatabase = {
         description: "Elegant flower shaped flush mount ceiling light with layered fabric petal lampshade. Equipped with pull chain switch and solid wood decorative details. Soft diffused light creates warm gentle ambiance. Suitable for bedroom entryway hallway small living room indoor home decoration lighting.",
         images: [
             "images/products/lighting/ceiling-light/xd20260731/vintage-flower-fabric-ceiling-light-white-background-main-01.jpg",
-            "images/products/lighting/ceiling-light/xd20260731/vintage-flower-fabric-ceiling-light-white-background-main-01.jpg"
+            "images/products/lighting/ceiling-light/xd20260731/petal-flush-mount-ceiling-living-room-scene-display-02.jpg"
         ], 
         specs: [
             { label: "Lampshade Material", value: "Textured fabric" },
