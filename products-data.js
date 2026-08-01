@@ -944,6 +944,28 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
+    // 💡 大类 1：Holiday Decor (cat: "christmas ball")
+    "Christmas Ornaments Set Shatterproof Assorted Xmas Baubles Decorations for Christmas Tree Home Holiday Party Decor": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: cb20260801",
+        description: "This premium assorted Christmas ornament set comes in 3 elegant color themes: red & gold, navy blue & silver, gold & silver. Made of shatterproof plastic, these diverse hanging Xmas baubles feature Santa, nutcracker, snowflake, wreath and tree shapes. Packed in an exquisite gift box, ideal for decorating Christmas trees, home mantels, windows and festive holiday parties.",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/Red Gold Assorted Christmas Tree Ornament Gift Box Shatterproof Xmas Hanging Baubles-01.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/Navy Blue Silver Christmas Ornament Set Assorted Holiday Decor Baubles in Gift Box-02.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/Gold Silver Christmas Tree Decorations Xmas Hanging Ornament Gift Box-03.jpg"
+        ], 
+        specs: [
+            { label: "Product Name", value: "Assorted Christmas Ornament Gift Box Set" },
+            { label: "Available Color Themes", value: "1. Red & Gold 2. Navy Blue & Silver 3. Gold & Silver" },
+            { label: "Material", value: "Shatterproof Plastic" },
+            { label: "Ornament Shapes", value: "Nutcracker, Santa Claus, Snowflake, Wreath, Xmas Sock, Mini Christmas Tree, Gift Pouch, Round Baubles" },
+            { label: "Packing", value: "Luxury Divided Gift Box with Transparent PVC Window" },
+            { label: "Usage", value: "Christmas Tree Hanging Decor, Home Indoor Holiday Decor, Party & Shop Display, Holiday Gift" },
+            { label: "Feature", value: "Lightweight, Reusable, Pre-assorted shapes, Ready-to-hang" }
+        ]
+    },
+    // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Spring decor")
     "artificial spring eucalyptus wreath seasonal floral front door greenery wreath for farmhouse home decor": {
         category: "holiday",
