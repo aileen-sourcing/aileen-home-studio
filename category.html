@@ -1294,6 +1294,10 @@ a.logo-brand {
                             if (pTitle.includes('mini')) {
                                 isMatch = true;
                             }
+                        } else if (keyword === 'ball') {
+                            if (pTitle.includes('ball') || pTitle.includes('bauble')) {
+                                isMatch = true;
+                            }
                         } else {
                             if (pTitle.includes(keyword)) {
                                 isMatch = true;
@@ -1338,6 +1342,7 @@ a.logo-brand {
                                         <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="wreath" onchange="handleThirdLevelChange()"> <span>Wreath</span></label>
                                         <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="garland" onchange="handleThirdLevelChange()"> <span>Garland</span></label>
                                         <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="mini" onchange="handleThirdLevelChange()"> <span>Mini Christmas Tree</span></label>
+                                        <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="ball" onchange="handleThirdLevelChange()"> <span>Christmas Ball</span></label>
                                     </div>
                                     ` : ''}
                                  </li>
