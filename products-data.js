@@ -1231,6 +1231,25 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Storage Bags")
+    "christmas ornament storage bag foldable bauble organizer with clear window for holiday decorations": {
+        category: "holiday",
+        subcategory: "storage-bags", 
+        code: "Item Code: sb20260801",
+        description: "Foldable Christmas ornament storage box with transparent PVC panel. Separate grid compartments protect fragile Christmas baubles from scratches and dust. Equipped with sturdy carry handle and zipper closure. Compact foldable design saves closet space, ideal for organizing Christmas decorative balls and seasonal ornaments.",
+        images: [
+            "images/products/holiday-decor/storage-bags/sb20260801/foldable christmas ornament storage box clear view bauble organizer.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260801/transparent christmas bauble storage container holiday decoration organizer.jpg"
+        ], 
+        specs: [
+            { label: "Product Name", value: "Christmas Ornament Storage Box" },
+            { label: "Material", value: "Polyester fabric + frosted PVC sheet + cardboard dividers" },
+            { label: "Color", value: "Dark green trim with frosted transparent surface" },
+            { label: "Feature", value: "Foldable, dustproof, visible window, portable handle, zipper closure" },
+            { label: "Capacity", value: "Multiple separate compartments for Christmas baubles" },
+            { label: "Application", value: "Storage for Christmas balls, holiday ornaments & seasonal decor" },
+            { label: "Design", value: "Cube shape decorated with Christmas tree pattern" },
+        ]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Tinsel Garland")
     // ==========================================
