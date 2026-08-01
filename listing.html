@@ -1104,7 +1104,7 @@ a[href="index.html"].logo-brand {
                 }
             }
 
-            // 🌟【添加】：获取勾选的多选框选项
+            // 🌟【修改后】：融入了排除主品类（Tree, Wreath, Garland）的精准筛选逻辑
             const selectedFilters = Array.from(document.querySelectorAll('.third-cb:checked')).map(cb => cb.value.toLowerCase());
 
             for (let key in detailsDatabase) {
@@ -1116,14 +1116,38 @@ a[href="index.html"].logo-brand {
                     const isCatMatch = !targetCat || prodCat.includes(targetCat) || targetCat.includes(prodCat);
                     const isSubMatch = !subItem || prodSub === targetSub;
 
-                    // 🌟【添加】：多选框筛选过滤条件
-                    const isFilterMatch = selectedFilters.length === 0 || selectedFilters.some(val => 
-                        key.toLowerCase().includes(val) || 
-                        (product.code && product.code.toLowerCase().includes(val)) || 
-                        prodSub.includes(val)
-                    );
+                    // 🎯 核心筛选逻辑：带精准排除功能
+                    const isFilterMatch = selectedFilters.length === 0 || selectedFilters.some(val => {
+                        const titleLower = key.toLowerCase();
+                        const codeLower = product.code ? product.code.toLowerCase() : '';
 
-                    // 🌟【修改】：加入 isFilterMatch 匹配
+                        // 1. 勾选 Christmas Ball 时
+                        if (val === 'ball') {
+                            const hasBallKey = titleLower.includes('ball') || titleLower.includes('bauble') || prodSub.includes('ball');
+                            // 主动排除标题里有 Tree, Wreath, Garland 的非纯球类产品
+                            const isOtherCategory = titleLower.includes('wreath') || 
+                                                    titleLower.includes('garland') || 
+                                                    titleLower.includes('tree');
+
+                            return hasBallKey && !isOtherCategory;
+                        } 
+
+                        // 2. 勾选 Mini Christmas Tree 时
+                        if (val === 'mini') {
+                            return titleLower.includes('mini') && titleLower.includes('tree');
+                        }
+
+                        // 🎯 3. 新增：勾选 Christmas Tree 时，包含 tree 但强行排除 mini
+                        if (val === 'tree') {
+                            const hasTreeKey = titleLower.includes('tree') || prodSub === 'christmas-tree';
+                            const isMiniTree = titleLower.includes('mini');
+                            return hasTreeKey && !isMiniTree;
+                        }
+
+                        // 3. 其他选项（tree, wreath, garland）常规匹配
+                        return titleLower.includes(val) || codeLower.includes(val) || prodSub.includes(val);
+                    });
+
                     if (isCatMatch && isSubMatch && isFilterMatch) {
                         gridHtml += buildProductCardHtml(key, product, formattedTitle);
                     }
