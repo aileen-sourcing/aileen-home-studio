@@ -1295,7 +1295,10 @@ a.logo-brand {
                                 isMatch = true;
                             }
                         } else if (keyword === 'ball') {
-                            if (pTitle.includes('ball') || pTitle.includes('bauble')) {
+                        const mainPart = pTitle.includes(' for ') ? pTitle.split(' for ')[0] : pTitle;
+                        const hasBall = mainPart.includes('ball') || mainPart.includes('bauble');
+                        const hasOtherCategory = mainPart.includes('wreath') || mainPart.includes('garland') || mainPart.includes('tree');
+                            if (hasBall && !hasOtherCategory) {
                                 isMatch = true;
                             }
                         } else {
