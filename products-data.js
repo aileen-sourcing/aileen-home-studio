@@ -996,27 +996,30 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Summer decor")
     // ==========================================
+    "faux floral wreath silk sunflower lemon greenery minimalist pastoral seasonal front door porch indoor hanging ornament": {
+        category: "holiday",
+        subcategory: "summer-decor", 
+        code: "Item Code: fw20260727",
+        description: "Lifelike seasonal artificial wreath constructed on natural twig ring base. Decorations consist of faux sunflowers, simulated lemons, blush roses, peonies, daisies and diverse green foliage. Four independent design styles for selection. Fresh bright tones deliver vivid spring and summer vibe, suitable for front door, entryway, kitchen, living room, window, covered outdoor areas and farmhouse style interior display.",
+        images: [
+            "images/products/holiday-decor/summer-decor/wreath/sm20260731/summer-sunflower-peony-mixed-floral-wreath-display-01.jpg",
+            "images/products/holiday-decor/summer-decor/wreath/sm20260731/lemon-blush-rose-greenery-wreath-home-decor-02.jpg",
+            "images/products/holiday-decor/summer-decor/wreath/sm20260731/minimalist-sunflower-eucalyptus-front-door-wreath-03.jpg",
+            "images/products/holiday-decor/summer-decor/wreath/sm20260731/simulated-lemon-fruit-pure-green-foliage-wreath-04.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "Silk fabric flower, plastic simulated lemon, artificial green foliage, natural twig ring base" },
+            { label: "Size", value: "Multiple specifications available custom dimension supported" },
+            { label: "Decor Components", value: "Faux sunflower simulated lemon peony blush rose daisy fern leaf eucalyptus assorted green leaves" },
+            { label: "Optional Styles", value: "Sunflower peony mixed flower wreath / lemon rose blossom wreath / minimalist sunflower wreath / pure lemon green foliage wreath" },
+            { label: "Suitable Season", value: "Spring summer all-year round display" },
+            { label: "Feature", value: "Lightweight easy hanging reusable fade resistant lifelike pastoral appearance" },
+            { label: "Application", value: "Front door entryway porch wall window kitchen living room cafe farmhouse indoor area covered outdoor space" }
+        ]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Fall decor")
     // ==========================================
-    "summer floral wreath sunflower lemon front door wreath artificial flower greenery wreath for outdoor home decor": {
-        category: "holiday",
-        subcategory: "fall-decor", 
-        code: "Item Code: fw20260727",
-        description: "This summer floral wreath includes sunflower style and lemon greenery style artificial wreath options. Made of durable artificial flowers fruits and lush green leaves, this front door wreath maintains bright vivid color without frequent maintenance. The seasonal wreath brings fresh vibrant summer atmosphere to your home. Perfect to hang on front door, porch, wall, window or indoor entryway decoration. Lightweight and easy to hang, ideal summer home decor for farmhouse rustic neutral style houses.",
-        images: [
-            "images/products/holiday-decor/fall-decor/wreath/fw20260727/1.jpg",
-            "images/products/holiday-decor/fall-decor/wreath/fw20260727/2.jpg",
-            "images/products/holiday-decor/fall-decor/wreath/fw20260727/3.jpg",
-            "images/products/holiday-decor/fall-decor/wreath/fw20260727/4.jpg"
-        ], 
-        specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Material", value: "Artificial silk flower, Plastic fruit, Fabric green leaves, Vine base" },
-            { label: "Feature", value: "Fade resistant, No watering required, Easy to hang" },
-            { label: "Application", value: "Outdoor/Indoor Front Door Welcome Display" }
-        ]
-    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Winter decor")
     // ==========================================
