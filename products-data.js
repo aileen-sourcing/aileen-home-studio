@@ -945,7 +945,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas ball")
-    "christmas ornaments set shatterproof assorted xmas baubles decorations for christmas tree home holiday party decor": {
+    "christmas ornaments set shatterproof assorted christmas ball decorations for home holiday party decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: cb20260801",
