@@ -297,7 +297,6 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "wreath")
-    // ==========================================
     "rustic farmhouse christmas wreath with burlap bow wooden angel cotton pinecone red berry candle holder front door wall hanging decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
@@ -609,8 +608,6 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: garland")
-    // ==========================================
-
     "battery operated pre lit 270cm artificial christmas garland 200 tips flocked pine branch indoor mantel stair holiday decor": {
         category: "holiday",
         subcategory: "christmas", 
@@ -639,7 +636,6 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "mini christmas tree")
-    // ==========================================
     "pre decorated potted artificial christmas tree plaid ribbon berry pine cone lighted entryway porch holiday display tree": {
         category: "holiday",
         subcategory: "christmas", 
@@ -948,9 +944,7 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
-    // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Spring decor")
-    // ==========================================
     "artificial spring eucalyptus wreath seasonal floral front door greenery wreath for farmhouse home decor": {
         category: "holiday",
         subcategory: "spring-decor", 
@@ -995,11 +989,10 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Summer decor")
-    // ==========================================
     "faux floral wreath silk sunflower lemon greenery minimalist pastoral seasonal front door porch indoor hanging ornament": {
         category: "holiday",
         subcategory: "summer-decor", 
-        code: "Item Code: fw20260727",
+        code: "Item Code: sm20260731",
         description: "Lifelike seasonal artificial wreath constructed on natural twig ring base. Decorations consist of faux sunflowers, simulated lemons, blush roses, peonies, daisies and diverse green foliage. Four independent design styles for selection. Fresh bright tones deliver vivid spring and summer vibe, suitable for front door, entryway, kitchen, living room, window, covered outdoor areas and farmhouse style interior display.",
         images: [
             "images/products/holiday-decor/summer-decor/wreath/sm20260731/summer-sunflower-peony-mixed-floral-wreath-display-01.jpg",
@@ -1019,13 +1012,31 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Fall decor")
-    // ==========================================
+    "artificial fall harvest wreath faux pumpkin grain stalk maple leaf rustic seasonal front door entryway hanging decor": {
+        category: "holiday",
+        subcategory: "fall-decor", 
+        code: "Item Code: fw20260727",
+        description: "Rustic autumn wreath built on natural twig ring base. Decor elements include simulated mini pumpkins, grain stalks, millet sprays, artificial maple leaves and pine cones. Four distinctive harvest-style designs available. Warm earthy tones create strong fall and Thanksgiving atmosphere, suitable for front door, porch, entryway, wall, window, living room and covered outdoor decorative display.",
+        images: [
+            "images/products/holiday-decor/fall-decor/wreath/fw20260727/fall-pumpkin-grain-stalk-wreath-harvest-decoration-01.jpg",
+            "images/products/holiday-decor/fall-decor/wreath/fw20260727/autumn-millet-spray-dried-grass-wreath-overview-02.jpg",
+            "images/products/holiday-decor/fall-decor/wreath/fw20260727/maple-leaf-pinecone-faux-pumpkin-fall-wreath-03.jpg",
+            "images/products/holiday-decor/fall-decor/wreath/fw20260727/simple-autumn-leaf-mini-pumpkin-rustic-wreath-04.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "Natural twig ring, artificial dried grass, fabric foliage, plastic faux pumpkin" },
+            { label: "Size", value: "Multiple sizes available, custom dimension supported" },
+            { label: "Decor Components", value: "Faux mini pumpkin, millet stalk, grain sprig, artificial maple leaf, pine cone, dried grass foliage" },
+            { label: "Optional Styles", value: "Pumpkin grain stalk wreath / pure mixed millet wreath / maple pinecone pumpkin wreath / simple autumn leaf pumpkin wreath" },
+            { label: "Applicable Season", value: "Autumn, fall, thanksgiving holiday" },
+            { label: "Feature", value: "Lightweight, easy hanging, reusable, long service life, vintage rustic harvest aesthetic" },
+            { label: "Application", value: "Front door, entryway, porch, wall, window, living room, farmhouse, covered outdoor space" }
+        ]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Winter decor")
     // ==========================================
-    // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "halloween")
-    // ==========================================
     "pre lit black mini halloween tree with purple lights tabletop potted artificial tree for home party decor": {
         category: "holiday",
         subcategory: "halloween", 
@@ -1046,10 +1057,9 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
-    // 💡 大类 1：Holiday Decor (cat: "Thanksgiving")
+    // 💡 大类 1：Holiday Decor (cat: "valentines-day")
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "easter")
-    // ==========================================
     "easter egg wreath spring greenery front door home decoration": {
         category: "holiday",
         subcategory: "easter", 
@@ -1075,7 +1085,6 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas flowers")
-    // ==========================================
     "blue silver artificial poinsettia flower christmas tree decorative flower ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
@@ -1180,7 +1189,6 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "tree skirts")
-    // ==========================================
     "red and green merry christmas tree skirt with scalloped edge holiday decoration": {
         category: "holiday",
         subcategory: "tree-skirts", 
@@ -1202,12 +1210,9 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Storage Bags")
     // ==========================================
-    // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Tinsel Garland")
     // ==========================================
-    // ==========================================
     // 💡 大类 2：Home Lighting (cat: "lighting")
-    // ==========================================
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "table lamp")
     "mushroom wooden table lamp ribbed solid wood desk lamp for bedroom bedside living room decor": {
@@ -1304,8 +1309,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // ⚙️ 大类 3：Raw Materials (cat: "material")
-    // ==========================================
-    
+    // ========================================== 
     "pvc christmas tree raw material roll artificial pine needle plastic film for christmas tree production": {
         category: "material",
         subcategory: "pvc-film", 
