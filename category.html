@@ -1104,7 +1104,7 @@ a.logo-brand {
                     // 1. 先匹配大分类
                     if (pCat === dbSearchCat) {
                         // 2. 如果勾选了左侧筛选框，再过滤子分类；没勾选则全量显示
-                        if (activeFilters.length === 0 || activeFilters.includes(pSub.replace('-', ' '))) {
+                        if (activeFilters.length === 0 || activeFilters.includes(pSub.replace(/-/g, ' '))) {
                             result.push({ name: name, ...p });
                         }
                     }
@@ -1183,7 +1183,7 @@ a.logo-brand {
             if (isCategoryMatch) {
                 // 如果左侧没有勾选任何过滤框，或者勾选的子类刚好匹配到了产品的 subcategory
                 // 这里的 .replace('-', ' ') 是为了把 "metal-stands" 变成 "metal stands" 对应你多选框的文字
-                if (activeFilters.length === 0 || activeFilters.includes(pSub.replace('-', ' '))) {
+                if (activeFilters.length === 0 || activeFilters.includes(pSub.replace(/-/g, ' '))) {
                     
                     let firstImg = "images/placeholder.jpg";
                     if (product.images && product.images.length > 0) {
