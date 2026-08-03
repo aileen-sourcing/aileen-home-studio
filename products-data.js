@@ -346,7 +346,8 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/wreath/w20260710/gold-orange-christmas-wreath-collection-white-background-main-01.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260710/pine-wreath-poinsettia-eucalyptus-orange-baubles-02.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260710/asymmetrical-grapevine-rattan-wreath-poinsettia-03.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260710/christmas-wreath-golden-candle-holder-poinsettia-pinecone-04.jpg"
+            "images/products/holiday-decor/christmas/wreath/w20260710/christmas-wreath-golden-candle-holder-poinsettia-pinecone-04.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260710/Orange ball pine Christmas wreath with gold ribbon-05.jpg"
         ], 
         specs: [
             { label: "Wreath Base", value: "Full circular artificial pine frame / natural grapevine rattan frame (multiple options)" },
