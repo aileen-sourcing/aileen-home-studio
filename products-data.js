@@ -1252,7 +1252,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas-reindeer-decorations")
-    "flocked red deer figurine silver gold antler reindeer statue holiday tabletop ornament christmas new year home mantel decorative decor": {
+    "flocked red deer figurine silver gold antler christmas reindeer decorations for holiday tabletop ornament christmas new year home mantel decorative decor": {
         category: "holiday",
         subcategory: "christmas-reindeer-decorations", 
         code: "Item Code: cl20260801",
