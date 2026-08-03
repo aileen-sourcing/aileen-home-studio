@@ -1251,7 +1251,29 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
-    // 💡 大类 1：Holiday Decor (cat: "Tinsel Garland")
+    // 💡 大类 1：Holiday Decor (cat: "christmas-reindeer-decorations")
+    "flocked red deer figurine silver gold antler reindeer statue holiday tabletop ornament christmas new year home mantel decorative decor": {
+        category: "holiday",
+        subcategory: "christmas-reindeer-decorations", 
+        code: "Item Code: cl20260801",
+        description: "Exquisite flocked reindeer ornaments crafted with soft velvet texture. Available in various postures including lying posture and standing posture, matched with silver branch antlers or golden antlers. Rich vibrant red tone creates strong festive atmosphere. Suitable for fireplace mantel, tabletop, shelf, showcase window display for Christmas, New Year and holiday scene layout.",
+        images: [
+            "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/red-flocked-lying-reindeer-statue-silver-branch-antler-product-photo-01.jpg",
+            "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/small-standing-flocked-red-deer-silver-antler-figurine-02.jpg",
+            "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/medium-tall-standing-red-reindeer-branch-antler-ornament-03.jpg",
+            "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/tall-front-facing-red-flocking-deer-sculpture-silver-antler-04.jpg",
+            "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/carved-red-reindeer-figurine-with-golden-antler-decoration-05.jpg"
+        ], 
+        specs: [
+            { label: "Surface Craft", value: "Flocking / velvet flocked finish" },
+            { label: "Main Body Color", value: "Bright red" },
+            { label: "Antler Style", value: "Silver branch antler / golden solid antler" },
+            { label: "Posture Options", value: "Lying deer / standing small deer / medium standing deer / tall standing deer / carved standing deer" },
+            { label: "Material", value: "Plastic base with flocking coating" },
+            { label: "Application", value: "Christmas, new year celebration, holiday party, home decoration, retail window display" },
+            { label: "Features", value: "Matte flocked surface, multiple size & posture options, lightweight, festive aesthetic, easy arrangement" },
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "lighting")
     // ==========================================
