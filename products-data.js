@@ -637,7 +637,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "mini christmas tree")
-    "pre decorated potted artificial christmas tree plaid ribbon berry pine cone lighted entryway porch holiday display tree": {
+    "pre decorated potted artificial mini christmas tree plaid ribbon berry pine cone lighted entryway porch holiday display tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260714",
@@ -676,7 +676,7 @@ const detailsDatabase = {
             { label: "Application", value: "Table decoration, shelf display, bedroom ornament, holiday party centerpiece, window decor" }
         ]
     },
-    "90cm prelit potted artificial christmas tree silver dusted pine tips red berries timer battery led tabletop entryway xmas decor": {
+    "90cm prelit potted artificial mini christmas tree silver dusted pine tips red berries timer battery led tabletop entryway xmas decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260716",
@@ -752,7 +752,7 @@ const detailsDatabase = {
             { label: "Application", value: "Tabletop display, dining table decor, counter ornament, indoor christmas party layout" }
         ]
     },
-    "120cm flocked potted artificial christmas tree snowy pine branches 70 warm led lights battery operated black square pot entryway xmas decor": {
+    "120cm flocked potted mini artificial christmas tree snowy pine branches 70 warm led lights battery operated black square pot entryway xmas decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260719",
@@ -775,7 +775,7 @@ const detailsDatabase = {
             { label: "Application", value: "Entryway decor, porch display, living room corner, window christmas decoration" }
         ]
     },
-    "60cm prelit tabletop artificial christmas tree burlap wrapped cement base 8 lighting modes timer battery operated warm white led small xmas tree": {
+    "60cm prelit tabletop artificial mini christmas tree burlap wrapped cement base 8 lighting modes timer battery operated warm white led small xmas tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260720",
@@ -1108,7 +1108,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas flowers")
-    "blue silver artificial poinsettia flower christmas tree decorative flower ornament": {
+    "blue silver artificial poinsettia christmas flower for christmas decorating": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260717",
@@ -1125,7 +1125,7 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath accessory, garland embellishment, holiday floral arrangement" }
         ]
     },
-    "white artificial poinsettia flower fabric christmas tree decorative flower ornament": {
+    "white artificial poinsettia flower fabric decorative flower ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260718",
@@ -1142,7 +1142,7 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "red gold artificial poinsettia flower christmas tree decorative flower ornament": {
+    "red gold artificial poinsettia flower decorative flower ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260719",
@@ -1159,7 +1159,7 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "blue fabric artificial poinsettia flower christmas tree decorative flower ornament": {
+    "blue fabric artificial poinsettia flower decorative flower ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260720",
@@ -1193,7 +1193,7 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "metallic silver artificial poinsettia bloom fabric christmas floral pick for holiday wreath tree decor": {
+    "metallic silver artificial poinsettia bloom fabric christmas floral pick for holiday decorating": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260722",
@@ -1212,7 +1212,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "tree skirts")
-    "red and green merry christmas tree skirt with scalloped edge holiday decoration": {
+    "red and green merry christmas skirt with scalloped edge holiday decoration": {
         category: "holiday",
         subcategory: "tree-skirts", 
         code: "Item Code: ts20260717",
