@@ -1333,7 +1333,7 @@ const detailsDatabase = {
             { label: "Features", value: "Adjustable hanging cord, soft light diffusion, retro lotus shape, easy installation" }
         ]
     },
-    "linear combination pendant light walnut multi-head adjustable hanging fixture for dining room kitchen island home interior lighting": {
+    "linear combination pendant light walnut multi head adjustable hanging fixture for dining room kitchen island home interior lighting": {
         category: "lighting",
         subcategory: "pendants", 
         code: "Item Code: p20260701",
