@@ -1072,8 +1072,10 @@ a[href="index.html"].logo-brand {
             const cleanCat = catItem ? catItem.toLowerCase().trim() : '';
             const targetCat = (cleanCat === 'holiday' || cleanCat === 'holiday-decor') ? 'holiday' : cleanCat;
             
-            // 🎯【修改点 1】：对齐 subItem，把中划线转成空格（如 wall-sconces -> wall sconces）
-            const targetSub = subItem ? subItem.toLowerCase().replace(/-/g, ' ').trim() : ''; 
+            // 🎯【归一化处理】：把连字符转为空格，同时保留纯小写无符号版
+            const rawSub = subItem ? subItem.toLowerCase().trim() : '';
+            const targetSubSpace = rawSub.replace(/-/g, ' ');   // "pendant lights"
+            const targetSubHyphen = rawSub.replace(/\s+/g, '-'); // "pendant-lights"
 
             if (subItem) {
                 // 页面标题展示格式化
@@ -1107,51 +1109,50 @@ a[href="index.html"].logo-brand {
                 }
             }
 
-            // 🌟【修改后】：融入了排除主品类（Tree, Wreath, Garland）的精准筛选逻辑
             const selectedFilters = Array.from(document.querySelectorAll('.third-cb:checked')).map(cb => cb.value.toLowerCase());
 
             for (let key in detailsDatabase) {
                 if (detailsDatabase.hasOwnProperty(key)) {
                     const product = detailsDatabase[key];
                     const prodCat = product.category ? product.category.toLowerCase().trim() : '';
-                    
-                    // 🎯【修改点 2】：取消 replace(/s$/, '')，保留复数 endings（匹配 wall sconces 和 pendants）
                     const prodSub = product.subcategory ? product.subcategory.toLowerCase().trim() : '';
+                    const titleLower = key.toLowerCase();
 
+                    // 1. 大类匹配
                     const isCatMatch = !targetCat || prodCat.includes(targetCat) || targetCat.includes(prodCat);
                     
-                    // 🎯【修改点 3】：子类匹配逻辑（精准匹配 subcategory 或标题兼顾包含）
-                    const titleLower = key.toLowerCase();
-                    const isSubMatch = !subItem || prodSub === targetSub || titleLower.includes(targetSub);
+                    // 🎯 2. 子类全兼容匹配（同时兼容: 中划线形式、空格形式、标题包含、以及去除尾部s的单数兼容）
+                    const prodSubSpace = prodSub.replace(/-/g, ' ');
+                    const baseSubWord = targetSubSpace.replace(/s$/, ''); // 去除末尾 s (如 "pendant light")
 
-                    // 🎯 核心筛选逻辑：带精准排除功能
+                    const isSubMatch = !subItem || 
+                        prodSub === rawSub || 
+                        prodSub === targetSubHyphen || 
+                        prodSub === targetSubSpace ||
+                        prodSubSpace.includes(targetSubSpace) ||
+                        titleLower.includes(targetSubSpace) ||
+                        titleLower.includes(baseSubWord);
+
+                    // 3. Christmas 侧边栏多选框过滤
                     const isFilterMatch = selectedFilters.length === 0 || selectedFilters.some(val => {
                         const codeLower = product.code ? product.code.toLowerCase() : '';
 
-                        // 1. 勾选 Christmas Ball 时
                         if (val === 'ball') {
                             const hasBallKey = titleLower.includes('ball') || titleLower.includes('bauble') || prodSub.includes('ball');
-                            // 主动排除标题里有 Tree, Wreath, Garland 的非纯球类产品
-                            const isOtherCategory = titleLower.includes('wreath') || 
-                                                    titleLower.includes('garland') || 
-                                                    titleLower.includes('tree');
-
+                            const isOtherCategory = titleLower.includes('wreath') || titleLower.includes('garland') || titleLower.includes('tree');
                             return hasBallKey && !isOtherCategory;
                         } 
 
-                        // 2. 勾选 Mini Christmas Tree 时
                         if (val === 'mini') {
                             return titleLower.includes('mini') && titleLower.includes('tree');
                         }
 
-                        // 🎯 3. 勾选 Christmas Tree 时，包含 tree 但强行排除 mini
                         if (val === 'tree') {
                             const hasTreeKey = titleLower.includes('tree') || prodSub === 'christmas-tree';
                             const isMiniTree = titleLower.includes('mini');
                             return hasTreeKey && !isMiniTree;
                         }
 
-                        // 4. 其他选项（tree, wreath, garland）常规匹配
                         return titleLower.includes(val) || codeLower.includes(val) || prodSub.includes(val);
                     });
 
