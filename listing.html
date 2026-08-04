@@ -1071,9 +1071,12 @@ a[href="index.html"].logo-brand {
         else if (typeof detailsDatabase !== 'undefined') {
             const cleanCat = catItem ? catItem.toLowerCase().trim() : '';
             const targetCat = (cleanCat === 'holiday' || cleanCat === 'holiday-decor') ? 'holiday' : cleanCat;
-            const targetSub = subItem ? subItem.replace(/s$/, '').toLowerCase().trim() : ''; 
+            
+            // 🎯【修改点 1】：对齐 subItem，把中划线转成空格（如 wall-sconces -> wall sconces）
+            const targetSub = subItem ? subItem.toLowerCase().replace(/-/g, ' ').trim() : ''; 
 
             if (subItem) {
+                // 页面标题展示格式化
                 displayTitle = subItem.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
             } else if (catItem) {
                 displayTitle = catItem.toUpperCase();
@@ -1111,14 +1114,18 @@ a[href="index.html"].logo-brand {
                 if (detailsDatabase.hasOwnProperty(key)) {
                     const product = detailsDatabase[key];
                     const prodCat = product.category ? product.category.toLowerCase().trim() : '';
-                    const prodSub = product.subcategory ? product.subcategory.toLowerCase().trim().replace(/s$/, '') : '';
+                    
+                    // 🎯【修改点 2】：取消 replace(/s$/, '')，保留复数 endings（匹配 wall sconces 和 pendants）
+                    const prodSub = product.subcategory ? product.subcategory.toLowerCase().trim() : '';
 
                     const isCatMatch = !targetCat || prodCat.includes(targetCat) || targetCat.includes(prodCat);
-                    const isSubMatch = !subItem || prodSub === targetSub;
+                    
+                    // 🎯【修改点 3】：子类匹配逻辑（精准匹配 subcategory 或标题兼顾包含）
+                    const titleLower = key.toLowerCase();
+                    const isSubMatch = !subItem || prodSub === targetSub || titleLower.includes(targetSub);
 
                     // 🎯 核心筛选逻辑：带精准排除功能
                     const isFilterMatch = selectedFilters.length === 0 || selectedFilters.some(val => {
-                        const titleLower = key.toLowerCase();
                         const codeLower = product.code ? product.code.toLowerCase() : '';
 
                         // 1. 勾选 Christmas Ball 时
@@ -1137,14 +1144,14 @@ a[href="index.html"].logo-brand {
                             return titleLower.includes('mini') && titleLower.includes('tree');
                         }
 
-                        // 🎯 3. 新增：勾选 Christmas Tree 时，包含 tree 但强行排除 mini
+                        // 🎯 3. 勾选 Christmas Tree 时，包含 tree 但强行排除 mini
                         if (val === 'tree') {
                             const hasTreeKey = titleLower.includes('tree') || prodSub === 'christmas-tree';
                             const isMiniTree = titleLower.includes('mini');
                             return hasTreeKey && !isMiniTree;
                         }
 
-                        // 3. 其他选项（tree, wreath, garland）常规匹配
+                        // 4. 其他选项（tree, wreath, garland）常规匹配
                         return titleLower.includes(val) || codeLower.includes(val) || prodSub.includes(val);
                     });
 
