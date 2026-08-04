@@ -1315,15 +1315,15 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
-    // 💡 大类 2：Home Lighting (cat: "pendant light")
+    // 💡 大类 2：Home Lighting (cat: "pendants")
     "vintage lotus glass pendant light wooden small hanging lamp for dining room kitchen island": {
         category: "lighting",
-        subcategory: "pendant-lights", 
+        subcategory: "pendants", 
         code: "Item Code: p20260630",
         description: "Bring soft warm atmosphere to indoor spaces with this vintage lotus glass pendant light. Designed with petal-shaped gradient glass shade and solid wood lamp holder, it delivers gentle diffused lighting. Perfect for decorating dining tables, kitchen islands, bedside areas, cafes, adding elegant retro aesthetic to residential and commercial interiors.",
         images: [
-            "images/products/lighting/pendant-lights/p20260630/p20260630-1.jpg",
-            "images/products/lighting/pendant-lights/p20260630/p20260630-2.jpg"
+            "images/products/lighting/pendants/p20260630/p20260630-1.jpg",
+            "images/products/lighting/pendants/p20260630/p20260630-2.jpg"
         ], 
         specs: [
             { label: "Material", value: "Gradient glass shade, solid wood lamp head, metal ceiling base" },
@@ -1355,15 +1355,15 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
-    // 💡 大类 2：Home Lighting (cat: "wall sconce")
+    // 💡 大类 2：Home Lighting (cat: "wall sconces")
     "walnut wood glass wall sconce adjustable swing arm wall lamp bedroom bedside reading light japanese wabi sabi wall lighting": {
         category: "lighting",
-        subcategory: "wall-lighting", 
+        subcategory: "wall-sconces", 
         code: "Item Code: wl20260715",
         description: "This walnut wood glass wall sconce designed as a practical bedside reading light, this vintage wall lamp combines natural walnut wood, brass fittings and frosted glass shade to create classic japanese wabi sabi and mid century modern decor aesthetic. Frosted glass diffuses light evenly to reduce harsh glare. This decorative wall lighting is widely used for bedroom bedside, hallway, living room, study room and guest house.",
         images: [
-            "images/products/lighting/wall-lighting/wl20260715/1.jpg",
-            "images/products/lighting/wall-lighting/wl20260715/2.jpg"
+            "images/products/lighting/wall-sconces/wl20260715/1.jpg",
+            "images/products/lighting/wall-sconces/wl20260715/2.jpg"
         ], 
         specs: [
             { label: "Material", value: "Walnut wood brass accessories frosted glass lampshade" },
