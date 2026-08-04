@@ -1176,7 +1176,7 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "shiny gold artificial poinsettia pick fabric christmas floral decoration for wreath tree garland": {
+    "shiny gold artificial poinsettia pick fabric christmas floral decoration for christmas decorating": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260721",
@@ -1232,7 +1232,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Storage Bags")
-    "christmas ornament storage bag foldable bauble organizer with clear window for holiday decorations": {
+    "christmas ornament storage bag foldable organizer with clear window for holiday decorations": {
         category: "holiday",
         subcategory: "storage-bags", 
         code: "Item Code: sb20260801",
