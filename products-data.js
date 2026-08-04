@@ -796,7 +796,7 @@ const detailsDatabase = {
             { label: "Application", value: "Tabletop display, shelf decor, cabinet ornament, rustic indoor holiday layout" }
         ]
     },
-    "45cm undecorated artificial tabletop fir tree realistic pe branches metal flat base mini green christmas tree diy desktop holiday decor": {
+    "45cm undecorated artificial tabletop fir tree realistic pe branches metal flat base green mini christmas tree diy desktop holiday decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260721",
@@ -818,7 +818,7 @@ const detailsDatabase = {
             { label: "Application", value: "Desktop display, windowsill decor, dining table ornament, shelf holiday layout" }
         ]
     },
-    "90cm flocked prelit potted christmas tree pre decorated red berries gold baubles warm white led lights snowy pine tree black planter indoor porch xmas decor": {
+    "90cm flocked prelit potted mini christmas tree pre decorated red berries gold baubles warm white led lights snowy pine tree black planter indoor porch xmas decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260722",
@@ -842,7 +842,7 @@ const detailsDatabase = {
             { label: "Application", value: "Entryway, porch, living room, dining room, store window decoration" }
         ]
     },
-    "prelit pink snow flocked tabletop christmas tree warm led lights small frosted artificial pine tree pink round base bedroom desktop holiday decor": {
+    "prelit pink snow flocked tabletop mini christmas tree warm led lights small frosted artificial pine tree pink round base bedroom desktop holiday decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260723",
@@ -925,7 +925,7 @@ const detailsDatabase = {
             { label: "Application", value: "Entryway, foyer, hallway, desktop, dining table, store front decoration" }
         ]
     },
-    "prelit green potted tabletop christmas tree warm white led lights artificial pine tree black square planter indoor entryway festive decor": {
+    "prelit green potted tabletop mini christmas tree warm white led lights artificial pine tree black square planter indoor entryway festive decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260727",
