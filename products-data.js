@@ -1333,6 +1333,26 @@ const detailsDatabase = {
             { label: "Features", value: "Adjustable hanging cord, soft light diffusion, retro lotus shape, easy installation" }
         ]
     },
+    "linear combination pendant light walnut multi-head adjustable hanging fixture for dining room kitchen island home interior lighting": {
+        category: "lighting",
+        subcategory: "pendants", 
+        code: "Item Code: p20260701",
+        description: "Multi-head linear combination ceiling light built with walnut wood base. Assembled with spherical lamp heads cylindrical spotlights and adjustable disc pendant lamp. Lamp angles and suspension length can be freely adjusted. Gentle warm light builds comfortable home ambiance, suitable for residential and commercial interior decoration.",
+        images: [
+            "images/products/lighting/pendants/p20260701/walnut-multi-head-linear-combination-pendant-light-white-background-product-shot-01.jpg",
+            "images/products/lighting/pendants/p20260701/solid-wood-long-bar-ceiling-light-dining-room-interior-scene-display-02.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "Walnut wood frame / metal hardware / frosted lampshade" },
+            { label: "Lamp Head Types", value: "Globe lamp head / cylindrical spotlight / disc pendant lamp" },
+            { label: "Structure", value: "Long linear bar multi-light combined ceiling fixture" },
+            { label: "Adjustment Function", value: "Rotatable lamp heads / adjustable suspension wire length" },
+            { label: "Bulb Match", value: "Compatible with universal LED bulbs" },
+            { label: "Applicable Style", value: "Japanese minimalist / mid-century modern / retro solid wood style" },
+            { label: "Applicable Space", value: "Dining room, kitchen island, entryway, living room, cafe, restaurant, bar counter" },
+            { label: "Features", value: "Flexible combined layout, natural wood texture, easy surface mounting, multi-angle lighting" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "ceiling light")
     "vintage flower ceiling light fabric petal flush mount ceiling lamp pull chain wooden accent bedroom entryway lighting": {
@@ -1394,7 +1414,6 @@ const detailsDatabase = {
     },
     // ==========================================
     // ⚙️ 大类 3：Raw Materials (cat: "material")
-    // ========================================== 
     "pvc christmas tree raw material roll artificial pine needle plastic film for christmas tree production": {
         category: "material",
         subcategory: "pvc-film", 
