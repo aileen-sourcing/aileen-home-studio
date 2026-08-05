@@ -1153,7 +1153,6 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas-flowers/cf20260719/3.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260719/4.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260719/5.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260719/6.jpg",
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, hollow gold plastic leaves" },
