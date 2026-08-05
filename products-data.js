@@ -1187,6 +1187,7 @@ const detailsDatabase = {
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260721/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260721/2.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260721/3.jpg",
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, plastic stem" },
@@ -1204,6 +1205,7 @@ const detailsDatabase = {
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260722/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260722/2.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260722/3.jpg",
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, plastic stem pick" },
