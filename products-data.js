@@ -1251,6 +1251,24 @@ const detailsDatabase = {
             { label: "Design", value: "Cube shape decorated with Christmas tree pattern" },
         ]
     },
+    "christmas ornament storage bag 600d oxford with removable dividers for christmas baubles": {
+        category: "holiday",
+        subcategory: "storage-bags", 
+        code: "Item Code: sb20260802",
+        description: "Heavy duty 600D Oxford Christmas ornament storage bag with clear view window and removable dividers. Specially designed for storing up to 128 Christmas baubles and holiday ornaments. Reinforced handles and zipper closure for easy transport and dust proof storage.",
+        images: [
+            "images/products/holiday-decor/storage-bags/sb20260802/christmas ornament storage bag 600d oxford for christmas baubles.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260802/christmas storage bag with clear window and removable dividers.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260802/xmas bauble storage organizer bag with compartments.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "600D Oxford Fabric" },
+            { label: "Color", value: "Red & Green" },
+            { label: "Shape Style", value: "Large Capacity Christmas Ornament Storage Bag" },
+            { label: "Features", value: "Clear View Window, Removable Adjustable Dividers, Reinforced Carry Handles, Zipper Closure, Dust proof" },
+            { label: "Application", value: "For Christmas baubles, Xmas ornaments, small holiday decorative accessories, seasonal home storage" },
+        ]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas-reindeer-decorations")
     "flocked red deer figurine silver gold antler christmas reindeer decorations for holiday tabletop ornament christmas new year home mantel decorative decor": {
