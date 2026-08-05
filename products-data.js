@@ -1108,7 +1108,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas flowers")
-    "blue silver artificial poinsettia christmas flower for christmas decorating": {
+    "christmas flower blue silver artificial poinsettia for home hodaliy decorating": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260717",
@@ -1125,7 +1125,7 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath accessory, garland embellishment, holiday floral arrangement" }
         ]
     },
-    "white artificial poinsettia flower fabric decorative flower ornament": {
+    "christmas flower white artificial poinsettia fabric decorative ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260718",
@@ -1142,7 +1142,7 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "red gold artificial poinsettia flower decorative flower ornament": {
+    "artificial christmas flower red gold decorative holiday ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260719",
@@ -1150,6 +1150,10 @@ const detailsDatabase = {
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260719/1.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260719/2.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260719/3.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260719/4.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260719/5.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260719/6.jpg",
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, hollow gold plastic leaves" },
@@ -1159,7 +1163,7 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "blue fabric artificial poinsettia flower decorative flower ornament": {
+    "christmas flower blue fabric artificial poinsettia decorative ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260720",
@@ -1176,7 +1180,7 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "shiny gold artificial poinsettia pick fabric christmas floral decoration for christmas decorating": {
+    "christmas flower shiny gold artificial poinsettia pick fabric floral for holiday decorating": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260721",
@@ -1193,7 +1197,7 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "metallic silver artificial poinsettia bloom fabric christmas floral pick for holiday decorating": {
+    "christmas flower metallic silver artificial poinsettia bloom fabric floral pick for holiday decorating": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260722",
