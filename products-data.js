@@ -1337,6 +1337,26 @@ const detailsDatabase = {
             { label: "Application", value: "living room bedroom entryway study lounge" }
         ]
     },
+    "wooden arc floor lamp with side table yellow shade for living room bedroom reading nook": {
+        category: "lighting",
+        subcategory: "floor-lamps", 
+        code: "Item Code: fl20260720",
+        description: "This mid century modern wooden arc floor lamp merges functional lighting and handy storage surface. Crafted with curved solid wood frame and retro yellow lampshade, the integrated round side table holds books, cups and small decor items. It casts gentle warm ambient light, making it a great fit beside armchairs, sofas in living rooms, bedrooms and cozy reading nooks.",
+        images: [
+            "images/products/lighting/floor-lamps/fl20260720/wooden arc floor lamp with side table yellow shade isolated white background.jpg",
+            "images/products/lighting/floor-lamps/fl20260720/wooden arc floor lamp with side table yellow shade in living room reading corner.jpg"
+        ], 
+        specs: [
+            { label: "Product Name", value: "wooden arc floor lamp with side table" },
+            { label: "Frame Material", value: "solid wood" },
+            { label: "Lampshade Color", value: "yellow" },
+            { label: "Style", value: "mid century modern retro" },
+            { label: "Applicable Scene", value: "living room/bedroom/reading nook/sofa side" },
+            { label: "Light Socket", value: "E27 bulb bulb not included" },
+            { label: "Side Table", value: "built in round table for books drinks small ornaments" },
+            { label: "Assembly", value: "simple assembly required" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "pendants")
     "vintage lotus glass pendant light wooden small hanging lamp for dining room kitchen island": {
