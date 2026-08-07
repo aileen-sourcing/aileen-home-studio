@@ -654,26 +654,26 @@ const detailsDatabase = {
             { label: "Application", value: "Front porch decor, entryway display, hallway ornament, indoor foyer christmas layout" }
         ]
     },
-    "battery operated prelit pink flocked mini christmas tree wrapped base snowy tabletop small xmas tree for home party decor": {
+    "pre decorated mini potted christmas tree rustic farmhouse style red pot tabletop indoor display": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260715",
-        description: "Add romantic festive vibes to your indoor space with this pink snowy flocked tabletop christmas tree. Equipped with warm led lights powered by a battery controller, no plug socket required. Features snow dusted pink pine branches and elegant fabric wrapped base. Compact size makes it ideal for table surfaces, shelves, bedroom decor and holiday party centerpieces.",
+        description: "This pre decorated mini potted christmas tree delivers warm rustic farmhouse holiday atmosphere. Equipped with a red pot base, it is adorned with burlap bow, natural cotton, pinecones, wooden angel and snowflake ornaments, red berries and red baubles. Compact size fits perfectly for tables, desks, shelves and mantels for indoor christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-1.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-2.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-3.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-4.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mt20260715-5.jpg"
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/tabletop-rustic-christmas-tree-cotton-pinecone.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/decorated-mini-christmas-tree-wood-ornaments.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/desktop-potted-christmas-tree-pinecone-cotton.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mini-potted-christmas-tree-wooden-angel.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/small-farmhouse-christmas-tree-burlap-bow.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/table-christmas-tree-burlap-bow-red-berries.jpg"
         ], 
         specs: [
-            { label: "Style", value: "Tabletop Mini Flocked Christmas Tree" },
-            { label: "Material", value: "PVC pink pine tips, artificial snow flocking, fabric wrap base" },
-            { label: "Lighting", value: "Built-in warm led lights, battery operated" },
-            { label: "Power Supply", value: "AA batteries (batteries not included)" },
-            { label: "Appearance", value: "Pink body with snowy flocked finish" },
-            { label: "Features", value: "Compact size, easy setup, portable, reusable, no complicated assembly" },
-            { label: "Application", value: "Table decoration, shelf display, bedroom ornament, holiday party centerpiece, window decor" }
+            { label: "Style", value: "Farmhouse / Rustic Christmas" },
+            { label: "Material", value: "PVC Tree Foliage, Burlap, Cotton, Pinecone, Wooden Ornaments, Plastic Pot" },
+            { label: "Base Pot", value: "Red Plastic Pot" },
+            { label: "Decorations", value: "Burlap Bow, Cotton Bolls, Pinecones, Wooden Angel, Wooden Snowflake, Red Berries, Red Baubles" },
+            { label: "Suitable Placement", value: "Tabletop, Desk, Shelf, Mantel" },
+            { label: "Occasion", value: "Christmas, Winter Holiday, New Year, Party, Holiday Gifting" }
         ]
     },
     "90cm prelit potted artificial mini christmas tree silver dusted pine tips red berries timer battery led tabletop entryway xmas decor": {
