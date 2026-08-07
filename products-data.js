@@ -794,6 +794,25 @@ const detailsDatabase = {
             { label: "Features", value: "Flexible combined layout, natural wood texture, easy surface mounting, multi-angle lighting" }
         ]
     },
+    "wood bead cone shade pendant light japandi mid century adjustable hanging dining room indoor fixture": {
+        category: "lighting",
+        subcategory: "pendants", 
+        code: "Item Code: p20260702",
+        description: "This japandi style pendant light combines natural wood beads and soft cone fabric shade. It features adjustable suspension cord for flexible height setup. Warm diffused light creates cozy atmosphere for dining table, kitchen island and living area. Bulb is not included to meet your different lighting preference.",
+        images: [
+            "images/products/lighting/pendants/p20260702/japandi-wood-bead-cone-pendant-light-white-background.jpg",
+            "images/products/lighting/pendants/p20260702/mid-century-wood-pendant-light-above-dining-table-scene.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "Solid Wood Beads, Fabric Lampshade, Metal Ceiling Canopy" },
+            { label: "Shade Type", value: "Cone Shape Fabric Shade" },
+            { label: "Structure", value: "Long linear bar multi-light combined ceiling fixture" },
+            { label: "Installation Type", value: "Hardwired Ceiling Mounted" },
+            { label: "Bulb Base", value: "E26 / E27 Socket (Bulb Not Included)" },
+            { label: "Applicable Space", value: "Dining Room, Kitchen Island, Living Room, Breakfast Nook" },
+            { label: "Usage Environment", value: "Indoor Use Only" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "ceiling light")
     "vintage flower ceiling light fabric petal flush mount ceiling lamp pull chain wooden accent bedroom entryway lighting": {
