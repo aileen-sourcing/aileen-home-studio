@@ -823,13 +823,15 @@ const detailsDatabase = {
         code: "Item Code: wl20260715",
         description: "This walnut wood glass wall sconce designed as a practical bedside reading light, this vintage wall lamp combines natural walnut wood, brass fittings and frosted glass shade to create classic japanese wabi sabi and mid century modern decor aesthetic. Frosted glass diffuses light evenly to reduce harsh glare. This decorative wall lighting is widely used for bedroom bedside, hallway, living room, study room and guest house.",
         images: [
-            "images/products/lighting/wall-sconces/wl20260715/1.jpg",
-            "images/products/lighting/wall-sconces/wl20260715/2.jpg"
+            "images/products/lighting/wall-sconces/wl20260715/walnut-wood-glass-wall-sconce-brass-swing-arm.jpg",
+            "images/products/lighting/wall-sconces/wl20260715/mid-century-wood-wall-sconce-bedroom-nightstand-scene.jpg"
         ], 
         specs: [
             { label: "Material", value: "Walnut wood brass accessories frosted glass lampshade" },
+            { label: "Style", value: "Mid-Century Modern / Wabi-Sabi / Japandi" },
             { label: "Design style", value: "Japanese wabi sabi minimalist mid century vintage" },
-            { label: "Suitable scenes", value: "Bedroom bedside hallway living room study guest room" }
+            { label: "Light Source Type", value: "E26 / E27 Bulb Base (Bulb Not Included)" },
+            { label: "Suitable scenes", value: "Bedroom Bedside, Living Room, Hallway, Study Room" }
         ]
     },
     // ==========================================
