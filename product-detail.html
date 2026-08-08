@@ -1099,37 +1099,38 @@ function handleSearch() {
                     shortDescEl.innerText = productInfo.description || "High-quality holiday decor designed for indoor and outdoor displays. Custom specifications and wholesale pricing available upon request.";
                 }
 
-                // 🌟 ✨ 【图片连通与 SEO 优化核心】：动态加载主图与多张缩略图（支持 SEO 属性与防爆死循环）
+                // 🌟 ✨ 【图片连通与文件名自动解析】：动态提取文件名作为 alt 与 title 悬停提示
                 if (productInfo.images && productInfo.images.length > 0) {
                     const mainImgEl = document.getElementById('mainProductImg');
+                    const firstImgUrl = String(productInfo.images[0]);
                     
-                    // 1. 安全转义产品标题与路径，防止引号打断 HTML 代码
-                    const safeTitle = titleCaseName.replace(/"/g, '&quot;');
-                    const safeMainUrl = String(productInfo.images[0]).replace(/'/g, "\\'");
+                    // 🎯 核心逻辑 1：从图片路径中截取文件名并格式化（例如：images/lamp-detail-view.jpg -> Lamp Detail View）
+                    const mainFileName = firstImgUrl.split('/').pop().split('.')[0].replace(/[-_]/g, ' ');
+                    const safeMainUrl = firstImgUrl.replace(/'/g, "\\'");
 
-                    // 2. 为主图注入 SEO 属性与 onerror 防卡死逻辑
+                    // 为主图注入提取好的文件名
                     mainImgEl.src = safeMainUrl;
-                    mainImgEl.alt = safeTitle;
-                    mainImgEl.title = safeTitle;
+                    mainImgEl.alt = mainFileName;
+                    mainImgEl.title = mainFileName; // 👈 鼠标悬停主图时显示的文字
                     mainImgEl.onerror = function() {
-                        this.onerror = null; // 停止无限死循环
+                        this.onerror = null;
                         this.src = 'images/placeholder.jpg';
                     };
 
-                    // 3. 动态生成下方的小图切换轨道
+                    // 🎯 核心逻辑 2：动态生成小图轨道，并提取各自的文件名作为 hover 提示
                     let thumbHtml = "";
                     productInfo.images.forEach((imgUrl, index) => {
                         const activeClass = index === 0 ? "thumb-item active" : "thumb-item";
-                        
-                        // 缩略图 SEO 属性与防单引号截断
-                        const altText = `${safeTitle} - View ${index + 1}`;
                         const safeImgUrl = String(imgUrl).replace(/'/g, "\\'");
+                        
+                        // 从 URL 截取文件名（去掉路径和后缀，把下划线/中划线转为空格）
+                        const fileName = String(imgUrl).split('/').pop().split('.')[0].replace(/[-_]/g, ' ');
 
                         thumbHtml += `
                             <div class="${activeClass}" onclick="switchImage(this, '${safeImgUrl}')">
                                 <img src="${safeImgUrl}" 
-                                     alt="${altText}" 
-                                     title="${altText}" 
+                                     alt="${fileName}" 
+                                     title="${fileName}" 
                                      loading="lazy" 
                                      width="60" 
                                      height="60" 
@@ -1139,10 +1140,10 @@ function handleSearch() {
                     });
                     document.getElementById('thumbList').innerHTML = thumbHtml;
                 } else {
-                    // 数据库里没配图片时的保底处理
                     const mainImgEl = document.getElementById('mainProductImg');
                     mainImgEl.src = "images/placeholder.jpg";
                     mainImgEl.alt = titleCaseName;
+                    mainImgEl.title = titleCaseName;
                     document.getElementById('thumbList').innerHTML = "";
                 }
 
@@ -1269,13 +1270,22 @@ function handleSearch() {
         };
 
         // ==========================================
-        // 📸 缩略图点击切换函数（必须放在 window.onload 外面，供全局调用）
+        // 📸 缩略图点击切换函数（同步更新大图悬停 title 文本）
         // ==========================================
         function switchImage(element, imageUrl) {
-            // 1. 切换大图显示的路径
-            document.getElementById('mainProductImg').src = imageUrl;
+            const mainImg = document.getElementById('mainProductImg');
             
-            // 2. 移除其他所有缩略图的高亮边框，只给当前点击的图加上
+            // 1. 切换大图显示的路径
+            mainImg.src = imageUrl;
+            
+            // 🎯 2. 点击小图时，获取小图图片自身的 title，同步赋予大图
+            const clickedImg = element.querySelector('img');
+            if (clickedImg) {
+                mainImg.alt = clickedImg.alt;
+                mainImg.title = clickedImg.title; // 👈 让主图放大镜区域 hover 时也显示当前文件名
+            }
+            
+            // 3. 高亮处理
             const thumbs = document.querySelectorAll('.thumb-item');
             thumbs.forEach(t => t.classList.remove('active'));
             element.classList.add('active');
