@@ -672,6 +672,27 @@ const detailsDatabase = {
             { label: "Application", value: "For Christmas baubles, Xmas ornaments, small holiday decorative accessories, seasonal home storage" },
         ]
     },
+    "christmas ornament storage bag, oxford fabric, 128 slots for 3 inch baubles, red": {
+        category: "holiday",
+        subcategory: "storage-bags", 
+        code: "Item Code: sb20260803",
+        description: "This heavy duty red oxford fabric christmas ornament storage bag comes with 128 individual slots. Overall dimension measures 65x33x33xcm, it safely holds up to 128 pieces of 3 inch christmas baubles to avoid scratches and breakage. Removable cardboard dividers allow flexible storage for different sized holiday decorations. Sturdy reinforced handles and zipper closure offer dust proof protection and convenient transport. Ideal for organizing christmas decorations when the holiday season is over.",
+        images: [
+            "images/products/holiday-decor/storage-bags/sb20260803/red-christmas-ornament-storage-bag-closed.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260803/christmas-bauble-storage-bag-full-dividers.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260803/christmas-decoration-tote-half-divided.jpg"
+        ], 
+        specs: [
+            { label: "Product Name", value: "Christmas Ornament Storage Bag" },
+            { label: "Material", value: "Oxford Fabric, Cardboard Dividers" },
+            { label: "Color", value: "Red" },
+            { label: "Dimension", value: "65x33x33cm" },
+            { label: "Slot Quantity", value: "128 slots" },
+            { label: "Compatible Ornament", value: "Fits 3 inch christmas baubles" },
+            { label: "Features", value: "Dust proof, Wear resistant, Portable" },
+            { label: "Application", value: "Christmas baubles, holiday decorative ornaments" },
+        ]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas-reindeer-decorations")
     "flocked red deer figurine silver gold antler christmas reindeer decorations for holiday tabletop ornament christmas new year home mantel decorative decor": {
