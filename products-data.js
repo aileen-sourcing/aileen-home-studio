@@ -121,7 +121,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }
         ]
     },
-    "luxury golden christmas wreath golden poinsettia pinecone bauble candle holder fabric bow grapevine rattan front door wall decor": {
+    "luxury golden christmas wreath poinsettia pinecone bauble candle holder fabric bow grapevine rattan front door wall decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260711",
@@ -131,7 +131,8 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/wreath/w20260711/golden-christmas-wreath-golden-candle-holder-poinsettia-pinecone-02.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260711/golden-pine-christmas-wreath-star-ornaments-poinsettia-bow-03.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260711/classic-golden-christmas-wreath-large-poinsettia-pinecone-04.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260711/asymmetrical-grapevine-rattan-golden-christmas-wreath-poinsettia-05.jpg"
+            "images/products/holiday-decor/christmas/wreath/w20260711/asymmetrical-grapevine-rattan-golden-christmas-wreath-poinsettia-05.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260711/gold-poinsettia-christmas-wreath.jpg"
         ], 
         specs: [
             { label: "Wreath Base", value: "Full circular artificial pine frame / natural grapevine rattan frame (multiple options)" },
@@ -142,7 +143,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }
         ]
     },
-    "silver tone christmas wreath silver poinsettia eucalyptus leaf bauble fabric bow front door wall holiday decor": {
+    "silver tone christmas wreath poinsettia eucalyptus leaf bauble fabric bow front door wall holiday decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260712",
@@ -184,7 +185,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor seasonal decoration" }
         ]
     },
-    "white flocked christmas wreath red decor poinsettia bauble bow front door seasonal wreath customizable size color": {
+    "white flocked christmas wreath red decor poinsettia bauble bow front door seasonal customizable size color": {
         category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260714",
@@ -204,7 +205,7 @@ const detailsDatabase = {
             { label: "Features", value: "Lightweight, reusable, easy hanging, weather resistant for sheltered outdoor use" }
         ]
     },
-    "green pvc christmas wreath red poinsettia gold bauble fabric bow front door holiday wreath customizable size color": {
+    "green pvc christmas wreath red poinsettia gold bauble fabric bow front door holiday customizable size color": {
         category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260716",
@@ -227,7 +228,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }
         ]
     },
-    "snowy tipped pvc christmas wreath purple ornament glitter flower fabric bow front door holiday wreath customizable size color": {
+    "snowy tipped pvc christmas wreath purple ornament glitter flower fabric bow front door holiday customizable size color": {
         category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260717",
@@ -250,7 +251,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }
         ]
     },
-    "frosted pine christmas wreath red white star ornaments ball baubles ribbon bow winter front door wreath custom size wholesale": {
+    "frosted pine christmas wreath red white star ornaments ball baubles ribbon bow winter front door custom size wholesale": {
         category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260718",
@@ -275,7 +276,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: garland")
-    "battery operated pre lit 270cm artificial christmas garland 200 tips flocked pine branch indoor mantel stair holiday decor": {
+    "270cm artificial christmas garland battery operated pre lit 200 tips flocked pine branch indoor mantel stair holiday decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: g20260711",
@@ -303,7 +304,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "mini christmas tree")
-    "pre decorated potted artificial mini christmas tree plaid ribbon berry pine cone lighted entryway porch holiday display tree": {
+    "artificial mini christmas tree pre decorated potted plaid ribbon berry pine cone lighted entryway porch holiday display tree": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260714",
@@ -320,7 +321,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front porch decor, entryway display, hallway ornament, indoor foyer christmas layout" }
         ]
     },
-    "pre decorated mini potted christmas tree rustic farmhouse style red pot tabletop indoor display": {
+    "mini potted christmas tree pre decorated rustic farmhouse style red pot tabletop indoor display": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260715",
@@ -344,7 +345,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas ball")
-    "christmas ornaments set shatterproof assorted christmas ball decorations for home holiday party decor": {
+    "christmas ball ornaments set shatterproof assorted for home holiday party decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: cb20260801",
