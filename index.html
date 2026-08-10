@@ -1570,30 +1570,33 @@
 
         </div>
 
-    <!-- ⚡ 控制抓取与拼接的智能化脚本 -->
-    <script>
-        function sendInquiryViaChannel(channel) {
-            // 1. 抓取买家自己在输入框里填写的真实数据
-            const clientName = document.getElementById('cfg-name').value.trim() || "Valued Buyer";
-            const clientContact = document.getElementById('cfg-contact').value.trim() || "Not Provided";
-            const clientMsg = document.getElementById('cfg-message').value.trim() || "I am interested in your wholesale catalog and products. Please send me more detailed pricing and MOQ parameters.";
+    <!-- ⚡ 控制抓取与拼接的智能化脚本（纯留言精简版） -->
+<script>
+    function sendInquiryViaChannel(channel) {
+        // 1. 只抓取买家填写的留言数据（无填写则使用默认采购话术）
+        const clientMsg = document.getElementById('cfg-message') 
+            ? document.getElementById('cfg-message').value.trim() 
+            : "";
+            
+        const finalMsg = clientMsg || "I am interested in your wholesale catalog and products. Please send me more detailed pricing and MOQ parameters.";
 
-            // 2. 组装成极具 B2B 规范的邮件/信息正文
-            const emailSubject = `Aileen Home Studio Website Sourcing Inquiry from ${clientName}`;
-            const formattedBody = `Dear Aileen,\n\nYou have received a new sourcing inquiry from the website.\n\n[Buyer Profile]\n- Name: ${clientName}\n- Company / Tel / Whatapp: ${clientContact}\n\n[Message / Requirements]\n${clientMsg}\n\nBest regards,`;
+        // 2. 组装简洁规范的邮件主题与正文
+        const emailSubject = "Aileen Home Studio Website Sourcing Inquiry";
+        const formattedBody = `Dear Aileen,\n\nYou have received a new sourcing inquiry from your website:\n\n[Message / Requirements]\n${finalMsg}\n\nBest regards,`;
 
-            // 3. 根据买家点击的通道，精准分流
-            if (channel === 'email') {
-                // 唤醒全功能邮箱
-                const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(formattedBody)}`;
-                window.location.href = mailtoUrl;
-            } else if (channel === 'whatsapp') {
-                // 唤醒 WhatsApp，由于 WA 不适合塞太冗长的格式，我们做个精致的高转化排版
-                const whatsappText = `Hi Aileen, my name is ${clientName} (${clientContact}). I am browsing your website. Here is my inquiry: "${clientMsg}"`;
-                window.open(`https://wa.me/8618894695487?text=${encodeURIComponent(whatsappText)}`, '_blank');
-            }
+        // 3. 根据买家点击的通道精准分流
+        if (channel === 'email') {
+            // 唤醒全功能邮箱
+            const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(formattedBody)}`;
+            window.location.href = mailtoUrl;
+
+        } else if (channel === 'whatsapp') {
+            // 唤醒 WhatsApp，直接发送精致的留言内容
+            const whatsappText = `Hi Aileen, I am browsing your website. Here is my inquiry: "${finalMsg}"`;
+            window.open(`https://wa.me/8618894695487?text=${encodeURIComponent(whatsappText)}`, '_blank');
         }
-    </script>
+    }
+</script>
 </section>
 
     <footer>
