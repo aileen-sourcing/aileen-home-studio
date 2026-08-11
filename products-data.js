@@ -753,8 +753,8 @@ const detailsDatabase = {
         code: "Item Code: fl20260720",
         description: "This mid century modern wooden arc floor lamp merges functional lighting and handy storage surface. Crafted with curved solid wood frame and retro yellow lampshade, the integrated round side table holds books, cups and small decor items. It casts gentle warm ambient light, making it a great fit beside armchairs, sofas in living rooms, bedrooms and cozy reading nooks.",
         images: [
-            "images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-side-table-living-space-display-01.jpg",
-            "images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-yellow-lampshade-white-shot-02.jpg"
+            "images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-yellow-lampshade-white-shot-01.jpg",
+            "images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-side-table-living-space-display-02.jpg"
         ], 
         specs: [
             { label: "Product Name", value: "wooden arc floor lamp with side table" },
@@ -812,8 +812,8 @@ const detailsDatabase = {
         code: "Item Code: p20260702",
         description: "This japandi style pendant light combines natural wood beads and soft cone fabric shade. It features adjustable suspension cord for flexible height setup. Warm diffused light creates cozy atmosphere for dining table, kitchen island and living area. Bulb is not included to meet your different lighting preference.",
         images: [
-            "images/products/lighting/pendants/p20260702/walnut-curved-floor-lamp-yellow-lampshade-white-shot-01.jpg",
-            "images/products/lighting/pendants/p20260702/walnut-curved-floor-lamp-side-table-living-space-display-02.jpg"
+            "images/products/lighting/pendants/p20260702/dining-pendant-lamp-walnut-ball-glass-white-shot-01.jpg",
+            "images/products/lighting/pendants/p20260702/dining-pendant-lamp-walnut-ball-glass-dining-scene-02.jpg"
         ], 
         specs: [
             { label: "Material", value: "Solid Wood Beads, Fabric Lampshade, Metal Ceiling Canopy" },
