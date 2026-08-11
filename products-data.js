@@ -342,9 +342,9 @@ const detailsDatabase = {
         code: "Item Code: cb20260801",
         description: "This premium assorted Christmas ornament set comes in 3 elegant color themes: red & gold, navy blue & silver, gold & silver. Made of shatterproof plastic, these diverse hanging Xmas baubles feature Santa, nutcracker, snowflake, wreath and tree shapes. Packed in an exquisite gift box, ideal for decorating Christmas trees, home mantels, windows and festive holiday parties.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/Red Gold Assorted Christmas Tree Ornament Gift Box Shatterproof Xmas Hanging Baubles-01.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/Navy Blue Silver Christmas Ornament Set Assorted Holiday Decor Baubles in Gift Box-02.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/Gold Silver Christmas Tree Decorations Xmas Hanging Ornament Gift Box-03.jpg"
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-gold-silver-01.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-blue-silver-02.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-red-gold-03.jpg"
         ], 
         specs: [
             { label: "Product Name", value: "Assorted Christmas Ornament Gift Box Set" },
@@ -358,18 +358,18 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Spring decor")
-    "artificial spring eucalyptus wreath seasonal floral front door greenery wreath for farmhouse home decor": {
+    "artificial spring eucalyptus wreath seasonal floral front door greenery for farmhouse home decor": {
         category: "holiday",
         subcategory: "spring-decor", 
         code: "Item Code: sw20260727",
         description: "Discover our handmade artificial spring eucalyptus wreath collection. Choose from plain greenery base white blue mixed-color daisy and wildflower designs. These durable floral wreaths bring fresh spring vibes to your front door entryway walls and covered outdoor spaces no watering or maintenance required.",
         images: [
-            "images/products/holiday-decor/spring-decor/wreath/sw20260727/1.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260727/2.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260727/3.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260727/4.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260727/5.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260727/6.jpg"
+            "images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-green-blue-flower-door-01.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-green-white-daisy-wall-02.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-pure-green-foliage-door-03.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-lush-green-leaf-wall-04.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-green-pink-bud-door-05.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-green-mixed-flower-wall-06.jpg"
         ], 
         specs: [
             { label: "Size", value: "45CM/60CM/90CM, Customizable" },
@@ -379,18 +379,18 @@ const detailsDatabase = {
             { label: "Application", value: "Outdoor / Indoor Front Door Welcome Display, Wall Window Farmhouse Spring Decor" }
         ]
     },
-    "artificial spring floral wreath mixed rose peony front door wreath for farmhouse home decor": {
+    "artificial spring floral wreath mixed rose peony front door for farmhouse home decor": {
         category: "holiday",
         subcategory: "spring-decor", 
         code: "Item Code: sw20260728",
         description: "Bring lovely spring charm to any entryway or wall with this artificial floral wreath. Crafted with realistic mixed roses peonies and lush green leaves, it offers a lush natural look that requires no maintenance. Perfect for decorating front doors, living rooms, mantelpieces, or front porches, adding a romantic seasonal atmosphere to any space.",
         images: [
-            "images/products/holiday-decor/spring-decor/wreath/sw20260728/1.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260728/2.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260728/3.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260728/4.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260728/5.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260728/6.jpg"
+            "images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-mixed-color-flower-door-01.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-blue-hydrangea-pink-wall-02.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-blue-pink-peony-door-03.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-red-pink-rose-wall-04.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-white-rose-green-flower-door-05.jpg",
+            "images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-yellow-white-bloom-wall-06.jpg"
         ], 
         specs: [
             { label: "Size", value: "45CM/60CM/90CM, Customizable" },
@@ -402,7 +402,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Summer decor")
-    "faux floral wreath silk sunflower lemon greenery minimalist pastoral seasonal front door porch indoor hanging ornament": {
+    "summer wreath, artificial greenery sunflower lemon fruit yellow for front door home wall decor": {
         category: "holiday",
         subcategory: "summer-decor", 
         code: "Item Code: sm20260731",
@@ -425,7 +425,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Fall decor")
-    "artificial fall harvest wreath faux pumpkin grain stalk maple leaf rustic seasonal front door entryway hanging decor": {
+    "autumn wreath, dried foliage maple leaf faux pumpkin orange brown for harvest front door wall decor": {
         category: "holiday",
         subcategory: "fall-decor", 
         code: "Item Code: fw20260727",
@@ -479,12 +479,12 @@ const detailsDatabase = {
         code: "Item Code: ew20260727",
         description: "Brighten any space and celebrate the season of renewal with handcrafted Easter Wreaths. Designed with lifelike greenery, pastel speckled eggs, and delicate spring blossoms, each wreath brings a fresh, festive charm to front doors, entryways, and interior walls.",
         images: [
-            "images/products/holiday-decor/easter/wreath/ew20260727/1.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/2.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/3.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/4.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/5.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/6.jpg"
+            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-green-foliage-egg-front-door-01.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-multicolor-egg-leaf-front-door-02.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-pink-flower-bow-wall-hanging-03.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-rose-floral-greenery-wall-hanging-04.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-rainbow-egg-farmhouse-door-05.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-mixed-egg-spring-greenery-door-06.jpg"
         ], 
         specs: [
             { label: "Size", value: "Customizable Sizes" },
@@ -504,8 +504,8 @@ const detailsDatabase = {
         code: "Item Code: cf20260717",
         description: "Add distinctive festive charm to holiday displays with this blue silver poinsettia ornament. Made of lightweight fabric with hollow silver leaf trim, it brings shiny layered visual effects. Perfect for decorating christmas trees, wreaths, garlands, gift arrangements, creating eye-catching winter holiday decor.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260717/1.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260717/2.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260717/blue-silver-poinsettia-decoration-01.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260717/blue-lace-poinsettia-interior-decor-02.jpg",
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, hollow silver plastic leaves" },
@@ -521,8 +521,8 @@ const detailsDatabase = {
         code: "Item Code: cf20260718",
         description: "Bring pure elegant holiday aesthetics to your decorations with this white poinsettia ornament. Made of soft layered fabric with exquisite floral details, it delivers a delicate natural look. Perfect for decorating christmas trees, wreaths, garlands and seasonal floral arrangements, adding minimalist festive atmosphere to holiday displays.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260718/1.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260718/2.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260718/white-fabric-poinsettia-decoration-01.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260718/white-poinsettia-holiday-interior-display-02.jpg",
         ], 
         specs: [
             { label: "Material", value: "Premium fabric petals, plastic stem" },
@@ -538,11 +538,11 @@ const detailsDatabase = {
         code: "Item Code: cf20260719",
         description: "Add luxurious festive appeal to holiday decorations with this red gold poinsettia ornament. Designed with vibrant fabric petals and hollow gold layered leaves, it creates striking visual contrast. Perfect for decorating christmas trees, wreaths, garlands and seasonal floral displays, bringing classic christmas atmosphere to indoor and outdoor holiday scenes.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260719/1.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260719/2.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260719/3.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260719/4.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260719/5.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260719/red-gold-lace-poinsettia-single-flower-display-01.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260719/four-red-gold-lace-poinsettia-floral-set-02.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260719/red-gold-lace-poinsettia-holiday-display-03.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260719/size-measure-red-gold-lace-poinsettia-04.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260719/back-clip-view-red-gold-lace-poinsettia-05.jpg",
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, hollow gold plastic leaves" },
@@ -558,8 +558,8 @@ const detailsDatabase = {
         code: "Item Code: cf20260720",
         description: "Create unique cool-toned holiday styling with this blue artificial poinsettia ornament. Made of soft layered fabric with delicate textured petals, it delivers a vivid full-bloom shape. Perfect for decorating christmas trees, wreaths, garlands and seasonal floral arrangements, adding distinctive color to your christmas displays.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260720/1.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260720/2.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-glitter-fabric-poinsettia-floral-ornament-01.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-glitter-poinsettia-holiday-interior-display-02.jpg",
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, plastic stem" },
@@ -569,15 +569,15 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "christmas flower shiny gold artificial poinsettia pick fabric floral for holiday decorating": {
+    "christmas poinsettia, gold glitter fabric holiday indoor home decor": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260721",
         description: "Add eye-catching luxury metallic appeal to seasonal decor with this shiny gold poinsettia floral pick. Constructed from soft glossy fabric with multi-layer petals, it delivers a rich full appearance. Perfect for embellishing christmas trees, handmade wreaths, festive garlands and holiday centerpieces, creating glamorous warm holiday styling.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260721/1.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260721/2.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260721/3.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260721/gold-glitter-fabric-poinsettia-floral-ornament-01.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260721/size-measure-gold-poinsettia-fabric-decoration-02.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260721/gold-glitter-poinsettia-holiday-interior-display-03.jpg",
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, plastic stem" },
@@ -587,15 +587,15 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "christmas flower metallic silver artificial poinsettia bloom fabric floral pick for holiday decorating": {
+    "christmas silver fabric poinsettia, glitter accent holiday interior ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260722",
         description: "Bring cool elegant metallic styling to seasonal decorations with this silver poinsettia bloom. Made of glossy fabric with multi-layer textured petals, it delivers soft reflective luster. Ideal for decorating christmas trees, handmade wreaths, festive garlands and winter table arrangements, adding modern minimalist holiday aesthetics.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260722/1.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260722/2.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260722/3.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260722/silver-glitter-fabric-poinsettia-floral-ornament-01.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260722/size-measure-silver-poinsettia-fabric-decoration-02.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260722/silver-glitter-poinsettia-holiday-interior-display-03.jpg",
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, plastic stem pick" },
@@ -613,9 +613,8 @@ const detailsDatabase = {
         code: "Item Code: ts20260717",
         description: "Bring festive warmth to your holiday setup with this classic red and green merry christmas tree skirt. Designed with elegant scalloped edges, holly leaf cutouts, and star motifs, it beautifully covers your tree stand while protecting your floors. Perfect for decorating living rooms, offices, or holiday parties to create a cozy christmas atmosphere.",
         images: [
-            "images/products/holiday-decor/tree-skirts/ts20260717/1.jpg",
-            "images/products/holiday-decor/tree-skirts/ts20260717/2.jpg",
-            "images/products/holiday-decor/tree-skirts/ts20260717/3.jpg"
+            "images/products/holiday-decor/tree-skirts/ts20260717/christmas-tree-skirt-red-embroidered-indoor-01.jpg",
+            "images/products/holiday-decor/tree-skirts/ts20260717/christmas-tree-skirt-wave-edge-floor-display-03.jpg"
         ], 
         specs: [
             { label: "Size", value: "Customizable Sizes" },
@@ -633,8 +632,8 @@ const detailsDatabase = {
         code: "Item Code: sb20260801",
         description: "Foldable Christmas ornament storage box with transparent PVC panel. Separate grid compartments protect fragile Christmas baubles from scratches and dust. Equipped with sturdy carry handle and zipper closure. Compact foldable design saves closet space, ideal for organizing Christmas decorative balls and seasonal ornaments.",
         images: [
-            "images/products/holiday-decor/storage-bags/sb20260801/foldable christmas ornament storage box clear view bauble organizer.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260801/transparent christmas bauble storage container holiday decoration organizer.jpg"
+            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ball-storage-box-grid-case-white-shot-01.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ball-storage-box-grid-case-real-scene-02.jpg"
         ], 
         specs: [
             { label: "Product Name", value: "Christmas Ornament Storage Box" },
@@ -652,9 +651,9 @@ const detailsDatabase = {
         code: "Item Code: sb20260802",
         description: "Heavy duty 600D Oxford Christmas ornament storage bag with clear view window and removable dividers. Specially designed for storing up to 128 Christmas baubles and holiday ornaments. Reinforced handles and zipper closure for easy transport and dust proof storage.",
         images: [
-            "images/products/holiday-decor/storage-bags/sb20260802/christmas ornament storage bag 600d oxford for christmas baubles.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260802/christmas storage bag with clear window and removable dividers.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260802/xmas bauble storage organizer bag with compartments.jpg"
+            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-long-red-white-01.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-grid-semiopen-02.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-grid-fullopen-03.jpg"
         ], 
         specs: [
             { label: "Material", value: "600D Oxford Fabric" },
@@ -687,7 +686,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas-reindeer-decorations")
-    "flocked red deer figurine silver gold antler christmas reindeer decorations for holiday tabletop ornament christmas new year home mantel decorative decor": {
+    "christmas reindeer figurine, flocked velvet red with silver antler for indoor decor": {
         category: "holiday",
         subcategory: "christmas-reindeer-decorations", 
         code: "Item Code: cl20260801",
@@ -719,8 +718,8 @@ const detailsDatabase = {
         code: "Item Code: tb20260630",
         description: "Create a warm cozy ambience for indoor spaces with this mushroom wooden table lamp. Crafted with natural ribbed solid wood lampshade and tapered wood base, it casts soft gentle ambient lighting. Perfect for bedroom nightstands, living room side tables, study desks, adding minimalist rustic style to residential interiors.",
         images: [
-            "images/products/lighting/table-lamps/tb20260630/tb20260630-1.jpg",
-            "images/products/lighting/table-lamps/tb20260630/tb20260630-2.jpg"
+            "images/products/lighting/table-lamps/tb20260630/mushroom-table-lamp-wood-retro-shade-white-product-01.jpg",
+            "images/products/lighting/table-lamps/tb20260630/mushroom-table-lamp-warm-glow-bedroom-decor-02.jpg"
 
         ], 
         specs: [
@@ -739,8 +738,8 @@ const detailsDatabase = {
         code: "Item Code: fl20260715",
         description: "This carved wooden floor lamp features stacked sculptural wooden base paired with soft linen lampshade. Inspired by wabi sabi and rustic farmhouse style, this standing lamp delivers warm gentle ambient light. Ideal decor lighting for living room bedroom study lounge and entryway. Solid wood structure brings natural textured aesthetic to modern minimalist neutral tone home interiors.",
         images: [
-            "images/products/lighting/floor-lamps/fl20260715/1.jpg",
-            "images/products/lighting/floor-lamps/fl20260715/2.jpg"
+            "images/products/lighting/floor-lamps/fl20260715/black-walnut-floor-lamp-geometric-pillar-product-shot-01.jpg",
+            "images/products/lighting/floor-lamps/fl20260715/black-walnut-floor-lamp-warm-glow-lounge-room-display-02.jpg"
         ], 
         specs: [
             { label: "Material", value: "solid wood base and linen fabric lampshade" },
@@ -754,8 +753,8 @@ const detailsDatabase = {
         code: "Item Code: fl20260720",
         description: "This mid century modern wooden arc floor lamp merges functional lighting and handy storage surface. Crafted with curved solid wood frame and retro yellow lampshade, the integrated round side table holds books, cups and small decor items. It casts gentle warm ambient light, making it a great fit beside armchairs, sofas in living rooms, bedrooms and cozy reading nooks.",
         images: [
-            "images/products/lighting/floor-lamps/fl20260720/wooden arc floor lamp with side table yellow shade isolated white background.jpg",
-            "images/products/lighting/floor-lamps/fl20260720/wooden arc floor lamp with side table yellow shade in living room reading corner.jpg"
+            "images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-side-table-living-space-display-01.jpg",
+            "images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-yellow-lampshade-white-shot-02.jpg"
         ], 
         specs: [
             { label: "Product Name", value: "wooden arc floor lamp with side table" },
@@ -776,8 +775,8 @@ const detailsDatabase = {
         code: "Item Code: p20260630",
         description: "Bring soft warm atmosphere to indoor spaces with this vintage lotus glass pendant light. Designed with petal-shaped gradient glass shade and solid wood lamp holder, it delivers gentle diffused lighting. Perfect for decorating dining tables, kitchen islands, bedside areas, cafes, adding elegant retro aesthetic to residential and commercial interiors.",
         images: [
-            "images/products/lighting/pendants/p20260630/p20260630-1.jpg",
-            "images/products/lighting/pendants/p20260630/p20260630-2.jpg"
+            "images/products/lighting/pendants/p20260630/pendant-lamp-green-petal-glass-white-product-01.jpg",
+            "images/products/lighting/pendants/p20260630/pendant-lamp-green-petal-glass-dining-room-scene-02.jpg"
         ], 
         specs: [
             { label: "Material", value: "Gradient glass shade, solid wood lamp head, metal ceiling base" },
@@ -787,14 +786,14 @@ const detailsDatabase = {
             { label: "Features", value: "Adjustable hanging cord, soft light diffusion, retro lotus shape, easy installation" }
         ]
     },
-    "linear combination pendant light walnut multi head adjustable hanging fixture for dining room kitchen island home interior lighting": {
+    "pendant light, walnut wood multi head linear brown fixture for dining room ceiling indoor decor": {
         category: "lighting",
         subcategory: "pendants", 
         code: "Item Code: p20260701",
         description: "Multi-head linear combination ceiling light built with walnut wood base. Assembled with spherical lamp heads cylindrical spotlights and adjustable disc pendant lamp. Lamp angles and suspension length can be freely adjusted. Gentle warm light builds comfortable home ambiance, suitable for residential and commercial interior decoration.",
         images: [
-            "images/products/lighting/pendants/p20260701/walnut-multi-head-linear-combination-pendant-light-white-background-product-shot-01.jpg",
-            "images/products/lighting/pendants/p20260701/solid-wood-long-bar-ceiling-light-dining-room-interior-scene-display-02.jpg"
+            "images/products/lighting/pendants/p20260701/long-bar-dining-pendant-lamp-walnut-set-white-shot-01.jpg",
+            "images/products/lighting/pendants/p20260701/long-bar-dining-pendant-lamp-walnut-set-dining-scene-02.jpg"
         ], 
         specs: [
             { label: "Material", value: "Walnut wood frame / metal hardware / frosted lampshade" },
@@ -813,8 +812,8 @@ const detailsDatabase = {
         code: "Item Code: p20260702",
         description: "This japandi style pendant light combines natural wood beads and soft cone fabric shade. It features adjustable suspension cord for flexible height setup. Warm diffused light creates cozy atmosphere for dining table, kitchen island and living area. Bulb is not included to meet your different lighting preference.",
         images: [
-            "images/products/lighting/pendants/p20260702/japandi-wood-bead-cone-pendant-light-white-background.jpg",
-            "images/products/lighting/pendants/p20260702/mid-century-wood-pendant-light-above-dining-table-scene.jpg"
+            "images/products/lighting/pendants/p20260702/dining-pendant-lamp-walnut-ball-glass-white-shot-01.jpg",
+            "images/products/lighting/pendants/p20260702/dining-pendant-lamp-walnut-ball-glass-dining-scene-02.jpg"
         ], 
         specs: [
             { label: "Material", value: "Solid Wood Beads, Fabric Lampshade, Metal Ceiling Canopy" },
@@ -828,7 +827,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "ceiling light")
-    "vintage flower ceiling light fabric petal flush mount ceiling lamp pull chain wooden accent bedroom entryway lighting": {
+    "ceiling light, fabric flower flush mount living room decor": {
         category: "lighting",
         subcategory: "ceiling-light", 
         code: "Item Code: xd20260731",
@@ -849,7 +848,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "wall sconces")
-    "walnut wood glass wall sconce adjustable swing arm wall lamp bedroom bedside reading light japanese wabi sabi wall lighting": {
+    "wall sconce, walnut brass glass brown bedroom bedside decor": {
         category: "lighting",
         subcategory: "wall-sconces", 
         code: "Item Code: wl20260715",
@@ -868,7 +867,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "fan light")
-    "ceiling fan light combo wooden fan blades frosted glass lampshade retro flush mount ventilator lamp bedroom living room indoor lighting": {
+    "ceiling fan light, wood blade brown flush mount bedroom lamp": {
         category: "lighting",
         subcategory: "fan-lights", 
         code: "Item Code: fs20260731",
@@ -936,9 +935,9 @@ const detailsDatabase = {
         code: "Item Code: PS-20260708",
         description: "Provide premium raw material for artificial christmas tree foliage with this pe monofilament yarn. Made of high-strength polyethylene, it delivers uniform color and excellent tensile property. Perfect for christmas ornament manufacturers, pine needle processing factories, suitable for producing realistic christmas tree branches and decorative foliage.",
         images: [
-            "images/products/raw-material/polyester-thread/ps20260708/ps20260708-1.jpg",
-            "images/products/raw-material/polyester-thread/ps20260708/ps20260708-2.jpg",
-            "images/products/raw-material/polyester-thread/ps20260708/ps20260708-3.jpg"
+            "images/products/raw-material/polyester-thread/ps20260708/polyester-thread-multicolor-spool-01.jpg",
+            "images/products/raw-material/polyester-thread/ps20260708/polyester-thread-green-rack-02.jpg",
+            "images/products/raw-material/polyester-thread/ps20260708/polyester-thread-packed-box-03.jpg"
         ], 
         specs: [
             { label: "Material", value: "PE polyethylene monofilament" },
