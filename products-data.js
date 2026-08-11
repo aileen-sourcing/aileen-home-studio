@@ -342,9 +342,9 @@ const detailsDatabase = {
         code: "Item Code: cb20260801",
         description: "This premium assorted Christmas ornament set comes in 3 elegant color themes: red & gold, navy blue & silver, gold & silver. Made of shatterproof plastic, these diverse hanging Xmas baubles feature Santa, nutcracker, snowflake, wreath and tree shapes. Packed in an exquisite gift box, ideal for decorating Christmas trees, home mantels, windows and festive holiday parties.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-gold-silver-01.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-red-gold-01.jpg",
             "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-blue-silver-02.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-red-gold-03.jpg"
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-gold-silver-03.jpg"
         ], 
         specs: [
             { label: "Product Name", value: "Assorted Christmas Ornament Gift Box Set" },
