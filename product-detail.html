@@ -1085,19 +1085,40 @@ function handleSearch() {
             console.log("当前匹配的Key是:", productKey);
             
             // 2. 从本地 products-data.js 的数据库里调取对应数据
-            const productInfo = detailsDatabase[productKey];
+const productInfo = detailsDatabase[productKey];
 
-            if (productInfo) {
-                const titleCaseName = productKey.replace(/\w\S*/g, function(txt) {
-                    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-                });
-                document.getElementById('productTitle').innerText = titleCaseName;
-                document.getElementById('productCode').innerText = productInfo.code;
+if (productInfo) {
+    // 🌟 1. 定义符合英文规范的 Title Case 格式化逻辑（实词大写，虚词小写）
+    function toTitleCase(str) {
+        if (!str) return "";
+        // 常见的英文虚词（冠词、介词、连词）
+        const minorWords = new Set([
+            'a', 'an', 'the', 'and', 'but', 'or', 'for', 'nor', 'on', 'at', 
+            'to', 'from', 'by', 'with', 'in', 'of', 'over', 'under', 'into', 
+            'onto', 'off', 'up', 'down', 'as', 'via'
+        ]);
 
-                const shortDescEl = document.getElementById('productShortDesc');
-                if (shortDescEl) {
-                    shortDescEl.innerText = productInfo.description || "High-quality holiday decor designed for indoor and outdoor displays. Custom specifications and wholesale pricing available upon request.";
-                }
+        const words = str.toLowerCase().split(' ');
+
+        return words.map((word, index) => {
+            // 第一个词、最后一个词、或者非虚词，首字母都要大写
+            if (index === 0 || index === words.length - 1 || !minorWords.has(word)) {
+                return word.charAt(0).toUpperCase() + word.slice(1);
+            }
+            // 中间的虚词保持小写
+            return word;
+        }).join(' ');
+    }
+
+    // 🌟 2. 传入 productKey 转换并赋值给页面标题
+    const titleCaseName = toTitleCase(productKey);
+    document.getElementById('productTitle').innerText = titleCaseName;
+    document.getElementById('productCode').innerText = productInfo.code;
+
+    const shortDescEl = document.getElementById('productShortDesc');
+    if (shortDescEl) {
+        shortDescEl.innerText = productInfo.description || "High-quality holiday decor designed for indoor and outdoor displays. Custom specifications and wholesale pricing available upon request.";
+    }
 
                 // 🌟 ✨ 【图片连通与文件名自动解析】：动态提取文件名作为 alt 与 title 悬停提示
                 if (productInfo.images && productInfo.images.length > 0) {
