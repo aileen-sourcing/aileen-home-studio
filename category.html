@@ -1189,11 +1189,16 @@ a.logo-brand {
                     if (product.images && product.images.length > 0) {
                         firstImg = product.images[0];
                     }
+                    // 1. 获取 Item Code（如果存在 code 则拼上编号文本）
+                    const itemCode = product.code ? product.code.trim() : '';
+                    const codeText = itemCode ? ` (Item Code: ${itemCode})` : '';
+                    // 2. 拼接完美的询盘文案
+                    const inquiryMsg = `Hi Aileen, I am interested in your ${key}${codeText}. Please provide a wholesale quote.`;
 
-                    // 生成和你的 listing 页面一样好看的带跳转和询盘按钮的卡片
+                    // 3. 生成带完整编码和内容的链接
                     const productPageUrl = `product-detail.html?item=${encodeURIComponent(key.replace(/\s+/g, '-'))}`;
-                    const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key)}`;
-                    const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=Inquiry&body=Product: ${key}`;
+                    const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent(inquiryMsg)}`;
+                    const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=${encodeURIComponent('Inquiry for ' + key)}&body=${encodeURIComponent(inquiryMsg)}`;
 
                     gridHtml += `
                         <div class="grid-product-card" onclick="window.location.href='${productPageUrl}'">
