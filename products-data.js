@@ -276,29 +276,20 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: garland")
-    "270cm artificial christmas garland battery operated pre lit 200 tips flocked pine branch indoor mantel stair holiday decor": {
+    "christmas garland plaid pine berry set for indoor holiday home decoration": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: g20260711",
-        description: "Enhance your festive layout with this 270cm pre-lit flocked christmas garland featuring 200 pine tips. Made of PE mixed PVC material with thin flocking finish, the bendable branches support free shaping. It comes with battery-controlled warm LED lights, perfect for fireplace mantels, stair railings, door arches and indoor holiday decorations.",
+        description: "Crafted from durable artificial pine branches, foam red berries and natural pine cones, this festive garland set is decorated with classic red buffalo plaid ribbon and embedded warm LED fairy lights. It works perfectly for front door, fireplace mantel, entryway and farmhouse Christmas ornaments, and its handmade solid structure allows repeated use with stable color that will not fade during long-term holiday decorations.",
         images: [
-            "images/products/holiday-decor/christmas/garland/g20260711/g20260711-1.jpg",
-            "images/products/holiday-decor/christmas/garland/g20260711/g20260711-2.jpg",
-            "images/products/holiday-decor/christmas/garland/g20260711/g20260711-3.jpg",
-            "images/products/holiday-decor/christmas/garland/g20260711/g20260711-4.jpg",
-            "images/products/holiday-decor/christmas/garland/g20260711/g20260711-5.jpg"
+            "images/products/holiday-decor/christmas/garland/g20260711/christmas-s-shape-buffalo-plaid-berry-pine-swag-garland.jpg",
+            "images/products/holiday-decor/christmas/garland/g20260711/christmas-6-shape-plaid-berry-pinecone-swag-garland.jpg"
         ], 
         specs: [
-            { label: "Total Length", value: "270cm" },
-            { label: "Branch Tips", value: "200 tips" },
-            { label: "Material", value: "PE mixed PVC, thin flocked surface" },
-            { label: "Light Source", value: "Warm white LED lights, battery operated" },
-            { label: "Power Supply", value: "AA batteries (batteries not included)" },
-            { label: "Packing Quantity", value: "12 pieces per export carton" },
-            { label: "Carton Size", value: "60x43x35CM" },
-            { label: "Net Weight", value: "0.7KG" },
-            { label: "Gross Weight", value: "8.9 KG" },
-            { label: "Features", value: "Flexible bendable frame, reusable, easy arrangement, realistic flocked pine appearance" },
+            { label: "Material", value: "Artificial Pine Needles, Foam Berries, Pinecones, Plaid Fabric Ribbon" },
+            { label: "Color", value: "Green Base, Red Berries, Red & Black Buffalo Plaid" },
+            { label: "Extra Feature", value: "Built-in Warm White LED String Lights" },
+            { label: "Advantages", value: "Front Door, Fireplace, Wall, Entryway, Indoor Farmhouse Decor" },
             { label: "Application", value: "Fireplace mantel, stair railing, door arch, indoor christmas scene decoration" }
         ]
     },
