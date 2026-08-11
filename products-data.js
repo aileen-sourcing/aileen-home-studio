@@ -282,8 +282,8 @@ const detailsDatabase = {
         code: "Item Code: g20260711",
         description: "Crafted from durable artificial pine branches, foam red berries and natural pine cones, this festive garland set is decorated with classic red buffalo plaid ribbon and embedded warm LED fairy lights. It works perfectly for front door, fireplace mantel, entryway and farmhouse Christmas ornaments, and its handmade solid structure allows repeated use with stable color that will not fade during long-term holiday decorations.",
         images: [
-            "images/products/holiday-decor/christmas/garland/g20260711/christmas-s-shape-buffalo-plaid-berry-pine-swag-garland.jpg",
-            "images/products/holiday-decor/christmas/garland/g20260711/christmas-6-shape-plaid-berry-pinecone-swag-garland.jpg"
+            "images/products/holiday-decor/christmas/garland/g20260711/christmas-garland-s-shape-buffalo-plaid-berry-pine-swag.jpg",
+            "images/products/holiday-decor/christmas/garland/g20260711/christmas-garland-6-shape-plaid-berry-pinecone-swag.jpg"
         ], 
         specs: [
             { label: "Material", value: "Artificial Pine Needles, Foam Berries, Pinecones, Plaid Fabric Ribbon" },
