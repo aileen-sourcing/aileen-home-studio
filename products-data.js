@@ -312,7 +312,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front porch decor, entryway display, hallway ornament, indoor foyer christmas layout" }
         ]
     },
-    "mini potted christmas tree pre decorated rustic farmhouse style red pot tabletop indoor display": {
+    "farmhouse mini potted christmas tree set with artificial pine for green red indoor table decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260715",
