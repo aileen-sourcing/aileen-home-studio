@@ -4,7 +4,7 @@ const detailsDatabase = {
     // ==========================================
     // 🎄 大类 1：Holiday Decor (cat: "holiday")
     // ==========================================
-    "pre lit slim artificial christmas tree warm white led lights narrow pine tree indoor home holiday decor": {
+    "pre lit slim pencil christmas tree with artificial green pine for indoor home holiday decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260706",
@@ -21,7 +21,7 @@ const detailsDatabase = {
             { label: "Application", value: "Living room entryway apartment indoor christmas decoration" }
         ]
     },
-    "prelit full green artificial christmas tree warm white lights hinged branches foldable metal stand indoor holiday decor": {
+    "pre-lit full dense christmas tree, artificial pine, green foliage for indoor holiday living room decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct26060707",
@@ -40,7 +40,7 @@ const detailsDatabase = {
             { label: "Application", value: "Indoor living room entryway shop front seasonal decoration" }
         ]
     },
-    "pre lit gradient rainbow christmas tree colorful led light artificial pine tree indoor holiday party decor": {
+    "pre-lit slim pencil christmas tree with artificial white pine and rainbow led for indoor holiday display": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260708",
@@ -60,7 +60,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "wreath")
-    "rustic farmhouse christmas wreath with burlap bow wooden angel cotton pinecone red berry candle holder front door wall hanging decor": {
+    "rustic farmhouse christmas wreath, grapevine rattan base, red white for front door seasonal wall decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260708",
@@ -80,7 +80,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor decoration" }
         ]
     },
-    "frosted christmas wreath red white striped bow candy ornament gift box pinecone red bauble candle holder front door wall decor": {
+    "frosted snowy christmas wreath, grapevine rattan frame, pink red for front door winter wall decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260709",
@@ -100,7 +100,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor holiday decoration" }
         ]
     },
-    "warm tone gold orange christmas wreath poinsettia eucalyptus leaf pinecone bauble candle holder fabric bow grapevine front door wall decor": {
+    "autumn golden christmas wreath, grapevine rattan base, orange gold for front door fall seasonal wall decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260710",
@@ -121,7 +121,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }
         ]
     },
-    "luxury golden christmas wreath poinsettia pinecone bauble candle holder fabric bow grapevine rattan front door wall decor": {
+    "luxury golden christmas wreath, grapevine rattan frame, full gold for front door elegant holiday wall decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260711",
@@ -143,7 +143,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }
         ]
     },
-    "silver tone christmas wreath poinsettia eucalyptus leaf bauble fabric bow front door wall holiday decor": {
+    "christmas wreath, metallic pine material 60cm silver poinsettia design for front door wall hanging decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260712",
@@ -205,7 +205,7 @@ const detailsDatabase = {
             { label: "Features", value: "Lightweight, reusable, easy hanging, weather resistant for sheltered outdoor use" }
         ]
     },
-    "green pvc christmas wreath red poinsettia gold bauble fabric bow front door holiday customizable size color": {
+    "christmas wreath, pvc pine red gold poinsettia bauble for front door home wall decoration": {
         category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260716",
@@ -228,7 +228,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }
         ]
     },
-    "snowy tipped pvc christmas wreath purple ornament glitter flower fabric bow front door holiday customizable size color": {
+    "purple snow frosted pine wreath, 30cm glitter poinsettia for holiday front door wall decor": {
         category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260717",
@@ -251,7 +251,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }
         ]
     },
-    "frosted pine christmas wreath red white star ornaments ball baubles ribbon bow winter front door custom size wholesale": {
+    "frosted snowy pine wreath, red white star snowflake striped bow for winter xmas front door decor": {
         category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260718",
