@@ -1196,7 +1196,8 @@ function handleSearch() {
 
             if (whatsappBtn) {
                 whatsappBtn.onclick = function() {
-                    const whatsappText = encodeURIComponent(`Hi Aileen, I am browsing your website and interested in your product: "${cleanName}" (${currentItemCode}). Can we discuss the custom options and wholesale catalog via WhatsApp?`);
+                    const lowerName = productKey ? productKey.toLowerCase() : "inquiry product";
+                    const whatsappText = encodeURIComponent(`Hi Aileen, I am browsing your website and interested in your product: "${lowerName}" (${currentItemCode}). Can we discuss the custom options and wholesale catalog?`);
                     window.open(`https://wa.me/8618894695487?text=${whatsappText}`, '_blank');
                 };
             }
