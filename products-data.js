@@ -295,14 +295,14 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "mini christmas tree")
-    "artificial mini christmas tree pre decorated potted plaid ribbon berry pine cone lighted entryway porch holiday display tree": {
+    "mini tabletop christmas tree set, artificial pine, red plaid for indoor table decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260714",
         description: "Create a warm welcome atmosphere with this fully pre-decorated potted christmas tree. It is embellished with classic plaid ribbons, bright red berries, pine cones and multi-color led lights. Mounted in an antique style decorative urn base, this slim decorative tree is ready to use out of box. Perfect for front porch, entryway, hallway and indoor foyer seasonal christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/1.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/2.jpg"
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/mini-christmas-tree-artificial-pine-red-plaid-berry-lights-tabletop-decor.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/mini-christmas-tree-faux-pine-red-plaid-balls-pinecone-home-table-decor.jpg"
         ], 
         specs: [
             { label: "Material", value: "Artificial pine needles, fabric ribbon, foam berries, plastic pine cones, resin urn base" },
