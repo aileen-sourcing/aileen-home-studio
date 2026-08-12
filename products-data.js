@@ -888,48 +888,28 @@ const detailsDatabase = {
     },
     // ==========================================
     // ⚙️ 大类 3：Raw Materials (cat: "material")
-    "pvc christmas tree raw material roll artificial pine needle plastic film for christmas tree production": {
+    "pvc film rolls in solid and striped green for artificial christmas tree leaf manufacture": {
         category: "material",
         subcategory: "pvc-film", 
-        code: "Item Code: PF-20260710",
-        description: "Provide premium raw material for handmade artificial christmas trees with this pvc film roll. Made of high-quality flexible pvc material, it delivers lifelike texture and excellent weather resistance. Perfect for christmas tree factories, ornament manufacturers, suitable for producing pine needles, artificial foliage and seasonal decorative branches.",
+        code: "Item Code: pf20260710",
+        description: "High quality flexible PVC film rolls serve as professional raw materials for manufacturing artificial Christmas tree leaves and decorative foliage. This PVC sheet features good tear resistance, anti-fading property and easy die-cutting, ideal for large-scale factory processing. Products are tightly packed with kraft paper and wrapped on pallets to guarantee safe global shipping and warehouse storage. Custom dimensions, thickness and stripe colors can be tailored according to your actual production demands.",
         images: [
-            "images/products/raw-material/pvc-film/pf20260710/pf20260710-1.jpg",
-            "images/products/raw-material/pvc-film/pf20260710/pf20260710-2.jpg",
-            "images/products/raw-material/pvc-film/pf20260710/pf20260710-3.jpg",
-            "images/products/raw-material/pvc-film/pf20260710/pf20260710-4.jpg"
+            "images/products/raw-material/pvc-film/pf20260710/christmas-tree-pvc-film-green-roll-white-01.jpg",
+            "images/products/raw-material/pvc-film/pf20260710/christmas-tree-pvc-film-kraft-pack-warehouse-02.jpg",
+            "images/products/raw-material/pvc-film/pf20260710/christmas-tree-pvc-film-gy-stripe-pallet-03.jpg",
+            "images/products/raw-material/pvc-film/pf20260710/christmas-tree-pvc-film-yg-stripe-wrap-pallet-04.jpg"
 
         ], 
         specs: [
-            { label: "Type", value: "Embossed / Rigid PVC Roll" },
+            { label: "Material", value: "100% Virgin PVC Plastic" },
+            { label: "Available Colors", value: "Solid Army Green, Green-Yellow Stripe, Yellow-Gray Stripe" },
             { label: "Thickness", value: "0.05 mm - 0.15 mm (Customizable)" },
             { label: "Features", value: "Anti-UV, Flame Retardant, High Tensile Strength" },
+            { label: "Custom Service", value: "Support Custom Roll Width, Thickness, Stripe Size & Color Matching" },
             { label: "Usage", value: "Raw Material for Manufacturing Christmas Tree Leaves" }
         ]
     },
-    "pe artificial pine needle branch plastic christmas tree leaf for christmas tree production": {
-        category: "material",
-        subcategory: "pe-tips", 
-        code: "Item Code: PE-20260713",
-        description: "Create lifelike artificial christmas trees with this pe pine needle branch. Made of premium polyethylene material, it features realistic texture and outstanding anti-fading performance. Perfect for christmas tree manufacturers, holiday decor factories, suitable for assembling all sizes of indoor and outdoor artificial christmas trees.",
-        images: [
-            "images/products/raw-material/pe-tips/PE20260713/PE20260713-1.jpg",
-            "images/products/raw-material/pe-tips/PE20260713/PE20260713-2.jpg",
-            "images/products/raw-material/pe-tips/PE20260713/PE20260713-3.jpg",
-            "images/products/raw-material/pe-tips/PE20260713/PE20260713-4.jpg",
-            "images/products/raw-material/pe-tips/PE20260713/PE20260713-5.jpg",
-            "images/products/raw-material/pe-tips/PE20260713/PE20260713-6.jpg",
-        ],
-
-        specs: [
-            { label: "Material", value: "PE polyethylene plastic, iron wire stem" },
-            { label: "Size", value: "Multiple specifications available, Customizable" },
-            { label: "Color", value: "Dark green, light green, frosted white tip, Customizable" },
-            { label: "Features", value: "Realistic appearance, weather resistant, fade resistant, stable shape retention" },
-            { label: "Application", value: "Artificial christmas tree assembly, pine foliage making, holiday decorative branch production" }
-        ]
-    },
-    "pe monofilament yarn plastic filament for artificial christmas tree pine needle making": {
+    "polyester thread yarn rolls, high tenacity assorted colors for christmas tree foliage production": {
         category: "material",
         subcategory: "polyester-thread", 
         code: "Item Code: PS-20260708",
@@ -946,17 +926,15 @@ const detailsDatabase = {
             { label: "Features", value: "High tensile strength, color fastness, smooth texture, anti-aging, easy processing" }
         ]
     },
-    "artificial christmas tree metal pole iron branch stand tube for christmas tree assembly": {
+    "metal pole iron branch stand tube for artificial christmas tree assembly": {
         category: "material",
         subcategory: "metal-tube", 
         code: "Item Code: t20260715",
         description: "Offer stable support structure for artificial christmas trees with this metal iron pole. Made of sturdy coated iron material, it features reserved branch mounting positions for easy assembly. Perfect for christmas tree manufacturers, decorative plant factories, suitable for building various sizes of indoor and outdoor artificial christmas trees.",
         images: [
-            "images/products/raw-material/metal-tube/t20260715/t20260715-1.jpg",
-            "images/products/raw-material/metal-tube/t20260715/t20260715-2.jpg",
-            "images/products/raw-material/metal-tube/t20260715/t20260715-3.jpg",
-            "images/products/raw-material/metal-tube/t20260715/t20260715-4.jpg",
-            "images/products/raw-material/metal-tube/t20260715/t20260715-5.jpg"
+            "images/products/raw-material/metal-tube/t20260715/christmas-tree-metal-main-pole-double-set-01.jpg",
+            "images/products/raw-material/metal-tube/t20260715/christmas-tree-iron-center-tube-length-variation-02.jpg",
+            "images/products/raw-material/metal-tube/t20260715/christmas-tree-replacement-iron-pole-two-sizes-03.jpg"
         ], 
         specs: [
             { label: "Material", value: "Coated iron metal" },
@@ -966,15 +944,14 @@ const detailsDatabase = {
             { label: "Features", value: "High structural strength, anti-rust coating, prefabricated branch sockets, easy installation, stable load bearing" }
         ]
     },
-    "foldable metal christmas tree stand replacement base with thumb screw": {
+    "christmas tree stand, foldable thick iron frame for artificial xmas tree fixation": {
         category: "material", 
         subcategory: "metal-stands", 
-        code: "Item Code: MS-20260629",
+        code: "Item Code: ms20260629",
         description: "Ensure your christmas tree stays sturdy and secure with this heavy duty foldable metal tree stand. Crafted from durable iron with a sleek black finish, it features four legs with protective foot caps and a heavy-duty center pole with a locking thumb screw. Perfect replacement base for artificial christmas trees, offering stable support and easy storage for holiday seasons.",
         images: [
-            "images/products/raw-material/metal-stands/ms20260629/ms20260629-1.jpg",
-            "images/products/raw-material/metal-stands/ms20260629/ms20260629-2.jpg",
-            "images/products/raw-material/metal-stands/ms20260629/ms20260629-4.jpg" 
+            "images/products/raw-material/metal-stands/ms20260629/christmas-tree-metal-stand-wide-base-01.jpg",
+            "images/products/raw-material/metal-stands/ms20260629/christmas-tree-folding-tree-stand-narrow-frame-02.jpg"
         ],
         specs: [
             { label: "Material", value: "Heavy-Duty Reinforced Iron / Steel" },
