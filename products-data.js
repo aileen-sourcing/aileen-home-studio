@@ -450,22 +450,23 @@ const detailsDatabase = {
     // 💡 大类 1：Holiday Decor (cat: "Winter decor")
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "halloween")
-    "pre lit black mini halloween tree with purple lights tabletop potted artificial tree for home party decor": {
+    "black tabletop halloween tree multi color led gothic indoor desktop ornament": {
         category: "holiday",
         subcategory: "halloween", 
         code: "Item Code: h20260716",
-        description: "Bring spooky festive charm to any tabletop or entryway with this pre lit black mini halloween tree. Crafted with dense black artificial foliage and glowing purple lights, it offers a lush natural look that requires no maintenance. Perfect for decorating living rooms, mantelpieces, desks, or front porches, adding a creepy cozy halloween atmosphere to any space.",
+        description: "Compact black gothic tabletop Halloween tree available in unlit version and 4 LED light colors (red/orange/white/purple). Battery-powered with 6H timer function, perfect for spooky Halloween indoor desktop & shelf decoration.",
         images: [
-            "images/products/holiday-decor/halloween/tree/h20260716/1.jpg",
-            "images/products/holiday-decor/halloween/tree/h20260716/2.jpg",
-            "images/products/holiday-decor/halloween/tree/h20260716/3.jpg",
-            "images/products/holiday-decor/halloween/tree/h20260716/4.jpg",
-            "images/products/holiday-decor/halloween/tree/h20260716/5.jpg"
+            "images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-red-light-01.jpg",
+            "images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-orange-light-02.jpg",
+            "images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-white-light-03.jpg",
+            "images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-purple-light-04.jpg",
+            "images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-bare-no-lights-05.jpg"
         ], 
         specs: [
             { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "Material", value: "PVC artificial branches" },
-            { label: "Features", value: "Pre-installed purple LED lights, easy assembly, lightweight, reusable halloween ornament" },
+            { label: "power supply", value: "requires 3 aa batteries (batteries not included)" },
+            { label: "Material", value: "pvc pine branches + fabric wrapped weighted base" },
+            { label: "light options", value: "unlit bare tree / red / orange / white / purple led lights" },
             { label: "Application", value: "Indoor tabletop, desk, mantel, halloween party display, home seasonal decor" }
         ]
     },
