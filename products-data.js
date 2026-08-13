@@ -21,7 +21,7 @@ const detailsDatabase = {
             { label: "Application", value: "Living room entryway apartment indoor christmas decoration" }
         ]
     },
-    "pre-lit full dense christmas tree, artificial pine, green foliage for indoor holiday living room decor": {
+    "pre lit full dense christmas tree, artificial pine, green foliage for indoor holiday living room decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct26060707",
@@ -40,7 +40,7 @@ const detailsDatabase = {
             { label: "Application", value: "Indoor living room entryway shop front seasonal decoration" }
         ]
     },
-    "pre-lit slim pencil christmas tree with artificial white pine and rainbow led for indoor holiday display": {
+    "pre lit slim pencil christmas tree with artificial white pine and rainbow led for indoor holiday display": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct20260708",
