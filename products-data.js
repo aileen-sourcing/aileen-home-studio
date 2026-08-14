@@ -340,7 +340,7 @@ const detailsDatabase = {
         code: "Item Code: mt20260716",
         description: "Bring festive holiday charm to any small space with this pre-decorated mini desktop Christmas tree. Crafted with realistic frosted pine needles, cute pink bows, faux berries, and delicate holiday ornaments, it instantly brightens up your countertop or desk. It features a stable potted base that stands firmly on shelves, windowsills, and workstations. Made from premium durable materials, you can easily reuse this mess-free decoration year after year. It makes a perfect seasonal decor piece or a cozy Christmas gift for your friends and family.",
         images: [
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mini-potted-christmas-tree-pink-bow-poinsettia-01.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mini-potted-christmas-tree-pink-bow-poinsettia-01.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/desktop-christmas-tree-pink-ribbon-poinsettia-pot-02.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/festive-mini-christmas-tree-pink-bow-red-fruit-03.jpg",
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/potted-table-christmas-tree-pink-ribbon-poinsettia-04.jpg",
