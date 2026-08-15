@@ -377,6 +377,29 @@ const detailsDatabase = {
             { label: "Feature", value: "Lightweight, Reusable, Pre-assorted shapes, Ready-to-hang" }
         ]
     },
+    "shatterproof christmas baubles set, mixed glitter and shiny balls for xmas tree home decor": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: cb20260803",
+        description: "These shatterproof Christmas baubles come in multiple mixed-color styles, featuring shiny, glitter and hollow carved surface for rich visual layering, lightweight and durable for long-term use, perfect for decorating Christmas tree, mantel, party and various holiday home space to create a festive charming atmosphere.",
+        images: [
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-mixed-color-ornament-set-01.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-shiny-bauble-decor-set-02.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-glitter-bauble-ornament-03.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-gold-shatterproof-bauble-04.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-hollow-glitter-ornament-05.jpg"
+        ], 
+        specs: [
+            { label: "Product Name", value: "Christmas Baubles Ornament Set" },
+            { label: "Material", value: "Plastic (shatter-proof)" },
+            { label: "Ball Surface", value: "Shiny / Glitter / Hollow carved" },
+            { label: "Package Quantity", value: "30-40 pcs per container" },
+            { label: "Color", value: "Multi-color: purple-silver, blue-silver, teal-gold, gold, dark-blue-silver" },
+            { label: "Package", value: "Clear plastic bucket packaging" },
+            { label: "Feature", value: "Lightweight, shatter-resistant, easy to hang" },
+            { label: "Application", value: "Christmas tree, holiday party, home decoration" }
+        ]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Spring decor")
     "artificial spring eucalyptus wreath seasonal floral front door greenery for farmhouse home decor": {
@@ -667,7 +690,7 @@ const detailsDatabase = {
             { label: "Design", value: "Cube shape decorated with Christmas tree pattern" },
         ]
     },
-    "christmas ornament storage bag 600d oxford with removable dividers for christmas baubles": {
+    "christmas ornament storage bag 600d oxford with removable dividers for holiday decoration": {
         category: "holiday",
         subcategory: "storage-bags", 
         code: "Item Code: sb20260802",
@@ -685,7 +708,7 @@ const detailsDatabase = {
             { label: "Application", value: "For Christmas baubles, Xmas ornaments, small holiday decorative accessories, seasonal home storage" },
         ]
     },
-    "christmas ornament storage bag, oxford fabric, 128 slots for 3 inch baubles, red": {
+    "christmas storage bag, oxford fabric, 128 slots for 3 inch orenaments": {
         category: "holiday",
         subcategory: "storage-bags", 
         code: "Item Code: sb20260803",
