@@ -775,6 +775,25 @@ const detailsDatabase = {
             { label: "Application", value: "Bedroom bedside, living room side table, study desk, hotel room decoration" }
         ]
     },
+    "table lamp, wooden base floral shade, one pack, cream, Creates Soft Warm Glow For Bedside": {
+        category: "lighting",
+        subcategory: "table-lamps", 
+        code: "Item Code: tb20260701",
+        description: "Elegant bedside table lamp built with weighted natural wood base and delicate cream floral-printed fabric shade, which softens light to produce cozy warm ambient glow. It fits nightstands, side tables in bedroom, guest room and dorm, supports standard E27 bulbs (bulb not included), simple to assemble and matches mid-century, boho and farmhouse home decor styles perfectly.",
+        images: [
+            "images/products/lighting/table-lamps/tb20260701/wooden-bedside-table-lamp-floral-fabric-shade-product-01.jpg",
+            "images/products/lighting/table-lamps/tb20260701/wooden-bedside-table-lamp-floral-fabric-shade-bedroom-scene-02.jpg"
+
+        ], 
+        specs: [
+            { label: "Product Name", value: "Wooden Base Floral Fabric Shade Table Lamp" },
+            { label: "Material", value: "Natural Wood Base, Printed Floral Fabric Lampshade" },
+            { label: "Color", value: "Cream lampshade, Natural wood-tone base" },
+            { label: "Socket Type", value: "E27, bulb not included" },
+            { label: "Features", value: "Creates soft warm ambient lighting" },
+            { label: "Application", value: "Bedroom, Nightstand, Guest Room, Side Table" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "floor lamp")
     "wooden carved floor lamp wabi sabi linen shade standing lamp for living room bedroom decor": {
