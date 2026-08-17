@@ -775,7 +775,7 @@ const detailsDatabase = {
             { label: "Application", value: "Bedroom bedside, living room side table, study desk, hotel room decoration" }
         ]
     },
-    "table lamp, wooden base floral shade, one pack, cream, Creates Soft Warm Glow For Bedside": {
+    "table lamp, wooden base floral shade, cream creates soft warm glow for bedside": {
         category: "lighting",
         subcategory: "table-lamps", 
         code: "Item Code: tb20260701",
