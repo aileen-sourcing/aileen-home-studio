@@ -541,6 +541,26 @@ const detailsDatabase = {
             { label: "Application", value: "Suitable for indoor and covered outdoor use" },
         ]
     },
+    "easter egg wreath, artificial foam, pastel, front door": {
+        category: "holiday",
+        subcategory: "easter", 
+        code: "Item Code: ew20260728",
+        description: "Handcrafted with realistic foam speckled eggs, natural twig vine bases, and delicate greenery accents, this seasonal door wreath brings a cheerful festive ambiance to any space. Designed for both indoor and covered outdoor display, it fits perfectly on your front door, entryway, fireplace mantel, windowsill, or porch wall. Built from lightweight yet durable materials, this reusable spring decoration maintains its vivid colors year after year without fading. It serves as a delightful holiday centerpiece and an ideal seasonal gift for family, friends, and home decorators.",
+        images: [
+            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-greenery-front-door-01.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-orange-yellow-front-door-02.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-pastel-multicolor-front-door-03.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-glitter-pastel-front-door-04.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-berry-floral-front-door-05.jpg",
+            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-speckled-pastel-front-door-06.jpg"
+        ], 
+        specs: [
+            { label: "Base Construction", value: "Natural Rattan / Twig Ring" },
+            { label: "Mounting Type", value: "Wall Mount, Door Mount, Hanging" },
+            { label: "Material", value: "High-Density Foam, Natural Twig Vine, Plastic" },
+            { label: "Occasion & Season", value: "Easter, Housewarming" },
+        ]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas flowers")
     "christmas flower blue silver artificial poinsettia for home hodaliy decorating": {
