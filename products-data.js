@@ -909,6 +909,23 @@ const detailsDatabase = {
             { label: "Usage Environment", value: "Indoor Use Only" }
         ]
     },
+    "pendant light walnut wood brass multi head brown dining room": {
+        category: "lighting",
+        subcategory: "pendants", 
+        code: "Item Code: p20260705",
+        description: "Elevate your home decor with our mid-century modern walnut wood and brass pendant light. Crafted with premium solid walnut accents, brushed brass fixtures, and elegant fluted globe glass shades, this timeless hanging light brings warmth, sophistication, and vintage charm to any space.",
+        images: [
+            "images/products/lighting/pendants/p20260705/retro-walnut-wood-brass-fluted-glass-hanging-fixture-01.jpg",
+            "images/products/lighting/pendants/p20260705/mid-century-walnut-wood-brass-fluted-glass-chandelier-02.jpg",
+            "images/products/lighting/pendants/p20260705/vintage-walnut-wood-brass-ribbed-globe-pendant-light-03.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "Solid Walnut Wood, Brass Metal, Fluted Opal Glass" },
+            { label: "Bulb Base", value: "E26 / E27 (Bulbs Not Included)" },
+            { label: "Available Variants", value: "3-Light / 6-Light / 8-Light" },
+            { label: "Applicable Space", value: "Living Room, Dining Room, Bedroom, Foyer, Hotel" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "ceiling light")
     "ceiling light, fabric flower flush mount living room decor": {
