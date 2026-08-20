@@ -989,6 +989,23 @@ const detailsDatabase = {
     },
     // ==========================================
     // ⚙️ 大类 3：Raw Materials (cat: "material")
+    "pe tips raw material, artificial tree branch, mixed styles, green, for tree making": {
+        category: "material",
+        subcategory: "pe-tips", 
+        code: "Item Code: pe20260713",
+        description: "This pe christmas tree branch is widely used as raw material for handmade artificial christmas trees. We provide different branch styles in one listing to meet diversified production needs. Made of high quality pe plastic, the branches feature realistic needle texture, stable shape and good durability. The green color stays uniform after long-term storage, suitable for mass assembly in christmas tree factories.",
+        images: [
+            "images/products/raw-material/pe-tips/pe20260713/pe-christmas-tree-branch-raw-material-thin-01",
+            "images/products/raw-material/pe-tips/pe20260713/pe-christmas-tree-branch-raw-material-wide-02.jpg"
+
+        ], 
+        specs: [
+            { label: "Product Name", value: "PE Christmas Tree Branch" },
+            { label: "Material", value: "PE Plastic" },
+            { label: "Custom Service", value: "Custom Size, Custom Color, Bulk Wholesale" },
+            { label: "Application", value: "Raw Material for Artificial Christmas Tree Manufacturing" }
+        ]
+    },
     "pvc film rolls in solid and striped green for artificial christmas tree leaf manufacture": {
         category: "material",
         subcategory: "pvc-film", 
