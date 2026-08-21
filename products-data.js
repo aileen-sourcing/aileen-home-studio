@@ -899,7 +899,10 @@ const detailsDatabase = {
         description: "Bring soft warm atmosphere to indoor spaces with this vintage lotus glass pendant light. Designed with petal-shaped gradient glass shade and solid wood lamp holder, it delivers gentle diffused lighting. Perfect for decorating dining tables, kitchen islands, bedside areas, cafes, adding elegant retro aesthetic to residential and commercial interiors.",
         images: [
             "images/products/lighting/pendants/p20260630/pendant-lamp-green-petal-glass-white-product-01.jpg",
-            "images/products/lighting/pendants/p20260630/pendant-lamp-green-petal-glass-dining-room-scene-02.jpg"
+            "images/products/lighting/pendants/p20260630/pendant-lamp-green-petal-glass-dining-room-scene-02.jpg",
+            "images/products/lighting/pendants/p20260630/green-glass-pendant-light-brass-canopy.jpg",
+            "images/products/lighting/pendants/p20260630/green-petal-glass-pendant-light-shade.jpg",
+            "images/products/lighting/pendants/p20260630/green-glass-pendant-light-dining-room.jpg"
         ], 
         specs: [
             { label: "Material", value: "Gradient glass shade, solid wood lamp head, metal ceiling base" },
