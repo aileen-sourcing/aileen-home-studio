@@ -807,7 +807,11 @@ const detailsDatabase = {
         description: "Create a warm cozy ambience for indoor spaces with this mushroom wooden table lamp. Crafted with natural ribbed solid wood lampshade and tapered wood base, it casts soft gentle ambient lighting. Perfect for bedroom nightstands, living room side tables, study desks, adding minimalist rustic style to residential interiors.",
         images: [
             "images/products/lighting/table-lamps/tb20260630/mushroom-table-lamp-wood-retro-shade-white-product-01.jpg",
-            "images/products/lighting/table-lamps/tb20260630/mushroom-table-lamp-warm-glow-bedroom-decor-02.jpg"
+            "images/products/lighting/table-lamps/tb20260630/mushroom-table-lamp-warm-glow-bedroom-decor-02.jpg",
+            "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-nightstand-03.jpg",
+            "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-base-detail-04.jpg",
+            "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-desk-decor-05.jpg",
+            "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-reading-corner-06.jpg"
 
         ], 
         specs: [
