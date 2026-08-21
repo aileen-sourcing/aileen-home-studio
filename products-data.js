@@ -490,6 +490,29 @@ const detailsDatabase = {
             { label: "Application", value: "Front door, entryway, porch, wall, window, living room, farmhouse, covered outdoor space" }
         ]
     },
+    "fall garland artificial pumpkin pinecone 6ft cream mantel": {
+        category: "holiday",
+        subcategory: "fall-decor", 
+        code: "Item Code: qg20260821",
+        description: "Bring the warm, rich colors of autumn into your home with our premium artificial fall garland. Handcrafted with high-density realistic foliage, this seasonal greenery features faux cream pumpkins, natural pinecones, soft yellow hydrangea accents, and textured maple leaves in vibrant golden and deep burgundy tones. Designed with a flexible internal wire frame, it shapes effortlessly along mantels, stair railings, entryways, or dining table centerpieces. Crafted from durable, non-fading materials, this reusable autumn garland offers long-lasting beauty for Thanksgiving dinners, rustic fall weddings, and cozy seasonal home decor without shedding or requiring maintenance. Perfect for creating an inviting holiday atmosphere year after year.",
+        images: [
+            "images/products/holiday-decor/fall-decor/garland/qg20260821/fall-garland-with-pumpkins-and-pinecones-01.jpg",
+            "images/products/holiday-decor/fall-decor/garland/qg20260821/autumn-maple-leaf-pumpkin-garland-02.jpg",
+            "images/products/holiday-decor/fall-decor/garland/qg20260821/artificial-fall-garland-cream-pumpkin-03.jpg",
+            "images/products/holiday-decor/fall-decor/garland/qg20260821/fall-garland-fireplace-mantel-decor-04.jpg",
+            "images/products/holiday-decor/fall-decor/garland/qg20260821/thanksgiving-table-runner-fall-garland-centerpiece-05.jpg",
+            "images/products/holiday-decor/fall-decor/garland/qg20260821/autumn-dining-table-decor-garland-setting-06.jpg"
+        ], 
+        specs: [
+            { label: "Product Type", value: "Artificial Fall Garland" },
+            { label: "Length", value: "180 cm / 6 ft" },
+            { label: "Material", value: "Silk Leaves, Foam Pumpkins, Natural Pinecones, Wire Stem" },
+            { label: "Color Palette", value: "Amber Yellow, Rust Red, Cream White, Natural Brown" },
+            { label: "Main Elements", value: "Mini Cream Pumpkins, Pinecones, Hydrangea Blooms, Maple Leaves" },
+            { label: "Feature", value: "Flexible Wire Core, Non-Shedding, Reusable" },
+            { label: "Application", value: "Fireplace Mantel, Dining Table Centerpiece, Staircase, Front Door" }
+        ]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Winter decor")
     // ==========================================
