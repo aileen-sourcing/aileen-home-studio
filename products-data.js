@@ -391,7 +391,8 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-shiny-bauble-decor-set-02.jpg",
             "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-glitter-bauble-ornament-03.jpg",
             "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-gold-shatterproof-bauble-04.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-hollow-glitter-ornament-05.jpg"
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-hollow-glitter-ornament-05.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/pink-silver-christmas-ball-ornaments.jpg"
         ], 
         specs: [
             { label: "Product Name", value: "Christmas Baubles Ornament Set" },
