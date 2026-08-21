@@ -846,7 +846,11 @@ const detailsDatabase = {
         description: "This carved wooden floor lamp features stacked sculptural wooden base paired with soft linen lampshade. Inspired by wabi sabi and rustic farmhouse style, this standing lamp delivers warm gentle ambient light. Ideal decor lighting for living room bedroom study lounge and entryway. Solid wood structure brings natural textured aesthetic to modern minimalist neutral tone home interiors.",
         images: [
             "images/products/lighting/floor-lamps/fl20260715/black-walnut-floor-lamp-geometric-pillar-product-shot-01.jpg",
-            "images/products/lighting/floor-lamps/fl20260715/black-walnut-floor-lamp-warm-glow-lounge-room-display-02.jpg"
+            "images/products/lighting/floor-lamps/fl20260715/black-walnut-floor-lamp-warm-glow-lounge-room-display-02.jpg",
+            "images/products/lighting/floor-lamps/fl20260715/black-wood-floor-lamp-bedroom-nightstand-decor-03.jpg",
+            "images/products/lighting/floor-lamps/fl20260715/modern-geometric-floor-lamp-living-room-corner-04.jpg",
+            "images/products/lighting/floor-lamps/fl20260715/vintage-black-wooden-floor-lamp-study-bookshelf-05.jpg",
+            "images/products/lighting/floor-lamps/fl20260715/black-totem-floor-lamp-beside-sofa-seating-area-06.jpg"
         ], 
         specs: [
             { label: "Material", value: "solid wood base and linen fabric lampshade" },
