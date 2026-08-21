@@ -865,11 +865,11 @@ const detailsDatabase = {
         description: "This mid century modern wooden arc floor lamp merges functional lighting and handy storage surface. Crafted with curved solid wood frame and retro yellow lampshade, the integrated round side table holds books, cups and small decor items. It casts gentle warm ambient light, making it a great fit beside armchairs, sofas in living rooms, bedrooms and cozy reading nooks.",
         images: [
             "images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-yellow-lampshade-white-shot-01.jpg",
-            "images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-side-table-living-space-display-02.jpg",
+            "images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-living-room-02.jpg",
             "images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-yellow-shade-03.jpg",
             "images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-wood-table-04.jpg",
             "images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-reading-nook-05.jpg",
-            "images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-living-room-06.jpg"
+            "images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-side-table-living-space-display-06.jpg"
         ], 
         specs: [
             { label: "Product Name", value: "wooden arc floor lamp with side table" },
