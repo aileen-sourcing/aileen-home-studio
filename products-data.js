@@ -365,7 +365,11 @@ const detailsDatabase = {
         images: [
             "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-red-gold-01.jpg",
             "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-blue-silver-02.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-gold-silver-03.jpg"
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-gold-silver-03.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/red-gold-christmas-nutcracker-ornaments.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/red-gold-christmas-ornaments-table-decor.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/red-gold-santa-snowflake-ornaments-detail.jpg",
+            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/red-gold-christmas-tree-ornaments-decor.jpg"
         ], 
         specs: [
             { label: "Product Name", value: "Assorted Christmas Ornament Gift Box Set" },
