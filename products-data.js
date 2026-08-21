@@ -963,7 +963,10 @@ const detailsDatabase = {
         images: [
             "images/products/lighting/pendants/p20260705/retro-walnut-wood-brass-fluted-glass-hanging-fixture-01.jpg",
             "images/products/lighting/pendants/p20260705/mid-century-walnut-wood-brass-fluted-glass-chandelier-02.jpg",
-            "images/products/lighting/pendants/p20260705/vintage-walnut-wood-brass-ribbed-globe-pendant-light-03.jpg"
+            "images/products/lighting/pendants/p20260705/vintage-walnut-wood-brass-ribbed-globe-pendant-light-03.jpg",
+            "images/products/lighting/pendants/p20260705/vintage-brass-chandelier-opal-glass-shade.jpg",
+            "images/products/lighting/pendants/p20260705/vintage-brass-chandelier-dining-room.jpg",
+            "images/products/lighting/pendants/p20260705/vintage-brass-chandelier-home-office.jpg"
         ], 
         specs: [
             { label: "Material", value: "Solid Walnut Wood, Brass Metal, Fluted Opal Glass" },
