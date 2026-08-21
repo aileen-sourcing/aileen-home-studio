@@ -726,7 +726,11 @@ const detailsDatabase = {
         description: "Foldable Christmas ornament storage box with transparent PVC panel. Separate grid compartments protect fragile Christmas baubles from scratches and dust. Equipped with sturdy carry handle and zipper closure. Compact foldable design saves closet space, ideal for organizing Christmas decorative balls and seasonal ornaments.",
         images: [
             "images/products/holiday-decor/storage-bags/sb20260801/christmas-ball-storage-box-grid-case-white-shot-01.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ball-storage-box-grid-case-real-scene-02.jpg"
+            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ball-storage-box-grid-case-real-scene-02.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-handle-detail.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-living-room.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-closet.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-attic.jpg"
         ], 
         specs: [
             { label: "Product Name", value: "Christmas Ornament Storage Box" },
@@ -746,7 +750,10 @@ const detailsDatabase = {
         images: [
             "images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-long-red-white-01.jpg",
             "images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-grid-semiopen-02.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-grid-fullopen-03.jpg"
+            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-grid-fullopen-03.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-bag-card-slot-detail.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-bag-handle-detail.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-storage-bag-closet.jpg",
         ], 
         specs: [
             { label: "Material", value: "600D Oxford Fabric" },
@@ -764,7 +771,9 @@ const detailsDatabase = {
         images: [
             "images/products/holiday-decor/storage-bags/sb20260803/red-christmas-ornament-storage-bag-closed.jpg",
             "images/products/holiday-decor/storage-bags/sb20260803/christmas-bauble-storage-bag-full-dividers.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260803/christmas-decoration-tote-half-divided.jpg"
+            "images/products/holiday-decor/storage-bags/sb20260803/christmas-decoration-tote-half-divided.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260803/red-storage-box-label-holder.jpg",
+            "images/products/holiday-decor/storage-bags/sb20260803/red-storage-box-side-handle.jpg",
         ], 
         specs: [
             { label: "Product Name", value: "Christmas Ornament Storage Bag" },
