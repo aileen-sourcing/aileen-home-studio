@@ -919,7 +919,11 @@ const detailsDatabase = {
         description: "Multi-head linear combination ceiling light built with walnut wood base. Assembled with spherical lamp heads cylindrical spotlights and adjustable disc pendant lamp. Lamp angles and suspension length can be freely adjusted. Gentle warm light builds comfortable home ambiance, suitable for residential and commercial interior decoration.",
         images: [
             "images/products/lighting/pendants/p20260701/long-bar-dining-pendant-lamp-walnut-set-white-shot-01.jpg",
-            "images/products/lighting/pendants/p20260701/long-bar-dining-pendant-lamp-walnut-set-dining-scene-02.jpg"
+            "images/products/lighting/pendants/p20260701/long-bar-dining-pendant-lamp-walnut-set-dining-scene-02.jpg",
+            "images/products/lighting/pendants/p20260701/walnut-linear-pendant-light-shade-detail.jpg",
+            "images/products/lighting/pendants/p20260701/walnut-linear-pendant-light-spotlight.jpg",
+            "images/products/lighting/pendants/p20260701/walnut-linear-pendant-light-dining-table.jpg",
+            "images/products/lighting/pendants/p20260701/walnut-linear-pendant-light-kitchen-island.jpg",
         ], 
         specs: [
             { label: "Material", value: "Walnut wood frame / metal hardware / frosted lampshade" },
