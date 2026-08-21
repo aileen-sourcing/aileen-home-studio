@@ -829,7 +829,11 @@ const detailsDatabase = {
         description: "Elegant bedside table lamp built with weighted natural wood base and delicate cream floral-printed fabric shade, which softens light to produce cozy warm ambient glow. It fits nightstands, side tables in bedroom, guest room and dorm, supports standard E27 bulbs (bulb not included), simple to assemble and matches mid-century, boho and farmhouse home decor styles perfectly.",
         images: [
             "images/products/lighting/table-lamps/tb20260701/wooden-bedside-table-lamp-floral-fabric-shade-product-01.jpg",
-            "images/products/lighting/table-lamps/tb20260701/wooden-bedside-table-lamp-floral-fabric-shade-bedroom-scene-02.jpg"
+            "images/products/lighting/table-lamps/tb20260701/wooden-bedside-table-lamp-floral-fabric-shade-bedroom-scene-02.jpg",
+            "images/products/lighting/table-lamps/tb20260701/vintage-wood-table-lamp-floral-shade-03.jpg",
+            "images/products/lighting/table-lamps/tb20260701/vintage-wood-table-lamp-base-detail-04.jpg",
+            "images/products/lighting/table-lamps/tb20260701/vintage-wood-table-lamp-nightstand-05.jpg",
+            "images/products/lighting/table-lamps/tb20260701/vintage-wood-table-lamp-entryway-06.jpg"
 
         ], 
         specs: [
