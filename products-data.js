@@ -544,6 +544,26 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "valentines-day")
+    "glitter heart christmas ornaments for holiday tree decor": {
+        category: "holiday",
+        subcategory: "valentines-day", 
+        code: "Item Code: vd20260801",
+        description: "Add a touch of sparkle to your holiday season with our exquisite glitter heart ornaments. These charming hanging decorations are designed to bring love and joy to your Christmas tree, garlands, or festive displays. Crafted with high-quality glitter finish, each heart ornament catches the light beautifully, creating a warm and magical glow in your home. Lightweight and durable, they are easy to hang and perfect for decorating branches, windows, or gift wrapping. Whether you are creating a classic festive look or adding a romantic accent, these versatile ornaments are the perfect finishing touch. Elevate your holiday decor with these timeless heart-shaped accents that celebrate the spirit of the season.",
+        images: [
+            "images/products/holiday-decor/valentines-day/vd20260801/red-glitter-heart-christmas-ornament.jpg",
+            "images/products/holiday-decor/valentines-day/vd20260801/red-glitter-hollow-heart-decor.jpg",
+            "images/products/holiday-decor/valentines-day/vd20260801/red-sparkle-heart-hanging-pendant.jpg",
+            "images/products/holiday-decor/valentines-day/vd20260801/rose-gold-glitter-heart-ornament.jpg",
+            "images/products/holiday-decor/valentines-day/vd20260801/dark-red-glitter-heart-xmas-decor.jpg",
+            "images/products/holiday-decor/valentines-day/vd20260801/pink-glitter-heart-tree-decoration.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "Lightweight plastic with premium glitter finish" },
+            { label: "Shape", value: "Heart" },
+            { label: "Hanging Type", value: "Included ribbon loop for easy attachment" },
+            { label: "Occasion", value: "Christmas tree, wedding decor, party favors" }
+        ]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "easter")
     "easter egg wreath spring greenery front door home decoration": {
