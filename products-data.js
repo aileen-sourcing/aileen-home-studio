@@ -609,6 +609,27 @@ const detailsDatabase = {
             { label: "Occasion & Season", value: "Easter, Housewarming" },
         ]
     },
+    "green moss easter bunny figurine with pink collar": {
+        category: "holiday",
+        subcategory: "easter", 
+        code: "Item Code: eb20260808",
+        description: "Add a whimsical touch of spring to your home with this charming green moss Easter bunny figurine. Crafted with high-density green flocking that mimics natural moss and styled with a soft pink collar accent, this handcrafted bunny statue makes an eye-catching centerpiece for Easter dining tables, fireplace mantels, or entryway console tables. Designed to suit rustic, farmhouse, and cottagecore decor themes.",
+        images: [
+            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-figurine-white-background.jpg",
+            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-statue-front-view.jpg",
+            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-flocked-easter-rabbit-spring-table-setting.jpg",
+            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-table-decor-centerpiece.jpg",
+            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-rabbit-tabletop-decoration.jpg",
+            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-fireplace-mantel-decor.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "Resin / Polyfoam core with high-density moss flocking" },
+            { label: "Color", value: "Natural Moss Green & Soft Pink" },
+            { label: "Style", value: "Rustic, Farmhouse, Spring Cottagecore" },
+            { label: "Care Instructions", value: "Dust gently with a soft dry cloth; avoid direct water/moisture" },
+            { label: "Placement", value: "Indoor Tabletop, Fireplace Mantel, Shelf, Entryway" },
+        ]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas flowers")
     "christmas flower blue silver artificial poinsettia for home hodaliy decorating": {
@@ -673,6 +694,10 @@ const detailsDatabase = {
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260720/blue-glitter-fabric-poinsettia-floral-ornament-01.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260720/blue-glitter-poinsettia-holiday-interior-display-02.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-flowers-christmas-tree-ornaments-decor.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-christmas-dining-table-centerpiece-decor.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-christmas-garland-fireplace-mantel-decor.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-flowers-fireplace-garland-with-lights.jpg",
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, plastic stem" },
