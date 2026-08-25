@@ -904,6 +904,28 @@ const detailsDatabase = {
             { label: "Application", value: "Bedroom, Nightstand, Guest Room, Side Table" }
         ]
     },
+    "woven table lamp pleated wood cylinder natural oak dark walnut bedroom": {
+        category: "lighting",
+        subcategory: "table-lamps", 
+        code: "Item Code: tb20260702",
+        description: "Add natural warmth and contemporary texture to your home with this handcrafted woven table lamp. Featuring a textured rope cylinder shade and a finely fluted solid wood base, it diffuses a soft, cozy ambient glow that elevates any nightstand, side table, or reading nook. Available in natural oak and deep walnut finishes to perfectly complement mid-century, Japandi, and boho interior styles.",
+        images: [
+            "images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-light-wood-white-background.jpg",
+            "images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-light-wood-lit-studio.jpg",
+            "images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-dark-wood-lit-studio.jpg",
+            "images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-dark-wood-living-room.jpg",
+            "images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-light-wood-bedroom-lifestyle.jpg",
+            "images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-light-wood-bedroom-nightstand.jpg"
+
+        ], 
+        specs: [
+            { label: "Wood Finishes", value: "Natural Oak (Light Wood) / Deep Walnut (Dark Wood)" },
+            { label: "Material", value: "Hand-woven rope shade, solid wood base, brushed brass hardware" },
+            { label: "Light Source", value: "E26/E27 base (LED bulb included, warm white 3000K)" },
+            { label: "Style", value: "Japandi / Modern Organic / Boho / Mid-Century Modern" },
+            { label: "Suitable For", value: "Bedroom nightstand, living room side table, office desk" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "floor lamp")
     "wooden carved floor lamp wabi sabi linen shade standing lamp for living room bedroom decor": {
