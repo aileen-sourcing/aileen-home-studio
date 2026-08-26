@@ -926,6 +926,28 @@ const detailsDatabase = {
             { label: "Suitable For", value: "Bedroom nightstand, living room side table, office desk" }
         ]
     },
+    "modern black wood table lamp for living room bedroom bedside": {
+        category: "lighting",
+        subcategory: "table-lamps", 
+        code: "Item Code: tb20260703",
+        description: "Elevate your home space with this modern black wood table lamp, crafted with a uniquely contoured wooden base and a premium fabric shade that diffuses a soft, inviting glow. Its sculptural silhouette effortlessly blends contemporary artistry with functional illumination, making it a stylish accent piece for your living room, bedroom nightstand, or study desk. Designed to enhance modern and rustic interiors alike, this versatile lamp adds warmth and understated sophistication to any room setup.",
+        images: [
+            "images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-white-background.jpg",
+            "images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-on-table.jpg",
+            "images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-detail.jpg",
+            "images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-living-room.jpg",
+            "images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-desk-scene.jpg",
+            "images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-bedroom-scene.jpg"
+
+        ], 
+        specs: [
+            { label: "Style", value: "Modern / Sculptural" },
+            { label: "Base Material", value: "Solid Wood" },
+            { label: "Shade Material", value: "Fabric (Off-White / Beige)" },
+            { label: "Light Source", value: "E26/E27 Bulb (Not Included)" },
+            { label: "Suitable For", value: "Bedroom, Living Room, Office, Bedside" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "floor lamp")
     "wooden carved floor lamp wabi sabi linen shade standing lamp for living room bedroom decor": {
