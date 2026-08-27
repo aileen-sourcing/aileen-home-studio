@@ -1078,6 +1078,26 @@ const detailsDatabase = {
             { label: "Applicable Space", value: "Living Room, Dining Room, Bedroom, Foyer, Hotel" }
         ]
     },
+    "vintage glass pendant light wood accent amber green patterned shade": {
+        category: "lighting",
+        subcategory: "pendants", 
+        code: "Item Code: p20260706",
+        description: "Elevate your interior with our vintage glass pendant light, featuring an embossed diamond-patterned shade paired with a solid wood cap and brass accents. Available in warm amber and vibrant green, this retro pendant casts a soft ambient glow, making it ideal for dining tables, kitchen islands, and cafes. Includes an adjustable braided cord for easy installation across various ceiling heights.",
+        images: [
+            "images/products/lighting/pendants/p20260706/vintage-pendant-light-amber-glass-white-background.jpg",
+            "images/products/lighting/pendants/p20260706/vintage-pendant-light-green-glass-white-background.jpg",
+            "images/products/lighting/pendants/p20260706/vintage-pendant-light-amber-textured-glass-shade-detail.jpg",
+            "images/products/lighting/pendants/p20260706/vintage-pendant-light-wood-accent-brass-holder-detail.jpg",
+            "images/products/lighting/pendants/p20260706/vintage-pendant-light-amber-glass-dining-room-lifestyle.jpg",
+            "images/products/lighting/pendants/p20260706/vintage-pendant-light-green-glass-dining-table-lifestyle.jpg"
+        ], 
+        specs: [
+            { label: "Product Type", value: "Vintage Glass Pendant Light" },
+            { label: "Shade Material", value: "Embossed Patterned Glass" },
+            { label: "Shade Color", value: "Amber / Avocado Green" },
+            { label: "Bulb Base Type", value: "E26 / E27 (Standard Medium Base)" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "ceiling light")
     "ceiling light, fabric flower flush mount living room decor": {
