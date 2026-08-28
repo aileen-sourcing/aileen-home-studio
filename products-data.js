@@ -969,6 +969,26 @@ const detailsDatabase = {
             { label: "Application", value: "living room bedroom entryway study lounge" }
         ]
     },
+    "wooden floor lamp retro geometric stacked tall pole standing light": {
+        category: "lighting",
+        subcategory: "floor-lamps", 
+        code: "Item Code: fl20260716",
+        description: "Elevate your living space with this retro stacked geometric wooden floor lamp. Crafted with a uniquely sculpted geometric wooden pole, this standing light blends vintage charm with modern mid-century aesthetic. Perfect for living rooms, bedrooms, or cozy reading nooks, it casts a warm, inviting glow through its classic fabric shade.",
+        images: [
+            "images/products/lighting/floor-lamps/fl20260716/floor-lamp-wooden-stacked-geometric-walnut-white.jpg",
+            "images/products/lighting/floor-lamps/fl20260716/floor-lamp-wooden-stacked-geometric-black-on.jpg",
+            "images/products/lighting/floor-lamps/fl20260716/retro-wood-floor-lamp-geometric-pole-white-shot.jpg",
+            "images/products/lighting/floor-lamps/fl20260716/retro-wood-floor-lamp-warm-light-living-room-display.jpg",
+            "images/products/lighting/floor-lamps/fl20260716/floor-lamp-wooden-stacked-geometric-lifestyle.jpg"
+        ], 
+        specs: [
+            { label: "Design Style", value: "Retro / Mid-Century Modern / Geometric" },
+            { label: "Material", value: "Solid Wood (Pole & Base), Fabric (Lampshade)" },
+            { label: "Color Options", value: "Walnut / Matte Black" },
+            { label: "Switch Type", value: "On/Off Switch (Standard Floor Switch)" },
+            { label: "Application", value: "Living Room, Bedroom, Study, Reading Corner" }
+        ]
+    },
     "wooden arc floor lamp with side table yellow shade for living room bedroom reading nook": {
         category: "lighting",
         subcategory: "floor-lamps", 
