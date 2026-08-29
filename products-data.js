@@ -1118,6 +1118,28 @@ const detailsDatabase = {
             { label: "Bulb Base Type", value: "E26 / E27 (Standard Medium Base)" }
         ]
     },
+    "pendant light rustic wood bead french country chandelier six lights": {
+        category: "lighting",
+        subcategory: "pendants", 
+        code: "Item Code: p20260708",
+        description: "Add a touch of warmth and elegant charm to your home with this French Country Wood Bead Pendant Light. Featuring handcrafted distressed wood beads, a durable dark iron frame, and 6 candle-style light sockets, this light fixture creates a cozy, inviting atmosphere in living rooms, dining spaces, and farmhouse kitchens.",
+        images: [
+            "images/products/lighting/pendants/p20260708/rustic-wood-bead-chandelier-white-background.jpg",
+            "images/products/lighting/pendants/p20260708/vintage-wood-bead-chandelier-close-up-detail.jpg",
+            "images/products/lighting/pendants/p20260708/farmhouse-beaded-chandelier-cozy-dining-room.jpg",
+            "images/products/lighting/pendants/p20260708/french-country-chandelier-living-room-decor.jpg",
+            "images/products/lighting/pendants/p20260708/rustic-wood-bead-chandelier-family-dining-scene.jpg",
+            "images/products/lighting/pendants/p20260708/vintage-candle-chandelier-large-dining-room.jpg"
+        ], 
+        specs: [
+            { label: "Product Type", value: "Pendant Light / Chandelier" },
+            { label: "Style", value: "French Country / Farmhouse / Rustic" },
+            { label: "Material", value: "Metal + Natural Wood Beads" },
+            { label: "Number of Lights", value: "6 Lights" },
+            { label: "Bulb Base", value: "E12 / Candelabra Base" },
+            { label: "Voltage", value: "110V - 240V" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "ceiling light")
     "ceiling light, fabric flower flush mount living room decor": {
