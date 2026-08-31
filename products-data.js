@@ -989,6 +989,27 @@ const detailsDatabase = {
             { label: "Application", value: "Living Room, Bedroom, Study, Reading Corner" }
         ]
     },
+    "black ball floor lamp with pleated shade for vintage living room": {
+        category: "lighting",
+        subcategory: "floor-lamps", 
+        code: "Item Code: fl20260717",
+        description: "Bring timeless elegance and warm ambience to your space with this vintage-inspired floor lamp. Featuring a uniquely crafted stacked-ball body in a matte black finish, it is topped with a classic pleated fabric shade that casts a soft, inviting glow. Perfectly suited for modern rustic interiors, classic study rooms, or cozy reading nooks next to your favorite armchair.",
+        images: [
+            "images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-dark-shade.jpg",
+            "images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-cream-shade.jpg",
+            "images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-library-style.jpg",
+            "images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-modern-room.jpg",
+            "images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-reading-nook.jpg",
+            "images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-vintage-room.jpg"
+        ], 
+        specs: [
+            { label: "Design Style", value: "Vintage / Mid-Century Modern / Bobbin" },
+            { label: "Shade Color Options", value: "Dark Olive / Cream White" },
+            { label: "Bulb Socket", value: "E26 / E27 Base (Bulb not included)" },
+            { label: "Shade Material", value: "Fabric (Pleated)" },
+            { label: "Application", value: "Living Room, Bedroom, Study, Reading Corner" }
+        ]
+    },
     "wooden arc floor lamp with side table yellow shade for living room bedroom reading nook": {
         category: "lighting",
         subcategory: "floor-lamps", 
