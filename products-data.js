@@ -1034,6 +1034,28 @@ const detailsDatabase = {
             { label: "Assembly", value: "simple assembly required" }
         ]
     },
+    "modern yellow floor lamp with tray table storage cozy accent light": {
+        category: "lighting",
+        subcategory: "floor-lamps", 
+        code: "Item Code: fl20260721",
+        description: "Elevate your home decor with this modern multi-functional floor lamp. Designed with a striking yellow finish and playfulness inspired by mid-century and dopamine decor aesthetics, this standing light isn't just an illumination piece—it's a complete bedside and reading corner solution.",
+        images: [
+            "images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-white-background.jpg",
+            "images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-table-details.jpg",
+            "images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-night-window-view.jpg",
+            "images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-living-room-armchair.jpg",
+            "images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-cozy-bedroom.jpg",
+            "images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-bedside-scene.jpg"
+        ], 
+        specs: [
+            { label: "Product Type", value: "Multi-functional Floor Lamp with Table & Storage" },
+            { label: "Style", value: "Modern / Scandinavian / Dopamine Aesthetic" },
+            { label: "Primary Material", value: "Powder-Coated Metal, Premium Wood-Composite Trays" },
+            { label: "Color", value: "Yellow (Main Pole & Shade), Teal & Pink Accents, Olive Green (Basket)" },
+            { label: "Light Source", value: "E26/E27 Bulb Socket (LED Bulb Included)" },
+            { label: "Ideal For", value: "Bedroom Bedside, Living Room Reading Nook, Small Apartments" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "pendants")
     "vintage lotus glass pendant light wooden small hanging lamp for dining room kitchen island": {
