@@ -952,7 +952,7 @@ const detailsDatabase = {
         category: "lighting",
         subcategory: "table-lamps", 
         code: "Item Code: tb20260704",
-        description: "Elevate your home with this mid-century modern wooden table lamp. Crafted with a natural wood grain body and an organic mushroom shape, it offers warm ambient light perfect for your bedside table, home office, or reading nook. Cordless and rechargeable for effortless portability.",
+        description: "Elevate your home with this mid-century modern wooden table lamp. Crafted with a natural wood grain body and an organic mushroom shape, it offers warm ambient light perfect for your bedside table, home office, or reading nook. Cordless and rechargeable for effortless portability.Built-in USB port. A USB charging cable is included. Complies with North American, Australian, European, and Middle Eastern certification standards.",
         images: [
             "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-white-background.jpg",
             "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-warm-light.jpg",
@@ -965,6 +965,10 @@ const detailsDatabase = {
         specs: [
             { label: "Product Type", value: "Table Lamp / Desk Light" },
             { label: "Material", value: "Natural Wood, Metal Alloy" },
+            { label: "Color", value: "lnut, Black" },
+            { label: "AC Voltage", value: "110-240 volts" },
+            { label: "Switch Method", value: "Touch switch (integrated LED light)" },
+            { label: "Color Temperature", value: "Warm white (3000K), Neutral white (4000K), Cool white (6000K)" },
             { label: "Design Style", value: "Mid-Century Modern / Japandi" },
             { label: "Suitable For", value: "Bedroom, Living Room, Home Office, Reading Desk" }
         ]
