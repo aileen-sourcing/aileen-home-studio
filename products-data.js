@@ -948,6 +948,27 @@ const detailsDatabase = {
             { label: "Suitable For", value: "Bedroom, Living Room, Office, Bedside" }
         ]
     },
+    "modern wooden table lamp rechargeable cordless mushroom desk light": {
+        category: "lighting",
+        subcategory: "table-lamps", 
+        code: "Item Code: tb20260704",
+        description: "Elevate your home with this mid-century modern wooden table lamp. Crafted with a natural wood grain body and an organic mushroom shape, it offers warm ambient light perfect for your bedside table, home office, or reading nook. Cordless and rechargeable for effortless portability.",
+        images: [
+            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-white-background.jpg",
+            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-warm-light.jpg",
+            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-reading-desk.jpg",
+            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-living-room-decor.jpg",
+            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-home-office.jpg",
+            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-bedside-table.jpg"
+
+        ], 
+        specs: [
+            { label: "Product Type", value: "Table Lamp / Desk Light" },
+            { label: "Material", value: "Natural Wood, Metal Alloy" },
+            { label: "Design Style", value: "Mid-Century Modern / Japandi" },
+            { label: "Suitable For", value: "Bedroom, Living Room, Home Office, Reading Desk" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "floor lamp")
     "wooden carved floor lamp wabi sabi linen shade standing lamp for living room bedroom decor": {
