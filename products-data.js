@@ -1208,6 +1208,29 @@ const detailsDatabase = {
             { label: "Voltage", value: "110V - 240V" }
         ]
     },
+    "modern three light wooden pendant light for dining room": {
+        category: "lighting",
+        subcategory: "pendants", 
+        code: "Item Code: p20260904",
+        description: "Elevate your home with this modern three-light wooden pendant light. Crafted from high-quality natural wood, each geometric lampshade creates a warm and inviting atmosphere. Perfectly styled over dining tables, kitchen islands, or living room spaces, this fixture blends mid-century charm with contemporary scandinavian aesthetics.",
+        images: [
+            "images/products/lighting/pendants/p20260904/three-light-wooden-pendant-light.jpg",
+            "images/products/lighting/pendants/p20260904/geometric-wooden-pendant-light.jpg",
+            "images/products/lighting/pendants/p20260904/illuminated-wooden-pendant-light.jpg",
+            "images/products/lighting/pendants/p20260904/modern-wooden-chandelier-interior.jpg",
+            "images/products/lighting/pendants/p20260904/wooden-chandelier-over-dining-table.jpg",
+            "images/products/lighting/pendants/p20260904/wooden-pendant-light-dining-room.jpg"
+        ], 
+        specs: [
+            { label: "Product Type", value: "Three-Light Pendant Light / Chandelier" },
+            { label: "Main Material", value: "Natural Wood, Metal Ceiling Plate" },
+            { label: "Design Style", value: "Modern / Scandinavian / Mid-Century" },
+            { label: "Number of Lights", value: "Three Lights" },
+            { label: "Bulb Base", value: "E26 / E27 (Bulbs Not Included)" },
+            { label: "Voltage", value: "110V - 240V" },
+            { label: "Application", value: "Dining Room, Kitchen Island, Living Room" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "ceiling light")
     "ceiling light, fabric flower flush mount living room decor": {
