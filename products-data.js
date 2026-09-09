@@ -1277,6 +1277,28 @@ const detailsDatabase = {
             { label: "Suitable scenes", value: "Bedroom Bedside, Living Room, Hallway, Study Room" }
         ]
     },
+    "slatted wooden wall sconce brass cord plug in wall light fixture": {
+        category: "lighting",
+        subcategory: "wall-sconces", 
+        code: "Item Code: wl20260909",
+        description: "Elevate your home space with this slatted wooden wall sconce. Combining the raw warmth of natural timber with the refined elegance of brushed brass, this wall light brings an inviting, peaceful atmosphere to modern, Japandi, or mid-century interiors. When illuminated, the delicate wood slats filter soft light, casting beautiful linear shadows that enhance the texture of your walls. Designed for aesthetic impact and everyday functional lighting, it serves as a stunning centerpiece in bedrooms, hallways, or cozy reading nooks.",
+        images: [
+            "images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-white-background.jpg",
+            "images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-lit-warm-light.jpg",
+            "images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-detail-craftsmanship.jpg",
+            "images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-interior-lifestyle-close-up.jpg",
+            "images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-living-room-decor-medium.jpg",
+            "images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-full-room-interior-view.jpg"
+        ], 
+        specs: [
+            { label: "Product Type", value: "Wall Sconce / Wall Lamp" },
+            { label: "Style", value: "Japandi / Modern Scandinavian / Mid-Century Modern" },
+            { label: "Light Source", value: "E26 / E27 Base Bulb (Not included)" },
+            { label: "Voltage", value: "110V - 240V (Global Compatibility)" },
+            { label: "Lighting Mode", value: "Warm Ambient Light" },
+            { label: "Application Area", value: "Living Room, Bedroom, Entryway, Dining Room, Hotel, Cafe" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "fan light")
     "ceiling fan light, wood blade brown flush mount bedroom lamp": {
