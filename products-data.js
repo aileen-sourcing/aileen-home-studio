@@ -1081,6 +1081,28 @@ const detailsDatabase = {
             { label: "Ideal For", value: "Bedroom Bedside, Living Room Reading Nook, Small Apartments" }
         ]
     },
+    "mid century floor lamp with nightstand for bedroom": {
+        category: "lighting",
+        subcategory: "floor-lamps", 
+        code: "Item Code: fl20260911",
+        description: "Upgrade your home decor with this mid-century floor lamp with built-in nightstand. Designed for style and functionality, it combines an elegant fabric shade, a durable metal arch, and a solid wood side table with storage drawers—making it the ultimate space-saving solution for cozy bedrooms, reading nooks, and living rooms.",
+        images: [
+            "images/products/lighting/floor-lamps/fl20260911/mid-century-floor-lamp-with-nightstand.jpg",
+            "images/products/lighting/floor-lamps/fl20260911/mid-century-floor-lamp-nightstand-open-drawers.jpg",
+            "images/products/lighting/floor-lamps/fl20260911/vintage-floor-lamp-nightstand-tabletop-detail.jpg",
+            "images/products/lighting/floor-lamps/fl20260911/mid-century-floor-lamp-nightstand-living-room.jpg",
+            "images/products/lighting/floor-lamps/fl20260911/modern-floor-lamp-nightstand-bedroom-decor.jpg",
+            "images/products/lighting/floor-lamps/fl20260911/vintage-floor-lamp-nightstand-bedside-warm-light.jpg"
+        ], 
+        specs: [
+            { label: "Product Type", value: "Floor Lamp with Nightstand" },
+            { label: "Style", value: "Mid-Century Modern / Vintage" },
+            { label: "Material", value: "Solid Wood, Metal, Fabric Shade" },
+            { label: "Voltage", value: "110V - 240V" },
+            { label: "Light Source", value: "E26 / E27 (Bulb optional)" },
+            { label: "Application", value: "Bedroom, Living Room, Reading Corner, Office" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "pendants")
     "vintage lotus glass pendant light wooden small hanging lamp for dining room kitchen island": {
