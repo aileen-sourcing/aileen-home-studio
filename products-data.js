@@ -1103,6 +1103,27 @@ const detailsDatabase = {
             { label: "Application", value: "Bedroom, Living Room, Reading Corner, Office" }
         ]
     },
+    "scalloped wood floor lamp mid century modern for living room": {
+        category: "lighting",
+        subcategory: "floor-lamps", 
+        code: "Item Code: fl20260914",
+        description: "Elevate your interior design with this scalloped wood floor lamp. Combining a hand-carved stacked bead stem with a soft linen scalloped shade, this mid-century modern fixture brings natural texture and inviting warm illumination to your living room or bedroom. Designed for daily convenience, it features a sturdy anti-tip base and a quick-access foot switch. Compatible with standard E26/E27 LED, incandescent, or smart bulbs to set the perfect mood in any corner of your home.",
+        images: [
+            "images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-white-background.jpg",
+            "images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-indoor-display.jpg",
+            "images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-living-room-night.jpg",
+            "images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-reading-corner.jpg",
+            "images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-bright-living-room.jpg",
+            "images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-stem-detail.jpg"
+        ], 
+        specs: [
+            { label: "Material", value: "Solid Wood, Linen Fabric, Metal Frame" },
+            { label: "Style", value: "Mid-Century Modern / Vintage" },
+            { label: "Voltage", value: "110V - 240V" },
+            { label: "Light Source", value: "E26 / E27 Base (Bulb Not Included)" },
+            { label: "Application", value: "Bedroom, Living Room, Reading Corner, Office" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "pendants")
     "vintage lotus glass pendant light wooden small hanging lamp for dining room kitchen island": {
