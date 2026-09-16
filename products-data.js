@@ -973,6 +973,27 @@ const detailsDatabase = {
             { label: "Suitable For", value: "Bedroom, Living Room, Home Office, Reading Desk" }
         ]
     },
+    "vintage wooden table lamp with amber glass shade for home decor": {
+        category: "lighting",
+        subcategory: "table-lamps", 
+        code: "Item Code: tb20260916",
+        description: "Illuminate your home with timeless elegance. This vintage wooden table lamp features a solid wood base paired with a warm amber glass shade, creating a soft and inviting ambience. Designed to blend seamlessly into modern, mid-century, and rustic interiors, it serves as both a functional reading light and a stylish decorative piece for your living room, bedroom, or study desk.",
+        images: [
+            "images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-clear-glass-white-background.jpg",
+            "images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-amber-glass-lit.jpg",
+            "images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-desk-lifestyle.jpg",
+            "images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-cozy-evening-ambience.jpg",
+            "images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-living-room-decor.jpg",
+            "images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-side-table-setting.jpg"
+
+        ], 
+        specs: [
+            { label: "Style", value: "Vintage / Mid-Century Modern" },
+            { label: "Material", value: "Solid Wood" },
+            { label: "Light Source", value: "E26 / E27 Bulb (Replaceable)" },
+            { label: "Suitable For", value: "Bedroom, Living Room, Study, Side Table" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "floor lamp")
     "wooden carved floor lamp wabi sabi linen shade standing lamp for living room bedroom decor": {
