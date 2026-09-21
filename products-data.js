@@ -1318,6 +1318,28 @@ const detailsDatabase = {
             { label: "Core Features", value: "Soft light diffusion, easy installation, pull chain control, artistic floral outlook" }
         ]
     },
+    "flush mount ceiling light round wood chinese style for home using": {
+        category: "lighting",
+        subcategory: "ceiling-light", 
+        code: "Item Code: xd20260921",
+        description: "Discover timeless elegance with this chinese flush mount ceiling light. Crafted with a natural wood-grain frame and a delicate patterned fabric shade, this vintage round ceiling lamp creates a warm, welcoming ambiance in any room. Perfect for tea rooms, living rooms, and oriental-inspired interiors.",
+        images: [
+            "images/products/lighting/ceiling-light/xd20260921/chinese-wood-flush-mount-ceiling-light-off.jpg",
+            "images/products/lighting/ceiling-light/xd20260921/chinese-wood-flush-mount-ceiling-light-on.jpg",
+            "images/products/lighting/ceiling-light/xd20260921/vintage-round-flush-mount-light-bottom-view.jpg",
+            "images/products/lighting/ceiling-light/xd20260921/chinese-style-flush-mount-light-living-room.jpg",
+            "images/products/lighting/ceiling-light/xd20260921/vintage-flush-mount-ceiling-lamp-interior.jpg",
+            "images/products/lighting/ceiling-light/xd20260921/vintage-wood-ceiling-light-tea-room-decor.jpg"
+        ], 
+        specs: [
+            { label: "Product Type", value: "Flush Mount Ceiling Light" },
+            { label: "Style", value: "Chinese / Vintage / Oriental" },
+            { label: "Material", value: "Wood, Fabric / Acrylic, Metal" },
+            { label: "Voltage", value: "110V - 240V (Universal)" },
+            { label: "Light Source", value: "LED (Warm White)" },
+            { label: "Application", value: "Living Room, Tea Room, Bedroom, Dining Room, Hallway" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "wall sconces")
     "wall sconce, walnut brass glass brown bedroom bedside decor": {
