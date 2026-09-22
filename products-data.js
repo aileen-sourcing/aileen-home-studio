@@ -994,6 +994,29 @@ const detailsDatabase = {
             { label: "Suitable For", value: "Bedroom, Living Room, Study, Side Table" }
         ]
     },
+    "wood mushroom table lamp mid century walnut accent": {
+        category: "lighting",
+        subcategory: "table-lamps", 
+        code: "Item Code: tb20260922",
+        description: "Bring timeless warmth and organic elegance into your interior spaces with this wood mushroom table lamp. Inspired by mid-century modern aesthetics and minimalist design principles, this sculptural accent combines smooth natural walnut wood textures with a gentle, glare-free warm illumination.",
+        images: [
+            "images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-front-white-background.jpg",
+            "images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-lit-close-up.jpg",
+            "images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-bright-living-space.jpg",
+            "images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-modern-living-room.jpg",
+            "images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-night-cozy-glow.jpg",
+            "images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-reading-nook-armchair.jpg"
+
+        ], 
+        specs: [
+            { label: "Product Name", value: "Wood Mushroom Table Lamp" },
+            { label: "Material", value: "Solid Walnut Wood / Brass-Finished Metal Accents" },
+            { label: "Power Source", value: "Plug-in Electric (US / EU / UK / AU standard options)" },
+            { label: "Voltage", value: "110V - 240V (Universal Commercial Voltage)" },
+            { label: "Certifications", value: "CE, RoHS, FCC Certified" },
+            { label: "Applications", value: "Living Room Side Tables, Bedrooms, Offices, Hotel Suites" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "floor lamp")
     "wooden carved floor lamp wabi sabi linen shade standing lamp for living room bedroom decor": {
