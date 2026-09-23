@@ -1168,6 +1168,29 @@ const detailsDatabase = {
             { label: "Application", value: "Bedroom, Living Room, Reading Corner, Office" }
         ]
     },
+    "modern wood floor lamp with tall linen shade for cozy living room decor": {
+        category: "lighting",
+        subcategory: "floor-lamps", 
+        code: "Item Code: fl20260923",
+        description: "Bring organic warmth and mid-century modern sophistication into your interior with this beautifully crafted standing accent. Designed with clean geometric lines, it pairs a solid wood tripod base with a tall column linen shade that diffuses a soft, glare-free ambient glow. Whether placed next to a reading chair in the living room, beside a bedroom nightstand, or anchoring an office corner, its minimalist architectural profile seamlessly complements Mid-Century Modern, Japandi, and Scandinavian decor styles.",
+        images: [
+            "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-white-background.jpg",
+            "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-dark-walnut-on.jpg",
+            "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-light-oak-on.jpg",
+            "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-living-room-off.jpg",
+            "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-living-room-on.jpg",
+            "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-night-cozy-glow.jpg"
+        ], 
+        specs: [
+            { label: "MProduct Type", value: "Tripod Floor Lamp / Column Accent Light" },
+            { label: "Style", value: "Mid-Century Modern / Japandi / Minimalist" },
+            { label: "Material", value: "Solid Wood (Light Oak / Dark Walnut)/High-Density Linen Fabric" },
+            { label: "Bulb Socket", value: "E26 / E27 (Bulb Replaceable)" },
+            { label: "Voltage", value: "110V - 240V (Global Compatibility)" },
+            { label: "Certifications", value: "CE / RoHS / UL Listed components" },
+            { label: "Application", value: "Living Room, Bedroom, Office, Hotel Lounge" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "pendants")
     "vintage lotus glass pendant light wooden small hanging lamp for dining room kitchen island": {
