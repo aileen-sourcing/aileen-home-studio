@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aileen's Home Studio| Product Details</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="products-data.js"></script> <style>
+    <script src="products-data.js"></script> 
+    <style>
         /* --- 继承主页的全局轻奢商务色调 --- */
         :root {
             --primary-color: #0f172a;       
@@ -29,7 +30,7 @@
             color: var(--text-color);
             background-color: var(--white);
             line-height: 1.6;
-            padding-top: 100px; /* 🌟 调整到 100px，防止内容被导航栏挡住 */
+            padding-top: 100px;
         }
 
         .navbar-container {
@@ -43,25 +44,25 @@
         }
 
         .logo-brand {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    flex-shrink: 0;
-    z-index: 100000 !important;
-    height: 100%;
-}
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            flex-shrink: 0;
+            z-index: 100000 !important;
+            height: 100%;
+        }
 
-.logo-img {
-    height: 40px;           /* 电脑端 Logo 高度 */
-    width: auto;            /* 保持宽高比 */
-    max-width: 180px;       /* 限制最大宽度 */
-    object-fit: contain;
-    transition: var(--transition);
-}
+        .logo-img {
+            height: 40px;
+            width: auto;
+            max-width: 180px;
+            object-fit: contain;
+            transition: var(--transition);
+        }
 
-.logo-img:hover {
-    opacity: 0.9;
-}
+        .logo-img:hover {
+            opacity: 0.9;
+        }
 
         .nav-links {
             display: flex;
@@ -82,7 +83,7 @@
             color: var(--accent-color);
         }
 
-        /* --- 导航栏主体（完全同步首页样式） --- */
+        /* --- 导航栏主体 --- */
         header {
             position: fixed !important;
             top: 0 !important;
@@ -184,7 +185,22 @@
             color: var(--accent-color);
         }
 
-        /* --- 🌟 首页核心：超级大下拉菜单(Mega Menu)显隐逻辑 🌟 --- */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .menu-toggle span {
+            width: 22px;
+            height: 2px;
+            background-color: var(--text-color);
+            border-radius: 1px;
+        }
+
+        /* Mega Menu */
         .mega-menu {
             display: none;
             position: fixed;
@@ -244,28 +260,6 @@
             padding-left: 4px;
         }
 
-        .search-box {
-            position: relative;
-            display: flex;
-            align-items: center;
-        }
-
-        .search-box input {
-            padding: 6px 35px 6px 12px;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            font-size: 0.85rem;
-            background-color: var(--bg-light);
-            width: 180px;
-        }
-        
-        .search-box i {
-            position: absolute;
-            right: 12px;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -287,12 +281,10 @@
             color: var(--accent-color);
         }
 
-        /* ==========================================
-           📦 上半部分：产品主图 + 基本购买信息区域
-           ========================================== */
+        /* 产品主图与基本信息 */
         .product-main-section {
             display: grid;
-            grid-template-columns: 1fr 1fr; /* 左右分栏 */
+            grid-template-columns: 1fr 1fr;
             gap: 50px;
             margin-bottom: 25px;
             max-width: 950px;
@@ -300,7 +292,6 @@
             margin-right: auto;
         }
 
-        /* 📸 左侧：画廊多图切换核心样式 */
         .product-gallery {
             display: flex;
             flex-direction: column;
@@ -309,31 +300,28 @@
             width: 100%;
         }
 
-        /* 放大镜大图框 */
         .main-image-box {
             width: 100%;
             aspect-ratio: 1 / 1;
             height: auto;
             border: 1px solid var(--border-color);
             border-radius: 6px;
-            overflow: hidden; /* 🌟 必须保留：隐藏图片放大后溢出的部分 */
+            overflow: hidden;
             background-color: var(--white);
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: zoom-in; /* 🌟 新增：鼠标移上去变成放大镜形状 */
+            cursor: zoom-in;
         }
 
         .main-image-box img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /* 🌟 修改 transition： transform 的动画要极其丝滑，0.1s 刚好 */
             transition: transform 0.1s ease-out, border-color 0.2s ease; 
-            transform-origin: center center; /* 默认形变中心点 */
+            transform-origin: center center;
         }
 
-        /* 下方小图缩略图轨道 */
         .thumb-list {
             display: flex;
             flex-wrap: wrap;
@@ -361,13 +349,11 @@
             object-fit: cover;
         }
 
-        /* 🌟 当前选中的小图红框高亮（对应你截图中的红框效果） */
         .thumb-item.active {
             border-color: var(--accent-color);
             box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.1);
         }
 
-        /* 📝 右侧：产品标题、编码及询盘按钮 */
         .product-meta-box {
             display: flex;
             flex-direction: column;
@@ -388,15 +374,15 @@
             letter-spacing: 0.05em;
             margin-bottom: 20px;
         }
-        /* ⚡ 核心新增：详情页双通道询盘按钮容器 */
+        
         .inquiry-actions-group {
             display: flex;
             gap: 15px;
             margin-top: 40px;
             width: 100%;
-            max-width: 450px; /* 控制双按钮总宽度，紧凑美观 */
+            max-width: 450px;
         }
-        /* 极简画册风长条按钮 */
+
         .inquiry-action-btn {
             flex: 1;
             padding: 15px 20px;
@@ -416,7 +402,6 @@
             gap: 8px;
         }
 
-        /* Email 保持经典的暗色调作为主视觉 */
         .inquiry-action-btn.btn-email {
             background-color: var(--primary-color);
             color: var(--white);
@@ -427,22 +412,13 @@
             transform: translateY(-2px);
         }
 
-        /* WhatsApp 保持透明框，悬停时反转色调 */
         .inquiry-action-btn.btn-whatsapp:hover {
             background-color: var(--primary-color);
             color: var(--white);
             transform: translateY(-2px);
         }
 
-        .inquiry-btn:hover {
-            background-color: var(--accent-color);
-            transform: translateY(-2px);
-        }
-
-
-        /* ==========================================
-           📄 下半部分：详细的产品信息与描述区域
-           ========================================== */
+        /* 详情部分 */
         .product-details-section {
             border-top: 1px solid var(--border-color);
             padding-top: 15px;
@@ -471,7 +447,6 @@
             color: var(--primary-color);
         }
 
-        /* 下划线指示器 */
         .tab-btn.active::after {
             content: '';
             position: absolute;
@@ -488,7 +463,6 @@
             line-height: 1.8;
         }
 
-        /* 参数表格样式 */
         .spec-table {
             width: 100%;
             border-collapse: collapse;
@@ -507,120 +481,136 @@
             color: var(--primary-color);
         }
 
-        @media screen and (max-width: 768px) {
-            /* 1. 🎯 彻底干掉手机端导航栏的“Aileen's Home Studio”长名字 */
-            .navbar .logo-brand, 
-.nav-container .logo-brand, 
-.logo-brand, 
-a[href="index.html"].logo-brand {
-    display: none !important;
-    width: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
+        .thumb-item {
+            cursor: pointer; 
+            border: 2px solid #e2e8f0;
+            transition: all 0.2s ease;
+        }
 
-            /* 🌟 新增：强制让详情页在手机端的左右内边距也缩至 20px，左右不留无用真空 */
+        .thumb-item.active,
+        .thumb-item:hover {
+            border-color: #b45309 !important;
+            box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.1) !important;
+        }
+
+        .product-short-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            margin-top: 5px;
+            word-break: break-word;
+        }
+
+        /* ==========================================================
+           📱 📱 📱 手机端专属适配 (<= 768px) - 完全按照 category.html 风格修改导航
+           ========================================================== */
+        @media screen and (max-width: 768px) {
             .navbar {
                 padding: 0 20px !important;
             }
 
-            /* 2. 让导航菜单占满左侧，只给右侧圆形小胶囊留下 55px */
-            .nav-links {
-                width: calc(100% - 55px) !important; /* 🌟 右侧预留从 75px 压榨至 55px */
-                display: flex !important;
-                flex-wrap: nowrap !important; 
-                overflow-x: auto !important;   
-                justify-content: flex-start !important; 
-                gap: 15px !important;          /* 收紧类目间距，展示更多文字 */
-                padding: 10px 0 !important;    /* 去除内边距，靠最左滑动 */
-                -webkit-overflow-scrolling: touch;
+            /* 1. 手机端导航栏下拉列表：默认隐藏，激活时下拉框展开 */
+            .nav-links { 
+                display: none !important; 
+                flex-direction: column !important;
+                position: fixed !important;
+                top: 65px !important;
+                left: 0 !important;
+                width: 100% !important;
+                background: var(--white) !important;
+                padding: 20px !important;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.05) !important;
+                border-bottom: 1px solid var(--border-color) !important;
+                height: auto !important;
+                align-items: flex-start !important;
+                gap: 15px !important;
+                z-index: 9999 !important;
             }
 
-            /* 隐藏横向滚动条 */
-            .nav-links::-webkit-scrollbar {
-                display: none !important;
+            .nav-links.active { 
+                display: flex !important; 
             }
 
-            /* 确保导航里的每一项保持完整尺寸 */
-            .nav-links > * {
-                flex: 0 0 auto !important;
+            .nav-links li { 
+                width: 100% !important; 
+                height: auto !important; 
+                padding: 5px 0 !important; 
             }
 
-            /* 3. 🎯 详情页头部右侧容器定位：紧贴最右侧 20px 边缘 */
-            header .nav-right {
-                position: absolute !important;
-                right: 20px !important; /* 对齐页面右边缘 */
-                top: 50% !important;
-                transform: translateY(-50%) !important;
-                gap: 0 !important;
-                margin: 0 !important;
-                display: flex !important;
-                align-items: center !important;
-                z-index: 100000 !important;
+            .nav-links a { 
+                height: auto !important; 
+                width: 100% !important; 
             }
 
-            /* 搜索胶囊静止状态：40px 圆形小气泡（仅露放大镜） */
-            header .nav-right form.search-container {
-                width: 40px !important; 
-                height: 38px !important;
-                padding: 0 !important; 
-                background-color: #f3f4f6 !important; 
-                border: 1px solid #e5e7eb !important;
-                border-radius: 50px !important; 
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-                overflow: hidden !important;
-                transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important; /* 丝滑滑出过渡 */
+            /* Mega Menu 在手机端的级联排版 */
+            .mega-menu { 
+                position: static !important; 
+                box-shadow: none !important; 
+                padding: 10px 0 0 15px !important; 
+                border: none !important; 
             }
 
-            /* 🌟 火车滑开激活状态：拥有 .active 类名时，平滑展开至 180px */
-            header .nav-right form.search-container.active {
-                width: 180px !important; 
-                background-color: #ffffff !important;
-                border-color: var(--accent-color) !important;
-                padding: 0 10px !important;
-                justify-content: space-between !important;
-                box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
-            }
-
-            /* 默认静止状态下：隐藏里面的长输入文本框（宽度为0且透明） */
-            header .nav-right form.search-container input {
+            .nav-links li.has-mega-menu:hover .mega-menu { 
                 display: block !important; 
-                width: 0 !important;       
-                opacity: 0 !important;     
-                border: none !important;
-                outline: none !important;
-                background: none !important;
-                padding: 0 !important;
-                font-size: 13px !important;
-                transition: width 0.3s ease, opacity 0.2s ease !important;
             }
 
-            /* 🌟 当被激活时，输入文字框瞬间拉宽至 120px 显现 */
-            header .nav-right form.search-container.active input {
-                width: 120px !important;   
-                opacity: 1 !important;
+            .mega-menu-container { 
+                grid-template-columns: 1fr !important; 
+                gap: 15px !important; 
+                padding: 0 !important; 
             }
 
-            /* 放大镜图标大小与居中微调 */
-            header .nav-right .search-icon-btn {
-                width: 24px !important;
-                height: 24px !important;
-                min-width: 24px !important;
+            /* Logo 适配 */
+            .logo-brand {
+                flex-shrink: 0 !important;
                 display: flex !important;
                 align-items: center !important;
-                justify-content: center !important;
-                font-size: 0.95rem !important;
-                color: #4b5563 !important;
-                background: none !important;
-                border: none !important;
-                cursor: pointer !important;
-                position: static !important; /* 去除原本 PC 端绝对定位 */
-                transform: none !important;
             }
 
-            /* 4. 修复最外层大盒子宽度 */
+            .logo-img {
+                height: 30px !important;
+                max-width: 120px !important;
+            }
+
+            /* 搜索框适配 */
+            .search-container {
+                flex-grow: 1 !important;
+                flex-shrink: 1 !important;
+                max-width: 120px !important;
+                min-width: 70px !important;
+                position: relative !important;
+            }
+
+            /* 汉堡包菜单按钮 */
+            .menu-toggle {
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+                flex-shrink: 0 !important;
+                width: 24px !important;
+                height: 18px !important;
+                padding: 0 !important;
+                margin: 0 0 0 10px !important;
+                background: none !important;
+                border: none !important;
+                box-sizing: border-box !important;
+                cursor: pointer !important;
+            }
+
+            .menu-toggle span {
+                display: block !important;
+                width: 100% !important;
+                height: 2px !important;
+                max-height: 2px !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                background-color: #333 !important;
+                content: none !important;
+            }
+
+            /* 2. 详情页主容器适配 */
             .container {
                 width: 100% !important;
                 max-width: 100% !important;
@@ -629,21 +619,18 @@ a[href="index.html"].logo-brand {
                 overflow: hidden !important;
             }
 
-            /* 5. 详情页主布局由“左右”改成“上下” */
             .product-main-section,
             .product-container {
                 grid-template-columns: 1fr !important;
                 gap: 20px !important;
             }
 
-            /* 🌟 新增：仅限缩产品图片区域，强行阻止其向右溢出撑开屏幕 */
             .product-gallery {
                 width: 100% !important;
                 max-width: 100% !important;
-                overflow: hidden !important; /* 彻底锁死产品图与缩略图的溢出边界 */
+                overflow: hidden !important;
             }
 
-            /* 6. 强制将产品大图外壳转为 1:1 完美正方形 */
             .main-image-box,
             .main-image-container {
                 width: 100% !important;
@@ -662,7 +649,6 @@ a[href="index.html"].logo-brand {
                 object-position: center !important;
             }
 
-            /* 7. 缩略图一排不换行，且支持手指左右丝滑滚动 */
             .thumb-list {
                 display: flex !important;
                 flex-wrap: nowrap !important; 
@@ -688,192 +674,145 @@ a[href="index.html"].logo-brand {
                 border-radius: 4px !important;
             }
 
-            /* 8. 微调页面字体等 */
             .product-title {
                 font-size: 1.4rem !important;
             }
+
+            .product-short-desc {
+                font-size: 0.88rem !important;
+                line-height: 1.5 !important;
+                margin-bottom: 15px !important;
+            }
+
             .action-btn-group {
                 flex-direction: column !important; 
                 gap: 10px !important;
             }
+
             .action-btn {
                 width: 100% !important;
                 justify-content: center !important;
             }
         }
 
-        /* =========================================================
-           ✨ 保留原有的鼠标悬停和点击选中的缩略图高亮样式（全端通用）
-           ========================================================= */
-        .thumb-item {
-            cursor: pointer; 
-            border: 2px solid #e2e8f0;
-            transition: all 0.2s ease;
-        }
-
-        .thumb-item.active,
-        .thumb-item:hover {
-            border-color: #b45309 !important;
-            box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.1) !important;
-        }
         /* ==========================================================
-   🖥️ 【平板横屏 (Landscape) & 中等屏幕】：全面放宽阈值至 1200px
-   ========================================================== */
-@media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
-    /* --- 1. 导航栏布局优化：防挤压、搜索框完全露显 --- */
-    .navbar {
-        padding: 0 15px !important;
-        gap: 10px !important;
-        justify-content: space-between !important;
-    }
-    .logo-brand {
-    display: flex !important;
-    align-items: center !important;
-    margin-right: 10px !important;
-    flex-shrink: 0 !important;
-}
+           🖥️ 平板横屏适配 (768px ~ 1200px Landscape) - 保持原样不动
+           ========================================================== */
+        @media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
+            .navbar {
+                padding: 0 15px !important;
+                gap: 10px !important;
+                justify-content: space-between !important;
+            }
+            .logo-brand {
+                display: flex !important;
+                align-items: center !important;
+                margin-right: 10px !important;
+                flex-shrink: 0 !important;
+            }
+            .logo-img {
+                height: 32px !important;
+                max-width: 130px !important;
+                width: auto !important;
+            }
+            .nav-links {
+                gap: 12px !important;
+            }
+            .nav-links a {
+                font-size: 0.8rem !important;
+                white-space: nowrap !important;
+            }
+            .search-container {
+                width: 140px !important;
+                flex-shrink: 0 !important;
+                display: block !important;
+            }
+            .search-container input {
+                width: 100% !important;
+                opacity: 1 !important;
+                padding: 5px 30px 5px 10px !important;
+                font-size: 0.75rem !important;
+            }
+            .container {
+                max-width: 100% !important;
+                padding: 0 20px !important;
+            }
+            .product-main-section {
+                grid-template-columns: 320px 1fr !important;
+                gap: 30px !important;
+                max-width: 100% !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            .product-gallery {
+                max-width: 320px !important;
+            }
+            .main-image-box {
+                width: 320px !important;
+                height: 320px !important;
+            }
+            .thumb-list {
+                gap: 6px !important;
+            }
+            .thumb-item {
+                width: 50px !important;
+                height: 50px !important;
+                flex: 0 0 50px !important;
+            }
+            .product-code {
+                font-size: 0.8rem !important;
+                margin-bottom: 6px !important;
+            }
+            .product-title {
+                font-size: 1.3rem !important;
+                margin-bottom: 15px !important;
+            }
+            .inquiry-actions-group {
+                margin-top: 20px !important;
+                max-width: 100% !important;
+            }
+            .inquiry-action-btn {
+                padding: 10px 15px !important;
+                font-size: 0.8rem !important;
+            }
+            .product-short-desc {
+                font-size: 0.85rem !important;
+                line-height: 1.5 !important;
+                margin-bottom: 12px !important;
+            }
+        }
 
-.logo-img {
-    height: 32px !important;       /* 适度减小高度防挤压 */
-    max-width: 130px !important;
-    width: auto !important;
-}
-    .nav-links {
-        gap: 12px !important;
-    }
-    .nav-links a {
-        font-size: 0.8rem !important;
-        white-space: nowrap !important;
-    }
-    .search-container {
-        width: 140px !important;
-        flex-shrink: 0 !important;
-        display: block !important;
-    }
-    .search-container input {
-        width: 100% !important;
-        opacity: 1 !important;
-        padding: 5px 30px 5px 10px !important;
-        font-size: 0.75rem !important;
-    }
-
-    /* --- 2. 产品卡片整体缩小并对齐 --- */
-    .container {
-        max-width: 100% !important;
-        padding: 0 20px !important;
-    }
-
-    .product-main-section {
-        grid-template-columns: 320px 1fr !important; /* 左侧大图固定 320px，右侧自适应 */
-        gap: 30px !important;
-        max-width: 100% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    /* 缩减大图与画廊尺寸 */
-    .product-gallery {
-        max-width: 320px !important;
-    }
-    .main-image-box {
-        width: 320px !important;
-        height: 320px !important;
-    }
-
-    /* 缩减缩略图尺寸 */
-    .thumb-list {
-        gap: 6px !important;
-    }
-    .thumb-item {
-        width: 50px !important;
-        height: 50px !important;
-        flex: 0 0 50px !important;
-    }
-
-    /* 右侧文字与按钮缩小（关键：缩小 2.2rem 的巨型标题） */
-    .product-code {
-        font-size: 0.8rem !important;
-        margin-bottom: 6px !important;
-    }
-    .product-title {
-        font-size: 1.3rem !important; /* 强制缩小标题字号 */
-        margin-bottom: 15px !important;
-    }
-    .inquiry-actions-group {
-        margin-top: 20px !important;
-        max-width: 100% !important;
-    }
-    .inquiry-action-btn {
-        padding: 10px 15px !important;
-        font-size: 0.8rem !important;
-    }
-}
-
-/* ==========================================================
-   📱 2. 【仅平板竖屏】(Portrait)：隐藏 Logo，显示完整导航与搜索框
-   ========================================================== */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    .navbar {
-        padding: 0 15px !important;
-        justify-content: space-between !important;
-    }
-    /* 🎯 隐藏 Logo 为导航菜单和搜索框腾出空间 */
-    .logo-brand {
-    display: none !important;
-}
-    .nav-links {
-        gap: 12px !important;
-    }
-    .nav-links a {
-        font-size: 0.85rem !important;
-    }
-    /* 🎯 搜索框完整展示 */
-    .search-container {
-        width: 160px !important;
-        display: block !important;
-    }
-    .search-container input {
-        width: 100% !important;
-        opacity: 1 !important;
-        padding: 7px 35px 7px 12px !important;
-    }
-}
-/* 🌟 新增：详情页专属段落描述样式 */
-.product-short-desc {
-    font-size: 0.95rem;
-    color: var(--text-muted); /* 优雅的高级灰 */
-    line-height: 1.6;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    word-break: break-word; /* 防止长单词撑破屏幕 */
-}
-
-/* 📱 手机端适配 (<= 768px) */
-@media screen and (max-width: 768px) {
-    .product-short-desc {
-        font-size: 0.88rem !important; /* 手机端字体略微收紧 */
-        line-height: 1.5 !important;
-        margin-bottom: 15px !important;
-    }
-}
-
-/* 🖥️ 平板横屏适配 (768px - 1200px landscape) */
-@media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
-    .product-short-desc {
-        font-size: 0.85rem !important; /* 适度缩小防挤压 */
-        line-height: 1.5 !important;
-        margin-bottom: 12px !important;
-    }
-}
-
-/* 📱 平板竖屏适配 (768px - 1024px portrait) */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    .product-short-desc {
-        font-size: 0.9rem !important;
-        line-height: 1.55 !important;
-    }
-}
-
+        /* ==========================================================
+           📱 平板竖屏适配 (768px ~ 1024px Portrait) - 保持原样不动
+           ========================================================== */
+        @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+            .navbar {
+                padding: 0 15px !important;
+                justify-content: space-between !important;
+            }
+            .logo-brand {
+                display: none !important;
+            }
+            .nav-links {
+                gap: 12px !important;
+            }
+            .nav-links a {
+                font-size: 0.85rem !important;
+            }
+            .search-container {
+                width: 160px !important;
+                display: block !important;
+            }
+            .search-container input {
+                width: 100% !important;
+                opacity: 1 !important;
+                padding: 7px 35px 7px 12px !important;
+            }
+            .product-short-desc {
+                font-size: 0.9rem !important;
+                line-height: 1.55 !important;
+            }
+        }
     </style>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
@@ -885,7 +824,7 @@ a[href="index.html"].logo-brand {
             <a href="index.html" class="logo-brand">
                 <img src="images/logo.png" alt="Aileen's Home Studio" class="logo-img">
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 
                 <li class="has-mega-menu">
@@ -968,7 +907,7 @@ a[href="index.html"].logo-brand {
             <div class="nav-right">
                 <form class="search-container" id="navSearchForm" onsubmit="event.preventDefault(); handleSearch();">
                     <input type="text" id="searchInput" placeholder="Discover something..." autocomplete="off">
-                    <button type="button" class="search-icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="button" class="search-icon-btn" onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div class="menu-toggle" id="mobile-menu">
                     <span></span><span></span><span></span>
@@ -1056,97 +995,96 @@ a[href="index.html"].logo-brand {
 
     <script>
         // ==========================================
-// 🌟 核心：补全详情页顶部搜索框跳转逻辑
-// ==========================================
-function handleSearch() {
-    const searchInput = document.getElementById('searchInput');
-    if (!searchInput) return;
+        // 🌟 核心：补全详情页顶部搜索框跳转逻辑
+        // ==========================================
+        function handleSearch() {
+            const searchInput = document.getElementById('searchInput');
+            if (!searchInput) return;
 
-    let query = searchInput.value ? searchInput.value.trim() : "";
-    
-    // 如果没有输入内容，进行提示
-    if (!query) {
-        alert('Please enter a product name to search.');
-        return;
-    }
+            let query = searchInput.value ? searchInput.value.trim() : "";
+            
+            if (!query) {
+                alert('Please enter a product name to search.');
+                return;
+            }
 
-    // 智能处理缩写
-    if (query.toLowerCase() === 'xmas') query = 'christmas';
+            if (query.toLowerCase() === 'xmas') query = 'christmas';
 
-    // 统一带词跳转到 listing.html 呈现全库搜索结果
-    window.location.href = `listing.html?search=${encodeURIComponent(query)}`;
-}
+            window.location.href = `listing.html?search=${encodeURIComponent(query)}`;
+        }
+
+        // ==========================================
+        // 📱 绑定移动端汉堡包菜单展开/关闭
+        // ==========================================
+        document.addEventListener("DOMContentLoaded", function() {
+            const mobileMenu = document.getElementById("mobile-menu");
+            const navLinks = document.getElementById("nav-links");
+
+            if (mobileMenu && navLinks) {
+                mobileMenu.addEventListener("click", function() {
+                    navLinks.classList.toggle("active");
+                });
+            }
+        });
+
         // ==========================================
         // 🔄 核心骨架：从数据库动态加载产品详情
         // ==========================================
         window.onload = function() {
-            // 1. 获取 URL 中的产品标识 (如: product-detail.html?item=premium%20pe%20lighted%20christmas%20tree)
             const urlParams = new URLSearchParams(window.location.search);
             let rawItem = urlParams.get('item') ? urlParams.get('item') : "";
             const productKey = rawItem.replace(/-/g, ' ').toLowerCase().trim();
             console.log("当前匹配的Key是:", productKey);
             
-            // 2. 从本地 products-data.js 的数据库里调取对应数据
-const productInfo = detailsDatabase[productKey];
+            const productInfo = detailsDatabase[productKey];
 
-if (productInfo) {
-    // 🌟 1. 定义符合英文规范的 Title Case 格式化逻辑（实词大写，虚词小写）
-    function toTitleCase(str) {
-        if (!str) return "";
-        // 常见的英文虚词（冠词、介词、连词）
-        const minorWords = new Set([
-            'a', 'an', 'the', 'and', 'but', 'or', 'for', 'nor', 'on', 'at', 
-            'to', 'from', 'by', 'with', 'in', 'of', 'over', 'under', 'into', 
-            'onto', 'off', 'up', 'down', 'as', 'via'
-        ]);
+            if (productInfo) {
+                function toTitleCase(str) {
+                    if (!str) return "";
+                    const minorWords = new Set([
+                        'a', 'an', 'the', 'and', 'but', 'or', 'for', 'nor', 'on', 'at', 
+                        'to', 'from', 'by', 'with', 'in', 'of', 'over', 'under', 'into', 
+                        'onto', 'off', 'up', 'down', 'as', 'via'
+                    ]);
 
-        const words = str.toLowerCase().split(' ');
+                    const words = str.toLowerCase().split(' ');
 
-        return words.map((word, index) => {
-            // 第一个词、最后一个词、或者非虚词，首字母都要大写
-            if (index === 0 || index === words.length - 1 || !minorWords.has(word)) {
-                return word.charAt(0).toUpperCase() + word.slice(1);
-            }
-            // 中间的虚词保持小写
-            return word;
-        }).join(' ');
-    }
+                    return words.map((word, index) => {
+                        if (index === 0 || index === words.length - 1 || !minorWords.has(word)) {
+                            return word.charAt(0).toUpperCase() + word.slice(1);
+                        }
+                        return word;
+                    }).join(' ');
+                }
 
-    // 🌟 2. 传入 productKey 转换并赋值给页面标题
-    const titleCaseName = toTitleCase(productKey);
-    document.getElementById('productTitle').innerText = titleCaseName;
-    document.getElementById('productCode').innerText = productInfo.code;
+                const titleCaseName = toTitleCase(productKey);
+                document.getElementById('productTitle').innerText = titleCaseName;
+                document.getElementById('productCode').innerText = productInfo.code;
 
-    const shortDescEl = document.getElementById('productShortDesc');
-    if (shortDescEl) {
-        shortDescEl.innerText = productInfo.description || "High-quality holiday decor designed for indoor and outdoor displays. Custom specifications and wholesale pricing available upon request.";
-    }
+                const shortDescEl = document.getElementById('productShortDesc');
+                if (shortDescEl) {
+                    shortDescEl.innerText = productInfo.description || "High-quality holiday decor designed for indoor and outdoor displays. Custom specifications and wholesale pricing available upon request.";
+                }
 
-                // 🌟 ✨ 【图片连通与文件名自动解析】：动态提取文件名作为 alt 与 title 悬停提示
                 if (productInfo.images && productInfo.images.length > 0) {
                     const mainImgEl = document.getElementById('mainProductImg');
                     const firstImgUrl = String(productInfo.images[0]);
                     
-                    // 🎯 核心逻辑 1：从图片路径中截取文件名并格式化（例如：images/lamp-detail-view.jpg -> Lamp Detail View）
                     const mainFileName = firstImgUrl.split('/').pop().split('.')[0].replace(/[-_]/g, ' ');
                     const safeMainUrl = firstImgUrl.replace(/'/g, "\\'");
 
-                    // 为主图注入提取好的文件名
                     mainImgEl.src = safeMainUrl;
                     mainImgEl.alt = mainFileName;
-                    mainImgEl.title = mainFileName; // 👈 鼠标悬停主图时显示的文字
+                    mainImgEl.title = mainFileName;
                     mainImgEl.onerror = function() {
                         this.onerror = null;
                         this.src = 'images/placeholder.jpg';
                     };
 
-                    // 🎯 核心逻辑 2：动态生成小图轨道，并提取各自的文件名作为 hover 提示
                     let thumbHtml = "";
                     productInfo.images.forEach((imgUrl, index) => {
                         const activeClass = index === 0 ? "thumb-item active" : "thumb-item";
                         const safeImgUrl = String(imgUrl).replace(/'/g, "\\'");
-                        
-                        // 从 URL 截取文件名（去掉路径和后缀，把下划线/中划线转为空格）
                         const fileName = String(imgUrl).split('/').pop().split('.')[0].replace(/[-_]/g, ' ');
 
                         thumbHtml += `
@@ -1170,7 +1108,6 @@ if (productInfo) {
                     document.getElementById('thumbList').innerHTML = "";
                 }
 
-                // 3. 动态渲染产品参数表格 (Specs Table)
                 let specsHtml = "";
                 if (productInfo.specs && productInfo.specs.length > 0) {
                     productInfo.specs.forEach(spec => {
@@ -1186,14 +1123,12 @@ if (productInfo) {
                 }
                 document.getElementById('specsTableBody').innerHTML = specsHtml;
 
-                // 4. 面包屑导航同步更新 (Home / Catalogue / 当前产品名)
                 const breadcrumbCurrent = document.getElementById('breadcrumb-current');
                 if (breadcrumbCurrent) {
                     breadcrumbCurrent.innerText = productKey.toUpperCase();
                 }
 
             } else {
-                // 💥 容错处理：如果数据库找不到该产品，贴心提示
                 document.getElementById('productTitle').innerText = "Product Not Found";
                 document.getElementById('productCode').innerText = "Item Code: Unknown";
                 document.getElementById('mainProductImg').src = "images/placeholder.jpg";
@@ -1202,7 +1137,7 @@ if (productInfo) {
             }
 
             // ==========================================
-            // 📞 点击询盘按钮自动提取信息（邮件/WhatsApp）
+            // 📞 点击询盘按钮自动提取信息
             // ==========================================
             const emailBtn = document.getElementById('inquiryEmailBtn');
             const whatsappBtn = document.getElementById('inquiryWhatsAppBtn');
@@ -1226,18 +1161,16 @@ if (productInfo) {
             }
 
             // ==========================================
-            // ✨ 高档全自动鼠标悬停放大镜逻辑
+            // ✨ 悬停放大镜逻辑
             // ==========================================
             const zoomContainer = document.getElementById('zoomContainer');
             const zoomImage = document.getElementById('mainProductImg');
 
             if (zoomContainer && zoomImage) {
-                // 1. 鼠标移入：图片放大 2 倍
                 zoomContainer.addEventListener('mouseenter', () => {
                     zoomImage.style.transform = 'scale(2)';
                 });
 
-                // 2. 鼠标移动：计算坐标，让放大中心点跟着鼠标走
                 zoomContainer.addEventListener('mousemove', (e) => {
                     const rect = zoomContainer.getBoundingClientRect();
                     const x = ((e.clientX - rect.left) / rect.width) * 100;
@@ -1245,71 +1178,26 @@ if (productInfo) {
                     zoomImage.style.transformOrigin = `${x}% ${y}%`;
                 });
 
-                // 3. 鼠标移出：恢复原样
                 zoomContainer.addEventListener('mouseleave', () => {
                     zoomImage.style.transform = 'scale(1)';
                     zoomImage.style.transformOrigin = 'center center';
                 });
             }
-
-            // ==========================================
-            // 🚄 详情页移动端“火车式”搜索栏滑入滑出逻辑
-            // ==========================================
-            const searchForm = document.getElementById("navSearchForm");
-            const searchInput = document.getElementById("searchInput");
-            const searchBtn = searchForm ? searchForm.querySelector(".search-icon-btn") : null;
-
-            if (searchForm && searchInput && searchBtn) {
-                searchBtn.removeAttribute("onclick");
-                searchBtn.addEventListener("click", function(e) {
-                    if (window.innerWidth <= 768) {
-                        // 如果目前是闭合状态，点击它就向左滑开
-                        if (!searchForm.classList.contains("active")) {
-                            e.preventDefault(); 
-                            e.stopPropagation(); 
-                            searchForm.classList.add("active"); // 滑开！
-                            searchInput.focus(); // 自动聚焦拉起键盘
-                        } else {
-                            // 如果已经滑开了，且没有字，再次点击就收回去
-                            if (searchInput.value.trim() === "") {
-                                e.preventDefault();
-                                searchForm.classList.remove("active");
-                            } else {
-                                // 有字时，执行 handleSearch() 进行搜索
-                                handleSearch();
-                            }
-                        }
-                    }
-                });
-
-                // 点击页面其他空白地方时，自动优雅缩回
-                document.addEventListener("click", function(e) {
-                    if (window.innerWidth <= 768) {
-                        if (!searchForm.contains(e.target)) {
-                            searchForm.classList.remove("active");
-                        }
-                    }
-                });
-            }
         };
 
         // ==========================================
-        // 📸 缩略图点击切换函数（同步更新大图悬停 title 文本）
+        // 📸 缩略图点击切换
         // ==========================================
         function switchImage(element, imageUrl) {
             const mainImg = document.getElementById('mainProductImg');
-            
-            // 1. 切换大图显示的路径
             mainImg.src = imageUrl;
             
-            // 🎯 2. 点击小图时，获取小图图片自身的 title，同步赋予大图
             const clickedImg = element.querySelector('img');
             if (clickedImg) {
                 mainImg.alt = clickedImg.alt;
-                mainImg.title = clickedImg.title; // 👈 让主图放大镜区域 hover 时也显示当前文件名
+                mainImg.title = clickedImg.title;
             }
             
-            // 3. 高亮处理
             const thumbs = document.querySelectorAll('.thumb-item');
             thumbs.forEach(t => t.classList.remove('active'));
             element.classList.add('active');
