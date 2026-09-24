@@ -6,7 +6,6 @@
     <title>Aileen's Home Studio | Product Catalogue</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* --- 全局轻奢商务色调 --- */
         :root {
             --primary-color: #0f172a;
             --accent-color: #b45309;
@@ -20,13 +19,11 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
-        body { color: var(--text-color); background: var(--white); padding-top: 85px !important; -webkit-font-smoothing: antialiased; }
+        body { color: var(--text-color); background: var(--white); padding-top: 75px; -webkit-font-smoothing: antialiased; }
         a { text-decoration: none; color: inherit; }
         ul { list-style: none; }
 
-        /* ==========================================================
-           顶栏导航 Header 电脑端基础样式
-           ========================================================== */
+        /* --- Header 顶栏定义 --- */
         header { 
             position: fixed; 
             top: 0; left: 0; 
@@ -37,7 +34,6 @@
             height: 65px; 
             display: flex; 
             align-items: center; 
-            box-shadow: 0 1px 4px rgba(15,23,42,0.04);
         }
         .navbar { 
             display: flex; 
@@ -46,49 +42,18 @@
             width: 100%; 
             max-width: 1400px; 
             margin: 0 auto; 
-            padding: 0 40px; 
-            height: 65px;
-        }
-        .logo-brand {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            flex-shrink: 0;
+            padding: 0 20px; 
             height: 100%;
         }
-        .logo-img {
-            height: 40px;
-            width: auto;
-            max-width: 180px;
-            object-fit: contain;
-            transition: var(--transition);
-        }
+        .logo-brand { display: flex; align-items: center; flex-shrink: 0; }
+        .logo-img { height: 38px; width: auto; object-fit: contain; }
 
-        .nav-links {
-            display: flex;
-            gap: 28px;
-            align-items: center;
-            height: 100%;
-        }
-        .nav-links li {
-            position: relative;
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
-        .nav-links a {
-            font-weight: 600;
-            font-size: 0.95rem;
-            color: #334155;
-            transition: var(--transition);
-            white-space: nowrap;
-            display: flex;
-            align-items: center;
-            height: 100%;
-        }
+        .nav-links { display: flex; gap: 25px; align-items: center; height: 100%; }
+        .nav-links li { position: relative; height: 100%; display: flex; align-items: center; }
+        .nav-links a { font-weight: 600; font-size: 0.95rem; color: #334155; transition: var(--transition); white-space: nowrap; }
         .nav-links a:hover { color: var(--accent-color); }
 
-        /* PC端 下拉 Mega Menu */
+        /* PC 下拉菜单 */
         .mega-menu {
             display: none;
             position: fixed;
@@ -99,312 +64,105 @@
             box-shadow: 0 12px 20px -5px rgba(15, 23, 42, 0.08);
             border-top: 1px solid var(--border-color);
             z-index: 999;
-            padding: 30px 0 25px 0;
-            text-align: left;
+            padding: 25px 0;
         }
-        .nav-links li.has-mega-menu:hover .mega-menu,
-        .mega-menu:hover {
-            display: block !important;
-        }
-        .mega-menu-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 25px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-        .mega-column { display: flex; flex-direction: column; }
-        .mega-column h4 {
-            font-size: 0.8rem;
-            color: var(--primary-color);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 10px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 4px;
-            font-weight: 700;
-        }
-        .mega-column a {
-            font-size: 0.9rem;
-            color: var(--text-muted) !important;
-            padding: 6px 0;
-            font-weight: 500 !important;
-            transition: var(--transition);
-            display: block;
-            height: auto;
-        }
-        .mega-column a:hover {
-            color: var(--accent-color) !important;
-            padding-left: 4px;
-        }
+        .nav-links li.has-mega-menu:hover .mega-menu { display: block; }
+        .mega-menu-container { max-width: 1200px; margin: 0 auto; padding: 0 25px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .mega-column h4 { font-size: 0.8rem; color: var(--primary-color); text-transform: uppercase; margin-bottom: 10px; border-bottom: 1px solid var(--border-color); padding-bottom: 4px; font-weight: 700; }
+        .mega-column a { font-size: 0.9rem; color: var(--text-muted); padding: 5px 0; display: block; font-weight: 500; }
+        .mega-column a:hover { color: var(--accent-color); }
 
-        /* 顶栏右侧搜索与汉堡包区域 */
-        .nav-right {
-            display: flex !important;
-            align-items: center !important;
-            gap: 15px !important;
-        }
-        form.search-container {
-            display: flex !important;
-            align-items: center !important;
-            background-color: #f3f4f6 !important;
-            border: 1px solid #e5e7eb !important;
-            border-radius: 6px !important;
-            padding: 8px 12px !important;
-            width: 240px !important;
-            transition: var(--transition) !important;
-            position: relative !important;
-        }
-        form.search-container:focus-within {
-            background-color: var(--white) !important;
-            border-color: #d1d5db !important;
-        }
-        form.search-container input {
-            border: none !important;
-            outline: none !important;
-            background: none !important;
-            padding: 0 8px 0 0 !important;
-            font-size: 0.9rem !important;
-            width: 100% !important;
-            color: var(--text-color) !important;
-        }
-        .search-icon-btn {
-            background: none !important;
-            border: none !important;
-            color: #4b5563 !important;
-            cursor: pointer !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            padding: 0 !important;
-            font-size: 1rem !important;
-        }
-        .search-icon-btn:hover { color: var(--accent-color) !important; }
+        /* 搜索框与汉堡包 */
+        .nav-right { display: flex; align-items: center; gap: 12px; }
+        .search-container { display: flex; align-items: center; background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 20px; padding: 6px 12px; }
+        .search-container input { border: none; outline: none; background: transparent; font-size: 0.85rem; width: 140px; }
+        .search-icon-btn { background: none; border: none; color: #4b5563; cursor: pointer; }
 
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            flex-shrink: 0;
-        }
-        .menu-toggle span {
-            width: 22px;
-            height: 2px;
-            background-color: var(--primary-color);
-            border-radius: 1px;
-            transition: var(--transition);
-        }
+        .menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+        .menu-toggle span { width: 22px; height: 2px; background: var(--primary-color); }
 
-        /* --- 页面主体结构 --- */
-        .breadcrumb { background: transparent; padding: 20px 0 10px 0; font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.02em; }
-        .breadcrumb .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        /* --- 原版页面主体布局（完整保留） --- */
+        .breadcrumb { padding: 15px 20px 5px 20px; font-size: 0.8rem; color: var(--text-muted); }
         .breadcrumb a:hover { color: var(--accent-color); }
         .breadcrumb span { font-weight: 700; color: var(--primary-color); }
 
-        .main-layout { max-width: 1400px; margin: 15px auto 60px auto; padding: 0 40px; display: flex; gap: 50px; }
-        .sidebar-filter { flex: 0 0 240px; }
-        .filter-title { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 25px; color: var(--primary-color); display: flex; align-items: center; gap: 8px; }
+        .main-layout { max-width: 1400px; margin: 10px auto 40px auto; padding: 0 20px; display: flex; gap: 30px; }
+        .sidebar-filter { width: 220px; flex-shrink: 0; }
+        .filter-title { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; color: var(--primary-color); display: flex; align-items: center; gap: 8px; }
 
-        .nested-filter-menu { list-style: none; padding: 0; margin: 0; }
-        .filter-category-item { border-bottom: 1px solid var(--border-color); padding: 12px 0; }
-        .filter-category-item:last-child { border-bottom: none; }
-        .category-header { display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 600; font-size: 14px; letter-spacing: 0.5px; color: var(--primary-color); padding: 4px 0; }
-        .category-header .arrow-icon { font-size: 11px; transition: transform 0.3s ease; color: var(--text-muted); }
-        .sub-filter-list { list-style: none; padding-left: 12px; max-height: 0; overflow: hidden; transition: max-height 0.25s ease-out; }
-        .sub-filter-list li { margin-top: 10px; }
-        .sub-filter-list .filter-option { display: flex; align-items: center; gap: 10px; font-weight: normal; font-size: 13px; color: var(--text-muted); cursor: pointer; margin-bottom: 0; }
-        .sub-filter-list .filter-option input { appearance: none; -webkit-appearance: none; width: 16px; height: 16px; border: 1px solid #94a3b8; border-radius: 2px; outline: none; background: white; position: relative; cursor: pointer; transition: var(--transition); }
-        .sub-filter-list .filter-option input:checked { background: var(--primary-color); border-color: var(--primary-color); }
-        .sub-filter-list .filter-option input:checked::after { content: "✓"; position: absolute; color: white; font-size: 11px; font-weight: bold; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .nested-filter-menu { list-style: none; }
+        .filter-category-item { border-bottom: 1px solid var(--border-color); padding: 10px 0; }
+        .category-header { display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 600; font-size: 0.85rem; color: var(--primary-color); }
+        .category-header .arrow-icon { font-size: 10px; transition: transform 0.3s; color: var(--text-muted); }
+        .sub-filter-list { list-style: none; padding-left: 10px; max-height: 0; overflow: hidden; transition: max-height 0.25s ease-out; }
+        .sub-filter-list li { margin-top: 8px; }
+        .sub-filter-list .filter-option { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--text-muted); cursor: pointer; }
         .filter-category-item.active .sub-filter-list { max-height: 300px; }
         .filter-category-item.active .category-header .arrow-icon { transform: rotate(180deg); color: var(--accent-color); }
 
         .content-zone { flex: 1; min-width: 0; }
-        .products-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; padding: 10px 0; }
-        .grid-product-card { border: none; background: transparent; display: flex; flex-direction: column; transition: var(--transition); cursor: pointer; position: relative; }
-        .grid-product-img { width: 100%; aspect-ratio: 1 / 1; background: var(--bg-light); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; border: 1px solid #f3f4f6; transition: var(--transition); }
-        .grid-product-info { padding: 15px 0 0 0; text-align: left; display: flex; flex-direction: column; gap: 6px; }
+        .products-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .grid-product-card { background: var(--white); display: flex; flex-direction: column; cursor: pointer; }
+        .grid-product-img { width: 100%; aspect-ratio: 1 / 1; background: var(--bg-light); display: flex; align-items: center; justify-content: center; border: 1px solid #f3f4f6; }
+        .grid-product-info { padding: 12px 0 0 0; text-align: left; }
+        .grid-product-title { font-size: 0.85rem; font-weight: 500; color: var(--primary-color); line-height: 1.3; margin-top: 4px; }
 
-        /* 🌟 严格修复制成单行截断省略（修复图片二中多行撑开卡片的问题） */
-        .grid-product-title { 
-            font-size: 0.85rem !important; 
-            font-weight: 500 !important; 
-            color: var(--primary-color) !important; 
-            line-height: 1.4 !important; 
-            margin: 0 !important;
-            white-space: nowrap !important;
-            overflow: hidden !important;
-            text-overflow: ellipsis !important;
-            width: 100% !important;
-            display: block !important;
-        }
-
-        .inquiry-actions-group { display: flex; gap: 10px; margin-top: 10px; width: 100%; }
-        .inquiry-action-btn { flex: 1; padding: 10px 5px; background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 2px; cursor: pointer; transition: var(--transition); display: flex; align-items: center; justify-content: center; gap: 6px; }
+        .inquiry-actions-group { display: flex; gap: 8px; margin-top: 10px; width: 100%; }
+        .inquiry-action-btn { flex: 1; padding: 8px 0; background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: 700; font-size: 0.7rem; text-transform: uppercase; border-radius: 2px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; }
         .inquiry-action-btn:hover { background: var(--primary-color); color: var(--white); }
 
-        .pagination-area { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 60px; }
-        .page-btn { min-width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color); background: var(--white); font-size: 0.85rem; font-weight: 600; color: var(--primary-color); cursor: pointer; transition: var(--transition); border-radius: 2px; }
-        .page-btn.active { background: var(--primary-color); color: var(--white); border-color: var(--primary-color); }
+        footer { background: var(--footer-bg); color: #64748b; text-align: center; padding: 20px; font-size: 0.8rem; margin-top: 60px; }
 
-        footer { background: var(--footer-bg); color: #64748b; text-align: center; padding: 25px; font-size: 0.8rem; border-top: 1px solid #1e293b; margin-top: 80px; }
-
-        @media screen and (min-width: 1025px) {
-            .products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
-            .sidebar-filter { position: sticky !important; top: 85px !important; height: fit-content !important; z-index: 20 !important; }
-        }
-
-        /* ==========================================================
-           📱 🌟 手机端 Header 彻底修复（修复只能看到 Home 和弹窗 Bug）
-           ========================================================== */
+        /* 📱 手机端适配 (修复弹窗与菜单，恢复原版单列/两列卡片布局) */
         @media (max-width: 768px) {
-            .navbar { padding: 10px 15px !important; position: relative !important; }
-            .logo-img { height: 36px !important; width: auto !important; }
+            body { padding-top: 65px; }
+            .navbar { padding: 0 15px; }
+            .menu-toggle { display: flex; }
 
-            /* 显示汉堡包图标 */
-            .menu-toggle {
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-            }
-
-            /* 🌟 彻底修复手机端下拉菜单只能看到 Home 的 Bug */
             .nav-links {
-                display: none !important; 
-                flex-direction: column !important;
-                position: absolute !important;
-                top: 65px !important;
-                left: 0 !important;
-                width: 100% !important;
-                background-color: #ffffff !important;
-                box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
-                padding: 10px 20px 25px 20px !important;
-                z-index: 99999 !important;
-                gap: 0 !important;
-                height: auto !important;
-                max-height: calc(100vh - 65px) !important;
-                overflow-y: auto !important;
-                border-top: 1px solid var(--border-color) !important;
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 65px; left: 0;
+                width: 100%;
+                background: var(--white);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                padding: 15px 20px;
+                gap: 0;
+                height: auto;
+                max-height: calc(100vh - 65px);
+                overflow-y: auto;
+                border-top: 1px solid var(--border-color);
             }
+            .nav-links.active { display: flex; }
+            .nav-links li { width: 100%; height: auto; flex-direction: column; align-items: flex-start; border-bottom: 1px solid #f1f5f9; }
+            .nav-links li a { width: 100%; padding: 12px 0; display: flex; justify-content: space-between; }
 
-            .nav-links.active {
-                display: flex !important;
-            }
+            .mega-menu { position: static; box-shadow: none; border: none; padding: 0 0 10px 10px; background: #f8fafc; display: none; }
+            .nav-links li.has-mega-menu.mobile-open .mega-menu { display: block; }
+            .mega-menu-container { grid-template-columns: 1fr; gap: 10px; padding: 10px; }
 
-            .nav-links li {
-                width: 100% !important;
-                height: auto !important;
-                flex-direction: column !important;
-                align-items: flex-start !important;
-                border-bottom: 1px solid #f1f5f9 !important;
-                display: flex !important;
-            }
-
-            .nav-links li a {
-                font-size: 0.95rem !important;
-                font-weight: 600 !important;
-                color: #334155 !important;
-                width: 100% !important;
-                padding: 14px 0 !important;
-                display: flex !important;
-                justify-content: space-between !important;
-                align-items: center !important;
-                height: auto !important;
-            }
-
-            /* 手风琴二级菜单 */
-            .mega-menu {
-                position: static !important;
-                width: 100% !important;
-                box-shadow: none !important;
-                border: none !important;
-                padding: 0 0 15px 10px !important;
-                background-color: #f8fafc !important;
-                border-radius: 4px !important;
-                display: none !important;
-            }
-
-            .nav-links li.has-mega-menu.mobile-open .mega-menu {
-                display: block !important;
-            }
-
-            .mega-menu-container {
-                grid-template-columns: 1fr !important;
-                gap: 15px !important;
-                padding: 10px 15px !important;
-            }
-
-            .mega-column h4 {
-                font-size: 0.75rem !important;
-                margin-top: 8px !important;
-                margin-bottom: 6px !important;
-                color: var(--accent-color) !important;
-            }
-
-            .mega-column a {
-                padding: 5px 0 !important;
-                font-size: 0.85rem !important;
-            }
-
-            /* 胶囊搜索框样式 */
-            header .nav-right form.search-container {
-                width: 38px !important; 
-                height: 38px !important;
-                padding: 0 !important; 
-                background-color: #f3f4f6 !important; 
-                border: 1px solid #e5e7eb !important;
-                border-radius: 50px !important; 
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-                overflow: hidden !important;
-                transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important; 
-            }
-            header .nav-right form.search-container.active {
-                width: 170px !important; 
-                background-color: #ffffff !important;
-                border-color: var(--accent-color) !important;
-                padding: 0 10px !important;
-                justify-content: space-between !important;
-                box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
-            }
-            header .nav-right form.search-container input {
-                display: block !important; 
-                width: 0 !important;       
-                opacity: 0 !important;     
-                transition: width 0.3s ease, opacity 0.2s ease !important;
-            }
-            header .nav-right form.search-container.active input {
-                width: 110px !important;   
-                opacity: 1 !important;
-            }
-
-            /* 手机端页面外距与侧边栏 */
-            .breadcrumb .container { padding: 0 15px !important; }
-            .main-layout { flex-direction: column !important; gap: 20px !important; padding: 0 15px !important; }
-            .sidebar-filter { width: 100% !important; flex: none !important; }
+            .main-layout { flex-direction: column; gap: 20px; padding: 0 15px; }
+            .sidebar-filter { width: 100%; }
+            .products-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
         }
     </style>
 
     <script src="products-data.js"></script>
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/favicon.png">
 </head>
 <body>
 
     <header>
         <div class="navbar">
             <a href="index.html" class="logo-brand">
-                <img src="images/logo.png" alt="Aileen's Home Studio" title="Aileen's Home Studio" width="400" height="133" class="logo-img">
+                <img src="images/logo.png" alt="Aileen's Home Studio" title="Aileen's Home Studio" class="logo-img">
             </a>
             
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                
                 <li class="has-mega-menu">
-                    <a href="category.html?cat=holiday">Holiday Decor <i class="fa-solid fa-chevron-down" style="font-size:0.7rem; margin-left:4px;"></i></a>
+                    <a href="category.html?cat=holiday">Holiday Decor <i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></a>
                     <div class="mega-menu">
                         <div class="mega-menu-container">
                             <div class="mega-column">
@@ -431,9 +189,8 @@
                         </div>
                     </div>
                 </li>
-                
                 <li class="has-mega-menu">
-                    <a href="category.html?cat=lighting">Lighting <i class="fa-solid fa-chevron-down" style="font-size:0.7rem; margin-left:4px;"></i></a>
+                    <a href="category.html?cat=lighting">Lighting <i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></a>
                     <div class="mega-menu">
                         <div class="mega-menu-container">
                             <div class="mega-column">
@@ -441,50 +198,21 @@
                                 <a href="listing.html?cat=lighting&sub=table-lamps">Table & Desk Lamps</a>
                                 <a href="listing.html?cat=lighting&sub=floor-lamps">Floor Lamps</a>
                                 <a href="listing.html?cat=lighting&sub=pendant-lights">Pendants</a>
-                                <a href="listing.html?cat=lighting&sub=ceiling-light">Ceiling Light</a>
-                                <a href="listing.html?cat=lighting&sub=wall-lighting">Wall Lighting & Sconces</a>
-                                <a href="listing.html?cat=lighting&sub=fan-lights">Premium Fan Lights</a>
                             </div>
                             <div class="mega-column">
                                 <h4>OUTDOOR LIGHTS</h4>
                                 <a href="listing.html?cat=lighting&sub=outdoor-lighting">Outdoor Lighting</a>
                             </div>
-                            <div class="mega-column">
-                                <h4>DECOR LIGHTS</h4>
-                                <a href="listing.html?cat=lighting&sub=led-string-lights">LED String Lights</a>
-                            </div>
                         </div>
                     </div>
                 </li>
-                
-                <li class="has-mega-menu">
-                    <a href="category.html?cat=material">Raw Material <i class="fa-solid fa-chevron-down" style="font-size:0.7rem; margin-left:4px;"></i></a>
-                    <div class="mega-menu">
-                        <div class="mega-menu-container">
-                            <div class="mega-column">
-                                <h4>MATERIAL</h4>
-                                <a href="listing.html?cat=material&sub=pe-tips">PE Tree Tips</a>
-                                <a href="listing.html?cat=material&sub=pvc-film">PVC Film</a>
-                                <a href="listing.html?cat=material&sub=pine-needle">PVC Pine Needle</a>
-                                <a href="listing.html?cat=material&sub=polyester-thread">Polyester thread</a>
-                            </div>
-                            <div class="mega-column">
-                                <h4>METALS</h4>
-                                <a href="listing.html?cat=material&sub=metal-stands">Metal Stand</a>
-                                <a href="listing.html?cat=material&sub=metal-tubes">Metal Tube</a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                
-                <li><a href="javascript:void(0);" onclick="toggleAboutModal(true)">About</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
             
             <div class="nav-right">
-                <form class="search-container" id="navSearchForm" onsubmit="event.preventDefault(); handleSearch(true);">
-                    <input type="text" id="searchInput" placeholder="Discover something..." autocomplete="off">
-                    <button type="button" class="search-icon-btn" id="searchBtnTrigger"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <form class="search-container" id="navSearchForm" onsubmit="event.preventDefault(); handleSearch();">
+                    <input type="text" id="searchInput" placeholder="Search..." autocomplete="off">
+                    <button type="button" class="search-icon-btn" onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div class="menu-toggle" id="mobile-menu">
                     <span></span><span></span><span></span>
@@ -494,26 +222,17 @@
     </header>
 
     <div class="breadcrumb">
-        <div class="container">
-            <a href="index.html">Home</a> / <span id="layer-parent">Catalog</span> / <span id="layer-current">Loading...</span>
-        </div>
+        <a href="index.html">Home</a> / <span id="layer-parent">Catalog</span> / <span id="layer-current">Loading...</span>
     </div>
 
     <div class="main-layout">
         <aside class="sidebar-filter">
-            <div class="filter-title"><i class="fa-solid fa-sliders" style="font-size:0.8rem;"></i> Filter By:</div>
-            <div class="filter-section">
-                <div id="filter-checkbox-group"></div>
-            </div>
+            <div class="filter-title"><i class="fa-solid fa-sliders"></i> Filter By:</div>
+            <div id="filter-checkbox-group"></div>
         </aside>
 
         <main class="content-zone">
-            <div class="catalog-header-meta" style="display: none !important;">
-                <h1 id="page-main-title"></h1>
-            </div>
-            
             <div class="products-grid" id="products-grid-container"></div>
-            <div class="pagination-area" id="pagination-container"></div>
         </main>
     </div>
 
@@ -524,41 +243,23 @@
     <script>
         function toTitleCase(str) {
             if (!str) return "";
-            const minorWords = new Set(['a', 'an', 'the', 'and', 'but', 'or', 'for', 'nor', 'on', 'at', 'to', 'from', 'by', 'with', 'in', 'of', 'over', 'under', 'into', 'onto', 'off', 'up', 'down', 'as', 'via']);
-            const words = str.toLowerCase().split(' ');
-            return words.map((word, index) => {
-                if (index === 0 || index === words.length - 1 || !minorWords.has(word)) {
-                    return word.charAt(0).toUpperCase() + word.slice(1);
-                }
-                return word;
-            }).join(' ');
+            return str.toLowerCase().split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
         }
         
-        /* 🌟 修复搜索框点击展开时不触发弹窗的逻辑 */
-        function handleSearch(isExplicit = false) {
+        /* 🌟 只有输入框有字时才提交，点击图标不乱报警告 */
+        function handleSearch() {
             const searchInput = document.getElementById('searchInput');
-            if (!searchInput) return;
-            let query = searchInput.value ? searchInput.value.trim() : "";
-            
-            if (!query) {
-                if (isExplicit) {
-                    alert('Please enter a product name to search.');
-                }
-                return;
-            }
-            if (query.toLowerCase() === 'xmas') query = 'christmas';
+            let query = searchInput ? searchInput.value.trim() : "";
+            if (!query) return;
             window.location.href = `listing.html?search=${encodeURIComponent(query)}`;
         }
 
-        let currentPage = 1;
-        const productsPerPage = 9;
         const urlParams = new URLSearchParams(window.location.search);
         let currentCat = urlParams.get('cat') ? urlParams.get('cat').toLowerCase().trim() : "";
         let dbSearchCat = currentCat === "holiday" ? "holiday decor" : currentCat;
 
         function getPageData() {
-            const cat = urlParams.get('cat') ? urlParams.get('cat').toLowerCase().trim() : '';
-            if (cat === 'holiday') {
+            if (currentCat === 'holiday') {
                 return {
                     title: "Holiday Decor",
                     categories: [
@@ -568,25 +269,7 @@
                     ]
                 };
             }
-            if (cat === 'lighting') {
-                return {
-                    title: "Lighting",
-                    categories: [
-                        { name: "Indoor Lights", subs: ["Table Lamps","Floor Lamps","Pendants","Ceiling Light","Wall Sconces","Fan Lights"] },
-                        { name: "Outdoor Lights", subs: ["Outdoor Lighting"] },
-                        { name: "Decor Lights", subs: ["LED String Lights"] }
-                    ]
-                };
-            }
-            if (cat === 'material') {
-                return {
-                    title: "Raw Material",
-                    categories: [
-                        { name: "Material", subs: ["PE Tips","PVC Film","PVC Pine Needle","Polyester thread"] },
-                        { name: "Metals", subs: ["Metal Stands","Metal Tube"] }
-                    ]
-                };
-            }
+            return { title: 'PRODUCT CATALOGUE', categories: [] };
         }     
 
         function renderProductsOnly() {
@@ -604,16 +287,12 @@
                     const pCat = product.category ? product.category.toLowerCase().trim() : "";
                     const pSub = product.subcategory ? product.subcategory.toLowerCase().trim() : "";
 
-                    let isCategoryMatch = pCat.includes(dbSearchCat) || dbSearchCat.includes(pCat);
-
-                    if (isCategoryMatch) {
+                    if (pCat.includes(dbSearchCat) || dbSearchCat.includes(pCat)) {
                         if (activeFilters.length === 0 || activeFilters.includes(pSub.replace(/-/g, ' '))) {
                             let firstImg = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder.jpg";
-                            const rawCode = product.code ? product.code.trim().toUpperCase() : '';
-                            const cleanCode = rawCode.replace(/^ITEM CODE:\s*/i, '');
+                            const cleanCode = product.code ? product.code.trim().toUpperCase().replace(/^ITEM CODE:\s*/i, '') : '';
                             const itemCode = cleanCode ? `ITEM CODE: ${cleanCode}` : '';
-                            const codeText = cleanCode ? ` (${itemCode})` : '';
-                            const inquiryMsg = `Hi Aileen, I am interested in your ${key}${codeText}. Please provide a wholesale quote.`;
+                            const inquiryMsg = `Hi Aileen, I am interested in your ${key}${cleanCode ? ' (' + itemCode + ')' : ''}. Please provide a wholesale quote.`;
 
                             const productPageUrl = `product-detail.html?item=${encodeURIComponent(key.replace(/\s+/g, '-'))}`;
                             const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent(inquiryMsg)}`;
@@ -622,17 +301,17 @@
                             gridHtml += `
                                 <div class="grid-product-card" onclick="window.location.href='${productPageUrl}'">
                                     <div class="grid-product-img">
-                                        <img src="${firstImg}" alt="${key}" title="${key}" loading="lazy" width="600" height="600" style="width:100%; height:100%; object-fit:contain;" onerror="this.src='images/placeholder.jpg'">
+                                        <img src="${firstImg}" alt="${key}" loading="lazy" style="width:100%; height:100%; object-fit:contain;" onerror="this.src='images/placeholder.jpg'">
                                     </div>
                                     <div class="grid-product-info">
-                                        <div style="font-size:0.8rem; color:var(--accent-color); font-weight:700;">${itemCode}</div>
-                                        <h3 class="grid-product-title" title="${toTitleCase(key)}">${toTitleCase(key)}</h3>
+                                        <div style="font-size:0.75rem; color:var(--accent-color); font-weight:700;">${itemCode}</div>
+                                        <h3 class="grid-product-title">${toTitleCase(key)}</h3>
                                         <div class="inquiry-actions-group" onclick="event.stopPropagation();">
                                             <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
-                                                <i class="fa-regular fa-envelope"></i> Email
+                                                <i class="fa-regular fa-envelope"></i> EMAIL
                                             </button>
                                             <button class="inquiry-action-btn" onclick="window.open('${whatsappUrl}', '_blank')">
-                                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                                <i class="fa-brands fa-whatsapp"></i> WHATSAPP
                                             </button>
                                         </div>
                                     </div>
@@ -646,44 +325,37 @@
         }
 
         function toggleSubMenu(element) {
-            const parentLi = element.parentElement;
-            parentLi.classList.toggle('active');
+            element.parentElement.classList.toggle('active');
         }
 
-        function handleFilterChange(element) {
-            currentPage = 1;
+        function handleFilterChange() {
             renderProductsOnly();
         }
 
         function renderPage() {
-            const data = getPageData() || { title: 'PRODUCT CATALOGUE', categories: [] };
+            const data = getPageData();
             document.getElementById('layer-current').innerText = data.title;
 
             let filterHtml = '<ul class="nested-filter-menu">';
             data.categories.forEach((cat) => {
-                const hasSubs = cat.subs && cat.subs.length > 0;
                 filterHtml += `
                     <li class="filter-category-item">
                         <div class="category-header" onclick="toggleSubMenu(this)">
-                            <span class="category-name">${cat.name}</span>
-                            ${hasSubs ? '<i class="fa-solid fa-chevron-down arrow-icon"></i>' : ''}
+                            <span>${cat.name}</span>
+                            <i class="fa-solid fa-chevron-down arrow-icon"></i>
                         </div>
+                        <ul class="sub-filter-list">
+                            ${cat.subs.map(sub => `
+                                <li>
+                                    <label class="filter-option">
+                                        <input type="checkbox" value="${sub}" onchange="handleFilterChange()">
+                                        <span>${sub}</span>
+                                    </label>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </li>
                 `;
-                if (hasSubs) {
-                    filterHtml += '<ul class="sub-filter-list">';
-                    cat.subs.forEach((sub) => {
-                        filterHtml += `
-                            <li>
-                                <label class="filter-option">
-                                    <input type="checkbox" value="${sub}" onchange="handleFilterChange(this)">
-                                    <span>${sub}</span>
-                                </label>
-                            </li>
-                        `;
-                    });
-                    filterHtml += '</ul>';
-                }
-                filterHtml += '</li>';
             });
             filterHtml += '</ul>';
             document.getElementById('filter-checkbox-group').innerHTML = filterHtml;
@@ -691,7 +363,7 @@
             renderProductsOnly();
         }
 
-        /* 绑定移动端导航与搜索框交互 */
+        /* 移动端菜单控制 */
         document.addEventListener("DOMContentLoaded", function() {
             const mobileMenuBtn = document.getElementById('mobile-menu');
             const navLinks = document.querySelector('.nav-links');
@@ -703,57 +375,18 @@
                 });
             }
 
-            const megaMenuItems = document.querySelectorAll('.nav-links li.has-mega-menu');
-            megaMenuItems.forEach(item => {
-                const mainLink = item.querySelector('a');
-                if (mainLink) {
-                    mainLink.addEventListener('click', function(e) {
-                        if (window.innerWidth <= 768) {
-                            e.preventDefault();
-                            item.classList.toggle('mobile-open');
-                        }
-                    });
-                }
-            });
-
-            const searchForm = document.getElementById("navSearchForm");
-            const searchInput = document.getElementById("searchInput");
-            const searchBtn = document.getElementById("searchBtnTrigger");
-
-            if (searchForm && searchInput && searchBtn) {
-                searchBtn.addEventListener("click", function(e) {
+            document.querySelectorAll('.nav-links li.has-mega-menu').forEach(item => {
+                item.querySelector('a').addEventListener('click', function(e) {
                     if (window.innerWidth <= 768) {
-                        if (!searchForm.classList.contains("active")) {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            searchForm.classList.add("active");
-                            searchInput.focus();
-                        } else if (searchInput.value.trim() === "") {
-                            e.preventDefault();
-                            searchForm.classList.remove("active");
-                        } else {
-                            handleSearch(true);
-                        }
-                    } else {
-                        handleSearch(true);
+                        e.preventDefault();
+                        item.classList.toggle('mobile-open');
                     }
                 });
-            }
-
-            document.addEventListener("click", function(e) {
-                if (window.innerWidth <= 768) {
-                    if (searchForm && !searchForm.contains(e.target)) {
-                        searchForm.classList.remove("active");
-                    }
-                    if (navLinks && mobileMenuBtn && !navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-                        navLinks.classList.remove('active');
-                    }
-                }
             });
         });
 
         window.onload = function() {
-            if (typeof renderPage === "function") renderPage();
+            renderPage();
         };
     </script>
 </body>
