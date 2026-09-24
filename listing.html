@@ -25,7 +25,7 @@
         a { text-decoration: none; color: inherit; }
 
         /* ==========================================================
-           🌟 顶级同步导航栏样式（与 Category 页面完全一致）
+           🌟 顶级同步导航栏样式（与 Category 及 Product Detail 页面完全一致）
            ========================================================== */
         header {
             position: fixed !important;
@@ -176,7 +176,7 @@
         /* --- 超级大下拉菜单(Mega Menu)显隐逻辑 --- */
         .mega-menu {
             display: none;
-            position: fixed !important; /* 修改点：由 absolute 改为 fixed，确保全屏对齐与 Category 页面一致 */
+            position: fixed !important;
             top: 65px; 
             left: 0;
             width: 100%;
@@ -336,10 +336,7 @@
             display: block !important;            
             word-break: normal !important;
         }
-        @media (max-width: 768px) {
-            .products-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 15px; }
-            .listing-container { padding: 0 20px; }
-        }
+        
         footer { 
             background: var(--footer-bg); 
             color: #64748b; 
@@ -378,57 +375,121 @@
             z-index: 10 !important;      
             padding-top: 20px !important; 
         }
-        
+
+        /* ==========================================================
+           📱 移动端导航栏与页面适配（同步 product-detail 与 category 规范）
+           ========================================================== */
         @media screen and (max-width: 768px) {
-            .navbar .logo-brand, 
-            .logo-brand,
-            a[href="index.html"].logo-brand {
-                display: none !important;
-                width: 0 !important;
-                margin: 0 !important;
-                padding: 0 !important;
-            }
-
-            .nav-links {
-                width: auto !important;
-                max-width: calc(100% - 60px) !important; 
-                display: flex !important;
-                flex-direction: row !important;
-                overflow-x: auto !important;  
-                -webkit-overflow-scrolling: touch !important; 
-                gap: 12px !important; 
-                padding: 0 4px !important;
-                height: 100% !important;
-                scrollbar-width: none !important; 
-            }
-
-            .nav-links a {
-                font-size: 0.85rem !important; 
-                white-space: nowrap !important;
-                padding: 0 2px !important;     
-            }
-
-            .nav-links::-webkit-scrollbar {
-                display: none !important; 
-            }
-
-            .nav-links li {
-                height: 100% !important;
-                flex-shrink: 0 !important; 
-            }
-
-            .navbar {
-                height: 55px !important;
-                padding: 0 10px !important;
-            }
-            
+            /* 1. Header & Navbar 容器 */
             header {
                 height: 55px !important;
             }
-            
-            body {
-                padding-top: 75px !important; 
+            .navbar {
+                height: 55px !important;
+                padding: 0 12px !important;
+                justify-content: space-between !important;
+                position: relative !important;
             }
+
+            /* 2. Logo 居左展示 (与 Product Detail 完美统一) */
+            .navbar .logo-brand, 
+            .logo-brand,
+            a[href="index.html"].logo-brand {
+                display: flex !important;
+                align-items: center !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                width: auto !important;
+                height: 100% !important;
+            }
+
+            .logo-img {
+                height: 28px !important;
+                width: auto !important;
+                max-width: 130px !important;
+            }
+
+            /* 3. 隐藏中间文字菜单 */
+            .nav-links {
+                display: none !important;
+            }
+
+            /* 4. 右侧搜索定位及伸缩框 */
+            header .nav-right {
+                position: absolute !important;
+                right: 12px !important; 
+                top: 50% !important;
+                transform: translateY(-50%) !important;
+                gap: 0 !important;
+                margin: 0 !important;
+                display: flex !important;
+                align-items: center !important;
+                z-index: 100000 !important;
+            }
+
+            header .nav-right form.search-container {
+                width: 36px !important; 
+                height: 36px !important;
+                padding: 0 !important; 
+                background-color: #f3f4f6 !important; 
+                border: 1px solid #e5e7eb !important;
+                border-radius: 50px !important; 
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                overflow: hidden !important;
+                transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important; 
+            }
+
+            header .nav-right form.search-container.active {
+                width: 180px !important; 
+                background-color: #ffffff !important;
+                border-color: var(--accent-color) !important;
+                padding: 0 10px !important;
+                justify-content: space-between !important;
+                box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
+            }
+
+            header .nav-right form.search-container input {
+                display: block !important; 
+                width: 0 !important;       
+                opacity: 0 !important;     
+                border: none !important;
+                outline: none !important;
+                background: none !important;
+                padding: 0 !important;
+                font-size: 13px !important;
+                transition: width 0.3s ease, opacity 0.2s ease !important;
+            }
+
+            header .nav-right form.search-container.active input {
+                width: 120px !important;   
+                opacity: 1 !important;
+            }
+
+            header .nav-right .search-icon-btn {
+                width: 24px !important;
+                height: 24px !important;
+                min-width: 24px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                font-size: 0.95rem !important;
+                color: #4b5563 !important;
+                background: none !important;
+                border: none !important;
+                cursor: pointer !important;
+                position: static !important; 
+                transform: none !important;
+            }
+
+            body {
+                padding-top: 65px !important; 
+            }
+
+            /* 页面内容移动端网格调整 */
+            .products-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 15px; }
+            .listing-container { padding: 0 20px; }
 
             .listing-container > div[style*="display: flex"] {
                 display: flex !important;
@@ -525,74 +586,6 @@
                 padding: 5px 0 !important;          
                 font-size: 0.68rem !important;      
                 letter-spacing: 0 !important;
-            }
-
-            header .nav-right {
-                position: absolute !important;
-                right: 10px !important; 
-                top: 50% !important;
-                transform: translateY(-50%) !important;
-                gap: 0 !important;
-                margin: 0 !important;
-                display: flex !important;
-                align-items: center !important;
-                z-index: 100000 !important;
-            }
-
-            header .nav-right form.search-container {
-                width: 40px !important; 
-                height: 38px !important;
-                padding: 0 !important; 
-                background-color: #f3f4f6 !important; 
-                border: 1px solid #e5e7eb !important;
-                border-radius: 50px !important; 
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-                overflow: hidden !important;
-                transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important; 
-            }
-
-            header .nav-right form.search-container.active {
-                width: 180px !important; 
-                background-color: #ffffff !important;
-                border-color: var(--accent-color) !important;
-                padding: 0 10px !important;
-                justify-content: space-between !important;
-                box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
-            }
-
-            header .nav-right form.search-container input {
-                display: block !important; 
-                width: 0 !important;       
-                opacity: 0 !important;     
-                border: none !important;
-                outline: none !important;
-                background: none !important;
-                padding: 0 !important;
-                font-size: 13px !important;
-                transition: width 0.3s ease, opacity 0.2s ease !important;
-            }
-
-            header .nav-right form.search-container.active input {
-                width: 120px !important;   
-                opacity: 1 !important;
-            }
-
-            header .nav-right .search-icon-btn {
-                width: 24px !important;
-                height: 24px !important;
-                min-width: 24px !important;
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-                font-size: 0.95rem !important;
-                color: #4b5563 !important;
-                background: none !important;
-                border: none !important;
-                cursor: pointer !important;
-                position: static !important; 
-                transform: none !important;
             }
         }
 
@@ -824,7 +817,7 @@
 </head>
 <body>
 
-    <!-- 🌟 完全同步 Category 页面的统一 Header -->
+    <!-- 🌟 完全同步 Category/Product Detail 页面的统一 Header -->
     <header>
         <div class="navbar">
             <a href="index.html" class="logo-brand">
