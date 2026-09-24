@@ -25,7 +25,7 @@
         ul { list-style: none; }
 
         /* ==========================================================
-           顶栏导航 Header 基础结构
+           顶栏导航 Header 电脑端基础样式
            ========================================================== */
         header { 
             position: fixed; 
@@ -197,7 +197,7 @@
             transition: var(--transition);
         }
 
-        /* --- 原有布局、产品列表及卡片样式保持原样 --- */
+        /* --- 页面主体结构 --- */
         .breadcrumb { background: transparent; padding: 20px 0 10px 0; font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.02em; }
         .breadcrumb .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
         .breadcrumb a:hover { color: var(--accent-color); }
@@ -226,7 +226,20 @@
         .grid-product-card { border: none; background: transparent; display: flex; flex-direction: column; transition: var(--transition); cursor: pointer; position: relative; }
         .grid-product-img { width: 100%; aspect-ratio: 1 / 1; background: var(--bg-light); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; border: 1px solid #f3f4f6; transition: var(--transition); }
         .grid-product-info { padding: 15px 0 0 0; text-align: left; display: flex; flex-direction: column; gap: 6px; }
-        .grid-product-title { font-size: 0.95rem; font-weight: 500; color: var(--primary-color); line-height: 1.4; margin: 0; }
+
+        /* 🌟 严格修复制成单行截断省略（修复图片二中多行撑开卡片的问题） */
+        .grid-product-title { 
+            font-size: 0.85rem !important; 
+            font-weight: 500 !important; 
+            color: var(--primary-color) !important; 
+            line-height: 1.4 !important; 
+            margin: 0 !important;
+            white-space: nowrap !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            width: 100% !important;
+            display: block !important;
+        }
 
         .inquiry-actions-group { display: flex; gap: 10px; margin-top: 10px; width: 100%; }
         .inquiry-action-btn { flex: 1; padding: 10px 5px; background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 2px; cursor: pointer; transition: var(--transition); display: flex; align-items: center; justify-content: center; gap: 6px; }
@@ -244,53 +257,20 @@
         }
 
         /* ==========================================================
-           📱 仅针对手机端 Header 导航栏的精准适配（1:1 复刻 Index）
+           📱 🌟 手机端 Header 彻底修复（修复只能看到 Home 和弹窗 Bug）
            ========================================================== */
         @media (max-width: 768px) {
             .navbar { padding: 10px 15px !important; position: relative !important; }
             .logo-img { height: 36px !important; width: auto !important; }
 
-            /* 显示汉堡包 */
+            /* 显示汉堡包图标 */
             .menu-toggle {
                 display: flex !important;
                 align-items: center !important;
                 justify-content: center !important;
             }
 
-            /* 胶囊搜索框折叠样式 */
-            header .nav-right form.search-container {
-                width: 38px !important; 
-                height: 38px !important;
-                padding: 0 !important; 
-                background-color: #f3f4f6 !important; 
-                border: 1px solid #e5e7eb !important;
-                border-radius: 50px !important; 
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-                overflow: hidden !important;
-                transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important; 
-            }
-            header .nav-right form.search-container.active {
-                width: 170px !important; 
-                background-color: #ffffff !important;
-                border-color: var(--accent-color) !important;
-                padding: 0 10px !important;
-                justify-content: space-between !important;
-                box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
-            }
-            header .nav-right form.search-container input {
-                display: block !important; 
-                width: 0 !important;       
-                opacity: 0 !important;     
-                transition: width 0.3s ease, opacity 0.2s ease !important;
-            }
-            header .nav-right form.search-container.active input {
-                width: 110px !important;   
-                opacity: 1 !important;
-            }
-
-            /* 手机端主菜单抽屉 */
+            /* 🌟 彻底修复手机端下拉菜单只能看到 Home 的 Bug */
             .nav-links {
                 display: none !important; 
                 flex-direction: column !important;
@@ -299,10 +279,11 @@
                 left: 0 !important;
                 width: 100% !important;
                 background-color: #ffffff !important;
-                box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
-                padding: 15px 20px 25px 20px !important;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+                padding: 10px 20px 25px 20px !important;
                 z-index: 99999 !important;
                 gap: 0 !important;
+                height: auto !important;
                 max-height: calc(100vh - 65px) !important;
                 overflow-y: auto !important;
                 border-top: 1px solid var(--border-color) !important;
@@ -318,6 +299,7 @@
                 flex-direction: column !important;
                 align-items: flex-start !important;
                 border-bottom: 1px solid #f1f5f9 !important;
+                display: flex !important;
             }
 
             .nav-links li a {
@@ -329,9 +311,10 @@
                 display: flex !important;
                 justify-content: space-between !important;
                 align-items: center !important;
+                height: auto !important;
             }
 
-            /* 手风琴下拉菜单 */
+            /* 手风琴二级菜单 */
             .mega-menu {
                 position: static !important;
                 width: 100% !important;
@@ -365,7 +348,40 @@
                 font-size: 0.85rem !important;
             }
 
-            /* 手机端页面边距与侧边栏 */
+            /* 胶囊搜索框样式 */
+            header .nav-right form.search-container {
+                width: 38px !important; 
+                height: 38px !important;
+                padding: 0 !important; 
+                background-color: #f3f4f6 !important; 
+                border: 1px solid #e5e7eb !important;
+                border-radius: 50px !important; 
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                overflow: hidden !important;
+                transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important; 
+            }
+            header .nav-right form.search-container.active {
+                width: 170px !important; 
+                background-color: #ffffff !important;
+                border-color: var(--accent-color) !important;
+                padding: 0 10px !important;
+                justify-content: space-between !important;
+                box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
+            }
+            header .nav-right form.search-container input {
+                display: block !important; 
+                width: 0 !important;       
+                opacity: 0 !important;     
+                transition: width 0.3s ease, opacity 0.2s ease !important;
+            }
+            header .nav-right form.search-container.active input {
+                width: 110px !important;   
+                opacity: 1 !important;
+            }
+
+            /* 手机端页面外距与侧边栏 */
             .breadcrumb .container { padding: 0 15px !important; }
             .main-layout { flex-direction: column !important; gap: 20px !important; padding: 0 15px !important; }
             .sidebar-filter { width: 100% !important; flex: none !important; }
@@ -466,9 +482,9 @@
             </ul>
             
             <div class="nav-right">
-                <form class="search-container" id="navSearchForm" onsubmit="event.preventDefault(); handleSearch();">
+                <form class="search-container" id="navSearchForm" onsubmit="event.preventDefault(); handleSearch(true);">
                     <input type="text" id="searchInput" placeholder="Discover something..." autocomplete="off">
-                    <button type="button" class="search-icon-btn" onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="button" class="search-icon-btn" id="searchBtnTrigger"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div class="menu-toggle" id="mobile-menu">
                     <span></span><span></span><span></span>
@@ -518,12 +534,16 @@
             }).join(' ');
         }
         
-        function handleSearch() {
+        /* 🌟 修复搜索框点击展开时不触发弹窗的逻辑 */
+        function handleSearch(isExplicit = false) {
             const searchInput = document.getElementById('searchInput');
             if (!searchInput) return;
             let query = searchInput.value ? searchInput.value.trim() : "";
+            
             if (!query) {
-                alert('Please enter a product name to search.');
+                if (isExplicit) {
+                    alert('Please enter a product name to search.');
+                }
                 return;
             }
             if (query.toLowerCase() === 'xmas') query = 'christmas';
@@ -606,7 +626,7 @@
                                     </div>
                                     <div class="grid-product-info">
                                         <div style="font-size:0.8rem; color:var(--accent-color); font-weight:700;">${itemCode}</div>
-                                        <h3 class="grid-product-title">${toTitleCase(key)}</h3>
+                                        <h3 class="grid-product-title" title="${toTitleCase(key)}">${toTitleCase(key)}</h3>
                                         <div class="inquiry-actions-group" onclick="event.stopPropagation();">
                                             <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
                                                 <i class="fa-regular fa-envelope"></i> Email
@@ -671,7 +691,7 @@
             renderProductsOnly();
         }
 
-        /* 绑定移动端导航与搜索框事件 */
+        /* 绑定移动端导航与搜索框交互 */
         document.addEventListener("DOMContentLoaded", function() {
             const mobileMenuBtn = document.getElementById('mobile-menu');
             const navLinks = document.querySelector('.nav-links');
@@ -698,7 +718,7 @@
 
             const searchForm = document.getElementById("navSearchForm");
             const searchInput = document.getElementById("searchInput");
-            const searchBtn = searchForm ? searchForm.querySelector(".search-icon-btn") : null;
+            const searchBtn = document.getElementById("searchBtnTrigger");
 
             if (searchForm && searchInput && searchBtn) {
                 searchBtn.addEventListener("click", function(e) {
@@ -712,10 +732,10 @@
                             e.preventDefault();
                             searchForm.classList.remove("active");
                         } else {
-                            handleSearch();
+                            handleSearch(true);
                         }
                     } else {
-                        handleSearch();
+                        handleSearch(true);
                     }
                 });
             }
