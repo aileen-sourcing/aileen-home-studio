@@ -113,7 +113,7 @@
 
         footer { background: var(--footer-bg); color: #64748b; text-align: center; padding: 20px; font-size: 0.8rem; margin-top: 60px; }
 
-        /* 📱 手机端适配 (修复弹窗与菜单，恢复原版单列/两列卡片布局) */
+        /* 📱 手机端适配（修复弹窗与菜单，完美恢复两列产品排版） */
         @media (max-width: 768px) {
             body { padding-top: 65px; }
             .navbar { padding: 0 15px; }
@@ -246,7 +246,7 @@
             return str.toLowerCase().split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
         }
         
-        /* 🌟 只有输入框有字时才提交，点击图标不乱报警告 */
+        /* 仅在有输入内容时触发搜索 */
         function handleSearch() {
             const searchInput = document.getElementById('searchInput');
             let query = searchInput ? searchInput.value.trim() : "";
@@ -363,7 +363,7 @@
             renderProductsOnly();
         }
 
-        /* 移动端菜单控制 */
+        /* 移动端汉堡包菜单控制 */
         document.addEventListener("DOMContentLoaded", function() {
             const mobileMenuBtn = document.getElementById('mobile-menu');
             const navLinks = document.querySelector('.nav-links');
