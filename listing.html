@@ -176,14 +176,14 @@
         /* --- 超级大下拉菜单(Mega Menu)显隐逻辑 --- */
         .mega-menu {
             display: none;
-            position: absolute; /* 改为 absolute 以精准贴合 navbar 容器 */
+            position: fixed !important; /* 修改点：由 absolute 改为 fixed，确保全屏对齐与 Category 页面一致 */
             top: 65px; 
             left: 0;
             width: 100%;
             background-color: var(--white);
             box-shadow: 0 12px 20px -5px rgba(15, 23, 42, 0.08);
             border-top: 1px solid var(--border-color);
-            z-index: 999;
+            z-index: 99999 !important;
             padding: 30px 0 25px 0; 
             text-align: left;
         }
