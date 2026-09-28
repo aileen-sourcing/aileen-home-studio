@@ -381,7 +381,7 @@ const detailsDatabase = {
             { label: "Feature", value: "Lightweight, Reusable, Pre-assorted shapes, Ready-to-hang" }
         ]
     },
-    "shatterproof christmas ball, mixed glitter and shiny balls for xmas tree home decor": {
+    "shatterproof christmas baubles set, mixed glitter and shiny balls for xmas tree home decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: cb20260803",
