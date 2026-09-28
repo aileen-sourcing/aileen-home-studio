@@ -1341,6 +1341,30 @@ const detailsDatabase = {
             { label: "Application", value: "Dining Room, Kitchen Island, Living Room" }
         ]
     },
+    "flower brass glass pendant light for japandi dining room": {
+        category: "lighting",
+        subcategory: "pendants", 
+        code: "Item Code: p20260905",
+        description: "Add a touch of timeless warmth to your space with this exquisite flower-shaped glass pendant light. Crafted with premium solid wood, handcrafted brass edging, and textured ripple glass, it produces a soft, ambient glow that elevates any interior. Perfect for dining rooms, kitchen islands, tea rooms, and Japandi or vintage-inspired spaces.",
+        images: [
+            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-white-background.jpg",
+            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-wood-brass-detail.jpg",
+            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-minimalist-dining.jpg",
+            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-rustic-wooden-room.jpg",
+            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-dining-table-decor.jpg",
+            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-japandi-tea-room.jpg"
+        ], 
+        specs: [
+            { label: "Product Type", value: "Single Pendant Light / Hanging Lamp" },
+            { label: "Main Material", value: "Walnut Wood + Brass + Textured Glass" },
+            { label: "Design Style", value: "Vintage / Japandi / Wabi-Sabi / Minimalist" },
+            { label: "Shade Shape", value: "Petal / Flower Shape" },
+            { label: "Color", value: "Clear Ripple Glass with Golden Brass Frame" },
+            { label: "Bulb Base", value: "E26 / E27 (Bulbs Not Included)" },
+            { label: "Voltage", value: "110V - 240V" },
+            { label: "Application", value: "Dining Room, Kitchen Island, Bedroom, Tea Room, Cafe" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "ceiling light")
     "ceiling light, fabric flower flush mount living room decor": {
