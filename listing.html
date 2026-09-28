@@ -1027,7 +1027,10 @@
                         const codeLower = product.code ? product.code.toLowerCase() : '';
 
                         if (val === 'ball') {
-                            const hasBallKey = titleLower.includes('ball') || titleLower.includes('bauble') || prodSub.includes('ball');
+                            const hasBallKey = titleLower.includes('christmas ball') ||
+                                               titleLower.includes('christmas bauble') ||
+                                               titleLower.includes('christmas baubles') ||
+                                               prodSub.includes('ball');
                             const isOtherCategory = titleLower.includes('wreath') || titleLower.includes('garland') || titleLower.includes('tree');
                             return hasBallKey && !isOtherCategory;
                         } 
