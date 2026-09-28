@@ -544,7 +544,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "valentines-day")
-    "glitter heart christmas ornaments for holiday tree decor": {
+    "glitter heart wreath valentines day hanging ornament": {
         category: "holiday",
         subcategory: "valentines-day", 
         code: "Item Code: vd20260801",
