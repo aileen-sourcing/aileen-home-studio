@@ -882,7 +882,7 @@ const detailsDatabase = {
     // 💡 大类 2：Home Lighting (cat: "lighting")
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "table lamp")
-    "mushroom wooden table lamp ribbed solid wood desk lamp for bedroom bedside living room decor": {
+    "mushroom wooden table lamp ribbed solid for bedroom bedside living room decor": {
         category: "lighting",
         subcategory: "table-lamps", 
         code: "Item Code: tb20260630",
@@ -898,8 +898,13 @@ const detailsDatabase = {
         ], 
         specs: [
             { label: "Material", value: "Ribbed solid wood lampshade, solid wood base, metal fitting" },
-            { label: "Light Source", value: "E27 bulb base, Bulb not included" },
+            { label: "Light Source", value: "E26 or E27, Bulb not included" },
             { label: "Color", value: "Natural wood tone" },
+            { label: "Power", value: "Max 40W" },
+            { label: "Voltage", value: "AC 110-240V" },
+            { label: "IP", value: "IP20" },
+            { label: "Control method", value: "Inline On/Off push button switch" },
+            { label: "Environment", value: "Safety tested for use indoors and in dry locations not directly exposed to excessive moisture and water." },
             { label: "Features", value: "Soft diffused lighting, mushroom shape design, easy assembly, stable wooden base" },
             { label: "Application", value: "Bedroom bedside, living room side table, study desk, hotel room decoration" }
         ]
