@@ -1156,7 +1156,7 @@
 
             if (emailBtn) {
                 emailBtn.onclick = function() {
-                    const mailtoUrl = `mailto:aileen@yourdomain.com?subject=Inquiry about ${encodeURIComponent(cleanName)} (${currentItemCode})&body=Hi Aileen,%0D%0A%0D%0AI am interested in your product: ${encodeURIComponent(cleanName)} (${currentItemCode}).%0D%0APlease send me more details, including a wholesale catalog and MOQ options.%0D%0A%0D%0AThanks!`;
+                    const mailtoUrl = `mailto:aileen2208@foxmail.com?subject=Inquiry about ${encodeURIComponent(cleanName)} (${currentItemCode})&body=Hi Aileen,%0D%0A%0D%0AI am interested in your product: ${encodeURIComponent(cleanName)} (${currentItemCode}).%0D%0APlease send me more details, including a wholesale catalog and MOQ options.%0D%0A%0D%0AThanks!`;
                     window.location.href = mailtoUrl;
                 };
             }
@@ -1211,6 +1211,24 @@
             thumbs.forEach(t => t.classList.remove('active'));
             element.classList.add('active');
         }
+        // ==========================================
+        // 🏷️ 动态更新页面标题 (谷歌 SEO 优化)
+        // ==========================================
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const itemParam = urlParams.get('item');
+
+            if (itemParam) {
+                // 将 URL 参数中的 "scalloped-wood-floor-lamp..." 格式化为英文标题
+                const formattedTitle = itemParam
+                    .split('-')
+                    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                    .join(' ');
+
+                // 动态更新页面 <title>
+                document.title = `${formattedTitle} | Aileen's Home Studio`;
+            }
+        })();
     </script>
 </body>
 </html>
