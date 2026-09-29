@@ -2,8 +2,31 @@
 const detailsDatabase = {
 
     // ==========================================
-    // 🎄 大类 1：Holiday Decor (cat: "holiday")
+    // 🎄 大类 1：Home (cat: "home")
+    "mushroom zombie figure mei mei art toy collectible desktop decor": {
+        category: "home", 
+        subcategory: "toys", 
+        code: "Item Code: t20260929",
+        description: "Meet Mei Mei, an original, handcrafted mushroom zombie art toy that brings a delightfully whimsical spin to classic zombie aesthetics! Featuring a pastel pink mushroom cap with white polka dots, iconic double dumbbells, and an expressive blue-tinted character design, Mei Mei is a must-have collectible for art toy lovers, pop-culture enthusiasts, and unique home decor collectors.",
+        images: [
+            "images/products/home/toys/t20260929/mei-mei-mushroom-zombie-figure.jpg",
+            "images/products/home/toys/t20260929/mei-mei-zombie-figure-entryway.jpg",
+            "images/products/home/toys/t20260929/mei-mei-zombie-figure-home-shelf.jpg",
+            "images/products/home/toys/t20260929/mei-mei-zombie-figure-living-room.jpg",
+            "images/products/home/toys/t20260929/mei-mei-zombie-figure-office-desk.jpg",
+            "images/products/home/toys/t20260929/mei-mei-zombie-figure-study-desk.jpg"
+        ], 
+        specs: [
+            { label: "Product Name", value: "Mei Mei Mushroom Zombie Art Toy Figure" },
+            { label: "Character", value: "Mei Mei" },
+            { label: "Product Type", value: "Designer Art Toy / Collectible Figure / Desktop Statue" },
+            { label: "Material", value: "High-Quality Resin / PVC (Hand-painted)" },
+            { label: "Base Type", value: "Circular Display Base with Nameplate" },
+            { label: "Suitable Scenes", value: "Office Desk, Entrance Shelf, Bookshelf, Living Room, Display Cabinet" }
+        ]
+    },
     // ==========================================
+    // 🎄 大类 1：Holiday Decor (cat: "holiday")
     "pre lit slim pencil christmas tree with artificial green pine for indoor home holiday decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
