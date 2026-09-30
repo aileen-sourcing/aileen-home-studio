@@ -1045,6 +1045,29 @@ const detailsDatabase = {
             { label: "Applications", value: "Living Room Side Tables, Bedrooms, Offices, Hotel Suites" }
         ]
     },
+    "mushroom table lamp wood base vintage bedside desk decor": {
+        category: "lighting",
+        subcategory: "table-lamps", 
+        code: "Item Code: tb20260930",
+        description: "Bring a warm, nostalgic ambiance to your home or office with our Vintage Wooden Mushroom Table Lamp. Crafted with a natural wood-grain base and an iconic milky white shade, this aesthetic lamp delivers soft, eye-caring illumination that complements mid-century modern, Wabi-sabi, and rustic interior designs. Whether styled as a cozy bedside night light in the bedroom, a chic accent piece on a living room TV stand, or a functional reading light on a study desk, this statement piece effortlessly blends form and function.",
+        images: [
+            "images/products/lighting/table-lamps/tb20260930/mushroom-table-lamp-wood-base.jpg",
+            "images/products/lighting/table-lamps/tb20260930/wood-mushroom-table-lamp-living-room.jpg",
+            "images/products/lighting/table-lamps/tb20260930/bedside-mushroom-lamp-night-light.jpg",
+            "images/products/lighting/table-lamps/tb20260930/desk-mushroom-lamp-study-lighting.jpg",
+            "images/products/lighting/table-lamps/tb20260930/retro-mushroom-lamp-tv-stand-decor.jpg",
+            "images/products/lighting/table-lamps/tb20260930/wooden-mushroom-lamp-warm-glow.jpg"
+
+        ], 
+        specs: [
+            { label: "Product Name", value: "Vintage Wooden Mushroom Table Lamp" },
+            { label: "Style", value: "Mid-Century Modern / Retro / Wabi-sabi" },
+            { label: "Primary Material", value: "Natural Wood Base" },
+            { label: "Power Source", value: "Plug-in Electric" },
+            { label: "Certifications", value: "CE, RoHS, FCC Certified" },
+            { label: "Applications", value: "Bedroom Bedside, Living Room, Study Desk, Office" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "floor lamp")
     "wooden carved floor lamp wabi sabi linen shade standing lamp for living room bedroom decor": {
