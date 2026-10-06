@@ -1508,14 +1508,18 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "fan light")
-    "ceiling fan light wood blade brown flush mount for bedroom": {
+    "fan light retro wood blade low profile rustic ceiling decorative fixture": {
         category: "lighting",
         subcategory: "fan-lights", 
         code: "Item Code: fs20260731",
         description: "Dual-function flush mount ceiling fixture combining ventilation fan and lighting source. Equipped with five natural wooden fan blades and warm yellow frosted glass lamp covers. Low-profile design suits low ceiling space. Stable silent operation provides gentle air circulation while offering soft ambient lighting. Ideal decorative lighting for bedroom, dining room, apartment, lounge and cafe interior renovation.",
         images: [
-            "images/products/lighting/fan-lights/fs20260731/retro-wood-blade-ceiling-fan-light-white-background-product-shot-01.jpg",
-            "images/products/lighting/fan-lights/fs20260731/flush-mount-fan-light-bedroom-interior-scene-display-02.jpg"
+            "images/products/lighting/fan-lights/fs20260731/retro-wood-blade-ceiling-fan-light-white-background-product-shot.jpg",
+            "images/products/lighting/fan-lights/fs20260731/flush-mount-fan-light-bedroom-interior-scene-display.jpg",
+            "images/products/lighting/fan-lights/fs20260731/retro-wood-ceiling-fan-with-lights-cream-living-room.jpg",
+            "images/products/lighting/fan-lights/fs20260731/retro-wood-ceiling-fan-with-lights-living-room-dark.jpg",
+            "images/products/lighting/fan-lights/fs20260731/retro-wood-ceiling-fan-with-lights-luxury-living-room.jpg",
+            "images/products/lighting/fan-lights/fs20260731/retro-wood-ceiling-fan-with-lights-modern-living-room.jpg"
         ], 
         specs: [
             { label: "Material", value: "Black metal base / solid wood fan blade / frosted glass lampshade" },
