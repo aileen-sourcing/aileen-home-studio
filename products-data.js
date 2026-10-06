@@ -1508,7 +1508,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "fan light")
-    "ceiling fan light, wood blade brown flush mount bedroom lamp": {
+    "ceiling fan light wood blade brown flush mount for bedroom": {
         category: "lighting",
         subcategory: "fan-lights", 
         code: "Item Code: fs20260731",
@@ -1525,6 +1525,26 @@ const detailsDatabase = {
             { label: "Control Mode", value: "Optional remote control / wall switch control" },
             { label: "Features", value: "Low-profile structure, silent running, ventilation & lighting 2-in-1, retro vintage home aesthetic" },
             { label: "Applicable Space", value: "Bedroom, dining room, apartment, lounge, cafe, indoor living area" }
+        ]
+    },
+    "fan light modern brass ceiling with wood blades for living room": {
+        category: "lighting",
+        subcategory: "fan-lights", 
+        code: "Item Code: fs20261006",
+        description: "Upgrade your living space with the ultimate blend of style and functionality. This fan light features a sophisticated brushed brass motor housing paired with rich dark wooden blades, bringing a touch of modern luxury and cozy warmth to any room. Designed for both aesthetic appeal and everyday comfort, it serves as a striking statement piece while delivering quiet, reliable airflow.",
+        images: [
+            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-white-background.jpg",
+            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-illuminated.jpg",
+            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-modern-home.jpg",
+            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-living-room.jpg",
+            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-dark-interior.jpg",
+            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-decor-style.jpg"
+        ], 
+        specs: [
+            { label: "Product Type", value: "Ceiling Fan with Light (Fan Light)" },
+            { label: "Style", value: "Modern, Mid-Century, Industrial" },
+            { label: "Finish / Color", value: "Brushed Brass Motor & Dark Wood Blades" },
+            { label: "Applicable Space", value: "BLiving Room, Bedroom, Dining Room, Study" }
         ]
     },
     // ==========================================
