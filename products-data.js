@@ -1400,10 +1400,10 @@ const detailsDatabase = {
         images: [
             "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-white-background.jpg",
             "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-wood-brass-detail.jpg",
-            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-minimalist-dining.jpg",
-            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-rustic-wooden-room.jpg",
+            "images/products/lighting/pendants/p20260905/glass-pendant-blue-scallop-vintage-brass-hanging-fixture.jpg",
+            "images/products/lighting/pendants/p20260905/glass-pendant-green-scallop-vintage-brass-hanging-fixture.jpg",
             "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-dining-table-decor.jpg",
-            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-japandi-tea-room.jpg"
+            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-minimalist-dining.jpg"
         ], 
         specs: [
             { label: "Product Type", value: "Single Pendant Light / Hanging Lamp" },
