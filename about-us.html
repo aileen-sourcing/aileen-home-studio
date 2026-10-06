@@ -115,6 +115,105 @@
           padding: 50px 15px;
         }
       }
+      /* ========================================================
+         新增：独立不冲突的流程图样式
+         ======================================================== */
+      .new-process-container {
+        margin-top: 60px;
+        text-align: center;
+        border-top: 1px solid #eef2f5;
+        padding-top: 50px;
+      }
+
+      .new-process-heading {
+        font-size: 24px;
+        font-weight: 700;
+        color: #111111;
+        margin-bottom: 35px;
+        letter-spacing: -0.01em;
+      }
+
+      .new-process-steps-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+      }
+
+      .new-process-card {
+        background: #fbfcfd;
+        border: 1px solid #eef2f5;
+        border-radius: 8px;
+        padding: 30px 20px;
+        flex: 1;
+        text-align: left;
+        transition: all 0.3s ease;
+      }
+
+      .new-process-card:hover {
+        border-color: #d1dbe3;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+        transform: translateY(-3px);
+      }
+
+      .new-step-badge {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #b87333;
+        background: #fdf5ef;
+        border: 1px solid #fae3d0;
+        padding: 3px 10px;
+        border-radius: 20px;
+        margin-bottom: 14px;
+        letter-spacing: 0.05em;
+      }
+
+      .new-process-card h4 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #111111;
+        margin: 0 0 10px 0;
+      }
+
+      .new-process-card p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #666666;
+        margin: 0;
+      }
+
+      .new-process-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #b87333;
+        flex-shrink: 0;
+        width: 28px;
+        height: 28px;
+        opacity: 0.8;
+      }
+
+      .new-process-arrow svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      /* 手机端自适应 */
+      @media (max-width: 768px) {
+        .new-process-steps-wrapper {
+          flex-direction: column;
+          gap: 15px;
+        }
+        .new-process-arrow {
+          transform: rotate(90deg);
+          margin: 5px 0;
+        }
+        .new-process-card {
+          text-align: center;
+        }
+      }
     </style>
 </head>
 <body>
@@ -163,34 +262,45 @@
 
     </div>
 
-  <!-- 新增：合作流程版块 (How We Work) -->
-    <div class="process-container">
-      <h3 class="process-heading">How We Work With You</h3>
-      <div class="process-grid">
-        
-        <!-- 步骤 1 -->
-        <div class="process-step">
-          <span class="step-number">Step 01</span>
-          <h4>Inquiry & Sourcing</h4>
-          <p>Send us your product photos, links, or specifications. We match the right resources and quote competitive prices.</p>
-        </div>
-
-        <!-- 步骤 2 -->
-        <div class="process-step">
-          <span class="step-number">Step 02</span>
-          <h4>Flexible Order</h4>
-          <p>Whether it's one piece for retail or a bulk commercial order, we tailor the terms and quantities to fit your exact needs.</p>
-        </div>
-
-        <!-- 步骤 3 -->
-        <div class="process-step">
-          <span class="step-number">Step 03</span>
-          <h4>Inspection & Delivery</h4>
-          <p>We handle strict pre-shipment quality checks and arrange secure, reliable logistics straight to your destination.</p>
-        </div>
-
+  <!-- 新增：精美横向带箭头的合作流程板块 -->
+  <div class="new-process-container">
+    <h3 class="new-process-heading">How We Work With You</h3>
+    
+    <div class="new-process-steps-wrapper">
+      
+      <!-- 步骤 1 -->
+      <div class="new-process-card">
+        <span class="new-step-badge">Step 01</span>
+        <h4>Inquiry & Sourcing</h4>
+        <p>Send us your product photos, links, or specifications. We match the right resources and quote competitive prices.</p>
       </div>
+
+      <!-- 箭头 1 -> 2 -->
+      <div class="new-process-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+
+      <!-- 步骤 2 -->
+      <div class="new-process-card">
+        <span class="new-step-badge">Step 02</span>
+        <h4>Flexible Order</h4>
+        <p>Whether it's one piece for retail or a bulk commercial order, we tailor the terms and quantities to fit your exact needs.</p>
+      </div>
+
+      <!-- 箭头 2 -> 3 -->
+      <div class="new-process-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+
+      <!-- 步骤 3 -->
+      <div class="new-process-card">
+        <span class="new-step-badge">Step 03</span>
+        <h4>Inspection & Delivery</h4>
+        <p>We handle strict pre-shipment quality checks and arrange secure, reliable logistics straight to your destination.</p>
+      </div>
+
     </div>
+  </div>
 
   </div>
 </section>
