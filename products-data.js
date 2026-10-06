@@ -897,11 +897,15 @@ const detailsDatabase = {
 
         ], 
         specs: [
-            { label: "Material", value: "Ribbed solid wood lampshade, solid wood base, metal fitting" },
+            { label: "Material", value: "Ribbed solid wood lampshade, solid wood base, metal fitting(Basswood + Rubberwood)" },
             { label: "Light Source", value: "E26 or E27, Bulb not included" },
             { label: "Color", value: "Natural wood tone" },
             { label: "Power", value: "Max 40W" },
             { label: "Voltage", value: "AC 110-240V" },
+            { label: "Product Size", value: "Dia18CMxH30CM/Dia25CMxH45CM" },
+            { label: "Package Size", value: "41x26x26CM/56x32x32CM" },
+            { label: "Net Weight", value: "0.62KG/1.51KG" },
+            { label: "Gross Weight", value: "1.15KG/2.36KG" },
             { label: "IP", value: "IP20" },
             { label: "Control method", value: "Inline On/Off push button switch" },
             { label: "Environment", value: "Safety tested for use indoors and in dry locations not directly exposed to excessive moisture and water." },
