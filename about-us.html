@@ -231,7 +231,7 @@
         .new-process-card {
           width: 100%;
           text-align: center;
-          padding: 35px 40px;
+          padding: 35px 5px;
         }
       }
 
@@ -276,8 +276,11 @@
 
       @media (max-width: 768px) {
         .back-home-btn {
-          top: 15px;
-          left: 15px;
+          position: relative; /* 改为相对定位，使其可以正常撑开上方高度 */
+          top: 0;
+          left: 0;
+          display: inline-flex;
+          margin-bottom: 20px; /* 在手机端给按钮下方留出距离，避免挡住下面的标题 */
           padding: 6px 12px;
           font-size: 13px;
         }
