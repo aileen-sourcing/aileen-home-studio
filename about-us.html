@@ -143,12 +143,10 @@
 
       .new-process-card {
         background: #fbfcfd;
-        border: 1px solid #eef2f5;
+        border: 1px solid #d1dbe3;
         border-radius: 8px;
         padding: 30px 20px;
-        flex: 1;             /* 核心：三张卡片等分宽度 */
-        width: 0;            /* 配合 flex: 1 强制平分，防止被内容撑开 */
-        min-height: 150px;   /* 统一卡片最小高度，保证视觉整齐 */
+        flex: 1;             /* 电脑端保持均分，但允许内容自适应 */
         text-align: left;
         transition: all 0.3s ease;
       }
@@ -203,8 +201,25 @@
         stroke-width: 2.5px; /* 加粗线条 */
       }
 
-      /* 手机端自适应 */
+      /* 手机端自适应字号与排版调整 */
       @media (max-width: 768px) {
+        .about-section {
+          padding: 50px 15px;
+        }
+
+        /* 手机端：把 ABOUT US 小标题字号调小 */
+        .about-subtitle {
+          font-size: 22px; 
+          margin-bottom: 10px;
+        }
+
+        /* 手机端：把主标题字号调小，确保不拥挤、不换行过长 */
+        .about-title {
+          font-size: 20px; 
+          line-height: 1.4;
+          margin-bottom: 15px;
+        }
+
         .new-process-steps-wrapper {
           flex-direction: column;
           gap: 15px;
@@ -214,7 +229,8 @@
           margin: 5px 0;
         }
         .new-process-card {
-          text-align: center;
+          width: 100%;
+          text-align: left;
         }
       }
 
