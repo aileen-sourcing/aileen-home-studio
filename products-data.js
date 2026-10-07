@@ -1420,6 +1420,30 @@ const detailsDatabase = {
             { label: "Application", value: "Dining Room, Kitchen Island, Bedroom, Tea Room, Cafe" }
         ]
     },
+    "wood pendant light scandinavian cluster hanging fixture": {
+        category: "lighting",
+        subcategory: "pendants", 
+        code: "Item Code: p20261007",
+        description: "Bring organic warmth and effortless Scandinavian charm to your interior space with our handcrafted wood pendant light. Featuring a sophisticated multi-light cluster design, this hanging fixture serves as a stunning focal point over dining tables, kitchen islands, or modern living areas. Crafted from sustainable natural timber, it casts a soft, inviting glow that elevates your daily living experience.",
+        images: [
+            "images/products/lighting/pendants/p20261007/wood-pendant-light-scandinavian-cluster-ceiling-fixture.jpg",
+            "images/products/lighting/pendants/p20261007/modern-hanging-lamp-handcrafted-natural-texture-details.jpg",
+            "images/products/lighting/pendants/p20261007/kitchen-island-suspension-lamp-boho-home-furnishing.jpg",
+            "images/products/lighting/pendants/p20261007/dining-room-hanging-light-mid-century-interior-decor.jpg",
+            "images/products/lighting/pendants/p20261007/cluster-pendant-lighting-rustic-farmhouse-table-setup.jpg",
+            "images/products/lighting/pendants/p20261007/ambient-glow-multi-light-fixture-cozy-living-space.jpg"
+        ], 
+        specs: [
+            { label: "Product Type", value: "Wood Cluster Pendant Light / Hanging Fixture" },
+            { label: "Main Material", value: "Sustainable Natural Wood & Premium Hardware" },
+            { label: "Style", value: "Scandinavian, Mid-Century Modern, Rustic Farmhouse" },
+            { label: "Power", value: "Max 40W / per socket, the fixture can operate safely" },
+            { label: "IP", value: "IP20" },
+            { label: "Light Source", value: "E14" },
+            { label: "Voltage", value: "AC 110-240V" },
+            { label: "Application", value: "Dining Room, Kitchen Island, Bedroom, Tea Room, Cafe" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "ceiling light")
     "ceiling light, fabric flower flush mount living room decor": {
