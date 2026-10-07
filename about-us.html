@@ -204,7 +204,7 @@
       /* 手机端自适应字号与排版调整 */
       @media (max-width: 768px) {
         .about-section {
-          padding: 40px 15px;
+          padding: 40px 10px;
         }
 
         /* 手机端：把 ABOUT US 小标题字号调小 */
@@ -231,7 +231,12 @@
         .new-process-card {
           width: 100%;
           text-align: center;
-          padding: 35px 1px;
+          padding: 35px 25px; /* 恢复适当的左右内边距，让文字不贴边框 */
+          
+          /* 2. 加上左右外边距，让卡片本身不会紧贴手机左右屏幕边缘 */
+          box-sizing: border-box;
+          margin-left: 15px;
+          margin-right: 15px;
         }
       }
 
