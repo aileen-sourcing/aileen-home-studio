@@ -220,13 +220,16 @@
 
         /* 仅调整下面 3 个框的容器边距，使其与上面保持一致 */
         .new-process-container {
-          margin-top: 30px;
-          padding-left: 5px;   /* 根据需要左右微调，让边缘对齐 */
-          padding-right: 5px;
+          margin-top: 40px;
+          text-align: center;
+          border-top: 1px solid #eef2f5;
+          padding-top: 25px;
         }
 
         .new-process-steps-wrapper {
-          flex-direction: column;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
           gap: 15px;
         }
         .new-process-arrow {
