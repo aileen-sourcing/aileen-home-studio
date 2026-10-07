@@ -280,16 +280,17 @@
       }
 
       @media (max-width: 768px) {
-        /* 1. 让整个板块顶部内边距减小，防止顶部留白太多 */
-        .about-section {
-          padding-top: 50px; 
+        /* 1. 在容器顶部腾出空间，让按钮稳稳待在 ABOUT US 的上一行 */
+        .about-container {
+          padding-top: 45px; 
         }
 
-        /* 2. 让返回按钮绝对定位贴在左上角，并紧贴顶端 */
+        /* 2. 让按钮固定在容器的左上角（即 ABOUT US 上方的那行空间里），不左右移动 */
         .back-home-btn {
-          top: 15px;  /* 距离顶部仅留 10px，不留白太多 */
-          left: 15px; /* 靠左对齐，您可以改小（如 10px）或改大 */
-          padding: 6px 12px;
+          position: absolute;
+          top: 0;       /* 贴在腾出的顶部空间最上方 */
+          left: 0;      /* 靠左对齐，不左右移动 */
+          padding: 5px 12px;
           font-size: 13px;
         }
       }
