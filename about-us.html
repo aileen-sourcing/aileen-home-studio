@@ -17,6 +17,7 @@
       }
 
       .about-container {
+        position: relative;
         max-width: 1000px;
         margin: 0 auto;
         text-align: center;
@@ -25,8 +26,8 @@
       /* 顶部小标题 */
       .about-subtitle {
         display: block;
-        font-size: 16px;
-        letter-spacing: 0.15em;
+        font-size: 32px;
+        letter-spacing: 0.1em;
         color: #b87333; /* 优雅金/铜色 */
         font-weight: 800;
         text-transform: uppercase;
@@ -145,7 +146,9 @@
         border: 1px solid #eef2f5;
         border-radius: 8px;
         padding: 30px 20px;
-        flex: 1;
+        flex: 1;             /* 核心：三张卡片等分宽度 */
+        width: 0;            /* 配合 flex: 1 强制平分，防止被内容撑开 */
+        min-height: 150px;   /* 统一卡片最小高度，保证视觉整齐 */
         text-align: left;
         transition: all 0.3s ease;
       }
@@ -184,20 +187,20 @@
         margin: 0;
       }
 
+      /* 升级版箭头样式：更有质感 */
       .new-process-arrow {
         display: flex;
         align-items: center;
         justify-content: center;
         color: #b87333;
         flex-shrink: 0;
-        width: 28px;
-        height: 28px;
-        opacity: 0.8;
+        width: 32px;
+        height: 32px;
       }
-
       .new-process-arrow svg {
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
+        stroke-width: 2.5px; /* 加粗线条 */
       }
 
       /* 手机端自适应 */
@@ -214,8 +217,11 @@
           text-align: center;
         }
       }
- /* 修改返回按钮的位置和布局 */
-.back-home-btn {
+
+ .back-home-btn {
+  position: absolute;
+  top: 0px;    /* 贴在最顶端 */
+  left: 20px;  /* 距离左侧边缘留出一点空隙（您可以把 20px 改大或改小，直到完美落在您圈出的红框位置） */
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -228,21 +234,19 @@
   padding: 8px 16px;
   border-radius: 30px;
   transition: all 0.3s ease;
-  
-  /* 调整到标题左上方的位置 */
-  margin-bottom: 25px; /* 与下方的 ABOUT US 拉开间距 */
-  margin-right: auto;  /* 如果需要靠左对齐，可配合父级或单独控制 */
+  z-index: 10;
 }
-      .back-home-btn:hover {
-        border-color: #b87333;
-        color: #b87333;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      }
 
-      .back-home-btn svg {
-        width: 16px;
-        height: 16px;
-      }
+.back-home-btn:hover {
+  border-color: #b87333;
+  color: #b87333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.back-home-btn svg {
+  width: 16px;
+  height: 16px;
+}
 
       /* 让父级 section 相对定位，以便按钮绝对定位在左上角 */
       .about-section {
@@ -269,11 +273,11 @@
      ABOUT US SECTION - AILEEN'S HOME STUDIO
      ======================================================== -->
 <section class="about-section">
+  <div class="about-container">
     <a href="javascript:history.back();" class="back-home-btn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
       Back
     </a>
-  <div class="about-container">
     
     <!-- 顶部居中标题与分割线 -->
     <span class="about-subtitle">ABOUT US</span>
@@ -327,9 +331,15 @@
       </div>
 
       <!-- 箭头 1 -> 2 -->
-      <div class="new-process-arrow">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </div>
+      <!-- 双重块状箭头 -->
+<div class="new-process-arrow">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+    <!-- 第一组双箭头（左侧） -->
+    <path d="M5.5 6L11.5 12L5.5 18L7.5 20L15.5 12L7.5 4L5.5 6Z" opacity="0.6"/>
+    <!-- 第二组双箭头（右侧） -->
+    <path d="M12.5 6L18.5 12L12.5 18L14.5 20L22.5 12L14.5 4L12.5 6Z"/>
+  </svg>
+</div>
 
       <!-- 步骤 2 -->
       <div class="new-process-card">
@@ -339,9 +349,15 @@
       </div>
 
       <!-- 箭头 2 -> 3 -->
-      <div class="new-process-arrow">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </div>
+      <!-- 双重块状箭头 -->
+<div class="new-process-arrow">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+    <!-- 第一组双箭头（左侧） -->
+    <path d="M5.5 6L11.5 12L5.5 18L7.5 20L15.5 12L7.5 4L5.5 6Z" opacity="0.6"/>
+    <!-- 第二组双箭头（右侧） -->
+    <path d="M12.5 6L18.5 12L12.5 18L14.5 20L22.5 12L14.5 4L12.5 6Z"/>
+  </svg>
+</div>
 
       <!-- 步骤 3 -->
       <div class="new-process-card">
