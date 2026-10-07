@@ -201,40 +201,32 @@
         stroke-width: 2.5px; /* 加粗线条 */
       }
 
-      /* 手机端自适应 */
+      /* 手机端自适应字号与排版调整 */
       @media (max-width: 768px) {
         .about-section {
           padding: 50px 15px;
         }
 
+        /* 手机端：把 ABOUT US 小标题字号调小 */
         .about-subtitle {
           font-size: 22px; 
           margin-bottom: 10px;
         }
 
+        /* 手机端：把主标题字号调小，确保不拥挤、不换行过长 */
         .about-title {
           font-size: 20px; 
           line-height: 1.4;
           margin-bottom: 15px;
         }
 
-        /* 仅调整下面 3 个框的容器边距，使其与上面保持一致 */
-        .new-process-container {
-          margin-top: 40px;
-          text-align: center;
-          border-top: 1px solid #eef2f5;
-          padding-top: 25px;
-        }
-
         .new-process-steps-wrapper {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+          flex-direction: column;
           gap: 15px;
         }
         .new-process-arrow {
           transform: rotate(90deg);
-          margin: 5px auto;
+          margin: 5px 0;
         }
         .new-process-card {
           width: 100%;
