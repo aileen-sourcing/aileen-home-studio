@@ -925,41 +925,6 @@
     object-fit: cover;
 }
 
-/* 🔄 全屏覆盖层（点击后覆盖当前页展现详细内容） */
-#about-detailed-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    z-index: 9999; /* 确保盖在最上层 */
-    display: none; /* 默认隐藏 */
-    overflow-y: auto;
-    padding: 80px 40px;
-    animation: aboutSlideUp 0.4s ease-out;
-}
-
-@keyframes aboutSlideUp {
-    from { transform: translateY(100%); }
-    to { transform: translateY(0); }
-}
-
-.about-close-btn {
-    position: fixed;
-    top: 30px;
-    right: 40px;
-    font-size: 30px;
-    cursor: pointer;
-    color: #0f172a;
-    z-index: 10000;
-}
-
-.about-overlay-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
 /* 📱 专门针对平板端（iPad竖屏/横屏等：768px 到 1024px）的 About Us 溢出修复 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .about-preview-section {
@@ -1323,7 +1288,7 @@
                     </div>
                 </li>
                 
-                <li><a href="javascript:void(0);" onclick="toggleAboutModal(true)">About</a></li>
+                <li><a href="about-us.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             
@@ -1453,69 +1418,20 @@
         </div>
     </section>
 
-    <section class="about-preview-section">
-    <div class="about-text-block">
-        <div class="about-label">ABOUT US</div>
-        <h2>Our Mission<br>Elevating Value</h2>
-        <p>
-            We understand the challenges businesses face when finding reliable suppliers, negotiating competitive prices, and ensuring product quality. We take the burden off your shoulders and provide a seamless procurement experience with comprehensive buying services including price negotiation, quality control inspections, logistics coordination, and shipping arrangements.
+    <section class="about-preview-section" style="display: flex; width: 100%; background: #ffffff;">
+    <div class="about-text-block" style="flex: 0 0 50%; background-color: #0f172a; color: #f1f5f9; padding: 60px 80px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: #b45309; margin-bottom: 15px; font-weight: bold;">ABOUT US</div>
+        <h2 style="font-size: 38px; line-height: 1.3; margin-bottom: 25px; font-weight: 600;">Our Mission<br>Elevating Value</h2>
+        <p style="font-size: 16px; line-height: 1.6; color: #cbd5e1; margin-bottom: 35px;">
+            We understand the challenges businesses face when finding reliable suppliers, negotiating competitive prices, and ensuring product quality. Let's make cross-border sourcing seamless.
         </p>
-        <button class="about-discover-btn" onclick="toggleAboutModal(true)">Discover More</button>
+        <!-- 核心：点击按钮直接跳转到独立 About 页面 -->
+        <a href="about-us.html" class="about-discover-btn" style="padding: 12px 30px; background: transparent; border: 1px solid #ffffff; color: #ffffff; text-transform: uppercase; font-weight: 600; letter-spacing: 1px; text-align: center; display: inline-block;">Discover More</a>
     </div>
-    <div class="about-image-block">
-        <img src="./images/about-side.jpg" alt="Aileen's Home Studio" title="Aileen's Home Studio" loading="lazy" width="800" height="600">
+    <div class="about-image-block" style="flex: 0 0 50%; overflow: hidden;">
+        <img src="./images/about-side.jpg" alt="Aileen's Home Studio" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
 </section>
-
-
-<!-- 🔄 全屏覆盖层：点击导航栏 About 或 Discover More 按钮时覆盖当前页展现 -->
-<div id="about-detailed-overlay">
-    <!-- 右上角关闭按钮 -->
-    <div class="about-close-btn" onclick="toggleAboutModal(false)">&times;</div>
-    
-    <div class="about-overlay-content">
-        <!-- 头部：品牌使命 -->
-        <div style="text-align: center; margin-bottom: 60px;">
-            <span style="font-size: 13px; letter-spacing: 0.2em; color: var(--accent-color); font-weight: 700; text-transform: uppercase; display: block; margin-bottom: 10px;">About US</span>
-            <h1 style="font-size: 42px; color: var(--primary-color); margin-bottom: 20px; font-weight: 700; line-height: 1.2;">Illuminating Spaces, <br>Celebrating Moments</h1>
-            <div style="width: 50px; height: 3px; background-color: var(--accent-color); margin: 20px auto 0; border-radius: 2px;"></div>
-        </div>
-        
-        <!-- 正文：企业概况（适配您的圣诞装饰与灯饰贸易定位） -->
-        <div style="font-size: 16px; color: var(--text-color); line-height: 1.8; margin-bottom: 50px; text-align: justify;">
-            <p style="margin-bottom: 20px;">
-                Welcome to your premier sourcing partner for premium home and holiday essentials. 
-                Based in Guangdong, China—the global heart of advanced manufacturing—we specialize in bridging the gap between international buyers and elite local production clusters, 
-                connecting your business directly with high-quality home lighting, exquisite festive decorations, and top-tier seasonal raw materials.
-            </p>
-            <p style="margin-bottom: 20px;">
-                As a dynamic, growth-driven trading enterprise, we are fueled by a deep passion for modern aesthetics, strict quality control, and exceptional service. 
-                We eliminate the typical complexities of cross-border sourcing—such as communication gaps and fragmented logistics—by delivering a curated, 
-                reliable product catalog alongside a seamless end-to-end procurement experience tailored to your market needs.
-            </p>
-        </div>
-
-        <!-- 底部优势：三栏式排版 -->
-        <div style="display: flex; gap: 30px; margin-top: 40px; flex-wrap: wrap;">
-            
-            <div style="flex: 1; min-width: 280px; background: var(--bg-light); padding: 30px; border-radius: 6px; border: 1px solid var(--border-color);">
-                <h3 style="color: var(--accent-color); margin-bottom: 12px; font-size: 1.2rem; font-weight: 700;">Premium Quality</h3>
-                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Rigorous supplier evaluations and quality control inspections ensuring international standards.</p>
-            </div>
-            
-            <div style="flex: 1; min-width: 280px; background: var(--bg-light); padding: 30px; border-radius: 6px; border: 1px solid var(--border-color);">
-                <h3 style="color: var(--accent-color); margin-bottom: 12px; font-size: 1.2rem; font-weight: 700;">Customer Focus</h3>
-                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Personalized service tailored to your specific requirements and business needs.</p>
-            </div>
-            
-            <div style="flex: 1; min-width: 280px; background: var(--bg-light); padding: 30px; border-radius: 6px; border: 1px solid var(--border-color);">
-                <h3 style="color: var(--accent-color); margin-bottom: 12px; font-size: 1.2rem; font-weight: 700;">Comprehensive Service</h3>
-                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Full procurement support from sourcing to logistics and shipping arrangements.</p>
-            </div>
-            
-        </div>
-    </div>
-</div>
 
 <section id="features" class="features">
         <div class="container">
@@ -1627,7 +1543,7 @@
             </div>
             <div class="footer-column">
                 <h4>OUR COMPANY</h4>
-                <a href="javascript:void(0);" onclick="toggleAboutModal(true)">About Us</a>
+                <a href="about-us.html">About Us</a>
             </div>
             <div class="footer-column">
                 <h4>CUSTOMER SERVICE</h4>
@@ -1694,20 +1610,6 @@
             prevBtn.addEventListener('click', () => { 
                 track.scrollBy({ left: -324, behavior: 'smooth' }); 
             });
-        }
-
-        // About Us 全屏覆盖层显隐控制器
-        function toggleAboutModal(show) {
-            const overlay = document.getElementById('about-detailed-overlay');
-            if (overlay) {
-                if (show) {
-                    overlay.style.display = 'block';
-                    document.body.style.overflow = 'hidden';
-                } else {
-                    overlay.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-            }
         }
 
         // 智能搜索框跳转逻辑
