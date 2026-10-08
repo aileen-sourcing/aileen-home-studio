@@ -1102,7 +1102,8 @@
             firstImg = product.images[0];
         }
 
-        const productPageUrl = `product-detail.html?item=${encodeURIComponent(key)}`;
+        const formattedKeyForUrl = key.trim().replace(/\s+/g, '-');
+        const productPageUrl = `product-detail.html?item=${encodeURIComponent(formattedKeyForUrl)}`;
         
         const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key + ' (' + (product.code || '') + '). Please provide a wholesale quote.')}`;
         const mailtoUrl = `mailto:2040967669aileen@gmail.com?subject=${encodeURIComponent('Wholesale Inquiry for ' + formattedTitle)}&body=${encodeURIComponent('Product: ' + key + '\n' + (product.code || '') + '\n\nPlease send us the latest pricing and MOQ.')}`;
