@@ -44,7 +44,7 @@ const detailsDatabase = {
             { label: "Application", value: "Living room entryway apartment indoor christmas decoration" }
         ]
     },
-    "pre lit full dense christmas tree, artificial pine, green foliage for indoor holiday living room decor": {
+    "pre lit full dense christmas tree artificial pine green foliage for indoor holiday living room decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: ct26060707",
@@ -83,7 +83,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "wreath")
-    "rustic farmhouse christmas wreath, grapevine rattan base, red white for front door seasonal wall decor": {
+    "rustic farmhouse christmas wreath grapevine rattan base red white for front door seasonal wall decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260708",
@@ -103,7 +103,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor decoration" }
         ]
     },
-    "frosted snowy christmas wreath, grapevine rattan frame, pink red for front door winter wall decor": {
+    "frosted snowy christmas wreath grapevine rattan frame pink red for front door winter wall decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260709",
@@ -123,7 +123,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor holiday decoration" }
         ]
     },
-    "autumn golden christmas wreath, grapevine rattan base, orange gold for front door fall seasonal wall decor": {
+    "autumn golden christmas wreath grapevine rattan base orange gold for front door fall seasonal wall decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260710",
@@ -144,7 +144,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }
         ]
     },
-    "luxury golden christmas wreath, grapevine rattan frame, full gold for front door elegant holiday wall decor": {
+    "luxury golden christmas wreath grapevine rattan frame full gold for front door elegant holiday wall decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260711",
@@ -166,7 +166,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }
         ]
     },
-    "christmas wreath, metallic pine material 60cm silver poinsettia design for front door wall hanging decor": {
+    "christmas wreath metallic pine material 60cm silver poinsettia design for front door wall hanging decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
         subcategory: "christmas", 
         code: "Item Code: w20260712",
@@ -228,7 +228,7 @@ const detailsDatabase = {
             { label: "Features", value: "Lightweight, reusable, easy hanging, weather resistant for sheltered outdoor use" }
         ]
     },
-    "christmas wreath, pvc pine red gold poinsettia bauble for front door home wall decoration": {
+    "christmas wreath pvc pine red gold poinsettia bauble for front door home wall decoration": {
         category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260716",
@@ -251,7 +251,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }
         ]
     },
-    "purple snow frosted pine wreath, 30cm glitter poinsettia for holiday front door wall decor": {
+    "purple snow frosted pine wreath 30cm glitter poinsettia for holiday front door wall decor": {
         category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260717",
@@ -274,7 +274,7 @@ const detailsDatabase = {
             { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }
         ]
     },
-    "frosted snowy pine wreath, red white star snowflake striped bow for winter xmas front door decor": {
+    "frosted snowy pine wreath red white star snowflake striped bow for winter xmas front door decor": {
         category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260718",
@@ -357,7 +357,7 @@ const detailsDatabase = {
             { label: "Occasion", value: "Christmas, Winter Holiday, New Year, Party, Holiday Gifting" }
         ]
     },
-    "mini christmas tree with bow and ornaments, frosted tabletop holiday decorating": {
+    "mini christmas tree with bow and ornaments frosted tabletop holiday decorating": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260716",
@@ -404,7 +404,7 @@ const detailsDatabase = {
             { label: "Feature", value: "Lightweight, Reusable, Pre-assorted shapes, Ready-to-hang" }
         ]
     },
-    "shatterproof christmas baubles set, mixed glitter and shiny balls for xmas tree home decor": {
+    "shatterproof christmas baubles set mixed glitter and shiny balls for xmas tree home decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: cb20260803",
@@ -474,7 +474,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Summer decor")
-    "summer wreath, artificial greenery sunflower lemon fruit yellow for front door home wall decor": {
+    "summer wreath artificial greenery sunflower lemon fruit yellow for front door home wall decor": {
         category: "holiday",
         subcategory: "summer-decor", 
         code: "Item Code: sm20260731",
@@ -497,7 +497,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Fall decor")
-    "autumn wreath, dried foliage maple leaf faux pumpkin orange brown for harvest front door wall decor": {
+    "autumn wreath dried foliage maple leaf faux pumpkin orange brown for harvest front door wall decor": {
         category: "holiday",
         subcategory: "fall-decor", 
         code: "Item Code: fw20260727",
@@ -831,7 +831,7 @@ const detailsDatabase = {
             { label: "Application", value: "For Christmas baubles, Xmas ornaments, small holiday decorative accessories, seasonal home storage" },
         ]
     },
-    "christmas storage bag, oxford fabric, 128 slots for 3 inch orenaments": {
+    "christmas storage bag oxford fabric 128 slots for 3 inch orenaments": {
         category: "holiday",
         subcategory: "storage-bags", 
         code: "Item Code: sb20260803",
@@ -856,7 +856,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas-reindeer-decorations")
-    "christmas reindeer figurine, flocked velvet red with silver antler for indoor decor": {
+    "christmas reindeer figurine flocked velvet red with silver antler for indoor decor": {
         category: "holiday",
         subcategory: "christmas-reindeer-decorations", 
         code: "Item Code: cl20260801",
@@ -913,7 +913,7 @@ const detailsDatabase = {
             { label: "Application", value: "Bedroom bedside, living room side table, study desk, hotel room decoration" }
         ]
     },
-    "table lamp, wooden base floral shade, cream creates soft warm glow for bedside": {
+    "table lamp wooden base floral shade, cream creates soft warm glow for bedside": {
         category: "lighting",
         subcategory: "table-lamps", 
         code: "Item Code: tb20260701",
@@ -1237,13 +1237,35 @@ const detailsDatabase = {
             "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-night-cozy-glow.jpg"
         ], 
         specs: [
-            { label: "MProduct Type", value: "Tripod Floor Lamp / Column Accent Light" },
+            { label: "Product Type", value: "Tripod Floor Lamp / Column Accent Light" },
             { label: "Style", value: "Mid-Century Modern / Japandi / Minimalist" },
             { label: "Material", value: "Solid Wood (Light Oak / Dark Walnut)/High-Density Linen Fabric" },
             { label: "Bulb Socket", value: "E26 / E27 (Bulb Replaceable)" },
             { label: "Voltage", value: "110V - 240V (Global Compatibility)" },
             { label: "Certifications", value: "CE / RoHS / UL Listed components" },
             { label: "Application", value: "Living Room, Bedroom, Office, Hotel Lounge" }
+        ]
+    },
+    "mid century floor lamp with table amber glass arc design for room": {
+        category: "lighting",
+        subcategory: "floor-lamps", 
+        code: "Item Code: fl20261008",
+        description: "Upgrade your home decor with this versatile mid-century floor lamp with table. Designed with a warm amber glass shade, an elegant arching stem, and a built-in wooden side table, this 2-in-1 standing lamp combines mid-century modern aesthetic with everyday practicality. Whether placed next to your sofa or in a cozy reading corner, it offers the perfect blend of ambient lighting and convenient storage.",
+        images: [
+            "images/products/lighting/floor-lamps/fl20261008/mid-century-floor-lamp-with-table-main.jpg",
+            "images/products/lighting/floor-lamps/fl20261008/mid-century-arc-floor-lamp-home-office.jpg",
+            "images/products/lighting/floor-lamps/fl20261008/amber-glass-arc-floor-lamp-side-table.jpg",
+            "images/products/lighting/floor-lamps/fl20261008/modern-floor-lamp-with-table-living-room.jpg",
+            "images/products/lighting/floor-lamps/fl20261008/vintage-standing-lamp-with-table-reading.jpg",
+            "images/products/lighting/floor-lamps/fl20261008/wood-floor-lamp-with-tray-table-corner.jpg"
+        ], 
+        specs: [
+            { label: "Product Type", value: "Mid-Century Arc Floor Lamp with Side Table" },
+            { label: "Style", value: "Mid-Century Modern / Vintage / Retro" },
+            { label: "Light Source Type", value: "E26 / E27 Base (LED Bulb Compatible)" },
+            { label: "Voltage", value: "110V - 240V (Global Compatibility)" },
+            { label: "Finish Color", value: "Bronze / Dark Espresso & Amber" },
+            { label: "Application", value: "Living Room, Bedroom, Home Office, Reading Nook" }
         ]
     },
     // ==========================================
@@ -1268,7 +1290,7 @@ const detailsDatabase = {
             { label: "Features", value: "Adjustable hanging cord, soft light diffusion, retro lotus shape, easy installation" }
         ]
     },
-    "pendant light, walnut wood multi head linear brown fixture for dining room ceiling indoor decor": {
+    "pendant light walnut wood multi head linear brown fixture for dining room ceiling indoor decor": {
         category: "lighting",
         subcategory: "pendants", 
         code: "Item Code: p20260701",
@@ -1446,7 +1468,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "ceiling light")
-    "ceiling light, fabric flower flush mount living room decor": {
+    "ceiling light fabric flower flush mount living room decor": {
         category: "lighting",
         subcategory: "ceiling-light", 
         code: "Item Code: xd20260731",
