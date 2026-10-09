@@ -318,7 +318,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "mini christmas tree")
-    "mini tabletop christmas tree set, artificial pine, red plaid for indoor table decor": {
+    "mini tabletop christmas tree set artificial pine red plaid for indoor table decor": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: mt20260714",
@@ -612,7 +612,7 @@ const detailsDatabase = {
             { label: "Application", value: "Suitable for indoor and covered outdoor use" },
         ]
     },
-    "easter egg wreath, artificial foam, pastel, front door": {
+    "easter egg wreath artificial foam pastel front door": {
         category: "holiday",
         subcategory: "easter", 
         code: "Item Code: ew20260728",
@@ -730,7 +730,7 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "christmas poinsettia, gold glitter fabric holiday indoor home decor": {
+    "christmas poinsettia gold glitter fabric holiday indoor home decor": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260721",
@@ -748,7 +748,7 @@ const detailsDatabase = {
             { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
         ]
     },
-    "christmas silver fabric poinsettia, glitter accent holiday interior ornament": {
+    "christmas silver fabric poinsettia glitter accent holiday interior ornament": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260722",
@@ -764,6 +764,27 @@ const detailsDatabase = {
             { label: "Color", value: "Metallic silver, custom color options supported" },
             { label: "Features", value: "Lightweight, easy insertion, durable reusable structure, full layered flower shape" },
             { label: "Application", value: "Christmas tree ornament, wreath accessory, garland embellishment, winter holiday table arrangement" }
+        ]
+    },
+    "white glitter artificial poinsettia flower for holiday home and tree decor": {
+        category: "holiday",
+        subcategory: "christmas-flowers", 
+        code: "Item Code: cf20261009",
+        description: "This white glitter artificial poinsettia flower is a practical festive ornament. It supports various diy holiday arrangements for indoor spaces. The soft fabric with subtle glitter delivers refined holiday aesthetics. You may fix it on christmas trees wreaths or garlands to enrich your seasonal decoration layout.",
+        images: [
+            "images/products/holiday-decor/christmas-flowers/cf20261009/white-artificial-christmas-poinsettia-flower-decoration.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20261009/white-christmas-poinsettia-flower-size-measurement-photo.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20261009/white-glitter-poinsettia-flower-back-detail-closeup.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20261009/faux-white-christmas-poinsettia-flower-white-background.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20261009/white-poinsettia-flower-decorated-on-christmas-tree.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20261009/white-christmas-poinsettia-flower-home-lifestyle-scene.jpg",
+        ], 
+        specs: [
+            { label: "Product Name", value: "white glitter artificial poinsettia flower" },
+            { label: "Material", value: "fabric with silver glitter powder plastic base" },
+            { label: "Color", value: "ivory glitter white" },
+            { label: "Usage", value: "diy festive decorative accessory" },
+            { label: "Application", value: "holiday home tree wreath garland styling" }
         ]
     },
     // ==========================================
@@ -1603,7 +1624,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // ⚙️ 大类 3：Raw Materials (cat: "material")
-    "pe tips raw material, artificial tree branch, mixed styles, green, for tree making": {
+    "pe tips raw material artificial tree branch mixed styles green for tree making": {
         category: "material",
         subcategory: "pe-tips", 
         code: "Item Code: pe20260713",
@@ -1641,7 +1662,7 @@ const detailsDatabase = {
             { label: "Usage", value: "Raw Material for Manufacturing Christmas Tree Leaves" }
         ]
     },
-    "polyester thread yarn rolls, high tenacity assorted colors for christmas tree foliage production": {
+    "polyester thread yarn rolls high tenacity assorted colors for christmas tree foliage production": {
         category: "material",
         subcategory: "polyester-thread", 
         code: "Item Code: PS-20260708",
@@ -1676,7 +1697,7 @@ const detailsDatabase = {
             { label: "Features", value: "High structural strength, anti-rust coating, prefabricated branch sockets, easy installation, stable load bearing" }
         ]
     },
-    "christmas tree stand, foldable thick iron frame for artificial xmas tree fixation": {
+    "christmas tree stand foldable thick iron frame for artificial xmas tree fixation": {
         category: "material", 
         subcategory: "metal-stands", 
         code: "Item Code: ms20260629",
