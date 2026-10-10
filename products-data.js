@@ -25,6 +25,28 @@ const detailsDatabase = {
             { label: "Suitable Scenes", value: "Office Desk, Entrance Shelf, Bookshelf, Living Room, Display Cabinet" }
         ]
     },
+    "christmas plush mouse shelf sitter doll for holiday mantel decor": {
+        category: "home", 
+        subcategory: "toys", 
+        code: "Item Code: t20261010",
+        description: "Bring warmth, charm, and holiday magic into your home with our handcrafted Christmas Plush Mouse Shelf Sitter Doll! Clad in a classic red Scandinavian knit sweater with reindeer patterns, a soft white plush scarf, and adorable red felt boots, this long-legged sitting figurine captures the cozy essence of a traditional Christmas.",
+        images: [
+            "/aileen-home-studio/images/products/home/toys/t20261010/christmas-mouse-plush-toy-sitting-doll-white-backgroup.jpg",
+            "/aileen-home-studio/images/products/home/toys/t20261010/christmas-mouse-decor-shelf-display-holiday-toy.jpg",
+            "/aileen-home-studio/images/products/home/toys/t20261010/christmas-mouse-figurine-by-fireplace-tree-decor.jpg",
+            "/aileen-home-studio/images/products/home/toys/t20261010/christmas-mouse-toy-vintage-bookshelf-display.jpg",
+            "/aileen-home-studio/images/products/home/toys/t20261010/cute-christmas-mouse-doll-on-knit-sofa-decor.jpg",
+            "/aileen-home-studio/images/products/home/toys/t20261010/holiday-sitting-mouse-plush-on-mantel-christmas.jpg"
+        ], 
+        specs: [
+            { label: "Product Name", value: "Christmas Plush Mouse Shelf Sitter Doll" },
+            { label: "Primary Material", value: "Fabric, Soft Plush, Felt, Cotton & Wool Knit" },
+            { label: "Style / Theme", value: "Nordic, Farmhouse, Vintage Christmas, Cozy Festive" },
+            { label: "Color Palette", value: "Crimson Red, Cream White, Warm Grey, Rustic Brown" },
+            { label: "Features", value: "Sitting posture with dangling legs, weighted base" },
+            { label: "Suitable Scenes", value: "Fireplace Mantel, Bookshelf, Sofa, Tiered Tray, Window Sill" }
+        ]
+    },
     // ==========================================
     // 🎄 大类 1：Holiday Decor (cat: "holiday")
     "pre lit slim pencil christmas tree with artificial green pine for indoor home holiday decor": {
