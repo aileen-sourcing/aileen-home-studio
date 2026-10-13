@@ -1519,7 +1519,7 @@
 
         } else if (channel === 'whatsapp') {
             // 唤醒 WhatsApp，直接发送精致的留言内容
-            const whatsappText = `Hi Aileen, I am interested in your product: "${finalMsg}"`;
+            const whatsappText = `Hi Aileen, "${finalMsg}"`;
             window.open(`https://wa.me/8618894695487?text=${encodeURIComponent(whatsappText)}`, '_blank');
         }
     }
