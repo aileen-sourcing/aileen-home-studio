@@ -1115,6 +1115,28 @@ const detailsDatabase = {
             { label: "Applications", value: "Bedroom Bedside, Living Room, Study Desk, Office" }
         ]
     },
+    "modern wooden cube table lamp with rattan mesh shade for bedroom decor": {
+        category: "lighting", 
+        subcategory: "table-lamps", 
+        code: "Item Code: tb20261013",
+        description: "Elevate your home decor with this modern wooden cube table lamp. Crafted with a solid wood frame and a unique woven rattan mesh shade, this aesthetic accent light casts a warm, soothing glow that creates a cozy ambiance in any room. Whether placed on a bedroom nightstand, living room side table, or study desk, its minimal square design seamlessly blends Japandi, boho, and modern interior styles. Available in natural wood and sleek black finishes to complement your space.",
+        images: [
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20261013/wooden-cube-table-lamp-natural-wood-off.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20261013/wooden-cube-table-lamp-warm-light-on.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20261013/wooden-cube-table-lamp-black-finish-off.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20261013/wooden-cube-table-lamp-black-warm-glow.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20261013/wooden-cube-table-lamp-desk-decor-day.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20261013/wooden-cube-table-lamp-living-room-night.jpg"
+        ], 
+        specs: [
+            { label: "Product Name", value: "Wooden Cube Mesh Table Lamp" },
+            { label: "Design Style", value: "Modern / Japandi / Minimalist / Boho" },
+            { label: "Color Options", value: "Natural Wood / Black Finish" },
+            { label: "Voltage", value: "110V - 240V (Universal)" },
+            { label: "Bulb Type", value: "LED/Incandescent" },
+            { label: "Suitable Scenes", value: "Bedroom, Living Room, Nightstand, Office Desk, Reading Nook" }
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "floor lamp")
     "wooden carved floor lamp wabi sabi linen shade standing lamp for living room bedroom decor": {
