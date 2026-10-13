@@ -1505,7 +1505,7 @@
             ? document.getElementById('cfg-message').value.trim() 
             : "";
             
-        const finalMsg = clientMsg || "I am interested in your wholesale catalog and products. Please send me more detailed pricing and MOQ parameters.";
+        const finalMsg = clientMsg || "I am interested in your wholesale catalog and products. Please send me more detailed pricing and MOQ.";
 
         // 2. 组装简洁规范的邮件主题与正文
         const emailSubject = "Aileen Home Studio Website Sourcing Inquiry";
@@ -1519,7 +1519,7 @@
 
         } else if (channel === 'whatsapp') {
             // 唤醒 WhatsApp，直接发送精致的留言内容
-            const whatsappText = `Hi Aileen, I am browsing your website. Here is my inquiry: "${finalMsg}"`;
+            const whatsappText = `Hi Aileen, I am interested in your product: "${finalMsg}"`;
             window.open(`https://wa.me/8618894695487?text=${encodeURIComponent(whatsappText)}`, '_blank');
         }
     }
