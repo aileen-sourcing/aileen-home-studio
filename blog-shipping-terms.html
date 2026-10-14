@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXW vs. FOB vs. DDP: Which Shipping Term is Best for Importing from China? | Aileen's Home Studio</title>
+  <meta name="description" content="A practical guide for B2B buyers on choosing EXW, FOB, or DDP trade terms when sourcing goods from China.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 容器与基础排版优化 */
+    .article-container { 
+      max-width: 860px; 
+      margin: 40px auto; 
+      padding: 0 24px; 
+      line-height: 1.8; 
+      color: #2d3748; 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    }
+    
+    /* 返回按钮样式升级 */
+    .back-btn { 
+      display: inline-flex; 
+      align-items: center; 
+      gap: 6px; 
+      color: #4a5568; 
+      text-decoration: none; 
+      font-size: 0.875rem; 
+      font-weight: 600; 
+      margin-bottom: 24px; 
+      padding: 8px 16px; 
+      background: #edf2f7; 
+      border-radius: 20px; 
+      border: none; 
+      cursor: pointer; 
+      transition: all 0.2s ease; 
+    }
+    .back-btn:hover { 
+      background: #e2e8f0; 
+      color: #1a202c; 
+      transform: translateX(-3px); 
+    }
+
+    /* 标题与元数据 */
+    .article-container h1 { 
+      font-size: 2.25rem; 
+      font-weight: 800; 
+      line-height: 1.25; 
+      color: #0f172a; 
+      margin-bottom: 12px; 
+      letter-spacing: -0.02em; 
+    }
+    .article-meta { 
+      display: flex; 
+      gap: 16px; 
+      align-items: center; 
+      color: #64748b; 
+      font-size: 0.875rem; 
+      margin-bottom: 32px; 
+      padding-bottom: 20px; 
+      border-bottom: 1px solid #e2e8f0; 
+    }
+    .meta-tag { 
+      background: #f1f5f9; 
+      color: #334155; 
+      padding: 2px 10px; 
+      border-radius: 12px; 
+      font-weight: 500; 
+    }
+
+    /* 核心总结高亮框 (Executive Summary) */
+    .summary-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #0f172a;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 24px 0 36px 0;
+    }
+    .summary-box h3 {
+      margin: 0 0 8px 0;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #0f172a;
+    }
+    .summary-box p {
+      margin: 0;
+      font-size: 0.975rem;
+      color: #334155;
+    }
+
+    /* 导言段落优化 */
+    .intro-p {
+      font-size: 1.1rem;
+      color: #334155;
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+
+    /* 条款卡片容器 */
+    .term-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .term-card:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    }
+    .term-card h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1.35rem;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* 标签与 Badge */
+    .badge-best {
+      display: inline-block;
+      background: #dcfce7;
+      color: #15803d;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 6px;
+    }
+    .badge-risk {
+      display: inline-block;
+      background: #fee2e2;
+      color: #b91c1c;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 6px;
+    }
+
+    .term-card ul {
+      margin: 16px 0 0 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    .term-card li {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    /* 底部现代高转化 CTA 框 */
+    .cta-box { 
+      background: #0f172a; 
+      color: #ffffff; 
+      padding: 36px 32px; 
+      border-radius: 16px; 
+      margin-top: 48px; 
+      text-align: center;
+      box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.15);
+    }
+    .cta-box h3 { 
+      margin-top: 0; 
+      margin-bottom: 12px; 
+      font-size: 1.5rem; 
+      color: #ffffff;
+      font-weight: 700;
+    }
+    .cta-box p {
+      color: #94a3b8;
+      font-size: 1rem;
+      margin-bottom: 24px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-btn { 
+      display: inline-block; 
+      padding: 14px 28px; 
+      background: #ffffff; 
+      color: #0f172a; 
+      text-decoration: none; 
+      border-radius: 8px; 
+      font-size: 0.95rem; 
+      font-weight: 700;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .cta-btn:hover {
+      background: #f1f5f9;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 这里贴你网站统一的 Header 导航栏 -->
+
+  <article class="article-container">
+    <button onclick="history.back()" class="back-btn">&larr; Back</button>
+
+    <h1>EXW vs. FOB vs. DDP: Which Shipping Term is Best for Importing from China?</h1>
+    
+    <div class="article-meta">
+      <span>Published by <strong>Aileen</strong></span>
+      <span>•</span>
+      <span>October 2026</span>
+      <span class="meta-tag">Export & Shipping Guide</span>
+    </div>
+
+    <!-- 顶部核心导读框 -->
+    <div class="summary-box">
+      <h3>Quick Summary for Buyers</h3>
+      <p>Choosing the right trade term directly impacts your landed costs and logistics risks. In short: <strong>EXW</strong> offers max control if you have local forwarders; <strong>FOB</strong> is the standard for bulk ocean/air cargo; and <strong>DDP</strong> provides hassle-free door-to-door delivery with taxes included.</p>
+    </div>
+
+    <p class="intro-p">When sourcing goods from China, selecting the right Incoterms (International Commercial Terms) can significantly impact your total landing cost, shipping speed, and overall risk. Among the various shipping options available, <strong>EXW (Ex Works)</strong>, <strong>FOB (Free on Board)</strong>, and <strong>DDP (Delivered Duty Paid)</strong> are the three most common terms used by international buyers.</p>
+
+    <!-- 条款卡片 1：EXW -->
+    <div class="term-card">
+      <h2>1. EXW (Ex Works): Factory Pickup Only</h2>
+      <p>Under EXW terms, the seller makes the goods available at their factory or warehouse. As a buyer, you or your freight forwarder are responsible for everything else—including inland transit in China, export customs declaration, international freight, import duties, and final delivery.</p>
+      <ul>
+        <li><span class="badge-best">BEST FOR</span> Experienced buyers who already have a reliable freight forwarder in China and manage consolidated shipments from multiple suppliers.</li>
+        <li><span class="badge-risk">KEY RISK</span> High logistics coordination overhead and full responsibility for local Chinese export paperwork.</li>
+      </ul>
+    </div>
+
+    <!-- 条款卡片 2：FOB -->
+    <div class="term-card">
+      <h2>2. FOB (Free on Board): The Standard B2B Benchmark</h2>
+      <p>FOB is the classic trade term for ocean and air freight shipments. The seller handles domestic inland logistics in China, export customs clearance, and loading the cargo onto the ship or aircraft. Once the goods pass the ship's rail, the risk and remaining shipping costs transfer to the buyer.</p>
+      <ul>
+        <li><span class="badge-best">BEST FOR</span> Established B2B importers ordering full container loads (FCL) or large LCL ocean shipments who prefer using their own freight forwarders.</li>
+        <li><span class="badge-best">KEY BENEFIT</span> Clear cost separation and competitive port-to-port ocean freight rates.</li>
+      </ul>
+    </div>
+
+    <!-- 条款卡片 3：DDP -->
+    <div class="term-card">
+      <h2>3. DDP (Delivered Duty Paid): Hassle-Free Door-to-Door</h2>
+      <p>Under DDP terms, the seller assumes full responsibility for delivering the cargo straight to your warehouse, store, or door. This includes international transport, export/import customs clearance, tariffs, taxes, and local door delivery.</p>
+      <ul>
+        <li><span class="badge-best">BEST FOR</span> Small-to-medium businesses, e-commerce sellers, or buyers who want a transparent "all-inclusive" price without dealing with freight forwarders or import customs brokers.</li>
+        <li><span class="badge-best">KEY BENEFIT</span> Complete peace of mind with zero surprise import tax bills upon arrival.</li>
+      </ul>
+    </div>
+
+    <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 36px;">How We Help You Choose the Right Term</h2>
+    <p>At Aileen's Home Studio, we support flexible shipping options tailored to your trade volume and preference. For small and medium lot orders, we frequently recommend <strong>DDP door-to-door express or air cargo</strong> combined with secure PayPal or bank transfer payments, making importing from China as straightforward as buying locally.</p>
+
+    <!-- 底部高转化 CTA -->
+    <div class="cta-box">
+      <h3>Need a DDP or FOB Shipping Quote for Your Order?</h3>
+      <p>Send us your product list, destination country, and target quantity. We will calculate a clear, competitive quotation for your order.</p>
+      <a href="index.html#contact" class="cta-btn">Get an Instant Quote via WhatsApp / Email</a>
+    </div>
+  </article>
+
+</body>
+</html>
