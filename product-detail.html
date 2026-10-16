@@ -1039,7 +1039,7 @@
 
         <div class="product-details-section">
             <div class="tabs-header">
-                <button class="tab-btn active">Product Description</button>
+                <button class="tab-btn active" id="tab-btn-desc" onclick="switchTab('desc')">Product Description</button>
                 <button class="tab-btn" id="tab-btn-qa" onclick="switchTab('qa')">Q & A</button>
             </div>
             
@@ -1361,25 +1361,25 @@
                 document.title = `${formattedTitle} | Aileen's Home Studio`;
             }
         })();
-        // 🔀 1. Tab 标签页切换函数
-        function switchTab(tabName) {
-            const descContainer = document.getElementById('productDescContainer');
-            const qaContainer = document.getElementById('productQaContainer');
-            const descBtn = document.getElementById('tab-btn-desc');
-            const qaBtn = document.getElementById('tab-btn-qa');
+        // 🔀 Tab 标签页切换函数
+function switchTab(tabName) {
+    const descContainer = document.getElementById('productDescContainer');
+    const qaContainer = document.getElementById('productQaContainer');
+    const descBtn = document.getElementById('tab-btn-desc');
+    const qaBtn = document.getElementById('tab-btn-qa');
 
-            if (tabName === 'desc') {
-                descContainer.style.display = 'block';
-                qaContainer.style.display = 'none';
-                descBtn.classList.add('active');
-                qaBtn.classList.remove('active');
-            } else if (tabName === 'qa') {
-                descContainer.style.display = 'none';
-                qaContainer.style.display = 'block';
-                descBtn.classList.remove('active');
-                qaBtn.classList.add('active');
-            }
-        }
+    if (tabName === 'desc') {
+        if (descContainer) descContainer.style.display = 'block';
+        if (qaContainer) qaContainer.style.display = 'none';
+        if (descBtn) descBtn.classList.add('active');
+        if (qaBtn) qaBtn.classList.remove('active');
+    } else if (tabName === 'qa') {
+        if (descContainer) descContainer.style.display = 'none';
+        if (qaContainer) qaContainer.style.display = 'block';
+        if (descBtn) descBtn.classList.remove('active');
+        if (qaBtn) qaBtn.classList.add('active');
+    }
+}
 
         // ❓ 2. Q&A 问题展开/收起点击处理
         function toggleQA(element) {
