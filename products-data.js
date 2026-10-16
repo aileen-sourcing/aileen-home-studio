@@ -936,9 +936,7 @@ const detailsDatabase = {
             "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-nightstand-03.jpg",
             "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-base-detail-04.jpg",
             "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-desk-decor-05.jpg",
-            "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-reading-corner-06.jpg"
-
-        ], 
+            "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-reading-corner-06.jpg"], 
         specs: [
             { label: "Material", value: "Ribbed solid wood lampshade, solid wood base, metal fitting(Basswood + Rubberwood)" },
             { label: "Light Source", value: "E26 or E27, Bulb not included" },
@@ -953,7 +951,17 @@ const detailsDatabase = {
             { label: "Control method", value: "Inline On/Off push button switch" },
             { label: "Environment", value: "Safety tested for use indoors and in dry locations not directly exposed to excessive moisture and water." },
             { label: "Features", value: "Soft diffused lighting, mushroom shape design, easy assembly, stable wooden base" },
-            { label: "Application", value: "Bedroom bedside, living room side table, study desk, hotel room decoration" }
+            { label: "Application", value: "Bedroom bedside, living room side table, study desk, hotel room decoration" }],
+        faq: [
+            {
+                q: "What interior design styles does this wooden mushroom table lamp best complement?",
+                a: "This wooden mushroom table lamp features a minimalist, organic silhouette with a natural timber base and a slatted wood shade. It seamlessly fits into Japandi, Nordic/Scandinavian, Mid-Century Modern, and Wabi-Sabi decor styles. Its warm wood texture and soft ambient lighting make it an ideal statement accent for cozy bedroom nightstands, home office desks, or living room reading nooks."},
+            {
+                q: "Is this mushroom table lamp suitable for reading and creating ambient lighting in a bedroom?",
+                a: "Yes, it is designed for both functional task lighting and soft ambiance. The slatted wooden shade gently diffuses light, creating a warm, glare-free downward and peripheral glow that reduces eye strain. It provides cozy illumination ideal for evening reading, relaxing before sleep, or adding a warm decorative accent to your nightstand or workspace."},
+            {
+                q: "What materials are used in this mushroom desk lamp, and is the wood natural?",
+                a: "This lamp is crafted from premium, sustainably sourced solid wood for the tapered base and finely sliced natural timber slats for the mushroom-shaped lampshade. Each piece showcases unique natural wood grain patterns and smooth hand-finished edges, ensuring high durability, eco-friendly quality, and an authentic organic aesthetic."}
         ]
     },
     "table lamp wooden base floral shade, cream creates soft warm glow for bedside": {
