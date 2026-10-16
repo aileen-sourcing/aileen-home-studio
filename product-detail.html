@@ -1073,6 +1073,32 @@
     </div>
 
     <script>
+        function injectFaqSchema(faqList) {
+            if (!faqList || !Array.isArray(faqList) || faqList.length === 0) return;
+
+            // 清理旧的 schema，防止重复注入
+            const existing = document.getElementById('dynamic-faq-schema');
+            if (existing) existing.remove();
+
+            const schemaObj = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": faqList.map(item => ({
+                    "@type": "Question",
+                    "name": item.question || item.q,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": item.answer || item.a
+                    }
+                }))
+            };
+
+            const script = document.createElement('script');
+            script.id = 'dynamic-faq-schema';
+            script.type = 'application/ld+json';
+            script.textContent = JSON.stringify(schemaObj);
+            document.head.appendChild(script);
+        }
         // ==========================================
         // 🌟 核心：补全详情页顶部搜索框跳转逻辑
         // ==========================================
@@ -1201,24 +1227,33 @@
                     specsHtml = `<tr><td colspan="2" style="text-align:center; color:var(--text-muted);">Custom specifications available upon request.</td></tr>`;
                 }
                 document.getElementById('specsTableBody').innerHTML = specsHtml;
+
                 // ==========================================
-                // ❓ 动态加载当前产品的 FAQ/Q&A
+                // ❓ 动态加载当前产品的 FAQ/Q&A + 注入 Schema 结构化代码
                 // ==========================================
+                
+                // 💡 1. 自动为 SEO/GEO 注入 Schema 标记到 <head> 之中
+                if (productInfo.faq && productInfo.faq.length > 0) {
+                    injectFaqSchema(productInfo.faq);
+                }
+
+                // 💡 2. 渲染前端页面可看的 Q&A 列表（同时兼容 q/a 与 question/answer 字段）
                 const qaListEl = document.getElementById('qaList');
                 if (qaListEl) {
                     if (productInfo.faq && productInfo.faq.length > 0) {
                         let qaHtml = "";
                         productInfo.faq.forEach((item, index) => {
-                            // 默认展开第一个问题
                             const activeClass = index === 0 ? "qa-item active" : "qa-item";
+                            const qText = item.question || item.q;
+                            const aText = item.answer || item.a;
                             qaHtml += `
                                 <div class="${activeClass}">
                                     <div class="qa-question" onclick="toggleQA(this)">
-                                        <span><i class="fa-regular fa-circle-question" style="margin-right: 8px;"></i>${item.q}</span>
+                                        <span><i class="fa-regular fa-circle-question" style="margin-right: 8px;"></i>${qText}</span>
                                         <i class="fa-solid fa-chevron-down"></i>
                                     </div>
                                     <div class="qa-answer">
-                                        ${item.a}
+                                        ${aText}
                                     </div>
                                 </div>
                             `;
