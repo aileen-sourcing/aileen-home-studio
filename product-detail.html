@@ -999,30 +999,19 @@
             
             <div class="product-gallery">
                 <div class="main-image-box" id="zoomContainer">
-                    <img id="mainProductImg" src="images/lamp01.jpg" alt="Product Main Image">
+                    <!-- 默认主图使用通用的 placeholder，或加载你的 logo 图，避免出现具体产品台灯图片 -->
+                    <img id="mainProductImg" src="images/placeholder.jpg" alt="Aileen's Home Studio Product" title="Loading Product...">
                 </div>
-                <div class="thumb-list" id="thumbList">
-                    <div class="thumb-item active" onclick="switchImage(this, 'images/lamp01.jpg')">
-                        <img src="images/lamp01.jpg" alt="Thumb 1">
-                    </div>
-                    <div class="thumb-item" onclick="switchImage(this, 'images/lamp01-detail1.jpg')">
-                        <img src="images/lamp01-detail1.jpg" alt="Thumb 2">
-                    </div>
-                    <div class="thumb-item" onclick="switchImage(this, 'images/lamp01-detail2.jpg')">
-                        <img src="images/lamp01-detail2.jpg" alt="Thumb 3">
-                    </div>
-                    <div class="thumb-item" onclick="switchImage(this, 'images/lamp01-detail3.jpg')">
-                        <img src="images/lamp01-detail3.jpg" alt="Thumb 4">
-                    </div>
-                </div>
+                <!-- 缩略图列表保留容器 id，里面清空！让 JavaScript 动态注入真实图片的缩略图 -->
+                <div class="thumb-list" id="thumbList"></div>
             </div>
 
             <div class="product-meta-box">
-                <h1 class="product-title" id="productTitle">Minimalist Dimmable Ceramic Table Lamp</h1>
-                <div class="product-code" id="productCode">Item Code: TL-001</div>
+                <h1 class="product-title" id="productTitle">Loading Product...</h1>
+                <div class="product-code" id="productCode">Item Code: --</div>
                 
                 <p class="product-short-desc" id="productShortDesc">
-                    Enhance your home decoration with this exquisite handcrafted wreath. Designed with high-quality weather-resistant materials, it offers a full-bodied, fresh look year-round. Perfect for hanging on your front door, entryway, fireplace mantle, or living room wall to add a natural and welcoming touch.
+                    Global sourcing product details with factory-direct pricing, custom specs, and quality assurance.
                 </p>
 
                 <div class="inquiry-actions-group">
