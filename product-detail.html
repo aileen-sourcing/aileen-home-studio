@@ -813,6 +813,71 @@
                 line-height: 1.55 !important;
             }
         }
+        /* --- Q&A 问答模块样式 --- */
+        .qa-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .qa-item {
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background-color: var(--white);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .qa-item:hover {
+            border-color: var(--accent-color);
+        }
+
+        .qa-question {
+            padding: 14px 20px;
+            background-color: var(--bg-light);
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--primary-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .qa-question i {
+            color: var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+
+        .qa-item.active .qa-question i {
+            transform: rotate(180deg);
+        }
+
+        .qa-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            color: var(--text-color);
+            font-size: 0.92rem;
+            line-height: 1.6;
+            background-color: var(--white);
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .qa-item.active .qa-answer {
+            padding: 14px 20px;
+            max-height: 300px;
+            border-top: 1px dashed var(--border-color);
+        }
+
+        .no-qa-msg {
+            text-align: center;
+            color: var(--text-muted);
+            padding: 30px;
+            font-style: italic;
+        }
     </style>
     <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
@@ -975,6 +1040,7 @@
         <div class="product-details-section">
             <div class="tabs-header">
                 <button class="tab-btn active">Product Description</button>
+                <button class="tab-btn" id="tab-btn-qa" onclick="switchTab('qa')">Q & A</button>
             </div>
             
             <div class="tab-content" id="productDescContainer">
@@ -998,6 +1064,10 @@
                     </tr>
                     </tbody>
                 </table>
+            </div>
+            <div class="tab-content" id="productQaContainer" style="display: none;">
+                <div class="qa-list" id="qaList">
+                </div>
             </div>
         </div>
     </div>
@@ -1131,6 +1201,33 @@
                     specsHtml = `<tr><td colspan="2" style="text-align:center; color:var(--text-muted);">Custom specifications available upon request.</td></tr>`;
                 }
                 document.getElementById('specsTableBody').innerHTML = specsHtml;
+                // ==========================================
+                // ❓ 动态加载当前产品的 FAQ/Q&A
+                // ==========================================
+                const qaListEl = document.getElementById('qaList');
+                if (qaListEl) {
+                    if (productInfo.faq && productInfo.faq.length > 0) {
+                        let qaHtml = "";
+                        productInfo.faq.forEach((item, index) => {
+                            // 默认展开第一个问题
+                            const activeClass = index === 0 ? "qa-item active" : "qa-item";
+                            qaHtml += `
+                                <div class="${activeClass}">
+                                    <div class="qa-question" onclick="toggleQA(this)">
+                                        <span><i class="fa-regular fa-circle-question" style="margin-right: 8px;"></i>${item.q}</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <div class="qa-answer">
+                                        ${item.a}
+                                    </div>
+                                </div>
+                            `;
+                        });
+                        qaListEl.innerHTML = qaHtml;
+                    } else {
+                        qaListEl.innerHTML = `<div class="no-qa-msg">No specific Q&A available for this product yet. Feel free to contact us for further questions!</div>`;
+                    }
+                }
 
                 const breadcrumbCurrent = document.getElementById('breadcrumb-current');
                 if (breadcrumbCurrent) {
@@ -1229,6 +1326,31 @@
                 document.title = `${formattedTitle} | Aileen's Home Studio`;
             }
         })();
+        // 🔀 1. Tab 标签页切换函数
+        function switchTab(tabName) {
+            const descContainer = document.getElementById('productDescContainer');
+            const qaContainer = document.getElementById('productQaContainer');
+            const descBtn = document.getElementById('tab-btn-desc');
+            const qaBtn = document.getElementById('tab-btn-qa');
+
+            if (tabName === 'desc') {
+                descContainer.style.display = 'block';
+                qaContainer.style.display = 'none';
+                descBtn.classList.add('active');
+                qaBtn.classList.remove('active');
+            } else if (tabName === 'qa') {
+                descContainer.style.display = 'none';
+                qaContainer.style.display = 'block';
+                descBtn.classList.remove('active');
+                qaBtn.classList.add('active');
+            }
+        }
+
+        // ❓ 2. Q&A 问题展开/收起点击处理
+        function toggleQA(element) {
+            const qaItem = element.parentElement;
+            qaItem.classList.toggle('active');
+        }
     </script>
 </body>
 </html>
