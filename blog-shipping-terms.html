@@ -49,6 +49,13 @@
       margin-bottom: 12px; 
       letter-spacing: -0.02em; 
     }
+    /* 只在手机端把标题字体改小 */
+@media (max-width: 768px) {
+  .article-container h1 {
+    font-size: 1.4rem; /* 手机端调小为 1.4rem，可根据效果自由调整为 1.3rem ~ 1.5rem */
+    line-height: 1.25;  /* 稍微收紧行高 */
+  }
+}
     .article-meta { 
       display: flex; 
       gap: 16px; 
