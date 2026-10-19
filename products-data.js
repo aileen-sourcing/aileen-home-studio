@@ -1539,6 +1539,39 @@ const detailsDatabase = {
             { label: "Application", value: "Dining Room, Kitchen Island, Bedroom, Tea Room, Cafe" }
         ]
     },
+    "modern wood ring spiral pendant light for high ceiling staircase": {
+        category: "lighting",
+        subcategory: "pendants", 
+        code: "Item Code: p20261019",
+        description: "This multi-light spiral pendant fixture features solid wood rings and frosted glass globes suspended from a heavy-duty wooden ceiling base. Engineered for tall spaces like stairwells, lofts, and double-height entryways, the staggered ring-and-globe setup delivers cascading ambient lighting without blocking open sightlines.",
+        images: [
+            "images/products/lighting/pendants/p20261019/modern-wooden-ring-pendant-light-white-background.jpg",
+            "images/products/lighting/pendants/p20261019/wood-ring-hanging-lamp-lit-detail.jpg",
+            "images/products/lighting/pendants/p20261019/modern-spiral-staircase-wooden-chandelier-villa.jpg",
+            "images/products/lighting/pendants/p20261019/luxury-living-room-high-ceiling-wood-pendant-light.jpg",
+            "images/products/lighting/pendants/p20261019/dining-room-modern-wood-ring-hanging-lamp.jpg",
+            "images/products/lighting/pendants/p20261019/contemporary-loft-wooden-spiral-chandelier.jpg"], 
+        specs: [
+            { label: "Product Type", value: "Modern Spiral Pendant Light / High Ceiling Chandelier" },
+            { label: "Design Style", value: "Nordic / Minimalist / Modern Organic" },
+            { label: "Material", value: "Solid Wood" },
+            { label: "Applicable Spaces", value: "Staircase voids, loft living rooms, villa foyers, dining areas" },
+            { label: "Installation Type", value: "Hardwired ceiling flush-mount plate" }],
+        faq: [
+            {
+                q: "Can the hanging wire length be customized or adjusted for high ceilings?",
+                a: "Yes. The standard hanging wires can be adjusted on-site during installation to fit various ceiling heights. If your space requires an extra-long custom drop (for commercial spaces, multi-story villas, or extreme high ceilings), please contact us before ordering with your exact ceiling height, and we can customize the wire length for your specific setup."},
+            {
+                q: "Is this pendant light compatible with sloped or vaulted ceilings?",
+                a: "Yes. The ceiling mounting canopy and flexible wire suspension are fully compatible with flat, sloped, slanted, or vaulted ceiling structures."},
+            {
+                q: "Is professional installation recommended for this light fixture?",
+                a: "Yes. While the fixture itself is lightweight and straightforward to assemble, we recommend having it installed by a qualified electrician to ensure proper wiring, correct wire height adjustment, and secure mounting to your ceiling box."},
+            {
+                q: "How do I clean and maintain the wooden rings and glass elements?",
+                a: "Gently wipe the solid wood rings with a dry, soft microfiber cloth to remove dust. For the glass shades, you can unscrew them and wipe them down with a damp cloth if necessary. Avoid using chemical cleaners or abrasive materials on the wood grain."}
+        ]
+    },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "ceiling light")
     "ceiling light fabric flower flush mount living room decor": {
