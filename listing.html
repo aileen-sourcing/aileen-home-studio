@@ -21,16 +21,18 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
-        html, body {
-            height: 100%;
+        /* 1. 恢复标准 html 滚动，禁止任何多余空白越界 */
+        html {
+            background-color: var(--footer-bg); /* 让浏览器底部背景和 footer 融为一体，就算有回弹也不会露白 */
         }
+
         body { 
             color: var(--text-color); 
             background: var(--white); 
             padding: 0; 
             padding-top: 85px; 
-            display: flex;
-            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
         }
         a { text-decoration: none; color: inherit; }
 
@@ -254,13 +256,11 @@
         .breadcrumb { padding: 20px 25px; max-width: 1450px; margin: 0 auto; font-size: 0.8rem; color: var(--text-muted); }
         .breadcrumb span { font-weight: 700; color: var(--primary-color); }
 
-        /* 主体布局 */
         .listing-container { 
-            max-width: 1450px !important; 
-            margin: 10px auto 60px auto !important; 
-            padding: 0 25px !important; 
-            flex: 1 !important; /* 🌟 关键：自动撑满剩余空白空间，把底栏挤到底部 */
-        }
+         max-width: 1450px !important; 
+         margin: 10px auto 60px auto !important; 
+         padding: 0 25px !important; 
+     }
         
         /* 列表头部声明 */
         .listing-header { margin-bottom: 40px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; }
