@@ -26,11 +26,16 @@
             font-family: 'Segoe UI', system-ui, sans-serif;
         }
 
+        html, body {
+            height: 100%;
+        }
         body {
             color: var(--text-color);
             background-color: var(--white);
             line-height: 1.6;
             padding-top: 100px;
+            display: flex;
+            flex-direction: column;
         }
 
         .navbar-container {
@@ -264,6 +269,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 25px;
+            flex: 1; /* 🌟 关键：自动占满剩余空间，把底栏推到屏幕最底部 */
         }
 
         /* 返回目录导航 */
