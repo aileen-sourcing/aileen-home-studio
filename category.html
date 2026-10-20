@@ -684,21 +684,63 @@
         }
 
         /* ==========================================================
-           📱 2. 仅平板竖屏（768px ~ 1024px）：1 行 3 个
+           📱 仅平板竖屏（768px ~ 1024px）：1 行 3 个 + 手机端同款导航栏
            ========================================================== */
         @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
             .navbar {
-                padding: 0 15px !important;
+                padding: 0 20px !important;
                 justify-content: space-between !important;
             }
 
-            .nav-links {
-                gap: 16px !important;
+            /* 🌟 引入手机端同款的折叠导航栏样式 */
+            .nav-links { 
+                display: none; 
+                flex-direction: column;
+                position: fixed;
+                top: 65px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                padding: 20px;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+                border-bottom: 1px solid var(--border-color);
+                height: auto;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            .nav-links.active { display: flex; }
+            .nav-links li { width: 100%; height: auto; padding: 5px 0; }
+            .nav-links a { height: auto; width: 100%; font-size: 0.95rem !important; }
+            .mega-menu { position: static; box-shadow: none; padding: 10px 0 0 15px; border: none; }
+            .nav-links li.has-mega-menu:hover .mega-menu { display: block; }
+            .mega-menu-container { grid-template-columns: 1fr; gap: 15px; padding: 0; }
+
+            /* 🌟 显示汉堡菜单按钮 */
+            .menu-toggle {
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+                flex-shrink: 0 !important;
+                width: 24px !important;
+                height: 18px !important;
+                padding: 0 !important;
+                margin: 0 0 0 10px !important;
+                background: none !important;
+                border: none !important;
+                box-sizing: border-box !important;
             }
 
-            .nav-links a {
-                font-size: 0.85rem !important;
+            .menu-toggle span {
+                display: block !important;
+                width: 100% !important;
+                height: 2px !important;
+                max-height: 2px !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                background-color: #333 !important;
+                content: none !important;
             }
 
             .search-container {
@@ -709,6 +751,7 @@
                 flex: 0 0 160px !important;
             }
 
+            /* 保持平板竖屏原有的 1 行 3 个商品网格不变 */
             .products-grid,
             #products-grid-container {
                 display: grid !important;
