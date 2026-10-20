@@ -1039,57 +1039,71 @@
     }
 }
 /* ==========================================================
-   🏠 首页 - 仅平板竖屏（768px ~ 1024px）：极窄边框 + 加大菜单字体
+   📱 首页 - 仅平板竖屏（768px ~ 1024px portrait）：采用手机端折叠汉堡菜单
    ========================================================== */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-
-    /* 1. 导航栏两端边距压缩到极致，向两侧尽可能展开 */
     .navbar {
-        padding: 0 4px !important;              /* 👈 左右留白极小化，消除右侧空位 */
-        display: flex !important;
-        align-items: center !important;
+        padding: 0 20px !important;
         justify-content: space-between !important;
-        gap: 4px !important;
     }
 
-    /* 2. Logo 保持原样门面，左贴边 */
-    .logo-brand {
-    margin-right: 0 !important;
-    flex-shrink: 0 !important;
-}
-.logo-img {
-    height: 35px !important;       /* 平板竖屏高度微调 */
-    max-width: 140px !important;
-}
+    /* 1. 隐藏默认横向导航，改为手机同款的下拉折叠菜单 */
+    .nav-links { 
+        display: none !important; 
+        flex-direction: column !important;
+        position: fixed !important;
+        top: 65px !important;
+        left: 0 !important;
+        width: 100% !important;
+        background: var(--white) !important;
+        padding: 20px !important;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.05) !important;
+        border-bottom: 1px solid var(--border-color) !important;
+        height: auto !important;
+        align-items: flex-start !important;
+        gap: 15px !important;
+        z-index: 9999 !important;
+    }
+    .nav-links.active { display: flex !important; }
+    .nav-links li { width: 100% !important; height: auto !important; padding: 5px 0 !important; }
+    .nav-links a { height: auto !important; width: 100% !important; font-size: 0.95rem !important; }
+    
+    /* Mega Menu 级联适配 */
+    .mega-menu { position: static !important; box-shadow: none !important; padding: 10px 0 0 15px !important; border: none !important; }
+    .nav-links li.has-mega-menu:hover .mega-menu { display: block !important; }
+    .mega-menu-container { grid-template-columns: 1fr !important; gap: 15px !important; padding: 0 !important; }
 
-    /* 3. 释放出的空间全部给菜单：加大字号 + 增加适度间距 */
-    .nav-links {
-        gap: 10px !important;                 /* 👈 增加菜单项物理间距 */
-        flex-shrink: 1 !important;
+    /* 2. 强制显示汉堡菜单按钮 */
+    .menu-toggle {
         display: flex !important;
-        flex-wrap: nowrap !important;
-    }
-
-    .nav-links a {
-        font-size: 0.82rem !important;        /* 👈 菜单字体加大（原本是0.72rem） */
-        font-weight: 500 !important;          /* 略微加粗提高可读性 */
-        padding: 2px 0 !important;
-        white-space: nowrap !important;
-    }
-
-    /* 4. 搜索框向右看齐，彻底取消右侧多余空位 */
-    form.search-container {
-        width: 125px !important;
-        min-width: 110px !important;
-        padding: 4px 6px !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
         flex-shrink: 0 !important;
-        margin-left: auto !important;
-        margin-right: 0 !important;            /* 👈 强行消除右侧空隙 */
+        width: 24px !important;
+        height: 18px !important;
+        padding: 0 !important;
+        margin: 0 0 0 10px !important;
+        background: none !important;
+        border: none !important;
+        box-sizing: border-box !important;
+        cursor: pointer !important;
+    }
+    .menu-toggle span {
+        display: block !important;
+        width: 100% !important;
+        height: 2px !important;
+        max-height: 2px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background-color: #333 !important;
+        content: none !important;
     }
 
-    form.search-container input {
-        font-size: 0.72rem !important;
-    }
+    /* 3. 搜索框与 Logo 适配 */
+    .logo-brand { flex-shrink: 0 !important; display: flex !important; align-items: center !important; }
+    .logo-img { height: 30px !important; max-width: 120px !important; }
+    .search-container { width: 180px !important; display: block !important; }
 }
 /* ==========================================================
    📱 💻 仅平板横屏端生效（768px ~ 1366px horizontal）
@@ -1177,6 +1191,15 @@
         font-size: 0.82rem !important;      /* 缩小按钮字号 */
     }
 }
+/* 🌟 让 footer 保持在文档流最后，但配合 body flex 自动沉底 */
+        footer {
+            margin-top: auto; /* 关键：自动顶满上方剩余的所有空白间距，使 Footer 永远贴底 */
+            background-color: var(--footer-bg);
+            color: var(--footer-text-link);
+            padding: 50px 0 25px 0; 
+            font-size: 0.9rem;
+            border-top: 1px solid #1e293b;
+        }
             
     </style>
     <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
