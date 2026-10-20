@@ -21,7 +21,17 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
-        body { color: var(--text-color); background: var(--white); padding: 0; padding-top: 85px; }
+        html, body {
+            height: 100%;
+        }
+        body { 
+            color: var(--text-color); 
+            background: var(--white); 
+            padding: 0; 
+            padding-top: 85px; 
+            display: flex;
+            flex-direction: column;
+        }
         a { text-decoration: none; color: inherit; }
 
         /* ==========================================================
@@ -245,7 +255,12 @@
         .breadcrumb span { font-weight: 700; color: var(--primary-color); }
 
         /* 主体布局 */
-        .listing-container { max-width: 1450px !important; margin: 10px auto 60px auto !important; padding: 0 25px !important; }
+        .listing-container { 
+            max-width: 1450px !important; 
+            margin: 10px auto 60px auto !important; 
+            padding: 0 25px !important; 
+            flex: 1 !important; /* 🌟 关键：自动撑满剩余空白空间，把底栏挤到底部 */
+        }
         
         /* 列表头部声明 */
         .listing-header { margin-bottom: 40px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; }
