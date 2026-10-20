@@ -29,7 +29,7 @@
             padding-top: 65px; 
             -webkit-font-smoothing: antialiased;
             display: flex;
-            flex-direction: column;
+            min-height: 100vh; /* 🌟 修改这里：确保 body 最小高度占满整个屏幕 */
         }
         a { text-decoration: none; color: inherit; }
 
@@ -367,7 +367,7 @@
             padding: 25px; 
             font-size: 0.8rem; 
             border-top: 1px solid #1e293b; 
-            margin-top: 80px; 
+            margin-top: auto; /* 🌟 修改这里：利用 flex 布局自动将 footer 推到最底部 */
         }
 
         .layout-container {
