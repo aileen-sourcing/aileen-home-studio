@@ -20,7 +20,17 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
-        body { color: var(--text-color); background: var(--white); padding-top: 65px; -webkit-font-smoothing: antialiased; }
+        html, body {
+            height: 100%;
+        }
+        body { 
+            color: var(--text-color); 
+            background: var(--white); 
+            padding-top: 65px; 
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            flex-direction: column;
+        }
         a { text-decoration: none; color: inherit; }
 
         /* ==========================================================
@@ -249,7 +259,14 @@
         .breadcrumb span { font-weight: 700; color: var(--primary-color); }
 
         /* 大版面双列响应式跨度布局 */
-        .main-layout { max-width: 1400px; margin: 15px auto 60px auto; padding: 0 40px; display: flex; gap: 50px; }
+        .main-layout { 
+            max-width: 1400px; 
+            margin: 15px auto 60px auto; 
+            padding: 0 40px; 
+            display: flex; 
+            gap: 50px;
+            flex: 1; /* 🌟 新增：让中间内容区域自动填满剩余空间，把底栏推到屏幕最底部 */
+        }
         
         /* 左侧极简过滤器栏样式 */
         .sidebar-filter { flex: 0 0 240px; }
