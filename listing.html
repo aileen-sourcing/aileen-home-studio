@@ -615,17 +615,69 @@
         /* 📱 2. 【仅平板竖屏】(Portrait) */
         @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
             .logo-brand { 
-                display: none !important; 
+                display: flex !important; 
+                align-items: center !important;
+                margin-right: 15px !important;
+                flex-shrink: 0 !important;
             }
             
             .navbar { 
-                padding: 0 10px !important; 
+                padding: 0 20px !important; 
                 justify-content: space-between !important; 
             }
 
+            /* 🌟 引入手机端同款的折叠导航栏样式 */
+            .nav-links { 
+                display: none !important; 
+                flex-direction: column !important;
+                position: fixed !important;
+                top: 65px !important;
+                left: 0 !important;
+                width: 100% !important;
+                background: var(--white) !important;
+                padding: 20px !important;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.05) !important;
+                border-bottom: 1px solid var(--border-color) !important;
+                height: auto !important;
+                align-items: flex-start !important;
+                gap: 15px !important;
+            }
+            .nav-links.active { display: flex !important; }
+            .nav-links li { width: 100% !important; height: auto !important; padding: 5px 0 !important; }
+            .nav-links a { height: auto !important; width: 100% !important; font-size: 0.95rem !important; }
+            .mega-menu { position: static !important; box-shadow: none !important; padding: 10px 0 0 15px !important; border: none !important; }
+            .nav-links li.has-mega-menu:hover .mega-menu { display: block !important; }
+            .mega-menu-container { grid-template-columns: 1fr !important; gap: 15px !important; padding: 0 !important; }
+
+            /* 🌟 显示汉堡菜单按钮 */
+            .menu-toggle {
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+                flex-shrink: 0 !important;
+                width: 24px !important;
+                height: 18px !important;
+                padding: 0 !important;
+                margin: 0 0 0 10px !important;
+                background: none !important;
+                border: none !important;
+                box-sizing: border-box !important;
+            }
+
+            .menu-toggle span {
+                display: block !important;
+                width: 100% !important;
+                height: 2px !important;
+                max-height: 2px !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                background-color: #333 !important;
+                content: none !important;
+            }
+
             form.search-container { 
-                width: 160px !important; 
-                margin-left: auto !important; 
+                width: 180px !important; 
             }
 
             #christmas-sidebar[style*="display: block"] + #listing-grid-container,
@@ -672,30 +724,6 @@
                 padding: 5px 2px !important; 
                 font-size: 0.58rem !important; 
             }
-        }
-
-        /* 1. 货号 (Item Code)：琥珀金 */
-        #listing-grid-container .product-meta-code,
-        .product-card .product-meta-code,
-        .product-code {
-            color: #b45309 !important;            
-            font-weight: 700 !important;           
-            font-size: 0.8rem !important;          
-            text-transform: uppercase !important;   
-            letter-spacing: 0.03em !important;     
-            margin-bottom: 4px !important;
-        }
-
-        /* 2. 标题 (Product Title) */
-        #listing-grid-container .product-title-text,
-        .product-card .product-title-text,
-        .product-title {
-            color: #0f172a !important;            
-            font-size: 0.72rem !important;         
-            font-weight: 500 !important;           
-            line-height: 1.4 !important;           
-            text-transform: uppercase !important;   
-            margin-bottom: 10px !important;
         }
 
         @media screen and (max-width: 768px) {
