@@ -400,6 +400,40 @@ const detailsDatabase = {
             { label: "Occasion", value: "Christmas, Winter Holidays, Home & Office Decor" }
         ]
     },
+    "60cm mini christmas tree with lights tabletop holiday decor": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: mt20261029",
+        description: "This 60 cm mini Christmas tree comes pre-decorated with warm white LED lights, pinecones, fabric bows, golden reindeer, and a Merry Christmas plaque. It is powered by a waterproof battery box (requires AA batteries, not included), allowing you to place it indoors on a table, desk, or shelf, or outdoors on a porch or courtyard table without needing a nearby wall outlet. Unpack the tree, adjust the PVC branches to your liking, turn on the battery switch, and your display is complete.",
+        images: [
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-with-lights-ornaments.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-coffee-table-holiday-decor.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-living-room-fireplace-decor.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-shelf-display-gift-boxes.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-side-table-living-room.jpg",
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-tabletop-gifts-decor.jpg"], 
+        specs: [
+            { label: "Product Name", value: "Pre-Lit Mini Tabletop Christmas Tree" },
+            { label: "Material", value: "High-Quality PVC, Plastic Base, Fabric Bows" },
+            { label: "Light Number", value: "50 PCS" },
+            { label: "Light Source", value: "Steady Warm White LED String Lights" },
+            { label: "Power Supply", value: "3AA Battery Operated (AA Batteries, not included)" },
+            { label: "Included Accessories", value: "Star Topper, Golden Reindeer, Pinecones, Bows, Merry Christmas Sign" },
+            { label: "Product Size", value: "60CM" },
+            { label: "Package Size", value: "26x26x56CM" },
+            { label: "Net Weight", value: "0.7KG" },
+            { label: "Gross Weight", value: "1.8KG" }],
+        faq: [
+            {
+                q: "Is the mini Christmas tree already pre-decorated and easy to set up?",
+                a: "Yes! The tree comes fully pre-decorated with lights, bows, pinecones, and golden ornaments. Simply adjust the branches after unpacking and insert batteries to turn on the lights."},
+            {
+                q: "How is the tabletop Christmas tree powered?",
+                a: "It is powered by a battery box attached at the base, making it completely cordless and easy to move around without worrying about power outlets."},
+            {
+                q: "Can I use this Christmas tree outdoors?",
+                a: "Yes, it is suitable for both indoor and outdoor use. The tree comes with a waterproof battery box, so you can safely place it on an outdoor porch, garden table, or patio."}]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas ball")
     "christmas ball ornaments set shatterproof assorted for home holiday party decor": {
