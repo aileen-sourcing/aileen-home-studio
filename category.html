@@ -845,6 +845,32 @@
                 z-index: 20 !important;
             }
         }
+        @media screen and (max-width: 1024px) {
+    /* 1. 手机端默认让所有的二级大下拉菜单隐藏、不占空间、不乱跑 */
+    .nav-links .mega-menu { 
+        position: static !important; 
+        box-shadow: none !important; 
+        padding: 0 !important; 
+        border: none !important; 
+        display: none !important; /* 关键：默认隐藏 */
+        background: #f8fafc !important;
+        border-radius: 6px !important;
+        margin-top: 8px !important;
+        width: 100% !important;
+    }
+
+    /* 2. 只有当父级 li 被点击加上 active-mobile 时，才显示当前的子菜单 */
+    .nav-links li.has-mega-menu.active-mobile .mega-menu { 
+        display: block !important; 
+        padding: 12px 15px !important;
+    }
+
+    .mega-menu-container { 
+        grid-template-columns: 1fr !important; 
+        gap: 12px !important; 
+        padding: 0 !important; 
+    }
+}
     </style>
 
     <script src="products-data.js"></script>
@@ -862,7 +888,7 @@
             </a>
             <ul class="nav-links" id="nav-links">
                 <li class="has-mega-menu">
-                    <a href="category.html?cat=home">Home ▾</a>
+                    <a href="category.html?cat=home" onclick="handleMobileDropdown(event, this)">Home ▾</a>
                     <div class="mega-menu">
                         <div class="mega-menu-container">
                             <div class="mega-column">
@@ -873,7 +899,7 @@
                 </li>
                 
                 <li class="has-mega-menu">
-                    <a href="category.html?cat=holiday">Holiday Decor ▾</a>
+                    <a href="category.html?cat=holiday" onclick="handleMobileDropdown(event, this)">Holiday Decor ▾</a>
                     <div class="mega-menu">
                         <div class="mega-menu-container">
                             <div class="mega-column">
@@ -902,7 +928,7 @@
                 </li>
 
                 <li class="has-mega-menu">
-                    <a href="category.html?cat=lighting">Lighting ▾</a>
+                    <a href="category.html?cat=lighting" onclick="handleMobileDropdown(event, this)">Lighting ▾</a>
                     <div class="mega-menu">
                         <div class="mega-menu-container">
                             <div class="mega-column">
@@ -927,7 +953,7 @@
                 </li>
 
                 <li class="has-mega-menu">
-                    <a href="category.html?cat=material">Raw Material ▾</a>
+                    <a href="category.html?cat=material" onclick="handleMobileDropdown(event, this)">Raw Material ▾</a>
                     <div class="mega-menu">
                         <div class="mega-menu-container">
                             <div class="mega-column">
@@ -1357,6 +1383,16 @@
         window.onload = function() {
             renderPage();
         };
+        // 📱 手机端父级标题点击展开/收起子菜单逻辑
+function handleMobileDropdown(event, el) {
+    if (window.innerWidth <= 1024) {
+        const parentLi = el.parentElement;
+        if (parentLi.querySelector('.mega-menu')) {
+            event.preventDefault(); // 阻止手机端直接跳转，改为切换展开子菜单
+            parentLi.classList.toggle('active-mobile');
+        }
+    }
+}
     </script>
 </body>
 </html>
