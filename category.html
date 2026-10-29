@@ -853,7 +853,7 @@
         padding: 0 !important; 
         border: none !important; 
         display: none !important; /* 关键：默认隐藏 */
-        background: #f8fafc !important;
+        background: #ffffff !important;
         border-radius: 6px !important;
         margin-top: 8px !important;
         width: 100% !important;
@@ -1383,12 +1383,23 @@
         window.onload = function() {
             renderPage();
         };
-        // 📱 手机端父级标题点击展开/收起子菜单逻辑
-function handleMobileDropdown(event, el) {
+        
+        // 📱 手机端父级标题点击展开/收起子菜单（实现互斥：点一个另一个自动收起）
+        function handleMobileDropdown(event, el) {
     if (window.innerWidth <= 1024) {
         const parentLi = el.parentElement;
         if (parentLi.querySelector('.mega-menu')) {
             event.preventDefault(); // 阻止手机端直接跳转，改为切换展开子菜单
+            
+            // 🌟 核心优化：先获取所有的带有 mega-menu 的导航项，把其他的全部收起（移除 active-mobile）
+            const allNavItems = document.querySelectorAll('.nav-links .has-mega-menu');
+            allNavItems.forEach(item => {
+                if (item !== parentLi) {
+                    item.classList.remove('active-mobile');
+                }
+            });
+
+            // 切换当前点击项的展开/收起状态
             parentLi.classList.toggle('active-mobile');
         }
     }
