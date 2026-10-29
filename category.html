@@ -620,6 +620,12 @@
                 margin: 0 !important;            
                 box-sizing: border-box !important;
             }
+            .nav-links li.has-mega-menu .mega-menu {
+                display: none !important;
+            }
+            .nav-links li.has-mega-menu.mobile-expanded .mega-menu {
+                display: block !important;
+            }
         } 
 
         /* ==========================================================
@@ -1341,7 +1347,7 @@
             renderProductsOnly();
         }
 
-        // 绑定移动端菜单开关 (照搬 index.html 逻辑)
+        // 绑定移动端菜单开关及下拉控制
         document.addEventListener("DOMContentLoaded", function() {
             const mobileMenu = document.getElementById("mobile-menu");
             const navLinks = document.getElementById("nav-links");
@@ -1351,6 +1357,17 @@
                     navLinks.classList.toggle("active");
                 });
             }
+
+            // 🌟 直接在这里原地补充：手机端点击带下拉的大类时，阻止直接跳转，改为展开子菜单
+            const megaMenuParents = document.querySelectorAll('.nav-links li.has-mega-menu > a');
+            megaMenuParents.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault(); // 阻止跳走
+                        this.parentElement.classList.toggle('mobile-expanded'); // 切换展开
+                    }
+                });
+            });
         });
 
         // 🚀 页面初始化
