@@ -599,6 +599,39 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Winter decor")
+    "white seashell christmas tree ornaments set coastal holiday decor": {
+        category: "holiday",
+        subcategory: "winter-decor", 
+        code: "Item Code: wd20261030",
+        description: "This seashell christmas ornament set includes starfish, conch, scallop shells, icicles, and textured spherical baubles. Each piece is crafted from lightweight resin with a textured ivory finish to replicate natural shell details without the heavy weight or fragility. Designed for Christmas trees, holiday garlands, and wreaths, all ornaments come pre-threaded with satin ribbons or metallic gold cords for immediate hanging. The lightweight construction prevents branch drooping, making them suitable for natural and artificial trees of all sizes.",
+        images: [
+            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornaments-set.jpg",
+            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornaments-tree.jpg",
+            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-starfish.jpg",
+            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-ball.jpg",
+            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-conch.jpg",
+            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-icicle.jpg",
+            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-shell.jpg"], 
+        specs: [
+            { label: "Product Name", value: "White Seashell Christmas Tree Ornaments Set" },
+            { label: "Quantity", value: "Multi-Piece Set" },
+            { label: "Material", value: "Lightweight Resin & Natural Shell Texture" },
+            { label: "Color", value: "Off-White / Natural Ivory" },
+            { label: "Included Designs", value: "Starfish, Conch, Scallop Shell, Icicle, Textured Ball" },
+            { label: "Hanging Mechanism", value: "Pre-attached Ribbon & Metallic Gold Cords" },
+            { label: "Application", value: "Christmas Tree, Wreath, Garland, Coastal Home Decor" },
+            { label: "Care Instructions", value: "Wipe clean with a soft, dry cloth" }],
+        faq: [
+            {
+                q: "Are these ornaments made of real heavy shells or are they fragile?",
+                a: "They are crafted from a specialized lightweight resin that mimics natural shell textures. This design keeps them durable and light enough to hang on Christmas tree branches without pulling the boughs down."},
+            {
+                q: "Do the ornaments come with strings for hanging?",
+                a: "Yes, all ornaments come ready-to-hang with pre-attached satin ribbons or gold hanging cords."},
+            {
+                q: "Can I order these in bulk or with custom packaging?",
+                a: "Absolutely. We offer bulk wholesale supply for store owners and event planners. Please contact us directly for catalog details and quantity discounts."}]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "halloween")
     "black tabletop halloween tree multi color led gothic indoor desktop ornament": {
@@ -995,8 +1028,7 @@ const detailsDatabase = {
                 a: "Yes, it is designed for both functional task lighting and soft ambiance. The slatted wooden shade gently diffuses light, creating a warm, glare-free downward and peripheral glow that reduces eye strain. It provides cozy illumination ideal for evening reading, relaxing before sleep, or adding a warm decorative accent to your nightstand or workspace."},
             {
                 q: "What materials are used in this mushroom desk lamp, and is the wood natural?",
-                a: "This lamp is crafted from premium, sustainably sourced solid wood for the tapered base and finely sliced natural timber slats for the mushroom-shaped lampshade. Each piece showcases unique natural wood grain patterns and smooth hand-finished edges, ensuring high durability, eco-friendly quality, and an authentic organic aesthetic."}
-        ]
+                a: "This lamp is crafted from premium, sustainably sourced solid wood for the tapered base and finely sliced natural timber slats for the mushroom-shaped lampshade. Each piece showcases unique natural wood grain patterns and smooth hand-finished edges, ensuring high durability, eco-friendly quality, and an authentic organic aesthetic."}]
     },
     "table lamp wooden base floral shade, cream creates soft warm glow for bedside": {
         category: "lighting",
