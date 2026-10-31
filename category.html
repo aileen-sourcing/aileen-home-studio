@@ -628,7 +628,7 @@
         @media screen and (min-width: 769px) and (max-width: 1199px) and (orientation: landscape) {
 
             .navbar {
-                padding: 0 10px !important;
+                padding: 0 25px !important;
             }
 
             .logo-brand {
@@ -643,15 +643,18 @@
                 width: auto !important;
             }
             .nav-links {
-                gap: clamp(14px, 2.2vw, 28px) !important;
+                display: flex !important;
+                gap: 28px !important;
+                flex-shrink: 0 !important;
             }
 
             .nav-links a {
-                font-size: 0.85rem !important;
+                font-size: 0.95rem !important;
+                white-space: nowrap !important;
             }
 
             .search-container {
-                width: clamp(160px, 18vw, 220px) !important;
+                width: 240px !important;
             }
 
             .main-layout {
