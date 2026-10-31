@@ -1142,13 +1142,13 @@
         const whatsappUrl = `https://wa.me/8618894695487?text=${encodeURIComponent('Hi Aileen, I am interested in your ' + key + ' (' + (product.code || '') + '). Please provide a wholesale quote.')}`;
         const mailtoUrl = `mailto:2040967669aileen@gmail.com?subject=${encodeURIComponent('Wholesale Inquiry for ' + formattedTitle)}&body=${encodeURIComponent('Product: ' + key + '\n' + (product.code || '') + '\n\nPlease send us the latest pricing and MOQ.')}`;
 
-        return `
+ return `
             <div class="product-card" onclick="window.location.href='${productPageUrl}'">
                 <div class="product-image-wrapper">
                     <img src="${firstImg}" alt="${key}" title="${key}" loading="lazy" width="600" height="600" class="product-image" onerror="this.src='images/placeholder.jpg'">
                 </div>
                 <div class="product-info">
-                    <div class="product-meta-code">${product.code || ''}</div>
+                    <div style="font-size:0.8rem; color:var(--accent-color); font-weight:700;">${product.code ? 'ITEM CODE: ' + product.code.replace(/^ITEM CODE:\s*/i, '').toUpperCase() : ''}</div>
                     <h3 class="grid-product-title">${key}</h3>
                     <div class="inquiry-actions-group" onclick="event.stopPropagation();">
                         <button class="inquiry-action-btn" onclick="window.location.href='${mailtoUrl}'">
