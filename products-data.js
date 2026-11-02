@@ -50,21 +50,37 @@ const detailsDatabase = {
     // ==========================================
     // 🎄 大类 1：Holiday Decor (cat: "holiday")
     "pre lit slim pencil christmas tree with artificial green pine for indoor home holiday decor": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: ct20260706",
         description: "Slim pre lit artificial christmas tree equipped with warm white led lights. Narrow profile design saves indoor space. Dense pine-style branches deliver full natural appearance. Foldable metal stand provides stable support. Simple assembly suits living room entryway apartment indoor christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-warm-led-white-background-main-01.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/narrow-pencil-artificial-christmas-tree-indoor-display-02.jpg"
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-white-background.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pencil-artificial-christmas-tree-display.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-cozy-window-room.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-fireplace-decor.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-holiday-gifts-room.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-living-room-decor.jpg"
         ], 
         specs: [
             { label: "Material", value: "Artificial pine branches / metal foldable stand" },
             { label: "Lighting", value: "Built-in warm white pre-strung led lights" },
             { label: "Shape Style", value: "Slim narrow pencil christmas tree" },
             { label: "Features", value: "Space saving design easy assembly dense foliage stable foldable base pre-installed lights" },
-            { label: "Application", value: "Living room entryway apartment indoor christmas decoration" }
-        ]
+            { label: "Application", value: "Living room entryway apartment indoor christmas decoration" }],
+        faq: [
+            {
+                q: "Is this tree suitable for small rooms or tight spaces?",
+                a: "Yes! Designed with a space-saving slim pencil shape, this tree fits perfectly into compact apartments, cozy room corners, or beside fireplaces without taking up extra floor space."},
+            {
+                q: "Does it include a durable stand for easy off-season storage?",
+                a: "Yes, it comes with a collapsible heavy-duty metal stand. After the holidays, simply fold the branches back down and store it compactly in its original box."},
+            {
+                q: "Are the LED lights pre-lit, and is it safe to leave on?",
+                a: "Yes, the warm white LEDs are pre-installed for effortless setup. They use a low-voltage adapter that stays cool to the touch, ensuring energy efficiency and safe long-term indoor display."},
+            {
+                q: "How long does it take to assemble and shape the tree?",
+                a: "Setup takes only a few minutes with our 3-section structure and sturdy metal stand. Simply spend 10-15 minutes fluffing the branch tips for the fullest, most natural look."}]
     },
     "pre lit full dense christmas tree artificial pine green foliage for indoor holiday living room decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
