@@ -1790,6 +1790,41 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
+    // 💡 大类 2：Home Lighting (cat: "led-string-lights")
+    "led christmas tree lights with green wire indoor outdoor string": {
+        category: "lighting",
+        subcategory: "led-string-lights", 
+        code: "Item Code: ls20261103",
+        description: "These LED string lights are built for wrapping artificial and live Christmas trees, wreaths, and garlands. The wire insulation uses a dark green shade designed to align with pine foliage, keeping the electrical wiring hidden within the tree structure.These LED string lights are built for wrapping artificial and live Christmas trees, wreaths, and garlands. The wire insulation uses a dark green shade designed to align with pine foliage, keeping the electrical wiring hidden within the tree structure. Suitable for both indoor home setups and outdoor porch or patio displays, the strand features sealed LEDs and weather-resistant wiring.",
+        images: [
+            "images/products/lighting/led-string-lights/ls20261103/led-string-lights-pack-green-wire-outdoor-decor.jpg",
+            "images/products/lighting/led-string-lights/ls20261103/led-christmas-tree-string-lights-green-wire.jpg",
+            "images/products/lighting/led-string-lights/ls20261103/multicolor-led-string-lights-bundle-halloween.jpg",
+            "images/products/lighting/led-string-lights/ls20261103/led-christmas-string-lights-green-wire-detail.jpg",
+            "images/products/lighting/led-string-lights/ls20261103/multicolor-christmas-string-lights-green-wire.jpg"], 
+        specs: [
+            { label: "Product Type", value: "LED String Lights for Christmas Trees" },
+            { label: "Wire Material & Color", value: "Insulated Copper Wire with Dark Green PVC Jacket" },
+            { label: "Color", value: "Multicolor (Yellow, Green, Purple) / Single Tones" },
+            { label: "Input / Power Supply", value: "Standard Plug Adapter (110V-240V Low Voltage Output)" },
+            { label: "Waterproof Rating", value: "IP44 (Splashing Water / Rain Resistant)" },
+            { label: "Certifications", value: "CE, RoHS, UL Listed" },
+            { label: "Application", value: "Christmas Tree Wrapping, Wreaths, Patio & Garden Displays" }],
+        faq: [
+            {
+                q: "What is the benefit of the dark green wire color?",
+                a: "The dark green wire matches the color tone of pine and fir branches, making the electrical cord less noticeable against real or artificial tree foliage."},
+            {
+                q: "Are these lights safe for long hours of continuous use?",
+                a: "Yes. The lights use low-voltage LEDs with low thermal output and hold CE/UL certifications, preventing overheating when left on during the night or for extended periods."},
+            {
+                q: "Can these string lights handle rainy or humid outdoor conditions?",
+                a: "The string lights are IP44 rated for outdoor use against light rain and humidity. However, the power plug/adapter should be kept inside a waterproof enclosure or indoors."},
+            {
+                q: "Does the entire strand go out if one bulb fails?",
+                a: "No. The strand uses a parallel wiring design, so an individual bulb failure will not interrupt the electrical circuit for the remaining lights."}]
+    },
+    // ==========================================
     // ⚙️ 大类 3：Raw Materials (cat: "material")
     "pe tips raw material artificial tree branch mixed styles green for tree making": {
         category: "material",
