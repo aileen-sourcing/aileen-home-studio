@@ -648,6 +648,43 @@ const detailsDatabase = {
                 q: "Can I order these in bulk or with custom packaging?",
                 a: "Absolutely. We offer bulk wholesale supply for store owners and event planners. Please contact us directly for catalog details and quantity discounts."}]
     },
+    "christmas pinecone ornaments set for diy wreath garland holiday decor": {
+        category: "holiday",
+        subcategory: "winter-decor", 
+        code: "Item Code: wd20261109",
+        description: "Elevate your holiday home decor with our Natural Christmas Pinecone Ornaments Pack. Hand-picked and carefully treated, these festive pinecones are perfect for DIY Christmas wreaths, holiday garland accents, tree hanging ornaments, and rustic mantel arrangements. Add a touch of cozy, natural charm to your winter celebrations!",
+        images: [
+            "images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-glitter-natural-diy-decor.jpg",
+            "images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-natural-small-wreath-pack.jpg",
+            "images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-natural-classic-diy-pack.jpg",
+            "images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-gold-glitter-wreath-decor.jpg",
+            "images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-snow-frosted-diy-decor-set.jpg",
+            "images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-snow-tipped-wreath-decor.jpg"], 
+        specs: [
+            { label: "Product Name", value: "Natural & Frosted Christmas Pinecone Ornaments Pack" },
+            { label: "Material", value: "100% Natural Pinecones + Non-toxic Eco-friendly Paint/Glitter" },
+            { label: "Quantity / Pack", value: "6 to 12 Pcs/Pack (Varies by Style & Size)" },
+            { label: "Styles Available", value: "Snow Frosted, Natural Classic, Gold Glitter, Silver Sparkle" },
+            { label: "Attachment Type", value: "Includes Hanging String Loop (Pre-tied / Easy Hang)" },
+            { label: "Usage Scenario", value: "DIY Wreaths, Christmas Tree Decor, Mantle Garland, Tabletop Centerpieces" },
+            { label: "Packaging", value: "Protective Polybag with Header Card (Suitable for Resell/Retail)" }],
+        faq: [
+            {
+                q: "Are these pinecones real or made of plastic?",
+                a: "The pinecones in this listing are 100% real, natural pine cones that have been thoroughly cleaned, dried, and treated for longevity. If you prefer plastic pinecones for lightweight or specific weather-resistant needs, we also offer durable plastic/artificial options."},
+            {
+                q: "Do these Christmas pinecones come with hanging loops?",
+                a: "Yes, each pinecone ornament comes with a pre-attached hanging string loop, making it easy to hang directly on your Christmas tree, garland, or door wreath right out of the package."},
+            {
+                q: "How can I use these pinecones for DIY Christmas wreath making?",
+                a: "These pinecones are very lightweight. You can use floral wire, hot glue, or the attached loops to easily secure them onto rattan bases, artificial spruce garlands, or wooden wreath frames."},
+            {
+                q: "Can I order these pinecone sets in bulk or wholesale for my business?",
+                a: "Yes! We support flexible ordering options ranging from small-pack purchases to wholesale bulk shipments. Please contact our sales team directly via the contact page for customized volume pricing and shipping options."},
+            {
+                q: "Does the gold glitter or snow frosting shed off easily?",
+                a: "We use high-adhesion coating technology to ensure the snow-frosted and glitter finishes stay securely on the pinecone surfaces, minimizing shedding during handling and store setup."}]
+    },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "halloween")
     "black tabletop halloween tree multi color led gothic indoor desktop ornament": {
