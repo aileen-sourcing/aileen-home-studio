@@ -3,9 +3,59 @@
     <!-- 网站首页（对应index.html） -->
     <url>
         <loc>https://aileen-sourcing.github.io/aileen-home-studio/</loc>
-        <lastmod>2026-07-16</lastmod>
+        <lastmod>2026-11-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+    </url>
+    <!-- 博客主页 -->
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/blog.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- 博客文章列表（位于 blogs/ 子文件夹内） -->
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/blogs/blog-shipping-terms.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/blogs/blog-quality-control.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/blogs/blog-custom-sourcing.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/blogs/blog-oem-customization.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/blogs/blog-product-compliance.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/blogs/blog-sourcing-pitfalls.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aileen-sourcing.github.io/aileen-home-studio/blogs/blog-sourcing-risks.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
     <!-- 关于我们 -->
     <url>
