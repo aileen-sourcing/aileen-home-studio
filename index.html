@@ -1356,6 +1356,77 @@
         font-size: 0.8rem;
     }
 }
+/* ==========================================
+   📱 手机端专享：How We Work 2列居中对齐与自动对称
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .how-we-work-section {
+        padding: 30px 0;
+    }
+
+    /* 1. 保持 2 列排列 */
+    .process-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 25px 15px !important;
+        align-items: flex-start !important;
+    }
+
+    /* 2. 每个步骤卡片上下居中对齐 */
+    .process-item {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        position: relative;
+    }
+
+    /* 3. 图标固定尺寸并居中 */
+    .process-icon-circle {
+        width: 60px !important;
+        height: 60px !important;
+        min-width: 60px !important;
+        font-size: 1.3rem !important;
+        margin: 0 auto 10px auto !important;
+        border-width: 2px !important;
+    }
+
+    /* 4. 文案区上下堆叠，支持文字折行且对齐 */
+    .process-title {
+        font-size: 0.85rem !important;
+        font-weight: 700 !important;
+        color: var(--primary-color) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 4px !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+        line-height: 1.3 !important;
+        width: 100% !important;
+    }
+
+    /* 5. 数字序号圆圈居中 */
+    .process-title span {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 18px !important;
+        height: 18px !important;
+        min-width: 18px !important;
+        font-size: 0.7rem !important;
+        margin: 0 auto !important;
+    }
+
+    /* 6. 第 5 个步骤独占最后一行并居中，解决不对称问题 */
+    .process-item:nth-child(5) {
+        grid-column: 1 / -1 !important;
+        justify-self: center !important;
+        max-width: 50% !important;
+    }
+}
             
     </style>
     <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
