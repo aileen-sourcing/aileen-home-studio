@@ -1200,6 +1200,162 @@
             font-size: 0.9rem;
             border-top: 1px solid #1e293b;
         }
+
+/* ==========================================
+   ✨ How We Work 流程图（纯 CSS 细线条箭头 - 无报错版）
+   ========================================== */
+.how-we-work-section {
+    padding: 30px 0;
+    background-color: #f8fafc;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.how-we-work-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.how-we-work-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* 5 列平铺容器 */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    position: relative;
+    align-items: flex-start;
+}
+
+.process-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* 🔗 1. 纯 CSS 细横线：从当前圆圈中心延伸到下一个圆圈中心（完美无缝连接） */
+.process-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 37.5px;          /* 75px 圆圈垂直中心高度 */
+    left: 50%;            /* 从当前圆圈中心出发 */
+    width: 100%;          /* 延伸到右侧下一个圆圈中心 */
+    height: 1.5px;        /* 极细线条 */
+    background-color: #94a3b8;
+    z-index: 1;           /* 位于底层，圆圈 (z-index: 2) 会遮挡两端多余线段，只留圆圈之间的部分 */
+}
+
+/* 🔗 简易版：直接把箭头定位在距离右侧中心往左 39px 的位置（即右侧圆圈边缘） */
+.process-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 33.5px;
+    left: calc(150% - 39px);
+    width: 7px;
+    height: 7px;
+    border-top: 1.5px solid #94a3b8;
+    border-right: 1.5px solid #94a3b8;
+    transform: rotate(45deg);
+    z-index: 3;
+}
+
+/* 圆形图标容器 */
+.process-icon-circle {
+    width: 75px;
+    height: 75px;
+    background-color: var(--white);
+    border: 2px solid #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.04);
+    transition: var(--transition);
+    position: relative;
+    z-index: 2; /* 高于横线，完美挡住圆圈内部的线条 */
+}
+
+/* 第一步默认高亮 */
+.process-item.active .process-icon-circle {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.process-icon-circle:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* 步骤文案 */
+.process-title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.process-title span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 0.7rem;
+}
+
+/* 📱 平板与手机端响应式隐藏箭头 */
+@media screen and (max-width: 1024px) {
+    .process-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px 0;
+    }
+    .process-item::before,
+    .process-item::after {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .how-we-work-section {
+        padding: 25px 0;
+    }
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 0;
+    }
+    .process-item::before,
+    .process-item::after {
+        display: none !important;
+    }
+    .process-icon-circle {
+        width: 62px;
+        height: 62px;
+        font-size: 1.2rem;
+    }
+    .process-title {
+        font-size: 0.8rem;
+    }
+}
             
     </style>
     <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
@@ -1467,70 +1623,189 @@
         </div>
     </section>
 
-    <section id="contact" class="contact-section" style="padding: 60px 0; background-color: #ffffff; text-align: center;">
-    <div class="container" style="max-width: 650px; margin: 0 auto; padding: 0 20px;">
-        
-        <h2 style="font-size: 2.2rem; color: #0f172a; font-weight: 800; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">Contact US</h2>
-        <div style="width: 50px; height: 3px; background-color: #b45309; margin: 0 auto 30px auto;"></div>
-
-        <!-- 极简轻奢背景框 -->
-        <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 35px 30px; text-align: left; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+    <!-- ==========================================
+       ✨ How We Work 流程板块 (纯 CSS 极简版 - 零报错)
+       ========================================== -->
+    <section class="how-we-work-section">
+        <div class="how-we-work-container">
+            <h2 class="section-title" style="margin-bottom: 5px;">How We Work</h2>
+            <p class="how-we-work-subtitle">A simple process from inquiry to delivery</p>
             
-            <!-- 📝 核心输入表单区域 -->
-            <div style="margin-bottom: 20px;">
-                <label style="display: block; font-size: 0.75rem; font-weight: 700; color: #0f172a; letter-spacing: 0.05em; margin-bottom: 8px; text-transform: uppercase;">Your Name</label>
-                <input type="text" id="cfg-name" style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 0.95rem; color: #1e293b; background-color: #ffffff; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#b45309'" onblur="this.style.borderColor='#e2e8f0'">
+            <div class="process-grid">
+                <!-- 步骤 1 -->
+                <div class="process-item active">
+                    <div class="process-icon-circle">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </div>
+                    <div class="process-title"><span>1</span> Inquiry</div>
+                </div>
+
+                <!-- 步骤 2 -->
+                <div class="process-item">
+                    <div class="process-icon-circle">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <div class="process-title"><span>2</span> Supplier Matching</div>
+                </div>
+
+                <!-- 步骤 3 -->
+                <div class="process-item">
+                    <div class="process-icon-circle">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <div class="process-title"><span>3</span> Sample Confirmation</div>
+                </div>
+
+                <!-- 步骤 4 -->
+                <div class="process-item">
+                    <div class="process-icon-circle">
+                        <i class="fa-solid fa-boxes-packing"></i>
+                    </div>
+                    <div class="process-title"><span>4</span> Production & Inspection</div>
+                </div>
+
+                <!-- 步骤 5 -->
+                <div class="process-item">
+                    <div class="process-icon-circle">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div class="process-title"><span>5</span> Shipping & Delivery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+     ✨ 联系我们 (Contact Us) - 地图文案恢复 + 输入框无提示词版
+     ========================================== -->
+<section id="contact" class="contact-section" style="
+    padding: 60px 0; 
+    background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.92)), url('./images/contact-bg.jpg') no-repeat center center / cover; 
+    color: #1e293b;
+    position: relative;
+">
+    <div class="container" style="max-width: 1100px; margin: 0 auto; padding: 0 25px;">
+        <div class="contact-wrapper" style="
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 40px; 
+            align-items: center;
+        ">
+            
+            <!-- 👈 左侧：标题、介绍文案与地图区 (文案已恢复) -->
+            <div class="contact-map-info" style="text-align: left;">
+                <div style="font-size: 0.8rem; letter-spacing: 3px; text-transform: uppercase; color: #b45309; margin-bottom: 8px; font-weight: 700;">Global Sourcing Partner</div>
+                <h2 style="font-size: 2rem; line-height: 1.2; margin-bottom: 14px; font-weight: 800; color: #0f172a;">Connect with Our Direct Supply Hub</h2>
+                <p style="font-size: 0.9rem; color: #334155; line-height: 1.55; margin-bottom: 18px;">
+                    Located in Dongguan, Guangdong — the world's manufacturing heartland. We coordinate directly with regional suppliers to ensure optimal pricing and strict quality control for your order. Response time: <strong>Within 12 Hours</strong>.
+                </p>
+
+                <!-- 地图展示区 -->
+                <div style="width: 100%; height: 210px; border-radius: 8px; overflow: hidden; border: 1px solid #cbd5e1; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.3475960481285!2d114.0728!3d22.9238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403565555555555%3A0x0!2zRG9uZ2d1YW4sIEd1YW5nZG9uZw!5e0!3m2!1sen!2scn!4v1700000000000" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
 
-            <div style="margin-bottom: 20px;">
-                <label style="display: block; font-size: 0.75rem; font-weight: 700; color: #0f172a; letter-spacing: 0.05em; margin-bottom: 8px; text-transform: uppercase;">Company / WhatsApp (Highly Recommended)</label>
-                <input type="text" id="cfg-contact" style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 0.95rem; color: #1e293b; background-color: #ffffff; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#b45309'" onblur="this.style.borderColor='#e2e8f0'">
-            </div>
+            <!-- 👉 右侧：询盘表单 (仅框内 placeholder 已移除，保持干净空白) -->
+            <div class="contact-form-box" style="
+                background-color: rgba(255, 255, 255, 0.96); 
+                border-radius: 8px; 
+                padding: 28px 28px; 
+                box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+                border: 1px solid #e2e8f0;
+                color: #1e293b;
+                text-align: left;
+            ">
+                <h3 style="font-size: 1.45rem; color: #0f172a; font-weight: 800; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.03em;">Start Your Trade Project</h3>
+                <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 18px;">Tell us your product requirements, quantity, or target market, and we will reply with pricing promptly.</p>
 
-            <div style="margin-bottom: 25px;">
-                <label style="display: block; font-size: 0.75rem; font-weight: 700; color: #0f172a; letter-spacing: 0.05em; margin-bottom: 8px; text-transform: uppercase;">Your Specific Requirements</label>
-                <textarea id="cfg-message" rows="4" style="width: 100%; padding: 12px 15px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 0.95rem; color: #1e293b; background-color: #ffffff; outline: none; font-family: inherit; resize: vertical; transition: border 0.2s;" onfocus="this.style.borderColor='#b45309'" onblur="this.style.borderColor='#e2e8f0'"></textarea>
-            </div>
+                <!-- 📝 核心输入表单区域 (内部已留空) -->
+                <div style="margin-bottom: 14px;">
+                    <label style="display: block; font-size: 0.72rem; font-weight: 700; color: #0f172a; letter-spacing: 0.05em; margin-bottom: 4px; text-transform: uppercase;">Your Name</label>
+                    <input type="text" id="cfg-name" style="width: 100%; padding: 9px 12px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.9rem; color: #1e293b; background-color: #ffffff; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#b45309'" onblur="this.style.borderColor='#cbd5e1'">
+                </div>
 
-            <!-- 🚀 升级：双通道发送按钮 -->
-            <!-- 🚀 升级：双通道发送按钮 -->
-<div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
-    <!-- Email 发送 -->
-    <button onclick="sendInquiryViaChannel('email')" style="width: 100%; padding: 15px; background-color: #0f172a; color: #ffffff; border: none; border-radius: 4px; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: all 0.2s; margin-bottom: 12px;" onmouseover="this.style.backgroundColor='#b45309'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='#0f172a'; this.style.transform='translateY(0)';">
-        <i class="fa-regular fa-envelope"></i> Send via Email
-    </button>
-    
-    <!-- WhatsApp 发送 -->
-    <button onclick="sendInquiryViaChannel('whatsapp')" style="width: 100%; padding: 15px; background-color: transparent; color: #0f172a; border: 2px solid #0f172a; border-radius: 4px; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#0f172a'; this.style.color='#ffffff'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#0f172a'; this.style.transform='translateY(0)';">
-        <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
-    </button>
-</div>
+                <div style="margin-bottom: 14px;">
+                    <label style="display: block; font-size: 0.72rem; font-weight: 700; color: #0f172a; letter-spacing: 0.05em; margin-bottom: 4px; text-transform: uppercase;">Company / WhatsApp (Highly Recommended)</label>
+                    <input type="text" id="cfg-contact" style="width: 100%; padding: 9px 12px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.9rem; color: #1e293b; background-color: #ffffff; outline: none; transition: border 0.2s;" onfocus="this.style.borderColor='#b45309'" onblur="this.style.borderColor='#cbd5e1'">
+                </div>
+
+                <div style="margin-bottom: 18px;">
+                    <label style="display: block; font-size: 0.72rem; font-weight: 700; color: #0f172a; letter-spacing: 0.05em; margin-bottom: 4px; text-transform: uppercase;">Your Specific Requirements</label>
+                    <textarea id="cfg-message" rows="3" style="width: 100%; padding: 9px 12px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.9rem; color: #1e293b; background-color: #ffffff; outline: none; font-family: inherit; resize: vertical; transition: border 0.2s;" onfocus="this.style.borderColor='#b45309'" onblur="this.style.borderColor='#cbd5e1'"></textarea>
+                </div>
+
+                <!-- 🚀 双通道发送按钮 -->
+                <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                    <button onclick="sendInquiryViaChannel('email')" style="width: 100%; padding: 11px; background-color: #0f172a; color: #ffffff; border: none; border-radius: 4px; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#b45309'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='#0f172a'; this.style.transform='translateY(0)';">
+                        <i class="fa-regular fa-envelope"></i> Send via Email
+                    </button>
+                    
+                    <button onclick="sendInquiryViaChannel('whatsapp')" style="width: 100%; padding: 11px; background-color: transparent; color: #0f172a; border: 2px solid #0f172a; border-radius: 4px; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.backgroundColor='#0f172a'; this.style.color='#ffffff'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#0f172a'; this.style.transform='translateY(0)';">
+                        <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+                    </button>
+                </div>
+            </div>
 
         </div>
+    </div>
 
-    <!-- ⚡ 控制抓取与拼接的智能化脚本（纯留言精简版） -->
+    <!-- 📱 移动端自适应 CSS -->
+    <style>
+        @media screen and (max-width: 992px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+            .contact-map-info {
+                text-align: center !important;
+            }
+        }
+    </style>
+
+    <!-- ⚡ 修复版：完美抓取 姓名 + 公司 + 详细需求 拼接发送 -->
 <script>
     function sendInquiryViaChannel(channel) {
-        // 1. 只抓取买家填写的留言数据（无填写则使用默认采购话术）
-        const clientMsg = document.getElementById('cfg-message') 
-            ? document.getElementById('cfg-message').value.trim() 
-            : "";
-            
+        // 1. 获取所有 3 个输入框的值
+        const clientName = document.getElementById('cfg-name') ? document.getElementById('cfg-name').value.trim() : "";
+        const clientContact = document.getElementById('cfg-contact') ? document.getElementById('cfg-contact').value.trim() : "";
+        const clientMsg = document.getElementById('cfg-message') ? document.getElementById('cfg-message').value.trim() : "";
+
+        // 默认备用需求
         const finalMsg = clientMsg || "I am interested in your wholesale catalog and products. Please send me more detailed pricing and MOQ.";
 
-        // 2. 组装简洁规范的邮件主题与正文
-        const emailSubject = "Aileen Home Studio Website Sourcing Inquiry";
-        const formattedBody = `Dear Aileen,\n\nYou have received a new sourcing inquiry from your website:\n\n[Message / Requirements]\n${finalMsg}\n\nBest regards,`;
+        // 2. 判断是否有填写姓名/公司，如果有就组合显示
+        const nameText = clientName ? `Name: ${clientName}` : "";
+        const contactText = clientContact ? `Company/Contact: ${clientContact}` : "";
 
-        // 3. 根据买家点击的通道精准分流
+        // 3. 根据不同通道拼接内容
         if (channel === 'email') {
-            // 唤醒全功能邮箱
+            const emailSubject = "Aileen Home Studio Website Sourcing Inquiry";
+            
+            let formattedBody = `Dear Aileen,\n\nYou have received a new sourcing inquiry from your website:\n\n`;
+            if (clientName) formattedBody += `[Name]: ${clientName}\n`;
+            if (clientContact) formattedBody += `[Company / Contact]: ${clientContact}\n`;
+            formattedBody += `[Requirements]: ${finalMsg}\n\nBest regards,`;
+
             const mailtoUrl = `mailto:2040967669aileen@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(formattedBody)}`;
             window.location.href = mailtoUrl;
 
         } else if (channel === 'whatsapp') {
-            // 唤醒 WhatsApp，直接发送精致的留言内容
-            const whatsappText = `Hi Aileen, "${finalMsg}"`;
+            // 组装精致的 WhatsApp 消息格式
+            let whatsappParts = ["Hi Aileen, I have a sourcing inquiry:"];
+            if (clientName) whatsappParts.push(`- Name: ${clientName}`);
+            if (clientContact) whatsappParts.push(`- Company/WhatsApp: ${clientContact}`);
+            whatsappParts.push(`- Requirement: "${finalMsg}"`);
+
+            const whatsappText = whatsappParts.join("\n");
             window.open(`https://wa.me/8618894695487?text=${encodeURIComponent(whatsappText)}`, '_blank');
         }
     }
