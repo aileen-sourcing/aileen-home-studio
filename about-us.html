@@ -294,6 +294,106 @@
           font-size: 13px;
         }
       }
+      /* 照片展示外层容器：与上方三栏卡片对齐，不再铺满全屏 */
+      .gallery-wrapper {
+        max-width: 1000px;
+        margin: 50px auto 20px auto;
+        padding: 0 10px;
+      }
+
+      /* 居中、加粗、艺术字体 + 倒影效果的分类标题 */
+      .showroom-category-title {
+        font-family: "Georgia", "Times New Roman", "Playfair Display", serif;
+        font-size: 24px;
+        font-weight: 800;
+        font-style: italic;
+        letter-spacing: 0.04em;
+        color: #1a1a1a;
+        text-align: center;
+        margin: 25px 0 38px 0;
+        /* 优雅倒影效果 */
+        -webkit-box-reflect: below -4px linear-gradient(transparent 35%, rgba(184, 115, 51, 0.25));
+      }
+
+      /* 电脑端改为 4 列排布（单张图缩小一圈，更加精致） */
+      .about-gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      /* 精致画框质感：香槟金细边框 + 留白内衬 + 立体阴影 */
+      .gallery-item {
+        background: #ffffff;
+        border: 2px solid #e2c9a6;
+        border-radius: 12px;
+        padding: 10px;
+        box-shadow: 0 8px 22px rgba(184, 115, 51, 0.12);
+        transition: all 0.35s ease;
+        text-align: center;
+      }
+
+      .gallery-item:hover {
+        border-color: #b87333;
+        box-shadow: 0 12px 26px rgba(184, 115, 51, 0.18);
+        transform: translateY(-4px);
+      }
+
+      /* 严格锁定 4:3 比例 + 内部细框圆角 */
+      .gallery-img-wrap {
+        position: relative;
+        width: 100%;
+        padding-top: 75%;
+        border-radius: 6px;
+        border: 1px solid #f0e6d8;
+        background-color: #f8f6f2;
+        overflow: hidden;
+      }
+
+      .gallery-img-wrap img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .gallery-item:hover .gallery-img-wrap img {
+        transform: scale(1.05);
+      }
+
+      .gallery-caption {
+        padding: 10px 6px 6px 6px;
+      }
+
+      .gallery-caption p {
+        font-size: 13px;
+        color: #4a4a4a;
+        line-height: 1.4;
+        margin: 0;
+        font-weight: 600;
+      }
+
+      /* 平板端：2 列 */
+      @media (max-width: 900px) {
+        .about-gallery-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 15px;
+        }
+      }
+
+      /* 手机端：1 列，标题字号微调 */
+      @media (max-width: 480px) {
+        .about-gallery-grid {
+          grid-template-columns: 1fr;
+        }
+        .showroom-category-title {
+          font-size: 20px;
+        }
+      }
     </style>
     <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
@@ -312,7 +412,7 @@
     
     <!-- 顶部居中标题与分割线 -->
     <span class="about-subtitle">ABOUT US</span>
-    <h1 class="about-title">Your Flexible Sourcing Partner: From Individual Pieces to Bulk Orders</h1>
+    <h1 class="about-title">Your Flexible Trading Partner: From Trail Order to Bulk Orders</h1>
     <div class="about-divider"></div>
 
     <!-- 中间文案 -->
@@ -401,6 +501,85 @@
   </div>
 
   </div>
+  <!-- ========================================================
+       底部照片墙：8张 4:3 实景图分类展示
+       ======================================================== -->
+  
+  <!-- 分类一：圣诞装饰样品室 (建议放 3 张) -->
+  <div class="gallery-wrapper">
+  <div class="showroom-category-title">1. Christmas Decor Showroom</div>
+  <div class="about-gallery-grid">
+    <div class="gallery-item">
+      <div class="gallery-img-wrap"><img src="images/about-us-photos/christmas-decorations-wholesale-showroom-china.jpg" alt="Christmas Tree Showroom"></div>
+      <div class="gallery-caption"><p>Christmas Decorations & Ornaments Showroom</p></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-img-wrap"><img src="images/about-us-photos/christmas-wreath-garland-supplier-showroom.jpg" alt="Christmas Decor"></div>
+      <div class="gallery-caption"><p>Christmas wreath and garland showroom</p></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-img-wrap"><img src="images/about-us-photos/holiday-decor-manufacturer-sample-room.jpg" alt="Christmas Showroom"></div>
+      <div class="gallery-caption"><p>Holiday Showroom Collection</p></div>
+    </div>
+  </div>
+  </div>
+
+  <!-- 分类二：灯具与家居样品室 (建议放 3 张) -->
+  <div class="gallery-wrapper">
+  <div class="showroom-category-title">2. Lighting Sample Room</div>
+  <div class="about-gallery-grid">
+    <div class="gallery-item">
+      <div class="gallery-img-wrap"><img src="images/about-us-photos/modern-pendant-lights-wholesale-showroom.jpg" alt="Lighting Sample"></div>
+      <div class="gallery-caption"><p>Modern Lighting Display 01</p></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-img-wrap"><img src="images/about-us-photos/commercial-decorative-lighting-sample-room.jpg" alt="Decor Sample Room"></div>
+      <div class="gallery-caption"><p>Home Decor Sample Room</p></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-img-wrap"><img src="images/about-us-photos/custom-lamps-lighting-supplier-guangdong.jpg" alt="Lighting Collections"></div>
+      <div class="gallery-caption"><p>Custom Lighting Options</p></div>
+    </div>
+  </div>
+  </div>
+
+  <!-- 分类三：运输装柜与验货现场 (建议放 2 张，凑齐 8 张) -->
+  <div class="gallery-wrapper">
+  <div class="showroom-category-title">3. Container Loading & Shipping Operations</div>
+  <div class="about-gallery-grid">
+    <div class="gallery-item">
+      <div class="gallery-img-wrap"><img src="images/about-us-photos/export-container-loading-quality-inspection.jpg" alt="Container Loading"></div>
+      <div class="gallery-caption"><p>Strict Container Loading</p></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-img-wrap"><img src="images/about-us-photos/bulk-cargo-container-loading-china-factory.jpg" alt="Secure Packaging"></div>
+      <div class="gallery-caption"><p>Secure Export Packaging</p></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-img-wrap"><img src="images/about-us-photos/international-freight-container-shipping-china.jpg" alt="Secure Packaging"></div>
+      <div class="gallery-caption"><p>Loading Container</p></div>
+  </div>
+  </div>
+
+  <!--  分类四：客户来访与验厂照片 (Client Visits & On-Site Inspection)-->
+    <div class="gallery-wrapper">
+    <div class="showroom-category-title">4. Client Visits & On-Site Inspection</div>
+    <div class="about-gallery-grid">
+      <div class="gallery-item">
+        <div class="gallery-img-wrap"><img src="images/about-us-photos/overseas-buyer-christmas-tree-factory-visit.jpg" alt="Client Visit to Factory"></div>
+        <div class="gallery-caption"><p>Overseas Client On-Site Inspection</p></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img-wrap"><img src="images/about-us-photos/b2b-client-inspecting-christmas-tree-samples.jpg" alt="Face-to-Face Business Discussion"></div>
+        <div class="gallery-caption"><p>Face-to-Face Quality & Order Discussion</p></div>
+        </div>
+      <div class="gallery-item">
+        <div class="gallery-img-wrap"><img src="images/about-us-photos/china-exhibition-client-meeting.jpg" alt="Face-to-Face Business Discussion"></div>
+        <div class="gallery-caption"><p>Face-to-Face at the Fair</p></div>
+        </div>
+      </div>
+    </div>
+
 </section>
 
 </body>
