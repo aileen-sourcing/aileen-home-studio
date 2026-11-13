@@ -1449,9 +1449,7 @@ const detailsDatabase = {
             "images/products/lighting/floor-lamps/fl20261008/modern-floor-lamp-with-table-glass-globe-dimensions.jpg",
             "images/products/lighting/floor-lamps/fl20261008/mid-century-arc-floor-lamp-home-office.jpg",
             "images/products/lighting/floor-lamps/fl20261008/amber-glass-arc-floor-lamp-side-table.jpg",
-            "images/products/lighting/floor-lamps/fl20261008/vintage-standing-lamp-with-table-reading.jpg"
-            
-        ], 
+            "images/products/lighting/floor-lamps/fl20261008/vintage-standing-lamp-with-table-reading.jpg"], 
         specs: [
             { label: "Product Type", value: "Mid-Century Arc Floor Lamp with Side Table" },
             { label: "Style", value: "Mid-Century Modern / Vintage / Retro" },
@@ -1474,13 +1472,7 @@ const detailsDatabase = {
                 a: "Thanks to its curved stem design and 3-color temperature modes, it functions as both ambient and task lighting. The shade positions light directly over your seating area, making it an ideal reading lamp for the living room, bedroom, or home office."},
             {
                 q: "How much weight can the built-in side table and storage tray hold?",
-                a: "The integrated wooden side table and lower storage tray are engineered for everyday convenience. The top tabletop easily supports daily essentials like a coffee mug, smartphone, or book, while the lower basket tray neatly stores magazines, remote controls, or small decor items."},
-            {
-                q: "Is assembly difficult, and what tools are required?",
-                a: "Assembly is quick and straightforward, taking about 10 to 15 minutes. All necessary hardware, clear step-by-step instructions, and an installation tool are included in the package—no extra tools needed."},
-            {
-                q: "Is this floor lamp with table suitable for small spaces or tight corners?",
-                a: "Yes! This space-saving floor lamp with a tray table combines a functional end table and a standing lamp into one compact footprint."}]
+                a: "The integrated wooden side table and lower storage tray are engineered for everyday convenience. The top tabletop easily supports daily essentials like a coffee mug, smartphone, or book, while the lower basket tray neatly stores magazines, remote controls, or small decor items."}]
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "pendants")
