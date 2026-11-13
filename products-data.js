@@ -1445,20 +1445,42 @@ const detailsDatabase = {
         description: "Upgrade your home decor with this versatile mid-century floor lamp with table. Designed with a warm amber glass shade, an elegant arching stem, and a built-in wooden side table, this 2-in-1 standing lamp combines mid-century modern aesthetic with everyday practicality. Whether placed next to your sofa or in a cozy reading corner, it offers the perfect blend of ambient lighting and convenient storage.",
         images: [
             "images/products/lighting/floor-lamps/fl20261008/mid-century-floor-lamp-with-table-main.jpg",
+            "images/products/lighting/floor-lamps/fl20261008/arc-floor-lamp-with-side-table-modern-living-room-brown.jpg",
+            "images/products/lighting/floor-lamps/fl20261008/modern-floor-lamp-with-table-glass-globe-dimensions.jpg",
             "images/products/lighting/floor-lamps/fl20261008/mid-century-arc-floor-lamp-home-office.jpg",
             "images/products/lighting/floor-lamps/fl20261008/amber-glass-arc-floor-lamp-side-table.jpg",
-            "images/products/lighting/floor-lamps/fl20261008/modern-floor-lamp-with-table-living-room.jpg",
-            "images/products/lighting/floor-lamps/fl20261008/vintage-standing-lamp-with-table-reading.jpg",
-            "images/products/lighting/floor-lamps/fl20261008/wood-floor-lamp-with-tray-table-corner.jpg"
+            "images/products/lighting/floor-lamps/fl20261008/vintage-standing-lamp-with-table-reading.jpg"
+            
         ], 
         specs: [
             { label: "Product Type", value: "Mid-Century Arc Floor Lamp with Side Table" },
             { label: "Style", value: "Mid-Century Modern / Vintage / Retro" },
-            { label: "Light Source Type", value: "E26 / E27 Base (LED Bulb Compatible)" },
+            { label: "Material", value: "Rubber wood + Glass Lampshade + Button Switch" },
+            { label: "Package Size", value: "65x49x37.5CM" },
+            { label: "Weight", value: "3.5KG" },
+            { label: "Light Source Type", value: "E27 Base (LED Bulb Compatible)" },
             { label: "Voltage", value: "110V - 240V (Global Compatibility)" },
             { label: "Finish Color", value: "Bronze / Dark Espresso & Amber" },
-            { label: "Application", value: "Living Room, Bedroom, Home Office, Reading Nook" }
-        ]
+            { label: "Application", value: "Living Room, Bedroom, Home Office, Reading Nook" }],
+        faq: [
+            {
+                q: "What lampshade colors and lighting modes are available for this arc floor lamp?",
+                a: "This mid-century arc floor lamp offers two glass lampshade options—classic frosted white for a clean, minimalist look, and gradient amber for a warm, vintage glow. It also features 3 adjustable lighting modes (Warm White, Neutral White, and Cool White), allowing you to easily switch from cozy evening ambiance to bright task lighting for reading."},
+            {
+                q: "Can this floor lamp be used in my country? What plug types do you provide?",
+                a: "Yes, we support global plug customization based on your destination country. Whether you require US (Type A/B), EU (Type C/F), UK (Type G), or AU (Type I) plugs, we will equip the lamp with the appropriate power plug and voltage compatibility before shipping."},
+            {
+                q: "Does this arc floor lamp provide enough light for reading, or is it just ambient lighting?",
+                a: "Thanks to its curved stem design and 3-color temperature modes, it functions as both ambient and task lighting. The shade positions light directly over your seating area, making it an ideal reading lamp for the living room, bedroom, or home office."},
+            {
+                q: "How much weight can the built-in side table and storage tray hold?",
+                a: "The integrated wooden side table and lower storage tray are engineered for everyday convenience. The top tabletop easily supports daily essentials like a coffee mug, smartphone, or book, while the lower basket tray neatly stores magazines, remote controls, or small decor items."},
+            {
+                q: "Is assembly difficult, and what tools are required?",
+                a: "Assembly is quick and straightforward, taking about 10 to 15 minutes. All necessary hardware, clear step-by-step instructions, and an installation tool are included in the package—no extra tools needed."},
+            {
+                q: "Is this floor lamp with table suitable for small spaces or tight corners?",
+                a: "Yes! This space-saving floor lamp with a tray table combines a functional end table and a standing lamp into one compact footprint."}]
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "pendants")
