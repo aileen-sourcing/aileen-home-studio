@@ -880,6 +880,34 @@
         padding: 0 !important; 
     }
 }
+/* 🍏 专属于苹果手机（iOS Safari / 微信内置浏览器等）的精准修复 */
+@supports (-webkit-touch-callout: none) {
+    html, body {
+        height: auto !important;
+        min-height: 100% !important;
+    }
+    
+    body {
+        display: block !important; /* 取消苹果上的 flex 强制锁高 */
+        position: relative !important;
+        padding-bottom: 60px !important; /* 给底部留出空间，防止页脚贴太紧 */
+    }
+
+    /* 确保苹果手机上的主布局能随着商品自动撑开 */
+    .main-layout {
+        display: flex !important;
+        flex-direction: column !important;
+        min-height: auto !important;
+    }
+
+    /* 强制苹果手机上的页脚乖乖呆在最底部，绝对不准悬空卡在中间 */
+    footer {
+        position: relative !important;
+        width: 100% !important;
+        margin-top: 40px !important;
+        clear: both !important;
+    }
+}
     </style>
 
     <script src="products-data.js"></script>
