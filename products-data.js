@@ -630,7 +630,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Winter decor")
-    "white seashell christmas tree ornaments set coastal holiday decor": {
+    "white seashell christmas ornaments set coastal holiday decor": {
         category: "holiday",
         subcategory: "winter-decor", 
         code: "Item Code: wd20261030",
