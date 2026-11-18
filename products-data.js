@@ -83,14 +83,17 @@ const detailsDatabase = {
                 a: "Setup takes only a few minutes with our 3-section structure and sturdy metal stand. Simply spend 10-15 minutes fluffing the branch tips for the fullest, most natural look."}]
     },
     "pre lit full dense christmas tree artificial pine green foliage for indoor holiday living room decor": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: ct26060707",
         description: "This prelit full artificial christmas tree boasts lush realistic green pine foliage. Equipped with pre-strung warm white lights to create cozy festive ambiance. Adopted hinged branch design for easy setup, matched with durable foldable metal stand. Full natural silhouette fits living rooms, entryways and retail spaces, bringing classic christmas vibe for indoor seasonal decoration.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/prelit-full-green-artificial-christmas-tree-whitebg-01.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/prelit-green-xmas-tree-display-shot-02.jpg"
-        ], 
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/prelit-full-green-artificial-christmas-tree-whitebg.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/prelit-green-xmas-tree-display-shot.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-by-fireplace-indoor-decor.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-holiday-fire-place-decor.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-warm-lights-cozy-home.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-with-gifts-living-room.jpg"], 
         specs: [
             { label: "Foliage", value: "Lush full green realistic PVC pine branches" },
             { label: "Lighting", value: "Pre-installed warm white lights" },
@@ -98,8 +101,20 @@ const detailsDatabase = {
             { label: "Base", value: "Sturdy foldable metal stand" },
             { label: "Shape", value: "Full classic traditional christmas tree silhouette" },
             { label: "Features", value: "Easy assembly reusable realistic foliage stable metal support" },
-            { label: "Application", value: "Indoor living room entryway shop front seasonal decoration" }
-        ]
+            { label: "Application", value: "Indoor living room entryway shop front seasonal decoration" }],
+        faq: [
+            {
+                q: "What is your Minimum Order Quantity (MOQ), and can we order a sample before placing a bulk order?",
+                a: "Our standard wholesale MOQ is 10-100 pieces per style, with flexible mixed-size options (ranging from 5ft to 9ft) available to help retailers test market demand. Sample orders are supported for quality, branch density, and lighting inspection prior to mass production, and sample fees can be credited toward your formal bulk order."},
+            {
+                q: "Do your commercial artificial Christmas trees meet fire-retardant standards and regional electrical certifications?",
+                a: "Yes. All trees are manufactured using certified flame-retardant PVC/PE materials suitable for commercial spaces such as shopping malls, hotels, and offices. For pre-lit models, we provide low-voltage LED light strings equipped with compliant plugs and transformers tailored to your target market (UL/ETL for North America, CE/RoHS for Europe, BS for the UK, and SAA for Australia)."},
+            {
+                q: "How are the trees packaged for international shipping, and what is the container loading capacity?",
+                a: "Each tree uses a space-saving 3-section hinged construction packed into a heavy-duty 5-ply export master carton to minimize volumetric weight and freight costs. Standard carton dimensions and CBM details are available per size (5ft-9ft), allowing high container loading efficiency for 20GP and 40HQ shipments. Drop-test compliant mail-order packaging is also available for e-commerce sellers."},
+            {
+                q: "Do you offer OEM/ODM customization (such as flocked snow finishes, custom heights, or private-label packaging), and what is the lead time?",
+                a: "Yes, we offer full OEM/ODM customization, including custom tree heights, PE/PVC tip ratios, snow-flocked or frosted finishes, warm-white or multicolor LED configurations, and custom-printed retail color boxes with your brand logo. Standard production lead time is 20-35 days depending on order volume and seasonal peak schedules. Contact our team for a tailored FOB/DDP/EXW quote and full holiday catalog."}]
     },
     "pre lit slim pencil christmas tree with artificial white pine and rainbow led for indoor holiday display": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
@@ -1449,7 +1464,8 @@ const detailsDatabase = {
             "images/products/lighting/floor-lamps/fl20261008/modern-floor-lamp-with-table-glass-globe-dimensions.jpg",
             "images/products/lighting/floor-lamps/fl20261008/mid-century-arc-floor-lamp-home-office.jpg",
             "images/products/lighting/floor-lamps/fl20261008/amber-glass-arc-floor-lamp-side-table.jpg",
-            "images/products/lighting/floor-lamps/fl20261008/vintage-standing-lamp-with-table-reading.jpg"], 
+            "images/products/lighting/floor-lamps/fl20261008/vintage-standing-lamp-with-table-reading.jpg"
+        ], 
         specs: [
             { label: "Product Type", value: "Mid-Century Arc Floor Lamp with Side Table" },
             { label: "Style", value: "Mid-Century Modern / Vintage / Retro" },
@@ -1460,6 +1476,7 @@ const detailsDatabase = {
             { label: "Voltage", value: "110V - 240V (Global Compatibility)" },
             { label: "Finish Color", value: "Bronze / Dark Espresso & Amber" },
             { label: "Application", value: "Living Room, Bedroom, Home Office, Reading Nook" }],
+
         faq: [
             {
                 q: "What lampshade colors and lighting modes are available for this arc floor lamp?",
