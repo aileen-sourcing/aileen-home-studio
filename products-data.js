@@ -729,9 +729,17 @@ const detailsDatabase = {
             "images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-bare-no-lights-05.jpg"
         ], 
         specs: [
-            { label: "Size", value: "45CM/60CM/90CM, Customizable" },
-            { label: "power supply", value: "requires 3 aa batteries (batteries not included)" },
-            { label: "Material", value: "pvc pine branches + fabric wrapped weighted base" },
+            { label: "Size", value: "60CM, Customizable" },
+            { label: "power supply", value: "requires 3AA batteries (batteries not included)" },
+            { label: "Material", value: "PVC + fabric wrapped weighted base" },
+            { label: "light Quantity", value: "30 PCS LED Battery Light" },
+            { label: "QTY/CTN", value: "15PCS/CTN" },
+            { label: "Package Size", value: "50x40x46CM" },
+            { label: "Tips", value: "80 Tips" },
+            { label: "Net Weight", value: "8.55KG" },
+            { label: "Gross Weight", value: "9.43KG" },
+            { label: "PVC Thickness", value: "0.1MM" },
+            { label: "PVC Width", value: "2.5 Inch" },
             { label: "light options", value: "unlit bare tree / red / orange / white / purple led lights" },
             { label: "Application", value: "Indoor tabletop, desk, mantel, halloween party display, home seasonal decor" }
         ]
