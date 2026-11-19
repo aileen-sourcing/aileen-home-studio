@@ -117,22 +117,36 @@ const detailsDatabase = {
                 a: "Yes, we offer full OEM/ODM customization, including custom tree heights, PE/PVC tip ratios, snow-flocked or frosted finishes, warm-white or multicolor LED configurations, and custom-printed retail color boxes with your brand logo. Standard production lead time is 20-35 days depending on order volume and seasonal peak schedules. Contact our team for a tailored FOB/DDP/EXW quote and full holiday catalog."}]
     },
     "pre lit slim pencil christmas tree with artificial white pine and rainbow led for indoor holiday display": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: ct20260708",
         description: "Gradient rainbow pre lit christmas tree built in colorful led lights. Dense artificial pine branches create full lush appearance. Multiple lighting modes available for atmosphere adjustment. Suitable for living room bedroom indoor christmas and party scene decoration. Quick assembly and stable base ensure convenient placement.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/pre-lit-gradient-rainbow-christmas-tree-white-background-main-01.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/rainbow-led-christmas-tree-light-up-display-02.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/gradient-color-christmas-tree-indoor-living-room-scene-03.jpg"
-        ], 
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/pre-lit-gradient-rainbow-christmas-tree-white-background.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/rainbow-led-christmas-tree-light-up-display.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/rainbow-christmas-tree-pre-lit-living-room-window-scene.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/pre-lit-rainbow-christmas-tree-ribbon-corner-lights.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/pre-lit-rainbow-christmas-tree-cozy-sofa-room-decor.jpg",
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/gradient-color-christmas-tree-indoor-living-room-scene.jpg"], 
         specs: [
             { label: "Material", value: "Artificial pine branch metal stand" },
             { label: "Light Type", value: "Built-in gradient colorful rainbow led lights" },
             { label: "Style", value: "Gradient rainbow illuminated christmas tree)" },
             { label: "Features", value: "Pre-strung led lights easy assembly dense foliage stable support adjustable lighting modes" },
-            { label: "Application", value: "Living room bedroom home indoor christmas party decoration" }
-        ]
+            { label: "Application", value: "Living room bedroom home indoor christmas party decoration" }],
+        faq: [
+            {
+                q: "Are the LED lights pre-installed on this gradient rainbow Christmas tree, and how does it light up?",
+                a: "Yes, this pre-lit gradient rainbow artificial Christmas tree comes with factory-installed warm LED lights woven directly into the branches for effortless setup. Simply plug it in to illuminate the vibrant cyan, purple, blue, yellow, and orange ombre foliage with a warm, festive glow."},
+            {
+                q: "Do you offer country-specific power plugs and voltage compatibility for international buyers?",
+                a: "Yes. We supply safe low-voltage power adapters compatible with global standards, including US (110V), EU (220V), UK, and AU plugs, making this pre-lit Christmas tree ready for direct retail or commercial display worldwide without extra converters."},
+            {
+                q: "What is your Minimum Order Quantity (MOQ), and do you support sample orders?",
+                a: "We offer flexible ordering options to support both wholesale buyers and small-scale testing. Sample orders starting from 1 piece are available for quality evaluation on select models, while competitive bulk wholesale pricing applies to carton or volume orders."},
+            {
+                q: "Can we customize the packaging, specifications, or bulk shipping details for B2B orders?",
+                a: "Yes, we support OEM and ODM customization for B2B buyers, retail chains, and seasonal event planners, including custom packaging and private labeling. Each tree features a sectioned structure with a sturdy foldable metal stand, packed in an export-grade carton to optimize international shipping volume and ensure safe delivery."}]      
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "wreath")
