@@ -959,7 +959,12 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas-flowers/cf20261009/white-christmas-poinsettia-flower-home-lifestyle-scene.jpg",
         ], 
         specs: [
-            { label: "Product Name", value: "white glitter artificial poinsettia flower" },
+            { label: "Product Name", value: "14Pcs/Set white glitter artificial poinsettia flower" },
+            { label: "Size", value: "25x25x20.5cm" },
+            { label: "PCS/CTN", value: "10 Sets/CTN" },
+            { label: "Package Size", value: "37x30x40CM" },
+            { label: "Net Weight", value: "3.4KG" },
+            { label: "Gross Weight", value: "3.8KG" },
             { label: "Material", value: "fabric with silver glitter powder plastic base" },
             { label: "Color", value: "ivory glitter white" },
             { label: "Usage", value: "diy festive decorative accessory" },
