@@ -1046,18 +1046,20 @@ const detailsDatabase = {
             "images/products/holiday-decor/storage-bags/sb20260803/christmas-bauble-storage-bag-full-dividers.jpg",
             "images/products/holiday-decor/storage-bags/sb20260803/christmas-decoration-tote-half-divided.jpg",
             "images/products/holiday-decor/storage-bags/sb20260803/red-storage-box-label-holder.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260803/red-storage-box-side-handle.jpg",
-        ], 
+            "images/products/holiday-decor/storage-bags/sb20260803/red-storage-box-side-handle.jpg",], 
         specs: [
             { label: "Product Name", value: "Christmas Ornament Storage Bag" },
             { label: "Material", value: "Oxford Fabric, Cardboard Dividers" },
             { label: "Color", value: "Red" },
             { label: "Dimension", value: "65x33x33cm" },
             { label: "Slot Quantity", value: "128 slots" },
+            { label: "QTY/CTN", value: "8 PCS/CTN" },
+            { label: "Package Size", value: "68.5x35x36CM" },
+            { label: "Net Weight", value: "21.6KG" },
+            { label: "Gross Weight", value: "22.3KG" },
             { label: "Compatible Ornament", value: "Fits 3 inch christmas baubles" },
             { label: "Features", value: "Dust proof, Wear resistant, Portable" },
-            { label: "Application", value: "Christmas baubles, holiday decorative ornaments" },
-        ]
+            { label: "Application", value: "Christmas baubles, holiday decorative ornaments" },]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas-reindeer-decorations")
