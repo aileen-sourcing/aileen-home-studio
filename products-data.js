@@ -686,7 +686,7 @@ const detailsDatabase = {
                 q: "Can I order these in bulk or with custom packaging?",
                 a: "Absolutely. We offer bulk wholesale supply for store owners and event planners. Please contact us directly for catalog details and quantity discounts."}]
     },
-    "christmas pinecone ornaments set for diy wreath garland holiday decor": {
+    "christmas pinecone ornaments set for diy holiday decor": {
         category: "holiday",
         subcategory: "winter-decor", 
         code: "Item Code: wd20261109",
