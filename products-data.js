@@ -60,10 +60,12 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-cozy-window-room.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-fireplace-decor.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-holiday-gifts-room.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-living-room-decor.jpg"
-        ], 
+            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-living-room-decor.jpg"], 
         specs: [
-            { label: "Material", value: "Artificial pine branches / metal foldable stand" },
+            { label: "Material", value: "PE+PVC" },
+            { label: "Product Size", value: "7.5FT(228CM)" },
+            { label: "Package Size", value: "112x32x28CM" },
+            { label: "Light Quantity", value: "250 PCS" },
             { label: "Lighting", value: "Built-in warm white pre-strung led lights" },
             { label: "Shape Style", value: "Slim narrow pencil christmas tree" },
             { label: "Features", value: "Space saving design easy assembly dense foliage stable foldable base pre-installed lights" },
@@ -95,8 +97,12 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-warm-lights-cozy-home.jpg",
             "images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-with-gifts-living-room.jpg"], 
         specs: [
-            { label: "Foliage", value: "Lush full green realistic PVC pine branches" },
-            { label: "Lighting", value: "Pre-installed warm white lights" },
+            { label: "Material", value: "PE+PVC" },
+            { label: "Tips", value: "887 Tips" },
+            { label: "Product Size", value: "6.5FT(198CM)" },
+            { label: "Light Quantity", value: "450 PCS" },
+            { label: "Package Size", value: "104x32x37CM" },
+            { label: "Lighting", value: "Pre-installed Steady on Warm White Lights" },
             { label: "Structure", value: "Hinged foldable branches" },
             { label: "Base", value: "Sturdy foldable metal stand" },
             { label: "Shape", value: "Full classic traditional christmas tree silhouette" },
@@ -373,15 +379,17 @@ const detailsDatabase = {
         description: "Crafted from durable artificial pine branches, foam red berries and natural pine cones, this festive garland set is decorated with classic red buffalo plaid ribbon and embedded warm LED fairy lights. It works perfectly for front door, fireplace mantel, entryway and farmhouse Christmas ornaments, and its handmade solid structure allows repeated use with stable color that will not fade during long-term holiday decorations.",
         images: [
             "images/products/holiday-decor/christmas/garland/g20260711/christmas-garland-s-shape-buffalo-plaid-berry-pine-swag.jpg",
-            "images/products/holiday-decor/christmas/garland/g20260711/christmas-garland-6-shape-plaid-berry-pinecone-swag.jpg"
-        ], 
+            "images/products/holiday-decor/christmas/garland/g20260711/christmas-garland-6-shape-plaid-berry-pinecone-swag.jpg"], 
         specs: [
+            { label: "Product Size", value: "9FT(270CM)" },
+            { label: "Light Quantity", value: "50 PCS" },
             { label: "Material", value: "Artificial Pine Needles, Foam Berries, Pinecones, Plaid Fabric Ribbon" },
             { label: "Color", value: "Green Base, Red Berries, Red & Black Buffalo Plaid" },
-            { label: "Extra Feature", value: "Built-in Warm White LED String Lights" },
+            { label: "Extra Feature", value: "3AA Built-in Warm White String Lights" },
+            { label: "PCS/CTN", value: "6PCS/CTN" },
+            { label: "Package Size", value: "71x56x46CM" },
             { label: "Advantages", value: "Front Door, Fireplace, Wall, Entryway, Indoor Farmhouse Decor" },
-            { label: "Application", value: "Fireplace mantel, stair railing, door arch, indoor christmas scene decoration" }
-        ]
+            { label: "Application", value: "Fireplace mantel, stair railing, door arch, indoor christmas scene decoration" }]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "mini christmas tree")
@@ -392,15 +400,16 @@ const detailsDatabase = {
         description: "Create a warm welcome atmosphere with this fully pre-decorated potted christmas tree. It is embellished with classic plaid ribbons, bright red berries, pine cones and multi-color led lights. Mounted in an antique style decorative urn base, this slim decorative tree is ready to use out of box. Perfect for front porch, entryway, hallway and indoor foyer seasonal christmas decoration.",
         images: [
             "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/mini-christmas-tree-artificial-pine-red-plaid-berry-lights-tabletop-decor.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/mini-christmas-tree-faux-pine-red-plaid-balls-pinecone-home-table-decor.jpg"
-        ], 
+            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/mini-christmas-tree-faux-pine-red-plaid-balls-pinecone-home-table-decor.jpg"], 
         specs: [
+            { label: "Product Size", value: "3FT(90CM)" },
             { label: "Material", value: "Artificial pine needles, fabric ribbon, foam berries, plastic pine cones, resin urn base" },
-            { label: "Lighting	", value: "Built-in multi-color led lights" },
+            { label: "Light Quantity", value: "50 CS" },
+            { label: "Lighting	", value: "3AA Built-in multi-color lights" },
+            { label: "Package Size", value: "86x30x30CM" },
             { label: "Decoration", value: "Plaid ribbon, red berries, pine cones, foliage ornaments" },
             { label: "Features", value: "Fully pre-assembled, ready-to-display, stable decorative pot base, no extra decoration required" },
-            { label: "Application", value: "Front porch decor, entryway display, hallway ornament, indoor foyer christmas layout" }
-        ]
+            { label: "Application", value: "Front porch decor, entryway display, hallway ornament, indoor foyer christmas layout" }]
     },
     "farmhouse mini potted christmas tree set with artificial pine for green red indoor table decor": {
         category: "holiday",
