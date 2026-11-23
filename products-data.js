@@ -9,22 +9,21 @@ const detailsDatabase = {
         code: "Item Code: t20260929",
         description: "Meet Mei Mei, an original, handcrafted mushroom zombie art toy that brings a delightfully whimsical spin to classic zombie aesthetics! Featuring a pastel pink mushroom cap with white polka dots, iconic double dumbbells, and an expressive blue-tinted character design, Mei Mei is a must-have collectible for art toy lovers, pop-culture enthusiasts, and unique home decor collectors.",
         images: [
-            "images/products/home/toys/t20260929/mei-mei-mushroom-zombie-figure.jpg",
-            "images/products/home/toys/t20260929/mei-mei-zombie-figure-entryway.jpg",
-            "images/products/home/toys/t20260929/mei-mei-zombie-figure-home-shelf.jpg",
-            "images/products/home/toys/t20260929/mei-mei-zombie-figure-living-room.jpg",
-            "images/products/home/toys/t20260929/mei-mei-zombie-figure-office-desk.jpg",
-            "images/products/home/toys/t20260929/mei-mei-zombie-figure-study-desk.jpg"
-        ], 
+            "/aileen-home-studio/images/products/home/toys/t20260929/mei-mei-mushroom-zombie-figure.jpg",
+            "/aileen-home-studio/images/products/home/toys/t20260929/mei-mei-zombie-figure-entryway.jpg",
+            "/aileen-home-studio/images/products/home/toys/t20260929/mei-mei-zombie-figure-home-shelf.jpg",
+            "/aileen-home-studio/images/products/home/toys/t20260929/mei-mei-zombie-figure-living-room.jpg",
+            "/aileen-home-studio/images/products/home/toys/t20260929/mei-mei-zombie-figure-office-desk.jpg",
+            "/aileen-home-studio/images/products/home/toys/t20260929/mei-mei-zombie-figure-study-desk.jpg"], 
         specs: [
             { label: "Product Name", value: "Mei Mei Mushroom Zombie Art Toy Figure" },
             { label: "Character", value: "Mei Mei" },
             { label: "Product Type", value: "Designer Art Toy / Collectible Figure / Desktop Statue" },
             { label: "Material", value: "High-Quality Resin / PVC (Hand-painted)" },
             { label: "Base Type", value: "Circular Display Base with Nameplate" },
-            { label: "Suitable Scenes", value: "Office Desk, Entrance Shelf, Bookshelf, Living Room, Display Cabinet" }
-        ]
+            { label: "Suitable Scenes", value: "Office Desk, Entrance Shelf, Bookshelf, Living Room, Display Cabinet" }]
     },
+
     "christmas plush mouse shelf sitter doll for holiday mantel decor": {
         category: "home", 
         subcategory: "toys", 
@@ -36,16 +35,14 @@ const detailsDatabase = {
             "/aileen-home-studio/images/products/home/toys/t20261010/christmas-mouse-figurine-by-fireplace-tree-decor.jpg",
             "/aileen-home-studio/images/products/home/toys/t20261010/christmas-mouse-toy-vintage-bookshelf-display.jpg",
             "/aileen-home-studio/images/products/home/toys/t20261010/cute-christmas-mouse-doll-on-knit-sofa-decor.jpg",
-            "/aileen-home-studio/images/products/home/toys/t20261010/holiday-sitting-mouse-plush-on-mantel-christmas.jpg"
-        ], 
+            "/aileen-home-studio/images/products/home/toys/t20261010/holiday-sitting-mouse-plush-on-mantel-christmas.jpg"], 
         specs: [
             { label: "Product Name", value: "Christmas Plush Mouse Shelf Sitter Doll" },
             { label: "Primary Material", value: "Fabric, Soft Plush, Felt, Cotton & Wool Knit" },
             { label: "Style / Theme", value: "Nordic, Farmhouse, Vintage Christmas, Cozy Festive" },
             { label: "Color Palette", value: "Crimson Red, Cream White, Warm Grey, Rustic Brown" },
             { label: "Features", value: "Sitting posture with dangling legs, weighted base" },
-            { label: "Suitable Scenes", value: "Fireplace Mantel, Bookshelf, Sofa, Tiered Tray, Window Sill" }
-        ]
+            { label: "Suitable Scenes", value: "Fireplace Mantel, Bookshelf, Sofa, Tiered Tray, Window Sill" }]
     },
     // ==========================================
     // 🎄 大类 1：Holiday Decor (cat: "holiday")
@@ -137,7 +134,7 @@ const detailsDatabase = {
         specs: [
             { label: "Material", value: "Artificial pine branch metal stand" },
             { label: "Light Type", value: "Built-in gradient colorful rainbow led lights" },
-            { label: "Style", value: "Gradient rainbow illuminated christmas tree)" },
+            { label: "Style", value: "Gradient rainbow illuminated christmas tree" },
             { label: "Features", value: "Pre-strung led lights easy assembly dense foliage stable support adjustable lighting modes" },
             { label: "Application", value: "Living room bedroom home indoor christmas party decoration" }],
         faq: [
@@ -188,7 +185,7 @@ const detailsDatabase = {
                 a: "After the season, gently shake off any dust, avoid damp or overly hot storage spots, and place the wreath in a sturdy storage box or wreath bag so the pine branches, burlap bows, and wooden ornaments aren't crushed. Store it flat or hung upright in a cool, dry space until next Christmas."}]      
     },
     "frosted snowy christmas wreath grapevine rattan frame pink red for front door winter wall decor": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260709",
         description: "Multiple frosted christmas wreath styles are available. Each wreath is decorated with red and white striped bow candy ornaments gift boxes pinecones frosted leaves and vibrant red berries. Variations include designs with glossy red baubles or golden candle holders for candles. Options cover full circular frosted pine frames and asymmetrical natural grapevine rattan base wreaths. Ready-to-hang wreaths suit front door entryway mantel window indoor seasonal decoration.",
@@ -196,16 +193,14 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/wreath/w20260709/frosted-christmas-wreath-collection-white-background-main-01.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260709/frosted-pine-christmas-wreath-candy-gift-box-striped-bow-02.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260709/snowy-christmas-wreath-red-bauble-candy-striped-bow-03.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260709/asymmetrical-grapevine-rattan-frosted-christmas-wreath-04.jpg"
-        ], 
+            "images/products/holiday-decor/christmas/wreath/w20260709/asymmetrical-grapevine-rattan-frosted-christmas-wreath-04.jpg"], 
         specs: [
             { label: "Wreath Base", value: "Full circular frosted artificial pine frame / natural grapevine rattan frame (multiple options)" },
             { label: "Decorations", value: "Red-white striped bow candy ornaments gift boxes pinecones frosted green leaves red berries red christmas baubles golden candle holders" },
             { label: "Available Styles", value: "Full circular frosted pine wreath asymmetrical half-decorated grapevine rattan wreath" },
             { label: "Design Style", value: "Snowy frosted classic christmas style" },
             { label: "Features", value: "Hand assembled lightweight easy to hang reusable multiple decorative style choices" },
-            { label: "Application", value: "Front door entryway mantel wall window indoor holiday decoration" }
-        ]
+            { label: "Application", value: "Front door entryway mantel wall window indoor holiday decoration" }]
     },
     "autumn golden christmas wreath grapevine rattan base orange gold for front door fall seasonal wall decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
@@ -323,7 +318,7 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/wreath/w20260716/christmas-wreath-red-poinsettia-sheer-organza-ribbon-03.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260716/red-gold-wreath-gold-bauble-wide-red-bow-door-decor-04.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260716/frosted-pinecone-gold-ball-poinsettia-wreath-05.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260716/gold-leaf-red-poinsettia-christmas-wreath-06.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260716/gold-leaf-red-poinsettia-christmas-wreath-06.jpg"
         ], 
         specs: [
             { label: "Material", value: "Green PVC artificial pine branches" },
@@ -346,7 +341,7 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/wreath/w20260717/purple-christmas-wreath-material-intro-image-03.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260717/purple-striped-bow-glitter-flower-wreath-closeup-04.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260717/purple-bauble-snow-pine-wreath-detail-shot-one-05.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260717/purple-berry-glitter-flower-wreath-detail-shot-two-06.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260717/purple-berry-glitter-flower-wreath-detail-shot-two-06.jpg"
         ], 
         specs: [
             { label: "Material", value: "Dark green PVC pine branches with snow tipped finish" },
@@ -369,7 +364,7 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas/wreath/w20260718/red-white-star-wreath-round-ball-ornament-overview-03.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260718/christmas-wreath-candle-cup-decor-detail-image-04.jpg",
             "images/products/holiday-decor/christmas/wreath/w20260718/large-red-bow-snowy-pine-wreath-star-snowflake-design-05.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260718/striped-ribbon-star-bauble-frosted-wreath-style-06.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260718/striped-ribbon-star-bauble-frosted-wreath-style-06.jpg"
         ], 
         specs: [
             { label: "Material", value: "Green PVC pine branches with frosted snow finish" },
@@ -382,15 +377,15 @@ const detailsDatabase = {
         ]
     },
     // ==========================================
-    // 💡 大类 1：Holiday Decor (cat: garland")
+    // 💡 大类 1：Holiday Decor (cat: "garland")
     "christmas garland plaid pine berry set for indoor holiday home decoration": {
         category: "holiday",
         subcategory: "christmas", 
         code: "Item Code: g20260711",
         description: "Crafted from durable artificial pine branches, foam red berries and natural pine cones, this festive garland set is decorated with classic red buffalo plaid ribbon and embedded warm LED fairy lights. It works perfectly for front door, fireplace mantel, entryway and farmhouse Christmas ornaments, and its handmade solid structure allows repeated use with stable color that will not fade during long-term holiday decorations.",
         images: [
-            "images/products/holiday-decor/christmas/garland/g20260711/christmas-garland-s-shape-buffalo-plaid-berry-pine-swag.jpg",
-            "images/products/holiday-decor/christmas/garland/g20260711/christmas-garland-6-shape-plaid-berry-pinecone-swag.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/garland/g20260711/christmas-garland-s-shape-buffalo-plaid-berry-pine-swag.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/garland/g20260711/christmas-garland-6-shape-plaid-berry-pinecone-swag.jpg"], 
         specs: [
             { label: "Product Size", value: "9FT(270CM)" },
             { label: "Light Quantity", value: "50 PCS" },
@@ -401,6 +396,35 @@ const detailsDatabase = {
             { label: "Package Size", value: "71x56x46CM" },
             { label: "Advantages", value: "Front Door, Fireplace, Wall, Entryway, Indoor Farmhouse Decor" },
             { label: "Application", value: "Fireplace mantel, stair railing, door arch, indoor christmas scene decoration" }]
+    },
+    "artificial christmas garland with berries poinsettia bows for mantle": {
+        category: "holiday",
+        subcategory: "christmas", 
+        code: "Item Code: g20261123",
+        description: "This artificial Christmas garland is constructed on a flexible inner wire frame with dense green PVC pine needles, allowing you to bend, shape, or connect multiple pieces across fireplace mantles, staircase railings, door frames, or dining tables. Available in four pre-decorated styles—eucalyptus leaves with orange poinsettias and amber bows; snow-flocked pine with red berries, holly leaves, and striped bows; gold poinsettias with metallic ornaments, pinecones, and gold-trimmed bows; or red berries with white cotton bolls, pinecones, and burlap bows—all decorative elements come pre-attached, requiring only a few minutes of branch fluffing out of the box before hanging.",
+        images: [
+            "/aileen-home-studio/images/products/holiday-decor/christmas/garland/g20261123/christmas-garland-flocked-red-berries-striped-bows.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/garland/g20261123/christmas-garland-gold-poinsettia-bows-pinecones.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/garland/g20261123/christmas-garland-red-berries-cotton-burlap-bows.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/garland/g20261123/christmas-garland-eucalyptus-orange-poinsettia-bows.jpg"], 
+        specs: [
+            { label: "Product Type", value: "Artificial Pre-Decorated Christmas Garland" },
+            { label: "Material", value: "Flame-Retardant PVC Pine Needles, Polyester Ribbons, Foam Berries, Natural Pinecones" },
+            { label: "Structure", value: "Flexible internal wire frame with end hanging loops" },
+            { label: "Recommended Use", value: "Fireplace Mantle, Staircase Railing, Front Door Frame, Dining Table Runner, Window Sill" }],
+        faq: [
+            {
+                q: "Does the garland arrive ready to hang, or do I need to assemble the decorations?",
+                a: "All ornaments—including the poinsettias, berries, pinecones, and bows—come securely pre-attached to the garland. Because the garland is packed compactly for shipping, we recommend spending 3 to 5 minutes gently fluffing and spreading out the pine branches and ribbons upon arrival to achieve the full, lush look shown in the photos."},
+            {
+                q: "How can I secure this garland to my fireplace mantle or staircase without damaging the surface?",
+                a: "Each end of the garland features a built-in loop for easy hanging. For mantles and banisters, we recommend using heavy-duty removable adhesive hooks, clear zip ties, or floral wire wrapped gently around the railing so it stays securely in place without leaving marks."},
+            {
+                q: "Can I connect two garlands together for a wider fireplace or longer staircase?",
+                a: "Yes! Thanks to the flexible wire core and end loops, you can easily link two or more garlands together by hooking the ends or twisting the inner wire tips together to create a seamless, continuous length for larger spaces."},
+            {
+                q: "Is this Christmas garland suitable for outdoor use?",
+                a: "This garland is designed primarily for indoor spaces (such as mantles, staircases, and indoor doorways) and covered outdoor areas like a sheltered front porch. To preserve the delicate fabric bows, flocked snow, and ribbons, we advise keeping it away from direct rain, heavy snow, and prolonged harsh sunlight."}]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "mini christmas tree")
@@ -415,7 +439,7 @@ const detailsDatabase = {
         specs: [
             { label: "Product Size", value: "3FT(90CM)" },
             { label: "Material", value: "Artificial pine needles, fabric ribbon, foam berries, plastic pine cones, resin urn base" },
-            { label: "Light Quantity", value: "50 CS" },
+            { label: "Light Quantity", value: "50 PCS" },
             { label: "Lighting	", value: "3AA Built-in multi-color lights" },
             { label: "Package Size", value: "86x30x30CM" },
             { label: "Decoration", value: "Plaid ribbon, red berries, pine cones, foliage ornaments" },
@@ -799,8 +823,7 @@ const detailsDatabase = {
             "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-pink-flower-bow-wall-hanging-03.jpg",
             "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-rose-floral-greenery-wall-hanging-04.jpg",
             "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-rainbow-egg-farmhouse-door-05.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-mixed-egg-spring-greenery-door-06.jpg"
-        ], 
+            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-mixed-egg-spring-greenery-door-06.jpg"], 
         specs: [
             { label: "Size", value: "Customizable Sizes" },
             { label: "Festive & Vibrant Design", value: "Features realistic greenery, colorful Easter eggs, and springtime accents to create an inviting seasonal atmosphere." },
@@ -808,8 +831,7 @@ const detailsDatabase = {
             { label: "Versatile Decorating Options", value: "Ideal for front doors, covered porches, mantels, living room walls, or as a charming table centerpiece." },
             { label: "Low Maintenance", value: "Requires no watering or pruning—simply dust lightly with a dry cloth to maintain its beautiful look." },
             { label: "Material", value: "Premium artificial foliage, foam eggs, natural grapevine / metal ring" },
-            { label: "Application", value: "Suitable for indoor and covered outdoor use" },
-        ]
+            { label: "Application", value: "Suitable for indoor and covered outdoor use" }]
     },
     "easter egg wreath artificial foam pastel front door": {
         category: "holiday",
@@ -822,14 +844,12 @@ const detailsDatabase = {
             "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-pastel-multicolor-front-door-03.jpg",
             "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-glitter-pastel-front-door-04.jpg",
             "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-berry-floral-front-door-05.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-speckled-pastel-front-door-06.jpg"
-        ], 
+            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-speckled-pastel-front-door-06.jpg"], 
         specs: [
             { label: "Base Construction", value: "Natural Rattan / Twig Ring" },
             { label: "Mounting Type", value: "Wall Mount, Door Mount, Hanging" },
             { label: "Material", value: "High-Density Foam, Natural Twig Vine, Plastic" },
-            { label: "Occasion & Season", value: "Easter, Housewarming" },
-        ]
+            { label: "Occasion & Season", value: "Easter, Housewarming" }]
     },
     "green moss easter bunny figurine with pink collar": {
         category: "holiday",
@@ -842,15 +862,13 @@ const detailsDatabase = {
             "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-flocked-easter-rabbit-spring-table-setting.jpg",
             "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-table-decor-centerpiece.jpg",
             "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-rabbit-tabletop-decoration.jpg",
-            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-fireplace-mantel-decor.jpg"
-        ], 
+            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-fireplace-mantel-decor.jpg"], 
         specs: [
             { label: "Material", value: "Resin / Polyfoam core with high-density moss flocking" },
             { label: "Color", value: "Natural Moss Green & Soft Pink" },
             { label: "Style", value: "Rustic, Farmhouse, Spring Cottagecore" },
             { label: "Care Instructions", value: "Dust gently with a soft dry cloth; avoid direct water/moisture" },
-            { label: "Placement", value: "Indoor Tabletop, Fireplace Mantel, Shelf, Entryway" },
-        ]
+            { label: "Placement", value: "Indoor Tabletop, Fireplace Mantel, Shelf, Entryway" }]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas flowers")
@@ -861,7 +879,7 @@ const detailsDatabase = {
         description: "Add distinctive festive charm to holiday displays with this blue silver poinsettia ornament. Made of lightweight fabric with hollow silver leaf trim, it brings shiny layered visual effects. Perfect for decorating christmas trees, wreaths, garlands, gift arrangements, creating eye-catching winter holiday decor.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260717/blue-silver-poinsettia-decoration-01.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260717/blue-lace-poinsettia-interior-decor-02.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260717/blue-lace-poinsettia-interior-decor-02.jpg"
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, hollow silver plastic leaves" },
@@ -878,7 +896,7 @@ const detailsDatabase = {
         description: "Bring pure elegant holiday aesthetics to your decorations with this white poinsettia ornament. Made of soft layered fabric with exquisite floral details, it delivers a delicate natural look. Perfect for decorating christmas trees, wreaths, garlands and seasonal floral arrangements, adding minimalist festive atmosphere to holiday displays.",
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260718/white-fabric-poinsettia-decoration-01.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260718/white-poinsettia-holiday-interior-display-02.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260718/white-poinsettia-holiday-interior-display-02.jpg"
         ], 
         specs: [
             { label: "Material", value: "Premium fabric petals, plastic stem" },
@@ -898,7 +916,7 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas-flowers/cf20260719/four-red-gold-lace-poinsettia-floral-set-02.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260719/red-gold-lace-poinsettia-holiday-display-03.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260719/size-measure-red-gold-lace-poinsettia-04.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260719/back-clip-view-red-gold-lace-poinsettia-05.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260719/back-clip-view-red-gold-lace-poinsettia-05.jpg"
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, hollow gold plastic leaves" },
@@ -919,7 +937,7 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-flowers-christmas-tree-ornaments-decor.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-christmas-dining-table-centerpiece-decor.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-christmas-garland-fireplace-mantel-decor.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-flowers-fireplace-garland-with-lights.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-flowers-fireplace-garland-with-lights.jpg"
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, plastic stem" },
@@ -937,7 +955,7 @@ const detailsDatabase = {
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260721/gold-glitter-fabric-poinsettia-floral-ornament-01.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260721/size-measure-gold-poinsettia-fabric-decoration-02.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260721/gold-glitter-poinsettia-holiday-interior-display-03.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260721/gold-glitter-poinsettia-holiday-interior-display-03.jpg"
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, plastic stem" },
@@ -955,7 +973,7 @@ const detailsDatabase = {
         images: [
             "images/products/holiday-decor/christmas-flowers/cf20260722/silver-glitter-fabric-poinsettia-floral-ornament-01.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20260722/size-measure-silver-poinsettia-fabric-decoration-02.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260722/silver-glitter-poinsettia-holiday-interior-display-03.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20260722/silver-glitter-poinsettia-holiday-interior-display-03.jpg"
         ], 
         specs: [
             { label: "Material", value: "Fabric flower petals, plastic stem pick" },
@@ -976,7 +994,7 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas-flowers/cf20261009/white-glitter-poinsettia-flower-back-detail-closeup.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20261009/faux-white-christmas-poinsettia-flower-white-background.jpg",
             "images/products/holiday-decor/christmas-flowers/cf20261009/white-poinsettia-flower-decorated-on-christmas-tree.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20261009/white-christmas-poinsettia-flower-home-lifestyle-scene.jpg",
+            "images/products/holiday-decor/christmas-flowers/cf20261009/white-christmas-poinsettia-flower-home-lifestyle-scene.jpg"
         ], 
         specs: [
             { label: "Product Name", value: "14Pcs/Set white glitter artificial poinsettia flower" },
@@ -1000,15 +1018,13 @@ const detailsDatabase = {
         description: "Bring festive warmth to your holiday setup with this classic red and green merry christmas tree skirt. Designed with elegant scalloped edges, holly leaf cutouts, and star motifs, it beautifully covers your tree stand while protecting your floors. Perfect for decorating living rooms, offices, or holiday parties to create a cozy christmas atmosphere.",
         images: [
             "images/products/holiday-decor/tree-skirts/ts20260717/christmas-tree-skirt-red-embroidered-indoor-01.jpg",
-            "images/products/holiday-decor/tree-skirts/ts20260717/christmas-tree-skirt-wave-edge-floor-display-03.jpg"
-        ], 
+            "images/products/holiday-decor/tree-skirts/ts20260717/christmas-tree-skirt-wave-edge-floor-display-03.jpg"], 
         specs: [
             { label: "Size", value: "Customizable Sizes" },
             { label: "Classic festive design", value: "Features a vibrant red center with merry christmas lettering and a deep green border, creating a traditional holiday look for your christmas tree." },
             { label: "Unique cut-out detailing", value: "Designed with delicate scalloped edges, holly leaf motifs, and star cutouts to add elegance and depth to your tree base." },
             { label: "Durable & soft material", value: "Crafted from high-quality felt/fabric that protects your floors from pine needles and sap while adding a cozy feel." },
-            { label: "Versatile holiday decor", value: "Ideal for home, office, party, or commercial christmas decorations to create a warm holiday atmosphere." },
-        ]
+            { label: "Versatile holiday decor", value: "Ideal for home, office, party, or commercial christmas decorations to create a warm holiday atmosphere." }]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Storage Bags")
@@ -1023,8 +1039,7 @@ const detailsDatabase = {
             "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-handle-detail.jpg",
             "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-living-room.jpg",
             "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-closet.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-attic.jpg"
-        ], 
+            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-attic.jpg"], 
         specs: [
             { label: "Product Name", value: "Christmas Ornament Storage Box" },
             { label: "Material", value: "Polyester fabric + frosted PVC sheet + cardboard dividers" },
@@ -1032,8 +1047,7 @@ const detailsDatabase = {
             { label: "Feature", value: "Foldable, dustproof, visible window, portable handle, zipper closure" },
             { label: "Capacity", value: "Multiple separate compartments for Christmas baubles" },
             { label: "Application", value: "Storage for Christmas balls, holiday ornaments & seasonal decor" },
-            { label: "Design", value: "Cube shape decorated with Christmas tree pattern" },
-        ]
+            { label: "Design", value: "Cube shape decorated with Christmas tree pattern" }]
     },
     "christmas ornament storage bag 600d oxford with removable dividers for holiday decoration": {
         category: "holiday",
@@ -1046,15 +1060,13 @@ const detailsDatabase = {
             "images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-grid-fullopen-03.jpg",
             "images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-bag-card-slot-detail.jpg",
             "images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-bag-handle-detail.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-storage-bag-closet.jpg",
-        ], 
+            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-storage-bag-closet.jpg"], 
         specs: [
             { label: "Material", value: "600D Oxford Fabric" },
             { label: "Color", value: "Red & Green" },
             { label: "Shape Style", value: "Large Capacity Christmas Ornament Storage Bag" },
             { label: "Features", value: "Clear View Window, Removable Adjustable Dividers, Reinforced Carry Handles, Zipper Closure, Dust proof" },
-            { label: "Application", value: "For Christmas baubles, Xmas ornaments, small holiday decorative accessories, seasonal home storage" },
-        ]
+            { label: "Application", value: "For Christmas baubles, Xmas ornaments, small holiday decorative accessories, seasonal home storage" }]
     },
     "christmas storage bag oxford fabric 128 slots for 3 inch orenaments": {
         category: "holiday",
@@ -1066,7 +1078,7 @@ const detailsDatabase = {
             "images/products/holiday-decor/storage-bags/sb20260803/christmas-bauble-storage-bag-full-dividers.jpg",
             "images/products/holiday-decor/storage-bags/sb20260803/christmas-decoration-tote-half-divided.jpg",
             "images/products/holiday-decor/storage-bags/sb20260803/red-storage-box-label-holder.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260803/red-storage-box-side-handle.jpg",], 
+            "images/products/holiday-decor/storage-bags/sb20260803/red-storage-box-side-handle.jpg"], 
         specs: [
             { label: "Product Name", value: "Christmas Ornament Storage Bag" },
             { label: "Material", value: "Oxford Fabric, Cardboard Dividers" },
@@ -1079,7 +1091,7 @@ const detailsDatabase = {
             { label: "Gross Weight", value: "22.3KG" },
             { label: "Compatible Ornament", value: "Fits 3 inch christmas baubles" },
             { label: "Features", value: "Dust proof, Wear resistant, Portable" },
-            { label: "Application", value: "Christmas baubles, holiday decorative ornaments" },]
+            { label: "Application", value: "Christmas baubles, holiday decorative ornaments" }]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas-reindeer-decorations")
@@ -1093,8 +1105,7 @@ const detailsDatabase = {
             "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/small-standing-flocked-red-deer-silver-antler-figurine-02.jpg",
             "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/medium-tall-standing-red-reindeer-branch-antler-ornament-03.jpg",
             "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/tall-front-facing-red-flocking-deer-sculpture-silver-antler-04.jpg",
-            "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/carved-red-reindeer-figurine-with-golden-antler-decoration-05.jpg"
-        ], 
+            "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/carved-red-reindeer-figurine-with-golden-antler-decoration-05.jpg"], 
         specs: [
             { label: "Surface Craft", value: "Flocking / velvet flocked finish" },
             { label: "Main Body Color", value: "Bright red" },
@@ -1102,8 +1113,7 @@ const detailsDatabase = {
             { label: "Posture Options", value: "Lying deer / standing small deer / medium standing deer / tall standing deer / carved standing deer" },
             { label: "Material", value: "Plastic base with flocking coating" },
             { label: "Application", value: "Christmas, new year celebration, holiday party, home decoration, retail window display" },
-            { label: "Features", value: "Matte flocked surface, multiple size & posture options, lightweight, festive aesthetic, easy arrangement" },
-        ]
+            { label: "Features", value: "Matte flocked surface, multiple size & posture options, lightweight, festive aesthetic, easy arrangement" }]
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "lighting")
@@ -1225,19 +1235,16 @@ const detailsDatabase = {
             "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-reading-desk.jpg",
             "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-living-room-decor.jpg",
             "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-home-office.jpg",
-            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-bedside-table.jpg"
-
-        ], 
+            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-bedside-table.jpg"], 
         specs: [
             { label: "Product Type", value: "Table Lamp / Desk Light" },
             { label: "Material", value: "Natural Wood, Metal Alloy" },
-            { label: "Color", value: "lnut, Black" },
+            { label: "Color", value: "Walnut, Black" },
             { label: "AC Voltage", value: "110-240 volts" },
             { label: "Switch Method", value: "Touch switch (integrated LED light)" },
             { label: "Color Temperature", value: "Warm white (3000K), Neutral white (4000K), Cool white (6000K)" },
             { label: "Design Style", value: "Mid-Century Modern / Japandi" },
-            { label: "Suitable For", value: "Bedroom, Living Room, Home Office, Reading Desk" }
-        ]
+            { label: "Suitable For", value: "Bedroom, Living Room, Home Office, Reading Desk" }]
     },
     "vintage wooden table lamp with amber glass shade for home decor": {
         category: "lighting",
@@ -1897,14 +1904,12 @@ const detailsDatabase = {
             "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-modern-home.jpg",
             "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-living-room.jpg",
             "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-dark-interior.jpg",
-            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-decor-style.jpg"
-        ], 
+            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-decor-style.jpg"], 
         specs: [
             { label: "Product Type", value: "Ceiling Fan with Light (Fan Light)" },
             { label: "Style", value: "Modern, Mid-Century, Industrial" },
             { label: "Finish / Color", value: "Brushed Brass Motor & Dark Wood Blades" },
-            { label: "Applicable Space", value: "BLiving Room, Bedroom, Dining Room, Study" }
-        ]
+            { label: "Applicable Space", value: "Living Room, Bedroom, Dining Room, Study" }]
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "led-string-lights")
