@@ -157,24 +157,35 @@ const detailsDatabase = {
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "wreath")
     "rustic farmhouse christmas wreath grapevine rattan base red white for front door seasonal wall decor": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260708",
         description: "Multiple rustic farmhouse christmas wreath styles are available. Each wreath is adorned with burlap bow wooden angel cutouts fluffy cotton pinecones and red berries. Styles feature either glossy red baubles or hollow golden candle holders for candles. Options cover full artificial pine frame designs and asymmetrical natural grapevine rattan base versions. Ready-to-hang wreaths fit front door entryway window mantel indoor seasonal decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260708/rustic-farmhouse-christmas-wreath-collection-white-background-main-01.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260708/christmas-wreath-red-bauble-single-burlap-bow-02.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260708/christmas-wreath-red-bauble-multi-burlap-bows-03.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260708/asymmetrical-grapevine-rattan-christmas-wreath-04.jpg"
-        ], 
+            "images/products/holiday-decor/christmas/wreath/w20260708/rustic-farmhouse-christmas-wreath-collection-white-background.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260708/christmas-wreath-red-bauble-single-burlap-bow.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260708/christmas-wreath-red-bauble-multi-burlap-bows.jpg",
+            "images/products/holiday-decor/christmas/wreath/w20260708/asymmetrical-grapevine-rattan-christmas-wreath.jpg"], 
         specs: [
             { label: "Wreath Base", value: "Full artificial pine frame / natural grapevine rattan frame (multiple options)" },
             { label: "Decorations", value: "Burlap bow wooden angel cotton balls pinecones red berries red christmas baubles golden candle holders" },
             { label: "Available Styles", value: "Full circular pine wreath asymmetrical half-decorated rattan grapevine wreath" },
             { label: "Design Style	", value: "Rustic farmhouse vintage christmas style" },
             { label: "Features", value: "Hand assembled lightweight easy to hang reusable multiple style choices" },
-            { label: "Application", value: "Front door entryway mantel wall window indoor decoration" }
-        ]
+            { label: "Application", value: "Front door entryway mantel wall window indoor decoration" }],
+        faq: [
+            {
+                q: "What is the difference between the wreath styles in this collection?",
+                a: "All four wreaths share the same rustic farmhouse base of pine greenery, cotton bolls, pinecones, red berries, and wooden angel accents, but vary in layout and trim: choose between the modern asymmetrical grapevine ring, the classic single burlap bow with red baubles, the balanced multi-bow design, or the festive red-and-gold bauble edition."},
+            {
+                q: "Can I hang these wreaths outdoors on my front door, or are they for indoor use only?",
+                a: "They are designed primarily for indoor use or covered outdoor areas (such as a porch or entryway protected from direct rain, snow, and harsh wind). Because they include natural-style accents like burlap ribbon, cotton, and wooden ornaments, keeping them under cover helps preserve their color and shape throughout the holiday season."},
+            {
+                q: "Do the pinecones, berries, or ornaments shed easily, and how should I fluff the wreath on arrival?",
+                a: "Each wreath is handcrafted and arranged for shipping, so branches and accents may look slightly compressed out of the box. Simply gently fluff and separate the pine branches and adjust the bows, cotton, and ornaments by hand to achieve full volume. Light shedding of natural or decorative details can occasionally happen during handling, so we recommend unpacking over a clean surface or trash bin."},
+            {
+                q: "How should I store the wreath after the holidays so it lasts for years?",
+                a: "After the season, gently shake off any dust, avoid damp or overly hot storage spots, and place the wreath in a sturdy storage box or wreath bag so the pine branches, burlap bows, and wooden ornaments aren't crushed. Store it flat or hung upright in a cool, dry space until next Christmas."}]      
     },
     "frosted snowy christmas wreath grapevine rattan frame pink red for front door winter wall decor": {
         category: "holiday", // 🌟 完美对齐大类暗号 holiday
