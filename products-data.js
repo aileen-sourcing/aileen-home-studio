@@ -872,7 +872,7 @@ const detailsDatabase = {
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "christmas flowers")
-    "christmas flower blue silver artificial poinsettia for home hodaliy decorating": {
+    "christmas flower blue silver artificial poinsettia for home holiday decorating": {
         category: "holiday",
         subcategory: "christmas-flowers", 
         code: "Item Code: cf20260717",
