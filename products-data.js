@@ -23,7 +23,6 @@ const detailsDatabase = {
             { label: "Base Type", value: "Circular Display Base with Nameplate" },
             { label: "Suitable Scenes", value: "Office Desk, Entrance Shelf, Bookshelf, Living Room, Display Cabinet" }]
     },
-
     "christmas plush mouse shelf sitter doll for holiday mantel decor": {
         category: "home", 
         subcategory: "toys", 
@@ -52,12 +51,12 @@ const detailsDatabase = {
         code: "Item Code: ct20260706",
         description: "Slim pre lit artificial christmas tree equipped with warm white led lights. Narrow profile design saves indoor space. Dense pine-style branches deliver full natural appearance. Foldable metal stand provides stable support. Simple assembly suits living room entryway apartment indoor christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-white-background.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pencil-artificial-christmas-tree-display.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-cozy-window-room.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-fireplace-decor.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-holiday-gifts-room.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-living-room-decor.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-white-background.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pencil-artificial-christmas-tree-display.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-cozy-window-room.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-fireplace-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-holiday-gifts-room.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct20260706/slim-pre-lit-christmas-tree-living-room-decor.jpg"], 
         specs: [
             { label: "Material", value: "PE+PVC" },
             { label: "Product Size", value: "7.5FT(228CM)" },
@@ -87,12 +86,12 @@ const detailsDatabase = {
         code: "Item Code: ct26060707",
         description: "This prelit full artificial christmas tree boasts lush realistic green pine foliage. Equipped with pre-strung warm white lights to create cozy festive ambiance. Adopted hinged branch design for easy setup, matched with durable foldable metal stand. Full natural silhouette fits living rooms, entryways and retail spaces, bringing classic christmas vibe for indoor seasonal decoration.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/prelit-full-green-artificial-christmas-tree-whitebg.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/prelit-green-xmas-tree-display-shot.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-by-fireplace-indoor-decor.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-holiday-fire-place-decor.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-warm-lights-cozy-home.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-with-gifts-living-room.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct26060707/prelit-full-green-artificial-christmas-tree-whitebg.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct26060707/prelit-green-xmas-tree-display-shot.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-by-fireplace-indoor-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-holiday-fire-place-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-warm-lights-cozy-home.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct26060707/artificial-christmas-tree-with-gifts-living-room.jpg"], 
         specs: [
             { label: "Material", value: "PE+PVC" },
             { label: "Tips", value: "887 Tips" },
@@ -125,12 +124,12 @@ const detailsDatabase = {
         code: "Item Code: ct20260708",
         description: "Gradient rainbow pre lit christmas tree built in colorful led lights. Dense artificial pine branches create full lush appearance. Multiple lighting modes available for atmosphere adjustment. Suitable for living room bedroom indoor christmas and party scene decoration. Quick assembly and stable base ensure convenient placement.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/pre-lit-gradient-rainbow-christmas-tree-white-background.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/rainbow-led-christmas-tree-light-up-display.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/rainbow-christmas-tree-pre-lit-living-room-window-scene.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/pre-lit-rainbow-christmas-tree-ribbon-corner-lights.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/pre-lit-rainbow-christmas-tree-cozy-sofa-room-decor.jpg",
-            "images/products/holiday-decor/christmas/christmas-tree/ct20260708/gradient-color-christmas-tree-indoor-living-room-scene.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct20260708/pre-lit-gradient-rainbow-christmas-tree-white-background.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct20260708/rainbow-led-christmas-tree-light-up-display.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct20260708/rainbow-christmas-tree-pre-lit-living-room-window-scene.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct20260708/pre-lit-rainbow-christmas-tree-ribbon-corner-lights.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct20260708/pre-lit-rainbow-christmas-tree-cozy-sofa-room-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-tree/ct20260708/gradient-color-christmas-tree-indoor-living-room-scene.jpg"], 
         specs: [
             { label: "Material", value: "Artificial pine branch metal stand" },
             { label: "Light Type", value: "Built-in gradient colorful rainbow led lights" },
@@ -159,15 +158,15 @@ const detailsDatabase = {
         code: "Item Code: w20260708",
         description: "Multiple rustic farmhouse christmas wreath styles are available. Each wreath is adorned with burlap bow wooden angel cutouts fluffy cotton pinecones and red berries. Styles feature either glossy red baubles or hollow golden candle holders for candles. Options cover full artificial pine frame designs and asymmetrical natural grapevine rattan base versions. Ready-to-hang wreaths fit front door entryway window mantel indoor seasonal decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260708/rustic-farmhouse-christmas-wreath-collection-white-background.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260708/christmas-wreath-red-bauble-single-burlap-bow.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260708/christmas-wreath-red-bauble-multi-burlap-bows.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260708/asymmetrical-grapevine-rattan-christmas-wreath.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260708/rustic-farmhouse-christmas-wreath-collection-white-background.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260708/christmas-wreath-red-bauble-single-burlap-bow.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260708/christmas-wreath-red-bauble-multi-burlap-bows.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260708/asymmetrical-grapevine-rattan-christmas-wreath.jpg"], 
         specs: [
             { label: "Wreath Base", value: "Full artificial pine frame / natural grapevine rattan frame (multiple options)" },
             { label: "Decorations", value: "Burlap bow wooden angel cotton balls pinecones red berries red christmas baubles golden candle holders" },
             { label: "Available Styles", value: "Full circular pine wreath asymmetrical half-decorated rattan grapevine wreath" },
-            { label: "Design Style	", value: "Rustic farmhouse vintage christmas style" },
+            { label: "Design Style", value: "Rustic farmhouse vintage christmas style" },
             { label: "Features", value: "Hand assembled lightweight easy to hang reusable multiple style choices" },
             { label: "Application", value: "Front door entryway mantel wall window indoor decoration" }],
         faq: [
@@ -190,10 +189,10 @@ const detailsDatabase = {
         code: "Item Code: w20260709",
         description: "Multiple frosted christmas wreath styles are available. Each wreath is decorated with red and white striped bow candy ornaments gift boxes pinecones frosted leaves and vibrant red berries. Variations include designs with glossy red baubles or golden candle holders for candles. Options cover full circular frosted pine frames and asymmetrical natural grapevine rattan base wreaths. Ready-to-hang wreaths suit front door entryway mantel window indoor seasonal decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260709/frosted-christmas-wreath-collection-white-background-main-01.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260709/frosted-pine-christmas-wreath-candy-gift-box-striped-bow-02.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260709/snowy-christmas-wreath-red-bauble-candy-striped-bow-03.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260709/asymmetrical-grapevine-rattan-frosted-christmas-wreath-04.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260709/frosted-christmas-wreath-collection-white-background-main-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260709/frosted-pine-christmas-wreath-candy-gift-box-striped-bow-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260709/snowy-christmas-wreath-red-bauble-candy-striped-bow-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260709/asymmetrical-grapevine-rattan-frosted-christmas-wreath-04.jpg"], 
         specs: [
             { label: "Wreath Base", value: "Full circular frosted artificial pine frame / natural grapevine rattan frame (multiple options)" },
             { label: "Decorations", value: "Red-white striped bow candy ornaments gift boxes pinecones frosted green leaves red berries red christmas baubles golden candle holders" },
@@ -203,57 +202,52 @@ const detailsDatabase = {
             { label: "Application", value: "Front door entryway mantel wall window indoor holiday decoration" }]
     },
     "autumn golden christmas wreath grapevine rattan base orange gold for front door fall seasonal wall decor": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260710",
         description: "Multiple warm tone christmas wreath styles are available. Each wreath is decorated with orange poinsettia flowers eucalyptus leaves pinecones and metallic ornaments. Variations feature glossy orange baubles, golden candle holders or elegant golden fabric bows. Options cover full circular artificial pine frames and asymmetrical natural grapevine rattan base wreaths. Ready-to-hang wreaths fit front door entryway mantel window indoor christmas seasonal decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260710/gold-orange-christmas-wreath-collection-white-background-main-01.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260710/pine-wreath-poinsettia-eucalyptus-orange-baubles-02.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260710/asymmetrical-grapevine-rattan-wreath-poinsettia-03.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260710/christmas-wreath-golden-candle-holder-poinsettia-pinecone-04.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260710/Orange ball pine Christmas wreath with gold ribbon-05.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260710/gold-orange-christmas-wreath-collection-white-background-main-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260710/pine-wreath-poinsettia-eucalyptus-orange-baubles-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260710/asymmetrical-grapevine-rattan-wreath-poinsettia-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260710/christmas-wreath-golden-candle-holder-poinsettia-pinecone-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260710/Orange ball pine Christmas wreath with gold ribbon-05.jpg"], 
         specs: [
             { label: "Wreath Base", value: "Full circular artificial pine frame / natural grapevine rattan frame (multiple options)" },
             { label: "Decorations", value: "Orange poinsettia flowers eucalyptus leaves pinecones orange baubles gold candle holders golden fabric bow" },
             { label: "Available Styles", value: "Full circular pine wreath asymmetrical half-decorated grapevine rattan wreath" },
             { label: "Design Style", value: "Luxury warm gold orange christmas style" },
             { label: "Features", value: "Hand assembled lightweight easy to hang reusable multiple decorative style choices" },
-            { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }
-        ]
+            { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }]
     },
     "luxury golden christmas wreath grapevine rattan frame full gold for front door elegant holiday wall decor": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260711",
         description: "Multiple luxury golden christmas wreath styles are available. Each wreath is adorned with golden poinsettia flowers pinecones and metallic golden decorations. Variations include glossy golden baubles, golden candle holders and golden star ornaments. Options contain full circular artificial pine frames and asymmetrical natural grapevine rattan wreaths. Ready-to-hang ornaments suit front door entryway mantel window indoor christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260711/luxury-golden-christmas-wreath-collection-white-background-main-01.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260711/golden-christmas-wreath-golden-candle-holder-poinsettia-pinecone-02.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260711/golden-pine-christmas-wreath-star-ornaments-poinsettia-bow-03.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260711/classic-golden-christmas-wreath-large-poinsettia-pinecone-04.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260711/asymmetrical-grapevine-rattan-golden-christmas-wreath-poinsettia-05.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260711/gold-poinsettia-christmas-wreath.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260711/luxury-golden-christmas-wreath-collection-white-background-main-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260711/golden-christmas-wreath-golden-candle-holder-poinsettia-pinecone-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260711/golden-pine-christmas-wreath-star-ornaments-poinsettia-bow-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260711/classic-golden-christmas-wreath-large-poinsettia-pinecone-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260711/asymmetrical-grapevine-rattan-golden-christmas-wreath-poinsettia-05.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260711/gold-poinsettia-christmas-wreath.jpg"], 
         specs: [
             { label: "Wreath Base", value: "Full circular artificial pine frame / natural grapevine rattan frame (multiple options)" },
             { label: "Decorations", value: "Golden poinsettia flowers pinecones golden baubles golden candle holders golden fabric bows golden star ornaments" },
             { label: "Available Styles", value: "Full circular pine wreath asymmetrical half-decorated grapevine rattan wreath" },
             { label: "Design Style", value: "Elegant luxury golden tone christmas style" },
             { label: "Features", value: "Hand assembled lightweight easy to hang reusable multiple decorative style choices" },
-            { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }
-        ]
+            { label: "Application", value: "Front door entryway mantel wall window indoor christmas decoration" }]
     },
     "christmas wreath metallic pine material 60cm silver poinsettia design for front door wall hanging decor": {
-        category: "holiday", // 🌟 完美对齐大类暗号 holiday
+        category: "holiday", 
         subcategory: "christmas", 
         code: "Item Code: w20260712",
         description: "Silver tone artificial christmas wreath available in two decorative layouts. Ornamented with silver poinsettia flowers eucalyptus sprigs glossy baubles and textured fabric bows. Full circular pine base creates a dense elegant look. Ready to hang for front door mantel window indoor christmas seasonal decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260712/silver-metallic-christmas-wreath-60cm-collection-main-01.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260712/silver-christmas-wreath-sparse-poinsettia-bow-eucalyptus-02.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260712/silver-metallic-christmas-wreath-60cm-collection-main-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260712/silver-christmas-wreath-sparse-poinsettia-bow-eucalyptus-02.jpg"], 
         specs: [
             { label: "Base Frame", value: "Full circular artificial pine wreath" },
             { label: "Size", value: "60cm diameter" },
@@ -261,8 +255,7 @@ const detailsDatabase = {
             { label: "Available Styles", value: "Less floral layout / multi poinsettia full layout" },
             { label: "Design Style", value: "Modern silver metallic winter christmas style" },
             { label: "Features", value: "Hand assembled lightweight easy to hang reusable winter festive decor" },
-            { label: "Application", value: "Front door entryway mantel wall window indoor holiday decoration" }
-        ]
+            { label: "Application", value: "Front door entryway mantel wall window indoor holiday decoration" }]
     },
     "green artificial christmas wreath pine cypress eucalyptus red berry pinecone front door winter rustic decor": {
         category: "holiday", 
@@ -270,12 +263,11 @@ const detailsDatabase = {
         code: "Item Code: w20260713",
         description: "Natural style green foliage christmas wreath with multiple decorative variations. Styles feature cypress pine eucalyptus sprigs pinecones red berries blue berries and fabric ribbon. One variant supports pre-installed led lights. Circular 60cm wreath frame fits front door mantel window indoor winter and christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260713/natural-green-farmhouse-christmas-wreath-60cm-collection-main-01.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260713/eucalyptus-pinecone-green-christmas-wreath-rustic-style-02.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260713/cypress-wreath-with-blue-berry-pinecone-door-decor-03.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260713/red-berry-christmas-wreath-red-fabric-bow-farmhouse-04.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260713/pre-lit-cypress-green-wreath-with-pinecone-05.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260713/natural-green-farmhouse-christmas-wreath-60cm-collection-main-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260713/eucalyptus-pinecone-green-christmas-wreath-rustic-style-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260713/cypress-wreath-with-blue-berry-pinecone-door-decor-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260713/red-berry-christmas-wreath-red-fabric-bow-farmhouse-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260713/pre-lit-cypress-green-wreath-with-pinecone-05.jpg"], 
         specs: [
             { label: "Base Frame", value: "Circular artificial green foliage wreath" },
             { label: "Size", value: "60cm" },
@@ -284,8 +276,7 @@ const detailsDatabase = {
             { label: "Available Styles", value: "Plain greenery with pinecone / blue berry foliage wreath / red berry wreath with red bow / pre-lit cypress wreath / simple pinecone cypress wreath" },
             { label: "Design Style", value: "Rustic natural farmhouse winter christmas style" },
             { label: "Features", value: "Hand assembled/lightweight easy hanging/reusable seasonal wreath/optional lighting design" },
-            { label: "Application", value: "Front door entryway mantel wall window indoor seasonal decoration" }
-        ]
+            { label: "Application", value: "Front door entryway mantel wall window indoor seasonal decoration" }]
     },
     "white flocked christmas wreath red decor poinsettia bauble bow front door seasonal customizable size color": {
         category: "holiday", 
@@ -293,10 +284,9 @@ const detailsDatabase = {
         code: "Item Code: w20260714",
         description: "White pvc artificial christmas wreath offered in three decorative styles. Decorations include poinsettia flowers candy ornaments star cutouts glossy baubles and fabric bows. Standard diameter is 60cm, custom sizes and color combinations are available. Lightweight circular wreath fits front door mantel wall window indoor outdoor seasonal christmas decor.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260714/white-pvc-christmas-wreath-red-decoration-collection-main-01.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260714/white-pvc-wreath-red-poinsettia-bow-candy-decor-02.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260714/white-pvc-wreath-star-bauble-ribbon-christmas-door-wreath-03.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260714/white-pvc-christmas-wreath-red-decoration-collection-main-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260714/white-pvc-wreath-red-poinsettia-bow-candy-decor-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260714/white-pvc-wreath-star-bauble-ribbon-christmas-door-wreath-03.jpg"], 
         specs: [
             { label: "Material", value: "White PVC artificial pine branches" },
             { label: "Size", value: "60cm diameter, custom sizes supported" },
@@ -304,8 +294,7 @@ const detailsDatabase = {
             { label: "Available Styles", value: "Large linen red bow style, shooting star ornament style, striped ribbon star style" },
             { label: "Custom Options", value: "Custom size, custom color matching" },
             { label: "Applicable Scene", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" },
-            { label: "Features", value: "Lightweight, reusable, easy hanging, weather resistant for sheltered outdoor use" }
-        ]
+            { label: "Features", value: "Lightweight, reusable, easy hanging, weather resistant for sheltered outdoor use" }]
     },
     "christmas wreath pvc pine red gold poinsettia bauble for front door home wall decoration": {
         category: "holiday", 
@@ -313,13 +302,12 @@ const detailsDatabase = {
         code: "Item Code: w20260716",
         description: "Green PVC artificial christmas wreath available in six decorative styles. Decorations include red poinsettia flowers gold baubles red berries sheer ribbon fabric bows pinecones and gold foliage accents. Standard diameter is 60cm, custom sizes and color matching are supported. Lightweight circular wreath fits front door mantel wall window indoor and sheltered outdoor seasonal decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260716/red-gold-pvc-christmas-wreath-collection-main-01.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260716/simple-red-poinsettia-christmas-wreath-pvc-base-02.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260716/christmas-wreath-red-poinsettia-sheer-organza-ribbon-03.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260716/red-gold-wreath-gold-bauble-wide-red-bow-door-decor-04.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260716/frosted-pinecone-gold-ball-poinsettia-wreath-05.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260716/gold-leaf-red-poinsettia-christmas-wreath-06.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260716/red-gold-pvc-christmas-wreath-collection-main-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260716/simple-red-poinsettia-christmas-wreath-pvc-base-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260716/christmas-wreath-red-poinsettia-sheer-organza-ribbon-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260716/red-gold-wreath-gold-bauble-wide-red-bow-door-decor-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260716/frosted-pinecone-gold-ball-poinsettia-wreath-05.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260716/gold-leaf-red-poinsettia-christmas-wreath-06.jpg"], 
         specs: [
             { label: "Material", value: "Green PVC artificial pine branches" },
             { label: "Size", value: "60cm diameter, custom sizes supported" },
@@ -327,8 +315,7 @@ const detailsDatabase = {
             { label: "Available Styles", value: "Simple poinsettia layout, sheer ribbon poinsettia layout, gold ball & wide red bow layout, frosted pinecone gold bauble layout, gold leaf poinsettia layout, dense red foliage mixed decor layout" },
             { label: "Custom Options", value: "Custom size, custom color combination" },
             { label: "Features", value: "Lightweight, reusable, easy hanging, durable PVC branches, classic red gold christmas tone" },
-            { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }
-        ]
+            { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }]
     },
     "purple snow frosted pine wreath 30cm glitter poinsettia for holiday front door wall decor": {
         category: "holiday", 
@@ -336,13 +323,12 @@ const detailsDatabase = {
         code: "Item Code: w20260717",
         description: "Snow flocked artificial christmas wreath with dark green PVC pine base. Decorations include glitter purple flowers, matte/shiny purple baubles, striped fabric bows, gift box ornaments and berry clusters. Standard diameter is 30cm, custom sizes and color schemes are available. Elegant circular wreath suitable for front door, wall, window, mantel indoor and sheltered outdoor christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260717/snow-tipped-purple-christmas-wreath-overview-01.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260717/30cm-purple-snowy-wreath-size-mark-display-02.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260717/purple-christmas-wreath-material-intro-image-03.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260717/purple-striped-bow-glitter-flower-wreath-closeup-04.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260717/purple-bauble-snow-pine-wreath-detail-shot-one-05.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260717/purple-berry-glitter-flower-wreath-detail-shot-two-06.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260717/snow-tipped-purple-christmas-wreath-overview-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260717/30cm-purple-snowy-wreath-size-mark-display-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260717/purple-christmas-wreath-material-intro-image-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260717/purple-striped-bow-glitter-flower-wreath-closeup-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260717/purple-bauble-snow-pine-wreath-detail-shot-one-05.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260717/purple-berry-glitter-flower-wreath-detail-shot-two-06.jpg"], 
         specs: [
             { label: "Material", value: "Dark green PVC pine branches with snow tipped finish" },
             { label: "Size", value: "30cm diameter, custom sizes supported" },
@@ -350,8 +336,7 @@ const detailsDatabase = {
             { label: "Design Style", value: "Luxury purple christmas style / frosted snowy farmhouse style" },
             { label: "Custom Options", value: "Custom size, custom color matching" },
             { label: "Features", value: "Lightweight, reusable, easy hanging, snow frosted branches, glitter decorative elements" },
-            { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }
-        ]
+            { label: "Application", value: "Front door, entryway, mantel, wall, window, indoor, covered outdoor space" }]
     },
     "frosted snowy pine wreath red white star snowflake striped bow for winter xmas front door decor": {
         category: "holiday", 
@@ -359,13 +344,12 @@ const detailsDatabase = {
         code: "Item Code: w20260718",
         description: "Frost snow artificial pine wreath made of durable green PVC branches. Adorned with red-white shooting star decorations, glossy baubles, snowflake accents and textured fabric ribbons. Six unique matching designs for selection, personalized sizes and color collocations are acceptable. Ideal winter decorative wreath for entry doors, fireplace mantels, walls, windows, indoor spaces and sheltered outdoor holiday scenes.",
         images: [
-            "images/products/holiday-decor/christmas/wreath/w20260718/frosted-pine-wreath-red-star-big-ribbon-bow-display-01.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260718/winter-christmas-wreath-snowflake-red-star-decoration-02.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260718/red-white-star-wreath-round-ball-ornament-overview-03.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260718/christmas-wreath-candle-cup-decor-detail-image-04.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260718/large-red-bow-snowy-pine-wreath-star-snowflake-design-05.jpg",
-            "images/products/holiday-decor/christmas/wreath/w20260718/striped-ribbon-star-bauble-frosted-wreath-style-06.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260718/frosted-pine-wreath-red-star-big-ribbon-bow-display-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260718/winter-christmas-wreath-snowflake-red-star-decoration-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260718/red-white-star-wreath-round-ball-ornament-overview-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260718/christmas-wreath-candle-cup-decor-detail-image-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260718/large-red-bow-snowy-pine-wreath-star-snowflake-design-05.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/wreath/w20260718/striped-ribbon-star-bauble-frosted-wreath-style-06.jpg"], 
         specs: [
             { label: "Material", value: "Green PVC pine branches with frosted snow finish" },
             { label: "Size", value: "60cm diameter, custom sizes supported" },
@@ -373,8 +357,7 @@ const detailsDatabase = {
             { label: "Available Styles", value: "Oversized red bow star style, snowflake mixed star style, candle holder decorative style, gift element embellished style, simple ribbon star layout style" },
             { label: "Custom Options", value: "Custom size, customized color matching scheme" },
             { label: "Features", value: "Lightweight structure, recyclable, easy installation, frosted snow pine branches, classic winter red white aesthetic" },
-            { label: "Application", value: "Front door, entryway, fireplace mantel, wall, window, indoor space, covered outdoor area" }
-        ]
+            { label: "Application", value: "Front door, entryway, fireplace mantel, wall, window, indoor space, covered outdoor area" }]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "garland")
@@ -434,13 +417,13 @@ const detailsDatabase = {
         code: "Item Code: mt20260714",
         description: "Create a warm welcome atmosphere with this fully pre-decorated potted christmas tree. It is embellished with classic plaid ribbons, bright red berries, pine cones and multi-color led lights. Mounted in an antique style decorative urn base, this slim decorative tree is ready to use out of box. Perfect for front porch, entryway, hallway and indoor foyer seasonal christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/mini-christmas-tree-artificial-pine-red-plaid-berry-lights-tabletop-decor.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/mini-christmas-tree-faux-pine-red-plaid-balls-pinecone-home-table-decor.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/mini-christmas-tree-artificial-pine-red-plaid-berry-lights-tabletop-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260714/mini-christmas-tree-faux-pine-red-plaid-balls-pinecone-home-table-decor.jpg"], 
         specs: [
             { label: "Product Size", value: "3FT(90CM)" },
             { label: "Material", value: "Artificial pine needles, fabric ribbon, foam berries, plastic pine cones, resin urn base" },
             { label: "Light Quantity", value: "50 PCS" },
-            { label: "Lighting	", value: "3AA Built-in multi-color lights" },
+            { label: "Lighting", value: "3AA Built-in multi-color lights" },
             { label: "Package Size", value: "86x30x30CM" },
             { label: "Decoration", value: "Plaid ribbon, red berries, pine cones, foliage ornaments" },
             { label: "Features", value: "Fully pre-assembled, ready-to-display, stable decorative pot base, no extra decoration required" },
@@ -452,21 +435,19 @@ const detailsDatabase = {
         code: "Item Code: mt20260715",
         description: "This pre decorated mini potted christmas tree delivers warm rustic farmhouse holiday atmosphere. Equipped with a red pot base, it is adorned with burlap bow, natural cotton, pinecones, wooden angel and snowflake ornaments, red berries and red baubles. Compact size fits perfectly for tables, desks, shelves and mantels for indoor christmas decoration.",
         images: [
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/tabletop-rustic-christmas-tree-cotton-pinecone.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/decorated-mini-christmas-tree-wood-ornaments.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/desktop-potted-christmas-tree-pinecone-cotton.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mini-potted-christmas-tree-wooden-angel.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/small-farmhouse-christmas-tree-burlap-bow.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/table-christmas-tree-burlap-bow-red-berries.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/tabletop-rustic-christmas-tree-cotton-pinecone.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/decorated-mini-christmas-tree-wood-ornaments.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/desktop-potted-christmas-tree-pinecone-cotton.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/mini-potted-christmas-tree-wooden-angel.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/small-farmhouse-christmas-tree-burlap-bow.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260715/table-christmas-tree-burlap-bow-red-berries.jpg"], 
         specs: [
             { label: "Style", value: "Farmhouse / Rustic Christmas" },
             { label: "Material", value: "PVC Tree Foliage, Burlap, Cotton, Pinecone, Wooden Ornaments, Plastic Pot" },
             { label: "Base Pot", value: "Red Plastic Pot" },
             { label: "Decorations", value: "Burlap Bow, Cotton Bolls, Pinecones, Wooden Angel, Wooden Snowflake, Red Berries, Red Baubles" },
             { label: "Suitable Placement", value: "Tabletop, Desk, Shelf, Mantel" },
-            { label: "Occasion", value: "Christmas, Winter Holiday, New Year, Party, Holiday Gifting" }
-        ]
+            { label: "Occasion", value: "Christmas, Winter Holiday, New Year, Party, Holiday Gifting" }]
     },
     "mini christmas tree with bow and ornaments frosted tabletop holiday decorating": {
         category: "holiday",
@@ -474,20 +455,18 @@ const detailsDatabase = {
         code: "Item Code: mt20260716",
         description: "Bring festive holiday charm to any small space with this pre-decorated mini desktop Christmas tree. Crafted with realistic frosted pine needles, cute pink bows, faux berries, and delicate holiday ornaments, it instantly brightens up your countertop or desk. It features a stable potted base that stands firmly on shelves, windowsills, and workstations. Made from premium durable materials, you can easily reuse this mess-free decoration year after year. It makes a perfect seasonal decor piece or a cozy Christmas gift for your friends and family.",
         images: [
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mini-potted-christmas-tree-pink-bow-poinsettia-01.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/desktop-christmas-tree-pink-ribbon-poinsettia-pot-02.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/festive-mini-christmas-tree-pink-bow-red-fruit-03.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/potted-table-christmas-tree-pink-ribbon-poinsettia-04.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/small-christmas-tree-pink-bow-red-baubles-05.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/tabletop-christmas-tree-pink-ribbon-poinsettia-06.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/mini-potted-christmas-tree-pink-bow-poinsettia-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/desktop-christmas-tree-pink-ribbon-poinsettia-pot-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/festive-mini-christmas-tree-pink-bow-red-fruit-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/potted-table-christmas-tree-pink-ribbon-poinsettia-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/small-christmas-tree-pink-bow-red-baubles-05.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20260716/tabletop-christmas-tree-pink-ribbon-poinsettia-06.jpg"], 
         specs: [
             { label: "Color", value: "Green, Pink, Red, White Frosting" },
             { label: "Material", value: "High-quality PVC, Fabric, Plastic" },
             { label: "Base Type", value: "Weighted Potted Base" },
             { label: "Decorations", value: "Ribbons, Berries, Poinsettias, Baubles" },
-            { label: "Occasion", value: "Christmas, Winter Holidays, Home & Office Decor" }
-        ]
+            { label: "Occasion", value: "Christmas, Winter Holidays, Home & Office Decor" }]
     },
     "60cm mini christmas tree with lights tabletop holiday decor": {
         category: "holiday",
@@ -495,12 +474,12 @@ const detailsDatabase = {
         code: "Item Code: mt20261029",
         description: "This 60 cm mini Christmas tree comes pre-decorated with warm white LED lights, pinecones, fabric bows, golden reindeer, and a Merry Christmas plaque. It is powered by a waterproof battery box (requires AA batteries, not included), allowing you to place it indoors on a table, desk, or shelf, or outdoors on a porch or courtyard table without needing a nearby wall outlet. Unpack the tree, adjust the PVC branches to your liking, turn on the battery switch, and your display is complete.",
         images: [
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-with-lights-ornaments.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-coffee-table-holiday-decor.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-living-room-fireplace-decor.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-shelf-display-gift-boxes.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-side-table-living-room.jpg",
-            "images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-tabletop-gifts-decor.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-with-lights-ornaments.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-coffee-table-holiday-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-living-room-fireplace-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-shelf-display-gift-boxes.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-side-table-living-room.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/mini-christmas-tree/mt20261029/mini-christmas-tree-tabletop-gifts-decor.jpg"], 
         specs: [
             { label: "Product Name", value: "Pre-Lit Mini Tabletop Christmas Tree" },
             { label: "Material", value: "High-Quality PVC, Plastic Base, Fabric Bows" },
@@ -531,14 +510,13 @@ const detailsDatabase = {
         code: "Item Code: cb20260801",
         description: "This premium assorted Christmas ornament set comes in 3 elegant color themes: red & gold, navy blue & silver, gold & silver. Made of shatterproof plastic, these diverse hanging Xmas baubles feature Santa, nutcracker, snowflake, wreath and tree shapes. Packed in an exquisite gift box, ideal for decorating Christmas trees, home mantels, windows and festive holiday parties.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-red-gold-01.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-blue-silver-02.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-gold-silver-03.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/red-gold-christmas-nutcracker-ornaments.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/red-gold-christmas-ornaments-table-decor.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/red-gold-santa-snowflake-ornaments-detail.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260801/red-gold-christmas-tree-ornaments-decor.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-red-gold-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-blue-silver-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260801/christmas-ornament-set-gold-silver-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260801/red-gold-christmas-nutcracker-ornaments.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260801/red-gold-christmas-ornaments-table-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260801/red-gold-santa-snowflake-ornaments-detail.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260801/red-gold-christmas-tree-ornaments-decor.jpg"], 
         specs: [
             { label: "Product Name", value: "Assorted Christmas Ornament Gift Box Set" },
             { label: "Available Color Themes", value: "1. Red & Gold 2. Navy Blue & Silver 3. Gold & Silver" },
@@ -546,8 +524,7 @@ const detailsDatabase = {
             { label: "Ornament Shapes", value: "Nutcracker, Santa Claus, Snowflake, Wreath, Xmas Sock, Mini Christmas Tree, Gift Pouch, Round Baubles" },
             { label: "Packing", value: "Luxury Divided Gift Box with Transparent PVC Window" },
             { label: "Usage", value: "Christmas Tree Hanging Decor, Home Indoor Holiday Decor, Party & Shop Display, Holiday Gift" },
-            { label: "Feature", value: "Lightweight, Reusable, Pre-assorted shapes, Ready-to-hang" }
-        ]
+            { label: "Feature", value: "Lightweight, Reusable, Pre-assorted shapes, Ready-to-hang" }]
     },
     "shatterproof christmas baubles set mixed glitter and shiny balls for home decor": {
         category: "holiday",
@@ -555,23 +532,21 @@ const detailsDatabase = {
         code: "Item Code: cb20260803",
         description: "These shatterproof Christmas baubles come in multiple mixed-color styles, featuring shiny, glitter and hollow carved surface for rich visual layering, lightweight and durable for long-term use, perfect for decorating Christmas tree, mantel, party and various holiday home space to create a festive charming atmosphere.",
         images: [
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-mixed-color-ornament-set-01.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-shiny-bauble-decor-set-02.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-glitter-bauble-ornament-03.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-gold-shatterproof-bauble-04.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-hollow-glitter-ornament-05.jpg",
-            "images/products/holiday-decor/christmas/christmas-ball/cb20260803/pink-silver-christmas-ball-ornaments.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-mixed-color-ornament-set-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-shiny-bauble-decor-set-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-glitter-bauble-ornament-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-gold-shatterproof-bauble-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260803/christmas-ball-hollow-glitter-ornament-05.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas/christmas-ball/cb20260803/pink-silver-christmas-ball-ornaments.jpg"], 
         specs: [
             { label: "Product Name", value: "Christmas Baubles Ornament Set" },
             { label: "Material", value: "Plastic (shatter-proof)" },
             { label: "Ball Surface", value: "Shiny / Glitter / Hollow carved" },
             { label: "Package Quantity", value: "30-40 pcs per container" },
-            { label: "Color", value: "Multi-color: purple-silver, blue-silver, teal-gold, gold, dark-blue-silver" },
+            { label: "Color", value: "Multi-color: purple-silver, blue-silver, teal-gold, gold, dark-blue-silver, Pink" },
             { label: "Package", value: "Clear plastic bucket packaging" },
             { label: "Feature", value: "Lightweight, shatter-resistant, easy to hang" },
-            { label: "Application", value: "Christmas tree, holiday party, home decoration" }
-        ]
+            { label: "Application", value: "Christmas tree, holiday party, home decoration" }]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Spring decor")
@@ -581,20 +556,18 @@ const detailsDatabase = {
         code: "Item Code: sw20260727",
         description: "Discover our handmade artificial spring eucalyptus wreath collection. Choose from plain greenery base white blue mixed-color daisy and wildflower designs. These durable floral wreaths bring fresh spring vibes to your front door entryway walls and covered outdoor spaces no watering or maintenance required.",
         images: [
-            "images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-green-blue-flower-door-01.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-green-white-daisy-wall-02.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-pure-green-foliage-door-03.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-lush-green-leaf-wall-04.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-green-pink-bud-door-05.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-green-mixed-flower-wall-06.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-green-blue-flower-door-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-green-white-daisy-wall-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-pure-green-foliage-door-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-lush-green-leaf-wall-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-green-pink-bud-door-05.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/spring-decor/wreath/sw20260727/spring-wreath-green-mixed-flower-wall-06.jpg"], 
         specs: [
             { label: "Size", value: "45CM/60CM/90CM, Customizable" },
             { label: "Material", value: "Artificial eucalyptus leaves, faux flowers, rattan frame" },
             { label: "Available Styles", value: "Plain greenery base, daisy and wildflower assorted designs" },
             { label: "Feature", value: "Fade-resistant, maintenance free, lightweight and easy to hang" },
-            { label: "Application", value: "Outdoor / Indoor Front Door Welcome Display, Wall Window Farmhouse Spring Decor" }
-        ]
+            { label: "Application", value: "Outdoor / Indoor Front Door Welcome Display, Wall Window Farmhouse Spring Decor" }]
     },
     "artificial spring floral wreath mixed rose peony front door for farmhouse home decor": {
         category: "holiday",
@@ -602,20 +575,18 @@ const detailsDatabase = {
         code: "Item Code: sw20260728",
         description: "Bring lovely spring charm to any entryway or wall with this artificial floral wreath. Crafted with realistic mixed roses peonies and lush green leaves, it offers a lush natural look that requires no maintenance. Perfect for decorating front doors, living rooms, mantelpieces, or front porches, adding a romantic seasonal atmosphere to any space.",
         images: [
-            "images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-mixed-color-flower-door-01.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-blue-hydrangea-pink-wall-02.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-blue-pink-peony-door-03.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-red-pink-rose-wall-04.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-white-rose-green-flower-door-05.jpg",
-            "images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-yellow-white-bloom-wall-06.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-mixed-color-flower-door-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-blue-hydrangea-pink-wall-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-blue-pink-peony-door-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-red-pink-rose-wall-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-white-rose-green-flower-door-05.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/spring-decor/wreath/sw20260728/spring-floral-wreath-yellow-white-bloom-wall-06.jpg"], 
         specs: [
             { label: "Size", value: "45CM/60CM/90CM, Customizable" },
             { label: "Material", value: "Artificial roses peonies mixed flowers fabric leaves rattan frame" },
             { label: "Available Styles", value: "Multi-color mixed peony wreath hydrangea wreath assorted rose floral designs" },
             { label: "Features", value: "Fade-resistant maintenance free lightweight easy to hang reusable for seasonal decor" },
-            { label: "Application", value: "Outdoor / Indoor Front Door Welcome Display Wall Window Spring Decor" }
-        ]
+            { label: "Application", value: "Outdoor / Indoor Front Door Welcome Display Wall Window Spring Decor" }]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Summer decor")
@@ -625,11 +596,10 @@ const detailsDatabase = {
         code: "Item Code: sm20260731",
         description: "Lifelike seasonal artificial wreath constructed on natural twig ring base. Decorations consist of faux sunflowers, simulated lemons, blush roses, peonies, daisies and diverse green foliage. Four independent design styles for selection. Fresh bright tones deliver vivid spring and summer vibe, suitable for front door, entryway, kitchen, living room, window, covered outdoor areas and farmhouse style interior display.",
         images: [
-            "images/products/holiday-decor/summer-decor/wreath/sm20260731/summer-sunflower-peony-mixed-floral-wreath-display-01.jpg",
-            "images/products/holiday-decor/summer-decor/wreath/sm20260731/lemon-blush-rose-greenery-wreath-home-decor-02.jpg",
-            "images/products/holiday-decor/summer-decor/wreath/sm20260731/minimalist-sunflower-eucalyptus-front-door-wreath-03.jpg",
-            "images/products/holiday-decor/summer-decor/wreath/sm20260731/simulated-lemon-fruit-pure-green-foliage-wreath-04.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20260731/summer-sunflower-peony-mixed-floral-wreath-display-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20260731/lemon-blush-rose-greenery-wreath-home-decor-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20260731/minimalist-sunflower-eucalyptus-front-door-wreath-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20260731/simulated-lemon-fruit-pure-green-foliage-wreath-04.jpg"], 
         specs: [
             { label: "Material", value: "Silk fabric flower, plastic simulated lemon, artificial green foliage, natural twig ring base" },
             { label: "Size", value: "Multiple specifications available custom dimension supported" },
@@ -637,8 +607,7 @@ const detailsDatabase = {
             { label: "Optional Styles", value: "Sunflower peony mixed flower wreath / lemon rose blossom wreath / minimalist sunflower wreath / pure lemon green foliage wreath" },
             { label: "Suitable Season", value: "Spring summer all-year round display" },
             { label: "Feature", value: "Lightweight easy hanging reusable fade resistant lifelike pastoral appearance" },
-            { label: "Application", value: "Front door entryway porch wall window kitchen living room cafe farmhouse indoor area covered outdoor space" }
-        ]
+            { label: "Application", value: "Front door entryway porch wall window kitchen living room cafe farmhouse indoor area covered outdoor space" }]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Fall decor")
@@ -648,11 +617,10 @@ const detailsDatabase = {
         code: "Item Code: fw20260727",
         description: "Rustic autumn wreath built on natural twig ring base. Decor elements include simulated mini pumpkins, grain stalks, millet sprays, artificial maple leaves and pine cones. Four distinctive harvest-style designs available. Warm earthy tones create strong fall and Thanksgiving atmosphere, suitable for front door, porch, entryway, wall, window, living room and covered outdoor decorative display.",
         images: [
-            "images/products/holiday-decor/fall-decor/wreath/fw20260727/fall-pumpkin-grain-stalk-wreath-harvest-decoration-01.jpg",
-            "images/products/holiday-decor/fall-decor/wreath/fw20260727/autumn-millet-spray-dried-grass-wreath-overview-02.jpg",
-            "images/products/holiday-decor/fall-decor/wreath/fw20260727/maple-leaf-pinecone-faux-pumpkin-fall-wreath-03.jpg",
-            "images/products/holiday-decor/fall-decor/wreath/fw20260727/simple-autumn-leaf-mini-pumpkin-rustic-wreath-04.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/fall-pumpkin-grain-stalk-wreath-harvest-decoration-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/autumn-millet-spray-dried-grass-wreath-overview-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/maple-leaf-pinecone-faux-pumpkin-fall-wreath-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/simple-autumn-leaf-mini-pumpkin-rustic-wreath-04.jpg"], 
         specs: [
             { label: "Material", value: "Natural twig ring, artificial dried grass, fabric foliage, plastic faux pumpkin" },
             { label: "Size", value: "Multiple sizes available, custom dimension supported" },
@@ -660,8 +628,7 @@ const detailsDatabase = {
             { label: "Optional Styles", value: "Pumpkin grain stalk wreath / pure mixed millet wreath / maple pinecone pumpkin wreath / simple autumn leaf pumpkin wreath" },
             { label: "Applicable Season", value: "Autumn, fall, thanksgiving holiday" },
             { label: "Feature", value: "Lightweight, easy hanging, reusable, long service life, vintage rustic harvest aesthetic" },
-            { label: "Application", value: "Front door, entryway, porch, wall, window, living room, farmhouse, covered outdoor space" }
-        ]
+            { label: "Application", value: "Front door, entryway, porch, wall, window, living room, farmhouse, covered outdoor space" }]
     },
     "fall garland artificial pumpkin pinecone 6ft cream mantel": {
         category: "holiday",
@@ -669,13 +636,12 @@ const detailsDatabase = {
         code: "Item Code: qg20260821",
         description: "Bring the warm, rich colors of autumn into your home with our premium artificial fall garland. Handcrafted with high-density realistic foliage, this seasonal greenery features faux cream pumpkins, natural pinecones, soft yellow hydrangea accents, and textured maple leaves in vibrant golden and deep burgundy tones. Designed with a flexible internal wire frame, it shapes effortlessly along mantels, stair railings, entryways, or dining table centerpieces. Crafted from durable, non-fading materials, this reusable autumn garland offers long-lasting beauty for Thanksgiving dinners, rustic fall weddings, and cozy seasonal home decor without shedding or requiring maintenance. Perfect for creating an inviting holiday atmosphere year after year.",
         images: [
-            "images/products/holiday-decor/fall-decor/garland/qg20260821/fall-garland-with-pumpkins-and-pinecones-01.jpg",
-            "images/products/holiday-decor/fall-decor/garland/qg20260821/autumn-maple-leaf-pumpkin-garland-02.jpg",
-            "images/products/holiday-decor/fall-decor/garland/qg20260821/artificial-fall-garland-cream-pumpkin-03.jpg",
-            "images/products/holiday-decor/fall-decor/garland/qg20260821/fall-garland-fireplace-mantel-decor-04.jpg",
-            "images/products/holiday-decor/fall-decor/garland/qg20260821/thanksgiving-table-runner-fall-garland-centerpiece-05.jpg",
-            "images/products/holiday-decor/fall-decor/garland/qg20260821/autumn-dining-table-decor-garland-setting-06.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/garland/qg20260821/fall-garland-with-pumpkins-and-pinecones-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/garland/qg20260821/autumn-maple-leaf-pumpkin-garland-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/garland/qg20260821/artificial-fall-garland-cream-pumpkin-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/garland/qg20260821/fall-garland-fireplace-mantel-decor-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/garland/qg20260821/thanksgiving-table-runner-fall-garland-centerpiece-05.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/garland/qg20260821/autumn-dining-table-decor-garland-setting-06.jpg"], 
         specs: [
             { label: "Product Type", value: "Artificial Fall Garland" },
             { label: "Length", value: "180 cm / 6 ft" },
@@ -683,8 +649,7 @@ const detailsDatabase = {
             { label: "Color Palette", value: "Amber Yellow, Rust Red, Cream White, Natural Brown" },
             { label: "Main Elements", value: "Mini Cream Pumpkins, Pinecones, Hydrangea Blooms, Maple Leaves" },
             { label: "Feature", value: "Flexible Wire Core, Non-Shedding, Reusable" },
-            { label: "Application", value: "Fireplace Mantel, Dining Table Centerpiece, Staircase, Front Door" }
-        ]
+            { label: "Application", value: "Fireplace Mantel, Dining Table Centerpiece, Staircase, Front Door" }]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Winter decor")
@@ -694,13 +659,13 @@ const detailsDatabase = {
         code: "Item Code: wd20261030",
         description: "This seashell christmas ornament set includes starfish, conch, scallop shells, icicles, and textured spherical baubles. Each piece is crafted from lightweight resin with a textured ivory finish to replicate natural shell details without the heavy weight or fragility. Designed for Christmas trees, holiday garlands, and wreaths, all ornaments come pre-threaded with satin ribbons or metallic gold cords for immediate hanging. The lightweight construction prevents branch drooping, making them suitable for natural and artificial trees of all sizes.",
         images: [
-            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornaments-set.jpg",
-            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornaments-tree.jpg",
-            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-starfish.jpg",
-            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-ball.jpg",
-            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-conch.jpg",
-            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-icicle.jpg",
-            "images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-shell.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornaments-set.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornaments-tree.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-starfish.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-ball.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-conch.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-icicle.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261030/white-seashell-christmas-ornament-shell.jpg"], 
         specs: [
             { label: "Product Name", value: "White Seashell Christmas Tree Ornaments Set" },
             { label: "Quantity", value: "Multi-Piece Set" },
@@ -727,12 +692,12 @@ const detailsDatabase = {
         code: "Item Code: wd20261109",
         description: "Elevate your holiday home decor with our Natural Christmas Pinecone Ornaments Pack. Hand-picked and carefully treated, these festive pinecones are perfect for DIY Christmas wreaths, holiday garland accents, tree hanging ornaments, and rustic mantel arrangements. Add a touch of cozy, natural charm to your winter celebrations!",
         images: [
-            "images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-glitter-natural-diy-decor.jpg",
-            "images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-natural-small-wreath-pack.jpg",
-            "images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-natural-classic-diy-pack.jpg",
-            "images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-gold-glitter-wreath-decor.jpg",
-            "images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-snow-frosted-diy-decor-set.jpg",
-            "images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-snow-tipped-wreath-decor.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-glitter-natural-diy-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-natural-small-wreath-pack.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-natural-classic-diy-pack.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-gold-glitter-wreath-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-snow-frosted-diy-decor-set.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/winter-decor/wd20261109/christmas-pinecone-ornaments-snow-tipped-wreath-decor.jpg"], 
         specs: [
             { label: "Product Name", value: "Natural & Frosted Christmas Pinecone Ornaments Pack" },
             { label: "Material", value: "100% Natural Pinecones + Non-toxic Eco-friendly Paint/Glitter" },
@@ -766,12 +731,11 @@ const detailsDatabase = {
         code: "Item Code: h20260716",
         description: "Compact black gothic tabletop Halloween tree available in unlit version and 4 LED light colors (red/orange/white/purple). Battery-powered with 6H timer function, perfect for spooky Halloween indoor desktop & shelf decoration.",
         images: [
-            "images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-red-light-01.jpg",
-            "images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-orange-light-02.jpg",
-            "images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-white-light-03.jpg",
-            "images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-purple-light-04.jpg",
-            "images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-bare-no-lights-05.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-red-light-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-orange-light-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-white-light-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-purple-light-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/halloween/tree/h20260716/small-black-xmas-tree-bare-no-lights-05.jpg"], 
         specs: [
             { label: "Size", value: "60CM, Customizable" },
             { label: "power supply", value: "requires 3AA batteries (batteries not included)" },
@@ -785,8 +749,7 @@ const detailsDatabase = {
             { label: "PVC Thickness", value: "0.1MM" },
             { label: "PVC Width", value: "2.5 Inch" },
             { label: "light options", value: "unlit bare tree / red / orange / white / purple led lights" },
-            { label: "Application", value: "Indoor tabletop, desk, mantel, halloween party display, home seasonal decor" }
-        ]
+            { label: "Application", value: "Indoor tabletop, desk, mantel, halloween party display, home seasonal decor" }]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "valentines-day")
@@ -796,19 +759,17 @@ const detailsDatabase = {
         code: "Item Code: vd20260801",
         description: "Add a touch of sparkle to your holiday season with our exquisite glitter heart ornaments. These charming hanging decorations are designed to bring love and joy to your Christmas tree, garlands, or festive displays. Crafted with high-quality glitter finish, each heart ornament catches the light beautifully, creating a warm and magical glow in your home. Lightweight and durable, they are easy to hang and perfect for decorating branches, windows, or gift wrapping. Whether you are creating a classic festive look or adding a romantic accent, these versatile ornaments are the perfect finishing touch. Elevate your holiday decor with these timeless heart-shaped accents that celebrate the spirit of the season.",
         images: [
-            "images/products/holiday-decor/valentines-day/vd20260801/red-glitter-heart-christmas-ornament.jpg",
-            "images/products/holiday-decor/valentines-day/vd20260801/red-glitter-hollow-heart-decor.jpg",
-            "images/products/holiday-decor/valentines-day/vd20260801/red-sparkle-heart-hanging-pendant.jpg",
-            "images/products/holiday-decor/valentines-day/vd20260801/rose-gold-glitter-heart-ornament.jpg",
-            "images/products/holiday-decor/valentines-day/vd20260801/dark-red-glitter-heart-xmas-decor.jpg",
-            "images/products/holiday-decor/valentines-day/vd20260801/pink-glitter-heart-tree-decoration.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/valentines-day/vd20260801/red-glitter-heart-christmas-ornament.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/valentines-day/vd20260801/red-glitter-hollow-heart-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/valentines-day/vd20260801/red-sparkle-heart-hanging-pendant.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/valentines-day/vd20260801/rose-gold-glitter-heart-ornament.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/valentines-day/vd20260801/dark-red-glitter-heart-xmas-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/valentines-day/vd20260801/pink-glitter-heart-tree-decoration.jpg"], 
         specs: [
             { label: "Material", value: "Lightweight plastic with premium glitter finish" },
             { label: "Shape", value: "Heart" },
             { label: "Hanging Type", value: "Included ribbon loop for easy attachment" },
-            { label: "Occasion", value: "Christmas tree, wedding decor, party favors" }
-        ]
+            { label: "Occasion", value: "Christmas tree, wedding decor, party favors" }]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "easter")
@@ -818,12 +779,12 @@ const detailsDatabase = {
         code: "Item Code: ew20260727",
         description: "Brighten any space and celebrate the season of renewal with handcrafted Easter Wreaths. Designed with lifelike greenery, pastel speckled eggs, and delicate spring blossoms, each wreath brings a fresh, festive charm to front doors, entryways, and interior walls.",
         images: [
-            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-green-foliage-egg-front-door-01.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-multicolor-egg-leaf-front-door-02.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-pink-flower-bow-wall-hanging-03.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-rose-floral-greenery-wall-hanging-04.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-rainbow-egg-farmhouse-door-05.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-mixed-egg-spring-greenery-door-06.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-green-foliage-egg-front-door-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-multicolor-egg-leaf-front-door-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-pink-flower-bow-wall-hanging-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-rose-floral-greenery-wall-hanging-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-rainbow-egg-farmhouse-door-05.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/wreath/ew20260727/easter-wreath-mixed-egg-spring-greenery-door-06.jpg"], 
         specs: [
             { label: "Size", value: "Customizable Sizes" },
             { label: "Festive & Vibrant Design", value: "Features realistic greenery, colorful Easter eggs, and springtime accents to create an inviting seasonal atmosphere." },
@@ -839,12 +800,12 @@ const detailsDatabase = {
         code: "Item Code: ew20260728",
         description: "Handcrafted with realistic foam speckled eggs, natural twig vine bases, and delicate greenery accents, this seasonal door wreath brings a cheerful festive ambiance to any space. Designed for both indoor and covered outdoor display, it fits perfectly on your front door, entryway, fireplace mantel, windowsill, or porch wall. Built from lightweight yet durable materials, this reusable spring decoration maintains its vivid colors year after year without fading. It serves as a delightful holiday centerpiece and an ideal seasonal gift for family, friends, and home decorators.",
         images: [
-            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-greenery-front-door-01.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-orange-yellow-front-door-02.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-pastel-multicolor-front-door-03.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-glitter-pastel-front-door-04.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-berry-floral-front-door-05.jpg",
-            "images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-speckled-pastel-front-door-06.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-greenery-front-door-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-orange-yellow-front-door-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-pastel-multicolor-front-door-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-glitter-pastel-front-door-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-berry-floral-front-door-05.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/wreath/ew20260728/easter-egg-wreath-speckled-pastel-front-door-06.jpg"], 
         specs: [
             { label: "Base Construction", value: "Natural Rattan / Twig Ring" },
             { label: "Mounting Type", value: "Wall Mount, Door Mount, Hanging" },
@@ -857,12 +818,12 @@ const detailsDatabase = {
         code: "Item Code: eb20260808",
         description: "Add a whimsical touch of spring to your home with this charming green moss Easter bunny figurine. Crafted with high-density green flocking that mimics natural moss and styled with a soft pink collar accent, this handcrafted bunny statue makes an eye-catching centerpiece for Easter dining tables, fireplace mantels, or entryway console tables. Designed to suit rustic, farmhouse, and cottagecore decor themes.",
         images: [
-            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-figurine-white-background.jpg",
-            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-statue-front-view.jpg",
-            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-flocked-easter-rabbit-spring-table-setting.jpg",
-            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-table-decor-centerpiece.jpg",
-            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-rabbit-tabletop-decoration.jpg",
-            "images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-fireplace-mantel-decor.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-figurine-white-background.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-statue-front-view.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/easter-bunny/eb20260808/green-flocked-easter-rabbit-spring-table-setting.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-table-decor-centerpiece.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-rabbit-tabletop-decoration.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/easter/easter-bunny/eb20260808/green-moss-easter-bunny-fireplace-mantel-decor.jpg"], 
         specs: [
             { label: "Material", value: "Resin / Polyfoam core with high-density moss flocking" },
             { label: "Color", value: "Natural Moss Green & Soft Pink" },
@@ -878,16 +839,14 @@ const detailsDatabase = {
         code: "Item Code: cf20260717",
         description: "Add distinctive festive charm to holiday displays with this blue silver poinsettia ornament. Made of lightweight fabric with hollow silver leaf trim, it brings shiny layered visual effects. Perfect for decorating christmas trees, wreaths, garlands, gift arrangements, creating eye-catching winter holiday decor.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260717/blue-silver-poinsettia-decoration-01.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260717/blue-lace-poinsettia-interior-decor-02.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260717/blue-silver-poinsettia-decoration-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260717/blue-lace-poinsettia-interior-decor-02.jpg"], 
         specs: [
             { label: "Material", value: "Fabric flower petals, hollow silver plastic leaves" },
             { label: "Size", value: "Multiple sizes available, Customizable" },
             { label: "Color", value: "Blue with silver trim, Multiple color options supported" },
             { label: "Features", value: "Lightweight structure, reusable design, easy attachment, vivid layered appearance" },
-            { label: "Application", value: "Christmas tree decoration, wreath accessory, garland embellishment, holiday floral arrangement" }
-        ]
+            { label: "Application", value: "Christmas tree decoration, wreath accessory, garland embellishment, holiday floral arrangement" }]
     },
     "christmas flower white artificial poinsettia fabric decorative ornament": {
         category: "holiday",
@@ -895,16 +854,14 @@ const detailsDatabase = {
         code: "Item Code: cf20260718",
         description: "Bring pure elegant holiday aesthetics to your decorations with this white poinsettia ornament. Made of soft layered fabric with exquisite floral details, it delivers a delicate natural look. Perfect for decorating christmas trees, wreaths, garlands and seasonal floral arrangements, adding minimalist festive atmosphere to holiday displays.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260718/white-fabric-poinsettia-decoration-01.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260718/white-poinsettia-holiday-interior-display-02.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260718/white-fabric-poinsettia-decoration-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260718/white-poinsettia-holiday-interior-display-02.jpg"], 
         specs: [
             { label: "Material", value: "Premium fabric petals, plastic stem" },
             { label: "Size", value: "Multiple sizes available, Customizable" },
             { label: "Color", value: "White, various color options can be customized" },
             { label: "Features", value: "Lightweight, reusable, easy to attach, lifelike layered flower structure" },
-            { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
-        ]
+            { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }]
     },
     "artificial christmas flower red gold decorative holiday ornament": {
         category: "holiday",
@@ -912,19 +869,17 @@ const detailsDatabase = {
         code: "Item Code: cf20260719",
         description: "Add luxurious festive appeal to holiday decorations with this red gold poinsettia ornament. Designed with vibrant fabric petals and hollow gold layered leaves, it creates striking visual contrast. Perfect for decorating christmas trees, wreaths, garlands and seasonal floral displays, bringing classic christmas atmosphere to indoor and outdoor holiday scenes.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260719/red-gold-lace-poinsettia-single-flower-display-01.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260719/four-red-gold-lace-poinsettia-floral-set-02.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260719/red-gold-lace-poinsettia-holiday-display-03.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260719/size-measure-red-gold-lace-poinsettia-04.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260719/back-clip-view-red-gold-lace-poinsettia-05.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260719/red-gold-lace-poinsettia-single-flower-display-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260719/four-red-gold-lace-poinsettia-floral-set-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260719/red-gold-lace-poinsettia-holiday-display-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260719/size-measure-red-gold-lace-poinsettia-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260719/back-clip-view-red-gold-lace-poinsettia-05.jpg"], 
         specs: [
             { label: "Material", value: "Fabric flower petals, hollow gold plastic leaves" },
             { label: "Size", value: "Multiple sizes available, Customizable" },
             { label: "Color", value: "Red with gold trim, Various color combinations supported" },
             { label: "Features", value: "Lightweight structure, reusable design, easy to install, exquisite double-layer appearance" },
-            { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
-        ]
+            { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }]
     },
     "christmas flower blue fabric artificial poinsettia decorative ornament": {
         category: "holiday",
@@ -932,20 +887,18 @@ const detailsDatabase = {
         code: "Item Code: cf20260720",
         description: "Create unique cool-toned holiday styling with this blue artificial poinsettia ornament. Made of soft layered fabric with delicate textured petals, it delivers a vivid full-bloom shape. Perfect for decorating christmas trees, wreaths, garlands and seasonal floral arrangements, adding distinctive color to your christmas displays.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-glitter-fabric-poinsettia-floral-ornament-01.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-glitter-poinsettia-holiday-interior-display-02.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-flowers-christmas-tree-ornaments-decor.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-christmas-dining-table-centerpiece-decor.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-christmas-garland-fireplace-mantel-decor.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-flowers-fireplace-garland-with-lights.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260720/blue-glitter-fabric-poinsettia-floral-ornament-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260720/blue-glitter-poinsettia-holiday-interior-display-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-flowers-christmas-tree-ornaments-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-christmas-dining-table-centerpiece-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-christmas-garland-fireplace-mantel-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260720/blue-poinsettia-flowers-fireplace-garland-with-lights.jpg"], 
         specs: [
             { label: "Material", value: "Fabric flower petals, plastic stem" },
             { label: "Size", value: "Multiple sizes available, Customizable" },
             { label: "Color", value: "Blue, various color options for selection" },
             { label: "Features", value: "Lightweight, reusable, easy to attach, lifelike layered flower structure" },
-            { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
-        ]
+            { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }]
     },
     "christmas poinsettia gold glitter fabric holiday indoor home decor": {
         category: "holiday",
@@ -953,17 +906,15 @@ const detailsDatabase = {
         code: "Item Code: cf20260721",
         description: "Add eye-catching luxury metallic appeal to seasonal decor with this shiny gold poinsettia floral pick. Constructed from soft glossy fabric with multi-layer petals, it delivers a rich full appearance. Perfect for embellishing christmas trees, handmade wreaths, festive garlands and holiday centerpieces, creating glamorous warm holiday styling.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260721/gold-glitter-fabric-poinsettia-floral-ornament-01.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260721/size-measure-gold-poinsettia-fabric-decoration-02.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260721/gold-glitter-poinsettia-holiday-interior-display-03.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260721/gold-glitter-fabric-poinsettia-floral-ornament-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260721/size-measure-gold-poinsettia-fabric-decoration-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260721/gold-glitter-poinsettia-holiday-interior-display-03.jpg"], 
         specs: [
             { label: "Material", value: "Fabric flower petals, plastic stem" },
             { label: "Size", value: "Multiple sizes available, Customizable" },
             { label: "Color", value: "Gold, various color options can be customized" },
             { label: "Features", value: "Lightweight, reusable, easy to attach, lifelike layered flower structure" },
-            { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }
-        ]
+            { label: "Application", value: "Christmas tree decoration, wreath embellishment, garland accessory, holiday floral arrangement" }]
     },
     "christmas silver fabric poinsettia glitter accent holiday interior ornament": {
         category: "holiday",
@@ -971,17 +922,15 @@ const detailsDatabase = {
         code: "Item Code: cf20260722",
         description: "Bring cool elegant metallic styling to seasonal decorations with this silver poinsettia bloom. Made of glossy fabric with multi-layer textured petals, it delivers soft reflective luster. Ideal for decorating christmas trees, handmade wreaths, festive garlands and winter table arrangements, adding modern minimalist holiday aesthetics.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20260722/silver-glitter-fabric-poinsettia-floral-ornament-01.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260722/size-measure-silver-poinsettia-fabric-decoration-02.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20260722/silver-glitter-poinsettia-holiday-interior-display-03.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260722/silver-glitter-fabric-poinsettia-floral-ornament-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260722/size-measure-silver-poinsettia-fabric-decoration-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20260722/silver-glitter-poinsettia-holiday-interior-display-03.jpg"], 
         specs: [
             { label: "Material", value: "Fabric flower petals, plastic stem pick" },
             { label: "Size", value: "Multiple dimensions available, Customizable" },
             { label: "Color", value: "Metallic silver, custom color options supported" },
             { label: "Features", value: "Lightweight, easy insertion, durable reusable structure, full layered flower shape" },
-            { label: "Application", value: "Christmas tree ornament, wreath accessory, garland embellishment, winter holiday table arrangement" }
-        ]
+            { label: "Application", value: "Christmas tree ornament, wreath accessory, garland embellishment, winter holiday table arrangement" }]
     },
     "white glitter artificial poinsettia flower for holiday home and tree decor": {
         category: "holiday",
@@ -989,13 +938,12 @@ const detailsDatabase = {
         code: "Item Code: cf20261009",
         description: "This white glitter artificial poinsettia flower is a practical festive ornament. It supports various diy holiday arrangements for indoor spaces. The soft fabric with subtle glitter delivers refined holiday aesthetics. You may fix it on christmas trees wreaths or garlands to enrich your seasonal decoration layout.",
         images: [
-            "images/products/holiday-decor/christmas-flowers/cf20261009/white-artificial-christmas-poinsettia-flower-decoration.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20261009/white-christmas-poinsettia-flower-size-measurement-photo.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20261009/white-glitter-poinsettia-flower-back-detail-closeup.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20261009/faux-white-christmas-poinsettia-flower-white-background.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20261009/white-poinsettia-flower-decorated-on-christmas-tree.jpg",
-            "images/products/holiday-decor/christmas-flowers/cf20261009/white-christmas-poinsettia-flower-home-lifestyle-scene.jpg"
-        ], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20261009/white-artificial-christmas-poinsettia-flower-decoration.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20261009/white-christmas-poinsettia-flower-size-measurement-photo.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20261009/white-glitter-poinsettia-flower-back-detail-closeup.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20261009/faux-white-christmas-poinsettia-flower-white-background.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20261009/white-poinsettia-flower-decorated-on-christmas-tree.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-flowers/cf20261009/white-christmas-poinsettia-flower-home-lifestyle-scene.jpg"], 
         specs: [
             { label: "Product Name", value: "14Pcs/Set white glitter artificial poinsettia flower" },
             { label: "Size", value: "25x25x20.5cm" },
@@ -1006,8 +954,7 @@ const detailsDatabase = {
             { label: "Material", value: "fabric with silver glitter powder plastic base" },
             { label: "Color", value: "ivory glitter white" },
             { label: "Usage", value: "diy festive decorative accessory" },
-            { label: "Application", value: "holiday home tree wreath garland styling" }
-        ]
+            { label: "Application", value: "holiday home tree wreath garland styling" }]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "tree skirts")
@@ -1017,8 +964,8 @@ const detailsDatabase = {
         code: "Item Code: ts20260717",
         description: "Bring festive warmth to your holiday setup with this classic red and green merry christmas tree skirt. Designed with elegant scalloped edges, holly leaf cutouts, and star motifs, it beautifully covers your tree stand while protecting your floors. Perfect for decorating living rooms, offices, or holiday parties to create a cozy christmas atmosphere.",
         images: [
-            "images/products/holiday-decor/tree-skirts/ts20260717/christmas-tree-skirt-red-embroidered-indoor-01.jpg",
-            "images/products/holiday-decor/tree-skirts/ts20260717/christmas-tree-skirt-wave-edge-floor-display-03.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/tree-skirts/ts20260717/christmas-tree-skirt-red-embroidered-indoor-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/tree-skirts/ts20260717/christmas-tree-skirt-wave-edge-floor-display-03.jpg"], 
         specs: [
             { label: "Size", value: "Customizable Sizes" },
             { label: "Classic festive design", value: "Features a vibrant red center with merry christmas lettering and a deep green border, creating a traditional holiday look for your christmas tree." },
@@ -1034,12 +981,12 @@ const detailsDatabase = {
         code: "Item Code: sb20260801",
         description: "Foldable Christmas ornament storage box with transparent PVC panel. Separate grid compartments protect fragile Christmas baubles from scratches and dust. Equipped with sturdy carry handle and zipper closure. Compact foldable design saves closet space, ideal for organizing Christmas decorative balls and seasonal ornaments.",
         images: [
-            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ball-storage-box-grid-case-white-shot-01.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ball-storage-box-grid-case-real-scene-02.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-handle-detail.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-living-room.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-closet.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-attic.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260801/christmas-ball-storage-box-grid-case-white-shot-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260801/christmas-ball-storage-box-grid-case-real-scene-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-handle-detail.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-living-room.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-closet.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260801/christmas-ornament-storage-box-attic.jpg"], 
         specs: [
             { label: "Product Name", value: "Christmas Ornament Storage Box" },
             { label: "Material", value: "Polyester fabric + frosted PVC sheet + cardboard dividers" },
@@ -1055,12 +1002,12 @@ const detailsDatabase = {
         code: "Item Code: sb20260802",
         description: "Heavy duty 600D Oxford Christmas ornament storage bag with clear view window and removable dividers. Specially designed for storing up to 128 Christmas baubles and holiday ornaments. Reinforced handles and zipper closure for easy transport and dust proof storage.",
         images: [
-            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-long-red-white-01.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-grid-semiopen-02.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-grid-fullopen-03.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-bag-card-slot-detail.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-bag-handle-detail.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-storage-bag-closet.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-long-red-white-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-grid-semiopen-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260802/christmas-ball-storage-bag-grid-fullopen-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-bag-card-slot-detail.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-bag-handle-detail.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260802/christmas-ornament-storage-bag-closet.jpg"], 
         specs: [
             { label: "Material", value: "600D Oxford Fabric" },
             { label: "Color", value: "Red & Green" },
@@ -1068,17 +1015,17 @@ const detailsDatabase = {
             { label: "Features", value: "Clear View Window, Removable Adjustable Dividers, Reinforced Carry Handles, Zipper Closure, Dust proof" },
             { label: "Application", value: "For Christmas baubles, Xmas ornaments, small holiday decorative accessories, seasonal home storage" }]
     },
-    "christmas storage bag oxford fabric 128 slots for 3 inch orenaments": {
+    "christmas storage bag oxford fabric 128 slots for 3 inch ornaments": {
         category: "holiday",
         subcategory: "storage-bags", 
         code: "Item Code: sb20260803",
-        description: "This heavy duty red oxford fabric christmas ornament storage bag comes with 128 individual slots. Overall dimension measures 65x33x33xcm, it safely holds up to 128 pieces of 3 inch christmas baubles to avoid scratches and breakage. Removable cardboard dividers allow flexible storage for different sized holiday decorations. Sturdy reinforced handles and zipper closure offer dust proof protection and convenient transport. Ideal for organizing christmas decorations when the holiday season is over.",
+        description: "This heavy duty red oxford fabric christmas ornament storage bag comes with 128 individual slots. Overall dimension measures 65x33x33cm, it safely holds up to 128 pieces of 3 inch christmas baubles to avoid scratches and breakage. Removable cardboard dividers allow flexible storage for different sized holiday decorations. Sturdy reinforced handles and zipper closure offer dust proof protection and convenient transport. Ideal for organizing christmas decorations when the holiday season is over.",
         images: [
-            "images/products/holiday-decor/storage-bags/sb20260803/red-christmas-ornament-storage-bag-closed.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260803/christmas-bauble-storage-bag-full-dividers.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260803/christmas-decoration-tote-half-divided.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260803/red-storage-box-label-holder.jpg",
-            "images/products/holiday-decor/storage-bags/sb20260803/red-storage-box-side-handle.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260803/red-christmas-ornament-storage-bag-closed.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260803/christmas-bauble-storage-bag-full-dividers.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260803/christmas-decoration-tote-half-divided.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260803/red-storage-box-label-holder.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/storage-bags/sb20260803/red-storage-box-side-handle.jpg"], 
         specs: [
             { label: "Product Name", value: "Christmas Ornament Storage Bag" },
             { label: "Material", value: "Oxford Fabric, Cardboard Dividers" },
@@ -1101,11 +1048,11 @@ const detailsDatabase = {
         code: "Item Code: cl20260801",
         description: "Exquisite flocked reindeer ornaments crafted with soft velvet texture. Available in various postures including lying posture and standing posture, matched with silver branch antlers or golden antlers. Rich vibrant red tone creates strong festive atmosphere. Suitable for fireplace mantel, tabletop, shelf, showcase window display for Christmas, New Year and holiday scene layout.",
         images: [
-            "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/red-flocked-lying-reindeer-statue-silver-branch-antler-product-photo-01.jpg",
-            "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/small-standing-flocked-red-deer-silver-antler-figurine-02.jpg",
-            "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/medium-tall-standing-red-reindeer-branch-antler-ornament-03.jpg",
-            "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/tall-front-facing-red-flocking-deer-sculpture-silver-antler-04.jpg",
-            "images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/carved-red-reindeer-figurine-with-golden-antler-decoration-05.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/red-flocked-lying-reindeer-statue-silver-branch-antler-product-photo-01.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/small-standing-flocked-red-deer-silver-antler-figurine-02.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/medium-tall-standing-red-reindeer-branch-antler-ornament-03.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/tall-front-facing-red-flocking-deer-sculpture-silver-antler-04.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/carved-red-reindeer-figurine-with-golden-antler-decoration-05.jpg"], 
         specs: [
             { label: "Surface Craft", value: "Flocking / velvet flocked finish" },
             { label: "Main Body Color", value: "Bright red" },
@@ -1125,12 +1072,12 @@ const detailsDatabase = {
         code: "Item Code: tb20260630",
         description: "Create a warm cozy ambience for indoor spaces with this mushroom wooden table lamp. Crafted with natural ribbed solid wood lampshade and tapered wood base, it casts soft gentle ambient lighting. Perfect for bedroom nightstands, living room side tables, study desks, adding minimalist rustic style to residential interiors.",
         images: [
-            "images/products/lighting/table-lamps/tb20260630/mushroom-table-lamp-wood-retro-shade-white-product-01.jpg",
-            "images/products/lighting/table-lamps/tb20260630/mushroom-table-lamp-warm-glow-bedroom-decor-02.jpg",
-            "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-nightstand-03.jpg",
-            "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-base-detail-04.jpg",
-            "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-desk-decor-05.jpg",
-            "images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-reading-corner-06.jpg"], 
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260630/mushroom-table-lamp-wood-retro-shade-white-product-01.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260630/mushroom-table-lamp-warm-glow-bedroom-decor-02.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-nightstand-03.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-base-detail-04.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-desk-decor-05.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260630/wooden-mushroom-table-lamp-reading-corner-06.jpg"], 
         specs: [
             { label: "Material", value: "Ribbed solid wood lampshade, solid wood base, metal fitting(Basswood + Rubberwood)" },
             { label: "Light Source", value: "E26 or E27, Bulb not included" },
@@ -1163,22 +1110,19 @@ const detailsDatabase = {
         code: "Item Code: tb20260701",
         description: "Elegant bedside table lamp built with weighted natural wood base and delicate cream floral-printed fabric shade, which softens light to produce cozy warm ambient glow. It fits nightstands, side tables in bedroom, guest room and dorm, supports standard E27 bulbs (bulb not included), simple to assemble and matches mid-century, boho and farmhouse home decor styles perfectly.",
         images: [
-            "images/products/lighting/table-lamps/tb20260701/wooden-bedside-table-lamp-floral-fabric-shade-product-01.jpg",
-            "images/products/lighting/table-lamps/tb20260701/wooden-bedside-table-lamp-floral-fabric-shade-bedroom-scene-02.jpg",
-            "images/products/lighting/table-lamps/tb20260701/vintage-wood-table-lamp-floral-shade-03.jpg",
-            "images/products/lighting/table-lamps/tb20260701/vintage-wood-table-lamp-base-detail-04.jpg",
-            "images/products/lighting/table-lamps/tb20260701/vintage-wood-table-lamp-nightstand-05.jpg",
-            "images/products/lighting/table-lamps/tb20260701/vintage-wood-table-lamp-entryway-06.jpg"
-
-        ], 
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260701/wooden-bedside-table-lamp-floral-fabric-shade-product-01.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260701/wooden-bedside-table-lamp-floral-fabric-shade-bedroom-scene-02.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260701/vintage-wood-table-lamp-floral-shade-03.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260701/vintage-wood-table-lamp-base-detail-04.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260701/vintage-wood-table-lamp-nightstand-05.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260701/vintage-wood-table-lamp-entryway-06.jpg"], 
         specs: [
             { label: "Product Name", value: "Wooden Base Floral Fabric Shade Table Lamp" },
             { label: "Material", value: "Natural Wood Base, Printed Floral Fabric Lampshade" },
             { label: "Color", value: "Cream lampshade, Natural wood-tone base" },
             { label: "Socket Type", value: "E27, bulb not included" },
             { label: "Features", value: "Creates soft warm ambient lighting" },
-            { label: "Application", value: "Bedroom, Nightstand, Guest Room, Side Table" }
-        ]
+            { label: "Application", value: "Bedroom, Nightstand, Guest Room, Side Table" }]
     },
     "woven table lamp pleated wood cylinder natural oak dark walnut bedroom": {
         category: "lighting",
@@ -1186,21 +1130,18 @@ const detailsDatabase = {
         code: "Item Code: tb20260702",
         description: "Add natural warmth and contemporary texture to your home with this handcrafted woven table lamp. Featuring a textured rope cylinder shade and a finely fluted solid wood base, it diffuses a soft, cozy ambient glow that elevates any nightstand, side table, or reading nook. Available in natural oak and deep walnut finishes to perfectly complement mid-century, Japandi, and boho interior styles.",
         images: [
-            "images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-light-wood-white-background.jpg",
-            "images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-light-wood-lit-studio.jpg",
-            "images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-dark-wood-lit-studio.jpg",
-            "images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-dark-wood-living-room.jpg",
-            "images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-light-wood-bedroom-lifestyle.jpg",
-            "images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-light-wood-bedroom-nightstand.jpg"
-
-        ], 
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-light-wood-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-light-wood-lit-studio.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-dark-wood-lit-studio.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-dark-wood-living-room.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-light-wood-bedroom-lifestyle.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260702/modern-woven-table-lamp-light-wood-bedroom-nightstand.jpg"], 
         specs: [
             { label: "Wood Finishes", value: "Natural Oak (Light Wood) / Deep Walnut (Dark Wood)" },
             { label: "Material", value: "Hand-woven rope shade, solid wood base, brushed brass hardware" },
             { label: "Light Source", value: "E26/E27 base (LED bulb included, warm white 3000K)" },
             { label: "Style", value: "Japandi / Modern Organic / Boho / Mid-Century Modern" },
-            { label: "Suitable For", value: "Bedroom nightstand, living room side table, office desk" }
-        ]
+            { label: "Suitable For", value: "Bedroom nightstand, living room side table, office desk" }]
     },
     "modern black wood table lamp for living room bedroom bedside": {
         category: "lighting",
@@ -1208,34 +1149,31 @@ const detailsDatabase = {
         code: "Item Code: tb20260703",
         description: "Elevate your home space with this modern black wood table lamp, crafted with a uniquely contoured wooden base and a premium fabric shade that diffuses a soft, inviting glow. Its sculptural silhouette effortlessly blends contemporary artistry with functional illumination, making it a stylish accent piece for your living room, bedroom nightstand, or study desk. Designed to enhance modern and rustic interiors alike, this versatile lamp adds warmth and understated sophistication to any room setup.",
         images: [
-            "images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-white-background.jpg",
-            "images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-on-table.jpg",
-            "images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-detail.jpg",
-            "images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-living-room.jpg",
-            "images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-desk-scene.jpg",
-            "images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-bedroom-scene.jpg"
-
-        ], 
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-on-table.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-detail.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-living-room.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-desk-scene.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260703/modern-black-wood-table-lamp-bedroom-scene.jpg"], 
         specs: [
             { label: "Style", value: "Modern / Sculptural" },
             { label: "Base Material", value: "Solid Wood" },
             { label: "Shade Material", value: "Fabric (Off-White / Beige)" },
             { label: "Light Source", value: "E26/E27 Bulb (Not Included)" },
-            { label: "Suitable For", value: "Bedroom, Living Room, Office, Bedside" }
-        ]
+            { label: "Suitable For", value: "Bedroom, Living Room, Office, Bedside" }]
     },
     "modern wooden table lamp rechargeable cordless mushroom desk light": {
         category: "lighting",
         subcategory: "table-lamps", 
         code: "Item Code: tb20260704",
-        description: "Elevate your home with this mid-century modern wooden table lamp. Crafted with a natural wood grain body and an organic mushroom shape, it offers warm ambient light perfect for your bedside table, home office, or reading nook. Cordless and rechargeable for effortless portability.Built-in USB port. A USB charging cable is included. Complies with North American, Australian, European, and Middle Eastern certification standards.",
+        description: "Elevate your home with this mid-century modern wooden table lamp. Crafted with a natural wood grain body and an organic mushroom shape, it offers warm ambient light perfect for your bedside table, home office, or reading nook. Cordless and rechargeable for effortless portability. Built-in USB port. A USB charging cable is included. Complies with North American, Australian, European, and Middle Eastern certification standards.",
         images: [
-            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-white-background.jpg",
-            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-warm-light.jpg",
-            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-reading-desk.jpg",
-            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-living-room-decor.jpg",
-            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-home-office.jpg",
-            "images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-bedside-table.jpg"], 
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-warm-light.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-reading-desk.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-living-room-decor.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-home-office.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260704/modern-wooden-table-lamp-bedside-table.jpg"], 
         specs: [
             { label: "Product Type", value: "Table Lamp / Desk Light" },
             { label: "Material", value: "Natural Wood, Metal Alloy" },
@@ -1252,20 +1190,17 @@ const detailsDatabase = {
         code: "Item Code: tb20260916",
         description: "Illuminate your home with timeless elegance. This vintage wooden table lamp features a solid wood base paired with a warm amber glass shade, creating a soft and inviting ambience. Designed to blend seamlessly into modern, mid-century, and rustic interiors, it serves as both a functional reading light and a stylish decorative piece for your living room, bedroom, or study desk.",
         images: [
-            "images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-clear-glass-white-background.jpg",
-            "images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-amber-glass-lit.jpg",
-            "images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-desk-lifestyle.jpg",
-            "images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-cozy-evening-ambience.jpg",
-            "images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-living-room-decor.jpg",
-            "images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-side-table-setting.jpg"
-
-        ], 
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-clear-glass-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-amber-glass-lit.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-desk-lifestyle.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-cozy-evening-ambience.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-living-room-decor.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260916/vintage-wooden-table-lamp-side-table-setting.jpg"], 
         specs: [
             { label: "Style", value: "Vintage / Mid-Century Modern" },
             { label: "Material", value: "Solid Wood" },
             { label: "Light Source", value: "E26 / E27 Bulb (Replaceable)" },
-            { label: "Suitable For", value: "Bedroom, Living Room, Study, Side Table" }
-        ]
+            { label: "Suitable For", value: "Bedroom, Living Room, Study, Side Table" }]
     },
     "wood mushroom table lamp mid century walnut accent": {
         category: "lighting",
@@ -1273,22 +1208,19 @@ const detailsDatabase = {
         code: "Item Code: tb20260922",
         description: "Bring timeless warmth and organic elegance into your interior spaces with this wood mushroom table lamp. Inspired by mid-century modern aesthetics and minimalist design principles, this sculptural accent combines smooth natural walnut wood textures with a gentle, glare-free warm illumination.",
         images: [
-            "images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-front-white-background.jpg",
-            "images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-lit-close-up.jpg",
-            "images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-bright-living-space.jpg",
-            "images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-modern-living-room.jpg",
-            "images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-night-cozy-glow.jpg",
-            "images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-reading-nook-armchair.jpg"
-
-        ], 
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-front-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-lit-close-up.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-bright-living-space.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-modern-living-room.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-night-cozy-glow.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260922/wood-mushroom-table-lamp-reading-nook-armchair.jpg"], 
         specs: [
             { label: "Product Name", value: "Wood Mushroom Table Lamp" },
             { label: "Material", value: "Solid Walnut Wood / Brass-Finished Metal Accents" },
             { label: "Power Source", value: "Plug-in Electric (US / EU / UK / AU standard options)" },
             { label: "Voltage", value: "110V - 240V (Universal Commercial Voltage)" },
             { label: "Certifications", value: "CE, RoHS, FCC Certified" },
-            { label: "Applications", value: "Living Room Side Tables, Bedrooms, Offices, Hotel Suites" }
-        ]
+            { label: "Applications", value: "Living Room Side Tables, Bedrooms, Offices, Hotel Suites" }]
     },
     "mushroom table lamp wood base vintage bedside desk decor": {
         category: "lighting",
@@ -1296,22 +1228,19 @@ const detailsDatabase = {
         code: "Item Code: tb20260930",
         description: "Bring a warm, nostalgic ambiance to your home or office with our Vintage Wooden Mushroom Table Lamp. Crafted with a natural wood-grain base and an iconic milky white shade, this aesthetic lamp delivers soft, eye-caring illumination that complements mid-century modern, Wabi-sabi, and rustic interior designs. Whether styled as a cozy bedside night light in the bedroom, a chic accent piece on a living room TV stand, or a functional reading light on a study desk, this statement piece effortlessly blends form and function.",
         images: [
-            "images/products/lighting/table-lamps/tb20260930/mushroom-table-lamp-wood-base.jpg",
-            "images/products/lighting/table-lamps/tb20260930/wood-mushroom-table-lamp-living-room.jpg",
-            "images/products/lighting/table-lamps/tb20260930/bedside-mushroom-lamp-night-light.jpg",
-            "images/products/lighting/table-lamps/tb20260930/desk-mushroom-lamp-study-lighting.jpg",
-            "images/products/lighting/table-lamps/tb20260930/retro-mushroom-lamp-tv-stand-decor.jpg",
-            "images/products/lighting/table-lamps/tb20260930/wooden-mushroom-lamp-warm-glow.jpg"
-
-        ], 
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260930/mushroom-table-lamp-wood-base.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260930/wood-mushroom-table-lamp-living-room.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260930/bedside-mushroom-lamp-night-light.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260930/desk-mushroom-lamp-study-lighting.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260930/retro-mushroom-lamp-tv-stand-decor.jpg",
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20260930/wooden-mushroom-lamp-warm-glow.jpg"], 
         specs: [
             { label: "Product Name", value: "Vintage Wooden Mushroom Table Lamp" },
             { label: "Style", value: "Mid-Century Modern / Retro / Wabi-sabi" },
             { label: "Primary Material", value: "Natural Wood Base" },
             { label: "Power Source", value: "Plug-in Electric" },
             { label: "Certifications", value: "CE, RoHS, FCC Certified" },
-            { label: "Applications", value: "Bedroom Bedside, Living Room, Study Desk, Office" }
-        ]
+            { label: "Applications", value: "Bedroom Bedside, Living Room, Study Desk, Office" }]
     },
     "modern wooden cube table lamp with rattan mesh shade for bedroom decor": {
         category: "lighting", 
@@ -1324,16 +1253,14 @@ const detailsDatabase = {
             "/aileen-home-studio/images/products/lighting/table-lamps/tb20261013/wooden-cube-table-lamp-black-finish-off.jpg",
             "/aileen-home-studio/images/products/lighting/table-lamps/tb20261013/wooden-cube-table-lamp-black-warm-glow.jpg",
             "/aileen-home-studio/images/products/lighting/table-lamps/tb20261013/wooden-cube-table-lamp-desk-decor-day.jpg",
-            "/aileen-home-studio/images/products/lighting/table-lamps/tb20261013/wooden-cube-table-lamp-living-room-night.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/table-lamps/tb20261013/wooden-cube-table-lamp-living-room-night.jpg"], 
         specs: [
             { label: "Product Name", value: "Wooden Cube Mesh Table Lamp" },
             { label: "Design Style", value: "Modern / Japandi / Minimalist / Boho" },
             { label: "Color Options", value: "Natural Wood / Black Finish" },
             { label: "Voltage", value: "110V - 240V (Universal)" },
             { label: "Bulb Type", value: "LED/Incandescent" },
-            { label: "Suitable Scenes", value: "Bedroom, Living Room, Nightstand, Office Desk, Reading Nook" }
-        ]
+            { label: "Suitable Scenes", value: "Bedroom, Living Room, Nightstand, Office Desk, Reading Nook" }]
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "floor lamp")
@@ -1343,18 +1270,16 @@ const detailsDatabase = {
         code: "Item Code: fl20260715",
         description: "This carved wooden floor lamp features stacked sculptural wooden base paired with soft linen lampshade. Inspired by wabi sabi and rustic farmhouse style, this standing lamp delivers warm gentle ambient light. Ideal decor lighting for living room bedroom study lounge and entryway. Solid wood structure brings natural textured aesthetic to modern minimalist neutral tone home interiors.",
         images: [
-            "images/products/lighting/floor-lamps/fl20260715/black-walnut-floor-lamp-geometric-pillar-product-shot-01.jpg",
-            "images/products/lighting/floor-lamps/fl20260715/black-walnut-floor-lamp-warm-glow-lounge-room-display-02.jpg",
-            "images/products/lighting/floor-lamps/fl20260715/black-wood-floor-lamp-bedroom-nightstand-decor-03.jpg",
-            "images/products/lighting/floor-lamps/fl20260715/modern-geometric-floor-lamp-living-room-corner-04.jpg",
-            "images/products/lighting/floor-lamps/fl20260715/vintage-black-wooden-floor-lamp-study-bookshelf-05.jpg",
-            "images/products/lighting/floor-lamps/fl20260715/black-totem-floor-lamp-beside-sofa-seating-area-06.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260715/black-walnut-floor-lamp-geometric-pillar-product-shot-01.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260715/black-walnut-floor-lamp-warm-glow-lounge-room-display-02.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260715/black-wood-floor-lamp-bedroom-nightstand-decor-03.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260715/modern-geometric-floor-lamp-living-room-corner-04.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260715/vintage-black-wooden-floor-lamp-study-bookshelf-05.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260715/black-totem-floor-lamp-beside-sofa-seating-area-06.jpg"], 
         specs: [
             { label: "Material", value: "solid wood base and linen fabric lampshade" },
             { label: "Style", value: "wabi sabi rustic minimalist farmhouse" },
-            { label: "Application", value: "living room bedroom entryway study lounge" }
-        ]
+            { label: "Application", value: "living room bedroom entryway study lounge" }]
     },
     "wooden floor lamp retro geometric stacked tall pole standing light": {
         category: "lighting",
@@ -1362,19 +1287,17 @@ const detailsDatabase = {
         code: "Item Code: fl20260716",
         description: "Elevate your living space with this retro stacked geometric wooden floor lamp. Crafted with a uniquely sculpted geometric wooden pole, this standing light blends vintage charm with modern mid-century aesthetic. Perfect for living rooms, bedrooms, or cozy reading nooks, it casts a warm, inviting glow through its classic fabric shade.",
         images: [
-            "images/products/lighting/floor-lamps/fl20260716/floor-lamp-wooden-stacked-geometric-walnut-white.jpg",
-            "images/products/lighting/floor-lamps/fl20260716/floor-lamp-wooden-stacked-geometric-black-on.jpg",
-            "images/products/lighting/floor-lamps/fl20260716/retro-wood-floor-lamp-geometric-pole-white-shot.jpg",
-            "images/products/lighting/floor-lamps/fl20260716/retro-wood-floor-lamp-warm-light-living-room-display.jpg",
-            "images/products/lighting/floor-lamps/fl20260716/floor-lamp-wooden-stacked-geometric-lifestyle.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260716/floor-lamp-wooden-stacked-geometric-walnut-white.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260716/floor-lamp-wooden-stacked-geometric-black-on.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260716/retro-wood-floor-lamp-geometric-pole-white-shot.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260716/retro-wood-floor-lamp-warm-light-living-room-display.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260716/floor-lamp-wooden-stacked-geometric-lifestyle.jpg"], 
         specs: [
             { label: "Design Style", value: "Retro / Mid-Century Modern / Geometric" },
             { label: "Material", value: "Solid Wood (Pole & Base), Fabric (Lampshade)" },
             { label: "Color Options", value: "Walnut / Matte Black" },
             { label: "Switch Type", value: "On/Off Switch (Standard Floor Switch)" },
-            { label: "Application", value: "Living Room, Bedroom, Study, Reading Corner" }
-        ]
+            { label: "Application", value: "Living Room, Bedroom, Study, Reading Corner" }]
     },
     "black ball floor lamp with pleated shade for vintage living room": {
         category: "lighting",
@@ -1382,20 +1305,18 @@ const detailsDatabase = {
         code: "Item Code: fl20260717",
         description: "Bring timeless elegance and warm ambience to your space with this vintage-inspired floor lamp. Featuring a uniquely crafted stacked-ball body in a matte black finish, it is topped with a classic pleated fabric shade that casts a soft, inviting glow. Perfectly suited for modern rustic interiors, classic study rooms, or cozy reading nooks next to your favorite armchair.",
         images: [
-            "images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-dark-shade.jpg",
-            "images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-cream-shade.jpg",
-            "images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-library-style.jpg",
-            "images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-modern-room.jpg",
-            "images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-reading-nook.jpg",
-            "images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-vintage-room.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-dark-shade.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-cream-shade.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-library-style.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-modern-room.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-reading-nook.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260717/black-ball-floor-lamp-vintage-room.jpg"], 
         specs: [
             { label: "Design Style", value: "Vintage / Mid-Century Modern / Bobbin" },
             { label: "Shade Color Options", value: "Dark Olive / Cream White" },
             { label: "Bulb Socket", value: "E26 / E27 Base (Bulb not included)" },
             { label: "Shade Material", value: "Fabric (Pleated)" },
-            { label: "Application", value: "Living Room, Bedroom, Study, Reading Corner" }
-        ]
+            { label: "Application", value: "Living Room, Bedroom, Study, Reading Corner" }]
     },
     "wooden arc floor lamp with side table yellow shade for living room bedroom reading nook": {
         category: "lighting",
@@ -1403,13 +1324,12 @@ const detailsDatabase = {
         code: "Item Code: fl20260720",
         description: "This mid century modern wooden arc floor lamp merges functional lighting and handy storage surface. Crafted with curved solid wood frame and retro yellow lampshade, the integrated round side table holds books, cups and small decor items. It casts gentle warm ambient light, making it a great fit beside armchairs, sofas in living rooms, bedrooms and cozy reading nooks.",
         images: [
-            "images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-yellow-lampshade-white-shot-01.jpg",
-            "images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-living-room-02.jpg",
-            "images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-yellow-shade-03.jpg",
-            "images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-wood-table-04.jpg",
-            "images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-reading-nook-05.jpg",
-            "images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-side-table-living-space-display-06.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-yellow-lampshade-white-shot-01.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-living-room-02.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-yellow-shade-03.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-wood-table-04.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260720/mid-century-floor-lamp-reading-nook-05.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260720/walnut-curved-floor-lamp-side-table-living-space-display-06.jpg"], 
         specs: [
             { label: "Product Name", value: "wooden arc floor lamp with side table" },
             { label: "Frame Material", value: "solid wood" },
@@ -1418,8 +1338,7 @@ const detailsDatabase = {
             { label: "Applicable Scene", value: "living room/bedroom/reading nook/sofa side" },
             { label: "Light Socket", value: "E27 bulb bulb not included" },
             { label: "Side Table", value: "built in round table for books drinks small ornaments" },
-            { label: "Assembly", value: "simple assembly required" }
-        ]
+            { label: "Assembly", value: "simple assembly required" }]
     },
     "modern yellow floor lamp with tray table storage cozy accent light": {
         category: "lighting",
@@ -1427,21 +1346,19 @@ const detailsDatabase = {
         code: "Item Code: fl20260721",
         description: "Elevate your home decor with this modern multi-functional floor lamp. Designed with a striking yellow finish and playfulness inspired by mid-century and dopamine decor aesthetics, this standing light isn't just an illumination piece—it's a complete bedside and reading corner solution.",
         images: [
-            "images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-white-background.jpg",
-            "images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-table-details.jpg",
-            "images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-night-window-view.jpg",
-            "images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-living-room-armchair.jpg",
-            "images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-cozy-bedroom.jpg",
-            "images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-bedside-scene.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-table-details.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-night-window-view.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-living-room-armchair.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-cozy-bedroom.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260721/modern-yellow-floor-lamp-bedside-scene.jpg"], 
         specs: [
             { label: "Product Type", value: "Multi-functional Floor Lamp with Table & Storage" },
             { label: "Style", value: "Modern / Scandinavian / Dopamine Aesthetic" },
             { label: "Primary Material", value: "Powder-Coated Metal, Premium Wood-Composite Trays" },
             { label: "Color", value: "Yellow (Main Pole & Shade), Teal & Pink Accents, Olive Green (Basket)" },
             { label: "Light Source", value: "E26/E27 Bulb Socket (LED Bulb Included)" },
-            { label: "Ideal For", value: "Bedroom Bedside, Living Room Reading Nook, Small Apartments" }
-        ]
+            { label: "Ideal For", value: "Bedroom Bedside, Living Room Reading Nook, Small Apartments" }]
     },
     "mid century floor lamp with nightstand for bedroom": {
         category: "lighting",
@@ -1449,21 +1366,19 @@ const detailsDatabase = {
         code: "Item Code: fl20260911",
         description: "Upgrade your home decor with this mid-century floor lamp with built-in nightstand. Designed for style and functionality, it combines an elegant fabric shade, a durable metal arch, and a solid wood side table with storage drawers—making it the ultimate space-saving solution for cozy bedrooms, reading nooks, and living rooms.",
         images: [
-            "images/products/lighting/floor-lamps/fl20260911/mid-century-floor-lamp-with-nightstand.jpg",
-            "images/products/lighting/floor-lamps/fl20260911/mid-century-floor-lamp-nightstand-open-drawers.jpg",
-            "images/products/lighting/floor-lamps/fl20260911/vintage-floor-lamp-nightstand-tabletop-detail.jpg",
-            "images/products/lighting/floor-lamps/fl20260911/mid-century-floor-lamp-nightstand-living-room.jpg",
-            "images/products/lighting/floor-lamps/fl20260911/modern-floor-lamp-nightstand-bedroom-decor.jpg",
-            "images/products/lighting/floor-lamps/fl20260911/vintage-floor-lamp-nightstand-bedside-warm-light.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260911/mid-century-floor-lamp-with-nightstand.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260911/mid-century-floor-lamp-nightstand-open-drawers.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260911/vintage-floor-lamp-nightstand-tabletop-detail.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260911/mid-century-floor-lamp-nightstand-living-room.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260911/modern-floor-lamp-nightstand-bedroom-decor.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260911/vintage-floor-lamp-nightstand-bedside-warm-light.jpg"], 
         specs: [
             { label: "Product Type", value: "Floor Lamp with Nightstand" },
             { label: "Style", value: "Mid-Century Modern / Vintage" },
             { label: "Material", value: "Solid Wood, Metal, Fabric Shade" },
             { label: "Voltage", value: "110V - 240V" },
             { label: "Light Source", value: "E26 / E27 (Bulb optional)" },
-            { label: "Application", value: "Bedroom, Living Room, Reading Corner, Office" }
-        ]
+            { label: "Application", value: "Bedroom, Living Room, Reading Corner, Office" }]
     },
     "scalloped wood floor lamp mid century modern for living room": {
         category: "lighting",
@@ -1471,20 +1386,18 @@ const detailsDatabase = {
         code: "Item Code: fl20260914",
         description: "Elevate your interior design with this scalloped wood floor lamp. Combining a hand-carved stacked bead stem with a soft linen scalloped shade, this mid-century modern fixture brings natural texture and inviting warm illumination to your living room or bedroom. Designed for daily convenience, it features a sturdy anti-tip base and a quick-access foot switch. Compatible with standard E26/E27 LED, incandescent, or smart bulbs to set the perfect mood in any corner of your home.",
         images: [
-            "images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-white-background.jpg",
-            "images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-indoor-display.jpg",
-            "images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-living-room-night.jpg",
-            "images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-reading-corner.jpg",
-            "images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-bright-living-room.jpg",
-            "images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-stem-detail.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-indoor-display.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-living-room-night.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-reading-corner.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-bright-living-room.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260914/scalloped-wood-floor-lamp-stem-detail.jpg"], 
         specs: [
             { label: "Material", value: "Solid Wood, Linen Fabric, Metal Frame" },
             { label: "Style", value: "Mid-Century Modern / Vintage" },
             { label: "Voltage", value: "110V - 240V" },
             { label: "Light Source", value: "E26 / E27 Base (Bulb Not Included)" },
-            { label: "Application", value: "Bedroom, Living Room, Reading Corner, Office" }
-        ]
+            { label: "Application", value: "Bedroom, Living Room, Reading Corner, Office" }]
     },
     "modern wood floor lamp with tall linen shade for cozy living room decor": {
         category: "lighting",
@@ -1492,13 +1405,12 @@ const detailsDatabase = {
         code: "Item Code: fl20260923",
         description: "Bring organic warmth and mid-century modern sophistication into your interior with this beautifully crafted standing accent. Designed with clean geometric lines, it pairs a solid wood tripod base with a tall column linen shade that diffuses a soft, glare-free ambient glow. Whether placed next to a reading chair in the living room, beside a bedroom nightstand, or anchoring an office corner, its minimalist architectural profile seamlessly complements Mid-Century Modern, Japandi, and Scandinavian decor styles.",
         images: [
-            "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-white-background.jpg",
-            "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-dark-walnut-on.jpg",
-            "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-light-oak-on.jpg",
-            "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-living-room-off.jpg",
-            "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-living-room-on.jpg",
-            "images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-night-cozy-glow.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-dark-walnut-on.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-light-oak-on.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-living-room-off.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-living-room-on.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20260923/modern-wood-floor-lamp-night-cozy-glow.jpg"], 
         specs: [
             { label: "Product Type", value: "Tripod Floor Lamp / Column Accent Light" },
             { label: "Style", value: "Mid-Century Modern / Japandi / Minimalist" },
@@ -1506,8 +1418,7 @@ const detailsDatabase = {
             { label: "Bulb Socket", value: "E26 / E27 (Bulb Replaceable)" },
             { label: "Voltage", value: "110V - 240V (Global Compatibility)" },
             { label: "Certifications", value: "CE / RoHS / UL Listed components" },
-            { label: "Application", value: "Living Room, Bedroom, Office, Hotel Lounge" }
-        ]
+            { label: "Application", value: "Living Room, Bedroom, Office, Hotel Lounge" }]
     },
     "mid century floor lamp with table amber glass arc design for room": {
         category: "lighting",
@@ -1515,13 +1426,12 @@ const detailsDatabase = {
         code: "Item Code: fl20261008",
         description: "Upgrade your home decor with this versatile mid-century floor lamp with table. Designed with a warm amber glass shade, an elegant arching stem, and a built-in wooden side table, this 2-in-1 standing lamp combines mid-century modern aesthetic with everyday practicality. Whether placed next to your sofa or in a cozy reading corner, it offers the perfect blend of ambient lighting and convenient storage.",
         images: [
-            "images/products/lighting/floor-lamps/fl20261008/mid-century-floor-lamp-with-table-main.jpg",
-            "images/products/lighting/floor-lamps/fl20261008/arc-floor-lamp-with-side-table-modern-living-room-brown.jpg",
-            "images/products/lighting/floor-lamps/fl20261008/modern-floor-lamp-with-table-glass-globe-dimensions.jpg",
-            "images/products/lighting/floor-lamps/fl20261008/mid-century-arc-floor-lamp-home-office.jpg",
-            "images/products/lighting/floor-lamps/fl20261008/amber-glass-arc-floor-lamp-side-table.jpg",
-            "images/products/lighting/floor-lamps/fl20261008/vintage-standing-lamp-with-table-reading.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20261008/mid-century-floor-lamp-with-table-main.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20261008/arc-floor-lamp-with-side-table-modern-living-room-brown.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20261008/modern-floor-lamp-with-table-glass-globe-dimensions.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20261008/mid-century-arc-floor-lamp-home-office.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20261008/amber-glass-arc-floor-lamp-side-table.jpg",
+            "/aileen-home-studio/images/products/lighting/floor-lamps/fl20261008/vintage-standing-lamp-with-table-reading.jpg"], 
         specs: [
             { label: "Product Type", value: "Mid-Century Arc Floor Lamp with Side Table" },
             { label: "Style", value: "Mid-Century Modern / Vintage / Retro" },
@@ -1532,7 +1442,6 @@ const detailsDatabase = {
             { label: "Voltage", value: "110V - 240V (Global Compatibility)" },
             { label: "Finish Color", value: "Bronze / Dark Espresso & Amber" },
             { label: "Application", value: "Living Room, Bedroom, Home Office, Reading Nook" }],
-
         faq: [
             {
                 q: "What lampshade colors and lighting modes are available for this arc floor lamp?",
@@ -1555,19 +1464,17 @@ const detailsDatabase = {
         code: "Item Code: p20260630",
         description: "Bring soft warm atmosphere to indoor spaces with this vintage lotus glass pendant light. Designed with petal-shaped gradient glass shade and solid wood lamp holder, it delivers gentle diffused lighting. Perfect for decorating dining tables, kitchen islands, bedside areas, cafes, adding elegant retro aesthetic to residential and commercial interiors.",
         images: [
-            "images/products/lighting/pendants/p20260630/pendant-lamp-green-petal-glass-white-product-01.jpg",
-            "images/products/lighting/pendants/p20260630/pendant-lamp-green-petal-glass-dining-room-scene-02.jpg",
-            "images/products/lighting/pendants/p20260630/green-glass-pendant-light-brass-canopy.jpg",
-            "images/products/lighting/pendants/p20260630/green-petal-glass-pendant-light-shade.jpg",
-            "images/products/lighting/pendants/p20260630/green-glass-pendant-light-dining-room.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/pendants/p20260630/pendant-lamp-green-petal-glass-white-product-01.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260630/pendant-lamp-green-petal-glass-dining-room-scene-02.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260630/green-glass-pendant-light-brass-canopy.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260630/green-petal-glass-pendant-light-shade.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260630/green-glass-pendant-light-dining-room.jpg"], 
         specs: [
             { label: "Material", value: "Gradient glass shade, solid wood lamp head, metal ceiling base" },
             { label: "Light Source", value: "E27 bulb base, Bulb not included" },
             { label: "Color", value: "Gradient green glass, brass & brown wood finish" },
             { label: "Application", value: "Dining room, kitchen island, bedroom bedside, cafe, bar counter decor" },
-            { label: "Features", value: "Adjustable hanging cord, soft light diffusion, retro lotus shape, easy installation" }
-        ]
+            { label: "Features", value: "Adjustable hanging cord, soft light diffusion, retro lotus shape, easy installation" }]
     },
     "pendant light walnut wood multi head linear brown fixture for dining room ceiling indoor decor": {
         category: "lighting",
@@ -1575,13 +1482,12 @@ const detailsDatabase = {
         code: "Item Code: p20260701",
         description: "Multi-head linear combination ceiling light built with walnut wood base. Assembled with spherical lamp heads cylindrical spotlights and adjustable disc pendant lamp. Lamp angles and suspension length can be freely adjusted. Gentle warm light builds comfortable home ambiance, suitable for residential and commercial interior decoration.",
         images: [
-            "images/products/lighting/pendants/p20260701/long-bar-dining-pendant-lamp-walnut-set-white-shot-01.jpg",
-            "images/products/lighting/pendants/p20260701/long-bar-dining-pendant-lamp-walnut-set-dining-scene-02.jpg",
-            "images/products/lighting/pendants/p20260701/walnut-linear-pendant-light-shade-detail.jpg",
-            "images/products/lighting/pendants/p20260701/walnut-linear-pendant-light-spotlight.jpg",
-            "images/products/lighting/pendants/p20260701/walnut-linear-pendant-light-dining-table.jpg",
-            "images/products/lighting/pendants/p20260701/walnut-linear-pendant-light-kitchen-island.jpg",
-        ], 
+            "/aileen-home-studio/images/products/lighting/pendants/p20260701/long-bar-dining-pendant-lamp-walnut-set-white-shot-01.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260701/long-bar-dining-pendant-lamp-walnut-set-dining-scene-02.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260701/walnut-linear-pendant-light-shade-detail.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260701/walnut-linear-pendant-light-spotlight.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260701/walnut-linear-pendant-light-dining-table.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260701/walnut-linear-pendant-light-kitchen-island.jpg"], 
         specs: [
             { label: "Material", value: "Walnut wood frame / metal hardware / frosted lampshade" },
             { label: "Lamp Head Types", value: "Globe lamp head / cylindrical spotlight / disc pendant lamp" },
@@ -1590,8 +1496,7 @@ const detailsDatabase = {
             { label: "Bulb Match", value: "Compatible with universal LED bulbs" },
             { label: "Applicable Style", value: "Japanese minimalist / mid-century modern / retro solid wood style" },
             { label: "Applicable Space", value: "Dining room, kitchen island, entryway, living room, cafe, restaurant, bar counter" },
-            { label: "Features", value: "Flexible combined layout, natural wood texture, easy surface mounting, multi-angle lighting" }
-        ]
+            { label: "Features", value: "Flexible combined layout, natural wood texture, easy surface mounting, multi-angle lighting" }]
     },
     "wood bead cone shade pendant light japandi mid century adjustable hanging dining room indoor fixture": {
         category: "lighting",
@@ -1599,9 +1504,8 @@ const detailsDatabase = {
         code: "Item Code: p20260702",
         description: "This japandi style pendant light combines natural wood beads and soft cone fabric shade. It features adjustable suspension cord for flexible height setup. Warm diffused light creates cozy atmosphere for dining table, kitchen island and living area. Bulb is not included to meet your different lighting preference.",
         images: [
-            "images/products/lighting/pendants/p20260702/dining-pendant-lamp-walnut-ball-glass-white-shot-01.jpg",
-            "images/products/lighting/pendants/p20260702/dining-pendant-lamp-walnut-ball-glass-dining-scene-02.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/pendants/p20260702/dining-pendant-lamp-walnut-ball-glass-white-shot-01.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260702/dining-pendant-lamp-walnut-ball-glass-dining-scene-02.jpg"], 
         specs: [
             { label: "Material", value: "Solid Wood Beads, Fabric Lampshade, Metal Ceiling Canopy" },
             { label: "Shade Type", value: "Cone Shape Fabric Shade" },
@@ -1609,8 +1513,7 @@ const detailsDatabase = {
             { label: "Installation Type", value: "Hardwired Ceiling Mounted" },
             { label: "Bulb Base", value: "E26 / E27 Socket (Bulb Not Included)" },
             { label: "Applicable Space", value: "Dining Room, Kitchen Island, Living Room, Breakfast Nook" },
-            { label: "Usage Environment", value: "Indoor Use Only" }
-        ]
+            { label: "Usage Environment", value: "Indoor Use Only" }]
     },
     "pendant light walnut wood brass multi head brown dining room": {
         category: "lighting",
@@ -1618,19 +1521,17 @@ const detailsDatabase = {
         code: "Item Code: p20260705",
         description: "Elevate your home decor with our mid-century modern walnut wood and brass pendant light. Crafted with premium solid walnut accents, brushed brass fixtures, and elegant fluted globe glass shades, this timeless hanging light brings warmth, sophistication, and vintage charm to any space.",
         images: [
-            "images/products/lighting/pendants/p20260705/retro-walnut-wood-brass-fluted-glass-hanging-fixture-01.jpg",
-            "images/products/lighting/pendants/p20260705/mid-century-walnut-wood-brass-fluted-glass-chandelier-02.jpg",
-            "images/products/lighting/pendants/p20260705/vintage-walnut-wood-brass-ribbed-globe-pendant-light-03.jpg",
-            "images/products/lighting/pendants/p20260705/vintage-brass-chandelier-opal-glass-shade.jpg",
-            "images/products/lighting/pendants/p20260705/vintage-brass-chandelier-dining-room.jpg",
-            "images/products/lighting/pendants/p20260705/vintage-brass-chandelier-home-office.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/pendants/p20260705/retro-walnut-wood-brass-fluted-glass-hanging-fixture-01.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260705/mid-century-walnut-wood-brass-fluted-glass-chandelier-02.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260705/vintage-walnut-wood-brass-ribbed-globe-pendant-light-03.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260705/vintage-brass-chandelier-opal-glass-shade.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260705/vintage-brass-chandelier-dining-room.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260705/vintage-brass-chandelier-home-office.jpg"], 
         specs: [
             { label: "Material", value: "Solid Walnut Wood, Brass Metal, Fluted Opal Glass" },
             { label: "Bulb Base", value: "E26 / E27 (Bulbs Not Included)" },
             { label: "Available Variants", value: "3-Light / 6-Light / 8-Light" },
-            { label: "Applicable Space", value: "Living Room, Dining Room, Bedroom, Foyer, Hotel" }
-        ]
+            { label: "Applicable Space", value: "Living Room, Dining Room, Bedroom, Foyer, Hotel" }]
     },
     "vintage glass pendant light wood accent amber green patterned shade": {
         category: "lighting",
@@ -1638,19 +1539,17 @@ const detailsDatabase = {
         code: "Item Code: p20260706",
         description: "Elevate your interior with our vintage glass pendant light, featuring an embossed diamond-patterned shade paired with a solid wood cap and brass accents. Available in warm amber and vibrant green, this retro pendant casts a soft ambient glow, making it ideal for dining tables, kitchen islands, and cafes. Includes an adjustable braided cord for easy installation across various ceiling heights.",
         images: [
-            "images/products/lighting/pendants/p20260706/vintage-pendant-light-amber-glass-white-background.jpg",
-            "images/products/lighting/pendants/p20260706/vintage-pendant-light-green-glass-white-background.jpg",
-            "images/products/lighting/pendants/p20260706/vintage-pendant-light-amber-textured-glass-shade-detail.jpg",
-            "images/products/lighting/pendants/p20260706/vintage-pendant-light-wood-accent-brass-holder-detail.jpg",
-            "images/products/lighting/pendants/p20260706/vintage-pendant-light-amber-glass-dining-room-lifestyle.jpg",
-            "images/products/lighting/pendants/p20260706/vintage-pendant-light-green-glass-dining-table-lifestyle.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/pendants/p20260706/vintage-pendant-light-amber-glass-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260706/vintage-pendant-light-green-glass-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260706/vintage-pendant-light-amber-textured-glass-shade-detail.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260706/vintage-pendant-light-wood-accent-brass-holder-detail.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260706/vintage-pendant-light-amber-glass-dining-room-lifestyle.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260706/vintage-pendant-light-green-glass-dining-table-lifestyle.jpg"], 
         specs: [
             { label: "Product Type", value: "Vintage Glass Pendant Light" },
             { label: "Shade Material", value: "Embossed Patterned Glass" },
             { label: "Shade Color", value: "Amber / Avocado Green" },
-            { label: "Bulb Base Type", value: "E26 / E27 (Standard Medium Base)" }
-        ]
+            { label: "Bulb Base Type", value: "E26 / E27 (Standard Medium Base)" }]
     },
     "pendant light rustic wood bead french country chandelier six lights": {
         category: "lighting",
@@ -1658,21 +1557,19 @@ const detailsDatabase = {
         code: "Item Code: p20260708",
         description: "Add a touch of warmth and elegant charm to your home with this French Country Wood Bead Pendant Light. Featuring handcrafted distressed wood beads, a durable dark iron frame, and 6 candle-style light sockets, this light fixture creates a cozy, inviting atmosphere in living rooms, dining spaces, and farmhouse kitchens.",
         images: [
-            "images/products/lighting/pendants/p20260708/rustic-wood-bead-chandelier-white-background.jpg",
-            "images/products/lighting/pendants/p20260708/vintage-wood-bead-chandelier-close-up-detail.jpg",
-            "images/products/lighting/pendants/p20260708/farmhouse-beaded-chandelier-cozy-dining-room.jpg",
-            "images/products/lighting/pendants/p20260708/french-country-chandelier-living-room-decor.jpg",
-            "images/products/lighting/pendants/p20260708/rustic-wood-bead-chandelier-family-dining-scene.jpg",
-            "images/products/lighting/pendants/p20260708/vintage-candle-chandelier-large-dining-room.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/pendants/p20260708/rustic-wood-bead-chandelier-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260708/vintage-wood-bead-chandelier-close-up-detail.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260708/farmhouse-beaded-chandelier-cozy-dining-room.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260708/french-country-chandelier-living-room-decor.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260708/rustic-wood-bead-chandelier-family-dining-scene.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260708/vintage-candle-chandelier-large-dining-room.jpg"], 
         specs: [
             { label: "Product Type", value: "Pendant Light / Chandelier" },
             { label: "Style", value: "French Country / Farmhouse / Rustic" },
             { label: "Material", value: "Metal + Natural Wood Beads" },
             { label: "Number of Lights", value: "6 Lights" },
             { label: "Bulb Base", value: "E12 / Candelabra Base" },
-            { label: "Voltage", value: "110V - 240V" }
-        ]
+            { label: "Voltage", value: "110V - 240V" }]
     },
     "modern three light wooden pendant light for dining room": {
         category: "lighting",
@@ -1680,13 +1577,12 @@ const detailsDatabase = {
         code: "Item Code: p20260904",
         description: "Elevate your home with this modern three-light wooden pendant light. Crafted from high-quality natural wood, each geometric lampshade creates a warm and inviting atmosphere. Perfectly styled over dining tables, kitchen islands, or living room spaces, this fixture blends mid-century charm with contemporary scandinavian aesthetics.",
         images: [
-            "images/products/lighting/pendants/p20260904/three-light-wooden-pendant-light.jpg",
-            "images/products/lighting/pendants/p20260904/geometric-wooden-pendant-light.jpg",
-            "images/products/lighting/pendants/p20260904/illuminated-wooden-pendant-light.jpg",
-            "images/products/lighting/pendants/p20260904/modern-wooden-chandelier-interior.jpg",
-            "images/products/lighting/pendants/p20260904/wooden-chandelier-over-dining-table.jpg",
-            "images/products/lighting/pendants/p20260904/wooden-pendant-light-dining-room.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/pendants/p20260904/three-light-wooden-pendant-light.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260904/geometric-wooden-pendant-light.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260904/illuminated-wooden-pendant-light.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260904/modern-wooden-chandelier-interior.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260904/wooden-chandelier-over-dining-table.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260904/wooden-pendant-light-dining-room.jpg"], 
         specs: [
             { label: "Product Type", value: "Three-Light Pendant Light / Chandelier" },
             { label: "Main Material", value: "Natural Wood, Metal Ceiling Plate" },
@@ -1694,8 +1590,7 @@ const detailsDatabase = {
             { label: "Number of Lights", value: "Three Lights" },
             { label: "Bulb Base", value: "E26 / E27 (Bulbs Not Included)" },
             { label: "Voltage", value: "110V - 240V" },
-            { label: "Application", value: "Dining Room, Kitchen Island, Living Room" }
-        ]
+            { label: "Application", value: "Dining Room, Kitchen Island, Living Room" }]
     },
     "flower brass glass pendant light for japandi dining room": {
         category: "lighting",
@@ -1703,13 +1598,12 @@ const detailsDatabase = {
         code: "Item Code: p20260905",
         description: "Add a touch of timeless warmth to your space with this exquisite flower-shaped glass pendant light. Crafted with premium solid wood, handcrafted brass edging, and textured ripple glass, it produces a soft, ambient glow that elevates any interior. Perfect for dining rooms, kitchen islands, tea rooms, and Japandi or vintage-inspired spaces.",
         images: [
-            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-white-background.jpg",
-            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-wood-brass-detail.jpg",
-            "images/products/lighting/pendants/p20260905/glass-pendant-blue-scallop-vintage-brass-hanging-fixture.jpg",
-            "images/products/lighting/pendants/p20260905/glass-pendant-green-scallop-vintage-brass-hanging-fixture.jpg",
-            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-dining-table-decor.jpg",
-            "images/products/lighting/pendants/p20260905/brass-glass-pendant-light-minimalist-dining.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/pendants/p20260905/brass-glass-pendant-light-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260905/brass-glass-pendant-light-wood-brass-detail.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260905/glass-pendant-blue-scallop-vintage-brass-hanging-fixture.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260905/glass-pendant-green-scallop-vintage-brass-hanging-fixture.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260905/brass-glass-pendant-light-dining-table-decor.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20260905/brass-glass-pendant-light-minimalist-dining.jpg"], 
         specs: [
             { label: "Product Type", value: "Single Pendant Light / Hanging Lamp" },
             { label: "Main Material", value: "Walnut Wood + Brass + Textured Glass" },
@@ -1718,8 +1612,7 @@ const detailsDatabase = {
             { label: "Color", value: "Clear Ripple Glass with Golden Brass Frame" },
             { label: "Bulb Base", value: "E26 / E27 (Bulbs Not Included)" },
             { label: "Voltage", value: "110V - 240V" },
-            { label: "Application", value: "Dining Room, Kitchen Island, Bedroom, Tea Room, Cafe" }
-        ]
+            { label: "Application", value: "Dining Room, Kitchen Island, Bedroom, Tea Room, Cafe" }]
     },
     "wood pendant light scandinavian cluster hanging fixture": {
         category: "lighting",
@@ -1727,13 +1620,12 @@ const detailsDatabase = {
         code: "Item Code: p20261007",
         description: "Bring organic warmth and effortless Scandinavian charm to your interior space with our handcrafted wood pendant light. Featuring a sophisticated multi-light cluster design, this hanging fixture serves as a stunning focal point over dining tables, kitchen islands, or modern living areas. Crafted from sustainable natural timber, it casts a soft, inviting glow that elevates your daily living experience.",
         images: [
-            "images/products/lighting/pendants/p20261007/wood-pendant-light-scandinavian-cluster-ceiling-fixture.jpg",
-            "images/products/lighting/pendants/p20261007/modern-hanging-lamp-handcrafted-natural-texture-details.jpg",
-            "images/products/lighting/pendants/p20261007/kitchen-island-suspension-lamp-boho-home-furnishing.jpg",
-            "images/products/lighting/pendants/p20261007/dining-room-hanging-light-mid-century-interior-decor.jpg",
-            "images/products/lighting/pendants/p20261007/cluster-pendant-lighting-rustic-farmhouse-table-setup.jpg",
-            "images/products/lighting/pendants/p20261007/ambient-glow-multi-light-fixture-cozy-living-space.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/pendants/p20261007/wood-pendant-light-scandinavian-cluster-ceiling-fixture.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20261007/modern-hanging-lamp-handcrafted-natural-texture-details.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20261007/kitchen-island-suspension-lamp-boho-home-furnishing.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20261007/dining-room-hanging-light-mid-century-interior-decor.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20261007/cluster-pendant-lighting-rustic-farmhouse-table-setup.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20261007/ambient-glow-multi-light-fixture-cozy-living-space.jpg"], 
         specs: [
             { label: "Product Type", value: "Wood Cluster Pendant Light / Hanging Fixture" },
             { label: "Main Material", value: "Sustainable Natural Wood & Premium Hardware" },
@@ -1742,8 +1634,7 @@ const detailsDatabase = {
             { label: "IP", value: "IP20" },
             { label: "Light Source", value: "E14" },
             { label: "Voltage", value: "AC 110-240V" },
-            { label: "Application", value: "Dining Room, Kitchen Island, Bedroom, Tea Room, Cafe" }
-        ]
+            { label: "Application", value: "Dining Room, Kitchen Island, Bedroom, Tea Room, Cafe" }]
     },
     "modern wood ring spiral pendant light for high ceiling staircase": {
         category: "lighting",
@@ -1751,12 +1642,12 @@ const detailsDatabase = {
         code: "Item Code: p20261019",
         description: "This multi-light spiral pendant fixture features solid wood rings and frosted glass globes suspended from a heavy-duty wooden ceiling base. Engineered for tall spaces like stairwells, lofts, and double-height entryways, the staggered ring-and-globe setup delivers cascading ambient lighting without blocking open sightlines.",
         images: [
-            "images/products/lighting/pendants/p20261019/modern-wooden-ring-pendant-light-white-background.jpg",
-            "images/products/lighting/pendants/p20261019/wood-ring-hanging-lamp-lit-detail.jpg",
-            "images/products/lighting/pendants/p20261019/modern-spiral-staircase-wooden-chandelier-villa.jpg",
-            "images/products/lighting/pendants/p20261019/luxury-living-room-high-ceiling-wood-pendant-light.jpg",
-            "images/products/lighting/pendants/p20261019/dining-room-modern-wood-ring-hanging-lamp.jpg",
-            "images/products/lighting/pendants/p20261019/contemporary-loft-wooden-spiral-chandelier.jpg"], 
+            "/aileen-home-studio/images/products/lighting/pendants/p20261019/modern-wooden-ring-pendant-light-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20261019/wood-ring-hanging-lamp-lit-detail.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20261019/modern-spiral-staircase-wooden-chandelier-villa.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20261019/luxury-living-room-high-ceiling-wood-pendant-light.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20261019/dining-room-modern-wood-ring-hanging-lamp.jpg",
+            "/aileen-home-studio/images/products/lighting/pendants/p20261019/contemporary-loft-wooden-spiral-chandelier.jpg"], 
         specs: [
             { label: "Product Type", value: "Modern Spiral Pendant Light / High Ceiling Chandelier" },
             { label: "Design Style", value: "Nordic / Minimalist / Modern Organic" },
@@ -1786,11 +1677,10 @@ const detailsDatabase = {
         code: "Item Code: xd20260731",
         description: "Elegant flower shaped flush mount ceiling light with layered fabric petal lampshade. Equipped with pull chain switch and solid wood decorative details. Soft diffused light creates warm gentle ambiance. Suitable for bedroom entryway hallway small living room indoor home decoration lighting.",
         images: [
-            "images/products/lighting/ceiling-light/xd20260731/vintage-flower-fabric-ceiling-light-white-background-main-01.jpg",
-            "images/products/lighting/ceiling-light/xd20260731/vintage-flower-fabric-ceiling-light-white-background.jpg",
-            "images/products/lighting/ceiling-light/xd20260731/vintage-flower-fabric-ceiling-light-living-room.jpg",
-            "images/products/lighting/ceiling-light/xd20260731/petal-flush-mount-ceiling-living-room-scene-display.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/ceiling-light/xd20260731/vintage-flower-fabric-ceiling-light-white-background-main-01.jpg",
+            "/aileen-home-studio/images/products/lighting/ceiling-light/xd20260731/vintage-flower-fabric-ceiling-light-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/ceiling-light/xd20260731/vintage-flower-fabric-ceiling-light-living-room.jpg",
+            "/aileen-home-studio/images/products/lighting/ceiling-light/xd20260731/petal-flush-mount-ceiling-living-room-scene-display.jpg"], 
         specs: [
             { label: "Lampshade Material", value: "Textured fabric" },
             { label: "Hardware & Accessories", value: "Brass fitting, solid wood ornament, pull chain switch" },
@@ -1798,8 +1688,7 @@ const detailsDatabase = {
             { label: "Design Style", value: "Vintage, french cottage, retro pastoral" },
             { label: "Bulb Base", value: "E26 / E27 (bulb not included)" },
             { label: "Application", value: "Bedroom, hallway, entryway, balcony, small living room" },
-            { label: "Core Features", value: "Soft light diffusion, easy installation, pull chain control, artistic floral outlook" }
-        ]
+            { label: "Core Features", value: "Soft light diffusion, easy installation, pull chain control, artistic floral outlook" }]
     },
     "flush mount ceiling light round wood chinese style for home using": {
         category: "lighting",
@@ -1807,21 +1696,19 @@ const detailsDatabase = {
         code: "Item Code: xd20260921",
         description: "Discover timeless elegance with this chinese flush mount ceiling light. Crafted with a natural wood-grain frame and a delicate patterned fabric shade, this vintage round ceiling lamp creates a warm, welcoming ambiance in any room. Perfect for tea rooms, living rooms, and oriental-inspired interiors.",
         images: [
-            "images/products/lighting/ceiling-light/xd20260921/chinese-wood-flush-mount-ceiling-light-off.jpg",
-            "images/products/lighting/ceiling-light/xd20260921/chinese-wood-flush-mount-ceiling-light-on.jpg",
-            "images/products/lighting/ceiling-light/xd20260921/vintage-round-flush-mount-light-bottom-view.jpg",
-            "images/products/lighting/ceiling-light/xd20260921/chinese-style-flush-mount-light-living-room.jpg",
-            "images/products/lighting/ceiling-light/xd20260921/vintage-flush-mount-ceiling-lamp-interior.jpg",
-            "images/products/lighting/ceiling-light/xd20260921/vintage-wood-ceiling-light-tea-room-decor.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/ceiling-light/xd20260921/chinese-wood-flush-mount-ceiling-light-off.jpg",
+            "/aileen-home-studio/images/products/lighting/ceiling-light/xd20260921/chinese-wood-flush-mount-ceiling-light-on.jpg",
+            "/aileen-home-studio/images/products/lighting/ceiling-light/xd20260921/vintage-round-flush-mount-light-bottom-view.jpg",
+            "/aileen-home-studio/images/products/lighting/ceiling-light/xd20260921/chinese-style-flush-mount-light-living-room.jpg",
+            "/aileen-home-studio/images/products/lighting/ceiling-light/xd20260921/vintage-flush-mount-ceiling-lamp-interior.jpg",
+            "/aileen-home-studio/images/products/lighting/ceiling-light/xd20260921/vintage-wood-ceiling-light-tea-room-decor.jpg"], 
         specs: [
             { label: "Product Type", value: "Flush Mount Ceiling Light" },
             { label: "Style", value: "Chinese / Vintage / Oriental" },
             { label: "Material", value: "Wood, Fabric / Acrylic, Metal" },
             { label: "Voltage", value: "110V - 240V (Universal)" },
             { label: "Light Source", value: "LED (Warm White)" },
-            { label: "Application", value: "Living Room, Tea Room, Bedroom, Dining Room, Hallway" }
-        ]
+            { label: "Application", value: "Living Room, Tea Room, Bedroom, Dining Room, Hallway" }]
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "wall sconces")
@@ -1831,20 +1718,18 @@ const detailsDatabase = {
         code: "Item Code: wl20260715",
         description: "This walnut wood glass wall sconce designed as a practical bedside reading light, this vintage wall lamp combines natural walnut wood, brass fittings and frosted glass shade to create classic japanese wabi sabi and mid century modern decor aesthetic. Frosted glass diffuses light evenly to reduce harsh glare. This decorative wall lighting is widely used for bedroom bedside, hallway, living room, study room and guest house.",
         images: [
-            "images/products/lighting/wall-sconces/wl20260715/walnut-wood-glass-wall-sconce-brass-swing-arm.jpg",
-            "images/products/lighting/wall-sconces/wl20260715/mid-century-wood-wall-sconce-bedroom-nightstand-scene.jpg",
-            "images/products/lighting/wall-sconces/wl20260715/walnut-wood-glass-wall-sconce-brass-detail-03.jpg",
-            "images/products/lighting/wall-sconces/wl20260715/walnut-wood-glass-wall-sconce-bedroom-04.jpg",
-            "images/products/lighting/wall-sconces/wl20260715/walnut-wood-glass-wall-sconce-hallway-05.jpg",
-            "images/products/lighting/wall-sconces/wl20260715/walnut-wood-glass-wall-sconce-living-room-06.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/wall-sconces/wl20260715/walnut-wood-glass-wall-sconce-brass-swing-arm.jpg",
+            "/aileen-home-studio/images/products/lighting/wall-sconces/wl20260715/mid-century-wood-wall-sconce-bedroom-nightstand-scene.jpg",
+            "/aileen-home-studio/images/products/lighting/wall-sconces/wl20260715/walnut-wood-glass-wall-sconce-brass-detail-03.jpg",
+            "/aileen-home-studio/images/products/lighting/wall-sconces/wl20260715/walnut-wood-glass-wall-sconce-bedroom-04.jpg",
+            "/aileen-home-studio/images/products/lighting/wall-sconces/wl20260715/walnut-wood-glass-wall-sconce-hallway-05.jpg",
+            "/aileen-home-studio/images/products/lighting/wall-sconces/wl20260715/walnut-wood-glass-wall-sconce-living-room-06.jpg"], 
         specs: [
             { label: "Material", value: "Walnut wood brass accessories frosted glass lampshade" },
             { label: "Style", value: "Mid-Century Modern / Wabi-Sabi / Japandi" },
             { label: "Design style", value: "Japanese wabi sabi minimalist mid century vintage" },
             { label: "Light Source Type", value: "E26 / E27 Bulb Base (Bulb Not Included)" },
-            { label: "Suitable scenes", value: "Bedroom Bedside, Living Room, Hallway, Study Room" }
-        ]
+            { label: "Suitable scenes", value: "Bedroom Bedside, Living Room, Hallway, Study Room" }]
     },
     "slatted wooden wall sconce brass cord plug in wall light fixture": {
         category: "lighting",
@@ -1852,21 +1737,19 @@ const detailsDatabase = {
         code: "Item Code: wl20260909",
         description: "Elevate your home space with this slatted wooden wall sconce. Combining the raw warmth of natural timber with the refined elegance of brushed brass, this wall light brings an inviting, peaceful atmosphere to modern, Japandi, or mid-century interiors. When illuminated, the delicate wood slats filter soft light, casting beautiful linear shadows that enhance the texture of your walls. Designed for aesthetic impact and everyday functional lighting, it serves as a stunning centerpiece in bedrooms, hallways, or cozy reading nooks.",
         images: [
-            "images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-white-background.jpg",
-            "images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-lit-warm-light.jpg",
-            "images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-detail-craftsmanship.jpg",
-            "images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-interior-lifestyle-close-up.jpg",
-            "images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-living-room-decor-medium.jpg",
-            "images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-full-room-interior-view.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-lit-warm-light.jpg",
+            "/aileen-home-studio/images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-detail-craftsmanship.jpg",
+            "/aileen-home-studio/images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-interior-lifestyle-close-up.jpg",
+            "/aileen-home-studio/images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-living-room-decor-medium.jpg",
+            "/aileen-home-studio/images/products/lighting/wall-sconces/wl20260909/slatted-wooden-wall-sconce-full-room-interior-view.jpg"], 
         specs: [
             { label: "Product Type", value: "Wall Sconce / Wall Lamp" },
             { label: "Style", value: "Japandi / Modern Scandinavian / Mid-Century Modern" },
             { label: "Light Source", value: "E26 / E27 Base Bulb (Not included)" },
             { label: "Voltage", value: "110V - 240V (Global Compatibility)" },
             { label: "Lighting Mode", value: "Warm Ambient Light" },
-            { label: "Application Area", value: "Living Room, Bedroom, Entryway, Dining Room, Hotel, Cafe" }
-        ]
+            { label: "Application Area", value: "Living Room, Bedroom, Entryway, Dining Room, Hotel, Cafe" }]
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "fan light")
@@ -1876,13 +1759,12 @@ const detailsDatabase = {
         code: "Item Code: fs20260731",
         description: "Dual-function flush mount ceiling fixture combining ventilation fan and lighting source. Equipped with five natural wooden fan blades and warm yellow frosted glass lamp covers. Low-profile design suits low ceiling space. Stable silent operation provides gentle air circulation while offering soft ambient lighting. Ideal decorative lighting for bedroom, dining room, apartment, lounge and cafe interior renovation.",
         images: [
-            "images/products/lighting/fan-lights/fs20260731/retro-wood-blade-ceiling-fan-light-white-background-product-shot.jpg",
-            "images/products/lighting/fan-lights/fs20260731/flush-mount-fan-light-bedroom-interior-scene-display.jpg",
-            "images/products/lighting/fan-lights/fs20260731/retro-wood-ceiling-fan-with-lights-cream-living-room.jpg",
-            "images/products/lighting/fan-lights/fs20260731/retro-wood-ceiling-fan-with-lights-living-room-dark.jpg",
-            "images/products/lighting/fan-lights/fs20260731/retro-wood-ceiling-fan-with-lights-luxury-living-room.jpg",
-            "images/products/lighting/fan-lights/fs20260731/retro-wood-ceiling-fan-with-lights-modern-living-room.jpg"
-        ], 
+            "/aileen-home-studio/images/products/lighting/fan-lights/fs20260731/retro-wood-blade-ceiling-fan-light-white-background-product-shot.jpg",
+            "/aileen-home-studio/images/products/lighting/fan-lights/fs20260731/flush-mount-fan-light-bedroom-interior-scene-display.jpg",
+            "/aileen-home-studio/images/products/lighting/fan-lights/fs20260731/retro-wood-ceiling-fan-with-lights-cream-living-room.jpg",
+            "/aileen-home-studio/images/products/lighting/fan-lights/fs20260731/retro-wood-ceiling-fan-with-lights-living-room-dark.jpg",
+            "/aileen-home-studio/images/products/lighting/fan-lights/fs20260731/retro-wood-ceiling-fan-with-lights-luxury-living-room.jpg",
+            "/aileen-home-studio/images/products/lighting/fan-lights/fs20260731/retro-wood-ceiling-fan-with-lights-modern-living-room.jpg"], 
         specs: [
             { label: "Material", value: "Black metal base / solid wood fan blade / frosted glass lampshade" },
             { label: "Installation Type", value: "Flush mount / low ceiling installation" },
@@ -1890,8 +1772,7 @@ const detailsDatabase = {
             { label: "Light Configuration", value: "5 lamp holders, compatible with E27 bulbs" },
             { label: "Control Mode", value: "Optional remote control / wall switch control" },
             { label: "Features", value: "Low-profile structure, silent running, ventilation & lighting 2-in-1, retro vintage home aesthetic" },
-            { label: "Applicable Space", value: "Bedroom, dining room, apartment, lounge, cafe, indoor living area" }
-        ]
+            { label: "Applicable Space", value: "Bedroom, dining room, apartment, lounge, cafe, indoor living area" }]
     },
     "fan light modern brass ceiling with wood blades for living room": {
         category: "lighting",
@@ -1899,12 +1780,12 @@ const detailsDatabase = {
         code: "Item Code: fs20261006",
         description: "Upgrade your living space with the ultimate blend of style and functionality. This fan light features a sophisticated brushed brass motor housing paired with rich dark wooden blades, bringing a touch of modern luxury and cozy warmth to any room. Designed for both aesthetic appeal and everyday comfort, it serves as a striking statement piece while delivering quiet, reliable airflow.",
         images: [
-            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-white-background.jpg",
-            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-illuminated.jpg",
-            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-modern-home.jpg",
-            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-living-room.jpg",
-            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-dark-interior.jpg",
-            "images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-decor-style.jpg"], 
+            "/aileen-home-studio/images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-white-background.jpg",
+            "/aileen-home-studio/images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-illuminated.jpg",
+            "/aileen-home-studio/images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-modern-home.jpg",
+            "/aileen-home-studio/images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-living-room.jpg",
+            "/aileen-home-studio/images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-dark-interior.jpg",
+            "/aileen-home-studio/images/products/lighting/fan-lights/fs20261006/modern-brass-ceiling-fan-with-light-decor-style.jpg"], 
         specs: [
             { label: "Product Type", value: "Ceiling Fan with Light (Fan Light)" },
             { label: "Style", value: "Modern, Mid-Century, Industrial" },
@@ -1917,13 +1798,13 @@ const detailsDatabase = {
         category: "lighting",
         subcategory: "led-string-lights", 
         code: "Item Code: ls20261103",
-        description: "These LED string lights are built for wrapping artificial and live Christmas trees, wreaths, and garlands. The wire insulation uses a dark green shade designed to align with pine foliage, keeping the electrical wiring hidden within the tree structure.These LED string lights are built for wrapping artificial and live Christmas trees, wreaths, and garlands. The wire insulation uses a dark green shade designed to align with pine foliage, keeping the electrical wiring hidden within the tree structure. Suitable for both indoor home setups and outdoor porch or patio displays, the strand features sealed LEDs and weather-resistant wiring.",
+        description: "These LED string lights are built for wrapping artificial and live Christmas trees, wreaths, and garlands. The wire insulation uses a dark green shade designed to align with pine foliage, keeping the electrical wiring hidden within the tree structure. Suitable for both indoor home setups and outdoor porch or patio displays, the strand features sealed LEDs and weather-resistant wiring.",
         images: [
-            "images/products/lighting/led-string-lights/ls20261103/led-string-lights-pack-green-wire-outdoor-decor.jpg",
-            "images/products/lighting/led-string-lights/ls20261103/led-christmas-tree-string-lights-green-wire.jpg",
-            "images/products/lighting/led-string-lights/ls20261103/multicolor-led-string-lights-bundle-halloween.jpg",
-            "images/products/lighting/led-string-lights/ls20261103/led-christmas-string-lights-green-wire-detail.jpg",
-            "images/products/lighting/led-string-lights/ls20261103/multicolor-christmas-string-lights-green-wire.jpg"], 
+            "/aileen-home-studio/images/products/lighting/led-string-lights/ls20261103/led-string-lights-pack-green-wire-outdoor-decor.jpg",
+            "/aileen-home-studio/images/products/lighting/led-string-lights/ls20261103/led-christmas-tree-string-lights-green-wire.jpg",
+            "/aileen-home-studio/images/products/lighting/led-string-lights/ls20261103/multicolor-led-string-lights-bundle-halloween.jpg",
+            "/aileen-home-studio/images/products/lighting/led-string-lights/ls20261103/led-christmas-string-lights-green-wire-detail.jpg",
+            "/aileen-home-studio/images/products/lighting/led-string-lights/ls20261103/multicolor-christmas-string-lights-green-wire.jpg"], 
         specs: [
             { label: "Product Type", value: "LED String Lights for Christmas Trees" },
             { label: "Wire Material & Color", value: "Insulated Copper Wire with Dark Green PVC Jacket" },
@@ -1954,16 +1835,13 @@ const detailsDatabase = {
         code: "Item Code: pe20260713",
         description: "This pe christmas tree branch is widely used as raw material for handmade artificial christmas trees. We provide different branch styles in one listing to meet diversified production needs. Made of high quality pe plastic, the branches feature realistic needle texture, stable shape and good durability. The green color stays uniform after long-term storage, suitable for mass assembly in christmas tree factories.",
         images: [
-            "images/products/raw-material/pe-tips/pe20260713/pe-christmas-tree-branch-raw-material-thin-01.jpg",
-            "images/products/raw-material/pe-tips/pe20260713/pe-christmas-tree-branch-raw-material-wide-02.jpg"
-
-        ], 
+            "/aileen-home-studio/images/products/raw-material/pe-tips/pe20260713/pe-christmas-tree-branch-raw-material-thin-01.jpg",
+            "/aileen-home-studio/images/products/raw-material/pe-tips/pe20260713/pe-christmas-tree-branch-raw-material-wide-02.jpg"], 
         specs: [
             { label: "Product Name", value: "PE Christmas Tree Branch" },
             { label: "Material", value: "PE Plastic" },
             { label: "Custom Service", value: "Custom Size, Custom Color, Bulk Wholesale" },
-            { label: "Application", value: "Raw Material for Artificial Christmas Tree Manufacturing" }
-        ]
+            { label: "Application", value: "Raw Material for Artificial Christmas Tree Manufacturing" }]
     },
     "pvc film rolls in solid and striped green for artificial christmas tree leaf manufacture": {
         category: "material",
@@ -1971,20 +1849,17 @@ const detailsDatabase = {
         code: "Item Code: pf20260710",
         description: "High quality flexible PVC film rolls serve as professional raw materials for manufacturing artificial Christmas tree leaves and decorative foliage. This PVC sheet features good tear resistance, anti-fading property and easy die-cutting, ideal for large-scale factory processing. Products are tightly packed with kraft paper and wrapped on pallets to guarantee safe global shipping and warehouse storage. Custom dimensions, thickness and stripe colors can be tailored according to your actual production demands.",
         images: [
-            "images/products/raw-material/pvc-film/pf20260710/christmas-tree-pvc-film-green-roll-white-01.jpg",
-            "images/products/raw-material/pvc-film/pf20260710/christmas-tree-pvc-film-kraft-pack-warehouse-02.jpg",
-            "images/products/raw-material/pvc-film/pf20260710/christmas-tree-pvc-film-gy-stripe-pallet-03.jpg",
-            "images/products/raw-material/pvc-film/pf20260710/christmas-tree-pvc-film-yg-stripe-wrap-pallet-04.jpg"
-
-        ], 
+            "/aileen-home-studio/images/products/raw-material/pvc-film/pf20260710/christmas-tree-pvc-film-green-roll-white-01.jpg",
+            "/aileen-home-studio/images/products/raw-material/pvc-film/pf20260710/christmas-tree-pvc-film-kraft-pack-warehouse-02.jpg",
+            "/aileen-home-studio/images/products/raw-material/pvc-film/pf20260710/christmas-tree-pvc-film-gy-stripe-pallet-03.jpg",
+            "/aileen-home-studio/images/products/raw-material/pvc-film/pf20260710/christmas-tree-pvc-film-yg-stripe-wrap-pallet-04.jpg"], 
         specs: [
             { label: "Material", value: "100% Virgin PVC Plastic" },
             { label: "Available Colors", value: "Solid Army Green, Green-Yellow Stripe, Yellow-Gray Stripe" },
             { label: "Thickness", value: "0.05 mm - 0.15 mm (Customizable)" },
             { label: "Features", value: "Anti-UV, Flame Retardant, High Tensile Strength" },
             { label: "Custom Service", value: "Support Custom Roll Width, Thickness, Stripe Size & Color Matching" },
-            { label: "Usage", value: "Raw Material for Manufacturing Christmas Tree Leaves" }
-        ]
+            { label: "Usage", value: "Raw Material for Manufacturing Christmas Tree Leaves" }]
     },
     "polyester thread yarn rolls high tenacity assorted colors for christmas tree foliage production": {
         category: "material",
@@ -1992,16 +1867,14 @@ const detailsDatabase = {
         code: "Item Code: PS-20260708",
         description: "Provide premium raw material for artificial christmas tree foliage with this pe monofilament yarn. Made of high-strength polyethylene, it delivers uniform color and excellent tensile property. Perfect for christmas ornament manufacturers, pine needle processing factories, suitable for producing realistic christmas tree branches and decorative foliage.",
         images: [
-            "images/products/raw-material/polyester-thread/ps20260708/polyester-thread-multicolor-spool-01.jpg",
-            "images/products/raw-material/polyester-thread/ps20260708/polyester-thread-green-rack-02.jpg",
-            "images/products/raw-material/polyester-thread/ps20260708/polyester-thread-packed-box-03.jpg"
-        ], 
+            "/aileen-home-studio/images/products/raw-material/polyester-thread/ps20260708/polyester-thread-multicolor-spool-01.jpg",
+            "/aileen-home-studio/images/products/raw-material/polyester-thread/ps20260708/polyester-thread-green-rack-02.jpg",
+            "/aileen-home-studio/images/products/raw-material/polyester-thread/ps20260708/polyester-thread-packed-box-03.jpg"], 
         specs: [
-            { label: "Material", value: "PE polyethylene monofilament" },
+            { label: "Material", value: "Polyester Thread" },
             { label: "Color", value: "Dark green, light green, pink, red, white, brown, Customizable" },
             { label: "Application", value: "Artificial christmas tree pine needle production, plastic foliage filament processing" },
-            { label: "Features", value: "High tensile strength, color fastness, smooth texture, anti-aging, easy processing" }
-        ]
+            { label: "Features", value: "High tensile strength, color fastness, smooth texture, anti-aging, easy processing" }]
     },
     "metal pole iron branch stand tube for artificial christmas tree assembly": {
         category: "material",
@@ -2009,17 +1882,15 @@ const detailsDatabase = {
         code: "Item Code: t20260715",
         description: "Offer stable support structure for artificial christmas trees with this metal iron pole. Made of sturdy coated iron material, it features reserved branch mounting positions for easy assembly. Perfect for christmas tree manufacturers, decorative plant factories, suitable for building various sizes of indoor and outdoor artificial christmas trees.",
         images: [
-            "images/products/raw-material/metal-tube/t20260715/christmas-tree-metal-main-pole-double-set-01.jpg",
-            "images/products/raw-material/metal-tube/t20260715/christmas-tree-iron-center-tube-length-variation-02.jpg",
-            "images/products/raw-material/metal-tube/t20260715/christmas-tree-replacement-iron-pole-two-sizes-03.jpg"
-        ], 
+            "/aileen-home-studio/images/products/raw-material/metal-tube/t20260715/christmas-tree-metal-main-pole-double-set-01.jpg",
+            "/aileen-home-studio/images/products/raw-material/metal-tube/t20260715/christmas-tree-iron-center-tube-length-variation-02.jpg",
+            "/aileen-home-studio/images/products/raw-material/metal-tube/t20260715/christmas-tree-replacement-iron-pole-two-sizes-03.jpg"], 
         specs: [
             { label: "Material", value: "Coated iron metal" },
             { label: "Color", value: "Black, dark green, Customizable" },
             { label: "Size", value: "Multiple lengths & diameters available, Customizable" },
             { label: "Application", value: "Artificial christmas tree frame, christmas tree internal support, branch mounting stand" },
-            { label: "Features", value: "High structural strength, anti-rust coating, prefabricated branch sockets, easy installation, stable load bearing" }
-        ]
+            { label: "Features", value: "High structural strength, anti-rust coating, prefabricated branch sockets, easy installation, stable load bearing" }]
     },
     "christmas tree stand foldable thick iron frame for artificial xmas tree fixation": {
         category: "material", 
@@ -2027,15 +1898,13 @@ const detailsDatabase = {
         code: "Item Code: ms20260629",
         description: "Ensure your christmas tree stays sturdy and secure with this heavy duty foldable metal tree stand. Crafted from durable iron with a sleek black finish, it features four legs with protective foot caps and a heavy-duty center pole with a locking thumb screw. Perfect replacement base for artificial christmas trees, offering stable support and easy storage for holiday seasons.",
         images: [
-            "images/products/raw-material/metal-stands/ms20260629/christmas-tree-metal-stand-wide-base-01.jpg",
-            "images/products/raw-material/metal-stands/ms20260629/christmas-tree-folding-tree-stand-narrow-frame-02.jpg"
-        ],
+            "/aileen-home-studio/images/products/raw-material/metal-stands/ms20260629/christmas-tree-metal-stand-wide-base-01.jpg",
+            "/aileen-home-studio/images/products/raw-material/metal-stands/ms20260629/christmas-tree-folding-tree-stand-narrow-frame-02.jpg"],
         specs: [
             { label: "Material", value: "Heavy-Duty Reinforced Iron / Steel" },
             { label: "Available Sizes", value: "40cm, 50cm, 60cm, 70cm, 120cm (Customizable)" },
             { label: "Application", value: "Artificial Christmas Tree Base Support" },
             { label: "Foldable & space-saving design", value: "Easy to set up and fold flat for compact storage, saving valuable space when not in use." },
-            { label: "Sturdy iron construction", value: "Crafted from high-strength metal for maximum stability, ensuring your artificial christmas tree stays upright throughout the holiday season." }
-        ]
+            { label: "Sturdy iron construction", value: "Crafted from high-strength metal for maximum stability, ensuring your artificial christmas tree stays upright throughout the holiday season." }]
     }
 };
