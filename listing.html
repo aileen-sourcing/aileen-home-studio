@@ -932,6 +932,9 @@
                     <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="mini" class="third-cb" style="width:14px; height:14px;"> <span>Mini Christmas Tree</span></label>
                     <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="ball" class="third-cb" style="width:14px; height:14px;"> <span>Christmas Ball</span></label>
                     <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="ball" class="third-cb" style="width:14px; height:14px;"> <span>Christmas Ball</span></label>
+                </div>
+                    <!-- Fall Decor 专属筛选项 -->
+                <div id="filter-group-fall" style="display: none; flex-direction: column; gap: 12px;">
                     <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="fall-wreath" class="third-cb" style="width:14px; height:14px;"> <span>Fall Wreath</span></label>
                     <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="fall-garland" class="third-cb" style="width:14px; height:14px;"> <span>Fall Garland</span></label>
                 </div>
@@ -1023,6 +1026,9 @@
                 displayTitle = catItem.toUpperCase();
             }
 
+            const xmasGroup = document.getElementById('filter-group-christmas');
+            const fallGroup = document.getElementById('filter-group-fall');
+
             if ((subItem === 'christmas' || subItem === 'fall-decor') && sidebar && container) {
                 sidebar.style.display = 'block';
                 const parentBox = container.parentElement;
@@ -1033,8 +1039,13 @@
                 }
                 container.style.flexGrow = '1';
                 container.style.width = '100%';
+
+                if (xmasGroup) xmasGroup.style.display = (subItem === 'christmas') ? 'flex' : 'none';
+                if (fallGroup) fallGroup.style.display = (subItem === 'fall-decor') ? 'flex' : 'none';
             } else {
                 if (sidebar) sidebar.style.display = 'none';
+                if (xmasGroup) xmasGroup.style.display = 'none';
+                if (fallGroup) fallGroup.style.display = 'none';
                 if (container) {
                     const parentBox = container.parentElement;
                     if (parentBox) parentBox.style.display = 'block';
@@ -1047,7 +1058,10 @@
                 }
             }
 
-            const selectedFilters = Array.from(document.querySelectorAll('.third-cb:checked')).map(cb => cb.value.toLowerCase());
+            const activeGroupId = subItem === 'christmas' ? 'filter-group-christmas' : (subItem === 'fall-decor' ? 'filter-group-fall' : null);
+            const selectedFilters = activeGroupId
+                ? Array.from(document.querySelectorAll(`#${activeGroupId} .third-cb:checked`)).map(cb => cb.value.toLowerCase())
+                : [];
 
             for (let key in detailsDatabase) {
                 if (detailsDatabase.hasOwnProperty(key)) {
