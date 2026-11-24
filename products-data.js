@@ -29,7 +29,7 @@ const detailsDatabase = {
         code: "Item Code: t20261010",
         description: "Bring warmth, charm, and holiday magic into your home with our handcrafted Christmas Plush Mouse Shelf Sitter Doll! Clad in a classic red Scandinavian knit sweater with reindeer patterns, a soft white plush scarf, and adorable red felt boots, this long-legged sitting figurine captures the cozy essence of a traditional Christmas.",
         images: [
-            "/aileen-home-studio/images/products/home/toys/t20261010/christmas-mouse-plush-toy-sitting-doll-white-backgroup.jpg",
+            "/aileen-home-studio/images/products/home/toys/t20261010/christmas-mouse-plush-toy-sitting-doll-white-background.jpg",
             "/aileen-home-studio/images/products/home/toys/t20261010/christmas-mouse-decor-shelf-display-holiday-toy.jpg",
             "/aileen-home-studio/images/products/home/toys/t20261010/christmas-mouse-figurine-by-fireplace-tree-decor.jpg",
             "/aileen-home-studio/images/products/home/toys/t20261010/christmas-mouse-toy-vintage-bookshelf-display.jpg",
@@ -543,7 +543,7 @@ const detailsDatabase = {
             { label: "Material", value: "Plastic (shatter-proof)" },
             { label: "Ball Surface", value: "Shiny / Glitter / Hollow carved" },
             { label: "Package Quantity", value: "30-40 pcs per container" },
-            { label: "Color", value: "Multi-color: purple-silver, blue-silver, teal-gold, gold, dark-blue-silver, Pink" },
+            { label: "Color", value: "Multi-color: purple-silver, blue-silver, teal-gold, gold, dark-blue-silver, Pink-sliver" },
             { label: "Package", value: "Clear plastic bucket packaging" },
             { label: "Feature", value: "Lightweight, shatter-resistant, easy to hang" },
             { label: "Application", value: "Christmas tree, holiday party, home decoration" }]
@@ -1864,8 +1864,8 @@ const detailsDatabase = {
     "polyester thread yarn rolls high tenacity assorted colors for christmas tree foliage production": {
         category: "material",
         subcategory: "polyester-thread", 
-        code: "Item Code: PS-20260708",
-        description: "Provide premium raw material for artificial christmas tree foliage with this pe monofilament yarn. Made of high-strength polyethylene, it delivers uniform color and excellent tensile property. Perfect for christmas ornament manufacturers, pine needle processing factories, suitable for producing realistic christmas tree branches and decorative foliage.",
+        code: "Item Code: ps20260708",
+        description: "Provide premium raw material for artificial christmas tree foliage with this polyester thread. Made of high-strength polyethylene, it delivers uniform color and excellent tensile property. Perfect for christmas ornament manufacturers, pine needle processing factories, suitable for producing realistic christmas tree branches and decorative foliage.",
         images: [
             "/aileen-home-studio/images/products/raw-material/polyester-thread/ps20260708/polyester-thread-multicolor-spool-01.jpg",
             "/aileen-home-studio/images/products/raw-material/polyester-thread/ps20260708/polyester-thread-green-rack-02.jpg",
