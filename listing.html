@@ -932,6 +932,12 @@
                     <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="mini" class="third-cb" style="width:14px; height:14px;"> <span>Mini Christmas Tree</span></label>
                     <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="ball" class="third-cb" style="width:14px; height:14px;"> <span>Christmas Ball</span></label>
                 </div>
+            <div id="fall-sidebar" style="display: none; width: 250px; flex-shrink: 0; background: #fff; border: 1px solid var(--border-color); padding: 20px; border-radius: 4px; position: sticky; top: 105px; text-align: left; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                <h3 style="font-size: 14px; font-weight: bold; color: var(--primary-color); letter-spacing: 1px; margin-bottom: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; text-transform: uppercase;">Filter By Category</h3>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="wreath" class="fall-cb" style="width:14px; height:14px;"> <span>Fall Wreath</span></label>
+                    <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-color); cursor:pointer;"><input type="checkbox" value="garland" class="fall-cb" style="width:14px; height:14px;"> <span>Fall Garland</span></label>
+                </div>
             </div>
 
             <div class="products-grid" id="listing-grid-container" style="flex-grow: 1; width: 100%; margin: 0;"></div>
@@ -1020,8 +1026,25 @@
                 displayTitle = catItem.toUpperCase();
             }
 
-            if (subItem === 'christmas' && sidebar && container) {
+            // 👇 从这里开始替换，直到 const selectedFilters = ... 这行结束
+            const fallSidebar = document.getElementById('fall-sidebar');
+            const isChristmasPage = subItem === 'christmas';
+            const isFallPage = subItem === 'fall-decor';
+
+            if (isChristmasPage && sidebar && container) {
                 sidebar.style.display = 'block';
+                if (fallSidebar) fallSidebar.style.display = 'none';
+                const parentBox = container.parentElement;
+                if (parentBox) {
+                    parentBox.style.display = 'flex';
+                    parentBox.style.gap = '30px';
+                    parentBox.style.alignItems = 'flex-start';
+                }
+                container.style.flexGrow = '1';
+                container.style.width = '100%';
+            } else if (isFallPage && fallSidebar && container) {
+                fallSidebar.style.display = 'block';
+                if (sidebar) sidebar.style.display = 'none';
                 const parentBox = container.parentElement;
                 if (parentBox) {
                     parentBox.style.display = 'flex';
@@ -1032,6 +1055,7 @@
                 container.style.width = '100%';
             } else {
                 if (sidebar) sidebar.style.display = 'none';
+                if (fallSidebar) fallSidebar.style.display = 'none';
                 if (container) {
                     const parentBox = container.parentElement;
                     if (parentBox) parentBox.style.display = 'block';
@@ -1044,7 +1068,8 @@
                 }
             }
 
-            const selectedFilters = Array.from(document.querySelectorAll('.third-cb:checked')).map(cb => cb.value.toLowerCase());
+            const activeCheckboxSelector = isFallPage ? '.fall-cb:checked' : '.third-cb:checked';
+            const selectedFilters = Array.from(document.querySelectorAll(activeCheckboxSelector)).map(cb => cb.value.toLowerCase());
 
             for (let key in detailsDatabase) {
                 if (detailsDatabase.hasOwnProperty(key)) {
@@ -1166,7 +1191,7 @@
     window.onload = function() {
         renderListingPage();
 
-        document.querySelectorAll('.third-cb').forEach(cb => {
+        document.querySelectorAll('.third-cb, .fall-cb').forEach(cb => {
             cb.addEventListener('change', renderListingPage);
         });
     };
