@@ -1048,19 +1048,61 @@ const detailsDatabase = {
         code: "Item Code: cl20260801",
         description: "Exquisite flocked reindeer ornaments crafted with soft velvet texture. Available in various postures including lying posture and standing posture, matched with silver branch antlers or golden antlers. Rich vibrant red tone creates strong festive atmosphere. Suitable for fireplace mantel, tabletop, shelf, showcase window display for Christmas, New Year and holiday scene layout.",
         images: [
-            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/red-flocked-lying-reindeer-statue-silver-branch-antler-product-photo-01.jpg",
-            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/small-standing-flocked-red-deer-silver-antler-figurine-02.jpg",
-            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/medium-tall-standing-red-reindeer-branch-antler-ornament-03.jpg",
-            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/tall-front-facing-red-flocking-deer-sculpture-silver-antler-04.jpg",
-            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/carved-red-reindeer-figurine-with-golden-antler-decoration-05.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/red-flocked-lying-reindeer-statue-silver-branch-antler-product-photo.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/medium-tall-standing-red-reindeer-branch-antler-ornament.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20260801/deer-figurine-silver-antlers-forest-green.jpg"], 
         specs: [
             { label: "Surface Craft", value: "Flocking / velvet flocked finish" },
             { label: "Main Body Color", value: "Bright red" },
             { label: "Antler Style", value: "Silver branch antler / golden solid antler" },
-            { label: "Posture Options", value: "Lying deer / standing small deer / medium standing deer / tall standing deer / carved standing deer" },
             { label: "Material", value: "Plastic base with flocking coating" },
+            { label: "Dimensions", value: "12x9x18 inch" },
             { label: "Application", value: "Christmas, new year celebration, holiday party, home decoration, retail window display" },
-            { label: "Features", value: "Matte flocked surface, multiple size & posture options, lightweight, festive aesthetic, easy arrangement" }]
+            { label: "Features", value: "Matte flocked surface, multiple size & posture options, lightweight, festive aesthetic, easy arrangement" }],
+        faq: [
+            {
+                q: "How can I combine the green and red deer with silver and gold antlers in one holiday setup?",
+                a: "You can use the matching green and red silver-antler pieces to keep a cohesive look, then bring in the gold-antler deer as a warm accent to tie in gold ornaments, fairy lights, or candle holders."},
+            {
+                q: "Do the antlers stay securely in place during storage and seasonal unpacking?",
+                a: "The branching antlers are attached as part of each figurine's design, though packing them upright or cushioned with tissue paper helps protect finer tips between seasons."},
+            {
+                q: "Will the deeper red and forest green shades look too dark on a shelf or mantel?",
+                a: "Deep forest green and rich red stand out clearly against light walls, white runners, or warm lighting, while their contrast with metallic silver or gold antlers adds brightness."},
+            {
+                q: "Are these suitable for seasonal window displays, holiday tablescapes, or gift bundles?",
+                a: "Yes, mixing colors and antler finishes makes them handy for retail window displays, dining table styling, or curated seasonal gift sets."}]
+    },
+    "deer figurine with silver antlers holiday home decor in three colors": {
+        category: "holiday",
+        subcategory: "christmas-reindeer-decorations", 
+        code: "Item Code: cl20261125",
+        description: "The slender standing posture and spread of the branching antlers create an open silhouette that works well either grouped as a three-color trio or spaced out across different rooms. Pair them with mini trees, candle holders, or everyday home accessories without crowding flat surfaces, or use a single piece as a simple focal point on its own.",
+        images: [
+            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20261125/deer-figurine-silver-antlers-slate-blue.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20261125/deer-figurine-silver-antlers-olive-green.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/christmas-reindeer-decorations/cl20261125/deer-figurine-silver-antlers-forest-green.jpg"], 
+        specs: [
+            { label: "Product Type", value: "Standing deer figurine with antlers" },
+            { label: "Available Colors", value: "Olive green, slate blue, deep forest green" },
+            { label: "Antler Finish", value: "Metallic silver branching antlers" },
+            { label: "Surface Finish", value: "Textured non-flocked finish" },
+            { label: "Dimensions", value: "14x9x10 inch" },
+            { label: "Placement", value: "Mantels, consoles, shelves, tabletops" },
+            { label: "Indoor / Outdoor", value: "Indoor decorative use" }],
+        faq: [
+            {
+                q: "Do the antlers come already attached, or do I need to assemble them?",
+                a: "The branching antlers are part of the figurine design and are ready to display out of the box without complicated assembly, though you should handle the slender branches gently when unboxing."},
+            {
+                q: "How should I wipe off dust without scratching the silver finish or textured body?",
+                a: "Use a soft, dry microfiber cloth or a light duster to gently remove surface dust, and avoid harsh chemical cleaners or abrasive pads that could dull the metallic antler finish."},
+            {
+                q: "Can I display all three shades together in one arrangement, or spread them across different rooms?",
+                a: "Both work well—you can group all three tones together for a coordinated seasonal vignette or place them separately in different rooms to tie your home styling together."},
+            {
+                q: "Are these suitable for holiday gift baskets, winter centerpieces, or store display props?",
+                a: "Yes, their standing silhouette and branching antlers make them practical seasonal props for holiday table centerpieces, winter displays, boutique merchandising, or festive gift styling."}]
     },
     // ==========================================
     // 💡 大类 2：Home Lighting (cat: "lighting")
