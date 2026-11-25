@@ -1295,18 +1295,18 @@
         function handleFilterChange(element) {
             currentPage = 1;
             
-            if (element && element.value === "Christmas") {
-                const parentLi = element.closest('li');
-                const thirdLevelContainer = parentLi.querySelector('.third-level-tags');
-                if (thirdLevelContainer) {
-                    if (element.checked) {
-                        thirdLevelContainer.style.display = 'flex';
-                    } else {
-                        thirdLevelContainer.style.display = 'none';
-                        thirdLevelContainer.querySelectorAll('input').forEach(cb => cb.checked = false);
-                    }
-                }
-            }
+            if (element && (element.value === "Christmas" || element.value === "Fall Decor")) {
+    const parentLi = element.closest('li');
+    const thirdLevelContainer = parentLi.querySelector('.third-level-tags');
+    if (thirdLevelContainer) {
+        if (element.checked) {
+            thirdLevelContainer.style.display = 'flex';
+        } else {
+            thirdLevelContainer.style.display = 'none';
+            thirdLevelContainer.querySelectorAll('input').forEach(cb => cb.checked = false);
+        }
+    }
+}
 
             const checkboxes = document.querySelectorAll('#filter-checkbox-group .sub-filter-list > li > .filter-option input[type="checkbox"]:checked');
             selectedFilters = Array.from(checkboxes).map(cb => cb.value.toLowerCase().trim());
@@ -1336,10 +1336,20 @@
                                 isMatch = true;
                             }
                         } else if (keyword === 'ball') {
-                        const mainPart = pTitle.includes(' for ') ? pTitle.split(' for ')[0] : pTitle;
-                        const hasBall = mainPart.includes('ball') || mainPart.includes('bauble');
-                        const hasOtherCategory = mainPart.includes('wreath') || mainPart.includes('garland') || mainPart.includes('tree');
+                            const mainPart = pTitle.includes(' for ') ? pTitle.split(' for ')[0] : pTitle;
+                            const hasBall = mainPart.includes('ball') || mainPart.includes('bauble');
+                            const hasOtherCategory = mainPart.includes('wreath') || mainPart.includes('garland') || mainPart.includes('tree');
                             if (hasBall && !hasOtherCategory) {
+                                isMatch = true;
+                            }
+                        } else if (keyword === 'wreath' || keyword === 'garland') {
+                            const cbEl = document.querySelector(`.third-level-tags input[type="checkbox"][value="${keyword}"]:checked`);
+                            const isFall = cbEl && cbEl.dataset.parent === 'fall';
+                            if (isFall) {
+                                if (pTitle.includes('fall') && pTitle.includes(keyword)) {
+                                    isMatch = true;
+                                }
+                            } else if (pTitle.includes(keyword)) {
                                 isMatch = true;
                             }
                         } else {
@@ -1387,6 +1397,12 @@
                                         <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="garland" onchange="handleThirdLevelChange()"> <span>Garland</span></label>
                                         <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="mini" onchange="handleThirdLevelChange()"> <span>Mini Christmas Tree</span></label>
                                         <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="ball" onchange="handleThirdLevelChange()"> <span>Christmas Ball</span></label>
+                                    </div>
+                                    ` : ''}
+                                    ${sub === "Fall Decor" ? `
+                                    <div class="third-level-tags" style="display: none; flex-direction: column; gap: 6px; padding: 6px 0 4px 24px;">
+                                        <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="wreath" data-parent="fall" onchange="handleThirdLevelChange()"> <span>Fall Wreath</span></label>
+                                        <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#6b7280; cursor:pointer;"><input type="checkbox" value="garland" data-parent="fall" onchange="handleThirdLevelChange()"> <span>Fall Garland</span></label>
                                     </div>
                                     ` : ''}
                                  </li>
