@@ -1346,7 +1346,7 @@
                             const cbEl = document.querySelector(`.third-level-tags input[type="checkbox"][value="${keyword}"]:checked`);
                             const isFall = cbEl && cbEl.dataset.parent === 'fall';
                             if (isFall) {
-                                if (pTitle.includes('fall') && pTitle.includes(keyword)) {
+                                if ((pTitle.includes('fall') || pTitle.includes('autumn')) && pTitle.includes(keyword)) {
                                     isMatch = true;
                                 }
                             } else if (pTitle.includes(keyword)) {
