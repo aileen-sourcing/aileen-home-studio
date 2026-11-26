@@ -617,10 +617,12 @@ const detailsDatabase = {
         code: "Item Code: fw20260727",
         description: "Rustic autumn wreath built on natural twig ring base. Decor elements include simulated mini pumpkins, grain stalks, millet sprays, artificial maple leaves and pine cones. Four distinctive harvest-style designs available. Warm earthy tones create strong fall and Thanksgiving atmosphere, suitable for front door, porch, entryway, wall, window, living room and covered outdoor decorative display.",
         images: [
-            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/fall-pumpkin-grain-stalk-wreath-harvest-decoration-01.jpg",
-            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/autumn-millet-spray-dried-grass-wreath-overview-02.jpg",
-            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/maple-leaf-pinecone-faux-pumpkin-fall-wreath-03.jpg",
-            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/simple-autumn-leaf-mini-pumpkin-rustic-wreath-04.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/fall-pumpkin-grain-stalk-wreath-harvest-decoration.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/autumn-millet-spray-dried-grass-wreath-overview.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/maple-leaf-pinecone-faux-pumpkin-fall-wreath.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/simple-autumn-leaf-mini-pumpkin-rustic-wreath.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/fall-wreath-pumpkin-sunflower-maple-leaf-berry-autumn-front-door-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20260727/fall-rustic-wreath-sunflower-pumpkin-pinecone-autumn-harvest-door-decoration.jpg"], 
         specs: [
             { label: "Material", value: "Natural twig ring, artificial dried grass, fabric foliage, plastic faux pumpkin" },
             { label: "Size", value: "Multiple sizes available, custom dimension supported" },
@@ -628,8 +630,55 @@ const detailsDatabase = {
             { label: "Optional Styles", value: "Pumpkin grain stalk wreath / pure mixed millet wreath / maple pinecone pumpkin wreath / simple autumn leaf pumpkin wreath" },
             { label: "Applicable Season", value: "Autumn, fall, thanksgiving holiday" },
             { label: "Feature", value: "Lightweight, easy hanging, reusable, long service life, vintage rustic harvest aesthetic" },
-            { label: "Application", value: "Front door, entryway, porch, wall, window, living room, farmhouse, covered outdoor space" }]
+            { label: "Application", value: "Front door, entryway, porch, wall, window, living room, farmhouse, covered outdoor space" }],
+        faq: [
+            {
+                q: "Are the wheat stalks and maple leaves made of real dried plants or artificial materials?",
+                a: "They are crafted from durable artificial materials—including textured PE plastic grain stalks, silk-fabric maple leaves, molded foam pumpkins, and genuine dried pinecones—secured onto a woven natural twig ring. Using synthetic grains and leaves gives you the rustic look of dried harvest plants without the brittleness, crumbling, or bug issues of real dried florals."},
+            {
+                q: "Will the grain stalks or foliage shed heavily when I hang or move the wreath?",
+                a: "Minimal loose fibers may occur right out of the shipping box, which is normal for textured grass and millet stems. Each stem is individually wired and glued into the grapevine base, so once the wreath is fluffed and hung on your door or wall, it holds its shape without ongoing shedding."},
+            {
+                q: "Does the wreath come with a hanging hook, and how heavy is it?",
+                a: "The wreath features a sturdy natural vine ring on the back that hooks directly onto any standard over-the-door wreath hanger, nail, or heavy-duty adhesive hook (hook not included). Weighing approximately [1.5 to 2.2 lbs / 0.7 to 1 kg] depending on the style, it is light enough for glass storm doors when paired with a suction-cup hanger."},
+            {
+                q: "What door colors do these warm amber and burgundy wreaths look best against?",
+                a: "Because all six designs feature rich autumn tones—mustard yellow, deep burgundy, burnt orange, and russet brown—they stand out cleanly against light-colored front doors (white, cream, light gray, or pale wood) as well as dark matte black doors. If you have a medium-toned oak or mahogany door, the Sunflower & Pinecone or Millet & Grain Stalk styles offer the strongest contrast."}]
     },
+    "artificial fall wreath pumpkin sunflower eucalyptus front door decor": {
+        category: "holiday",
+        subcategory: "fall-decor", 
+        code: "Item Code: fw20261126",
+        description: "This Artificial Fall Wreath Collection includes six distinct autumn designs built on a woven natural vine ring base. Each wreath combines fabric flowers, molded foam pumpkins, and plastic foliage attached to bendable wire stems, giving you a seasonal door or wall accent that requires no watering or maintenance.",
+        images: [
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20261126/fall-wreath-pumpkin-cream-rose-eucalyptus.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20261126/fall-wreath-orange-pumpkin-peony-cotton.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20261126/fall-wreath-sunflower-blue-pumpkin-pinecone.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20261126/fall-wreath-wheat-eucalyptus-white-berry.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20261126/fall-wreath-white-peony-pumpkin-lambs-ear.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/fall-decor/wreath/fw20261126/fall-wreath-white-sunflower-eucalyptus-berry.jpg"], 
+        specs: [
+            { label: "Product Name", value: "Artificial Fall Harvest Wreath (6 Styles Available)" },
+            { label: "Size", value: "Multiple sizes available, custom dimension supported" },
+            { label: "Primary Materials", value: "Silk Flowers, PE Foliage, Foam Pumpkins, Natural Grapevine Base" },
+            { label: "Available Styles", value: "Cream Rose & Pumpkin / Wheat & Eucalyptus / Sunflower & Blue Pumpkin / White Sunflower & Berry / Orange Pumpkin & Peony / White Peony & Pumpkin" },
+            { label: "Season & Occasion", value: "Early Fall, Autumn Harvest, Halloween, Thanksgiving Decor" },
+            { label: "Application", value: "Front Door, Porch (Covered), Wall, Fireplace Mantel, Window" }],
+        faq: [
+            {
+                q: "Can this artificial fall wreath be hung outdoors on a front door?",
+                a: "Yes, it is suitable for both indoor walls and covered outdoor front doors. To preserve the rich colors of the silk flowers and foam pumpkins for years to come, we recommend hanging it under a covered porch or overhang away from direct rain, snow, and prolonged midday sunlight."},
+            {
+                q: "How should I clean and store the wreath after the autumn season?",
+                a: "Simply dust the foliage lightly with a soft dry cloth or a cool hairdryer on a low setting. When the season ends, store the wreath flat in a breathable storage bag or sturdy box in a cool, dry place so it stays crushed-free and ready to hang next fall."},
+            {
+                q: "How do I make the wreath look full and natural after unboxing?",
+                a: "For safe shipping, the branches and leaves are gently compressed inside the box. Simply unpack the wreath and spend 2-3 minutes gently spreading and bending the wired stems, eucalyptus leaves, and floral petals outward until it reaches its full, lush circular shape."},
+            {
+                q: "What is the difference between the six fall wreath styles in this listing?",
+                a: "All six wreaths share the same handcrafted durability and lush fullness, differing in color palette and focal elements: choose the Orange Pumpkin & Peony or Sunflower & Blue Pumpkin for bold Thanksgiving color, Cream Rose & Pumpkin or White Peony for neutral modern farmhouse charm, and Wheat & Eucalyptus or White Sunflower for a lighter, organic harvest feel."}]
+    },
+    // ==========================================
     "fall garland artificial pumpkin pinecone 6ft cream mantel": {
         category: "holiday",
         subcategory: "fall-decor", 
