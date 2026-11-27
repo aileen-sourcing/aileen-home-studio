@@ -596,10 +596,10 @@ const detailsDatabase = {
         code: "Item Code: sm20260731",
         description: "Lifelike seasonal artificial wreath constructed on natural twig ring base. Decorations consist of faux sunflowers, simulated lemons, blush roses, peonies, daisies and diverse green foliage. Four independent design styles for selection. Fresh bright tones deliver vivid spring and summer vibe, suitable for front door, entryway, kitchen, living room, window, covered outdoor areas and farmhouse style interior display.",
         images: [
-            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20260731/summer-sunflower-peony-mixed-floral-wreath-display-01.jpg",
-            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20260731/lemon-blush-rose-greenery-wreath-home-decor-02.jpg",
-            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20260731/minimalist-sunflower-eucalyptus-front-door-wreath-03.jpg",
-            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20260731/simulated-lemon-fruit-pure-green-foliage-wreath-04.jpg"], 
+            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20260731/summer-sunflower-peony-mixed-floral-wreath-display.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20260731/lemon-blush-rose-greenery-wreath-home-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20260731/minimalist-sunflower-eucalyptus-front-door-wreath.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20260731/simulated-lemon-fruit-pure-green-foliage-wreath.jpg"], 
         specs: [
             { label: "Material", value: "Silk fabric flower, plastic simulated lemon, artificial green foliage, natural twig ring base" },
             { label: "Size", value: "Multiple specifications available custom dimension supported" },
@@ -607,7 +607,50 @@ const detailsDatabase = {
             { label: "Optional Styles", value: "Sunflower peony mixed flower wreath / lemon rose blossom wreath / minimalist sunflower wreath / pure lemon green foliage wreath" },
             { label: "Suitable Season", value: "Spring summer all-year round display" },
             { label: "Feature", value: "Lightweight easy hanging reusable fade resistant lifelike pastoral appearance" },
-            { label: "Application", value: "Front door entryway porch wall window kitchen living room cafe farmhouse indoor area covered outdoor space" }]
+            { label: "Application", value: "Front door entryway porch wall window kitchen living room cafe farmhouse indoor area covered outdoor space" }],
+        faq: [
+            {
+                q: "What size front door do these full-coverage summer wreaths fit best?",
+                a: "These full-ring designs are proportioned to fit standard 30-inch to 36-inch single front doors as well as double entry doors. Their balanced, 360-degree floral and foliage coverage creates a prominent focal point without blocking door knockers, peepholes, or sidelight windows."},
+            {
+                q: "Do the artificial lemons and petals look realistic up close?",
+                a: "Yes. Each wreath uses matte-finished foam lemons with natural surface texture, multi-layered silk sunflower and peony petals, and varied shades of PE eucalyptus and fern leaves. The color transitions and leaf veining are crafted to look lifelike from both street view and close-up entryway inspection."},
+            {
+                q: "How do I hang these wreaths securely without damaging my door surface?",
+                a: "Each wreath is built on a sturdy, lightweight base that works with standard over-the-door metal hangers, magnetic hooks for steel doors, or heavy-duty removable adhesive hooks for glass and painted wood doors. No drilling or extra mounting hardware is required."},
+            {
+                q: "Can these wreaths be used as table centerpieces or wall decor beyond the front door?",
+                a: "Yes. Because all styles feature full, even floral arrangements around the entire ring, they lay flat on dining tables or kitchen islands as summer centerpieces around a hurricane candle or lantern, and also hang easily above fireplace mantels, mirrors, and entryway consoles."}]
+    },
+    "artificial summer floral wreaths for front door lemon sunflower decor": {
+        category: "holiday",
+        subcategory: "summer-decor", 
+        code: "Item Code: sm20261127",
+        description: "This curated collection of three handcrafted artificial summer wreaths brings effortless seasonal warmth to front doors, interior walls, covered porches, and retail displays. Designed across three complementary styles—rustic farmhouse sunflower, minimalist modern lemon hoop, and vibrant lemon-and-rose botanical—the lineup offers versatile visual appeal for different entryway aesthetics. Each piece is carefully arranged by hand for balanced fullness and realistic color depth, retaining its vibrant look without watering, pruning, or petal shedding.",
+        images: [
+            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20261127/artificial-summer-floral-wreaths-front-door-lemon-decor.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20261127/artificial-summer-sunflower-wreath-burlap-bow-grapevine.jpg",
+            "/aileen-home-studio/images/products/holiday-decor/summer-decor/wreath/sm20261127/artificial-summer-lemon-wreath-green-leaves-metal-hoop.jpg"], 
+        specs: [
+            { label: "Base Material", value: "Natural Grapevine Twig / Powder-Coated Metal Hoop" },
+            { label: "Floral & Foliage", value: "Silk Flowers, Foam Lemons, PE Greenery, Burlap Ribbon" },
+            { label: "Primary Color Palette", value: "Yellow, Green, White, Blush Pink, Rustic Brown" },
+            { label: "Recommended Season", value: "Summer, Early Fall" },
+            { label: "Placement", value: "Indoor / Covered Outdoor (Front Door, Wall, Porch)" },
+            { label: "Care & Maintenance", value: "Dust with Dry Cloth or Cool Air; No Watering Required" }],
+        faq: [
+            {
+                q: "Can these artificial wreaths be hung outdoors on a front door?",
+                a: "Yes, they are suitable for indoor walls as well as covered outdoor areas such as sheltered front doors and porches. To prevent premature fading or moisture damage to the natural grapevine and burlap materials, avoid direct exposure to heavy rain or harsh afternoon sunlight."},
+            {
+                q: "Do the wreaths require reshaping after shipping?",
+                a: "Yes, a minor adjustment is recommended upon unboxing. Because the wreaths are packed securely in cartons to prevent transit damage, simply fluff the silk petals, greenery stems, and burlap bow by hand for one to two minutes to restore their full diameter."},
+            {
+                q: "How do you clean and store these faux lemon and sunflower wreaths?",
+                a: "Dust can be removed gently using a dry microfiber cloth, a soft paintbrush, or a hairdryer set to a cool, low-air setting. Do not wash them with water or liquid cleaners. When not in use, store them in a dry box away from heavy pressure to preserve the floral structure."},
+            {
+                q: "Are these wreath styles available for wholesale bulk orders or mixed assortments?",
+                a: "Yes, all three models are available for both individual orders and wholesale sourcing. You can order a single design or a mixed assortment across the three styles, with standard export carton packaging and custom labeling options available upon inquiry."}]
     },
     // ==========================================
     // 💡 大类 1：Holiday Decor (cat: "Fall decor")
